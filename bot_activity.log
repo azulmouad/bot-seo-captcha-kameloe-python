@@ -899,3 +899,329 @@ Stacktrace:
 2025-09-02 00:31:35,051 - INFO - Successful runs: 1
 2025-09-02 00:31:35,051 - INFO - Failed runs: 0
 2025-09-02 00:31:35,051 - INFO - ==================================================
+2025-09-02 00:35:06,123 - INFO - 2captcha solver initialized with API key: 56d4457439...
+2025-09-02 00:35:06,124 - INFO - Starting Google Search Bot
+2025-09-02 00:35:06,124 - INFO - Keyword: lescore matches
+2025-09-02 00:35:06,124 - INFO - Target Domain: lescore.net
+2025-09-02 00:35:06,124 - INFO - Total Proxies: 3
+2025-09-02 00:35:06,124 - INFO - 
+--- Processing proxy 1/3 ---
+2025-09-02 00:35:06,124 - INFO - 
+==================================================
+2025-09-02 00:35:06,124 - INFO - Starting process with proxy: 209.99.134.52:5748:aawikmkk:tx1f1a2yr843
+2025-09-02 00:35:06,124 - INFO - ==================================================
+2025-09-02 00:35:06,124 - INFO - Testing proxy: 209.99.134.52:5748:aawikmkk:tx1f1a2yr843
+2025-09-02 00:35:06,124 - INFO - Testing proxy: 209.99.134.52:5748 (with auth)
+2025-09-02 00:35:06,750 - INFO - ✓ Proxy 209.99.134.52:5748 (with auth) is working. IP: 209.99.134.52
+2025-09-02 00:35:06,750 - INFO - Setting up Kameleo browser with proxy: 209.99.134.52:5748:aawikmkk:tx1f1a2yr843
+2025-09-02 00:35:06,750 - INFO - Kameleo client initialized on port 5050
+2025-09-02 00:35:06,750 - INFO - Loading available Chrome fingerprints...
+2025-09-02 00:35:07,491 - INFO - Loaded 25 unique Chrome fingerprints
+2025-09-02 00:35:07,543 - INFO - Creating Kameleo profile with proxy: 209.99.134.52:5748:aawikmkk:tx1f1a2yr843
+2025-09-02 00:35:07,543 - INFO - Selected unique fingerprint: 5ed64bad6fecc449090c472ff954f7b8a30b4b77676e425d919ed09f641b19f8 (1/25 used)
+2025-09-02 00:35:07,543 - INFO - Using authenticated proxy: 209.99.134.52:5748
+2025-09-02 00:35:07,684 - INFO - ✓ Kameleo profile created: f45ccd96-6e4a-4a01-b770-eaaf974d03c7 for proxy 209.99.134.52:5748
+2025-09-02 00:35:11,777 - INFO - Kameleo browser setup completed successfully
+2025-09-02 00:35:11,778 - INFO - Verifying proxy IP...
+2025-09-02 00:35:16,605 - INFO - Browser IP (via http://httpbin.org/ip): 209.99.134.52
+2025-09-02 00:35:16,853 - INFO - Real IP: 41.141.210.84
+2025-09-02 00:35:16,854 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-02 00:35:16,854 - INFO - Opening Google.com...
+2025-09-02 00:35:18,033 - INFO - Waiting 5 seconds...
+2025-09-02 00:35:23,038 - INFO - Checking for reCAPTCHA on current page...
+2025-09-02 00:35:28,279 - INFO - No reCAPTCHA detected on current page
+2025-09-02 00:35:28,290 - INFO - Typing keyword: lescore matches
+2025-09-02 00:35:32,711 - INFO - Checking for reCAPTCHA on current page...
+2025-09-02 00:35:37,852 - INFO - No reCAPTCHA detected on current page
+2025-09-02 00:35:37,862 - INFO - Search results loaded
+2025-09-02 00:35:41,269 - INFO - Performed 3 human-like scroll actions
+2025-09-02 00:35:41,270 - INFO - Looking for domain: lescore.net
+2025-09-02 00:35:41,270 - INFO - Searching page 1 of 20 for target domain...
+2025-09-02 00:35:41,438 - INFO - Target not found on page 1, trying next page...
+2025-09-02 00:35:41,440 - INFO - Current URL: https://www.google.com/search?q=lescore+matches&sca_esv=5d812c3a7137edf1&source=hp&ei=tS22aLqZAsSkhbIP7OXb8QQ&iflsig=AOw8s4IAAAAAaLY7xagOPQDplnR9ceq4CWuSNHL4H1t7&ved=0ahUKEwj6x76X3biPAxVEUkEAHezyNk4Q4dUDCCI&uact=5&oq=lescore+matches&gs_lp=Egdnd3Mtd2l6Ig9sZXNjb3JlIG1hdGNoZXMyBxAAGIAEGA0yBxAAGIAEGA0yBxAAGIAEGA0yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCBAAGAUYDRgeMggQABgFGA0YHjIIEAAYBRgNGB4yCBAAGAUYDRgeSJwgUABYgRBwAHgAkAEAmAGHAaABuw6qAQQwLjE1uAEDyAEA-AEBmAIPoALoDsICDhAAGIAEGLEDGIMBGIoFwgIREC4YgAQYsQMY0QMYgwEYxwHCAggQLhiABBixA8ICDhAuGIAEGLEDGIMBGIoFwgIFEAAYgATCAgsQABiABBixAxiDAcICDhAuGIAEGLEDGNEDGMcBwgIIEC4YgAQY1ALCAgsQLhiABBixAxiDAcICCxAuGIAEGMcBGK8BwgIIEAAYgAQYsQPCAhQQLhiABBixAxjRAxiDARjHARiKBcICDhAuGIAEGLEDGIMBGNQCwgIIEC4YgAQY5QTCAgcQABiABBgKwgITEC4YgAQYsQMY0QMYgwEYxwEYCsICDRAAGIAEGLEDGIMBGArCAg0QABiABBixAxiDARgNwgINEC4YgAQY0QMYxwEYDcICBhAAGA0YHsICCBAAGAoYDRgemAMAkgcEMC4xNaAH56MBsgcEMC4xNbgH6A7CBwYwLjEyLjPIByM&sclient=gws-wiz&sei=xC22aKHqKuStkdUPidWkoAM
+2025-09-02 00:35:43,509 - INFO - Clicked next page button, moving to page 2
+2025-09-02 00:35:47,456 - WARNING - Page 2 URL doesn't contain our keyword!
+2025-09-02 00:35:47,456 - WARNING - Expected keyword: lescore matches
+2025-09-02 00:35:47,456 - WARNING - Current URL: https://www.google.com/search?q=livescore+matches&sca_esv=5d812c3a7137edf1&ei=xC22aMbHOf3skdUPuuOLoAI&start=10&sa=N&sstk=Ac65TH6EbBnDqqmf63IFrMjTOh-bnUhhUOPwQ0jg4rD-bkq4XnRf64PPUsYfaSNWdDHfo3sQ5ba_Q8JHshWZKT67iE3-4WIvy7GUfA&ved=2ahUKEwjGuYmf3biPAxV9dqQEHbrxAiQQ8NMDegQIJxAW&biw=1440&bih=813&dpr=2
+2025-09-02 00:35:47,456 - INFO - Checking for reCAPTCHA on current page...
+2025-09-02 00:35:52,693 - INFO - No reCAPTCHA detected on current page
+2025-09-02 00:35:58,198 - INFO - Performed 5 human-like scroll actions
+2025-09-02 00:35:58,200 - INFO - Searching page 2 of 20 for target domain...
+2025-09-02 00:35:58,356 - INFO - Target not found on page 2, trying next page...
+2025-09-02 00:35:58,359 - INFO - Current URL: https://www.google.com/search?q=livescore+matches&sca_esv=5d812c3a7137edf1&ei=xC22aMbHOf3skdUPuuOLoAI&start=10&sa=N&sstk=Ac65TH6EbBnDqqmf63IFrMjTOh-bnUhhUOPwQ0jg4rD-bkq4XnRf64PPUsYfaSNWdDHfo3sQ5ba_Q8JHshWZKT67iE3-4WIvy7GUfA&ved=2ahUKEwjGuYmf3biPAxV9dqQEHbrxAiQQ8NMDegQIJxAW&biw=1440&bih=813&dpr=2
+2025-09-02 00:35:58,359 - WARNING - Current URL doesn't contain our keyword, reconstructing search...
+2025-09-02 00:35:58,359 - INFO - Navigating to: https://www.google.com/search?q=lescore+matches&start=20
+2025-09-02 00:36:04,113 - INFO - Checking for reCAPTCHA on current page...
+2025-09-02 00:36:09,343 - INFO - No reCAPTCHA detected on current page
+2025-09-02 00:36:12,380 - INFO - Performed 3 human-like scroll actions
+2025-09-02 00:36:12,380 - INFO - Searching page 3 of 20 for target domain...
+2025-09-02 00:36:12,517 - INFO - Target not found on page 3, trying next page...
+2025-09-02 00:36:12,519 - INFO - Current URL: https://www.google.com/search?q=lescore+matches&start=20
+2025-09-02 00:36:14,509 - INFO - Clicked next page button, moving to page 4
+2025-09-02 00:36:18,772 - INFO - Checking for reCAPTCHA on current page...
+2025-09-02 00:36:23,936 - INFO - No reCAPTCHA detected on current page
+2025-09-02 00:36:28,546 - INFO - Performed 4 human-like scroll actions
+2025-09-02 00:36:28,546 - INFO - Searching page 4 of 20 for target domain...
+2025-09-02 00:36:28,702 - INFO - Target not found on page 4, trying next page...
+2025-09-02 00:36:28,704 - INFO - Current URL: https://www.google.com/search?q=lescore+matches&sca_esv=5d812c3a7137edf1&ei=3i22aLjPH9aJkdUPvfSvmQU&start=30&sa=N&ved=2ahUKEwi4tqKr3biPAxXWRKQEHT36K1M4FBDw0wN6BAgLEBc&biw=1440&bih=813&dpr=2
+2025-09-02 00:36:32,915 - INFO - Clicked next page button, moving to page 5
+2025-09-02 00:36:35,997 - INFO - Checking for reCAPTCHA on current page...
+2025-09-02 00:36:41,226 - INFO - No reCAPTCHA detected on current page
+2025-09-02 00:36:44,655 - INFO - Performed 4 human-like scroll actions
+2025-09-02 00:36:44,655 - INFO - Searching page 5 of 20 for target domain...
+2025-09-02 00:36:44,815 - INFO - Target not found on page 5, trying next page...
+2025-09-02 00:36:44,818 - INFO - Current URL: https://www.google.com/search?q=lescore+matches&sca_esv=5d812c3a7137edf1&ei=7i22aIomppGR1Q-o4tfADQ&start=40&sa=N&ved=2ahUKEwiK1dOy3biPAxWmSKQEHSjxFdg4HhDw0wN6BAgJEBc&biw=1440&bih=813&dpr=2
+2025-09-02 00:36:46,821 - INFO - Clicked next page button, moving to page 6
+2025-09-02 00:36:50,131 - INFO - Checking for reCAPTCHA on current page...
+2025-09-02 00:36:55,351 - INFO - No reCAPTCHA detected on current page
+2025-09-02 00:37:00,447 - INFO - Performed 5 human-like scroll actions
+2025-09-02 00:37:00,448 - INFO - Searching page 6 of 20 for target domain...
+2025-09-02 00:37:00,592 - INFO - Target not found on page 6, trying next page...
+2025-09-02 00:37:00,594 - INFO - Current URL: https://www.google.com/search?q=lescore+matches&sca_esv=5d812c3a7137edf1&ei=_i22aPqfC9agkdUP45GewQ8&start=50&sa=N&ved=2ahUKEwj6lq-63biPAxVWUKQEHeOIJ_g4KBDw0wN6BAgKEBc&biw=1440&bih=813&dpr=2
+2025-09-02 00:37:02,746 - INFO - Clicked next page button, moving to page 7
+2025-09-02 00:37:07,131 - INFO - Checking for reCAPTCHA on current page...
+2025-09-02 00:37:12,351 - INFO - No reCAPTCHA detected on current page
+2025-09-02 00:37:16,655 - INFO - Performed 4 human-like scroll actions
+2025-09-02 00:37:16,655 - INFO - Searching page 7 of 20 for target domain...
+2025-09-02 00:37:16,810 - INFO - Target not found on page 7, trying next page...
+2025-09-02 00:37:16,812 - INFO - Current URL: https://www.google.com/search?q=lescore+matches&sca_esv=5d812c3a7137edf1&ei=Di62aMWaEdujkdUPo5ODqQ8&start=60&sa=N&ved=2ahUKEwjF2YXC3biPAxXbUaQEHaPJIPU4MhDw0wN6BAgKEBc&biw=1440&bih=813&dpr=2
+2025-09-02 00:37:18,784 - INFO - Clicked next page button, moving to page 8
+2025-09-02 00:37:23,782 - INFO - Checking for reCAPTCHA on current page...
+2025-09-02 00:37:28,987 - INFO - No reCAPTCHA detected on current page
+2025-09-02 00:37:33,787 - INFO - Performed 4 human-like scroll actions
+2025-09-02 00:37:33,788 - INFO - Searching page 8 of 20 for target domain...
+2025-09-02 00:37:33,965 - INFO - Target not found on page 8, trying next page...
+2025-09-02 00:37:33,968 - INFO - Current URL: https://www.google.com/search?q=lescore+matches&sca_esv=5d812c3a7137edf1&ei=Hi62aImABKqLkdUP1bS62Ag&start=70&sa=N&ved=2ahUKEwiJh8nJ3biPAxWqRaQEHVWaDos4PBDw0wN6BAgKEBc&biw=1440&bih=813&dpr=2
+2025-09-02 00:37:36,209 - INFO - Clicked next page button, moving to page 9
+2025-09-02 00:37:39,589 - INFO - Checking for reCAPTCHA on current page...
+2025-09-02 00:37:44,884 - INFO - No reCAPTCHA detected on current page
+2025-09-02 00:37:47,390 - INFO - Performed 3 human-like scroll actions
+2025-09-02 00:37:47,391 - INFO - Searching page 9 of 20 for target domain...
+2025-09-02 00:37:47,555 - INFO - Target not found on page 9, trying next page...
+2025-09-02 00:37:47,557 - INFO - Current URL: https://www.google.com/search?q=lescore+matches&sca_esv=5d812c3a7137edf1&ei=Li62aJSfEubtkdUPs5PR0QY&start=80&sa=N&ved=2ahUKEwiU7qfR3biPAxXmdqQEHbNJNGo4RhDw0wN6BAgKEBc&biw=1440&bih=813&dpr=2
+2025-09-02 00:37:50,481 - INFO - Clicked next page button, moving to page 10
+2025-09-02 00:37:55,366 - INFO - Checking for reCAPTCHA on current page...
+2025-09-02 00:38:00,569 - INFO - No reCAPTCHA detected on current page
+2025-09-02 00:38:06,801 - INFO - Performed 5 human-like scroll actions
+2025-09-02 00:38:06,802 - INFO - Searching page 10 of 20 for target domain...
+2025-09-02 00:38:06,972 - INFO - Target not found on page 10, trying next page...
+2025-09-02 00:38:06,974 - INFO - Current URL: https://www.google.com/search?q=lescore+matches&sca_esv=5d812c3a7137edf1&ei=Py62aJ_GG96tkdUPvq_x-Ak&start=90&sa=N&ved=2ahUKEwjf4b7Z3biPAxXeVqQEHb5XHJ84UBDw0wN6BAgJEBc&biw=1440&bih=813&dpr=2
+2025-09-02 00:38:09,530 - INFO - Clicked next page button, moving to page 11
+2025-09-02 00:38:14,074 - INFO - Checking for reCAPTCHA on current page...
+2025-09-02 00:38:19,315 - INFO - No reCAPTCHA detected on current page
+2025-09-02 00:38:25,407 - INFO - Performed 5 human-like scroll actions
+2025-09-02 00:38:25,408 - INFO - Searching page 11 of 20 for target domain...
+2025-09-02 00:38:25,580 - INFO - Target not found on page 11, trying next page...
+2025-09-02 00:38:25,582 - INFO - Current URL: https://www.google.com/search?q=lescore+matches&sca_esv=5d812c3a7137edf1&ei=TS62aJ39AeaIkdUPpZie4Ak&start=100&sa=N&ved=2ahUKEwjd1_vf3biPAxVmRKQEHSWMB5w4WhDw0wN6BAgLEBc&biw=1440&bih=813&dpr=2
+2025-09-02 00:38:28,068 - INFO - Clicked next page button, moving to page 12
+2025-09-02 00:38:31,362 - INFO - Checking for reCAPTCHA on current page...
+2025-09-02 00:38:36,561 - INFO - No reCAPTCHA detected on current page
+2025-09-02 00:38:40,123 - INFO - Performed 3 human-like scroll actions
+2025-09-02 00:38:40,125 - INFO - Searching page 12 of 20 for target domain...
+2025-09-02 00:38:40,303 - INFO - Target not found on page 12, trying next page...
+2025-09-02 00:38:40,305 - INFO - Current URL: https://www.google.com/search?q=lescore+matches&sca_esv=5d812c3a7137edf1&ei=YC62aPmnHLKgkdUPkqyFyQI&start=110&sa=N&ved=2ahUKEwj5153p3biPAxUyUKQEHRJWISk4ZBDw0wN6BAgJEBc&biw=1440&bih=813&dpr=2
+2025-09-02 00:38:42,784 - INFO - Clicked next page button, moving to page 13
+2025-09-02 00:38:45,995 - INFO - Checking for reCAPTCHA on current page...
+2025-09-02 00:38:51,205 - INFO - No reCAPTCHA detected on current page
+2025-09-02 00:38:57,440 - INFO - Performed 5 human-like scroll actions
+2025-09-02 00:38:57,442 - INFO - Searching page 13 of 20 for target domain...
+2025-09-02 00:38:57,604 - INFO - Target not found on page 13, trying next page...
+2025-09-02 00:38:57,607 - INFO - Current URL: https://www.google.com/search?q=lescore+matches&sca_esv=5d812c3a7137edf1&ei=cy62aK-IBKjr7M8PsK6SuQI&start=120&sa=N&ved=2ahUKEwjvjY3y3biPAxWoNfsDHTCXJCc4bhDw0wN6BAgKEBc&biw=1440&bih=813&dpr=2
+2025-09-02 00:38:59,597 - INFO - Clicked next page button, moving to page 14
+2025-09-02 00:39:03,196 - INFO - Checking for reCAPTCHA on current page...
+2025-09-02 00:39:08,399 - INFO - No reCAPTCHA detected on current page
+2025-09-02 00:39:12,152 - INFO - Performed 3 human-like scroll actions
+2025-09-02 00:39:12,152 - INFO - Searching page 14 of 20 for target domain...
+2025-09-02 00:39:12,332 - INFO - Target not found on page 14, trying next page...
+2025-09-02 00:39:12,334 - INFO - Current URL: https://www.google.com/search?q=lescore+matches&sca_esv=5d812c3a7137edf1&ei=gS62aJTFMMbX7M8PrNnFsAw&start=110&sa=N&ved=2ahUKEwjUiZD53biPAxXGK_sDHaxsEcY4eBDx0wN6BAgKEAI&biw=1440&bih=813&dpr=2
+2025-09-02 00:39:14,640 - INFO - Clicked next page button, moving to page 15
+2025-09-02 00:39:18,039 - INFO - Checking for reCAPTCHA on current page...
+2025-09-02 00:39:22,177 - ERROR - Error in captcha solving: Message: Profile not found.
+
+2025-09-02 00:39:22,178 - WARNING - Failed to solve captcha on search results page, continuing anyway...
+2025-09-02 00:39:22,181 - ERROR - Error during scrolling: Message: Profile not found.
+
+2025-09-02 00:39:22,181 - INFO - Searching page 15 of 20 for target domain...
+2025-09-02 00:39:22,183 - ERROR - Search results not loaded on page 15
+2025-09-02 00:39:22,183 - WARNING - Target domain 'lescore.net' not found in 20 pages of search results
+2025-09-02 00:39:22,183 - ERROR - Failed to find/visit target domain
+2025-09-02 00:39:22,184 - ERROR - Error closing browser: Message: Profile not found.
+
+2025-09-02 00:39:22,184 - ERROR - ✗ Proxy 209.99.134.52:5748:aawikmkk:tx1f1a2yr843 failed
+2025-09-02 00:39:22,184 - INFO - Waiting 12.1 seconds before next proxy...
+2025-09-02 00:39:40,241 - INFO - 2captcha solver initialized with API key: 56d4457439...
+2025-09-02 00:39:40,241 - INFO - Starting Google Search Bot
+2025-09-02 00:39:40,241 - INFO - Keyword: LeScore.net - نتائج كرة القدم المباشرة اليوم
+2025-09-02 00:39:40,241 - INFO - Target Domain: lescore.net
+2025-09-02 00:39:40,241 - INFO - Total Proxies: 3
+2025-09-02 00:39:40,241 - INFO - 
+--- Processing proxy 1/3 ---
+2025-09-02 00:39:40,241 - INFO - 
+==================================================
+2025-09-02 00:39:40,241 - INFO - Starting process with proxy: 209.99.134.59:5755:aawikmkk:tx1f1a2yr843
+2025-09-02 00:39:40,241 - INFO - ==================================================
+2025-09-02 00:39:40,241 - INFO - Testing proxy: 209.99.134.59:5755:aawikmkk:tx1f1a2yr843
+2025-09-02 00:39:40,241 - INFO - Testing proxy: 209.99.134.59:5755 (with auth)
+2025-09-02 00:39:41,230 - INFO - ✓ Proxy 209.99.134.59:5755 (with auth) is working. IP: 209.99.134.59
+2025-09-02 00:39:41,232 - INFO - Setting up Kameleo browser with proxy: 209.99.134.59:5755:aawikmkk:tx1f1a2yr843
+2025-09-02 00:39:41,233 - INFO - Kameleo client initialized on port 5050
+2025-09-02 00:39:41,233 - INFO - Loading available Chrome fingerprints...
+2025-09-02 00:39:42,165 - INFO - Loaded 25 unique Chrome fingerprints
+2025-09-02 00:39:42,165 - INFO - Creating Kameleo profile with proxy: 209.99.134.59:5755:aawikmkk:tx1f1a2yr843
+2025-09-02 00:39:42,165 - INFO - Selected unique fingerprint: c78b4d10cbf1c314e050452197ca0e36a7411757c82242a38f2adbcfa4eb3888 (1/25 used)
+2025-09-02 00:39:42,165 - INFO - Using authenticated proxy: 209.99.134.59:5755
+2025-09-02 00:39:42,278 - INFO - ✓ Kameleo profile created: 3a541918-d522-4eca-b0d4-0f0e9857f518 for proxy 209.99.134.59:5755
+2025-09-02 00:39:44,928 - INFO - Kameleo browser setup completed successfully
+2025-09-02 00:39:44,928 - INFO - Verifying proxy IP...
+2025-09-02 00:39:48,788 - INFO - Browser IP (via http://httpbin.org/ip): 209.99.134.59
+2025-09-02 00:39:49,222 - INFO - Real IP: 41.141.210.84
+2025-09-02 00:39:49,223 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-02 00:39:49,223 - INFO - Opening Google.com...
+2025-09-02 00:39:50,134 - INFO - Waiting 5 seconds...
+2025-09-02 00:39:55,137 - INFO - Checking for reCAPTCHA on current page...
+2025-09-02 00:40:00,367 - INFO - No reCAPTCHA detected on current page
+2025-09-02 00:40:00,377 - INFO - Typing keyword: LeScore.net - نتائج كرة القدم المباشرة اليوم
+2025-09-02 00:40:08,536 - INFO - Checking for reCAPTCHA on current page...
+2025-09-02 00:40:13,744 - INFO - No reCAPTCHA detected on current page
+2025-09-02 00:40:13,754 - INFO - Search results loaded
+2025-09-02 00:40:18,845 - INFO - Performed 5 human-like scroll actions
+2025-09-02 00:40:18,846 - INFO - Looking for domain: lescore.net
+2025-09-02 00:40:18,846 - INFO - Searching page 1 of 20 for target domain...
+2025-09-02 00:40:18,897 - INFO - ✓ Found target domain on page 1: https://lescore.net/en
+2025-09-02 00:40:26,453 - INFO - Successfully clicked on target website
+2025-09-02 00:40:29,466 - INFO - Checking for reCAPTCHA on current page...
+2025-09-02 00:40:29,482 - INFO - ✓ reCAPTCHA iframe detected
+2025-09-02 00:40:29,539 - WARNING - Could not detect reCAPTCHA sitekey
+2025-09-02 00:40:29,540 - ERROR - Cannot solve captcha without sitekey
+2025-09-02 00:40:29,540 - WARNING - Failed to solve captcha on target website, continuing anyway...
+2025-09-02 00:40:29,540 - INFO - Starting 1-minute realistic interaction session on target website...
+2025-09-02 00:40:29,540 - INFO - 🎭 Starting realistic website interaction (60 seconds)
+2025-09-02 00:40:29,540 - INFO - Phase 1: Initial page exploration...
+2025-09-02 00:40:31,038 - INFO - Smooth scrolled down 600 pixels
+2025-09-02 00:40:34,842 - INFO - Hovered over a element
+2025-09-02 00:40:36,319 - INFO - Hovered over button element
+2025-09-02 00:40:38,124 - INFO - Hovered over h1 element
+2025-09-02 00:40:38,203 - INFO - Hovered over 3 elements
+2025-09-02 00:40:41,148 - INFO - Smooth scrolled up 300 pixels
+2025-09-02 00:40:43,132 - INFO - Phase 2: Exploring navigation...
+2025-09-02 00:40:44,719 - INFO - Clicked navigation link: Home
+2025-09-02 00:40:47,797 - INFO - Successfully explored 1 navigation pages
+2025-09-02 00:40:47,800 - INFO - Phase 3: Content exploration...
+2025-09-02 00:40:49,311 - INFO - Smooth scrolled down 800 pixels
+2025-09-02 00:40:54,192 - INFO - Hovered over a element
+2025-09-02 00:40:56,174 - INFO - Hovered over button element
+2025-09-02 00:40:58,493 - INFO - Hovered over h1 element
+2025-09-02 00:40:58,554 - INFO - Hovered over 3 elements
+2025-09-02 00:41:00,966 - INFO - Smooth scrolled down 200 pixels
+2025-09-02 00:41:03,903 - INFO - Smooth scrolled down 200 pixels
+2025-09-02 00:41:06,400 - INFO - Smooth scrolled down 200 pixels
+2025-09-02 00:41:09,102 - INFO - Smooth scrolled up 400 pixels
+2025-09-02 00:41:11,080 - INFO - Phase 4: Final exploration...
+2025-09-02 00:41:12,648 - INFO - Clicked internal link: Ligue 1
+2025-09-02 00:41:16,509 - INFO - Smooth scrolled down 400 pixels
+2025-09-02 00:41:19,543 - INFO - Smooth scrolled down 102 pixels
+2025-09-02 00:41:22,151 - INFO - Smooth scrolled up 180 pixels
+2025-09-02 00:41:24,878 - INFO - Smooth scrolled down 209 pixels
+2025-09-02 00:41:27,382 - INFO - Smooth scrolled up 158 pixels
+2025-09-02 00:41:29,541 - INFO - ✅ Completed realistic interaction session (60.0 seconds)
+2025-09-02 00:41:29,542 - INFO - ✓ Process completed successfully!
+2025-09-02 00:41:29,547 - INFO - Browser closed
+2025-09-02 00:41:29,858 - INFO - Kameleo profile 3a541918-d522-4eca-b0d4-0f0e9857f518 stopped
+2025-09-02 00:41:29,868 - INFO - Kameleo profile 3a541918-d522-4eca-b0d4-0f0e9857f518 deleted
+2025-09-02 00:41:29,868 - INFO - ✓ Proxy 209.99.134.59:5755:aawikmkk:tx1f1a2yr843 completed successfully
+2025-09-02 00:41:29,868 - INFO - Waiting 5.7 seconds before next proxy...
+2025-09-02 00:41:35,580 - INFO - 
+--- Processing proxy 2/3 ---
+2025-09-02 00:41:35,582 - INFO - 
+==================================================
+2025-09-02 00:41:35,582 - INFO - Starting process with proxy: 50.114.243.85:6326:aawikmkk:tx1f1a2yr843
+2025-09-02 00:41:35,582 - INFO - ==================================================
+2025-09-02 00:41:35,582 - INFO - Testing proxy: 50.114.243.85:6326:aawikmkk:tx1f1a2yr843
+2025-09-02 00:41:35,582 - INFO - Testing proxy: 50.114.243.85:6326 (with auth)
+2025-09-02 00:41:36,327 - INFO - ✓ Proxy 50.114.243.85:6326 (with auth) is working. IP: 50.114.243.85
+2025-09-02 00:41:36,327 - INFO - Setting up Kameleo browser with proxy: 50.114.243.85:6326:aawikmkk:tx1f1a2yr843
+2025-09-02 00:41:36,327 - INFO - Creating Kameleo profile with proxy: 50.114.243.85:6326:aawikmkk:tx1f1a2yr843
+2025-09-02 00:41:36,327 - INFO - Selected unique fingerprint: cae8373482b6caecef7d3281eb65182f4830536b77304c9b9c86ea34ddb6c285 (2/25 used)
+2025-09-02 00:41:36,327 - INFO - Using authenticated proxy: 50.114.243.85:6326
+2025-09-02 00:41:36,702 - INFO - ✓ Kameleo profile created: ed20e8a6-3e59-4dc3-bd51-43d739df4d16 for proxy 50.114.243.85:6326
+2025-09-02 00:41:40,017 - INFO - Kameleo browser setup completed successfully
+2025-09-02 00:41:40,018 - INFO - Verifying proxy IP...
+2025-09-02 00:41:43,908 - INFO - Browser IP (via http://httpbin.org/ip): 50.114.243.85
+2025-09-02 00:41:44,157 - INFO - Real IP: 41.141.210.84
+2025-09-02 00:41:44,157 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-02 00:41:44,157 - INFO - Opening Google.com...
+2025-09-02 00:41:46,066 - INFO - Waiting 5 seconds...
+2025-09-02 00:41:51,067 - INFO - Checking for reCAPTCHA on current page...
+2025-09-02 00:41:56,286 - INFO - No reCAPTCHA detected on current page
+2025-09-02 00:41:56,300 - INFO - Typing keyword: LeScore.net - نتائج كرة القدم المباشرة اليوم
+2025-09-02 00:42:05,426 - INFO - Checking for reCAPTCHA on current page...
+2025-09-02 00:42:10,823 - INFO - No reCAPTCHA detected on current page
+2025-09-02 00:42:10,834 - INFO - Search results loaded
+2025-09-02 00:42:15,446 - INFO - Performed 5 human-like scroll actions
+2025-09-02 00:42:15,447 - INFO - Looking for domain: lescore.net
+2025-09-02 00:42:15,447 - INFO - Searching page 1 of 20 for target domain...
+2025-09-02 00:42:15,484 - INFO - ✓ Found target domain on page 1: https://lescore.net/en
+2025-09-02 00:42:19,250 - INFO - Successfully clicked on target website
+2025-09-02 00:42:22,252 - INFO - Checking for reCAPTCHA on current page...
+2025-09-02 00:42:22,270 - INFO - ✓ reCAPTCHA iframe detected
+2025-09-02 00:42:22,320 - WARNING - Could not detect reCAPTCHA sitekey
+2025-09-02 00:42:22,320 - ERROR - Cannot solve captcha without sitekey
+2025-09-02 00:42:22,320 - WARNING - Failed to solve captcha on target website, continuing anyway...
+2025-09-02 00:42:22,321 - INFO - Starting 1-minute realistic interaction session on target website...
+2025-09-02 00:42:22,321 - INFO - 🎭 Starting realistic website interaction (60 seconds)
+2025-09-02 00:42:22,321 - INFO - Phase 1: Initial page exploration...
+2025-09-02 00:42:23,355 - INFO - Smooth scrolled down 600 pixels
+2025-09-02 00:42:27,754 - INFO - Hovered over a element
+2025-09-02 00:42:29,312 - INFO - Hovered over button element
+2025-09-02 00:42:31,475 - INFO - Hovered over h1 element
+2025-09-02 00:42:31,555 - INFO - Hovered over 3 elements
+2025-09-02 00:42:34,191 - INFO - Smooth scrolled up 300 pixels
+2025-09-02 00:42:35,254 - INFO - Phase 2: Exploring navigation...
+2025-09-02 00:42:37,232 - INFO - Clicked navigation link: Leagues
+2025-09-02 00:42:39,779 - INFO - Navigated to new page: https://lescore.net/en#google_vignette
+2025-09-02 00:42:40,991 - INFO - Smooth scrolled down 400 pixels
+2025-09-02 00:42:44,795 - INFO - Hovered over a element
+2025-09-02 00:42:46,978 - INFO - Hovered over h3 element
+2025-09-02 00:42:48,409 - INFO - Hovered over img element
+2025-09-02 00:42:48,442 - INFO - Hovered over 3 elements
+2025-09-02 00:42:49,508 - INFO - Smooth scrolled up 200 pixels
+2025-09-02 00:42:51,959 - INFO - Returned to previous page
+2025-09-02 00:42:51,960 - INFO - Successfully explored 1 navigation pages
+2025-09-02 00:42:51,960 - INFO - Phase 3: Content exploration...
+2025-09-02 00:42:53,186 - INFO - Smooth scrolled down 800 pixels
+2025-09-02 00:42:57,217 - INFO - Hovered over a element
+2025-09-02 00:42:58,987 - INFO - Hovered over button element
+2025-09-02 00:43:00,881 - INFO - Hovered over h1 element
+2025-09-02 00:43:00,951 - INFO - Hovered over 3 elements
+2025-09-02 00:43:04,214 - INFO - Smooth scrolled down 200 pixels
+2025-09-02 00:43:07,033 - INFO - Smooth scrolled down 200 pixels
+2025-09-02 00:43:10,511 - INFO - Smooth scrolled down 200 pixels
+2025-09-02 00:43:13,912 - INFO - Smooth scrolled up 400 pixels
+2025-09-02 00:43:15,577 - INFO - Phase 4: Final exploration...
+2025-09-02 00:43:17,366 - INFO - Clicked internal link: News
+2025-09-02 00:43:21,025 - INFO - Smooth scrolled down 400 pixels
+2025-09-02 00:43:22,749 - INFO - ✅ Completed realistic interaction session (60.4 seconds)
+2025-09-02 00:43:22,749 - INFO - ✓ Process completed successfully!
+2025-09-02 00:43:22,768 - INFO - Browser closed
+2025-09-02 00:43:22,962 - INFO - Kameleo profile ed20e8a6-3e59-4dc3-bd51-43d739df4d16 stopped
+2025-09-02 00:43:22,974 - INFO - Kameleo profile ed20e8a6-3e59-4dc3-bd51-43d739df4d16 deleted
+2025-09-02 00:43:22,974 - INFO - ✓ Proxy 50.114.243.85:6326:aawikmkk:tx1f1a2yr843 completed successfully
+2025-09-02 00:43:22,974 - INFO - Waiting 12.9 seconds before next proxy...
+2025-09-02 00:43:35,862 - INFO - 
+--- Processing proxy 3/3 ---
+2025-09-02 00:43:35,862 - INFO - 
+==================================================
+2025-09-02 00:43:35,863 - INFO - Starting process with proxy: 108.165.161.130:5871:aawikmkk:tx1f1a2yr84
+2025-09-02 00:43:35,864 - INFO - ==================================================
+2025-09-02 00:43:35,864 - INFO - Testing proxy: 108.165.161.130:5871:aawikmkk:tx1f1a2yr84
+2025-09-02 00:43:35,864 - INFO - Testing proxy: 108.165.161.130:5871 (with auth)
+2025-09-02 00:43:36,339 - WARNING - Proxy 108.165.161.130:5871 (with auth) returned status code: 407
+2025-09-02 00:43:36,339 - ERROR - Proxy 108.165.161.130:5871:aawikmkk:tx1f1a2yr84 is not working, skipping...
+2025-09-02 00:43:36,339 - ERROR - ✗ Proxy 108.165.161.130:5871:aawikmkk:tx1f1a2yr84 failed
+2025-09-02 00:43:36,339 - INFO - 
+==================================================
+2025-09-02 00:43:36,339 - INFO - FINAL RESULTS:
+2025-09-02 00:43:36,339 - INFO - Total proxies tested: 3
+2025-09-02 00:43:36,339 - INFO - Successful runs: 2
+2025-09-02 00:43:36,339 - INFO - Failed runs: 1
+2025-09-02 00:43:36,339 - INFO - ==================================================
