@@ -1,0 +1,20 @@
+2025-09-02 00:58:06,627 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.110.12:8080
+2025-09-02 00:58:06,627 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-02 00:58:07,298 - INFO - 127.0.0.1 - - [02/Sep/2025 00:58:07] "GET /socket.io/?EIO=4&transport=polling&t=Pa7jtEy HTTP/1.1" 200 -
+2025-09-02 00:58:07,314 - INFO - Client connected to WebSocket
+2025-09-02 00:58:07,314 - INFO - 127.0.0.1 - - [02/Sep/2025 00:58:07] "POST /socket.io/?EIO=4&transport=polling&t=Pa7jtF7&sid=X3CUShgeShFMuufsAAAA HTTP/1.1" 200 -
+2025-09-02 00:58:07,315 - INFO - 127.0.0.1 - - [02/Sep/2025 00:58:07] "GET /socket.io/?EIO=4&transport=polling&t=Pa7jtF9&sid=X3CUShgeShFMuufsAAAA HTTP/1.1" 200 -
+2025-09-02 00:58:09,606 - INFO - 127.0.0.1 - - [02/Sep/2025 00:58:09] "GET / HTTP/1.1" 200 -
+2025-09-02 00:58:09,887 - INFO - 127.0.0.1 - - [02/Sep/2025 00:58:09] "GET /api/status HTTP/1.1" 200 -
+2025-09-02 00:58:09,887 - INFO - 127.0.0.1 - - [02/Sep/2025 00:58:09] "GET /api/logs HTTP/1.1" 200 -
+2025-09-02 00:58:09,888 - INFO - 127.0.0.1 - - [02/Sep/2025 00:58:09] "GET /socket.io/?EIO=4&transport=polling&t=Pa7jttM HTTP/1.1" 200 -
+2025-09-02 00:58:09,891 - INFO - 127.0.0.1 - - [02/Sep/2025 00:58:09] "GET /api/results HTTP/1.1" 200 -
+2025-09-02 00:58:09,901 - INFO - Client connected to WebSocket
+2025-09-02 00:58:09,901 - INFO - 127.0.0.1 - - [02/Sep/2025 00:58:09] "POST /socket.io/?EIO=4&transport=polling&t=Pa7jtte&sid=q6AP61gTBrTtdRChAAAC HTTP/1.1" 200 -
+2025-09-02 00:58:09,901 - INFO - 127.0.0.1 - - [02/Sep/2025 00:58:09] "GET /socket.io/?EIO=4&transport=polling&t=Pa7jttf&sid=q6AP61gTBrTtdRChAAAC HTTP/1.1" 200 -
+2025-09-02 00:58:09,932 - INFO - 127.0.0.1 - - [02/Sep/2025 00:58:09] "GET /socket.io/?EIO=4&transport=polling&t=Pa7jtu5&sid=q6AP61gTBrTtdRChAAAC HTTP/1.1" 200 -
+2025-09-02 00:58:12,464 - INFO - Client disconnected from WebSocket
+2025-09-02 00:58:12,465 - INFO - 127.0.0.1 - - [02/Sep/2025 00:58:12] "GET /socket.io/?EIO=4&transport=websocket&sid=X3CUShgeShFMuufsAAAA HTTP/1.1" 200 -

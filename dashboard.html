@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEO Bot Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+      defer
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gray-50 min-h-screen" x-data="seoBot()">
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+          <div class="flex items-center">
+            <i class="fas fa-search text-blue-600 text-2xl mr-3"></i>
+            <h1 class="text-2xl font-bold text-gray-900">SEO Bot Dashboard</h1>
+          </div>
+          <div class="flex items-center space-x-4">
+            <div class="flex items-center text-sm text-gray-500">
+              <i class="fas fa-clock mr-1"></i>
+              <span x-text="currentTime"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Card 1: Configuration -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <div class="flex items-center mb-6">
+            <i class="fas fa-cog text-blue-600 text-xl mr-3"></i>
+            <h2 class="text-xl font-semibold text-gray-900">Configuration</h2>
+          </div>
+
+          <form @submit.prevent="startBot()" class="space-y-4">
+            <!-- Keyword -->
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2"
+                >Keyword</label
+              >
+              <input
+                type="text"
+                x-model="config.keyword"
+                placeholder="Enter search keyword..."
+                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                required
+              />
+            </div>
+
+            <!-- Domain -->
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2"
+                >Domain</label
+              >
+              <input
+                type="text"
+                x-model="config.domain"
+                placeholder="example.com"
+                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                required
+              />
+            </div>
+
+            <!-- Max Pages -->
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2"
+                >Max Pages to Search (1-30)</label
+              >
+              <input
+                type="number"
+                x-model="config.maxPages"
+                min="1"
+                max="30"
+                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                required
+              />
+            </div>
+
+            <!-- Proxy List -->
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2"
+                >Proxy List</label
+              >
+              <div class="space-y-2">
+                <div class="flex space-x-2">
+                  <input
+                    type="file"
+                    @change="handleFileUpload($event)"
+                    accept=".txt"
+                    class="hidden"
+                    x-ref="fileInput"
+                  />
+                  <button
+                    type="button"
+                    @click="$refs.fileInput.click()"
+                    class="px-4 py-2 bg-gray-100 text-gray-700 rounded-md hover:bg-gray-200 transition-colors"
+                  >
+                    <i class="fas fa-upload mr-2"></i>Upload File
+                  </button>
+                  <button
+                    type="button"
+                    @click="clearProxies()"
+                    class="px-4 py-2 bg-red-100 text-red-700 rounded-md hover:bg-red-200 transition-colors"
+                  >
+                    <i class="fas fa-trash mr-2"></i>Clear
+                  </button>
+                </div>
+                <textarea
+                  x-model="config.proxyList"
+                  placeholder="Format: ip:port:username:password (one per line)"
+                  rows="4"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm font-mono"
+                ></textarea>
+                <p class="text-xs text-gray-500">
+                  <i class="fas fa-info-circle mr-1"></i>
+                  Format: ip:port:username:password (one per line)
+                </p>
+              </div>
+            </div>
+
+            <!-- Control Buttons -->
+            <div class="flex space-x-2">
+              <button
+                type="submit"
+                :disabled="isRunning"
+                :class="isRunning ? 'bg-gray-400 cursor-not-allowed' : 'bg-blue-600 hover:bg-blue-700'"
+                class="flex-1 py-3 px-4 text-white font-medium rounded-md transition-colors"
+              >
+                <i
+                  :class="isRunning ? 'fas fa-spinner fa-spin' : 'fas fa-play'"
+                  class="mr-2"
+                ></i>
+                <span
+                  x-text="isRunning ? 'Running...' : 'Start SEO Bot'"
+                ></span>
+              </button>
+
+              <button
+                type="button"
+                @click="stopBot()"
+                :disabled="!isRunning"
+                :class="!isRunning ? 'bg-gray-400 cursor-not-allowed' : 'bg-red-600 hover:bg-red-700'"
+                class="px-4 py-3 text-white font-medium rounded-md transition-colors"
+              >
+                <i class="fas fa-stop mr-2"></i>Stop
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Card 2: Status -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <div class="flex items-center mb-6">
+            <i class="fas fa-chart-line text-green-600 text-xl mr-3"></i>
+            <h2 class="text-xl font-semibold text-gray-900">Status</h2>
+          </div>
+
+          <div class="space-y-4">
+            <div
+              class="flex items-center justify-between p-4 bg-gray-50 rounded-lg"
+            >
+              <div class="flex items-center">
+                <div
+                  :class="isRunning ? 'bg-green-500' : 'bg-gray-400'"
+                  class="w-3 h-3 rounded-full mr-3"
+                ></div>
+                <span
+                  class="font-medium"
+                  x-text="isRunning ? 'Running' : 'Idle'"
+                ></span>
+              </div>
+              <span class="text-sm text-gray-500" x-text="lastUpdate"></span>
+            </div>
+
+            <div class="text-center py-8">
+              <div
+                class="text-3xl font-bold text-gray-900 mb-2"
+                x-text="status.message"
+              ></div>
+              <div class="text-sm text-gray-500">
+                Found domain in <span x-text="status.found"></span>/<span
+                  x-text="status.total"
+                ></span>
+                sessions
+              </div>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="w-full bg-gray-200 rounded-full h-2">
+              <div
+                class="bg-blue-600 h-2 rounded-full transition-all duration-300"
+                :style="`width: ${status.total > 0 ? (status.completed / status.total) * 100 : 0}%`"
+              ></div>
+            </div>
+            <div class="text-xs text-gray-500 text-center">
+              <span x-text="status.completed"></span> of
+              <span x-text="status.total"></span> proxies completed
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Live Logs -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <div class="flex items-center mb-6">
+            <i class="fas fa-terminal text-purple-600 text-xl mr-3"></i>
+            <h2 class="text-xl font-semibold text-gray-900">Live Logs</h2>
+            <button
+              @click="clearLogs()"
+              class="ml-auto px-3 py-1 text-xs bg-gray-100 text-gray-600 rounded hover:bg-gray-200 transition-colors"
+            >
+              <i class="fas fa-trash mr-1"></i>Clear
+            </button>
+          </div>
+
+          <div
+            class="bg-gray-900 rounded-lg p-4 h-64 overflow-y-auto font-mono text-sm"
+          >
+            <template x-for="log in logs" :key="log.id">
+              <div class="mb-1">
+                <span class="text-gray-400" x-text="log.time"></span>
+                <span
+                  :class="getLogColor(log.type)"
+                  x-text="log.message"
+                ></span>
+              </div>
+            </template>
+            <div
+              x-show="logs.length === 0"
+              class="text-gray-500 text-center py-8"
+            >
+              No logs yet. Start the bot to see activity.
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Results Report -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <div class="flex items-center mb-6">
+            <i class="fas fa-chart-bar text-orange-600 text-xl mr-3"></i>
+            <h2 class="text-xl font-semibold text-gray-900">Results Report</h2>
+            <button
+              @click="exportResults()"
+              class="ml-auto px-3 py-1 text-xs bg-blue-100 text-blue-600 rounded hover:bg-blue-200 transition-colors"
+            >
+              <i class="fas fa-download mr-1"></i>Export
+            </button>
+          </div>
+
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm">
+              <thead>
+                <tr class="border-b border-gray-200">
+                  <th class="text-left py-2 px-2 font-medium text-gray-700">
+                    Status
+                  </th>
+                  <th class="text-left py-2 px-2 font-medium text-gray-700">
+                    Keyword
+                  </th>
+                  <th class="text-left py-2 px-2 font-medium text-gray-700">
+                    Proxy
+                  </th>
+                  <th class="text-left py-2 px-2 font-medium text-gray-700">
+                    Page
+                  </th>
+                  <th class="text-left py-2 px-2 font-medium text-gray-700">
+                    Position
+                  </th>
+                  <th class="text-left py-2 px-2 font-medium text-gray-700">
+                    Time
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <template x-for="result in results" :key="result.id">
+                  <tr class="border-b border-gray-100 hover:bg-gray-50">
+                    <td class="py-2 px-2">
+                      <span
+                        :class="result.status === 'found' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'"
+                        class="px-2 py-1 rounded-full text-xs font-medium"
+                        x-text="result.status"
+                      ></span>
+                    </td>
+                    <td
+                      class="py-2 px-2 text-gray-900"
+                      x-text="result.keyword"
+                    ></td>
+                    <td
+                      class="py-2 px-2 text-gray-600 font-mono text-xs"
+                      x-text="result.proxy"
+                    ></td>
+                    <td
+                      class="py-2 px-2 text-gray-600"
+                      x-text="result.page"
+                    ></td>
+                    <td
+                      class="py-2 px-2 text-gray-600"
+                      x-text="result.position || '-'"
+                    ></td>
+                    <td
+                      class="py-2 px-2 text-gray-500 text-xs"
+                      x-text="result.time"
+                    ></td>
+                  </tr>
+                </template>
+              </tbody>
+            </table>
+            <div
+              x-show="results.length === 0"
+              class="text-gray-500 text-center py-8"
+            >
+              No results yet. Run the bot to see results here.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function seoBot() {
+        return {
+          // Configuration
+          config: {
+            keyword: "",
+            domain: "",
+            maxPages: 3,
+            proxyList: "",
+          },
+
+          // Status
+          isRunning: false,
+          status: {
+            message: "Bot ready to start",
+            found: 0,
+            total: 0,
+            completed: 0,
+          },
+
+          // Logs
+          logs: [],
+
+          // Results
+          results: [],
+
+          // Time
+          currentTime: "",
+          lastUpdate: "",
+
+          // Socket connection
+          socket: null,
+
+          init() {
+            this.updateTime();
+            setInterval(() => this.updateTime(), 1000);
+
+            // Initialize WebSocket connection
+            this.initSocket();
+
+            // Load initial data
+            this.loadStatus();
+            this.loadLogs();
+            this.loadResults();
+
+            this.addLog("info", "Dashboard connected to server");
+            this.lastUpdate = new Date().toLocaleTimeString();
+          },
+
+          initSocket() {
+            this.socket = io();
+
+            this.socket.on("connect", () => {
+              console.log("Connected to server");
+              this.addLog("success", "Connected to server");
+            });
+
+            this.socket.on("disconnect", () => {
+              console.log("Disconnected from server");
+              this.addLog("warning", "Disconnected from server");
+            });
+
+            this.socket.on("status_update", (data) => {
+              this.status = data;
+              this.isRunning = data.is_running;
+              this.lastUpdate = new Date().toLocaleTimeString();
+            });
+
+            this.socket.on("new_log", (log) => {
+              this.logs.unshift(log);
+              if (this.logs.length > 100) {
+                this.logs = this.logs.slice(0, 100);
+              }
+            });
+
+            this.socket.on("new_result", (result) => {
+              this.results.unshift(result);
+            });
+
+            this.socket.on("logs_update", (logs) => {
+              this.logs = logs;
+            });
+
+            this.socket.on("results_update", (results) => {
+              this.results = results;
+            });
+          },
+
+          async loadStatus() {
+            try {
+              const response = await fetch("/api/status");
+              const data = await response.json();
+              this.status = data;
+              this.isRunning = data.is_running;
+            } catch (error) {
+              console.error("Error loading status:", error);
+            }
+          },
+
+          async loadLogs() {
+            try {
+              const response = await fetch("/api/logs");
+              const data = await response.json();
+              this.logs = data;
+            } catch (error) {
+              console.error("Error loading logs:", error);
+            }
+          },
+
+          async loadResults() {
+            try {
+              const response = await fetch("/api/results");
+              const data = await response.json();
+              this.results = data;
+            } catch (error) {
+              console.error("Error loading results:", error);
+            }
+          },
+
+          updateTime() {
+            this.currentTime = new Date().toLocaleTimeString();
+          },
+
+          async startBot() {
+            if (this.isRunning) return;
+
+            // Validate inputs
+            if (!this.config.keyword || !this.config.domain) {
+              this.addLog("error", "Please fill in keyword and domain");
+              return;
+            }
+
+            const proxies = this.config.proxyList
+              .split("\n")
+              .filter((p) => p.trim());
+            if (proxies.length === 0) {
+              this.addLog("error", "Please add at least one proxy");
+              return;
+            }
+
+            try {
+              const response = await fetch("/api/start", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                  keyword: this.config.keyword,
+                  domain: this.config.domain,
+                  maxPages: this.config.maxPages,
+                  proxyList: this.config.proxyList,
+                }),
+              });
+
+              const data = await response.json();
+
+              if (response.ok) {
+                this.addLog("success", "Bot started successfully");
+              } else {
+                this.addLog("error", data.error || "Failed to start bot");
+              }
+            } catch (error) {
+              this.addLog("error", `Error starting bot: ${error.message}`);
+            }
+          },
+
+          async stopBot() {
+            if (!this.isRunning) return;
+
+            try {
+              const response = await fetch("/api/stop", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+              });
+
+              const data = await response.json();
+
+              if (response.ok) {
+                this.addLog("info", "Bot stopped by user");
+              } else {
+                this.addLog("error", data.error || "Failed to stop bot");
+              }
+            } catch (error) {
+              this.addLog("error", `Error stopping bot: ${error.message}`);
+            }
+          },
+
+          handleFileUpload(event) {
+            const file = event.target.files[0];
+            if (file) {
+              const reader = new FileReader();
+              reader.onload = (e) => {
+                this.config.proxyList = e.target.result;
+                this.addLog("info", `Loaded ${file.name} with proxy list`);
+              };
+              reader.readAsText(file);
+            }
+          },
+
+          clearProxies() {
+            this.config.proxyList = "";
+            this.addLog("info", "Proxy list cleared");
+          },
+
+          addLog(type, message) {
+            const log = {
+              id: Date.now(),
+              type: type,
+              message: message,
+              time: new Date().toLocaleTimeString(),
+            };
+
+            this.logs.unshift(log);
+
+            // Keep only last 100 logs
+            if (this.logs.length > 100) {
+              this.logs = this.logs.slice(0, 100);
+            }
+          },
+
+          clearLogs() {
+            this.logs = [];
+          },
+
+          getLogColor(type) {
+            const colors = {
+              info: "text-blue-400",
+              success: "text-green-400",
+              warning: "text-yellow-400",
+              error: "text-red-400",
+            };
+            return colors[type] || "text-gray-400";
+          },
+
+          exportResults() {
+            if (this.results.length === 0) {
+              this.addLog("warning", "No results to export");
+              return;
+            }
+
+            const csv = [
+              ["Status", "Keyword", "Proxy", "Page", "Position", "Time"],
+              ...this.results.map((r) => [
+                r.status,
+                r.keyword,
+                r.proxy,
+                r.page,
+                r.position || "",
+                r.time,
+              ]),
+            ]
+              .map((row) => row.join(","))
+              .join("\n");
+
+            const blob = new Blob([csv], { type: "text/csv" });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = `seo-bot-results-${
+              new Date().toISOString().split("T")[0]
+            }.csv`;
+            a.click();
+            window.URL.revokeObjectURL(url);
+
+            this.addLog("success", "Results exported to CSV");
+          },
+        };
+      }
+    </script>
+  </body>
+</html>
