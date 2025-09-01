@@ -1,0 +1,26 @@
+2025-09-01 04:06:07,307 - INFO - Starting Google Search Bot
+2025-09-01 04:06:07,308 - INFO - Keyword: fotmob
+2025-09-01 04:06:07,309 - INFO - Target Domain: fotmob.com
+2025-09-01 04:06:07,309 - INFO - Total Proxies: 1
+2025-09-01 04:06:07,309 - INFO - 
+--- Processing proxy 1/1 ---
+2025-09-01 04:06:07,309 - INFO - 
+==================================================
+2025-09-01 04:06:07,309 - INFO - Starting process with proxy: 23.95.150.145:6114:cektxxxi:ys0pz41bp7tp
+2025-09-01 04:06:07,309 - INFO - ==================================================
+2025-09-01 04:06:07,309 - INFO - Testing proxy: 23.95.150.145:6114:cektxxxi:ys0pz41bp7tp
+2025-09-01 04:06:07,309 - INFO - Testing proxy: 23.95.150.145:6114 (with auth)
+2025-09-01 04:06:08,056 - INFO - ✓ Proxy 23.95.150.145:6114 (with auth) is working. IP: 23.95.150.145
+2025-09-01 04:06:08,057 - INFO - Setting up Kameleo browser with proxy: 23.95.150.145:6114:cektxxxi:ys0pz41bp7tp
+2025-09-01 04:06:08,058 - INFO - Kameleo client initialized on port 5050
+2025-09-01 04:06:08,058 - INFO - Creating Kameleo profile with proxy: 23.95.150.145:6114:cektxxxi:ys0pz41bp7tp
+2025-09-01 04:06:09,136 - INFO - Selected fingerprint: 594ffb855387c2e9160bcd76df45492dcecb126aa6cf4e36b66ef24c57bec056
+2025-09-01 04:06:09,136 - INFO - Using authenticated proxy: 23.95.150.145:6114
+2025-09-01 04:06:09,364 - INFO - Kameleo profile created: a1382525-77fd-4f36-bd0f-0a835020cdf1
+2025-09-01 04:06:24,508 - INFO - Kameleo browser setup completed successfully
+2025-09-01 04:06:24,508 - INFO - Verifying proxy IP...
+2025-09-01 04:06:28,807 - INFO - Browser IP (via http://httpbin.org/ip): 23.95.150.145
+2025-09-01 04:06:29,060 - INFO - Real IP: 105.154.213.28
+2025-09-01 04:06:29,060 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-01 04:06:29,060 - INFO - Opening Google.com...
+2025-09-01 04:06:33,309 - INFO - Waiting 5 seconds...
