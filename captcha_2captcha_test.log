@@ -1,0 +1,44 @@
+2025-09-02 00:21:38,445 - INFO - 2captcha solver initialized with API key: 56d4457439...
+2025-09-02 00:21:38,446 - INFO - 🚀 Starting 2captcha + Kameleo Integration Test
+2025-09-02 00:21:38,446 - INFO - ============================================================
+2025-09-02 00:21:38,700 - INFO - 2captcha account balance: $2.6713
+2025-09-02 00:21:38,700 - INFO - Setting up Kameleo browser...
+2025-09-02 00:21:38,700 - INFO - Kameleo client initialized on port 5050
+2025-09-02 00:21:38,700 - INFO - Creating Kameleo profile for captcha testing...
+2025-09-02 00:21:41,719 - INFO - Using fingerprint: 869ab862dbd1ce34edb2fc4b8fba7a4078e868b63c3f416a9995bcc9cab76965
+2025-09-02 00:21:41,822 - INFO - ✓ Kameleo profile created: 1ca1222d-a1ad-4e63-8b31-d57bc80ac197
+2025-09-02 00:21:45,130 - INFO - Kameleo profile 1ca1222d-a1ad-4e63-8b31-d57bc80ac197 started
+2025-09-02 00:21:45,495 - INFO - ✓ Kameleo browser setup completed successfully
+2025-09-02 00:21:45,496 - INFO - Browser fingerprint and profile loaded successfully
+2025-09-02 00:21:45,496 - INFO - 
+🧩 Starting reCAPTCHA solving test...
+2025-09-02 00:21:45,496 - INFO - ============================================================
+2025-09-02 00:21:45,496 - INFO - TESTING RECAPTCHA ON GOOGLE DEMO PAGE
+2025-09-02 00:21:45,496 - INFO - ============================================================
+2025-09-02 00:21:45,496 - INFO - Navigating to: https://www.google.com/recaptcha/api2/demo
+2025-09-02 00:21:48,960 - INFO - Page title: ReCAPTCHA demo
+2025-09-02 00:21:48,961 - INFO - Waiting for reCAPTCHA to load...
+2025-09-02 00:21:48,975 - INFO - ✓ reCAPTCHA iframe detected
+2025-09-02 00:21:48,999 - INFO - Found sitekey via [data-sitekey]: 6Le-wvkSAAAAAPBMRTvw0Q4Muexq9bi0DJwx_mJ-
+2025-09-02 00:21:49,003 - INFO - Solving reCAPTCHA for URL: https://www.google.com/recaptcha/api2/demo
+2025-09-02 00:21:49,004 - INFO - Using sitekey: 6Le-wvkSAAAAAPBMRTvw0Q4Muexq9bi0DJwx_mJ-
+2025-09-02 00:21:49,004 - INFO - Submitting captcha to 2captcha service...
+2025-09-02 00:21:49,004 - INFO - This may take 30-120 seconds...
+2025-09-02 00:24:23,217 - INFO - ✓ Captcha solved in 154.2 seconds!
+2025-09-02 00:24:23,218 - INFO - Solution token: 0cAFcWeA56GTwwh-z1ynX2rvk81hLhteimCuynCsfnMKdv_eqX...
+2025-09-02 00:24:23,218 - INFO - Injecting captcha solution into page...
+2025-09-02 00:24:25,272 - INFO - ✓ Captcha solution successfully injected
+2025-09-02 00:24:25,272 - INFO - ✓ reCAPTCHA solved successfully!
+2025-09-02 00:24:25,272 - INFO - Attempting to submit the form...
+2025-09-02 00:24:25,616 - INFO - ✓ Clicked submit button
+2025-09-02 00:24:30,647 - INFO - 🎉 SUCCESS! Form submitted successfully - Verification Success found!
+2025-09-02 00:24:30,648 - INFO - 
+============================================================
+2025-09-02 00:24:30,648 - INFO - TEST RESULTS SUMMARY
+2025-09-02 00:24:30,648 - INFO - ============================================================
+2025-09-02 00:24:30,648 - INFO - reCAPTCHA Solving Test: ✅ PASSED
+2025-09-02 00:24:30,648 - INFO - 🎉 ALL TESTS PASSED!
+2025-09-02 00:24:30,648 - INFO - Your 2captcha + Kameleo integration is working perfectly!
+2025-09-02 00:24:30,651 - INFO - Browser closed
+2025-09-02 00:24:31,574 - INFO - Kameleo profile 1ca1222d-a1ad-4e63-8b31-d57bc80ac197 stopped
+2025-09-02 00:24:31,588 - INFO - Kameleo profile 1ca1222d-a1ad-4e63-8b31-d57bc80ac197 deleted
