@@ -839,3 +839,63 @@ Stacktrace:
 2025-09-01 23:36:03,875 - INFO - Successful runs: 0
 2025-09-01 23:36:03,875 - INFO - Failed runs: 1
 2025-09-01 23:36:03,875 - INFO - ==================================================
+2025-09-02 00:30:29,050 - INFO - 2captcha solver initialized with API key: 56d4457439...
+2025-09-02 00:30:29,051 - INFO - Starting Google Search Bot
+2025-09-02 00:30:29,052 - INFO - Keyword: lescore
+2025-09-02 00:30:29,052 - INFO - Target Domain: lescore.net
+2025-09-02 00:30:29,052 - INFO - Total Proxies: 1
+2025-09-02 00:30:29,052 - INFO - 
+--- Processing proxy 1/1 ---
+2025-09-02 00:30:29,052 - INFO - 
+==================================================
+2025-09-02 00:30:29,052 - INFO - Starting process with proxy: 206.41.168.88:6753:aawikmkk:tx1f1a2yr843
+2025-09-02 00:30:29,052 - INFO - ==================================================
+2025-09-02 00:30:29,052 - INFO - Testing proxy: 206.41.168.88:6753:aawikmkk:tx1f1a2yr843
+2025-09-02 00:30:29,052 - INFO - Testing proxy: 206.41.168.88:6753 (with auth)
+2025-09-02 00:30:29,732 - INFO - ✓ Proxy 206.41.168.88:6753 (with auth) is working. IP: 206.41.168.88
+2025-09-02 00:30:29,733 - INFO - Setting up Kameleo browser with proxy: 206.41.168.88:6753:aawikmkk:tx1f1a2yr843
+2025-09-02 00:30:29,734 - INFO - Kameleo client initialized on port 5050
+2025-09-02 00:30:29,734 - INFO - Loading available Chrome fingerprints...
+2025-09-02 00:30:30,765 - INFO - Loaded 25 unique Chrome fingerprints
+2025-09-02 00:30:30,765 - INFO - Creating Kameleo profile with proxy: 206.41.168.88:6753:aawikmkk:tx1f1a2yr843
+2025-09-02 00:30:30,765 - INFO - Selected unique fingerprint: bfe67f4b248fc59afd21f4c47955d7b050fda3cd17ff4f7588a62e34bb1c45c7 (1/25 used)
+2025-09-02 00:30:30,765 - INFO - Using authenticated proxy: 206.41.168.88:6753
+2025-09-02 00:30:30,880 - INFO - ✓ Kameleo profile created: 7c9bd430-38b2-4045-84a6-36d390e09430 for proxy 206.41.168.88:6753
+2025-09-02 00:30:34,294 - INFO - Kameleo browser setup completed successfully
+2025-09-02 00:30:34,295 - INFO - Verifying proxy IP...
+2025-09-02 00:30:37,981 - INFO - Browser IP (via http://httpbin.org/ip): 206.41.168.88
+2025-09-02 00:30:38,762 - INFO - Real IP: 41.141.210.84
+2025-09-02 00:30:38,762 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-02 00:30:38,762 - INFO - Opening Google.com...
+2025-09-02 00:30:40,222 - INFO - Waiting 5 seconds...
+2025-09-02 00:30:45,223 - INFO - Checking for reCAPTCHA on current page...
+2025-09-02 00:30:50,467 - INFO - No reCAPTCHA detected on current page
+2025-09-02 00:30:50,475 - INFO - Typing keyword: lescore
+2025-09-02 00:30:53,119 - INFO - Checking for reCAPTCHA on current page...
+2025-09-02 00:30:58,394 - INFO - No reCAPTCHA detected on current page
+2025-09-02 00:30:58,404 - INFO - Search results loaded
+2025-09-02 00:31:01,834 - INFO - Performed 3 human-like scroll actions
+2025-09-02 00:31:01,835 - INFO - Looking for domain: lescore.net
+2025-09-02 00:31:01,835 - INFO - Searching page 1 of 20 for target domain...
+2025-09-02 00:31:01,896 - INFO - ✓ Found target domain on page 1: https://lescore.net/en
+2025-09-02 00:31:07,845 - INFO - Successfully clicked on target website
+2025-09-02 00:31:10,847 - INFO - Checking for reCAPTCHA on current page...
+2025-09-02 00:31:10,896 - INFO - ✓ reCAPTCHA iframe detected
+2025-09-02 00:31:10,972 - WARNING - Could not detect reCAPTCHA sitekey
+2025-09-02 00:31:10,972 - ERROR - Cannot solve captcha without sitekey
+2025-09-02 00:31:10,973 - WARNING - Failed to solve captcha on target website, continuing anyway...
+2025-09-02 00:31:10,973 - INFO - Performing human-like scrolling on target website...
+2025-09-02 00:31:14,543 - INFO - Performed 3 human-like scroll actions
+2025-09-02 00:31:14,543 - INFO - Staying on target website for 20 seconds...
+2025-09-02 00:31:34,546 - INFO - ✓ Process completed successfully!
+2025-09-02 00:31:34,551 - INFO - Browser closed
+2025-09-02 00:31:35,020 - INFO - Kameleo profile 7c9bd430-38b2-4045-84a6-36d390e09430 stopped
+2025-09-02 00:31:35,050 - INFO - Kameleo profile 7c9bd430-38b2-4045-84a6-36d390e09430 deleted
+2025-09-02 00:31:35,051 - INFO - ✓ Proxy 206.41.168.88:6753:aawikmkk:tx1f1a2yr843 completed successfully
+2025-09-02 00:31:35,051 - INFO - 
+==================================================
+2025-09-02 00:31:35,051 - INFO - FINAL RESULTS:
+2025-09-02 00:31:35,051 - INFO - Total proxies tested: 1
+2025-09-02 00:31:35,051 - INFO - Successful runs: 1
+2025-09-02 00:31:35,051 - INFO - Failed runs: 0
+2025-09-02 00:31:35,051 - INFO - ==================================================

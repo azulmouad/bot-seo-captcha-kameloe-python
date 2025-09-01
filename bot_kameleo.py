@@ -13,7 +13,6 @@ from kameleo.local_api_client import KameleoLocalApiClient
 from kameleo.local_api_client.models import CreateProfileRequest, ProxyChoice, Server
 from twocaptcha import TwoCaptcha
 import os
-from captcha_solver import CaptchaSolver
 
 # Configure logging
 logging.basicConfig(
@@ -38,7 +37,11 @@ class GoogleSearchBot:
         self.kameleo_port = os.getenv('KAMELEO_PORT', '5050')
         self.available_fingerprints = []  # Cache fingerprints
         self.used_fingerprints = []  # Track used fingerprints
-        self.captcha_solver = CaptchaSolver()
+        
+        # Initialize 2captcha solver
+        self.captcha_api_key = "56d4457439d8eb46c1831d271166f13b"
+        self.captcha_solver = TwoCaptcha(self.captcha_api_key)
+        logger.info(f"2captcha solver initialized with API key: {self.captcha_api_key[:10]}...")
         
     def init_kameleo_client(self):
         """Initialize Kameleo client and load fingerprints"""
@@ -398,6 +401,183 @@ class GoogleSearchBot:
         except Exception as e:
             logger.error(f"Error during typing: {str(e)}")
     
+    def detect_recaptcha_sitekey(self):
+        """Detect reCAPTCHA sitekey from the page"""
+        try:
+            # Method 1: Look for data-sitekey in iframe or div
+            sitekey_selectors = [
+                '[data-sitekey]',
+                'iframe[src*="recaptcha"][src*="sitekey"]',
+                '.g-recaptcha[data-sitekey]'
+            ]
+            
+            for selector in sitekey_selectors:
+                try:
+                    element = self.driver.find_element(By.CSS_SELECTOR, selector)
+                    sitekey = element.get_attribute('data-sitekey')
+                    if sitekey:
+                        logger.info(f"Found sitekey via {selector}: {sitekey}")
+                        return sitekey
+                except:
+                    continue
+            
+            # Method 2: Extract from iframe src
+            try:
+                iframe = self.driver.find_element(By.CSS_SELECTOR, 'iframe[src*="recaptcha"]')
+                src = iframe.get_attribute('src')
+                if 'sitekey=' in src:
+                    sitekey = src.split('sitekey=')[1].split('&')[0]
+                    logger.info(f"Found sitekey from iframe src: {sitekey}")
+                    return sitekey
+            except:
+                pass
+            
+            # Method 3: Check page source for common patterns
+            page_source = self.driver.page_source
+            import re
+            sitekey_pattern = r'data-sitekey["\']?\s*=\s*["\']([^"\']+)["\']'
+            match = re.search(sitekey_pattern, page_source)
+            if match:
+                sitekey = match.group(1)
+                logger.info(f"Found sitekey from page source: {sitekey}")
+                return sitekey
+            
+            logger.warning("Could not detect reCAPTCHA sitekey")
+            return None
+            
+        except Exception as e:
+            logger.error(f"Error detecting sitekey: {str(e)}")
+            return None
+    
+    def inject_captcha_solution(self, solution_token):
+        """Inject the captcha solution into the page"""
+        try:
+            logger.info("Injecting captcha solution into page...")
+            
+            # Method 1: Set g-recaptcha-response textarea
+            script = f"""
+                var textarea = document.getElementById('g-recaptcha-response');
+                if (textarea) {{
+                    textarea.value = '{solution_token}';
+                    textarea.style.display = 'block';
+                    console.log('Set g-recaptcha-response value');
+                }}
+            """
+            self.driver.execute_script(script)
+            
+            # Method 2: Try to find and fill any hidden recaptcha response fields
+            script2 = f"""
+                var textareas = document.querySelectorAll('textarea[name="g-recaptcha-response"]');
+                for (var i = 0; i < textareas.length; i++) {{
+                    textareas[i].value = '{solution_token}';
+                    textareas[i].style.display = 'block';
+                }}
+                console.log('Filled ' + textareas.length + ' recaptcha response textareas');
+            """
+            self.driver.execute_script(script2)
+            
+            # Method 3: Trigger callback if it exists
+            script3 = f"""
+                if (window.grecaptcha && window.grecaptcha.execute) {{
+                    try {{
+                        // Try to trigger callback
+                        var callback = window.recaptchaCallback || window.onRecaptchaSuccess;
+                        if (callback && typeof callback === 'function') {{
+                            callback('{solution_token}');
+                            console.log('Triggered recaptcha callback');
+                        }}
+                    }} catch(e) {{
+                        console.log('Error triggering callback:', e);
+                    }}
+                }}
+            """
+            self.driver.execute_script(script3)
+            
+            # Wait a moment for the solution to be processed
+            time.sleep(2)
+            
+            # Verify the solution was injected
+            response_value = self.driver.execute_script(
+                "return document.getElementById('g-recaptcha-response') ? document.getElementById('g-recaptcha-response').value : null;"
+            )
+            
+            if response_value and len(response_value) > 100:
+                logger.info("✓ Captcha solution successfully injected")
+                return True
+            else:
+                logger.warning("⚠️  Solution injection may have failed")
+                return False
+                
+        except Exception as e:
+            logger.error(f"Error injecting captcha solution: {str(e)}")
+            return False
+    
+    def wait_for_recaptcha_and_solve(self, timeout=180):
+        """Wait for reCAPTCHA to appear and solve it automatically"""
+        try:
+            logger.info("Checking for reCAPTCHA on current page...")
+            
+            # Check if reCAPTCHA is present
+            recaptcha_present = False
+            try:
+                # Look for reCAPTCHA iframe
+                WebDriverWait(self.driver, 5).until(
+                    EC.presence_of_element_located((By.CSS_SELECTOR, 'iframe[src*="recaptcha"]'))
+                )
+                recaptcha_present = True
+                logger.info("✓ reCAPTCHA iframe detected")
+            except TimeoutException:
+                # Also check for other reCAPTCHA indicators
+                if ('recaptcha' in self.driver.page_source.lower() or 
+                    self.driver.find_elements(By.CSS_SELECTOR, '[data-sitekey]')):
+                    recaptcha_present = True
+                    logger.info("✓ reCAPTCHA elements detected")
+                else:
+                    logger.info("No reCAPTCHA detected on current page")
+                    return True  # No captcha to solve
+            
+            if not recaptcha_present:
+                return True
+            
+            # Detect sitekey
+            sitekey = self.detect_recaptcha_sitekey()
+            if not sitekey:
+                logger.error("Cannot solve captcha without sitekey")
+                return False
+            
+            # Get current page URL
+            current_url = self.driver.current_url
+            logger.info(f"Solving reCAPTCHA for URL: {current_url}")
+            logger.info(f"Using sitekey: {sitekey}")
+            
+            # Solve captcha using 2captcha
+            logger.info("Submitting captcha to 2captcha service...")
+            logger.info("This may take 30-120 seconds...")
+            
+            start_time = time.time()
+            
+            try:
+                result = self.captcha_solver.recaptcha(
+                    sitekey=sitekey,
+                    url=current_url
+                )
+                
+                solve_time = time.time() - start_time
+                logger.info(f"✓ Captcha solved in {solve_time:.1f} seconds!")
+                logger.info(f"Solution token: {result['code'][:50]}...")
+                
+                # Inject the solution into the page
+                return self.inject_captcha_solution(result['code'])
+                
+            except Exception as e:
+                solve_time = time.time() - start_time
+                logger.error(f"✗ Failed to solve captcha after {solve_time:.1f} seconds: {str(e)}")
+                return False
+                
+        except Exception as e:
+            logger.error(f"Error in captcha solving: {str(e)}")
+            return False
+    
     def search_google(self):
         """Search Google with the keyword"""
         try:
@@ -409,7 +589,7 @@ class GoogleSearchBot:
             time.sleep(5)
             
             # Check for and solve any captcha that might appear
-            if not self.captcha_solver.wait_for_captcha_and_solve(self.driver, max_wait=10):
+            if not self.wait_for_recaptcha_and_solve():
                 logger.error("Failed to solve captcha on Google homepage")
                 return False
             
@@ -426,7 +606,7 @@ class GoogleSearchBot:
             search_box.send_keys(Keys.RETURN)
             
             # Check for captcha after search submission
-            if not self.captcha_solver.wait_for_captcha_and_solve(self.driver, max_wait=10):
+            if not self.wait_for_recaptcha_and_solve():
                 logger.error("Failed to solve captcha after search submission")
                 return False
             
@@ -498,7 +678,7 @@ class GoogleSearchBot:
                     time.sleep(3)
                     
                     # Check for and solve any captcha on target website
-                    if not self.captcha_solver.wait_for_captcha_and_solve(self.driver, max_wait=10):
+                    if not self.wait_for_recaptcha_and_solve():
                         logger.warning("Failed to solve captcha on target website, continuing anyway...")
                     
                     # Human-like scrolling on target website
@@ -630,7 +810,7 @@ class GoogleSearchBot:
                         pass
                     
                     # Check for captcha on new page
-                    if not self.captcha_solver.wait_for_captcha_and_solve(self.driver, max_wait=10):
+                    if not self.wait_for_recaptcha_and_solve():
                         logger.warning("Failed to solve captcha on search results page, continuing anyway...")
                     
                     # Human-like scrolling on new page
