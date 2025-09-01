@@ -11,7 +11,9 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.common.exceptions import TimeoutException, WebDriverException
 from kameleo.local_api_client import KameleoLocalApiClient
 from kameleo.local_api_client.models import CreateProfileRequest, ProxyChoice, Server
+from twocaptcha import TwoCaptcha
 import os
+from captcha_solver import CaptchaSolver
 
 # Configure logging
 logging.basicConfig(
@@ -36,6 +38,7 @@ class GoogleSearchBot:
         self.kameleo_port = os.getenv('KAMELEO_PORT', '5050')
         self.available_fingerprints = []  # Cache fingerprints
         self.used_fingerprints = []  # Track used fingerprints
+        self.captcha_solver = CaptchaSolver()
         
     def init_kameleo_client(self):
         """Initialize Kameleo client and load fingerprints"""
@@ -405,6 +408,11 @@ class GoogleSearchBot:
             logger.info("Waiting 5 seconds...")
             time.sleep(5)
             
+            # Check for and solve any captcha that might appear
+            if not self.captcha_solver.wait_for_captcha_and_solve(self.driver, max_wait=10):
+                logger.error("Failed to solve captcha on Google homepage")
+                return False
+            
             # Find search box
             search_box = WebDriverWait(self.driver, 10).until(
                 EC.presence_of_element_located((By.NAME, "q"))
@@ -416,6 +424,11 @@ class GoogleSearchBot:
             # Random delay before pressing enter
             time.sleep(random.uniform(1, 2))
             search_box.send_keys(Keys.RETURN)
+            
+            # Check for captcha after search submission
+            if not self.captcha_solver.wait_for_captcha_and_solve(self.driver, max_wait=10):
+                logger.error("Failed to solve captcha after search submission")
+                return False
             
             # Wait for results to load
             WebDriverWait(self.driver, 10).until(
@@ -468,6 +481,10 @@ class GoogleSearchBot:
                 
                 # Wait for page to load
                 time.sleep(3)
+                
+                # Check for and solve any captcha on target website
+                if not self.captcha_solver.wait_for_captcha_and_solve(self.driver, max_wait=10):
+                    logger.warning("Failed to solve captcha on target website, continuing anyway...")
                 
                 # Human-like scrolling on target website
                 logger.info("Performing human-like scrolling on target website...")

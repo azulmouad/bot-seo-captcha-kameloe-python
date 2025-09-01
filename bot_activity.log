@@ -98,3 +98,168 @@ Stacktrace:
 2025-09-01 04:10:50,932 - INFO - Successful runs: 0
 2025-09-01 04:10:50,934 - INFO - Failed runs: 1
 2025-09-01 04:10:50,935 - INFO - ==================================================
+2025-09-01 08:03:47,957 - INFO - 2captcha solver initialized with API key
+2025-09-01 08:03:47,959 - INFO - Starting Google Search Bot
+2025-09-01 08:03:47,960 - INFO - Keyword: fotmob
+2025-09-01 08:03:47,960 - INFO - Target Domain: fotmob.com
+2025-09-01 08:03:47,960 - INFO - Total Proxies: 2
+2025-09-01 08:03:47,960 - INFO - 
+--- Processing proxy 1/2 ---
+2025-09-01 08:03:47,960 - INFO - 
+==================================================
+2025-09-01 08:03:47,960 - INFO - Starting process with proxy: 23.95.150.145:6114:cektxxxi:ys0pz41bp7tp
+2025-09-01 08:03:47,960 - INFO - ==================================================
+2025-09-01 08:03:47,960 - INFO - Testing proxy: 23.95.150.145:6114:cektxxxi:ys0pz41bp7tp
+2025-09-01 08:03:47,960 - INFO - Testing proxy: 23.95.150.145:6114 (with auth)
+2025-09-01 08:03:48,661 - WARNING - Proxy 23.95.150.145:6114 (with auth) returned status code: 402
+2025-09-01 08:03:48,661 - ERROR - Proxy 23.95.150.145:6114:cektxxxi:ys0pz41bp7tp is not working, skipping...
+2025-09-01 08:03:48,661 - ERROR - ✗ Proxy 23.95.150.145:6114:cektxxxi:ys0pz41bp7tp failed
+2025-09-01 08:03:48,661 - INFO - Waiting 11.6 seconds before next proxy...
+2025-09-01 08:04:00,312 - INFO - 
+--- Processing proxy 2/2 ---
+2025-09-01 08:04:00,313 - INFO - 
+==================================================
+2025-09-01 08:04:00,313 - INFO - Starting process with proxy: 198.23.239.134:6540:cektxxxi:ys0pz41bp7tp
+2025-09-01 08:04:00,313 - INFO - ==================================================
+2025-09-01 08:04:00,313 - INFO - Testing proxy: 198.23.239.134:6540:cektxxxi:ys0pz41bp7tp
+2025-09-01 08:04:00,313 - INFO - Testing proxy: 198.23.239.134:6540 (with auth)
+2025-09-01 08:04:01,039 - WARNING - Proxy 198.23.239.134:6540 (with auth) returned status code: 402
+2025-09-01 08:04:01,039 - ERROR - Proxy 198.23.239.134:6540:cektxxxi:ys0pz41bp7tp is not working, skipping...
+2025-09-01 08:04:01,039 - ERROR - ✗ Proxy 198.23.239.134:6540:cektxxxi:ys0pz41bp7tp failed
+2025-09-01 08:04:01,039 - INFO - 
+==================================================
+2025-09-01 08:04:01,039 - INFO - FINAL RESULTS:
+2025-09-01 08:04:01,039 - INFO - Total proxies tested: 2
+2025-09-01 08:04:01,039 - INFO - Successful runs: 0
+2025-09-01 08:04:01,039 - INFO - Failed runs: 2
+2025-09-01 08:04:01,039 - INFO - ==================================================
+2025-09-01 08:04:33,714 - INFO - 2captcha solver initialized with API key
+2025-09-01 08:04:33,715 - INFO - Starting Google Search Bot
+2025-09-01 08:04:33,715 - INFO - Keyword: fotmob
+2025-09-01 08:04:33,715 - INFO - Target Domain: fotmob.com
+2025-09-01 08:04:33,715 - INFO - Total Proxies: 2
+2025-09-01 08:04:33,715 - INFO - 
+--- Processing proxy 1/2 ---
+2025-09-01 08:04:33,715 - INFO - 
+==================================================
+2025-09-01 08:04:33,715 - INFO - Starting process with proxy: 206.41.168.122:6787:aawikmkk:tx1f1a2yr843
+2025-09-01 08:04:33,715 - INFO - ==================================================
+2025-09-01 08:04:33,715 - INFO - Testing proxy: 206.41.168.122:6787:aawikmkk:tx1f1a2yr843
+2025-09-01 08:04:33,715 - INFO - Testing proxy: 206.41.168.122:6787 (with auth)
+2025-09-01 08:04:34,453 - INFO - ✓ Proxy 206.41.168.122:6787 (with auth) is working. IP: 206.41.168.122
+2025-09-01 08:04:34,454 - INFO - Setting up Kameleo browser with proxy: 206.41.168.122:6787:aawikmkk:tx1f1a2yr843
+2025-09-01 08:04:34,455 - INFO - Kameleo client initialized on port 5050
+2025-09-01 08:04:34,455 - INFO - Loading available Chrome fingerprints...
+2025-09-01 08:04:35,542 - INFO - Loaded 25 unique Chrome fingerprints
+2025-09-01 08:04:35,542 - INFO - Creating Kameleo profile with proxy: 206.41.168.122:6787:aawikmkk:tx1f1a2yr843
+2025-09-01 08:04:35,542 - INFO - Selected unique fingerprint: c8c6cf901334c06efd9fe4f5dc08245710431de2c87744e7882cc18fd3c6d52d (1/25 used)
+2025-09-01 08:04:35,543 - INFO - Using authenticated proxy: 206.41.168.122:6787
+2025-09-01 08:04:35,765 - INFO - ✓ Kameleo profile created: 1f4fa895-6ecd-40ae-9758-02621b5c4442 for proxy 206.41.168.122:6787
+2025-09-01 08:04:54,085 - INFO - Kameleo browser setup completed successfully
+2025-09-01 08:04:54,085 - INFO - Verifying proxy IP...
+2025-09-01 08:04:57,865 - INFO - Browser IP (via http://httpbin.org/ip): 206.41.168.122
+2025-09-01 08:04:58,111 - INFO - Real IP: 105.154.213.28
+2025-09-01 08:04:58,111 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-01 08:04:58,111 - INFO - Opening Google.com...
+2025-09-01 08:04:59,272 - INFO - Waiting 5 seconds...
+2025-09-01 08:05:04,277 - INFO - Waiting up to 10 seconds for captcha to appear...
+2025-09-01 08:05:15,275 - INFO - No captcha appeared within the wait time
+2025-09-01 08:05:15,290 - INFO - Typing keyword: fotmob
+2025-09-01 08:05:17,397 - INFO - Waiting up to 10 seconds for captcha to appear...
+2025-09-01 08:05:53,134 - INFO - 2captcha solver initialized with API key
+2025-09-01 08:05:53,135 - INFO - Starting Google Search Bot
+2025-09-01 08:05:53,135 - INFO - Keyword: lescore
+2025-09-01 08:05:53,135 - INFO - Target Domain: lescore.net
+2025-09-01 08:05:53,135 - INFO - Total Proxies: 2
+2025-09-01 08:05:53,135 - INFO - 
+--- Processing proxy 1/2 ---
+2025-09-01 08:05:53,135 - INFO - 
+==================================================
+2025-09-01 08:05:53,135 - INFO - Starting process with proxy: 206.41.168.122:6787:aawikmkk:tx1f1a2yr843
+2025-09-01 08:05:53,135 - INFO - ==================================================
+2025-09-01 08:05:53,135 - INFO - Testing proxy: 206.41.168.122:6787:aawikmkk:tx1f1a2yr843
+2025-09-01 08:05:53,135 - INFO - Testing proxy: 206.41.168.122:6787 (with auth)
+2025-09-01 08:05:53,552 - INFO - ✓ Proxy 206.41.168.122:6787 (with auth) is working. IP: 206.41.168.122
+2025-09-01 08:05:53,552 - INFO - Setting up Kameleo browser with proxy: 206.41.168.122:6787:aawikmkk:tx1f1a2yr843
+2025-09-01 08:05:53,553 - INFO - Kameleo client initialized on port 5050
+2025-09-01 08:05:53,553 - INFO - Loading available Chrome fingerprints...
+2025-09-01 08:05:54,305 - INFO - Loaded 25 unique Chrome fingerprints
+2025-09-01 08:05:54,305 - INFO - Creating Kameleo profile with proxy: 206.41.168.122:6787:aawikmkk:tx1f1a2yr843
+2025-09-01 08:05:54,305 - INFO - Selected unique fingerprint: 53d49cb42aa9c8e4fc31cf9467efc32a4922e2d49dd3416c92c9ab0773750b4d (1/25 used)
+2025-09-01 08:05:54,305 - INFO - Using authenticated proxy: 206.41.168.122:6787
+2025-09-01 08:05:54,424 - INFO - ✓ Kameleo profile created: 256c73ec-73be-4ec8-b863-197e588aa3ad for proxy 206.41.168.122:6787
+2025-09-01 08:05:57,620 - INFO - Kameleo browser setup completed successfully
+2025-09-01 08:05:57,620 - INFO - Verifying proxy IP...
+2025-09-01 08:06:01,341 - INFO - Browser IP (via http://httpbin.org/ip): 206.41.168.122
+2025-09-01 08:06:01,974 - INFO - Real IP: 105.154.213.28
+2025-09-01 08:06:01,974 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-01 08:06:01,974 - INFO - Opening Google.com...
+2025-09-01 08:06:03,011 - INFO - Waiting 5 seconds...
+2025-09-01 08:06:08,017 - INFO - Waiting up to 10 seconds for captcha to appear...
+2025-09-01 08:06:18,032 - INFO - No captcha appeared within the wait time
+2025-09-01 08:06:18,054 - INFO - Typing keyword: lescore
+2025-09-01 08:06:21,418 - INFO - Waiting up to 10 seconds for captcha to appear...
+2025-09-01 08:06:32,237 - INFO - No captcha appeared within the wait time
+2025-09-01 08:06:32,258 - INFO - Search results loaded
+2025-09-01 08:06:34,897 - INFO - Performed 3 human-like scroll actions
+2025-09-01 08:06:34,898 - INFO - Looking for domain: lescore.net
+2025-09-01 08:06:34,952 - INFO - Found target domain in: https://lescore.net/en
+2025-09-01 08:06:38,590 - INFO - Successfully clicked on target website
+2025-09-01 08:06:41,595 - INFO - Waiting up to 10 seconds for captcha to appear...
+2025-09-01 08:06:41,693 - INFO - Captcha detected, attempting to solve...
+2025-09-01 08:06:41,693 - INFO - Scanning page for captcha challenges...
+2025-09-01 08:06:41,712 - INFO - reCAPTCHA v2 detected
+2025-09-01 08:06:41,716 - INFO - Attempting to solve reCAPTCHA v2 on https://lescore.net/en
+2025-09-01 08:06:41,767 - ERROR - Could not detect reCAPTCHA sitekey
+2025-09-01 08:06:41,767 - WARNING - Failed to solve captcha on target website, continuing anyway...
+2025-09-01 08:06:41,767 - INFO - Performing human-like scrolling on target website...
+2025-09-01 08:06:44,560 - INFO - Performed 3 human-like scroll actions
+2025-09-01 08:06:44,563 - INFO - Staying on target website for 20 seconds...
+2025-09-01 08:07:04,568 - INFO - ✓ Process completed successfully!
+2025-09-01 08:07:04,574 - INFO - Browser closed
+2025-09-01 08:07:04,720 - INFO - Kameleo profile 256c73ec-73be-4ec8-b863-197e588aa3ad stopped
+2025-09-01 08:07:04,739 - INFO - Kameleo profile 256c73ec-73be-4ec8-b863-197e588aa3ad deleted
+2025-09-01 08:07:04,739 - INFO - ✓ Proxy 206.41.168.122:6787:aawikmkk:tx1f1a2yr843 completed successfully
+2025-09-01 08:07:04,739 - INFO - Waiting 5.1 seconds before next proxy...
+2025-09-01 08:07:09,883 - INFO - 
+--- Processing proxy 2/2 ---
+2025-09-01 08:07:09,884 - INFO - 
+==================================================
+2025-09-01 08:07:09,884 - INFO - Starting process with proxy: 108.165.227.168:5409:aawikmkk:tx1f1a2yr843
+2025-09-01 08:07:09,884 - INFO - ==================================================
+2025-09-01 08:07:09,884 - INFO - Testing proxy: 108.165.227.168:5409:aawikmkk:tx1f1a2yr843
+2025-09-01 08:07:09,884 - INFO - Testing proxy: 108.165.227.168:5409 (with auth)
+2025-09-01 08:07:14,990 - INFO - ✓ Proxy 108.165.227.168:5409 (with auth) is working. IP: 108.165.227.168
+2025-09-01 08:07:14,991 - INFO - Setting up Kameleo browser with proxy: 108.165.227.168:5409:aawikmkk:tx1f1a2yr843
+2025-09-01 08:07:14,991 - INFO - Creating Kameleo profile with proxy: 108.165.227.168:5409:aawikmkk:tx1f1a2yr843
+2025-09-01 08:07:14,991 - INFO - Selected unique fingerprint: 8c309291525dc15709f15f7b99c228dfa29600872ddc4befacd5350dd37d21d7 (2/25 used)
+2025-09-01 08:07:14,991 - INFO - Using authenticated proxy: 108.165.227.168:5409
+2025-09-01 08:07:15,330 - INFO - ✓ Kameleo profile created: ad882b2f-0021-4115-93ec-d679b811ac1e for proxy 108.165.227.168:5409
+2025-09-01 08:07:20,434 - INFO - Kameleo browser setup completed successfully
+2025-09-01 08:07:20,435 - INFO - Verifying proxy IP...
+2025-09-01 08:07:24,340 - INFO - Browser IP (via http://httpbin.org/ip): 108.165.227.168
+2025-09-01 08:07:25,433 - INFO - Real IP: 105.154.213.28
+2025-09-01 08:07:25,433 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-01 08:07:25,433 - INFO - Opening Google.com...
+2025-09-01 08:07:26,790 - INFO - Waiting 5 seconds...
+2025-09-01 08:07:31,791 - INFO - Waiting up to 10 seconds for captcha to appear...
+2025-09-01 08:07:42,627 - INFO - No captcha appeared within the wait time
+2025-09-01 08:07:42,640 - INFO - Typing keyword: lescore
+2025-09-01 08:07:45,183 - INFO - Waiting up to 10 seconds for captcha to appear...
+2025-09-01 08:07:56,283 - INFO - No captcha appeared within the wait time
+2025-09-01 08:07:56,303 - INFO - Search results loaded
+2025-09-01 08:07:59,600 - INFO - Performed 4 human-like scroll actions
+2025-09-01 08:07:59,600 - INFO - Looking for domain: lescore.net
+2025-09-01 08:07:59,768 - WARNING - Target domain 'lescore.net' not found in search results
+2025-09-01 08:07:59,768 - ERROR - Failed to find/visit target domain
+2025-09-01 08:07:59,769 - INFO - Browser closed
+2025-09-01 08:07:59,975 - INFO - Kameleo profile ad882b2f-0021-4115-93ec-d679b811ac1e stopped
+2025-09-01 08:07:59,989 - INFO - Kameleo profile ad882b2f-0021-4115-93ec-d679b811ac1e deleted
+2025-09-01 08:07:59,989 - ERROR - ✗ Proxy 108.165.227.168:5409:aawikmkk:tx1f1a2yr843 failed
+2025-09-01 08:07:59,989 - INFO - 
+==================================================
+2025-09-01 08:07:59,989 - INFO - FINAL RESULTS:
+2025-09-01 08:07:59,989 - INFO - Total proxies tested: 2
+2025-09-01 08:07:59,989 - INFO - Successful runs: 1
+2025-09-01 08:07:59,989 - INFO - Failed runs: 1
+2025-09-01 08:07:59,989 - INFO - ==================================================

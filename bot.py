@@ -16,6 +16,7 @@ import zipfile
 import os
 import tempfile
 import shutil
+from captcha_solver import CaptchaSolver
 
 # Configure logging
 logging.basicConfig(
@@ -36,6 +37,7 @@ class GoogleSearchBot:
         self.current_proxy = None
         self.driver = None
         self.ua = UserAgent()
+        self.captcha_solver = CaptchaSolver()
         
     def parse_proxy(self, proxy_string):
         """Parse proxy string to extract IP, port, username, password"""
@@ -363,6 +365,11 @@ console.log("Proxy authentication extension loaded");
             logger.info("Waiting 5 seconds...")
             time.sleep(5)
             
+            # Check for and solve any captcha that might appear
+            if not self.captcha_solver.wait_for_captcha_and_solve(self.driver, max_wait=10):
+                logger.error("Failed to solve captcha on Google homepage")
+                return False
+            
             # Find search box
             search_box = WebDriverWait(self.driver, 10).until(
                 EC.presence_of_element_located((By.NAME, "q"))
@@ -374,6 +381,11 @@ console.log("Proxy authentication extension loaded");
             # Random delay before pressing enter
             time.sleep(random.uniform(1, 2))
             search_box.send_keys(Keys.RETURN)
+            
+            # Check for captcha after search submission
+            if not self.captcha_solver.wait_for_captcha_and_solve(self.driver, max_wait=10):
+                logger.error("Failed to solve captcha after search submission")
+                return False
             
             # Wait for results to load
             WebDriverWait(self.driver, 10).until(
@@ -426,6 +438,10 @@ console.log("Proxy authentication extension loaded");
                 
                 # Wait for page to load
                 time.sleep(3)
+                
+                # Check for and solve any captcha on target website
+                if not self.captcha_solver.wait_for_captcha_and_solve(self.driver, max_wait=10):
+                    logger.warning("Failed to solve captcha on target website, continuing anyway...")
                 
                 # Human-like scrolling on target website
                 logger.info("Performing human-like scrolling on target website...")
