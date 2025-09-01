@@ -183,6 +183,15 @@ console.log("Proxy authentication extension loaded");
             logger.error(f"Failed to get real IP: {str(e)}")
             return None
     
+    def get_my_ip(self):
+        """Get current public IP address without proxy"""
+        try:
+            response = requests.get('http://httpbin.org/ip', timeout=10)
+            return response.json().get('origin')
+        except Exception as e:
+            logger.error(f"Failed to get real IP: {str(e)}")
+            return None
+    
     def setup_browser(self, proxy):
         """Setup Chrome browser with proxy and anti-detection measures"""
         try:
@@ -250,32 +259,60 @@ console.log("Proxy authentication extension loaded");
         """Verify that the browser is using the proxy IP"""
         try:
             logger.info("Verifying proxy IP...")
-            self.driver.get('http://httpbin.org/ip')
-            time.sleep(2)
             
-            page_source = self.driver.page_source
-            # Extract IP from the page
-            import json
-            import re
+            # Try multiple IP check services
+            ip_services = [
+                'http://httpbin.org/ip',
+                'http://icanhazip.com/',
+                'https://api.ipify.org?format=json'
+            ]
             
-            # Look for IP in the page source
-            ip_match = re.search(r'"origin":\s*"([^"]+)"', page_source)
-            if ip_match:
-                current_ip = ip_match.group(1)
-                my_real_ip = self.get_my_ip()
-                
-                logger.info(f"Browser IP: {current_ip}")
-                logger.info(f"Real IP: {my_real_ip}")
-                
-                if current_ip != my_real_ip:
-                    logger.info("✓ Proxy is working correctly - IP is masked")
-                    return True
-                else:
-                    logger.error("✗ Proxy is not working - using real IP")
-                    return False
-            else:
-                logger.error("Could not extract IP from verification page")
-                return False
+            for service in ip_services:
+                try:
+                    self.driver.get(service)
+                    time.sleep(3)
+                    
+                    page_source = self.driver.page_source
+                    current_ip = None
+                    
+                    # Extract IP from different service formats
+                    if 'httpbin.org' in service:
+                        import re
+                        ip_match = re.search(r'"origin":\s*"([^"]+)"', page_source)
+                        if ip_match:
+                            current_ip = ip_match.group(1).split(',')[0].strip()
+                    elif 'icanhazip.com' in service:
+                        # Extract IP from plain text response
+                        import re
+                        ip_match = re.search(r'(\d+\.\d+\.\d+\.\d+)', page_source)
+                        if ip_match:
+                            current_ip = ip_match.group(1)
+                    elif 'ipify.org' in service:
+                        import re
+                        ip_match = re.search(r'"ip":\s*"([^"]+)"', page_source)
+                        if ip_match:
+                            current_ip = ip_match.group(1)
+                    
+                    if current_ip:
+                        logger.info(f"Browser IP (via {service}): {current_ip}")
+                        
+                        # Get real IP for comparison
+                        my_real_ip = self.get_my_ip()
+                        logger.info(f"Real IP: {my_real_ip}")
+                        
+                        if current_ip != my_real_ip and current_ip != "127.0.0.1":
+                            logger.info("✓ Proxy is working correctly - IP is masked")
+                            return True
+                        else:
+                            logger.error("✗ Proxy is not working - using real IP")
+                            return False
+                    
+                except Exception as e:
+                    logger.warning(f"Failed to check IP via {service}: {str(e)}")
+                    continue
+            
+            logger.error("Could not verify proxy IP from any service")
+            return False
                 
         except Exception as e:
             logger.error(f"Failed to verify proxy IP: {str(e)}")
