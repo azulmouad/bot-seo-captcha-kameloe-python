@@ -24,3 +24,77 @@
 2025-09-01 04:06:29,060 - INFO - ✓ Proxy is working correctly - IP is masked
 2025-09-01 04:06:29,060 - INFO - Opening Google.com...
 2025-09-01 04:06:33,309 - INFO - Waiting 5 seconds...
+2025-09-01 04:06:38,343 - INFO - Typing keyword: fotmob
+2025-09-01 04:06:58,771 - ERROR - Error during Google search: Message: 
+Stacktrace:
+0   chromedriver                        0x0000000100a9d3a0 cxxbridge1$str$ptr + 2559624
+1   chromedriver                        0x0000000100a95514 cxxbridge1$str$ptr + 2527228
+2   chromedriver                        0x000000010062ff34 cxxbridge1$string$len + 85140
+3   chromedriver                        0x0000000100672e28 cxxbridge1$string$len + 359304
+4   chromedriver                        0x00000001006af2d4 cxxbridge1$string$len + 606260
+5   chromedriver                        0x0000000100668034 cxxbridge1$string$len + 314772
+6   chromedriver                        0x0000000100a68584 cxxbridge1$str$ptr + 2343020
+7   chromedriver                        0x0000000100a6b2ac cxxbridge1$str$ptr + 2354580
+8   chromedriver                        0x0000000100a6aec8 cxxbridge1$str$ptr + 2353584
+9   chromedriver                        0x0000000100a4fd80 cxxbridge1$str$ptr + 2242664
+10  chromedriver                        0x0000000100a6b890 cxxbridge1$str$ptr + 2356088
+11  chromedriver                        0x0000000100a427a0 cxxbridge1$str$ptr + 2187912
+12  chromedriver                        0x0000000100a860bc cxxbridge1$str$ptr + 2464676
+13  chromedriver                        0x0000000100a8628c cxxbridge1$str$ptr + 2465140
+14  chromedriver                        0x0000000100a95160 cxxbridge1$str$ptr + 2526280
+15  libsystem_pthread.dylib             0x000000018599fc0c _pthread_start + 136
+16  libsystem_pthread.dylib             0x000000018599ab80 thread_start + 8
+
+2025-09-01 04:06:58,772 - ERROR - Google search failed
+2025-09-01 04:06:58,784 - INFO - Browser closed
+2025-09-01 04:06:59,003 - INFO - Kameleo profile a1382525-77fd-4f36-bd0f-0a835020cdf1 stopped
+2025-09-01 04:06:59,003 - ERROR - ✗ Proxy 23.95.150.145:6114:cektxxxi:ys0pz41bp7tp failed
+2025-09-01 04:06:59,003 - INFO - 
+==================================================
+2025-09-01 04:06:59,004 - INFO - FINAL RESULTS:
+2025-09-01 04:06:59,004 - INFO - Total proxies tested: 1
+2025-09-01 04:06:59,004 - INFO - Successful runs: 0
+2025-09-01 04:06:59,004 - INFO - Failed runs: 1
+2025-09-01 04:06:59,004 - INFO - ==================================================
+2025-09-01 04:10:24,525 - INFO - Starting Google Search Bot
+2025-09-01 04:10:24,526 - INFO - Keyword: fotmob
+2025-09-01 04:10:24,526 - INFO - Target Domain: fotmob.com
+2025-09-01 04:10:24,526 - INFO - Total Proxies: 1
+2025-09-01 04:10:24,526 - INFO - 
+--- Processing proxy 1/1 ---
+2025-09-01 04:10:24,526 - INFO - 
+==================================================
+2025-09-01 04:10:24,526 - INFO - Starting process with proxy: 198.23.239.134:6540:cektxxxi:ys0pz41bp7tp
+2025-09-01 04:10:24,526 - INFO - ==================================================
+2025-09-01 04:10:24,526 - INFO - Testing proxy: 198.23.239.134:6540:cektxxxi:ys0pz41bp7tp
+2025-09-01 04:10:24,526 - INFO - Testing proxy: 198.23.239.134:6540 (with auth)
+2025-09-01 04:10:25,152 - INFO - ✓ Proxy 198.23.239.134:6540 (with auth) is working. IP: 198.23.239.134
+2025-09-01 04:10:25,152 - INFO - Setting up Kameleo browser with proxy: 198.23.239.134:6540:cektxxxi:ys0pz41bp7tp
+2025-09-01 04:10:25,152 - INFO - Kameleo client initialized on port 5050
+2025-09-01 04:10:25,152 - INFO - Loading available Chrome fingerprints...
+2025-09-01 04:10:26,048 - INFO - Loaded 25 unique Chrome fingerprints
+2025-09-01 04:10:26,048 - INFO - Creating Kameleo profile with proxy: 198.23.239.134:6540:cektxxxi:ys0pz41bp7tp
+2025-09-01 04:10:26,048 - INFO - Selected unique fingerprint: eef61081a989ca8ccb716fef7343932fb7641a0c32ce494a80ae68220c954dad (1/25 used)
+2025-09-01 04:10:26,048 - INFO - Using authenticated proxy: 198.23.239.134:6540
+2025-09-01 04:10:26,158 - INFO - ✓ Kameleo profile created: 0e2b495c-cf40-438a-9f2a-8b2261d541e9 for proxy 198.23.239.134:6540
+2025-09-01 04:10:29,877 - INFO - Kameleo browser setup completed successfully
+2025-09-01 04:10:29,877 - INFO - Verifying proxy IP...
+2025-09-01 04:10:33,576 - INFO - Browser IP (via http://httpbin.org/ip): 198.23.239.134
+2025-09-01 04:10:33,825 - INFO - Real IP: 105.154.213.28
+2025-09-01 04:10:33,825 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-01 04:10:33,825 - INFO - Opening Google.com...
+2025-09-01 04:10:35,114 - INFO - Waiting 5 seconds...
+2025-09-01 04:10:40,141 - INFO - Typing keyword: fotmob
+2025-09-01 04:10:50,924 - ERROR - Error during Google search: Message: Profile not found.
+
+2025-09-01 04:10:50,926 - ERROR - Google search failed
+2025-09-01 04:10:50,931 - ERROR - Error closing browser: Message: Profile not found.
+
+2025-09-01 04:10:50,932 - ERROR - ✗ Proxy 198.23.239.134:6540:cektxxxi:ys0pz41bp7tp failed
+2025-09-01 04:10:50,932 - INFO - 
+==================================================
+2025-09-01 04:10:50,932 - INFO - FINAL RESULTS:
+2025-09-01 04:10:50,932 - INFO - Total proxies tested: 1
+2025-09-01 04:10:50,932 - INFO - Successful runs: 0
+2025-09-01 04:10:50,934 - INFO - Failed runs: 1
+2025-09-01 04:10:50,935 - INFO - ==================================================

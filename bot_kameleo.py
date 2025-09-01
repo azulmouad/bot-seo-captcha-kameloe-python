@@ -34,18 +34,74 @@ class GoogleSearchBot:
         self.kameleo_client = None
         self.current_profile = None
         self.kameleo_port = os.getenv('KAMELEO_PORT', '5050')
+        self.available_fingerprints = []  # Cache fingerprints
+        self.used_fingerprints = []  # Track used fingerprints
         
     def init_kameleo_client(self):
-        """Initialize Kameleo client"""
+        """Initialize Kameleo client and load fingerprints"""
         try:
             self.kameleo_client = KameleoLocalApiClient(
                 endpoint=f'http://localhost:{self.kameleo_port}'
             )
             logger.info(f"Kameleo client initialized on port {self.kameleo_port}")
+            
+            # Load available fingerprints once
+            self.load_fingerprints()
             return True
         except Exception as e:
             logger.error(f"Failed to initialize Kameleo client: {str(e)}")
             logger.error("Make sure Kameleo.CLI is running on the specified port")
+            return False
+    
+    def load_fingerprints(self):
+        """Load and cache available fingerprints with variety"""
+        try:
+            logger.info("Loading available Chrome fingerprints...")
+            
+            # Load fingerprints with different criteria for variety
+            fingerprint_sets = []
+            
+            # Recent Chrome versions
+            fp1 = self.kameleo_client.fingerprint.search_fingerprints(
+                device_type='desktop',
+                browser_product='chrome',
+                browser_version='>134'
+            )
+            fingerprint_sets.extend(fp1)
+            
+            # Different languages for variety
+            languages = ['en-US', 'en-GB', 'de-DE', 'fr-FR', 'es-ES']
+            for lang in languages[:2]:  # Use first 2 languages
+                try:
+                    fp_lang = self.kameleo_client.fingerprint.search_fingerprints(
+                        device_type='desktop',
+                        browser_product='chrome',
+                        browser_version='>134',
+                        language=lang
+                    )
+                    fingerprint_sets.extend(fp_lang[:5])  # Add first 5 from each language
+                except:
+                    continue
+            
+            # Remove duplicates by fingerprint ID
+            seen_ids = set()
+            self.available_fingerprints = []
+            for fp in fingerprint_sets:
+                if fp.id not in seen_ids:
+                    self.available_fingerprints.append(fp)
+                    seen_ids.add(fp.id)
+            
+            if not self.available_fingerprints:
+                logger.error("No Chrome fingerprints found")
+                return False
+            
+            # Shuffle fingerprints for better variety
+            random.shuffle(self.available_fingerprints)
+            logger.info(f"Loaded {len(self.available_fingerprints)} unique Chrome fingerprints")
+            return True
+            
+        except Exception as e:
+            logger.error(f"Failed to load fingerprints: {str(e)}")
             return False
     
     def parse_proxy(self, proxy_string):
@@ -108,8 +164,38 @@ class GoogleSearchBot:
             logger.error(f"Proxy {proxy} failed: {str(e)}")
             return False, None
     
+    def get_unique_fingerprint(self):
+        """Get a unique fingerprint that hasn't been used yet"""
+        try:
+            if not self.available_fingerprints:
+                logger.error("No fingerprints available")
+                return None
+            
+            # Find unused fingerprints
+            unused_fingerprints = [fp for fp in self.available_fingerprints 
+                                 if fp.id not in self.used_fingerprints]
+            
+            # If all fingerprints have been used, reset and start over
+            if not unused_fingerprints:
+                logger.info("All fingerprints used, resetting for variety")
+                self.used_fingerprints = []
+                unused_fingerprints = self.available_fingerprints
+            
+            # Select a random unused fingerprint
+            selected_fingerprint = random.choice(unused_fingerprints)
+            self.used_fingerprints.append(selected_fingerprint.id)
+            
+            logger.info(f"Selected unique fingerprint: {selected_fingerprint.id} "
+                       f"({len(self.used_fingerprints)}/{len(self.available_fingerprints)} used)")
+            
+            return selected_fingerprint
+            
+        except Exception as e:
+            logger.error(f"Failed to get unique fingerprint: {str(e)}")
+            return None
+    
     def create_kameleo_profile(self, proxy):
-        """Create a Kameleo profile with proxy configuration"""
+        """Create a Kameleo profile with proxy configuration and unique fingerprint"""
         try:
             logger.info(f"Creating Kameleo profile with proxy: {proxy}")
             
@@ -118,20 +204,11 @@ class GoogleSearchBot:
             if not ip or not port:
                 return None
             
-            # Search for Chrome fingerprints with recent versions
-            fingerprints = self.kameleo_client.fingerprint.search_fingerprints(
-                device_type='desktop',
-                browser_product='chrome',
-                browser_version='>134'  # Use recent Chrome versions
-            )
-            
-            if not fingerprints:
-                logger.error("No Chrome fingerprints found")
+            # Get a unique fingerprint for this profile
+            selected_fingerprint = self.get_unique_fingerprint()
+            if not selected_fingerprint:
+                logger.error("Failed to get unique fingerprint")
                 return None
-            
-            # Select a random fingerprint for variety
-            selected_fingerprint = random.choice(fingerprints[:10])  # Use first 10 for variety
-            logger.info(f"Selected fingerprint: {selected_fingerprint.id}")
             
             # Create profile request with proxy
             proxy_config = None
@@ -166,7 +243,7 @@ class GoogleSearchBot:
             
             # Create the profile
             profile = self.kameleo_client.profile.create_profile(create_profile_request)
-            logger.info(f"Kameleo profile created: {profile.id}")
+            logger.info(f"✓ Kameleo profile created: {profile.id} for proxy {ip}:{port}")
             
             return profile
             
@@ -416,13 +493,19 @@ class GoogleSearchBot:
                 self.driver.quit()
                 logger.info("Browser closed")
             
-            # Stop and clean up Kameleo profile
+            # Stop and DELETE Kameleo profile
             if self.kameleo_client and self.current_profile:
                 try:
+                    # Stop the profile first
                     self.kameleo_client.profile.stop_profile(self.current_profile.id)
                     logger.info(f"Kameleo profile {self.current_profile.id} stopped")
+                    
+                    # Delete the profile to avoid accumulation
+                    self.kameleo_client.profile.delete_profile(self.current_profile.id)
+                    logger.info(f"Kameleo profile {self.current_profile.id} deleted")
+                    
                 except Exception as e:
-                    logger.warning(f"Failed to stop Kameleo profile: {str(e)}")
+                    logger.warning(f"Failed to stop/delete Kameleo profile: {str(e)}")
                 
                 self.current_profile = None
                     
@@ -442,9 +525,11 @@ class GoogleSearchBot:
                 logger.error(f"Proxy {proxy} is not working, skipping...")
                 return False
             
-            # Setup browser
+            # Setup browser (creates profile)
             if not self.setup_browser(proxy):
                 logger.error("Failed to setup browser")
+                # Clean up profile if it was created but browser setup failed
+                self.close_browser()
                 return False
             
             # Verify proxy is being used

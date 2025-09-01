@@ -172,12 +172,19 @@ Start the bot? (y/n): y
 
 ## How It Works
 
-1. **Profile Creation** - Creates Kameleo profile with real browser fingerprint
-2. **Proxy Setup** - Configures proxy with authentication if needed
-3. **Browser Launch** - Starts protected browser session
-4. **Google Search** - Searches for keyword with human-like behavior
-5. **Target Visit** - Finds and visits target domain
-6. **Cleanup** - Properly closes browser and stops profile
+1. **Fingerprint Loading** - Loads diverse Chrome fingerprints from Kameleo's database
+2. **Profile Creation** - Creates unique Kameleo profile for each proxy with **different** browser fingerprint
+3. **Proxy Setup** - Configures proxy with authentication if needed
+4. **Browser Launch** - Starts protected browser session with unique fingerprint
+5. **Google Search** - Searches for keyword with human-like behavior
+6. **Target Visit** - Finds and visits target domain
+7. **Profile Cleanup** - Stops and **deletes** the profile to avoid accumulation in Kameleo
+
+**Important**:
+
+- Each proxy gets its own unique profile with a **different fingerprint**
+- Fingerprints are tracked to ensure no duplicates within a session
+- Profiles are automatically deleted after use
 
 ## Kameleo Advantages
 
@@ -268,6 +275,18 @@ client.profile.start_profile(profile.id, BrowserSettings(
 ))
 ```
 
+### Unique Fingerprint Management
+
+The bot automatically ensures each proxy uses a different fingerprint:
+
+```python
+# Automatic fingerprint variety
+- Loads diverse fingerprints from multiple languages
+- Tracks used fingerprints to avoid duplicates
+- Resets when all fingerprints have been used
+- Each proxy gets a unique browser identity
+```
+
 ### Custom Fingerprints
 
 ```python
@@ -303,10 +322,11 @@ seo-python-bot/
 
 ## Performance Tips
 
-1. **Limit concurrent profiles** - Don't create too many at once
-2. **Clean up profiles** - Always stop profiles when done
-3. **Use quality proxies** - Fast, reliable proxies work best
-4. **Monitor resources** - Watch CPU/RAM usage
+1. **Automatic Profile Management** - Each proxy creates its own profile that is automatically deleted after use
+2. **Limit concurrent profiles** - Don't create too many at once
+3. **Profile cleanup** - Profiles are automatically stopped and deleted to prevent accumulation
+4. **Use quality proxies** - Fast, reliable proxies work best
+5. **Monitor resources** - Watch CPU/RAM usage and Kameleo profile count
 
 ## Disclaimer
 
