@@ -447,57 +447,201 @@ class GoogleSearchBot:
             return False
     
     def find_and_visit_target(self):
-        """Find target domain in search results and visit it"""
+        """Find target domain in search results and visit it - searches up to 20 pages"""
         try:
             logger.info(f"Looking for domain: {self.target_domain}")
             
-            # Get all search result links
-            search_results = self.driver.find_elements(By.CSS_SELECTOR, "h3")
+            max_pages = 20
+            current_page = 1
             
-            target_found = False
-            for result in search_results:
+            while current_page <= max_pages:
+                logger.info(f"Searching page {current_page} of {max_pages} for target domain...")
+                
+                # Wait for search results to load
                 try:
-                    parent_link = result.find_element(By.XPATH, "..")
-                    if parent_link.tag_name == 'a':
-                        href = parent_link.get_attribute('href')
-                        if href and self.target_domain in href:
-                            logger.info(f"Found target domain in: {href}")
+                    WebDriverWait(self.driver, 10).until(
+                        EC.presence_of_element_located((By.ID, "search"))
+                    )
+                except:
+                    logger.error(f"Search results not loaded on page {current_page}")
+                    break
+                
+                # Get all search result links on current page
+                search_results = self.driver.find_elements(By.CSS_SELECTOR, "h3")
+                
+                target_found = False
+                for result in search_results:
+                    try:
+                        parent_link = result.find_element(By.XPATH, "..")
+                        if parent_link.tag_name == 'a':
+                            href = parent_link.get_attribute('href')
+                            if href and self.target_domain in href:
+                                logger.info(f"✓ Found target domain on page {current_page}: {href}")
+                                
+                                # Random delay before clicking
+                                time.sleep(random.uniform(1, 3))
+                                
+                                # Human-like click
+                                actions = ActionChains(self.driver)
+                                actions.move_to_element(parent_link).click().perform()
+                                
+                                target_found = True
+                                break
+                                
+                    except Exception as e:
+                        continue
+                
+                if target_found:
+                    logger.info("Successfully clicked on target website")
+                    
+                    # Wait for page to load
+                    time.sleep(3)
+                    
+                    # Check for and solve any captcha on target website
+                    if not self.captcha_solver.wait_for_captcha_and_solve(self.driver, max_wait=10):
+                        logger.warning("Failed to solve captcha on target website, continuing anyway...")
+                    
+                    # Human-like scrolling on target website
+                    logger.info("Performing human-like scrolling on target website...")
+                    self.human_like_scroll()
+                    
+                    # Stay on page for 20 seconds
+                    logger.info("Staying on target website for 20 seconds...")
+                    time.sleep(20)
+                    
+                    return True
+                
+                # Target not found on current page, try to go to next page
+                if current_page < max_pages:
+                    logger.info(f"Target not found on page {current_page}, trying next page...")
+                    
+                    # Method 1: Try to construct the next page URL manually to maintain search query
+                    try:
+                        current_url = self.driver.current_url
+                        logger.info(f"Current URL: {current_url}")
+                        
+                        # Check if current URL contains our keyword
+                        if self.keyword.replace(' ', '+') not in current_url and self.keyword.replace(' ', '%20') not in current_url:
+                            logger.warning("Current URL doesn't contain our keyword, reconstructing search...")
+                            # Reconstruct the search URL with our keyword
+                            import urllib.parse
+                            encoded_keyword = urllib.parse.quote_plus(self.keyword)
+                            start_param = current_page * 10  # Google shows 10 results per page
+                            next_url = f"https://www.google.com/search?q={encoded_keyword}&start={start_param}"
+                            logger.info(f"Navigating to: {next_url}")
+                            self.driver.get(next_url)
+                            next_clicked = True
+                        else:
+                            # Try clicking next button first
+                            next_clicked = False
                             
-                            # Random delay before clicking
-                            time.sleep(random.uniform(1, 3))
+                            # Try different selectors for next page button
+                            next_selectors = [
+                                'a[aria-label="Next page"]',
+                                'a#pnnext',
+                                'a[id="pnnext"]',
+                                'td.b a[href*="start="]',
+                                'a[href*="start="]'
+                            ]
                             
-                            # Human-like click
-                            actions = ActionChains(self.driver)
-                            actions.move_to_element(parent_link).click().perform()
+                            for selector in next_selectors:
+                                try:
+                                    next_button = self.driver.find_element(By.CSS_SELECTOR, selector)
+                                    if next_button and next_button.is_enabled():
+                                        next_url = next_button.get_attribute('href')
+                                        # Verify the next URL contains our keyword
+                                        if (self.keyword.replace(' ', '+') in next_url or 
+                                            self.keyword.replace(' ', '%20') in next_url or
+                                            'q=' in next_url):
+                                            
+                                            # Scroll to next button
+                                            self.driver.execute_script("arguments[0].scrollIntoView(true);", next_button)
+                                            time.sleep(1)
+                                            
+                                            # Human-like click on next button
+                                            actions = ActionChains(self.driver)
+                                            actions.move_to_element(next_button).click().perform()
+                                            
+                                            logger.info(f"Clicked next page button, moving to page {current_page + 1}")
+                                            next_clicked = True
+                                            break
+                                        else:
+                                            logger.warning(f"Next button URL doesn't contain our keyword: {next_url}")
+                                except:
+                                    continue
                             
-                            target_found = True
-                            break
+                            if not next_clicked:
+                                # Try alternative method - look for page numbers
+                                try:
+                                    page_links = self.driver.find_elements(By.CSS_SELECTOR, 'a[href*="start="]')
+                                    for link in page_links:
+                                        link_text = link.text.strip()
+                                        if link_text.isdigit() and int(link_text) == current_page + 1:
+                                            link_url = link.get_attribute('href')
+                                            # Verify the link contains our keyword
+                                            if (self.keyword.replace(' ', '+') in link_url or 
+                                                self.keyword.replace(' ', '%20') in link_url):
+                                                
+                                                # Scroll to page link
+                                                self.driver.execute_script("arguments[0].scrollIntoView(true);", link)
+                                                time.sleep(1)
+                                                
+                                                # Click page number
+                                                actions = ActionChains(self.driver)
+                                                actions.move_to_element(link).click().perform()
+                                                
+                                                logger.info(f"Clicked page {current_page + 1} link")
+                                                next_clicked = True
+                                                break
+                                except:
+                                    pass
                             
-                except Exception as e:
-                    continue
+                            # If still no success, construct URL manually
+                            if not next_clicked:
+                                logger.info("Manual navigation: constructing next page URL...")
+                                import urllib.parse
+                                encoded_keyword = urllib.parse.quote_plus(self.keyword)
+                                start_param = current_page * 10
+                                next_url = f"https://www.google.com/search?q={encoded_keyword}&start={start_param}"
+                                logger.info(f"Navigating to: {next_url}")
+                                self.driver.get(next_url)
+                                next_clicked = True
+                        
+                    except Exception as e:
+                        logger.error(f"Error navigating to next page: {str(e)}")
+                        next_clicked = False
+                    
+                    if not next_clicked:
+                        logger.warning(f"Could not navigate to next page from page {current_page}")
+                        break
+                    
+                    # Wait for next page to load
+                    time.sleep(random.uniform(3, 5))
+                    
+                    # Verify we're still searching for the right keyword
+                    try:
+                        current_url = self.driver.current_url
+                        if (self.keyword.replace(' ', '+') not in current_url and 
+                            self.keyword.replace(' ', '%20') not in current_url):
+                            logger.warning(f"Page {current_page + 1} URL doesn't contain our keyword!")
+                            logger.warning(f"Expected keyword: {self.keyword}")
+                            logger.warning(f"Current URL: {current_url}")
+                    except:
+                        pass
+                    
+                    # Check for captcha on new page
+                    if not self.captcha_solver.wait_for_captcha_and_solve(self.driver, max_wait=10):
+                        logger.warning("Failed to solve captcha on search results page, continuing anyway...")
+                    
+                    # Human-like scrolling on new page
+                    self.human_like_scroll()
+                    
+                    current_page += 1
+                else:
+                    break
             
-            if target_found:
-                logger.info("Successfully clicked on target website")
-                
-                # Wait for page to load
-                time.sleep(3)
-                
-                # Check for and solve any captcha on target website
-                if not self.captcha_solver.wait_for_captcha_and_solve(self.driver, max_wait=10):
-                    logger.warning("Failed to solve captcha on target website, continuing anyway...")
-                
-                # Human-like scrolling on target website
-                logger.info("Performing human-like scrolling on target website...")
-                self.human_like_scroll()
-                
-                # Stay on page for 20 seconds
-                logger.info("Staying on target website for 20 seconds...")
-                time.sleep(20)
-                
-                return True
-            else:
-                logger.warning(f"Target domain '{self.target_domain}' not found in search results")
-                return False
+            logger.warning(f"Target domain '{self.target_domain}' not found in {max_pages} pages of search results")
+            return False
                 
         except Exception as e:
             logger.error(f"Error finding/visiting target: {str(e)}")
