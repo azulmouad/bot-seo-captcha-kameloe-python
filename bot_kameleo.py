@@ -5,17 +5,13 @@ import logging
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.common.exceptions import TimeoutException, WebDriverException
-from fake_useragent import UserAgent
-import undetected_chromedriver as uc
-import zipfile
+from kameleo.local_api_client import KameleoLocalApiClient
+from kameleo.local_api_client.models import CreateProfileRequest, ProxyChoice, Server
 import os
-import tempfile
-import shutil
 
 # Configure logging
 logging.basicConfig(
@@ -35,8 +31,23 @@ class GoogleSearchBot:
         self.proxy_list = proxy_list
         self.current_proxy = None
         self.driver = None
-        self.ua = UserAgent()
+        self.kameleo_client = None
+        self.current_profile = None
+        self.kameleo_port = os.getenv('KAMELEO_PORT', '5050')
         
+    def init_kameleo_client(self):
+        """Initialize Kameleo client"""
+        try:
+            self.kameleo_client = KameleoLocalApiClient(
+                endpoint=f'http://localhost:{self.kameleo_port}'
+            )
+            logger.info(f"Kameleo client initialized on port {self.kameleo_port}")
+            return True
+        except Exception as e:
+            logger.error(f"Failed to initialize Kameleo client: {str(e)}")
+            logger.error("Make sure Kameleo.CLI is running on the specified port")
+            return False
+    
     def parse_proxy(self, proxy_string):
         """Parse proxy string to extract IP, port, username, password"""
         try:
@@ -44,11 +55,11 @@ class GoogleSearchBot:
             if len(parts) == 4:
                 # Format: ip:port:username:password
                 ip, port, username, password = parts
-                return ip, port, username, password
+                return ip, int(port), username, password
             elif len(parts) == 2:
                 # Format: ip:port (no auth)
                 ip, port = parts
-                return ip, port, None, None
+                return ip, int(port), None, None
             else:
                 raise ValueError(f"Invalid proxy format: {proxy_string}")
         except Exception as e:
@@ -97,90 +108,70 @@ class GoogleSearchBot:
             logger.error(f"Proxy {proxy} failed: {str(e)}")
             return False, None
     
-    def create_proxy_auth_extension(self, proxy_host, proxy_port, proxy_user, proxy_pass):
-        """Create Chrome extension for proxy authentication"""
+    def create_kameleo_profile(self, proxy):
+        """Create a Kameleo profile with proxy configuration"""
         try:
-            logger.info(f"Creating proxy auth extension for {proxy_host}:{proxy_port}")
+            logger.info(f"Creating Kameleo profile with proxy: {proxy}")
             
-            # Create extension manifest
-            manifest_json = """{
-    "version": "1.0.0",
-    "manifest_version": 2,
-    "name": "Proxy Auth",
-    "permissions": [
-        "proxy",
-        "tabs",
-        "unlimitedStorage",
-        "storage",
-        "<all_urls>",
-        "webRequest",
-        "webRequestBlocking"
-    ],
-    "background": {
-        "scripts": ["background.js"]
-    },
-    "minimum_chrome_version": "22.0.0"
-}"""
+            # Parse proxy
+            ip, port, username, password = self.parse_proxy(proxy)
+            if not ip or not port:
+                return None
             
-            background_js = f"""
-var config = {{
-    mode: "fixed_servers",
-    rules: {{
-        singleProxy: {{
-            scheme: "http",
-            host: "{proxy_host}",
-            port: parseInt({proxy_port})
-        }},
-        bypassList: ["localhost"]
-    }}
-}};
-
-chrome.proxy.settings.set({{value: config, scope: "regular"}}, function() {{
-    console.log("Proxy configured");
-}});
-
-function callbackFn(details) {{
-    return {{
-        authCredentials: {{
-            username: "{proxy_user}",
-            password: "{proxy_pass}"
-        }}
-    }};
-}}
-
-chrome.webRequest.onAuthRequired.addListener(
-    callbackFn,
-    {{urls: ["<all_urls>"]}},
-    ['blocking']
-);
-
-console.log("Proxy authentication extension loaded");
-"""
+            # Search for Chrome fingerprints with recent versions
+            fingerprints = self.kameleo_client.fingerprint.search_fingerprints(
+                device_type='desktop',
+                browser_product='chrome',
+                browser_version='>134'  # Use recent Chrome versions
+            )
             
-            # Create temporary directory for extension
-            temp_dir = tempfile.mkdtemp()
-            extension_dir = os.path.join(temp_dir, 'proxy_auth')
-            os.makedirs(extension_dir, exist_ok=True)
+            if not fingerprints:
+                logger.error("No Chrome fingerprints found")
+                return None
             
-            # Write files
-            with open(os.path.join(extension_dir, 'manifest.json'), 'w') as f:
-                f.write(manifest_json)
+            # Select a random fingerprint for variety
+            selected_fingerprint = random.choice(fingerprints[:10])  # Use first 10 for variety
+            logger.info(f"Selected fingerprint: {selected_fingerprint.id}")
             
-            with open(os.path.join(extension_dir, 'background.js'), 'w') as f:
-                f.write(background_js)
+            # Create profile request with proxy
+            proxy_config = None
+            if username and password:
+                # Authenticated proxy
+                proxy_config = ProxyChoice(
+                    value='http',  # or 'socks5' depending on your proxy type
+                    extra=Server(
+                        host=ip,
+                        port=port,
+                        id=username,
+                        secret=password
+                    )
+                )
+                logger.info(f"Using authenticated proxy: {ip}:{port}")
+            else:
+                # Simple proxy without auth
+                proxy_config = ProxyChoice(
+                    value='http',
+                    extra=Server(
+                        host=ip,
+                        port=port
+                    )
+                )
+                logger.info(f"Using simple proxy: {ip}:{port}")
             
-            logger.info(f"Proxy auth extension created at: {extension_dir}")
-            return extension_dir
+            create_profile_request = CreateProfileRequest(
+                fingerprint_id=selected_fingerprint.id,
+                name=f'SEO Bot Profile - {ip}:{port}',
+                proxy=proxy_config
+            )
+            
+            # Create the profile
+            profile = self.kameleo_client.profile.create_profile(create_profile_request)
+            logger.info(f"Kameleo profile created: {profile.id}")
+            
+            return profile
             
         except Exception as e:
-            logger.error(f"Failed to create proxy auth extension: {str(e)}")
-            return None
-        """Get current public IP address without proxy"""
-        try:
-            response = requests.get('http://httpbin.org/ip', timeout=10)
-            return response.json().get('origin')
-        except Exception as e:
-            logger.error(f"Failed to get real IP: {str(e)}")
+            logger.error(f"Failed to create Kameleo profile: {str(e)}")
             return None
     
     def get_my_ip(self):
@@ -193,66 +184,40 @@ console.log("Proxy authentication extension loaded");
             return None
     
     def setup_browser(self, proxy):
-        """Setup Chrome browser with proxy and anti-detection measures"""
+        """Setup Chrome browser with Kameleo and proxy"""
         try:
-            logger.info(f"Setting up browser with proxy: {proxy}")
+            logger.info(f"Setting up Kameleo browser with proxy: {proxy}")
             
-            # Parse proxy
-            ip, port, username, password = self.parse_proxy(proxy)
-            if not ip or not port:
-                return False
-            
-            # Create proxy auth extension if needed
-            extension_dir = None
-            if username and password:
-                extension_dir = self.create_proxy_auth_extension(ip, port, username, password)
-                if not extension_dir:
-                    logger.error("Failed to create proxy auth extension")
+            # Initialize Kameleo client if not done
+            if not self.kameleo_client:
+                if not self.init_kameleo_client():
                     return False
             
-            # Chrome options - minimal for compatibility
-            chrome_options = uc.ChromeOptions()
+            # Create Kameleo profile with proxy
+            self.current_profile = self.create_kameleo_profile(proxy)
+            if not self.current_profile:
+                return False
             
-            # Add proxy auth extension
-            if extension_dir:
-                chrome_options.add_argument(f'--load-extension={extension_dir}')
-                logger.info(f"Added proxy auth extension: {extension_dir}")
-            else:
-                # Simple proxy without auth
-                chrome_options.add_argument(f'--proxy-server=http://{ip}:{port}')
+            # Setup Chrome options for Kameleo
+            options = webdriver.ChromeOptions()
+            options.add_experimental_option('kameleo:profileId', self.current_profile.id)
             
-            # Essential arguments only
-            chrome_options.add_argument('--no-sandbox')
-            chrome_options.add_argument('--disable-dev-shm-usage')
-            chrome_options.add_argument('--disable-blink-features=AutomationControlled')
-            
-            # Random user agent
-            user_agent = self.ua.random
-            chrome_options.add_argument(f'--user-agent={user_agent}')
-            logger.info(f"Using User-Agent: {user_agent}")
-            
-            # Initialize undetected chromedriver
-            self.driver = uc.Chrome(options=chrome_options, version_main=None)
-            
-            # Store extension dir for cleanup
-            self.extension_dir = extension_dir
-            
-            # Execute script to remove webdriver property
-            try:
-                self.driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
-            except:
-                pass
+            # Connect to Kameleo WebDriver
+            self.driver = webdriver.Remote(
+                command_executor=f'http://localhost:{self.kameleo_port}/webdriver',
+                options=options
+            )
             
             # Set random screen resolution
             resolutions = [(1920, 1080), (1366, 768), (1440, 900), (1536, 864)]
             width, height = random.choice(resolutions)
             self.driver.set_window_size(width, height)
             
-            logger.info("Browser setup completed successfully")
+            logger.info("Kameleo browser setup completed successfully")
             return True
             
         except Exception as e:
-            logger.error(f"Failed to setup browser: {str(e)}")
+            logger.error(f"Failed to setup Kameleo browser: {str(e)}")
             return False
     
     def verify_proxy_ip(self):
@@ -445,19 +410,21 @@ console.log("Proxy authentication extension loaded");
             return False
     
     def close_browser(self):
-        """Close the browser and clean up"""
+        """Close the browser and clean up Kameleo profile"""
         try:
             if self.driver:
                 self.driver.quit()
                 logger.info("Browser closed")
             
-            # Clean up extension directory
-            if hasattr(self, 'extension_dir') and self.extension_dir and os.path.exists(self.extension_dir):
+            # Stop and clean up Kameleo profile
+            if self.kameleo_client and self.current_profile:
                 try:
-                    shutil.rmtree(os.path.dirname(self.extension_dir))
-                    logger.info("Cleaned up extension files")
-                except:
-                    pass
+                    self.kameleo_client.profile.stop_profile(self.current_profile.id)
+                    logger.info(f"Kameleo profile {self.current_profile.id} stopped")
+                except Exception as e:
+                    logger.warning(f"Failed to stop Kameleo profile: {str(e)}")
+                
+                self.current_profile = None
                     
         except Exception as e:
             logger.error(f"Error closing browser: {str(e)}")
@@ -579,11 +546,15 @@ if __name__ == "__main__":
 # Example usage:
 """
 Required packages (install with pip):
-pip install selenium undetected-chromedriver fake-useragent requests
+pip install selenium kameleo.local-api-client requests
+
+Prerequisites:
+1. Install Kameleo.CLI and make sure it's running on port 5050 (default)
+2. Set KAMELEO_PORT environment variable if using different port
 
 Example proxy list format:
 123.456.789.10:8080
-98.765.432.10:3128
+98.765.432.10:3128:username:password
 111.222.333.44:8080
 
 Example run:
@@ -591,16 +562,22 @@ keyword: "python tutorials"
 domain: "realpython.com"
 proxy list: 
 123.456.789.10:8080
-98.765.432.10:3128
+98.765.432.10:3128:myuser:mypass
 
 The bot will:
 1. Test each proxy
-2. Verify IP masking
-3. Open Google with fake user agent
-4. Search for keyword
-5. Scroll like human
-6. Find and click target domain
-7. Scroll on target site
-8. Stay for 20 seconds
-9. Move to next proxy
+2. Create Kameleo profile with proxy
+3. Verify IP masking with real browser fingerprinting protection
+4. Search Google with human-like behavior
+5. Find and click target domain
+6. Stay on target site for 20 seconds
+7. Clean up Kameleo profile and move to next proxy
+
+Kameleo provides superior anti-detection compared to undetected-chromedriver:
+- Real browser fingerprints
+- Canvas fingerprint protection
+- WebGL fingerprint protection
+- Audio fingerprint protection
+- Font fingerprint protection
+- And much more...
 """

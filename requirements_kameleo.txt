@@ -1,0 +1,3 @@
+selenium==4.15.2
+kameleo.local-api-client
+requests==2.31.0
