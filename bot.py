@@ -12,6 +12,10 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.common.exceptions import TimeoutException, WebDriverException
 from fake_useragent import UserAgent
 import undetected_chromedriver as uc
+import zipfile
+import os
+import tempfile
+import shutil
 
 # Configure logging
 logging.basicConfig(
@@ -33,33 +37,144 @@ class GoogleSearchBot:
         self.driver = None
         self.ua = UserAgent()
         
+    def parse_proxy(self, proxy_string):
+        """Parse proxy string to extract IP, port, username, password"""
+        try:
+            parts = proxy_string.split(':')
+            if len(parts) == 4:
+                # Format: ip:port:username:password
+                ip, port, username, password = parts
+                return ip, port, username, password
+            elif len(parts) == 2:
+                # Format: ip:port (no auth)
+                ip, port = parts
+                return ip, port, None, None
+            else:
+                raise ValueError(f"Invalid proxy format: {proxy_string}")
+        except Exception as e:
+            logger.error(f"Failed to parse proxy {proxy_string}: {str(e)}")
+            return None, None, None, None
+    
     def check_proxy(self, proxy):
         """Check if proxy is working and get IP address"""
         try:
             logger.info(f"Testing proxy: {proxy}")
+            
+            # Parse proxy
+            ip, port, username, password = self.parse_proxy(proxy)
+            if not ip or not port:
+                return False, None
+            
+            # Build proxy URL
+            if username and password:
+                proxy_url = f'http://{username}:{password}@{ip}:{port}'
+                proxy_display = f'{ip}:{port} (with auth)'
+            else:
+                proxy_url = f'http://{ip}:{port}'
+                proxy_display = f'{ip}:{port}'
+            
             proxies = {
-                'http': f'http://{proxy}',
-                'https': f'http://{proxy}'
+                'http': proxy_url,
+                'https': proxy_url
             }
+            
+            logger.info(f"Testing proxy: {proxy_display}")
             
             # Test proxy with a simple request
             response = requests.get('http://httpbin.org/ip', 
                                   proxies=proxies, 
-                                  timeout=10)
+                                  timeout=15)
             
             if response.status_code == 200:
                 proxy_ip = response.json().get('origin')
-                logger.info(f"Proxy {proxy} is working. IP: {proxy_ip}")
+                logger.info(f"✓ Proxy {proxy_display} is working. IP: {proxy_ip}")
                 return True, proxy_ip
             else:
-                logger.warning(f"Proxy {proxy} returned status code: {response.status_code}")
+                logger.warning(f"Proxy {proxy_display} returned status code: {response.status_code}")
                 return False, None
                 
         except Exception as e:
             logger.error(f"Proxy {proxy} failed: {str(e)}")
             return False, None
     
-    def get_my_ip(self):
+    def create_proxy_auth_extension(self, proxy_host, proxy_port, proxy_user, proxy_pass):
+        """Create Chrome extension for proxy authentication"""
+        try:
+            logger.info(f"Creating proxy auth extension for {proxy_host}:{proxy_port}")
+            
+            # Create extension manifest
+            manifest_json = """{
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "name": "Proxy Auth",
+    "permissions": [
+        "proxy",
+        "tabs",
+        "unlimitedStorage",
+        "storage",
+        "<all_urls>",
+        "webRequest",
+        "webRequestBlocking"
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "minimum_chrome_version": "22.0.0"
+}"""
+            
+            background_js = f"""
+var config = {{
+    mode: "fixed_servers",
+    rules: {{
+        singleProxy: {{
+            scheme: "http",
+            host: "{proxy_host}",
+            port: parseInt({proxy_port})
+        }},
+        bypassList: ["localhost"]
+    }}
+}};
+
+chrome.proxy.settings.set({{value: config, scope: "regular"}}, function() {{
+    console.log("Proxy configured");
+}});
+
+function callbackFn(details) {{
+    return {{
+        authCredentials: {{
+            username: "{proxy_user}",
+            password: "{proxy_pass}"
+        }}
+    }};
+}}
+
+chrome.webRequest.onAuthRequired.addListener(
+    callbackFn,
+    {{urls: ["<all_urls>"]}},
+    ['blocking']
+);
+
+console.log("Proxy authentication extension loaded");
+"""
+            
+            # Create temporary directory for extension
+            temp_dir = tempfile.mkdtemp()
+            extension_dir = os.path.join(temp_dir, 'proxy_auth')
+            os.makedirs(extension_dir, exist_ok=True)
+            
+            # Write files
+            with open(os.path.join(extension_dir, 'manifest.json'), 'w') as f:
+                f.write(manifest_json)
+            
+            with open(os.path.join(extension_dir, 'background.js'), 'w') as f:
+                f.write(background_js)
+            
+            logger.info(f"Proxy auth extension created at: {extension_dir}")
+            return extension_dir
+            
+        except Exception as e:
+            logger.error(f"Failed to create proxy auth extension: {str(e)}")
+            return None
         """Get current public IP address without proxy"""
         try:
             response = requests.get('http://httpbin.org/ip', timeout=10)
@@ -73,34 +188,51 @@ class GoogleSearchBot:
         try:
             logger.info(f"Setting up browser with proxy: {proxy}")
             
-            # Chrome options with anti-detection measures
-            chrome_options = Options()
+            # Parse proxy
+            ip, port, username, password = self.parse_proxy(proxy)
+            if not ip or not port:
+                return False
             
-            # Proxy configuration
-            chrome_options.add_argument(f'--proxy-server=http://{proxy}')
+            # Create proxy auth extension if needed
+            extension_dir = None
+            if username and password:
+                extension_dir = self.create_proxy_auth_extension(ip, port, username, password)
+                if not extension_dir:
+                    logger.error("Failed to create proxy auth extension")
+                    return False
             
-            # Anti-detection arguments
+            # Chrome options - minimal for compatibility
+            chrome_options = uc.ChromeOptions()
+            
+            # Add proxy auth extension
+            if extension_dir:
+                chrome_options.add_argument(f'--load-extension={extension_dir}')
+                logger.info(f"Added proxy auth extension: {extension_dir}")
+            else:
+                # Simple proxy without auth
+                chrome_options.add_argument(f'--proxy-server=http://{ip}:{port}')
+            
+            # Essential arguments only
             chrome_options.add_argument('--no-sandbox')
             chrome_options.add_argument('--disable-dev-shm-usage')
-            chrome_options.add_argument('--disable-gpu')
-            chrome_options.add_argument('--disable-extensions')
-            chrome_options.add_argument('--disable-plugins')
-            chrome_options.add_argument('--disable-images')
-            chrome_options.add_argument('--disable-javascript')
             chrome_options.add_argument('--disable-blink-features=AutomationControlled')
-            chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
-            chrome_options.add_experimental_option('useAutomationExtension', False)
             
             # Random user agent
             user_agent = self.ua.random
             chrome_options.add_argument(f'--user-agent={user_agent}')
             logger.info(f"Using User-Agent: {user_agent}")
             
-            # Use undetected chromedriver
-            self.driver = uc.Chrome(options=chrome_options)
+            # Initialize undetected chromedriver
+            self.driver = uc.Chrome(options=chrome_options, version_main=None)
+            
+            # Store extension dir for cleanup
+            self.extension_dir = extension_dir
             
             # Execute script to remove webdriver property
-            self.driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
+            try:
+                self.driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
+            except:
+                pass
             
             # Set random screen resolution
             resolutions = [(1920, 1080), (1366, 768), (1440, 900), (1536, 864)]
@@ -276,11 +408,20 @@ class GoogleSearchBot:
             return False
     
     def close_browser(self):
-        """Close the browser"""
+        """Close the browser and clean up"""
         try:
             if self.driver:
                 self.driver.quit()
                 logger.info("Browser closed")
+            
+            # Clean up extension directory
+            if hasattr(self, 'extension_dir') and self.extension_dir and os.path.exists(self.extension_dir):
+                try:
+                    shutil.rmtree(os.path.dirname(self.extension_dir))
+                    logger.info("Cleaned up extension files")
+                except:
+                    pass
+                    
         except Exception as e:
             logger.error(f"Error closing browser: {str(e)}")
     
