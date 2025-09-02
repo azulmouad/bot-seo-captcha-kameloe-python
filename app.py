@@ -7,10 +7,12 @@ import os
 import json
 import time
 import threading
+import random
 from datetime import datetime
 from flask import Flask, render_template, request, jsonify, send_from_directory
 from flask_socketio import SocketIO, emit
 import logging
+from selenium.webdriver.common.by import By
 from bot_kameleo import GoogleSearchBot
 
 # Configure logging
@@ -253,14 +255,20 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
                                 logger.info(f"Found target domain on page {page}, position {position}: {href}")
                                 
                                 # Click and visit
-                                time.sleep(2)
-                                parent_link.click()
-                                time.sleep(3)
-                                
-                                # Perform realistic interaction
-                                self.realistic_website_interaction()
-                                
-                                return True, page, position
+                                try:
+                                    time.sleep(2)
+                                    parent_link.click()
+                                    time.sleep(3)
+                                    
+                                    # Perform realistic interaction
+                                    logger.info("🎭 Starting realistic website interaction (60 seconds)")
+                                    self.realistic_website_interaction()
+                                    
+                                    logger.info("✅ Successfully visited and interacted with target website")
+                                    return True, page, position
+                                except Exception as e:
+                                    logger.error(f"Error clicking/visiting target: {str(e)}")
+                                    return True, page, position  # Still count as found even if click failed
                                 
                     except Exception as e:
                         continue
@@ -272,6 +280,296 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
         except Exception as e:
             logger.error(f"Error finding/visiting target: {str(e)}")
             return False, 1, None
+    
+    def realistic_website_interaction(self):
+        """Perform realistic human-like interactions for 1 minute"""
+        try:
+            start_time = time.time()
+            total_duration = 60  # 1 minute
+            
+            logger.info("🎭 Starting realistic website interaction (60 seconds)")
+            
+            # Phase 1: Initial exploration (0-15 seconds)
+            logger.info("Phase 1: Initial page exploration...")
+            self.smooth_scroll_down(600)
+            time.sleep(2)
+            
+            self.hover_random_elements(2)
+            time.sleep(1)
+            
+            self.smooth_scroll_up(300)
+            time.sleep(2)
+            
+            # Phase 2: Header navigation exploration (15-35 seconds)
+            elapsed = time.time() - start_time
+            if elapsed < 35:
+                logger.info("Phase 2: Exploring navigation...")
+                self.click_header_navigation()
+            
+            # Phase 3: Content exploration (35-50 seconds)
+            elapsed = time.time() - start_time
+            if elapsed < 50:
+                logger.info("Phase 3: Content exploration...")
+                
+                # Scroll through content
+                self.smooth_scroll_down(800)
+                time.sleep(2)
+                
+                self.hover_random_elements(3)
+                time.sleep(1)
+                
+                # Read-like behavior (pause at different sections)
+                for i in range(3):
+                    self.smooth_scroll_down(200)
+                    time.sleep(1.5)  # Reading pause
+                
+                self.smooth_scroll_up(400)
+                time.sleep(1)
+            
+            # Phase 4: Final exploration (50-60 seconds)
+            elapsed = time.time() - start_time
+            remaining_time = total_duration - elapsed
+            
+            if remaining_time > 5:
+                logger.info("Phase 4: Final exploration...")
+                
+                # Try to find and click another internal link
+                try:
+                    internal_links = self.driver.find_elements(By.CSS_SELECTOR, 'a')
+                    valid_internal_links = []
+                    
+                    for link in internal_links[:15]:
+                        try:
+                            href = link.get_attribute('href')
+                            if (href and link.is_displayed() and 
+                                self.target_domain in href and
+                                not any(ext in href.lower() for ext in ['mailto:', 'tel:', '#'])):
+                                valid_internal_links.append(link)
+                        except:
+                            continue
+                    
+                    if valid_internal_links:
+                        link = random.choice(valid_internal_links)
+                        link_text = link.text.strip()[:30] or "Internal Link"
+                        
+                        # Scroll to and click link
+                        self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", link)
+                        time.sleep(1)
+                        
+                        from selenium.webdriver.common.action_chains import ActionChains
+                        actions = ActionChains(self.driver)
+                        actions.move_to_element(link).pause(0.5).click().perform()
+                        
+                        logger.info(f"Clicked internal link: {link_text}")
+                        
+                        # Brief exploration of new page
+                        time.sleep(2)
+                        self.smooth_scroll_down(400)
+                        time.sleep(1)
+                        
+                except Exception as e:
+                    logger.warning(f"Could not explore internal links: {str(e)}")
+            
+            # Fill remaining time with gentle scrolling
+            while time.time() - start_time < total_duration:
+                remaining = total_duration - (time.time() - start_time)
+                if remaining > 2:
+                    if random.choice([True, False]):
+                        self.smooth_scroll_down(random.randint(100, 300))
+                    else:
+                        self.smooth_scroll_up(random.randint(100, 200))
+                    time.sleep(1)
+                else:
+                    time.sleep(remaining)
+                    break
+            
+            total_time = time.time() - start_time
+            logger.info(f"✅ Completed realistic interaction session ({total_time:.1f} seconds)")
+            
+        except Exception as e:
+            logger.error(f"Error during realistic website interaction: {str(e)}")
+            # Fallback to simple behavior
+            logger.info("Falling back to simple scrolling...")
+            self.human_like_scroll()
+            time.sleep(30)  # At least spend some time on the site
+    
+    def smooth_scroll_down(self, pixels=None):
+        """Perform smooth scrolling down"""
+        try:
+            if pixels is None:
+                pixels = random.randint(300, 800)
+            
+            # Smooth scroll in small increments
+            scroll_steps = random.randint(8, 15)
+            step_size = pixels // scroll_steps
+            
+            for i in range(scroll_steps):
+                self.driver.execute_script(f"window.scrollBy(0, {step_size});")
+                time.sleep(random.uniform(0.05, 0.15))
+            
+            logger.info(f"Smooth scrolled down {pixels} pixels")
+            
+        except Exception as e:
+            logger.error(f"Error during smooth scroll down: {str(e)}")
+    
+    def smooth_scroll_up(self, pixels=None):
+        """Perform smooth scrolling up"""
+        try:
+            if pixels is None:
+                pixels = random.randint(200, 600)
+            
+            # Smooth scroll in small increments
+            scroll_steps = random.randint(8, 15)
+            step_size = pixels // scroll_steps
+            
+            for i in range(scroll_steps):
+                self.driver.execute_script(f"window.scrollBy(0, -{step_size});")
+                time.sleep(random.uniform(0.05, 0.15))
+            
+            logger.info(f"Smooth scrolled up {pixels} pixels")
+            
+        except Exception as e:
+            logger.error(f"Error during smooth scroll up: {str(e)}")
+    
+    def hover_random_elements(self, duration=2):
+        """Hover over random elements on the page"""
+        try:
+            # Common selectors for hoverable elements
+            hover_selectors = [
+                'a', 'button', 'h1', 'h2', 'h3', 'img', 
+                '.menu', '.nav', '.header', '.link', 
+                '[role="button"]', '[role="link"]'
+            ]
+            
+            from selenium.webdriver.common.action_chains import ActionChains
+            actions = ActionChains(self.driver)
+            hovered_count = 0
+            
+            for selector in hover_selectors:
+                try:
+                    elements = self.driver.find_elements(By.CSS_SELECTOR, selector)
+                    if elements and hovered_count < 3:  # Limit to 3 hovers
+                        # Select a random visible element
+                        visible_elements = [el for el in elements[:10] if el.is_displayed()]
+                        if visible_elements:
+                            element = random.choice(visible_elements)
+                            
+                            # Scroll element into view
+                            self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", element)
+                            time.sleep(0.5)
+                            
+                            # Hover over element
+                            actions.move_to_element(element).perform()
+                            time.sleep(1)
+                            hovered_count += 1
+                            
+                            logger.info(f"Hovered over {selector} element")
+                            
+                except Exception:
+                    continue
+            
+            if hovered_count > 0:
+                logger.info(f"Hovered over {hovered_count} elements")
+            
+        except Exception as e:
+            logger.error(f"Error during hovering: {str(e)}")
+    
+    def click_header_navigation(self):
+        """Click on header navigation elements and explore pages"""
+        try:
+            # Common selectors for header navigation
+            nav_selectors = [
+                'header a', 'nav a', '.header a', '.navigation a',
+                '.menu a', '.navbar a', '.top-menu a', '.main-menu a',
+                'ul.menu a', '.nav-item a', '.menu-item a'
+            ]
+            
+            clicked_links = []
+            original_url = self.driver.current_url
+            
+            for selector in nav_selectors:
+                try:
+                    nav_links = self.driver.find_elements(By.CSS_SELECTOR, selector)
+                    if nav_links:
+                        # Filter for visible links that aren't external
+                        valid_links = []
+                        for link in nav_links[:8]:  # Check first 8 links
+                            try:
+                                if (link.is_displayed() and 
+                                    link.get_attribute('href') and
+                                    not any(ext in link.get_attribute('href').lower() 
+                                           for ext in ['mailto:', 'tel:', 'javascript:', '#']) and
+                                    self.target_domain in link.get_attribute('href')):
+                                    valid_links.append(link)
+                            except:
+                                continue
+                        
+                        if valid_links and len(clicked_links) < 2:  # Limit to 2 navigation clicks
+                            link = random.choice(valid_links)
+                            link_text = link.text.strip()[:30] or "Navigation Link"
+                            
+                            try:
+                                # Scroll to link and click
+                                self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", link)
+                                time.sleep(1)
+                                
+                                # Human-like click
+                                from selenium.webdriver.common.action_chains import ActionChains
+                                actions = ActionChains(self.driver)
+                                actions.move_to_element(link).pause(0.5).click().perform()
+                                
+                                logger.info(f"Clicked navigation link: {link_text}")
+                                clicked_links.append(link_text)
+                                
+                                # Wait for page to load
+                                time.sleep(3)
+                                
+                                # Check if we're on a new page
+                                new_url = self.driver.current_url
+                                if new_url != original_url:
+                                    logger.info(f"Navigated to new page: {new_url}")
+                                    
+                                    # Explore the new page briefly
+                                    self.explore_page_briefly()
+                                    
+                                    # Go back to original page
+                                    self.driver.back()
+                                    time.sleep(2)
+                                    logger.info("Returned to previous page")
+                                
+                                break  # Exit selector loop after successful click
+                                
+                            except Exception as e:
+                                logger.warning(f"Failed to click navigation link: {str(e)}")
+                                continue
+                        
+                except Exception:
+                    continue
+            
+            if clicked_links:
+                logger.info(f"Successfully explored {len(clicked_links)} navigation pages")
+            else:
+                logger.info("No suitable navigation links found")
+                
+        except Exception as e:
+            logger.error(f"Error during header navigation: {str(e)}")
+    
+    def explore_page_briefly(self):
+        """Briefly explore a page with scrolling and hovering"""
+        try:
+            # Quick scroll down
+            self.smooth_scroll_down(400)
+            time.sleep(1)
+            
+            # Hover over an element
+            self.hover_random_elements(1)
+            
+            # Quick scroll up
+            self.smooth_scroll_up(200)
+            time.sleep(1)
+            
+        except Exception as e:
+            logger.error(f"Error during brief page exploration: {str(e)}")
 
 @app.route('/')
 def index():
