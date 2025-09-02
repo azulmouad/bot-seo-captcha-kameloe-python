@@ -257,11 +257,44 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
                             if href and self.target_domain in href:
                                 logger.info(f"Found target domain on page {page}, position {position}: {href}")
                                 
-                                # Click and visit
+                                # Click and visit with improved method
                                 try:
-                                    time.sleep(2)
-                                    parent_link.click()
+                                    # Method 1: Scroll element into view and use ActionChains
+                                    self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", parent_link)
+                                    time.sleep(1)
+                                    
+                                    # Try ActionChains click first
+                                    from selenium.webdriver.common.action_chains import ActionChains
+                                    actions = ActionChains(self.driver)
+                                    actions.move_to_element(parent_link).pause(0.5).click().perform()
+                                    
+                                    logger.info("✓ Successfully clicked target link using ActionChains")
                                     time.sleep(3)
+                                    
+                                except Exception as e1:
+                                    logger.warning(f"ActionChains click failed: {str(e1)}")
+                                    try:
+                                        # Method 2: JavaScript click
+                                        self.driver.execute_script("arguments[0].click();", parent_link)
+                                        logger.info("✓ Successfully clicked target link using JavaScript")
+                                        time.sleep(3)
+                                        
+                                    except Exception as e2:
+                                        logger.warning(f"JavaScript click failed: {str(e2)}")
+                                        try:
+                                            # Method 3: Direct navigation
+                                            logger.info(f"Direct navigation to: {href}")
+                                            self.driver.get(href)
+                                            time.sleep(3)
+                                            
+                                        except Exception as e3:
+                                            logger.error(f"All click methods failed: {str(e3)}")
+                                            return True, page, position  # Still count as found
+                                
+                                # Check if we successfully navigated to target domain
+                                current_url = self.driver.current_url
+                                if self.target_domain in current_url:
+                                    logger.info(f"✓ Successfully navigated to target website: {current_url}")
                                     
                                     # Perform realistic interaction
                                     logger.info("🎭 Starting realistic website interaction (60 seconds)")
@@ -269,9 +302,9 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
                                     
                                     logger.info("✅ Successfully visited and interacted with target website")
                                     return True, page, position
-                                except Exception as e:
-                                    logger.error(f"Error clicking/visiting target: {str(e)}")
-                                    return True, page, position  # Still count as found even if click failed
+                                else:
+                                    logger.warning(f"Navigation may have failed. Current URL: {current_url}")
+                                    return True, page, position  # Still count as found
                                 
                     except Exception as e:
                         continue
@@ -343,6 +376,16 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
             total_duration = 60  # 1 minute
             
             logger.info("🎭 Starting realistic website interaction (60 seconds)")
+            
+            # Wait for page to fully load
+            time.sleep(3)
+            
+            # Check if we're actually on the target website
+            current_url = self.driver.current_url
+            if self.target_domain not in current_url:
+                logger.warning(f"Not on target domain. Current URL: {current_url}")
+                # Still perform some interaction for realism
+                total_duration = 30  # Reduce time if not on target
             
             # Phase 1: Initial exploration (0-15 seconds)
             logger.info("Phase 1: Initial page exploration...")
@@ -690,8 +733,7 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
             try:
                 result = self.captcha_solver.recaptcha(
                     sitekey=sitekey,
-                    url=current_url,
-                    timeout=120
+                    url=current_url
                 )
                 
                 if result and 'code' in result:
