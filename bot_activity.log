@@ -18,3 +18,175 @@
 2025-09-02 00:58:09,932 - INFO - 127.0.0.1 - - [02/Sep/2025 00:58:09] "GET /socket.io/?EIO=4&transport=polling&t=Pa7jtu5&sid=q6AP61gTBrTtdRChAAAC HTTP/1.1" 200 -
 2025-09-02 00:58:12,464 - INFO - Client disconnected from WebSocket
 2025-09-02 00:58:12,465 - INFO - 127.0.0.1 - - [02/Sep/2025 00:58:12] "GET /socket.io/?EIO=4&transport=websocket&sid=X3CUShgeShFMuufsAAAA HTTP/1.1" 200 -
+2025-09-02 01:01:12,808 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.110.12:8080
+2025-09-02 01:01:12,808 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-02 01:01:16,552 - INFO - 127.0.0.1 - - [02/Sep/2025 01:01:16] "GET /socket.io/?EIO=4&transport=polling&t=Pa7kbRy HTTP/1.1" 200 -
+2025-09-02 01:01:16,568 - INFO - Client connected to WebSocket
+2025-09-02 01:01:16,569 - INFO - 127.0.0.1 - - [02/Sep/2025 01:01:16] "GET /socket.io/?EIO=4&transport=polling&t=Pa7kbSD&sid=T1M_KS7gR0hPMbkeAAAA HTTP/1.1" 200 -
+2025-09-02 01:01:16,569 - INFO - 127.0.0.1 - - [02/Sep/2025 01:01:16] "POST /socket.io/?EIO=4&transport=polling&t=Pa7kbSC&sid=T1M_KS7gR0hPMbkeAAAA HTTP/1.1" 200 -
+2025-09-02 01:01:58,160 - INFO - 2captcha solver initialized with API key: 56d4457439...
+2025-09-02 01:01:58,161 - ERROR - Bot execution error: Object of type datetime is not JSON serializable
+2025-09-02 01:01:58,161 - INFO - 127.0.0.1 - - [02/Sep/2025 01:01:58] "POST /api/start HTTP/1.1" 200 -
+2025-09-02 01:04:46,344 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.110.12:8080
+2025-09-02 01:04:46,345 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-02 01:04:49,007 - INFO - 127.0.0.1 - - [02/Sep/2025 01:04:49] "GET /socket.io/?EIO=4&transport=polling&t=Pa7lPJd HTTP/1.1" 200 -
+2025-09-02 01:04:49,019 - INFO - Client connected to WebSocket
+2025-09-02 01:04:49,020 - INFO - 127.0.0.1 - - [02/Sep/2025 01:04:49] "POST /socket.io/?EIO=4&transport=polling&t=Pa7lPJq&sid=c75AOgl05ERbaPPSAAAA HTTP/1.1" 200 -
+2025-09-02 01:04:49,021 - INFO - 127.0.0.1 - - [02/Sep/2025 01:04:49] "GET /socket.io/?EIO=4&transport=polling&t=Pa7lPJr&sid=c75AOgl05ERbaPPSAAAA HTTP/1.1" 200 -
+2025-09-02 01:04:52,624 - INFO - Client disconnected from WebSocket
+2025-09-02 01:04:52,624 - INFO - 127.0.0.1 - - [02/Sep/2025 01:04:52] "GET /socket.io/?EIO=4&transport=websocket&sid=c75AOgl05ERbaPPSAAAA HTTP/1.1" 200 -
+2025-09-02 01:04:52,641 - INFO - 127.0.0.1 - - [02/Sep/2025 01:04:52] "[36mGET / HTTP/1.1[0m" 304 -
+2025-09-02 01:04:52,848 - INFO - 127.0.0.1 - - [02/Sep/2025 01:04:52] "GET /api/status HTTP/1.1" 200 -
+2025-09-02 01:04:52,849 - INFO - 127.0.0.1 - - [02/Sep/2025 01:04:52] "GET /api/logs HTTP/1.1" 200 -
+2025-09-02 01:04:52,849 - INFO - 127.0.0.1 - - [02/Sep/2025 01:04:52] "GET /api/results HTTP/1.1" 200 -
+2025-09-02 01:04:52,849 - INFO - 127.0.0.1 - - [02/Sep/2025 01:04:52] "GET /socket.io/?EIO=4&transport=polling&t=Pa7lQFh HTTP/1.1" 200 -
+2025-09-02 01:04:52,861 - INFO - Client connected to WebSocket
+2025-09-02 01:04:52,862 - INFO - 127.0.0.1 - - [02/Sep/2025 01:04:52] "POST /socket.io/?EIO=4&transport=polling&t=Pa7lQFv&sid=7Y7S7EdVvI0ihxVEAAAC HTTP/1.1" 200 -
+2025-09-02 01:04:52,862 - INFO - 127.0.0.1 - - [02/Sep/2025 01:04:52] "GET /socket.io/?EIO=4&transport=polling&t=Pa7lQFv.0&sid=7Y7S7EdVvI0ihxVEAAAC HTTP/1.1" 200 -
+2025-09-02 01:04:52,884 - INFO - 127.0.0.1 - - [02/Sep/2025 01:04:52] "GET /socket.io/?EIO=4&transport=polling&t=Pa7lQGF&sid=7Y7S7EdVvI0ihxVEAAAC HTTP/1.1" 200 -
+2025-09-02 01:05:17,965 - INFO - 2captcha solver initialized with API key: 56d4457439...
+2025-09-02 01:05:17,966 - INFO - Starting SEO bot with 2 proxies
+2025-09-02 01:05:17,966 - INFO - 127.0.0.1 - - [02/Sep/2025 01:05:17] "POST /api/start HTTP/1.1" 200 -
+2025-09-02 01:05:17,967 - INFO - Searching for 'LeScore.net - نتائج كرة القدم المباشرة اليوم' on domain 'lescore.net'
+2025-09-02 01:05:17,967 - INFO - --- Processing proxy 1/2 ---
+2025-09-02 01:05:17,967 - INFO - Testing proxy: 206.41.168.88:6753:aawikmkk:tx1f1a2yr843
+2025-09-02 01:05:17,967 - INFO - Testing proxy: 206.41.168.88:6753 (with auth)
+2025-09-02 01:05:18,976 - INFO - ✓ Proxy 206.41.168.88:6753 (with auth) is working. IP: 206.41.168.88
+2025-09-02 01:05:18,976 - INFO - Setting up Kameleo browser with proxy: 206.41.168.88:6753:aawikmkk:tx1f1a2yr843
+2025-09-02 01:05:18,976 - INFO - Kameleo client initialized on port 5050
+2025-09-02 01:05:18,977 - INFO - Loading available Chrome fingerprints...
+2025-09-02 01:05:19,817 - INFO - Loaded 25 unique Chrome fingerprints
+2025-09-02 01:05:19,817 - INFO - Creating Kameleo profile with proxy: 206.41.168.88:6753:aawikmkk:tx1f1a2yr843
+2025-09-02 01:05:19,817 - INFO - Selected unique fingerprint: 36aa37a986d5c4fc102535d97af4c3a4739fca0eae714626aef9c50ac4314391 (1/25 used)
+2025-09-02 01:05:19,817 - INFO - Using authenticated proxy: 206.41.168.88:6753
+2025-09-02 01:05:19,931 - INFO - ✓ Kameleo profile created: 77db7dc8-09bd-4ed3-b639-ab4f987b3e06 for proxy 206.41.168.88:6753
+2025-09-02 01:05:24,664 - INFO - Kameleo browser setup completed successfully
+2025-09-02 01:05:24,665 - INFO - Verifying proxy IP...
+2025-09-02 01:05:28,870 - INFO - Browser IP (via http://httpbin.org/ip): 206.41.168.88
+2025-09-02 01:05:29,123 - INFO - Real IP: 41.141.210.84
+2025-09-02 01:05:29,124 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-02 01:05:29,124 - INFO - Opening Google.com...
+2025-09-02 01:05:30,110 - INFO - Waiting 5 seconds...
+2025-09-02 01:05:35,115 - INFO - Checking for reCAPTCHA on current page...
+2025-09-02 01:05:40,321 - INFO - No reCAPTCHA detected on current page
+2025-09-02 01:05:40,331 - INFO - Typing keyword: LeScore.net - نتائج كرة القدم المباشرة اليوم
+2025-09-02 01:05:49,572 - INFO - Checking for reCAPTCHA on current page...
+2025-09-02 01:05:55,103 - INFO - No reCAPTCHA detected on current page
+2025-09-02 01:05:55,115 - INFO - Search results loaded
+2025-09-02 01:05:58,038 - INFO - Performed 3 human-like scroll actions
+2025-09-02 01:05:58,038 - INFO - Looking for domain: lescore.net
+2025-09-02 01:05:58,038 - ERROR - Error finding/visiting target: name 'By' is not defined
+2025-09-02 01:05:58,039 - WARNING - Domain not found in search results
+2025-09-02 01:05:58,042 - INFO - Browser closed
+2025-09-02 01:05:58,207 - INFO - Kameleo profile 77db7dc8-09bd-4ed3-b639-ab4f987b3e06 stopped
+2025-09-02 01:05:58,223 - INFO - Kameleo profile 77db7dc8-09bd-4ed3-b639-ab4f987b3e06 deleted
+2025-09-02 01:05:58,223 - ERROR - ✗ Proxy 206.41.168.88:6753:aawikmkk:tx1f1a2yr843 failed
+2025-09-02 01:05:58,223 - INFO - Waiting 3 seconds before next proxy...
+2025-09-02 01:06:01,226 - INFO - --- Processing proxy 2/2 ---
+2025-09-02 01:06:01,226 - INFO - Testing proxy: 108.165.227.29:5270:aawikmkk:tx1f1a2yr843
+2025-09-02 01:06:01,226 - INFO - Testing proxy: 108.165.227.29:5270 (with auth)
+2025-09-02 01:06:02,394 - INFO - ✓ Proxy 108.165.227.29:5270 (with auth) is working. IP: 108.165.227.29
+2025-09-02 01:06:02,395 - INFO - Setting up Kameleo browser with proxy: 108.165.227.29:5270:aawikmkk:tx1f1a2yr843
+2025-09-02 01:06:02,395 - INFO - Creating Kameleo profile with proxy: 108.165.227.29:5270:aawikmkk:tx1f1a2yr843
+2025-09-02 01:06:02,396 - INFO - Selected unique fingerprint: e5796e13e601ca9ee8086a3024f5dfc3148bf20bbd6c47028f799016dbd8111f (2/25 used)
+2025-09-02 01:06:02,396 - INFO - Using authenticated proxy: 108.165.227.29:5270
+2025-09-02 01:06:02,571 - INFO - ✓ Kameleo profile created: a90bb49c-f076-4554-96c5-379aed7aba44 for proxy 108.165.227.29:5270
+2025-09-02 01:06:05,845 - INFO - Kameleo browser setup completed successfully
+2025-09-02 01:06:05,850 - INFO - Verifying proxy IP...
+2025-09-02 01:06:24,905 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.110.12:8080
+2025-09-02 01:06:24,905 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-02 01:07:21,755 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.110.12:8080
+2025-09-02 01:07:21,755 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-02 01:07:26,183 - INFO - 127.0.0.1 - - [02/Sep/2025 01:07:26] "[36mGET / HTTP/1.1[0m" 304 -
+2025-09-02 01:07:26,345 - INFO - 127.0.0.1 - - [02/Sep/2025 01:07:26] "GET /api/results HTTP/1.1" 200 -
+2025-09-02 01:07:26,346 - INFO - 127.0.0.1 - - [02/Sep/2025 01:07:26] "GET /api/logs HTTP/1.1" 200 -
+2025-09-02 01:07:26,346 - INFO - 127.0.0.1 - - [02/Sep/2025 01:07:26] "GET /api/status HTTP/1.1" 200 -
+2025-09-02 01:07:26,347 - INFO - 127.0.0.1 - - [02/Sep/2025 01:07:26] "GET /socket.io/?EIO=4&transport=polling&t=Pa7l_k4 HTTP/1.1" 200 -
+2025-09-02 01:07:26,360 - INFO - Client connected to WebSocket
+2025-09-02 01:07:26,361 - INFO - 127.0.0.1 - - [02/Sep/2025 01:07:26] "POST /socket.io/?EIO=4&transport=polling&t=Pa7l_kL&sid=3mvEX5KLDCllzcEuAAAA HTTP/1.1" 200 -
+2025-09-02 01:07:26,361 - INFO - 127.0.0.1 - - [02/Sep/2025 01:07:26] "GET /socket.io/?EIO=4&transport=polling&t=Pa7l_kL.0&sid=3mvEX5KLDCllzcEuAAAA HTTP/1.1" 200 -
+2025-09-02 01:07:26,393 - INFO - 127.0.0.1 - - [02/Sep/2025 01:07:26] "GET /socket.io/?EIO=4&transport=polling&t=Pa7l_kq&sid=3mvEX5KLDCllzcEuAAAA HTTP/1.1" 200 -
+2025-09-02 01:08:11,430 - INFO - 2captcha solver initialized with API key: 56d4457439...
+2025-09-02 01:08:11,432 - INFO - Starting SEO bot with 3 proxies
+2025-09-02 01:08:11,433 - INFO - 127.0.0.1 - - [02/Sep/2025 01:08:11] "POST /api/start HTTP/1.1" 200 -
+2025-09-02 01:08:11,433 - INFO - Searching for 'LeScore - نتائج كرة القدم المباشرة اليوم' on domain 'lescore.net'
+2025-09-02 01:08:11,434 - INFO - --- Processing proxy 1/3 ---
+2025-09-02 01:08:11,434 - INFO - Testing proxy: 206.41.168.122:6787:aawikmkk:tx1f1a2yr843
+2025-09-02 01:08:11,434 - INFO - Testing proxy: 206.41.168.122:6787 (with auth)
+2025-09-02 01:08:12,015 - INFO - ✓ Proxy 206.41.168.122:6787 (with auth) is working. IP: 206.41.168.122
+2025-09-02 01:08:12,016 - INFO - Setting up Kameleo browser with proxy: 206.41.168.122:6787:aawikmkk:tx1f1a2yr843
+2025-09-02 01:08:12,016 - INFO - Kameleo client initialized on port 5050
+2025-09-02 01:08:12,016 - INFO - Loading available Chrome fingerprints...
+2025-09-02 01:08:12,909 - INFO - Loaded 25 unique Chrome fingerprints
+2025-09-02 01:08:12,910 - INFO - Creating Kameleo profile with proxy: 206.41.168.122:6787:aawikmkk:tx1f1a2yr843
+2025-09-02 01:08:12,910 - INFO - Selected unique fingerprint: a68413671959ce36d7d870daadcbc6f24f932e1a016745de832977b9363812d7 (1/25 used)
+2025-09-02 01:08:12,910 - INFO - Using authenticated proxy: 206.41.168.122:6787
+2025-09-02 01:08:13,211 - INFO - ✓ Kameleo profile created: 5ec7ff0a-06ce-43cb-a6f7-a9ac02e32180 for proxy 206.41.168.122:6787
+2025-09-02 01:08:16,829 - INFO - Kameleo browser setup completed successfully
+2025-09-02 01:08:16,830 - INFO - Verifying proxy IP...
+2025-09-02 01:08:20,577 - INFO - Browser IP (via http://httpbin.org/ip): 206.41.168.122
+2025-09-02 01:08:20,845 - INFO - Real IP: 41.141.210.84
+2025-09-02 01:08:20,847 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-02 01:08:20,847 - INFO - Opening Google.com...
+2025-09-02 01:08:21,954 - INFO - Waiting 5 seconds...
+2025-09-02 01:08:26,960 - INFO - Checking for reCAPTCHA on current page...
+2025-09-02 01:08:32,197 - INFO - No reCAPTCHA detected on current page
+2025-09-02 01:08:32,209 - INFO - Typing keyword: LeScore - نتائج كرة القدم المباشرة اليوم
+2025-09-02 01:08:39,753 - INFO - Checking for reCAPTCHA on current page...
+2025-09-02 01:08:45,064 - INFO - No reCAPTCHA detected on current page
+2025-09-02 01:08:45,073 - INFO - Search results loaded
+2025-09-02 01:08:47,823 - INFO - Performed 3 human-like scroll actions
+2025-09-02 01:08:47,823 - INFO - Looking for domain: lescore.net
+2025-09-02 01:08:47,824 - ERROR - Error finding/visiting target: name 'By' is not defined
+2025-09-02 01:08:47,824 - WARNING - Domain not found in search results
+2025-09-02 01:08:47,828 - INFO - Browser closed
+2025-09-02 01:08:48,023 - INFO - Kameleo profile 5ec7ff0a-06ce-43cb-a6f7-a9ac02e32180 stopped
+2025-09-02 01:08:48,040 - INFO - Kameleo profile 5ec7ff0a-06ce-43cb-a6f7-a9ac02e32180 deleted
+2025-09-02 01:08:48,040 - ERROR - ✗ Proxy 206.41.168.122:6787:aawikmkk:tx1f1a2yr843 failed
+2025-09-02 01:08:48,041 - INFO - Waiting 3 seconds before next proxy...
+2025-09-02 01:08:51,047 - INFO - --- Processing proxy 2/3 ---
+2025-09-02 01:08:51,051 - INFO - Testing proxy: 108.165.227.168:5409:aawikmkk:tx1f1a2yr843
+2025-09-02 01:08:51,051 - INFO - Testing proxy: 108.165.227.168:5409 (with auth)
+2025-09-02 01:08:51,778 - INFO - ✓ Proxy 108.165.227.168:5409 (with auth) is working. IP: 108.165.227.168
+2025-09-02 01:08:51,778 - INFO - Setting up Kameleo browser with proxy: 108.165.227.168:5409:aawikmkk:tx1f1a2yr843
+2025-09-02 01:08:51,779 - INFO - Creating Kameleo profile with proxy: 108.165.227.168:5409:aawikmkk:tx1f1a2yr843
+2025-09-02 01:08:51,779 - INFO - Selected unique fingerprint: 6e6ea4670feccba4211cafeb6c7fc215a774eedb405a43f4b9edc529a24756bb (2/25 used)
+2025-09-02 01:08:51,779 - INFO - Using authenticated proxy: 108.165.227.168:5409
+2025-09-02 01:08:51,963 - INFO - ✓ Kameleo profile created: 35e559d6-6d00-4cb4-ac9f-7c546c58c55a for proxy 108.165.227.168:5409
+2025-09-02 01:08:55,133 - INFO - Kameleo browser setup completed successfully
+2025-09-02 01:08:55,133 - INFO - Verifying proxy IP...
+2025-09-02 01:08:58,940 - INFO - Browser IP (via http://httpbin.org/ip): 108.165.227.168
+2025-09-02 01:08:59,406 - INFO - Real IP: 41.141.210.84
+2025-09-02 01:08:59,407 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-02 01:08:59,407 - INFO - Opening Google.com...
+2025-09-02 01:09:00,984 - INFO - Waiting 5 seconds...
+2025-09-02 01:09:05,989 - INFO - Checking for reCAPTCHA on current page...
+2025-09-02 01:09:11,198 - INFO - No reCAPTCHA detected on current page
+2025-09-02 01:09:11,212 - INFO - Typing keyword: LeScore - نتائج كرة القدم المباشرة اليوم
+2025-09-02 01:09:19,986 - INFO - Checking for reCAPTCHA on current page...
+2025-09-02 01:09:25,392 - INFO - No reCAPTCHA detected on current page
+2025-09-02 01:09:25,402 - INFO - Search results loaded
+2025-09-02 01:09:29,085 - INFO - Performed 4 human-like scroll actions
+2025-09-02 01:09:29,088 - INFO - Looking for domain: lescore.net
+2025-09-02 01:09:29,089 - ERROR - Error finding/visiting target: name 'By' is not defined
+2025-09-02 01:09:29,089 - WARNING - Domain not found in search results
+2025-09-02 01:09:29,101 - INFO - Browser closed
+2025-09-02 01:09:29,219 - INFO - Kameleo profile 35e559d6-6d00-4cb4-ac9f-7c546c58c55a stopped
+2025-09-02 01:09:29,233 - INFO - Kameleo profile 35e559d6-6d00-4cb4-ac9f-7c546c58c55a deleted
+2025-09-02 01:09:29,234 - ERROR - ✗ Proxy 108.165.227.168:5409:aawikmkk:tx1f1a2yr843 failed
+2025-09-02 01:09:29,234 - INFO - Waiting 3 seconds before next proxy...
+2025-09-02 01:09:32,239 - INFO - --- Processing proxy 3/3 ---
+2025-09-02 01:09:32,239 - INFO - Testing proxy: 108.165.161.124:5865:aawikmkk:tx1f1a2yr843
+2025-09-02 01:09:32,240 - INFO - Testing proxy: 108.165.161.124:5865 (with auth)

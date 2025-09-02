@@ -39,6 +39,17 @@ bot_status = {
 bot_results = []
 bot_logs = []
 
+def make_json_serializable(obj):
+    """Convert datetime objects to strings for JSON serialization"""
+    if isinstance(obj, dict):
+        return {k: make_json_serializable(v) for k, v in obj.items()}
+    elif isinstance(obj, list):
+        return [make_json_serializable(item) for item in obj]
+    elif isinstance(obj, datetime):
+        return obj.isoformat()
+    else:
+        return obj
+
 class WebSocketLogger(logging.Handler):
     """Custom logging handler to send logs to web interface"""
     
@@ -94,9 +105,9 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
             bot_status['total'] = len(self.proxy_list)
             bot_status['completed'] = 0
             bot_status['found'] = 0
-            bot_status['start_time'] = datetime.now()
+            bot_status['start_time'] = datetime.now().isoformat()
             
-            socketio.emit('status_update', bot_status)
+            socketio.emit('status_update', make_json_serializable(bot_status))
             
             logger.info(f"Starting SEO bot with {len(self.proxy_list)} proxies")
             logger.info(f"Searching for '{self.keyword}' on domain '{self.target_domain}'")
@@ -110,7 +121,7 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
                 self.current_proxy_index = i
                 bot_status['current_proxy'] = proxy
                 bot_status['message'] = f'Processing proxy {i}/{len(self.proxy_list)}'
-                socketio.emit('status_update', bot_status)
+                socketio.emit('status_update', make_json_serializable(bot_status))
                 
                 logger.info(f"--- Processing proxy {i}/{len(self.proxy_list)} ---")
                 
@@ -125,10 +136,10 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
                 
                 # Add result to results list
                 bot_results.insert(0, result)
-                socketio.emit('new_result', result)
+                socketio.emit('new_result', make_json_serializable(result))
                 
                 bot_status['completed'] += 1
-                socketio.emit('status_update', bot_status)
+                socketio.emit('status_update', make_json_serializable(bot_status))
                 
                 # Random delay between proxies
                 if i < len(self.proxy_list) and bot_status['is_running']:
@@ -139,7 +150,7 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
             # Final status
             bot_status['is_running'] = False
             bot_status['message'] = f'Bot finished! Found domain in {bot_status["found"]}/{bot_status["total"]} sessions'
-            socketio.emit('status_update', bot_status)
+            socketio.emit('status_update', make_json_serializable(bot_status))
             
             logger.info("=" * 50)
             logger.info("FINAL RESULTS:")
@@ -152,7 +163,7 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
             logger.error(f"Bot execution error: {str(e)}")
             bot_status['is_running'] = False
             bot_status['message'] = f'Bot error: {str(e)}'
-            socketio.emit('status_update', bot_status)
+            socketio.emit('status_update', make_json_serializable(bot_status))
     
     def run_single_proxy_with_tracking(self, proxy, proxy_number):
         """Run single proxy with result tracking"""
@@ -342,7 +353,7 @@ def stop_bot():
         except:
             pass
     
-    socketio.emit('status_update', bot_status)
+    socketio.emit('status_update', make_json_serializable(bot_status))
     logger.info("Bot stopped by user")
     
     return jsonify({'message': 'Bot stopped successfully'})
@@ -351,9 +362,9 @@ def stop_bot():
 def handle_connect():
     """Handle client connection"""
     logger.info("Client connected to WebSocket")
-    emit('status_update', bot_status)
-    emit('logs_update', bot_logs)
-    emit('results_update', bot_results)
+    emit('status_update', make_json_serializable(bot_status))
+    emit('logs_update', make_json_serializable(bot_logs))
+    emit('results_update', make_json_serializable(bot_results))
 
 @socketio.on('disconnect')
 def handle_disconnect():
