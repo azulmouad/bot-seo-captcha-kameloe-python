@@ -1,0 +1,188 @@
+2025-09-02 01:34:54,528 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.110.12:8080
+2025-09-02 01:34:54,528 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-02 01:34:56,632 - INFO - 127.0.0.1 - - [02/Sep/2025 01:34:56] "GET /socket.io/?EIO=4&transport=polling&t=Pa7sIdk HTTP/1.1" 200 -
+2025-09-02 01:34:56,648 - INFO - Client connected to WebSocket
+2025-09-02 01:34:56,650 - INFO - 127.0.0.1 - - [02/Sep/2025 01:34:56] "POST /socket.io/?EIO=4&transport=polling&t=Pa7sId-&sid=ZNGobKzUnnoH4U1rAAAA HTTP/1.1" 200 -
+2025-09-02 01:34:56,651 - INFO - 127.0.0.1 - - [02/Sep/2025 01:34:56] "GET /socket.io/?EIO=4&transport=polling&t=Pa7sId_&sid=ZNGobKzUnnoH4U1rAAAA HTTP/1.1" 200 -
+2025-09-02 01:34:57,040 - INFO - 2captcha solver initialized with API key: 56d4457439...
+2025-09-02 01:34:57,040 - INFO - Starting SEO bot with 6 proxies
+2025-09-02 01:34:57,041 - INFO - 127.0.0.1 - - [02/Sep/2025 01:34:57] "POST /api/start HTTP/1.1" 200 -
+2025-09-02 01:34:57,041 - INFO - Searching for 'fotmob' on domain 'fotmob.com'
+2025-09-02 01:34:57,042 - INFO - --- Processing proxy 1/6 ---
+2025-09-02 01:34:57,042 - INFO - Testing proxy: 156.228.180.85:3129
+2025-09-02 01:34:57,042 - INFO - Testing proxy: 156.228.180.85:3129
+2025-09-02 01:34:57,688 - INFO - ✓ Proxy 156.228.180.85:3129 is working. IP: 156.228.180.85
+2025-09-02 01:34:57,689 - INFO - Setting up Kameleo browser with proxy: 156.228.180.85:3129
+2025-09-02 01:34:57,689 - INFO - Kameleo client initialized on port 5050
+2025-09-02 01:34:57,690 - INFO - Loading available Chrome fingerprints...
+2025-09-02 01:34:58,514 - INFO - Loaded 25 unique Chrome fingerprints
+2025-09-02 01:34:58,515 - INFO - Creating Kameleo profile with proxy: 156.228.180.85:3129
+2025-09-02 01:34:58,515 - INFO - Selected unique fingerprint: fc47158e7832c978f1d8b55f59b0453b25d02bb0b7e145f69fc5ba9e938d89ca (1/25 used)
+2025-09-02 01:34:58,515 - INFO - Using simple proxy: 156.228.180.85:3129
+2025-09-02 01:34:58,624 - INFO - ✓ Kameleo profile created: 3bcb97e1-f35a-47af-81ee-d06b43baefd4 for proxy 156.228.180.85:3129
+2025-09-02 01:35:00,012 - INFO - Bot stopped by user
+2025-09-02 01:35:00,013 - INFO - 127.0.0.1 - - [02/Sep/2025 01:35:00] "POST /api/stop HTTP/1.1" 200 -
+2025-09-02 01:35:03,447 - INFO - Client disconnected from WebSocket
+2025-09-02 01:35:03,449 - INFO - 127.0.0.1 - - [02/Sep/2025 01:35:03] "GET /socket.io/?EIO=4&transport=websocket&sid=ZNGobKzUnnoH4U1rAAAA HTTP/1.1" 200 -
+2025-09-02 01:35:03,471 - INFO - 127.0.0.1 - - [02/Sep/2025 01:35:03] "[36mGET / HTTP/1.1[0m" 304 -
+2025-09-02 01:35:03,694 - INFO - 127.0.0.1 - - [02/Sep/2025 01:35:03] "GET /socket.io/?EIO=4&transport=polling&t=Pa7sKM8 HTTP/1.1" 200 -
+2025-09-02 01:35:03,695 - INFO - 127.0.0.1 - - [02/Sep/2025 01:35:03] "GET /api/status HTTP/1.1" 200 -
+2025-09-02 01:35:03,696 - INFO - 127.0.0.1 - - [02/Sep/2025 01:35:03] "GET /api/logs HTTP/1.1" 200 -
+2025-09-02 01:35:03,698 - INFO - 127.0.0.1 - - [02/Sep/2025 01:35:03] "GET /api/results HTTP/1.1" 200 -
+2025-09-02 01:35:03,705 - INFO - Client connected to WebSocket
+2025-09-02 01:35:03,706 - INFO - 127.0.0.1 - - [02/Sep/2025 01:35:03] "POST /socket.io/?EIO=4&transport=polling&t=Pa7sKML&sid=DSPgqBBo7nkw2q9wAAAC HTTP/1.1" 200 -
+2025-09-02 01:35:03,706 - INFO - 127.0.0.1 - - [02/Sep/2025 01:35:03] "GET /socket.io/?EIO=4&transport=polling&t=Pa7sKML.0&sid=DSPgqBBo7nkw2q9wAAAC HTTP/1.1" 200 -
+2025-09-02 01:35:03,731 - INFO - 127.0.0.1 - - [02/Sep/2025 01:35:03] "GET /socket.io/?EIO=4&transport=polling&t=Pa7sKMj&sid=DSPgqBBo7nkw2q9wAAAC HTTP/1.1" 200 -
+2025-09-02 01:35:13,426 - INFO - 2captcha solver initialized with API key: 56d4457439...
+2025-09-02 01:35:13,427 - INFO - Starting SEO bot with 6 proxies
+2025-09-02 01:35:13,427 - INFO - Searching for 'fotmob' on domain 'fotmob.com'
+2025-09-02 01:35:13,428 - INFO - --- Processing proxy 1/6 ---
+2025-09-02 01:35:13,428 - INFO - Testing proxy: 156.228.180.85:3129
+2025-09-02 01:35:13,429 - INFO - 127.0.0.1 - - [02/Sep/2025 01:35:13] "POST /api/start HTTP/1.1" 200 -
+2025-09-02 01:35:13,429 - INFO - Testing proxy: 156.228.180.85:3129
+2025-09-02 01:35:13,813 - INFO - ✓ Proxy 156.228.180.85:3129 is working. IP: 156.228.180.85
+2025-09-02 01:35:13,815 - INFO - Setting up Kameleo browser with proxy: 156.228.180.85:3129
+2025-09-02 01:35:13,816 - INFO - Kameleo client initialized on port 5050
+2025-09-02 01:35:13,816 - INFO - Loading available Chrome fingerprints...
+2025-09-02 01:35:14,430 - INFO - Loaded 25 unique Chrome fingerprints
+2025-09-02 01:35:14,430 - INFO - Creating Kameleo profile with proxy: 156.228.180.85:3129
+2025-09-02 01:35:14,431 - INFO - Selected unique fingerprint: 01f27f2992e0cc20cd6d3e9536a6a774f1e415a8e3104ec28f6ce6b78f2f2268 (1/25 used)
+2025-09-02 01:35:14,431 - INFO - Using simple proxy: 156.228.180.85:3129
+2025-09-02 01:35:14,569 - INFO - ✓ Kameleo profile created: 1450362b-94ac-4fc0-866d-32b5adbb17a6 for proxy 156.228.180.85:3129
+2025-09-02 01:35:18,943 - INFO - Kameleo browser setup completed successfully
+2025-09-02 01:35:18,944 - INFO - Verifying proxy IP...
+2025-09-02 01:35:22,749 - INFO - Browser IP (via http://httpbin.org/ip): 156.228.180.85
+2025-09-02 01:35:23,001 - INFO - Real IP: 41.141.210.84
+2025-09-02 01:35:23,002 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-02 01:35:23,003 - INFO - Opening Google.com...
+2025-09-02 01:35:34,079 - INFO - Waiting 5 seconds...
+2025-09-02 01:35:39,099 - INFO - Checking for reCAPTCHA on current page: https://www.google.com/sorry/index?continue=https://www.google.com/&q=EgSc5LRVGMv32MUGIjAhpMSJfmoM2yunHQJQ-or-QC96UYuE_NZ_2QbtsB9N4y1QSGG1s6q1xhlfmFf5j6QyAnJSShlTT1JSWV9BQlVTSVZFX05FVF9NRVNTQUdFWgFD
+2025-09-02 01:35:39,100 - INFO - ✓ Detected Google captcha page: https://www.google.com/sorry/index?continue=https://www.google.com/&q=EgSc5LRVGMv32MUGIjAhpMSJfmoM2yunHQJQ-or-QC96UYuE_NZ_2QbtsB9N4y1QSGG1s6q1xhlfmFf5j6QyAnJSShlTT1JSWV9BQlVTSVZFX05FVF9NRVNTQUdFWgFD
+2025-09-02 01:35:39,100 - INFO - Solving Google /sorry page captcha...
+2025-09-02 01:35:39,119 - INFO - ✓ reCAPTCHA iframe detected on /sorry page
+2025-09-02 01:35:39,144 - INFO - Found sitekey via [data-sitekey]: 6LfwuyUTAAAAAOAmoS0fdqijC2PbbdH4kjq62Y1b
+2025-09-02 01:35:39,149 - INFO - Solving reCAPTCHA for URL: https://www.google.com/sorry/index?continue=https://www.google.com/&q=EgSc5LRVGMv32MUGIjAhpMSJfmoM2yunHQJQ-or-QC96UYuE_NZ_2QbtsB9N4y1QSGG1s6q1xhlfmFf5j6QyAnJSShlTT1JSWV9BQlVTSVZFX05FVF9NRVNTQUdFWgFD
+2025-09-02 01:35:39,149 - INFO - Using sitekey: 6LfwuyUTAAAAAOAmoS0fdqijC2PbbdH4kjq62Y1b
+2025-09-02 01:35:39,149 - INFO - Submitting captcha to 2captcha service...
+2025-09-02 01:35:39,149 - INFO - This may take 30-120 seconds...
+2025-09-02 01:35:39,428 - WARNING - Google search captcha not supported by 2captcha service
+2025-09-02 01:35:39,429 - INFO - Trying alternative approach...
+2025-09-02 01:35:48,104 - ERROR - Failed to solve captcha on Google homepage
+2025-09-02 01:35:48,105 - ERROR - Google search failed
+2025-09-02 01:35:48,115 - INFO - Browser closed
+2025-09-02 01:35:48,469 - INFO - Kameleo profile 1450362b-94ac-4fc0-866d-32b5adbb17a6 stopped
+2025-09-02 01:35:48,483 - INFO - Kameleo profile 1450362b-94ac-4fc0-866d-32b5adbb17a6 deleted
+2025-09-02 01:35:48,484 - ERROR - ✗ Proxy 156.228.180.85:3129 failed
+2025-09-02 01:35:48,484 - INFO - Waiting 3 seconds before next proxy...
+2025-09-02 01:35:51,491 - INFO - --- Processing proxy 2/6 ---
+2025-09-02 01:35:51,492 - INFO - Testing proxy: 156.233.87.141:3129
+2025-09-02 01:35:51,492 - INFO - Testing proxy: 156.233.87.141:3129
+2025-09-02 01:35:52,082 - INFO - ✓ Proxy 156.233.87.141:3129 is working. IP: 156.233.87.141
+2025-09-02 01:35:52,083 - INFO - Setting up Kameleo browser with proxy: 156.233.87.141:3129
+2025-09-02 01:35:52,084 - INFO - Creating Kameleo profile with proxy: 156.233.87.141:3129
+2025-09-02 01:35:52,084 - INFO - Selected unique fingerprint: 3f28138200d8cf0a056a1ba1f159620930f1fe579d2748deadad1ca6e379384b (2/25 used)
+2025-09-02 01:35:52,084 - INFO - Using simple proxy: 156.233.87.141:3129
+2025-09-02 01:35:52,237 - INFO - ✓ Kameleo profile created: b21454fc-8fb3-4572-9c14-e850da752b69 for proxy 156.233.87.141:3129
+2025-09-02 01:35:55,548 - INFO - Kameleo browser setup completed successfully
+2025-09-02 01:35:55,550 - INFO - Verifying proxy IP...
+2025-09-02 01:35:59,151 - INFO - Browser IP (via http://httpbin.org/ip): 156.233.87.141
+2025-09-02 01:35:59,422 - INFO - Real IP: 41.141.210.84
+2025-09-02 01:35:59,422 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-02 01:35:59,422 - INFO - Opening Google.com...
+2025-09-02 01:36:00,966 - ERROR - Failed to setup Kameleo browser: 'sessionId'
+2025-09-02 01:36:00,967 - ERROR - Failed to setup browser
+2025-09-02 01:36:00,967 - ERROR - ✗ Proxy 156.228.180.85:3129 failed
+2025-09-02 01:36:00,967 - INFO - Waiting 3 seconds before next proxy...
+2025-09-02 01:36:03,110 - INFO - Waiting 5 seconds...
+2025-09-02 01:36:03,972 - INFO - --- Processing proxy 2/6 ---
+2025-09-02 01:36:03,973 - INFO - Testing proxy: 156.233.87.141:3129
+2025-09-02 01:36:03,973 - INFO - Testing proxy: 156.233.87.141:3129
+2025-09-02 01:36:04,250 - INFO - ✓ Proxy 156.233.87.141:3129 is working. IP: 156.233.87.141
+2025-09-02 01:36:04,250 - INFO - Setting up Kameleo browser with proxy: 156.233.87.141:3129
+2025-09-02 01:36:04,250 - INFO - Creating Kameleo profile with proxy: 156.233.87.141:3129
+2025-09-02 01:36:04,251 - INFO - Selected unique fingerprint: 0c1fa3863571cff0e4579546eccef0dc1596fbb2f4294177852abbce17bfb589 (2/25 used)
+2025-09-02 01:36:04,251 - INFO - Using simple proxy: 156.233.87.141:3129
+2025-09-02 01:36:04,403 - INFO - ✓ Kameleo profile created: 0194f84c-259f-422f-8419-c56766fbbe04 for proxy 156.233.87.141:3129
+2025-09-02 01:36:08,134 - INFO - Checking for reCAPTCHA on current page: https://www.google.com/sorry/index?continue=https://www.google.com/&q=EgSc6VeNGO_32MUGIjB2NSy8nAx9k6unbkNYM42oozmjqX_BwPpYzDS44XVEOKIxCeCWnCCF3NzAnTdcyc4yAnJSShlTT1JSWV9BQlVTSVZFX05FVF9NRVNTQUdFWgFD
+2025-09-02 01:36:08,134 - INFO - ✓ Detected Google captcha page: https://www.google.com/sorry/index?continue=https://www.google.com/&q=EgSc6VeNGO_32MUGIjB2NSy8nAx9k6unbkNYM42oozmjqX_BwPpYzDS44XVEOKIxCeCWnCCF3NzAnTdcyc4yAnJSShlTT1JSWV9BQlVTSVZFX05FVF9NRVNTQUdFWgFD
+2025-09-02 01:36:08,134 - INFO - Solving Google /sorry page captcha...
+2025-09-02 01:36:08,158 - INFO - ✓ reCAPTCHA iframe detected on /sorry page
+2025-09-02 01:36:08,184 - INFO - Found sitekey via [data-sitekey]: 6LfwuyUTAAAAAOAmoS0fdqijC2PbbdH4kjq62Y1b
+2025-09-02 01:36:08,187 - INFO - Solving reCAPTCHA for URL: https://www.google.com/sorry/index?continue=https://www.google.com/&q=EgSc6VeNGO_32MUGIjB2NSy8nAx9k6unbkNYM42oozmjqX_BwPpYzDS44XVEOKIxCeCWnCCF3NzAnTdcyc4yAnJSShlTT1JSWV9BQlVTSVZFX05FVF9NRVNTQUdFWgFD
+2025-09-02 01:36:08,187 - INFO - Using sitekey: 6LfwuyUTAAAAAOAmoS0fdqijC2PbbdH4kjq62Y1b
+2025-09-02 01:36:08,187 - INFO - Submitting captcha to 2captcha service...
+2025-09-02 01:36:08,188 - INFO - This may take 30-120 seconds...
+2025-09-02 01:36:08,404 - WARNING - Google search captcha not supported by 2captcha service
+2025-09-02 01:36:08,405 - INFO - Trying alternative approach...
+2025-09-02 01:36:14,177 - ERROR - Failed to solve captcha on Google homepage
+2025-09-02 01:36:14,178 - ERROR - Google search failed
+2025-09-02 01:36:14,182 - INFO - Browser closed
+2025-09-02 01:36:14,441 - INFO - Kameleo profile b21454fc-8fb3-4572-9c14-e850da752b69 stopped
+2025-09-02 01:36:14,456 - INFO - Kameleo profile b21454fc-8fb3-4572-9c14-e850da752b69 deleted
+2025-09-02 01:36:14,457 - ERROR - ✗ Proxy 156.233.87.141:3129 failed
+2025-09-02 01:36:14,457 - INFO - Waiting 3 seconds before next proxy...
+2025-09-02 01:36:17,463 - INFO - --- Processing proxy 3/6 ---
+2025-09-02 01:36:17,466 - INFO - Testing proxy: 156.242.41.54:3129
+2025-09-02 01:36:17,467 - INFO - Testing proxy: 156.242.41.54:3129
+2025-09-02 01:36:17,791 - INFO - ✓ Proxy 156.242.41.54:3129 is working. IP: 156.242.41.54
+2025-09-02 01:36:17,798 - INFO - Setting up Kameleo browser with proxy: 156.242.41.54:3129
+2025-09-02 01:36:17,799 - INFO - Creating Kameleo profile with proxy: 156.242.41.54:3129
+2025-09-02 01:36:17,799 - INFO - Selected unique fingerprint: 652d983becf4c442126b3d3fcb12840dc231a7ff42894a32b0fe9a45e35db1b0 (3/25 used)
+2025-09-02 01:36:17,799 - INFO - Using simple proxy: 156.242.41.54:3129
+2025-09-02 01:36:17,892 - INFO - ✓ Kameleo profile created: 4463edb2-ff2e-408e-a587-7d53e79a36e6 for proxy 156.242.41.54:3129
+2025-09-02 01:36:19,486 - INFO - Kameleo browser setup completed successfully
+2025-09-02 01:36:19,486 - INFO - Verifying proxy IP...
+2025-09-02 01:36:22,883 - INFO - Kameleo browser setup completed successfully
+2025-09-02 01:36:22,884 - INFO - Verifying proxy IP...
+2025-09-02 01:36:23,059 - INFO - Browser IP (via http://httpbin.org/ip): 156.233.87.141
+2025-09-02 01:36:23,293 - INFO - Real IP: 41.141.210.84
+2025-09-02 01:36:23,293 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-02 01:36:23,293 - INFO - Opening Google.com...
+2025-09-02 01:36:23,983 - INFO - Waiting 5 seconds...
+2025-09-02 01:36:26,612 - INFO - Browser IP (via http://httpbin.org/ip): 156.242.41.54
+2025-09-02 01:36:26,855 - INFO - Real IP: 41.141.210.84
+2025-09-02 01:36:26,855 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-02 01:36:26,856 - INFO - Opening Google.com...
+2025-09-02 01:36:29,243 - INFO - Waiting 5 seconds...
+2025-09-02 01:36:31,760 - ERROR - Error closing browser: Message: Profile not found.
+
+2025-09-02 01:36:31,761 - INFO - Bot stopped by user
+2025-09-02 01:36:31,761 - INFO - 127.0.0.1 - - [02/Sep/2025 01:36:31] "POST /api/stop HTTP/1.1" 200 -
+2025-09-02 01:36:33,953 - INFO - Client disconnected from WebSocket
+2025-09-02 01:36:33,953 - INFO - 127.0.0.1 - - [02/Sep/2025 01:36:33] "GET /socket.io/?EIO=4&transport=websocket&sid=DSPgqBBo7nkw2q9wAAAC HTTP/1.1" 200 -
+2025-09-02 01:36:33,958 - INFO - 127.0.0.1 - - [02/Sep/2025 01:36:33] "[36mGET / HTTP/1.1[0m" 304 -
+2025-09-02 01:36:34,066 - INFO - 127.0.0.1 - - [02/Sep/2025 01:36:34] "GET /api/status HTTP/1.1" 200 -
+2025-09-02 01:36:34,068 - INFO - 127.0.0.1 - - [02/Sep/2025 01:36:34] "GET /api/logs HTTP/1.1" 200 -
+2025-09-02 01:36:34,068 - INFO - 127.0.0.1 - - [02/Sep/2025 01:36:34] "GET /socket.io/?EIO=4&transport=polling&t=Pa7sgQC HTTP/1.1" 200 -
+2025-09-02 01:36:34,070 - INFO - 127.0.0.1 - - [02/Sep/2025 01:36:34] "GET /api/results HTTP/1.1" 200 -
+2025-09-02 01:36:34,077 - INFO - Client connected to WebSocket
+2025-09-02 01:36:34,077 - INFO - 127.0.0.1 - - [02/Sep/2025 01:36:34] "POST /socket.io/?EIO=4&transport=polling&t=Pa7sgQP&sid=0JTfHAlaeolw68aWAAAE HTTP/1.1" 200 -
+2025-09-02 01:36:34,078 - INFO - 127.0.0.1 - - [02/Sep/2025 01:36:34] "GET /socket.io/?EIO=4&transport=polling&t=Pa7sgQP.0&sid=0JTfHAlaeolw68aWAAAE HTTP/1.1" 200 -
+2025-09-02 01:36:34,105 - INFO - 127.0.0.1 - - [02/Sep/2025 01:36:34] "GET /socket.io/?EIO=4&transport=polling&t=Pa7sgQs&sid=0JTfHAlaeolw68aWAAAE HTTP/1.1" 200 -
+2025-09-02 01:36:34,251 - ERROR - Error in captcha solving: Message: Profile not found.
+
+2025-09-02 01:36:34,251 - ERROR - Failed to solve captcha on Google homepage
+2025-09-02 01:36:34,251 - ERROR - Google search failed
+2025-09-02 01:36:34,252 - ERROR - Error closing browser: Message: Profile not found.
+
+2025-09-02 01:36:34,253 - ERROR - ✗ Proxy 156.242.41.54:3129 failed
+2025-09-02 01:36:34,253 - INFO - ==================================================
+2025-09-02 01:36:34,253 - INFO - FINAL RESULTS:
+2025-09-02 01:36:34,253 - INFO - Total proxies tested: 6
+2025-09-02 01:36:34,253 - INFO - Successful runs: 0
+2025-09-02 01:36:34,253 - INFO - Failed runs: 6
+2025-09-02 01:36:34,254 - INFO - ==================================================
+2025-09-02 01:36:34,521 - INFO - Checking for reCAPTCHA on current page: https://www.google.com/sorry/index?continue=https://www.google.com/&q=EgSc6VeNGIf42MUGIjDcHD7rtPewsGqwNzcjxBzQkSdFht20PDzV2pxy4_OaEQQHJBxrLyBAs-uOGF0rTBYyAnJSShlTT1JSWV9BQlVTSVZFX05FVF9NRVNTQUdFWgFD
+2025-09-02 01:36:34,522 - INFO - ✓ Detected Google captcha page: https://www.google.com/sorry/index?continue=https://www.google.com/&q=EgSc6VeNGIf42MUGIjDcHD7rtPewsGqwNzcjxBzQkSdFht20PDzV2pxy4_OaEQQHJBxrLyBAs-uOGF0rTBYyAnJSShlTT1JSWV9BQlVTSVZFX05FVF9NRVNTQUdFWgFD
+2025-09-02 01:36:34,522 - INFO - Solving Google /sorry page captcha...
+2025-09-02 01:36:34,530 - INFO - ✓ reCAPTCHA iframe detected on /sorry page
+2025-09-02 01:36:34,549 - INFO - Found sitekey via [data-sitekey]: 6LfwuyUTAAAAAOAmoS0fdqijC2PbbdH4kjq62Y1b
+2025-09-02 01:36:34,553 - INFO - Solving reCAPTCHA for URL: https://www.google.com/sorry/index?continue=https://www.google.com/&q=EgSc6VeNGIf42MUGIjDcHD7rtPewsGqwNzcjxBzQkSdFht20PDzV2pxy4_OaEQQHJBxrLyBAs-uOGF0rTBYyAnJSShlTT1JSWV9BQlVTSVZFX05FVF9NRVNTQUdFWgFD
+2025-09-02 01:36:34,553 - INFO - Using sitekey: 6LfwuyUTAAAAAOAmoS0fdqijC2PbbdH4kjq62Y1b
+2025-09-02 01:36:34,554 - INFO - Submitting captcha to 2captcha service...
+2025-09-02 01:36:34,554 - INFO - This may take 30-120 seconds...
+2025-09-02 01:36:34,772 - WARNING - Google search captcha not supported by 2captcha service
+2025-09-02 01:36:34,772 - INFO - Trying alternative approach...

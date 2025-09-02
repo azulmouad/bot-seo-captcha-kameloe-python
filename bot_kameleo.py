@@ -802,9 +802,15 @@ class GoogleSearchBot:
     def wait_for_recaptcha_and_solve(self, timeout=180):
         """Wait for reCAPTCHA to appear and solve it automatically"""
         try:
-            logger.info("Checking for reCAPTCHA on current page...")
+            current_url = self.driver.current_url
+            logger.info(f"Checking for reCAPTCHA on current page: {current_url}")
             
-            # Check if reCAPTCHA is present
+            # Check if we're on a Google /sorry page (captcha page)
+            if '/sorry' in current_url or 'captcha' in current_url.lower():
+                logger.info(f"✓ Detected Google captcha page: {current_url}")
+                return self.solve_google_sorry_captcha()
+            
+            # Check if reCAPTCHA is present on regular pages
             recaptcha_present = False
             try:
                 # Look for reCAPTCHA iframe
@@ -826,6 +832,93 @@ class GoogleSearchBot:
             if not recaptcha_present:
                 return True
             
+            # Solve regular reCAPTCHA
+            return self.solve_regular_recaptcha()
+                
+        except Exception as e:
+            logger.error(f"Error in captcha solving: {str(e)}")
+            return False
+    
+    def solve_google_sorry_captcha(self):
+        """Solve Google /sorry page captcha"""
+        try:
+            logger.info("Solving Google /sorry page captcha...")
+            
+            # Wait for reCAPTCHA iframe to be present
+            WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, 'iframe[src*="recaptcha"]'))
+            )
+            logger.info("✓ reCAPTCHA iframe detected on /sorry page")
+            
+            # Detect sitekey
+            sitekey = self.detect_recaptcha_sitekey()
+            if not sitekey:
+                logger.error("Cannot solve captcha without sitekey")
+                return False
+            
+            current_url = self.driver.current_url
+            logger.info(f"Solving reCAPTCHA for URL: {current_url}")
+            logger.info(f"Using sitekey: {sitekey}")
+            
+            # Solve captcha using 2captcha
+            logger.info("Submitting captcha to 2captcha service...")
+            logger.info("This may take 30-120 seconds...")
+            
+            start_time = time.time()
+            
+            try:
+                result = self.captcha_solver.recaptcha(
+                    sitekey=sitekey,
+                    url=current_url
+                )
+                
+                solve_time = time.time() - start_time
+                logger.info(f"✓ Captcha solved in {solve_time:.1f} seconds!")
+                logger.info(f"Solution token: {result['code'][:50]}...")
+                
+                # Inject the solution and submit
+                success = self.inject_captcha_solution(result['code'])
+                
+                if success:
+                    # Wait for page to redirect after successful captcha
+                    time.sleep(5)
+                    
+                    # Check if we're still on /sorry page
+                    new_url = self.driver.current_url
+                    if '/sorry' not in new_url and 'captcha' not in new_url.lower():
+                        logger.info("✓ Successfully passed Google captcha verification")
+                        return True
+                    else:
+                        logger.warning("Still on captcha page after solving")
+                        return False
+                else:
+                    return False
+                
+            except Exception as e:
+                solve_time = time.time() - start_time
+                error_msg = str(e).lower()
+                if 'cannot recognize' in error_msg or 'google-search-recaptcha' in error_msg:
+                    logger.warning("Google search captcha not supported by 2captcha service")
+                    logger.info("Trying alternative approach...")
+                    # Try refreshing the page as fallback
+                    self.driver.refresh()
+                    time.sleep(5)
+                    new_url = self.driver.current_url
+                    if '/sorry' not in new_url:
+                        logger.info("✓ Page refresh bypassed captcha")
+                        return True
+                    return False
+                else:
+                    logger.error(f"✗ Failed to solve captcha after {solve_time:.1f} seconds: {str(e)}")
+                    return False
+                
+        except Exception as e:
+            logger.error(f"Error solving Google /sorry captcha: {str(e)}")
+            return False
+    
+    def solve_regular_recaptcha(self):
+        """Solve regular reCAPTCHA (not Google /sorry page)"""
+        try:
             # Detect sitekey
             sitekey = self.detect_recaptcha_sitekey()
             if not sitekey:
@@ -862,7 +955,7 @@ class GoogleSearchBot:
                 return False
                 
         except Exception as e:
-            logger.error(f"Error in captcha solving: {str(e)}")
+            logger.error(f"Error solving regular reCAPTCHA: {str(e)}")
             return False
     
     def search_google(self):
