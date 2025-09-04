@@ -37,9 +37,6 @@ cd /Applications/Kameleo.app/Contents/Resources/CLI/
 # Start Kameleo.CLI with your account credentials
 ./Kameleo.CLI email=fuzz.chute_6o@icloud.com password=Aqzsed123..@@
 
-# Windows
-cd "C:\Program Files\Kameleo\CLI"
-Kameleo.CLI.exe email=your_email@example.com password=your_password
 ```
 
 ### 4. Run the Dashboard
