@@ -16,6 +16,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.action_chains import ActionChains
 from bot_kameleo import GoogleSearchBot
 
 # Configure logging
@@ -99,6 +100,122 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
         super().__init__(keyword, target_domain, proxy_list)
         self.max_pages = max_pages
         self.current_proxy_index = 0
+    
+    def search_google(self):
+        """Enhanced Google search with interaction"""
+        try:
+            logger.info("Navigating to Google search...")
+            self.driver.get("https://www.google.com/search")
+            
+            # Wait 15 seconds as requested
+            logger.info("⏰ Waiting 15 seconds after opening Google search...")
+            time.sleep(15)
+            
+            # Perform scrolling interactions
+            logger.info("🎭 Performing initial Google page interactions...")
+            self.perform_google_page_interactions()
+            
+            # Find search box and perform search
+            search_box = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.NAME, "q"))
+            )
+            
+            # Clear any existing text and type keyword
+            search_box.clear()
+            logger.info(f"Typing keyword: {self.keyword}")
+            
+            # Type with human-like delays
+            for char in self.keyword:
+                search_box.send_keys(char)
+                time.sleep(random.uniform(0.1, 0.3))
+            
+            time.sleep(1)
+            search_box.send_keys(Keys.RETURN)
+            
+            # Wait for search results
+            WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.ID, "search"))
+            )
+            
+            logger.info("✓ Google search completed successfully")
+            return True
+            
+        except Exception as e:
+            logger.error(f"Google search failed: {str(e)}")
+            return False
+    
+    def perform_google_page_interactions(self):
+        """Perform realistic interactions on any Google search page"""
+        try:
+            logger.info("🎭 Starting Google page interactions...")
+            
+            # Random initial wait
+            time.sleep(random.uniform(1, 3))
+            
+            # Scroll down gradually
+            logger.info("📜 Scrolling down on Google page...")
+            for i in range(3):
+                scroll_amount = random.randint(200, 400)
+                self.driver.execute_script(f"window.scrollBy(0, {scroll_amount});")
+                time.sleep(random.uniform(0.5, 1.5))
+            
+            # Wait and observe
+            time.sleep(random.uniform(2, 4))
+            
+            # Scroll up a bit
+            logger.info("📜 Scrolling up on Google page...")
+            for i in range(2):
+                scroll_amount = random.randint(150, 300)
+                self.driver.execute_script(f"window.scrollBy(0, -{scroll_amount});")
+                time.sleep(random.uniform(0.5, 1.5))
+            
+            # Hover over some elements randomly
+            self.hover_google_elements()
+            
+            logger.info("✅ Completed Google page interactions")
+            
+        except Exception as e:
+            logger.error(f"Error during Google page interactions: {str(e)}")
+    
+    def hover_google_elements(self):
+        """Hover over random elements on Google search page"""
+        try:
+            # Common Google search elements to hover over
+            hover_selectors = [
+                'h3', 'a', '.g', '.tF2Cxc', '.yuRUbf', 
+                '.VwiC3b', '.LC20lb', '.kno-ecr-pt'
+            ]
+            
+            actions = ActionChains(self.driver)
+            hovered_count = 0
+            
+            for selector in hover_selectors:
+                if hovered_count >= 3:  # Limit to 3 hovers
+                    break
+                    
+                try:
+                    elements = self.driver.find_elements(By.CSS_SELECTOR, selector)
+                    visible_elements = [el for el in elements[:5] if el.is_displayed()]
+                    
+                    if visible_elements:
+                        element = random.choice(visible_elements)
+                        
+                        # Scroll element into view
+                        self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", element)
+                        time.sleep(0.5)
+                        
+                        # Hover over element
+                        actions.move_to_element(element).perform()
+                        time.sleep(random.uniform(1, 2))
+                        hovered_count += 1
+                        
+                        logger.info(f"🖱️ Hovered over Google element: {selector}")
+                        
+                except Exception:
+                    continue
+            
+        except Exception as e:
+            logger.error(f"Error hovering Google elements: {str(e)}")
         
     def run_with_web_updates(self):
         """Run bot with real-time web updates"""
@@ -203,7 +320,7 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
                 self.close_browser()
                 return result
             
-            # Search Google
+            # Search Google with enhanced interactions
             if not self.search_google():
                 logger.error("Google search failed")
                 self.close_browser()
@@ -230,20 +347,43 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
             return result
     
     def find_and_visit_target_with_tracking(self):
-        """Find target domain with page and position tracking"""
+        """Find target domain with page and position tracking and enhanced interactions"""
         try:
             logger.info(f"Looking for domain: {self.target_domain}")
             
             for page in range(1, self.max_pages + 1):
+                logger.info(f"🔍 Searching on page {page}")
+                
                 if page > 1:
                     # Navigate to next page
                     try:
                         next_button = self.driver.find_element(By.ID, "pnnext")
+                        
+                        # Scroll to next button and hover before clicking
+                        self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", next_button)
+                        time.sleep(1)
+                        
+                        # Hover over next button
+                        actions = ActionChains(self.driver)
+                        actions.move_to_element(next_button).pause(0.5).perform()
+                        time.sleep(1)
+                        
                         next_button.click()
+                        
+                        # Wait for page to load
                         time.sleep(3)
-                        logger.info(f"Navigated to page {page}")
-                    except:
-                        logger.warning(f"Could not navigate to page {page}")
+                        logger.info(f"✓ Navigated to page {page}")
+                        
+                        # Wait 15 seconds and perform interactions on each new page
+                        logger.info(f"⏰ Waiting 15 seconds on page {page}...")
+                        time.sleep(15)
+                        
+                        # Perform interactions on this page
+                        logger.info(f"🎭 Performing interactions on page {page}...")
+                        self.perform_google_page_interactions()
+                        
+                    except Exception as e:
+                        logger.warning(f"Could not navigate to page {page}: {str(e)}")
                         break
                 
                 # Get search results on current page
@@ -255,18 +395,30 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
                         if parent_link.tag_name == 'a':
                             href = parent_link.get_attribute('href')
                             if href and self.target_domain in href:
-                                logger.info(f"Found target domain on page {page}, position {position}: {href}")
+                                logger.info(f"🎯 Found target domain on page {page}, position {position}: {href}")
                                 
-                                # Click and visit with improved method
+                                # ENHANCED INTERACTION: Hover over target before clicking
+                                logger.info("🖱️ Hovering over target link...")
+                                
+                                # Scroll element into view
+                                self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", parent_link)
+                                time.sleep(2)
+                                
+                                # Hover over the target link for a realistic duration
+                                actions = ActionChains(self.driver)
+                                actions.move_to_element(parent_link).perform()
+                                time.sleep(random.uniform(2, 4))  # Hover for 2-4 seconds
+                                
+                                # Additional hover behavior - move slightly and hover again
+                                actions.move_to_element_with_offset(parent_link, 5, 5).perform()
+                                time.sleep(random.uniform(1, 2))
+                                
+                                logger.info("✨ Completed hovering over target link")
+                                
+                                # Now click the target
                                 try:
-                                    # Method 1: Scroll element into view and use ActionChains
-                                    self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", parent_link)
-                                    time.sleep(1)
-                                    
-                                    # Try ActionChains click first
-                                    from selenium.webdriver.common.action_chains import ActionChains
-                                    actions = ActionChains(self.driver)
-                                    actions.move_to_element(parent_link).pause(0.5).click().perform()
+                                    # Method 1: ActionChains click with pause
+                                    actions.move_to_element(parent_link).pause(1).click().perform()
                                     
                                     logger.info("✓ Successfully clicked target link using ActionChains")
                                     time.sleep(3)
@@ -316,8 +468,6 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
         except Exception as e:
             logger.error(f"Error finding/visiting target: {str(e)}")
             return False, 1, None
-    
-
     
     def realistic_website_interaction(self):
         """Perform realistic human-like interactions for 1 minute"""
@@ -404,7 +554,6 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
                         self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", link)
                         time.sleep(1)
                         
-                        from selenium.webdriver.common.action_chains import ActionChains
                         actions = ActionChains(self.driver)
                         actions.move_to_element(link).pause(0.5).click().perform()
                         
@@ -489,7 +638,6 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
                 '[role="button"]', '[role="link"]'
             ]
             
-            from selenium.webdriver.common.action_chains import ActionChains
             actions = ActionChains(self.driver)
             hovered_count = 0
             
@@ -562,7 +710,6 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
                                 time.sleep(1)
                                 
                                 # Human-like click
-                                from selenium.webdriver.common.action_chains import ActionChains
                                 actions = ActionChains(self.driver)
                                 actions.move_to_element(link).pause(0.5).click().perform()
                                 
@@ -618,7 +765,6 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
             
         except Exception as e:
             logger.error(f"Error during brief page exploration: {str(e)}")
-    
 
 
 @app.route('/')

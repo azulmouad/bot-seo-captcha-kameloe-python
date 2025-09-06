@@ -3564,3 +3564,2141 @@ Stacktrace:
 2025-09-04 05:29:14,074 - INFO - Successful runs: 0
 2025-09-04 05:29:14,074 - INFO - Failed runs: 20
 2025-09-04 05:29:14,074 - INFO - ==================================================
+2025-09-04 15:55:00,175 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.110.12:8080
+2025-09-04 15:55:00,176 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-04 15:55:01,906 - INFO - 127.0.0.1 - - [04/Sep/2025 15:55:01] "[36mGET / HTTP/1.1[0m" 304 -
+2025-09-04 15:55:02,236 - INFO - 127.0.0.1 - - [04/Sep/2025 15:55:02] "GET /api/status HTTP/1.1" 200 -
+2025-09-04 15:55:02,237 - INFO - 127.0.0.1 - - [04/Sep/2025 15:55:02] "GET /socket.io/?EIO=4&transport=polling&t=PaLEL9L HTTP/1.1" 200 -
+2025-09-04 15:55:02,239 - INFO - 127.0.0.1 - - [04/Sep/2025 15:55:02] "GET /api/logs HTTP/1.1" 200 -
+2025-09-04 15:55:02,240 - INFO - 127.0.0.1 - - [04/Sep/2025 15:55:02] "GET /api/results HTTP/1.1" 200 -
+2025-09-04 15:55:02,251 - INFO - Client connected to WebSocket
+2025-09-04 15:55:02,256 - INFO - 127.0.0.1 - - [04/Sep/2025 15:55:02] "POST /socket.io/?EIO=4&transport=polling&t=PaLEL9d&sid=CJRtC-KaUhgamiueAAAA HTTP/1.1" 200 -
+2025-09-04 15:55:02,256 - INFO - 127.0.0.1 - - [04/Sep/2025 15:55:02] "GET /socket.io/?EIO=4&transport=polling&t=PaLEL9e&sid=CJRtC-KaUhgamiueAAAA HTTP/1.1" 200 -
+2025-09-04 15:55:02,284 - INFO - 127.0.0.1 - - [04/Sep/2025 15:55:02] "GET /socket.io/?EIO=4&transport=polling&t=PaLELA6&sid=CJRtC-KaUhgamiueAAAA HTTP/1.1" 200 -
+2025-09-04 15:55:02,285 - INFO - 127.0.0.1 - - [04/Sep/2025 15:55:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-09-04 15:55:41,888 - INFO - 2captcha solver initialized with API key: 56d4457439...
+2025-09-04 15:55:41,889 - INFO - Starting SEO bot with 20 proxies
+2025-09-04 15:55:41,890 - INFO - Searching for 'izmir seo' on domain 'best4seo.com.tr'
+2025-09-04 15:55:41,890 - INFO - --- Processing proxy 1/20 ---
+2025-09-04 15:55:41,890 - INFO - Testing proxy: 50.114.243.109:6350:aawikmkk:tx1f1a2yr843
+2025-09-04 15:55:41,890 - INFO - 127.0.0.1 - - [04/Sep/2025 15:55:41] "POST /api/start HTTP/1.1" 200 -
+2025-09-04 15:55:41,890 - INFO - Testing proxy: 50.114.243.109:6350 (with auth)
+2025-09-04 15:55:42,688 - WARNING - Proxy 50.114.243.109:6350 (with auth) returned status code: 503
+2025-09-04 15:55:42,697 - ERROR - Proxy 50.114.243.109:6350:aawikmkk:tx1f1a2yr843 is not working, skipping...
+2025-09-04 15:55:42,697 - ERROR - ✗ Proxy 50.114.243.109:6350:aawikmkk:tx1f1a2yr843 failed
+2025-09-04 15:55:42,697 - INFO - Waiting 3 seconds before next proxy...
+2025-09-04 15:55:45,702 - INFO - --- Processing proxy 2/20 ---
+2025-09-04 15:55:45,702 - INFO - Testing proxy: 50.114.243.121:6362:aawikmkk:tx1f1a2yr843
+2025-09-04 15:55:45,703 - INFO - Testing proxy: 50.114.243.121:6362 (with auth)
+2025-09-04 15:55:46,366 - WARNING - Proxy 50.114.243.121:6362 (with auth) returned status code: 503
+2025-09-04 15:55:46,366 - ERROR - Proxy 50.114.243.121:6362:aawikmkk:tx1f1a2yr843 is not working, skipping...
+2025-09-04 15:55:46,367 - ERROR - ✗ Proxy 50.114.243.121:6362:aawikmkk:tx1f1a2yr843 failed
+2025-09-04 15:55:46,367 - INFO - Waiting 3 seconds before next proxy...
+2025-09-04 15:55:49,372 - INFO - --- Processing proxy 3/20 ---
+2025-09-04 15:55:49,373 - INFO - Testing proxy: 50.114.243.15:6256:aawikmkk:tx1f1a2yr843
+2025-09-04 15:55:49,374 - INFO - Testing proxy: 50.114.243.15:6256 (with auth)
+2025-09-04 15:55:50,336 - WARNING - Proxy 50.114.243.15:6256 (with auth) returned status code: 503
+2025-09-04 15:55:50,338 - ERROR - Proxy 50.114.243.15:6256:aawikmkk:tx1f1a2yr843 is not working, skipping...
+2025-09-04 15:55:50,339 - ERROR - ✗ Proxy 50.114.243.15:6256:aawikmkk:tx1f1a2yr843 failed
+2025-09-04 15:55:50,339 - INFO - Waiting 3 seconds before next proxy...
+2025-09-04 15:55:53,344 - INFO - --- Processing proxy 4/20 ---
+2025-09-04 15:55:53,344 - INFO - Testing proxy: 50.114.99.17:6758:aawikmkk:tx1f1a2yr843
+2025-09-04 15:55:53,344 - INFO - Testing proxy: 50.114.99.17:6758 (with auth)
+2025-09-04 15:55:54,049 - WARNING - Proxy 50.114.99.17:6758 (with auth) returned status code: 503
+2025-09-04 15:55:54,051 - ERROR - Proxy 50.114.99.17:6758:aawikmkk:tx1f1a2yr843 is not working, skipping...
+2025-09-04 15:55:54,051 - ERROR - ✗ Proxy 50.114.99.17:6758:aawikmkk:tx1f1a2yr843 failed
+2025-09-04 15:55:54,051 - INFO - Waiting 3 seconds before next proxy...
+2025-09-04 15:55:57,053 - INFO - --- Processing proxy 5/20 ---
+2025-09-04 15:55:57,053 - INFO - Testing proxy: 50.114.99.151:6892:aawikmkk:tx1f1a2yr843
+2025-09-04 15:55:57,054 - INFO - Testing proxy: 50.114.99.151:6892 (with auth)
+2025-09-04 15:55:57,735 - WARNING - Proxy 50.114.99.151:6892 (with auth) returned status code: 503
+2025-09-04 15:55:57,737 - ERROR - Proxy 50.114.99.151:6892:aawikmkk:tx1f1a2yr843 is not working, skipping...
+2025-09-04 15:55:57,737 - ERROR - ✗ Proxy 50.114.99.151:6892:aawikmkk:tx1f1a2yr843 failed
+2025-09-04 15:55:57,737 - INFO - Waiting 3 seconds before next proxy...
+2025-09-04 15:56:00,741 - INFO - --- Processing proxy 6/20 ---
+2025-09-04 15:56:00,745 - INFO - Testing proxy: 209.99.134.20:5716:aawikmkk:tx1f1a2yr843
+2025-09-04 15:56:00,745 - INFO - Testing proxy: 209.99.134.20:5716 (with auth)
+2025-09-04 15:56:01,524 - WARNING - Proxy 209.99.134.20:5716 (with auth) returned status code: 503
+2025-09-04 15:56:01,524 - ERROR - Proxy 209.99.134.20:5716:aawikmkk:tx1f1a2yr843 is not working, skipping...
+2025-09-04 15:56:01,524 - ERROR - ✗ Proxy 209.99.134.20:5716:aawikmkk:tx1f1a2yr843 failed
+2025-09-04 15:56:01,524 - INFO - Waiting 3 seconds before next proxy...
+2025-09-04 15:56:04,530 - INFO - --- Processing proxy 7/20 ---
+2025-09-04 15:56:04,531 - INFO - Testing proxy: 50.114.243.146:6387:aawikmkk:tx1f1a2yr843
+2025-09-04 15:56:04,533 - INFO - Testing proxy: 50.114.243.146:6387 (with auth)
+2025-09-04 15:56:05,140 - WARNING - Proxy 50.114.243.146:6387 (with auth) returned status code: 503
+2025-09-04 15:56:05,140 - ERROR - Proxy 50.114.243.146:6387:aawikmkk:tx1f1a2yr843 is not working, skipping...
+2025-09-04 15:56:05,140 - ERROR - ✗ Proxy 50.114.243.146:6387:aawikmkk:tx1f1a2yr843 failed
+2025-09-04 15:56:05,141 - INFO - Waiting 3 seconds before next proxy...
+2025-09-04 15:56:08,147 - INFO - --- Processing proxy 8/20 ---
+2025-09-04 15:56:08,149 - INFO - Testing proxy: 23.26.231.233:7474:aawikmkk:tx1f1a2yr843
+2025-09-04 15:56:08,149 - INFO - Testing proxy: 23.26.231.233:7474 (with auth)
+2025-09-04 15:56:09,512 - WARNING - Proxy 23.26.231.233:7474 (with auth) returned status code: 503
+2025-09-04 15:56:09,513 - ERROR - Proxy 23.26.231.233:7474:aawikmkk:tx1f1a2yr843 is not working, skipping...
+2025-09-04 15:56:09,513 - ERROR - ✗ Proxy 23.26.231.233:7474:aawikmkk:tx1f1a2yr843 failed
+2025-09-04 15:56:09,513 - INFO - Waiting 3 seconds before next proxy...
+2025-09-04 15:56:12,519 - INFO - --- Processing proxy 9/20 ---
+2025-09-04 15:56:12,520 - INFO - Testing proxy: 108.165.227.131:5372:aawikmkk:tx1f1a2yr843
+2025-09-04 15:56:12,520 - INFO - Testing proxy: 108.165.227.131:5372 (with auth)
+2025-09-04 15:56:13,728 - WARNING - Proxy 108.165.227.131:5372 (with auth) returned status code: 503
+2025-09-04 15:56:13,731 - ERROR - Proxy 108.165.227.131:5372:aawikmkk:tx1f1a2yr843 is not working, skipping...
+2025-09-04 15:56:13,731 - ERROR - ✗ Proxy 108.165.227.131:5372:aawikmkk:tx1f1a2yr843 failed
+2025-09-04 15:56:13,731 - INFO - Waiting 3 seconds before next proxy...
+2025-09-04 15:56:15,345 - INFO - Bot stopped by user
+2025-09-04 15:56:15,345 - INFO - 127.0.0.1 - - [04/Sep/2025 15:56:15] "POST /api/stop HTTP/1.1" 200 -
+2025-09-04 15:56:16,737 - INFO - ==================================================
+2025-09-04 15:56:16,738 - INFO - FINAL RESULTS:
+2025-09-04 15:56:16,738 - INFO - Total proxies tested: 20
+2025-09-04 15:56:16,738 - INFO - Successful runs: 0
+2025-09-04 15:56:16,738 - INFO - Failed runs: 20
+2025-09-04 15:56:16,738 - INFO - ==================================================
+2025-09-04 15:56:22,423 - INFO - 2captcha solver initialized with API key: 56d4457439...
+2025-09-04 15:56:22,426 - INFO - Starting SEO bot with 20 proxies
+2025-09-04 15:56:22,426 - INFO - 127.0.0.1 - - [04/Sep/2025 15:56:22] "POST /api/start HTTP/1.1" 200 -
+2025-09-04 15:56:22,427 - INFO - Searching for 'izmir seo' on domain 'best4seo.com.tr'
+2025-09-04 15:56:22,427 - INFO - --- Processing proxy 1/20 ---
+2025-09-04 15:56:22,428 - INFO - Testing proxy: 50.114.243.109:6350:aawikmkk:tx1f1a2yr843
+2025-09-04 15:56:22,428 - INFO - Testing proxy: 50.114.243.109:6350 (with auth)
+2025-09-04 15:56:22,866 - WARNING - Proxy 50.114.243.109:6350 (with auth) returned status code: 503
+2025-09-04 15:56:22,867 - ERROR - Proxy 50.114.243.109:6350:aawikmkk:tx1f1a2yr843 is not working, skipping...
+2025-09-04 15:56:22,868 - ERROR - ✗ Proxy 50.114.243.109:6350:aawikmkk:tx1f1a2yr843 failed
+2025-09-04 15:56:22,873 - INFO - Waiting 3 seconds before next proxy...
+2025-09-04 15:56:25,874 - INFO - --- Processing proxy 2/20 ---
+2025-09-04 15:56:25,875 - INFO - Testing proxy: 50.114.243.121:6362:aawikmkk:tx1f1a2yr843
+2025-09-04 15:56:25,876 - INFO - Testing proxy: 50.114.243.121:6362 (with auth)
+2025-09-04 15:56:26,306 - WARNING - Proxy 50.114.243.121:6362 (with auth) returned status code: 503
+2025-09-04 15:56:26,307 - ERROR - Proxy 50.114.243.121:6362:aawikmkk:tx1f1a2yr843 is not working, skipping...
+2025-09-04 15:56:26,307 - ERROR - ✗ Proxy 50.114.243.121:6362:aawikmkk:tx1f1a2yr843 failed
+2025-09-04 15:56:26,307 - INFO - Waiting 3 seconds before next proxy...
+2025-09-04 15:56:29,310 - INFO - --- Processing proxy 3/20 ---
+2025-09-04 15:56:29,312 - INFO - Testing proxy: 50.114.243.15:6256:aawikmkk:tx1f1a2yr843
+2025-09-04 15:56:29,312 - INFO - Testing proxy: 50.114.243.15:6256 (with auth)
+2025-09-04 15:56:29,572 - INFO - Bot stopped by user
+2025-09-04 15:56:29,575 - INFO - 127.0.0.1 - - [04/Sep/2025 15:56:29] "POST /api/stop HTTP/1.1" 200 -
+2025-09-04 15:56:29,788 - WARNING - Proxy 50.114.243.15:6256 (with auth) returned status code: 503
+2025-09-04 15:56:29,792 - ERROR - Proxy 50.114.243.15:6256:aawikmkk:tx1f1a2yr843 is not working, skipping...
+2025-09-04 15:56:29,793 - ERROR - ✗ Proxy 50.114.243.15:6256:aawikmkk:tx1f1a2yr843 failed
+2025-09-04 15:56:29,793 - INFO - ==================================================
+2025-09-04 15:56:29,793 - INFO - FINAL RESULTS:
+2025-09-04 15:56:29,793 - INFO - Total proxies tested: 20
+2025-09-04 15:56:29,793 - INFO - Successful runs: 0
+2025-09-04 15:56:29,794 - INFO - Failed runs: 20
+2025-09-04 15:56:29,794 - INFO - ==================================================
+2025-09-04 15:56:39,127 - INFO - Client disconnected from WebSocket
+2025-09-04 15:56:39,128 - INFO - 127.0.0.1 - - [04/Sep/2025 15:56:39] "GET /socket.io/?EIO=4&transport=websocket&sid=CJRtC-KaUhgamiueAAAA HTTP/1.1" 200 -
+2025-09-04 15:56:39,135 - INFO - 127.0.0.1 - - [04/Sep/2025 15:56:39] "[36mGET / HTTP/1.1[0m" 304 -
+2025-09-04 15:56:39,285 - INFO - 127.0.0.1 - - [04/Sep/2025 15:56:39] "GET /socket.io/?EIO=4&transport=polling&t=PaLEirl HTTP/1.1" 200 -
+2025-09-04 15:56:39,287 - INFO - 127.0.0.1 - - [04/Sep/2025 15:56:39] "GET /api/status HTTP/1.1" 200 -
+2025-09-04 15:56:39,288 - INFO - 127.0.0.1 - - [04/Sep/2025 15:56:39] "GET /api/logs HTTP/1.1" 200 -
+2025-09-04 15:56:39,289 - INFO - 127.0.0.1 - - [04/Sep/2025 15:56:39] "GET /api/results HTTP/1.1" 200 -
+2025-09-04 15:56:39,295 - INFO - Client connected to WebSocket
+2025-09-04 15:56:39,295 - INFO - 127.0.0.1 - - [04/Sep/2025 15:56:39] "GET /socket.io/?EIO=4&transport=polling&t=PaLEirx&sid=zY35jtwL1PbXOnpAAAAC HTTP/1.1" 200 -
+2025-09-04 15:56:39,295 - INFO - 127.0.0.1 - - [04/Sep/2025 15:56:39] "POST /socket.io/?EIO=4&transport=polling&t=PaLEirw&sid=zY35jtwL1PbXOnpAAAAC HTTP/1.1" 200 -
+2025-09-04 15:56:39,321 - INFO - 127.0.0.1 - - [04/Sep/2025 15:56:39] "GET /socket.io/?EIO=4&transport=polling&t=PaLEisN&sid=zY35jtwL1PbXOnpAAAAC HTTP/1.1" 200 -
+2025-09-04 15:56:57,023 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.110.12:8080
+2025-09-04 15:56:57,024 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-04 15:57:00,483 - INFO - 127.0.0.1 - - [04/Sep/2025 15:57:00] "GET /socket.io/?EIO=4&transport=polling&t=PaLEo0z HTTP/1.1" 200 -
+2025-09-04 15:57:00,488 - INFO - Client connected to WebSocket
+2025-09-04 15:57:00,489 - INFO - 127.0.0.1 - - [04/Sep/2025 15:57:00] "POST /socket.io/?EIO=4&transport=polling&t=PaLEo14&sid=CGeQ5J2c9jpt4jWKAAAA HTTP/1.1" 200 -
+2025-09-04 15:57:00,489 - INFO - 127.0.0.1 - - [04/Sep/2025 15:57:00] "GET /socket.io/?EIO=4&transport=polling&t=PaLEo15&sid=CGeQ5J2c9jpt4jWKAAAA HTTP/1.1" 200 -
+2025-09-04 15:58:25,733 - INFO - Client disconnected from WebSocket
+2025-09-04 15:58:25,736 - INFO - 127.0.0.1 - - [04/Sep/2025 15:58:25] "GET /socket.io/?EIO=4&transport=websocket&sid=CGeQ5J2c9jpt4jWKAAAA HTTP/1.1" 200 -
+2025-09-04 15:58:25,743 - INFO - 127.0.0.1 - - [04/Sep/2025 15:58:25] "[36mGET / HTTP/1.1[0m" 304 -
+2025-09-04 15:58:25,859 - INFO - 127.0.0.1 - - [04/Sep/2025 15:58:25] "GET /socket.io/?EIO=4&transport=polling&t=PaLF6sz HTTP/1.1" 200 -
+2025-09-04 15:58:25,861 - INFO - 127.0.0.1 - - [04/Sep/2025 15:58:25] "GET /api/logs HTTP/1.1" 200 -
+2025-09-04 15:58:25,862 - INFO - 127.0.0.1 - - [04/Sep/2025 15:58:25] "GET /api/status HTTP/1.1" 200 -
+2025-09-04 15:58:25,862 - INFO - 127.0.0.1 - - [04/Sep/2025 15:58:25] "GET /api/results HTTP/1.1" 200 -
+2025-09-04 15:58:25,869 - INFO - Client connected to WebSocket
+2025-09-04 15:58:25,869 - INFO - 127.0.0.1 - - [04/Sep/2025 15:58:25] "POST /socket.io/?EIO=4&transport=polling&t=PaLF6t9&sid=Sotwtlm1sk5956kdAAAC HTTP/1.1" 200 -
+2025-09-04 15:58:25,869 - INFO - 127.0.0.1 - - [04/Sep/2025 15:58:25] "GET /socket.io/?EIO=4&transport=polling&t=PaLF6t9.0&sid=Sotwtlm1sk5956kdAAAC HTTP/1.1" 200 -
+2025-09-04 15:58:25,878 - INFO - 127.0.0.1 - - [04/Sep/2025 15:58:25] "GET /socket.io/?EIO=4&transport=polling&t=PaLF6tH&sid=Sotwtlm1sk5956kdAAAC HTTP/1.1" 200 -
+2025-09-04 15:59:01,204 - INFO - 2captcha solver initialized with API key: 56d4457439...
+2025-09-04 15:59:01,206 - INFO - Starting SEO bot with 25 proxies
+2025-09-04 15:59:01,206 - INFO - 127.0.0.1 - - [04/Sep/2025 15:59:01] "POST /api/start HTTP/1.1" 200 -
+2025-09-04 15:59:01,207 - INFO - Searching for 'izmir seo' on domain 'best4seo.com.tr'
+2025-09-04 15:59:01,207 - INFO - --- Processing proxy 1/25 ---
+2025-09-04 15:59:01,207 - INFO - Testing proxy: 206.41.168.122:6787:aawikmkk:tx1f1a2yr843
+2025-09-04 15:59:01,208 - INFO - Testing proxy: 206.41.168.122:6787 (with auth)
+2025-09-04 15:59:01,942 - INFO - ✓ Proxy 206.41.168.122:6787 (with auth) is working. IP: 206.41.168.122
+2025-09-04 15:59:01,943 - INFO - Setting up Kameleo browser with proxy: 206.41.168.122:6787:aawikmkk:tx1f1a2yr843
+2025-09-04 15:59:01,944 - INFO - Kameleo client initialized on port 5050
+2025-09-04 15:59:01,944 - INFO - Loading available Chrome fingerprints...
+2025-09-04 15:59:02,917 - INFO - Loaded 25 unique Chrome fingerprints
+2025-09-04 15:59:02,917 - INFO - Creating Kameleo profile with proxy: 206.41.168.122:6787:aawikmkk:tx1f1a2yr843
+2025-09-04 15:59:02,918 - INFO - Selected unique fingerprint: 9e1463bd7a03c5e6d0ae0a1fe83ba2323c44ae5f06f84e899ddee5d7425fe7d0 (1/25 used)
+2025-09-04 15:59:02,918 - INFO - Using authenticated proxy: 206.41.168.122:6787
+2025-09-04 15:59:03,238 - INFO - ✓ Kameleo profile created: 61ec4989-3694-4f83-a565-322c5f46111b for proxy 206.41.168.122:6787
+2025-09-04 15:59:09,016 - INFO - Kameleo browser setup completed successfully
+2025-09-04 15:59:09,022 - INFO - Verifying proxy IP...
+2025-09-04 15:59:14,293 - INFO - Browser IP (via http://httpbin.org/ip): 206.41.168.122
+2025-09-04 15:59:15,575 - INFO - Real IP: 160.176.128.116
+2025-09-04 15:59:15,580 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-04 15:59:15,581 - INFO - Opening Google.com...
+2025-09-04 15:59:16,771 - INFO - Waiting 5 seconds...
+2025-09-04 15:59:21,783 - INFO - Checking for reCAPTCHA on current page: https://www.google.com/?zx=1756997956824&no_sw_cr=1
+2025-09-04 15:59:27,006 - INFO - No reCAPTCHA detected on current page
+2025-09-04 15:59:27,016 - INFO - Typing keyword: izmir seo
+2025-09-04 15:59:31,157 - INFO - Checking for reCAPTCHA on current page: https://www.google.com/search?q=izmir+seo&sca_esv=7550878c098e0420&source=hp&ei=Q6m5aICtNMngwN4PuOH8qAo&iflsig=AOw8s4IAAAAAaLm3UwILrrcK6rUDUFJTdiDMUNy5fTZ3&ved=0ahUKEwjA2p64r7-PAxVJMNAFHbgwH6UQ4dUDCBA&uact=5&oq=izmir+seo&gs_lp=Egdnd3Mtd2l6Iglpem1pciBzZW8yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkigE1AAWK0JcAB4AJABAJgBrgGgAcAKqgEDMC45uAEDyAEA-AEBmAIJoALZCsICCxAAGIAEGLEDGIMBwgIFEAAYgATCAgUQLhiABMICCBAAGIAEGLEDwgIREC4YgAQYsQMY0QMYgwEYxwHCAg4QABiABBixAxiDARiKBcICCBAuGIAEGLEDwgIOEC4YgAQYsQMYxwEYrwHCAgsQLhiABBixAxiDAcICCxAuGIAEGMcBGK8BmAMAkgcDMC45oAfVbLIHAzAuObgH2QrCBwUwLjcuMsgHEw&sclient=gws-wiz&sei=Uam5aJ_IMYG4i-gPkoidgQU
+2025-09-04 15:59:36,515 - INFO - No reCAPTCHA detected on current page
+2025-09-04 15:59:36,522 - INFO - Search results loaded
+2025-09-04 15:59:41,569 - INFO - Performed 5 human-like scroll actions
+2025-09-04 15:59:41,571 - INFO - Looking for domain: best4seo.com.tr
+2025-09-04 15:59:41,791 - INFO - Domain not found on page 1
+2025-09-04 15:59:45,646 - INFO - Navigated to page 2
+2025-09-04 15:59:45,836 - INFO - Domain not found on page 2
+2025-09-04 15:59:49,592 - INFO - Navigated to page 3
+2025-09-04 15:59:49,774 - INFO - Domain not found on page 3
+2025-09-04 15:59:53,553 - INFO - Navigated to page 4
+2025-09-04 15:59:53,735 - INFO - Domain not found on page 4
+2025-09-04 15:59:57,633 - INFO - Navigated to page 5
+2025-09-04 15:59:57,748 - INFO - Found target domain on page 5, position 8: https://best4seo.com.tr/product-category/izmir-seo-paketi/
+2025-09-04 16:00:30,391 - INFO - ✓ Successfully clicked target link using ActionChains
+2025-09-04 16:00:33,417 - INFO - ✓ Successfully navigated to target website: https://best4seo.com.tr/product-category/izmir-seo-paketi/
+2025-09-04 16:00:33,420 - INFO - 🎭 Starting realistic website interaction (60 seconds)
+2025-09-04 16:00:33,420 - INFO - 🎭 Starting realistic website interaction (60 seconds)
+2025-09-04 16:00:40,371 - INFO - Phase 1: Initial page exploration...
+2025-09-04 16:00:41,846 - INFO - Smooth scrolled down 600 pixels
+2025-09-04 16:00:45,724 - INFO - Hovered over a element
+2025-09-04 16:00:47,618 - INFO - Hovered over h1 element
+2025-09-04 16:00:49,436 - INFO - Hovered over h2 element
+2025-09-04 16:00:49,523 - INFO - Hovered over 3 elements
+2025-09-04 16:00:51,733 - INFO - Smooth scrolled up 300 pixels
+2025-09-04 16:00:53,737 - INFO - Phase 2: Exploring navigation...
+2025-09-04 16:00:58,478 - INFO - Clicked navigation link: HIZMETLERIMIZ
+2025-09-04 16:01:01,486 - INFO - Navigated to new page: https://best4seo.com.tr/hizmetlerimiz/
+2025-09-04 16:01:02,516 - INFO - Smooth scrolled down 400 pixels
+2025-09-04 16:01:05,395 - INFO - Hovered over a element
+2025-09-04 16:01:07,245 - INFO - Hovered over h1 element
+2025-09-04 16:01:09,052 - INFO - Hovered over h2 element
+2025-09-04 16:01:09,102 - INFO - Hovered over 3 elements
+2025-09-04 16:01:10,456 - INFO - Smooth scrolled up 200 pixels
+2025-09-04 16:01:13,715 - INFO - Returned to previous page
+2025-09-04 16:01:13,717 - INFO - Successfully explored 1 navigation pages
+2025-09-04 16:01:13,720 - INFO - Phase 3: Content exploration...
+2025-09-04 16:01:14,965 - INFO - Smooth scrolled down 800 pixels
+2025-09-04 16:01:18,826 - INFO - Hovered over a element
+2025-09-04 16:01:20,717 - INFO - Hovered over h1 element
+2025-09-04 16:01:22,519 - INFO - Hovered over h2 element
+2025-09-04 16:01:22,600 - INFO - Hovered over 3 elements
+2025-09-04 16:01:24,559 - INFO - Smooth scrolled down 200 pixels
+2025-09-04 16:01:27,673 - INFO - Smooth scrolled down 200 pixels
+2025-09-04 16:01:30,861 - INFO - Smooth scrolled down 200 pixels
+2025-09-04 16:01:33,339 - INFO - Smooth scrolled up 400 pixels
+2025-09-04 16:01:34,344 - INFO - ✅ Completed realistic interaction session (60.9 seconds)
+2025-09-04 16:01:34,344 - INFO - ✅ Successfully visited and interacted with target website
+2025-09-04 16:01:34,344 - INFO - ✓ Found domain on page 5, position 8
+2025-09-04 16:01:34,348 - INFO - Browser closed
+2025-09-04 16:01:34,539 - INFO - Kameleo profile 61ec4989-3694-4f83-a565-322c5f46111b stopped
+2025-09-04 16:01:34,572 - INFO - Kameleo profile 61ec4989-3694-4f83-a565-322c5f46111b deleted
+2025-09-04 16:01:34,572 - INFO - ✓ Proxy 206.41.168.122:6787:aawikmkk:tx1f1a2yr843 completed successfully
+2025-09-04 16:01:34,572 - INFO - Waiting 3 seconds before next proxy...
+2025-09-04 16:01:37,578 - INFO - --- Processing proxy 2/25 ---
+2025-09-04 16:01:37,580 - INFO - Testing proxy: 108.165.227.168:5409:aawikmkk:tx1f1a2yr843
+2025-09-04 16:01:37,580 - INFO - Testing proxy: 108.165.227.168:5409 (with auth)
+2025-09-04 16:01:45,255 - INFO - ✓ Proxy 108.165.227.168:5409 (with auth) is working. IP: 108.165.227.168
+2025-09-04 16:01:45,257 - INFO - Setting up Kameleo browser with proxy: 108.165.227.168:5409:aawikmkk:tx1f1a2yr843
+2025-09-04 16:01:45,257 - INFO - Creating Kameleo profile with proxy: 108.165.227.168:5409:aawikmkk:tx1f1a2yr843
+2025-09-04 16:01:45,257 - INFO - Selected unique fingerprint: 695aedf7447ecd77ffcf0c53aa17bd2da1ba72b7a24e417cb0c92b8ed59f8a6a (2/25 used)
+2025-09-04 16:01:45,258 - INFO - Using authenticated proxy: 108.165.227.168:5409
+2025-09-04 16:01:45,661 - INFO - ✓ Kameleo profile created: 9805e8c7-311e-4c4d-ad35-582980ad79c2 for proxy 108.165.227.168:5409
+2025-09-04 16:01:48,870 - INFO - Kameleo browser setup completed successfully
+2025-09-04 16:01:48,871 - INFO - Verifying proxy IP...
+2025-09-04 16:01:52,793 - INFO - Browser IP (via http://httpbin.org/ip): 108.165.227.168
+2025-09-04 16:02:00,343 - INFO - Real IP: 160.176.128.116
+2025-09-04 16:02:00,343 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-04 16:02:00,344 - INFO - Opening Google.com...
+2025-09-04 16:02:02,159 - INFO - Waiting 5 seconds...
+2025-09-04 16:02:07,168 - INFO - Checking for reCAPTCHA on current page: https://www.google.com/?zx=1756998122760&no_sw_cr=1
+2025-09-04 16:02:12,358 - INFO - No reCAPTCHA detected on current page
+2025-09-04 16:02:12,365 - INFO - Typing keyword: izmir seo
+2025-09-04 16:02:17,423 - INFO - Checking for reCAPTCHA on current page: https://www.google.com/search?q=izmir+seo&sca_esv=7550878c098e0420&source=hp&ei=6Km5aJW-J9bGp84P8YrtCQ&iflsig=AOw8s4IAAAAAaLm3-GMcflmWPjlxVZWk2xqIH8cMa8UG&ved=0ahUKEwiV0uiGsL-PAxVW48kDHXFFOwEQ4dUDCA0&uact=5&oq=izmir+seo&gs_lp=Egdnd3Mtd2l6Iglpem1pciBzZW8yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yAhAmMgIQJjICECYyAhAmSKoYUABY3ghwAHgAkAEAmAH6AaABug6qAQUwLjUuNLgBA8gBAPgBAZgCCaAC2A7CAgUQABiABMICCxAAGIAEGLEDGIMBwgIFEC4YgATCAg4QLhiABBixAxiDARiKBcICFBAuGIAEGLEDGNEDGIMBGMcBGIoFwgIIEAAYgAQYsQPCAgsQLhiABBixAxiDAcICDRAAGIAEGLEDGEYYgALCAhQQLhiABBixAxiDARjHARiKBRivAcICDhAAGIAEGLEDGIMBGIoFwgIIEC4YgAQYsQPCAgsQLhiABBjHARivAZgDAJIHBTAuNC41oAeGa7IHBTAuNC41uAfYDsIHBTAuNi4zyAcZ&sclient=gws-wiz
+2025-09-04 16:02:22,740 - INFO - No reCAPTCHA detected on current page
+2025-09-04 16:02:22,746 - INFO - Search results loaded
+2025-09-04 16:02:25,944 - INFO - Performed 3 human-like scroll actions
+2025-09-04 16:02:25,947 - INFO - Looking for domain: best4seo.com.tr
+2025-09-04 16:02:26,169 - INFO - Domain not found on page 1
+2025-09-04 16:02:30,480 - INFO - Navigated to page 2
+2025-09-04 16:02:30,615 - INFO - Found target domain on page 2, position 7: https://best4seo.com.tr/
+2025-09-04 16:02:38,487 - INFO - ✓ Successfully clicked target link using ActionChains
+2025-09-04 16:02:41,504 - INFO - ✓ Successfully navigated to target website: https://best4seo.com.tr/
+2025-09-04 16:02:41,504 - INFO - 🎭 Starting realistic website interaction (60 seconds)
+2025-09-04 16:02:41,504 - INFO - 🎭 Starting realistic website interaction (60 seconds)
+2025-09-04 16:02:44,523 - INFO - Phase 1: Initial page exploration...
+2025-09-04 16:02:45,599 - INFO - Smooth scrolled down 600 pixels
+2025-09-04 16:02:52,005 - INFO - Hovered over a element
+2025-09-04 16:02:53,894 - INFO - Hovered over h1 element
+2025-09-04 16:02:55,749 - INFO - Hovered over h2 element
+2025-09-04 16:02:55,853 - INFO - Hovered over 3 elements
+2025-09-04 16:02:57,726 - INFO - Smooth scrolled up 300 pixels
+2025-09-04 16:02:59,735 - INFO - Phase 2: Exploring navigation...
+2025-09-04 16:03:06,109 - INFO - Clicked navigation link: HIZMETLERIMIZ
+2025-09-04 16:03:09,144 - INFO - Navigated to new page: https://best4seo.com.tr/hizmetlerimiz/
+2025-09-04 16:03:10,548 - INFO - Smooth scrolled down 400 pixels
+2025-09-04 16:03:13,437 - INFO - Hovered over a element
+2025-09-04 16:03:15,337 - INFO - Hovered over h1 element
+2025-09-04 16:03:17,161 - INFO - Hovered over h2 element
+2025-09-04 16:03:17,205 - INFO - Hovered over 3 elements
+2025-09-04 16:03:18,728 - INFO - Smooth scrolled up 200 pixels
+2025-09-04 16:03:21,982 - INFO - Returned to previous page
+2025-09-04 16:03:21,984 - INFO - Successfully explored 1 navigation pages
+2025-09-04 16:03:21,984 - INFO - Phase 3: Content exploration...
+2025-09-04 16:03:23,431 - INFO - Smooth scrolled down 800 pixels
+2025-09-04 16:03:27,284 - INFO - Hovered over a element
+2025-09-04 16:03:29,118 - INFO - Hovered over h1 element
+2025-09-04 16:03:30,953 - INFO - Hovered over h2 element
+2025-09-04 16:03:31,028 - INFO - Hovered over 3 elements
+2025-09-04 16:03:33,118 - INFO - Smooth scrolled down 200 pixels
+2025-09-04 16:03:35,785 - INFO - Smooth scrolled down 200 pixels
+2025-09-04 16:03:38,514 - INFO - Smooth scrolled down 200 pixels
+2025-09-04 16:03:41,079 - INFO - Smooth scrolled up 400 pixels
+2025-09-04 16:03:42,081 - INFO - ✅ Completed realistic interaction session (60.6 seconds)
+2025-09-04 16:03:42,081 - INFO - ✅ Successfully visited and interacted with target website
+2025-09-04 16:03:42,082 - INFO - ✓ Found domain on page 2, position 7
+2025-09-04 16:03:42,096 - INFO - Browser closed
+2025-09-04 16:03:42,442 - INFO - Kameleo profile 9805e8c7-311e-4c4d-ad35-582980ad79c2 stopped
+2025-09-04 16:03:42,478 - INFO - Kameleo profile 9805e8c7-311e-4c4d-ad35-582980ad79c2 deleted
+2025-09-04 16:03:42,479 - INFO - ✓ Proxy 108.165.227.168:5409:aawikmkk:tx1f1a2yr843 completed successfully
+2025-09-04 16:03:42,479 - INFO - Waiting 3 seconds before next proxy...
+2025-09-04 16:03:45,481 - INFO - --- Processing proxy 3/25 ---
+2025-09-04 16:03:45,483 - INFO - Testing proxy: 108.165.161.124:5865:aawikmkk:tx1f1a2yr843
+2025-09-04 16:03:45,484 - INFO - Testing proxy: 108.165.161.124:5865 (with auth)
+2025-09-04 16:03:48,685 - WARNING - Proxy 108.165.161.124:5865 (with auth) returned status code: 503
+2025-09-04 16:03:48,685 - ERROR - Proxy 108.165.161.124:5865:aawikmkk:tx1f1a2yr843 is not working, skipping...
+2025-09-04 16:03:48,687 - ERROR - ✗ Proxy 108.165.161.124:5865:aawikmkk:tx1f1a2yr843 failed
+2025-09-04 16:03:48,687 - INFO - Waiting 3 seconds before next proxy...
+2025-09-04 16:03:51,693 - INFO - --- Processing proxy 4/25 ---
+2025-09-04 16:03:51,693 - INFO - Testing proxy: 209.99.134.59:5755:aawikmkk:tx1f1a2yr843
+2025-09-04 16:03:51,693 - INFO - Testing proxy: 209.99.134.59:5755 (with auth)
+2025-09-04 16:03:52,583 - WARNING - Proxy 209.99.134.59:5755 (with auth) returned status code: 503
+2025-09-04 16:03:52,589 - ERROR - Proxy 209.99.134.59:5755:aawikmkk:tx1f1a2yr843 is not working, skipping...
+2025-09-04 16:03:52,589 - ERROR - ✗ Proxy 209.99.134.59:5755:aawikmkk:tx1f1a2yr843 failed
+2025-09-04 16:03:52,590 - INFO - Waiting 3 seconds before next proxy...
+2025-09-04 16:03:55,595 - INFO - --- Processing proxy 5/25 ---
+2025-09-04 16:03:55,596 - INFO - Testing proxy: 50.114.243.85:6326:aawikmkk:tx1f1a2yr843
+2025-09-04 16:03:55,596 - INFO - Testing proxy: 50.114.243.85:6326 (with auth)
+2025-09-04 16:03:56,363 - WARNING - Proxy 50.114.243.85:6326 (with auth) returned status code: 503
+2025-09-04 16:03:56,363 - ERROR - Proxy 50.114.243.85:6326:aawikmkk:tx1f1a2yr843 is not working, skipping...
+2025-09-04 16:03:56,363 - ERROR - ✗ Proxy 50.114.243.85:6326:aawikmkk:tx1f1a2yr843 failed
+2025-09-04 16:03:56,364 - INFO - Waiting 3 seconds before next proxy...
+2025-09-04 16:03:59,369 - INFO - --- Processing proxy 6/25 ---
+2025-09-04 16:03:59,370 - INFO - Testing proxy: 108.165.161.130:5871:aawikmkk:tx1f1a2yr843
+2025-09-04 16:03:59,370 - INFO - Testing proxy: 108.165.161.130:5871 (with auth)
+2025-09-04 16:04:00,004 - WARNING - Proxy 108.165.161.130:5871 (with auth) returned status code: 503
+2025-09-04 16:04:00,004 - ERROR - Proxy 108.165.161.130:5871:aawikmkk:tx1f1a2yr843 is not working, skipping...
+2025-09-04 16:04:00,004 - ERROR - ✗ Proxy 108.165.161.130:5871:aawikmkk:tx1f1a2yr843 failed
+2025-09-04 16:04:00,004 - INFO - Waiting 3 seconds before next proxy...
+2025-09-04 16:04:03,011 - INFO - --- Processing proxy 7/25 ---
+2025-09-04 16:04:03,012 - INFO - Testing proxy: 204.9.38.41:6362:aawikmkk:tx1f1a2yr843
+2025-09-04 16:04:03,012 - INFO - Testing proxy: 204.9.38.41:6362 (with auth)
+2025-09-04 16:04:03,775 - INFO - ✓ Proxy 204.9.38.41:6362 (with auth) is working. IP: 204.9.38.41
+2025-09-04 16:04:03,776 - INFO - Setting up Kameleo browser with proxy: 204.9.38.41:6362:aawikmkk:tx1f1a2yr843
+2025-09-04 16:04:03,776 - INFO - Creating Kameleo profile with proxy: 204.9.38.41:6362:aawikmkk:tx1f1a2yr843
+2025-09-04 16:04:03,777 - INFO - Selected unique fingerprint: 782d283e62f1c232f7f2efccdbe4972b9f689cdd0224415aa8d2c6692f1a2034 (3/25 used)
+2025-09-04 16:04:03,777 - INFO - Using authenticated proxy: 204.9.38.41:6362
+2025-09-04 16:04:04,117 - INFO - ✓ Kameleo profile created: 29ccf3a8-632d-48de-b54a-1b2cdd495873 for proxy 204.9.38.41:6362
+2025-09-04 16:04:13,529 - INFO - Kameleo browser setup completed successfully
+2025-09-04 16:04:13,531 - INFO - Verifying proxy IP...
+2025-09-04 16:04:17,350 - INFO - Browser IP (via http://httpbin.org/ip): 204.9.38.41
+2025-09-04 16:04:17,591 - ERROR - Failed to get real IP: Expecting value: line 1 column 1 (char 0)
+2025-09-04 16:04:17,594 - INFO - Real IP: None
+2025-09-04 16:04:17,595 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-04 16:04:17,595 - INFO - Opening Google.com...
+2025-09-04 16:04:18,034 - INFO - Waiting 5 seconds...
+2025-09-04 16:04:23,090 - INFO - Checking for reCAPTCHA on current page: https://www.google.com/?zx=1756998258923&no_sw_cr=1
+2025-09-04 16:04:28,333 - INFO - No reCAPTCHA detected on current page
+2025-09-04 16:04:28,345 - INFO - Typing keyword: izmir seo
+2025-09-04 16:04:33,509 - INFO - Checking for reCAPTCHA on current page: https://www.google.com/search?q=izmir+seo&sca_esv=7550878c098e0420&source=hp&ei=caq5aKWDN5XlwN4P_tfkiQc&iflsig=AOw8s4IAAAAAaLm4gf7mF8CsmuB8HiMkfCRe72gtsgMy&ved=0ahUKEwjl_6HIsL-PAxWVMtAFHf4rOXEQ4dUDCBA&uact=5&oq=izmir+seo&gs_lp=Egdnd3Mtd2l6Iglpem1pciBzZW8yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjrGVAAWMIJcAB4AJABAJgBhQGgAcsIqgEDMC45uAEDyAEA-AEBmAIJoALiCMICCxAAGIAEGLEDGIMBwgIFEAAYgATCAgUQLhiABMICCBAAGIAEGLEDwgIREC4YgAQYsQMYgwEYxwEY0QPCAg4QABiABBiKBRixAxiDAcICCBAuGIAEGLEDwgIOEC4YgAQYsQMYxwEYrwHCAggQLhixAxiABMICCxAuGIAEGLEDGIMBwgILEC4YgwEYsQMYgATCAgsQLhiABBjHARivAZgDAJIHAzAuOaAHgGeyBwMwLjm4B-IIwgcFMC44LjHIBxI&sclient=gws-wiz&sei=gKq5aLDMB6jtkdUP2sGF6Q0
+2025-09-04 16:04:38,892 - INFO - No reCAPTCHA detected on current page
+2025-09-04 16:04:38,899 - INFO - Search results loaded
+2025-09-04 16:04:41,768 - INFO - Performed 3 human-like scroll actions
+2025-09-04 16:04:41,769 - INFO - Looking for domain: best4seo.com.tr
+2025-09-04 16:04:42,077 - INFO - Domain not found on page 1
+2025-09-04 16:04:46,004 - INFO - Navigated to page 2
+2025-09-04 16:04:46,222 - INFO - Domain not found on page 2
+2025-09-04 16:04:49,973 - INFO - Navigated to page 3
+2025-09-04 16:04:50,122 - INFO - Domain not found on page 3
+2025-09-04 16:04:53,971 - INFO - Navigated to page 4
+2025-09-04 16:04:54,208 - INFO - Domain not found on page 4
+2025-09-04 16:04:58,209 - INFO - Navigated to page 5
+2025-09-04 16:04:58,359 - INFO - Found target domain on page 5, position 8: https://best4seo.com.tr/
+2025-09-04 16:05:07,729 - INFO - ✓ Successfully clicked target link using ActionChains
+2025-09-04 16:05:10,760 - INFO - ✓ Successfully navigated to target website: https://best4seo.com.tr/
+2025-09-04 16:05:10,760 - INFO - 🎭 Starting realistic website interaction (60 seconds)
+2025-09-04 16:05:10,760 - INFO - 🎭 Starting realistic website interaction (60 seconds)
+2025-09-04 16:05:13,773 - INFO - Phase 1: Initial page exploration...
+2025-09-04 16:05:15,454 - INFO - Smooth scrolled down 600 pixels
+2025-09-04 16:05:19,348 - INFO - Hovered over a element
+2025-09-04 16:05:21,258 - INFO - Hovered over button element
+2025-09-04 16:05:23,073 - INFO - Hovered over h1 element
+2025-09-04 16:05:23,163 - INFO - Hovered over 3 elements
+2025-09-04 16:05:25,595 - INFO - Smooth scrolled up 300 pixels
+2025-09-04 16:05:27,599 - INFO - Phase 2: Exploring navigation...
+2025-09-04 16:05:34,871 - INFO - Clicked navigation link: HIZMETLERIMIZ
+2025-09-04 16:05:37,884 - INFO - Navigated to new page: https://best4seo.com.tr/hizmetlerimiz/
+2025-09-04 16:05:38,965 - INFO - Smooth scrolled down 400 pixels
+2025-09-04 16:05:41,823 - INFO - Hovered over a element
+2025-09-04 16:05:43,667 - INFO - Hovered over button element
+2025-09-04 16:05:45,474 - INFO - Hovered over h1 element
+2025-09-04 16:05:45,529 - INFO - Hovered over 3 elements
+2025-09-04 16:05:47,250 - INFO - Smooth scrolled up 200 pixels
+2025-09-04 16:05:50,507 - INFO - Returned to previous page
+2025-09-04 16:05:50,509 - INFO - Successfully explored 1 navigation pages
+2025-09-04 16:05:50,509 - INFO - Phase 3: Content exploration...
+2025-09-04 16:05:51,380 - INFO - Smooth scrolled down 800 pixels
+2025-09-04 16:05:55,270 - INFO - Hovered over a element
+2025-09-04 16:05:57,123 - INFO - Hovered over button element
+2025-09-04 16:05:58,923 - INFO - Hovered over h1 element
+2025-09-04 16:05:58,970 - INFO - Hovered over 3 elements
+2025-09-04 16:06:00,781 - INFO - Smooth scrolled down 200 pixels
+2025-09-04 16:06:03,123 - INFO - Smooth scrolled down 200 pixels
+2025-09-04 16:06:06,001 - INFO - Smooth scrolled down 200 pixels
+2025-09-04 16:06:08,553 - INFO - Smooth scrolled up 400 pixels
+2025-09-04 16:06:10,763 - INFO - ✅ Completed realistic interaction session (60.0 seconds)
+2025-09-04 16:06:10,763 - INFO - ✅ Successfully visited and interacted with target website
+2025-09-04 16:06:10,764 - INFO - ✓ Found domain on page 5, position 8
+2025-09-04 16:06:10,777 - INFO - Browser closed
+2025-09-04 16:06:11,255 - INFO - Kameleo profile 29ccf3a8-632d-48de-b54a-1b2cdd495873 stopped
+2025-09-04 16:06:11,278 - INFO - Kameleo profile 29ccf3a8-632d-48de-b54a-1b2cdd495873 deleted
+2025-09-04 16:06:11,279 - INFO - ✓ Proxy 204.9.38.41:6362:aawikmkk:tx1f1a2yr843 completed successfully
+2025-09-04 16:06:11,279 - INFO - Waiting 3 seconds before next proxy...
+2025-09-04 16:06:14,284 - INFO - --- Processing proxy 8/25 ---
+2025-09-04 16:06:14,285 - INFO - Testing proxy: 209.99.134.52:5748:aawikmkk:tx1f1a2yr843
+2025-09-04 16:06:14,285 - INFO - Testing proxy: 209.99.134.52:5748 (with auth)
+2025-09-04 16:06:17,819 - INFO - ✓ Proxy 209.99.134.52:5748 (with auth) is working. IP: 209.99.134.52
+2025-09-04 16:06:17,819 - INFO - Setting up Kameleo browser with proxy: 209.99.134.52:5748:aawikmkk:tx1f1a2yr843
+2025-09-04 16:06:17,819 - INFO - Creating Kameleo profile with proxy: 209.99.134.52:5748:aawikmkk:tx1f1a2yr843
+2025-09-04 16:06:17,820 - INFO - Selected unique fingerprint: 2de4d7437c31c650ec45d5ab96f3d740dd1569a84e8044bba6ffcd28b85ffaf8 (4/25 used)
+2025-09-04 16:06:17,820 - INFO - Using authenticated proxy: 209.99.134.52:5748
+2025-09-04 16:06:18,230 - INFO - ✓ Kameleo profile created: 4a6e0444-3f85-4a43-a462-9ccf45e807a9 for proxy 209.99.134.52:5748
+2025-09-04 16:06:24,610 - INFO - Kameleo browser setup completed successfully
+2025-09-04 16:06:24,611 - INFO - Verifying proxy IP...
+2025-09-04 16:06:29,469 - INFO - Browser IP (via http://httpbin.org/ip): 209.99.134.52
+2025-09-04 16:06:39,606 - ERROR - Failed to get real IP: HTTPConnectionPool(host='httpbin.org', port=80): Read timed out. (read timeout=10)
+2025-09-04 16:06:39,607 - INFO - Real IP: None
+2025-09-04 16:06:39,607 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-04 16:06:39,607 - INFO - Opening Google.com...
+2025-09-04 16:06:40,872 - INFO - Waiting 5 seconds...
+2025-09-04 16:06:45,888 - INFO - Checking for reCAPTCHA on current page: https://www.google.com/?zx=1756998401281&no_sw_cr=1
+2025-09-04 16:06:51,088 - INFO - No reCAPTCHA detected on current page
+2025-09-04 16:06:51,103 - INFO - Typing keyword: izmir seo
+2025-09-04 16:06:55,888 - INFO - Checking for reCAPTCHA on current page: https://www.google.com/search?q=izmir+seo&sca_esv=7550878c098e0420&source=hp&ei=_6q5aMGMNdTLp84P89yByAI&iflsig=AOw8s4IAAAAAaLm5D5t0vX6HcnybbfWTok5f32dV6azh&ved=0ahUKEwiBiPuLsb-PAxXU5ckDHXNuACkQ4dUDCBA&uact=5&oq=izmir+seo&gs_lp=Egdnd3Mtd2l6Iglpem1pciBzZW8yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkiKGFAAWOYIcAB4AJABAJgBkQGgAckIqgEDMC45uAEDyAEA-AEBmAIJoALkCMICCxAAGIAEGLEDGIMBwgIOEC4YgAQYsQMYxwEY0QPCAgUQLhiABMICDhAAGIAEGIoFGLEDGIMBwgIFEAAYgATCAggQABiABBixA8ICCBAuGIAEGLEDwgIREC4YgAQYsQMYgwEYxwEY0QPCAggQLhixAxiABMICCxAuGIMBGLEDGIAEwgILEC4YgAQYxwEYrwHCAhQQLhiABBiKBRixAxiDARjHARjRA8ICCxAuGK8BGMcBGIAEwgIIEC4YgAQY5QTCAhQQLhiABBjHARivARiYBRieBRiZBZgDAJIHAzAuOaAHgW2yBwMwLjm4B-QIwgcFMC44LjHIBxU&sclient=gws-wiz&sei=Dqu5aIvKHr7s7M8PxomNUQ
+2025-09-04 16:07:01,152 - INFO - No reCAPTCHA detected on current page
+2025-09-04 16:07:01,160 - INFO - Search results loaded
+2025-09-04 16:07:04,611 - INFO - Performed 4 human-like scroll actions
+2025-09-04 16:07:04,615 - INFO - Looking for domain: best4seo.com.tr
+2025-09-04 16:07:04,828 - INFO - Domain not found on page 1
+2025-09-04 16:07:08,628 - INFO - Navigated to page 2
+2025-09-04 16:07:08,804 - INFO - Domain not found on page 2
+2025-09-04 16:07:12,596 - INFO - Navigated to page 3
+2025-09-04 16:07:12,748 - INFO - Domain not found on page 3
+2025-09-04 16:07:16,714 - INFO - Navigated to page 4
+2025-09-04 16:07:16,910 - INFO - Domain not found on page 4
+2025-09-04 16:07:20,851 - INFO - Navigated to page 5
+2025-09-04 16:07:21,076 - INFO - Domain not found on page 5
+2025-09-04 16:07:24,956 - INFO - Navigated to page 6
+2025-09-04 16:07:25,171 - INFO - Domain not found on page 6
+2025-09-04 16:07:29,071 - INFO - Navigated to page 7
+2025-09-04 16:07:29,301 - INFO - Domain not found on page 7
+2025-09-04 16:07:33,265 - INFO - Navigated to page 8
+2025-09-04 16:07:33,456 - INFO - Domain not found on page 8
+2025-09-04 16:07:39,315 - INFO - Navigated to page 9
+2025-09-04 16:07:39,523 - INFO - Domain not found on page 9
+2025-09-04 16:07:43,441 - INFO - Navigated to page 10
+2025-09-04 16:07:43,645 - INFO - Found target domain on page 10, position 10: https://best4seo.com.tr/tag/izmir-seo-hizmeti/
+2025-09-04 16:07:50,885 - INFO - ✓ Successfully clicked target link using ActionChains
+2025-09-04 16:07:53,901 - INFO - ✓ Successfully navigated to target website: https://best4seo.com.tr/tag/izmir-seo-hizmeti/
+2025-09-04 16:07:53,902 - INFO - 🎭 Starting realistic website interaction (60 seconds)
+2025-09-04 16:07:53,902 - INFO - 🎭 Starting realistic website interaction (60 seconds)
+2025-09-04 16:07:56,916 - INFO - Phase 1: Initial page exploration...
+2025-09-04 16:07:58,017 - INFO - Smooth scrolled down 600 pixels
+2025-09-04 16:08:01,891 - INFO - Hovered over a element
+2025-09-04 16:08:03,756 - INFO - Hovered over button element
+2025-09-04 16:08:05,568 - INFO - Hovered over h1 element
+2025-09-04 16:08:05,666 - INFO - Hovered over 3 elements
+2025-09-04 16:08:07,941 - INFO - Smooth scrolled up 300 pixels
+2025-09-04 16:08:09,945 - INFO - Phase 2: Exploring navigation...
+2025-09-04 16:08:14,084 - INFO - Clicked navigation link: HIZMETLERIMIZ
+2025-09-04 16:08:17,096 - INFO - Navigated to new page: https://best4seo.com.tr/hizmetlerimiz/
+2025-09-04 16:08:18,531 - INFO - Smooth scrolled down 400 pixels
+2025-09-04 16:08:21,427 - INFO - Hovered over a element
+2025-09-04 16:08:23,280 - INFO - Hovered over button element
+2025-09-04 16:08:25,101 - INFO - Hovered over h1 element
+2025-09-04 16:08:25,180 - INFO - Hovered over 3 elements
+2025-09-04 16:08:26,572 - INFO - Smooth scrolled up 200 pixels
+2025-09-04 16:08:29,831 - INFO - Returned to previous page
+2025-09-04 16:08:29,832 - INFO - Successfully explored 1 navigation pages
+2025-09-04 16:08:29,832 - INFO - Phase 3: Content exploration...
+2025-09-04 16:08:31,647 - INFO - Smooth scrolled down 800 pixels
+2025-09-04 16:08:35,533 - INFO - Hovered over a element
+2025-09-04 16:08:37,403 - INFO - Hovered over button element
+2025-09-04 16:08:39,208 - INFO - Hovered over h1 element
+2025-09-04 16:08:39,292 - INFO - Hovered over 3 elements
+2025-09-04 16:08:41,992 - INFO - Smooth scrolled down 200 pixels
+2025-09-04 16:08:45,129 - INFO - Smooth scrolled down 200 pixels
+2025-09-04 16:08:48,271 - INFO - Smooth scrolled down 200 pixels
+2025-09-04 16:08:51,355 - INFO - Smooth scrolled up 400 pixels
+2025-09-04 16:08:53,902 - INFO - ✅ Completed realistic interaction session (60.0 seconds)
+2025-09-04 16:08:53,903 - INFO - ✅ Successfully visited and interacted with target website
+2025-09-04 16:08:53,903 - INFO - ✓ Found domain on page 10, position 10
+2025-09-04 16:08:53,909 - INFO - Browser closed
+2025-09-04 16:08:55,206 - INFO - Kameleo profile 4a6e0444-3f85-4a43-a462-9ccf45e807a9 stopped
+2025-09-04 16:08:55,223 - INFO - Kameleo profile 4a6e0444-3f85-4a43-a462-9ccf45e807a9 deleted
+2025-09-04 16:08:55,223 - INFO - ✓ Proxy 209.99.134.52:5748:aawikmkk:tx1f1a2yr843 completed successfully
+2025-09-04 16:08:55,223 - INFO - Waiting 3 seconds before next proxy...
+2025-09-04 16:08:58,227 - INFO - --- Processing proxy 9/25 ---
+2025-09-04 16:08:58,228 - INFO - Testing proxy: 206.41.168.88:6753:aawikmkk:tx1f1a2yr843
+2025-09-04 16:08:58,228 - INFO - Testing proxy: 206.41.168.88:6753 (with auth)
+2025-09-04 16:08:59,197 - INFO - ✓ Proxy 206.41.168.88:6753 (with auth) is working. IP: 206.41.168.88
+2025-09-04 16:08:59,198 - INFO - Setting up Kameleo browser with proxy: 206.41.168.88:6753:aawikmkk:tx1f1a2yr843
+2025-09-04 16:08:59,198 - INFO - Creating Kameleo profile with proxy: 206.41.168.88:6753:aawikmkk:tx1f1a2yr843
+2025-09-04 16:08:59,199 - INFO - Selected unique fingerprint: c222700c97c0c1c22a02f7d02f64cf7f3019268ca8864504baba8338377c7627 (5/25 used)
+2025-09-04 16:08:59,199 - INFO - Using authenticated proxy: 206.41.168.88:6753
+2025-09-04 16:08:59,742 - INFO - ✓ Kameleo profile created: 28e22c65-af59-4be6-87c7-ceeef89c780e for proxy 206.41.168.88:6753
+2025-09-04 16:09:02,906 - INFO - Kameleo browser setup completed successfully
+2025-09-04 16:09:02,907 - INFO - Verifying proxy IP...
+2025-09-04 16:09:07,125 - INFO - Browser IP (via http://httpbin.org/ip): 206.41.168.88
+2025-09-04 16:09:07,552 - INFO - Real IP: 160.176.128.116
+2025-09-04 16:09:07,554 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-04 16:09:07,554 - INFO - Opening Google.com...
+2025-09-04 16:09:08,931 - INFO - Waiting 5 seconds...
+2025-09-04 16:09:13,949 - INFO - Checking for reCAPTCHA on current page: https://www.google.com/?zx=1756998548981&no_sw_cr=1
+2025-09-04 16:09:19,187 - INFO - No reCAPTCHA detected on current page
+2025-09-04 16:09:19,204 - INFO - Typing keyword: izmir seo
+2025-09-04 16:09:23,980 - INFO - Checking for reCAPTCHA on current page: https://www.google.com/search?q=izmir+seo&sca_esv=7550878c098e0420&source=hp&ei=k6u5aKSNMrTdwN4PlJeGsA0&iflsig=AOw8s4IAAAAAaLm5o-KtidkeFQNFHg4jvPTm89cxWg2n&ved=0ahUKEwjkosHSsb-PAxW0LtAFHZSLAdYQ4dUDCBA&uact=5&oq=izmir+seo&gs_lp=Egdnd3Mtd2l6Iglpem1pciBzZW8yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjkFVAAWN4IcAB4AJABAJgBjwGgAbYIqgEDMC45uAEDyAEA-AEBmAIJoALOCMICCxAAGIAEGLEDGIMBwgIFEAAYgATCAgUQLhiABMICCBAAGIAEGLEDwgIREC4YgAQYsQMYgwEYxwEY0QPCAg4QABiABBiKBRixAxiDAcICCBAuGIAEGLEDwgIOEC4YgAQYsQMYxwEYrwHCAggQLhixAxiABMICCxAuGIAEGLEDGIMBwgILEC4YgwEYsQMYgATCAgsQLhiABBjHARivAZgDAJIHAzAuOaAHzmeyBwMwLjm4B84IwgcFMC44LjHIBxI&sclient=gws-wiz&sei=oqu5aOvDFPDskdUP4r6rwQY
+2025-09-04 16:09:29,187 - INFO - No reCAPTCHA detected on current page
+2025-09-04 16:09:29,195 - INFO - Search results loaded
+2025-09-04 16:09:33,874 - INFO - Performed 5 human-like scroll actions
+2025-09-04 16:09:33,883 - INFO - Looking for domain: best4seo.com.tr
+2025-09-04 16:09:34,045 - INFO - Domain not found on page 1
+2025-09-04 16:09:38,345 - INFO - Navigated to page 2
+2025-09-04 16:09:38,562 - INFO - Domain not found on page 2
+2025-09-04 16:09:43,097 - INFO - Navigated to page 3
+2025-09-04 16:09:43,301 - INFO - Domain not found on page 3
+2025-09-04 16:09:47,673 - INFO - Navigated to page 4
+2025-09-04 16:09:47,866 - INFO - Domain not found on page 4
+2025-09-04 16:09:52,657 - INFO - Navigated to page 5
+2025-09-04 16:09:52,806 - INFO - Found target domain on page 5, position 8: https://best4seo.com.tr/
+2025-09-04 16:10:02,466 - INFO - ✓ Successfully clicked target link using ActionChains
+2025-09-04 16:10:05,480 - INFO - ✓ Successfully navigated to target website: https://best4seo.com.tr/
+2025-09-04 16:10:05,480 - INFO - 🎭 Starting realistic website interaction (60 seconds)
+2025-09-04 16:10:05,480 - INFO - 🎭 Starting realistic website interaction (60 seconds)
+2025-09-04 16:10:08,491 - INFO - Phase 1: Initial page exploration...
+2025-09-04 16:10:13,143 - INFO - Smooth scrolled down 600 pixels
+2025-09-04 16:10:17,022 - INFO - Hovered over a element
+2025-09-04 16:10:18,925 - INFO - Hovered over h1 element
+2025-09-04 16:10:20,812 - INFO - Hovered over h2 element
+2025-09-04 16:10:20,909 - INFO - Hovered over 3 elements
+2025-09-04 16:10:23,019 - INFO - Smooth scrolled up 300 pixels
+2025-09-04 16:10:25,025 - INFO - Phase 2: Exploring navigation...
+2025-09-04 16:10:29,812 - INFO - Clicked navigation link: HIZMETLERIMIZ
+2025-09-04 16:10:32,825 - INFO - Navigated to new page: https://best4seo.com.tr/hizmetlerimiz/
+2025-09-04 16:10:34,135 - INFO - Smooth scrolled down 400 pixels
+2025-09-04 16:10:37,028 - INFO - Hovered over a element
+2025-09-04 16:10:38,925 - INFO - Hovered over h1 element
+2025-09-04 16:10:40,742 - INFO - Hovered over h2 element
+2025-09-04 16:10:40,804 - INFO - Hovered over 3 elements
+2025-09-04 16:10:41,910 - INFO - Smooth scrolled up 200 pixels
+2025-09-04 16:10:45,181 - INFO - Returned to previous page
+2025-09-04 16:10:45,184 - INFO - Successfully explored 1 navigation pages
+2025-09-04 16:10:45,184 - INFO - Phase 3: Content exploration...
+2025-09-04 16:10:46,817 - INFO - Smooth scrolled down 800 pixels
+2025-09-04 16:10:50,710 - INFO - Hovered over a element
+2025-09-04 16:10:52,618 - INFO - Hovered over h1 element
+2025-09-04 16:10:54,502 - INFO - Hovered over h2 element
+2025-09-04 16:10:54,568 - INFO - Hovered over 3 elements
+2025-09-04 16:10:56,924 - INFO - Smooth scrolled down 200 pixels
+2025-09-04 16:10:59,496 - INFO - Smooth scrolled down 200 pixels
+2025-09-04 16:11:02,045 - INFO - Smooth scrolled down 200 pixels
+2025-09-04 16:11:05,047 - INFO - Smooth scrolled up 400 pixels
+2025-09-04 16:11:06,051 - INFO - ✅ Completed realistic interaction session (60.6 seconds)
+2025-09-04 16:11:06,051 - INFO - ✅ Successfully visited and interacted with target website
+2025-09-04 16:11:06,051 - INFO - ✓ Found domain on page 5, position 8
+2025-09-04 16:11:06,056 - INFO - Browser closed
+2025-09-04 16:11:06,918 - INFO - Kameleo profile 28e22c65-af59-4be6-87c7-ceeef89c780e stopped
+2025-09-04 16:11:06,944 - INFO - Kameleo profile 28e22c65-af59-4be6-87c7-ceeef89c780e deleted
+2025-09-04 16:11:06,945 - INFO - ✓ Proxy 206.41.168.88:6753:aawikmkk:tx1f1a2yr843 completed successfully
+2025-09-04 16:11:06,946 - INFO - Waiting 3 seconds before next proxy...
+2025-09-04 16:11:09,952 - INFO - --- Processing proxy 10/25 ---
+2025-09-04 16:11:09,953 - INFO - Testing proxy: 108.165.227.29:5270:aawikmkk:tx1f1a2yr843
+2025-09-04 16:11:09,953 - INFO - Testing proxy: 108.165.227.29:5270 (with auth)
+2025-09-04 16:11:12,778 - INFO - ✓ Proxy 108.165.227.29:5270 (with auth) is working. IP: 108.165.227.29
+2025-09-04 16:11:12,779 - INFO - Setting up Kameleo browser with proxy: 108.165.227.29:5270:aawikmkk:tx1f1a2yr843
+2025-09-04 16:11:12,780 - INFO - Creating Kameleo profile with proxy: 108.165.227.29:5270:aawikmkk:tx1f1a2yr843
+2025-09-04 16:11:12,780 - INFO - Selected unique fingerprint: 62febce33a27ccf70a31f3ef9d9e34f961e057a76d1a494da799de8942395509 (6/25 used)
+2025-09-04 16:11:12,780 - INFO - Using authenticated proxy: 108.165.227.29:5270
+2025-09-04 16:11:13,175 - INFO - ✓ Kameleo profile created: c84ee208-fbd7-430b-9995-ce53081732be for proxy 108.165.227.29:5270
+2025-09-04 16:11:16,406 - INFO - Kameleo browser setup completed successfully
+2025-09-04 16:11:16,407 - INFO - Verifying proxy IP...
+2025-09-04 16:11:24,974 - INFO - Browser IP (via http://icanhazip.com/): 108.165.227.29
+2025-09-04 16:11:25,737 - INFO - Real IP: 160.176.128.116
+2025-09-04 16:11:25,738 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-04 16:11:25,739 - INFO - Opening Google.com...
+2025-09-04 16:11:27,581 - INFO - Waiting 5 seconds...
+2025-09-04 16:11:32,596 - INFO - Checking for reCAPTCHA on current page: https://www.google.com/?zx=1756998688137&no_sw_cr=1
+2025-09-04 16:11:37,831 - INFO - No reCAPTCHA detected on current page
+2025-09-04 16:11:37,842 - INFO - Typing keyword: izmir seo
+2025-09-04 16:11:41,564 - INFO - Checking for reCAPTCHA on current page: https://www.google.com/search?q=izmir+seo&sca_esv=7550878c098e0420&source=hp&ei=Hqy5aJ-1BMeP0PEPkKyN0A0&iflsig=AOw8s4IAAAAAaLm6LiwF6mTW2BpWP_VH5eJQSsiqLYPN&ved=0ahUKEwifvLeUsr-PAxXHBzQIHRBWA9oQ4dUDCA0&uact=5&oq=izmir+seo&gs_lp=Egdnd3Mtd2l6Iglpem1pciBzZW8yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IpxZQAFjZCXAAeACQAQCYAcUBoAHfDKoBAzAuObgBA8gBAPgBAZgCCaAC-QzCAgsQABiABBixAxiDAcICDhAuGIAEGIoFGLEDGIMBwgIFEC4YgATCAggQABiABBixA8ICFBAuGIAEGIoFGLEDGIMBGMcBGNEDwgIOEAAYgAQYigUYsQMYgwHCAgsQLhiABBixAxiDAcICBBAAGAPCAgUQABiABMICCBAuGIAEGLEDwgILEC4YgAQYxwEYrwGYAwCSBwMwLjmgB6dUsgcDMC45uAf5DMIHBTAuNy4yyAcU&sclient=gws-wiz
+2025-09-04 16:11:46,982 - INFO - No reCAPTCHA detected on current page
+2025-09-04 16:11:46,990 - INFO - Search results loaded
+2025-09-04 16:11:50,835 - INFO - Performed 5 human-like scroll actions
+2025-09-04 16:11:50,836 - INFO - Looking for domain: best4seo.com.tr
+2025-09-04 16:11:51,086 - INFO - Domain not found on page 1
+2025-09-04 16:11:55,005 - INFO - Navigated to page 2
+2025-09-04 16:11:55,146 - INFO - Found target domain on page 2, position 6: https://best4seo.com.tr/
+2025-09-04 16:12:09,650 - INFO - ✓ Successfully clicked target link using ActionChains
+2025-09-04 16:12:13,256 - INFO - ✓ Successfully navigated to target website: https://best4seo.com.tr/kariyer/
+2025-09-04 16:12:13,256 - INFO - 🎭 Starting realistic website interaction (60 seconds)
+2025-09-04 16:12:13,256 - INFO - 🎭 Starting realistic website interaction (60 seconds)
+2025-09-04 16:12:16,278 - INFO - Phase 1: Initial page exploration...
+2025-09-04 16:12:17,589 - INFO - Smooth scrolled down 600 pixels
+2025-09-04 16:12:21,490 - INFO - Hovered over a element
+2025-09-04 16:12:23,387 - INFO - Hovered over h1 element
+2025-09-04 16:12:25,258 - INFO - Hovered over h2 element
+2025-09-04 16:12:25,355 - INFO - Hovered over 3 elements
+2025-09-04 16:12:27,303 - INFO - Smooth scrolled up 300 pixels
+2025-09-04 16:12:29,308 - INFO - Phase 2: Exploring navigation...
+2025-09-04 16:12:34,205 - INFO - Clicked navigation link: HIZMETLERIMIZ
+2025-09-04 16:12:37,226 - INFO - Navigated to new page: https://best4seo.com.tr/hizmetlerimiz/
+2025-09-04 16:12:38,602 - INFO - Smooth scrolled down 400 pixels
+2025-09-04 16:12:41,498 - INFO - Hovered over a element
+2025-09-04 16:12:43,390 - INFO - Hovered over h1 element
+2025-09-04 16:12:45,220 - INFO - Hovered over h2 element
+2025-09-04 16:12:45,282 - INFO - Hovered over 3 elements
+2025-09-04 16:12:46,306 - INFO - Smooth scrolled up 200 pixels
+2025-09-04 16:12:49,567 - INFO - Returned to previous page
+2025-09-04 16:12:49,567 - INFO - Successfully explored 1 navigation pages
+2025-09-04 16:12:49,567 - INFO - Phase 3: Content exploration...
+2025-09-04 16:12:50,677 - INFO - Smooth scrolled down 800 pixels
+2025-09-04 16:12:54,587 - INFO - Hovered over a element
+2025-09-04 16:12:56,451 - INFO - Hovered over h1 element
+2025-09-04 16:12:58,305 - INFO - Hovered over h2 element
+2025-09-04 16:12:58,354 - INFO - Hovered over 3 elements
+2025-09-04 16:13:00,666 - INFO - Smooth scrolled down 200 pixels
+2025-09-04 16:13:03,263 - INFO - Smooth scrolled down 200 pixels
+2025-09-04 16:13:06,242 - INFO - Smooth scrolled down 200 pixels
+2025-09-04 16:13:09,460 - INFO - Smooth scrolled up 400 pixels
+2025-09-04 16:13:12,168 - INFO - Smooth scrolled up 159 pixels
+2025-09-04 16:13:13,261 - INFO - ✅ Completed realistic interaction session (60.0 seconds)
+2025-09-04 16:13:13,262 - INFO - ✅ Successfully visited and interacted with target website
+2025-09-04 16:13:13,262 - INFO - ✓ Found domain on page 2, position 6
+2025-09-04 16:13:13,274 - INFO - Browser closed
+2025-09-04 16:13:13,895 - INFO - Kameleo profile c84ee208-fbd7-430b-9995-ce53081732be stopped
+2025-09-04 16:13:13,928 - INFO - Kameleo profile c84ee208-fbd7-430b-9995-ce53081732be deleted
+2025-09-04 16:13:13,929 - INFO - ✓ Proxy 108.165.227.29:5270:aawikmkk:tx1f1a2yr843 completed successfully
+2025-09-04 16:13:13,929 - INFO - Waiting 3 seconds before next proxy...
+2025-09-04 16:13:16,935 - INFO - --- Processing proxy 11/25 ---
+2025-09-04 16:13:16,935 - INFO - Testing proxy: 108.165.227.128:5369:aawikmkk:tx1f1a2yr843
+2025-09-04 16:13:16,935 - INFO - Testing proxy: 108.165.227.128:5369 (with auth)
+2025-09-04 16:13:21,635 - INFO - ✓ Proxy 108.165.227.128:5369 (with auth) is working. IP: 108.165.227.128
+2025-09-04 16:13:21,637 - INFO - Setting up Kameleo browser with proxy: 108.165.227.128:5369:aawikmkk:tx1f1a2yr843
+2025-09-04 16:13:21,637 - INFO - Creating Kameleo profile with proxy: 108.165.227.128:5369:aawikmkk:tx1f1a2yr843
+2025-09-04 16:13:21,637 - INFO - Selected unique fingerprint: 29d2456b8688c926f65aefab8c5513f69ae21ae115364d1684953dcc059cc40d (7/25 used)
+2025-09-04 16:13:21,638 - INFO - Using authenticated proxy: 108.165.227.128:5369
+2025-09-04 16:13:22,055 - INFO - ✓ Kameleo profile created: e2581d15-3797-4f9c-83f1-cffade02e14e for proxy 108.165.227.128:5369
+2025-09-04 16:13:25,324 - INFO - Kameleo browser setup completed successfully
+2025-09-04 16:13:25,325 - INFO - Verifying proxy IP...
+2025-09-04 16:13:35,723 - INFO - Browser IP (via http://httpbin.org/ip): 108.165.227.128
+2025-09-04 16:13:39,731 - INFO - Real IP: 160.176.128.116
+2025-09-04 16:13:39,732 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-04 16:13:39,732 - INFO - Opening Google.com...
+2025-09-04 16:13:41,567 - INFO - Waiting 5 seconds...
+2025-09-04 16:13:46,586 - INFO - Checking for reCAPTCHA on current page: https://www.google.com/?zx=1756998821840&no_sw_cr=1
+2025-09-04 16:13:51,814 - INFO - No reCAPTCHA detected on current page
+2025-09-04 16:13:51,822 - INFO - Typing keyword: izmir seo
+2025-09-04 16:13:56,880 - INFO - Checking for reCAPTCHA on current page: https://www.google.com/search?q=izmir+seo&sca_esv=4a27859b0637b078&source=hp&ei=pKy5aIqgA9qNm9cP_O6uoAU&iflsig=AOw8s4IAAAAAaLm6tDig1-1GeMA_o3ttUzfdBxtiCj2E&ved=0ahUKEwiKgqnUsr-PAxXaxuYEHXy3C1QQ4dUDCA0&uact=5&oq=izmir+seo&gs_lp=Egdnd3Mtd2l6Iglpem1pciBzZW8yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yAhAmMgIQJjICECYyAhAmSMgSUABY-AhwAHgAkAEAmAHSAaAB0A2qAQUwLjYuM7gBA8gBAPgBAZgCCaAC7g3CAgUQABiABMICCxAAGIAEGLEDGIMBwgIFEC4YgATCAg4QLhiABBixAxiDARiKBcICFBAuGIAEGLEDGNEDGIMBGMcBGIoFwgINEAAYgAQYsQMYRhiAAsICCxAuGIAEGLEDGIMBwgIIEAAYgAQYsQPCAhQQLhiABBixAxiDARjHARiKBRivAcICDhAAGIAEGLEDGIMBGIoFwgIIEC4YgAQYsQPCAgsQLhiABBjHARivAZgDAJIHBTAuNS40oAfGbbIHBTAuNS40uAfuDcIHBTAuNi4zyAcZ&sclient=gws-wiz&sei=sqy5aLenIvygi-gP58iQwAo
+2025-09-04 16:14:02,146 - INFO - No reCAPTCHA detected on current page
+2025-09-04 16:14:02,154 - INFO - Search results loaded
+2025-09-04 16:14:06,337 - INFO - Performed 4 human-like scroll actions
+2025-09-04 16:14:06,338 - INFO - Looking for domain: best4seo.com.tr
+2025-09-04 16:14:06,604 - INFO - Domain not found on page 1
+2025-09-04 16:14:10,850 - INFO - Navigated to page 2
+2025-09-04 16:14:11,083 - INFO - Domain not found on page 2
+2025-09-04 16:14:14,911 - INFO - Navigated to page 3
+2025-09-04 16:14:14,999 - INFO - Found target domain on page 3, position 3: https://best4seo.com.tr/
+2025-09-04 16:14:24,321 - INFO - ✓ Successfully clicked target link using ActionChains
+2025-09-04 16:14:27,335 - INFO - ✓ Successfully navigated to target website: https://best4seo.com.tr/
+2025-09-04 16:14:27,336 - INFO - 🎭 Starting realistic website interaction (60 seconds)
+2025-09-04 16:14:27,336 - INFO - 🎭 Starting realistic website interaction (60 seconds)
+2025-09-04 16:14:30,344 - INFO - Phase 1: Initial page exploration...
+2025-09-04 16:14:31,170 - INFO - Smooth scrolled down 600 pixels
+2025-09-04 16:14:36,608 - INFO - Hovered over a element
+2025-09-04 16:14:41,522 - INFO - Hovered over h2 element
+2025-09-04 16:14:43,415 - INFO - Hovered over h3 element
+2025-09-04 16:14:43,488 - INFO - Hovered over 3 elements
+2025-09-04 16:14:45,971 - INFO - Smooth scrolled up 300 pixels
+2025-09-04 16:14:47,976 - INFO - Phase 2: Exploring navigation...
+2025-09-04 16:14:53,350 - INFO - Clicked navigation link: HIZMETLERIMIZ
+2025-09-04 16:14:56,366 - INFO - Navigated to new page: https://best4seo.com.tr/hizmetlerimiz/
+2025-09-04 16:14:57,377 - INFO - Smooth scrolled down 400 pixels
+2025-09-04 16:15:00,263 - INFO - Hovered over a element
+2025-09-04 16:15:02,130 - INFO - Hovered over h1 element
+2025-09-04 16:15:03,953 - INFO - Hovered over h2 element
+2025-09-04 16:15:04,035 - INFO - Hovered over 3 elements
+2025-09-04 16:15:05,226 - INFO - Smooth scrolled up 200 pixels
+2025-09-04 16:15:08,500 - INFO - Returned to previous page
+2025-09-04 16:15:08,501 - INFO - Successfully explored 1 navigation pages
+2025-09-04 16:15:08,501 - INFO - Phase 3: Content exploration...
+2025-09-04 16:15:10,203 - INFO - Smooth scrolled down 800 pixels
+2025-09-04 16:15:14,115 - INFO - Hovered over a element
+2025-09-04 16:15:16,009 - INFO - Hovered over h1 element
+2025-09-04 16:15:17,902 - INFO - Hovered over h2 element
+2025-09-04 16:15:17,954 - INFO - Hovered over 3 elements
+2025-09-04 16:15:20,246 - INFO - Smooth scrolled down 200 pixels
+2025-09-04 16:15:23,085 - INFO - Smooth scrolled down 200 pixels
+2025-09-04 16:15:25,808 - INFO - Smooth scrolled down 200 pixels
+2025-09-04 16:15:28,969 - INFO - Smooth scrolled up 400 pixels
+2025-09-04 16:15:29,975 - INFO - ✅ Completed realistic interaction session (62.6 seconds)
+2025-09-04 16:15:29,976 - INFO - ✅ Successfully visited and interacted with target website
+2025-09-04 16:15:29,976 - INFO - ✓ Found domain on page 3, position 3
+2025-09-04 16:15:29,986 - INFO - Browser closed
+2025-09-04 16:15:30,856 - INFO - Kameleo profile e2581d15-3797-4f9c-83f1-cffade02e14e stopped
+2025-09-04 16:15:30,880 - INFO - Kameleo profile e2581d15-3797-4f9c-83f1-cffade02e14e deleted
+2025-09-04 16:15:30,881 - INFO - ✓ Proxy 108.165.227.128:5369:aawikmkk:tx1f1a2yr843 completed successfully
+2025-09-04 16:15:30,881 - INFO - Waiting 3 seconds before next proxy...
+2025-09-04 16:15:33,886 - INFO - --- Processing proxy 12/25 ---
+2025-09-04 16:15:33,886 - INFO - Testing proxy: 209.99.134.173:5869:aawikmkk:tx1f1a2yr843
+2025-09-04 16:15:33,890 - INFO - Testing proxy: 209.99.134.173:5869 (with auth)
+2025-09-04 16:15:34,660 - WARNING - Proxy 209.99.134.173:5869 (with auth) returned status code: 503
+2025-09-04 16:15:34,661 - ERROR - Proxy 209.99.134.173:5869:aawikmkk:tx1f1a2yr843 is not working, skipping...
+2025-09-04 16:15:34,661 - ERROR - ✗ Proxy 209.99.134.173:5869:aawikmkk:tx1f1a2yr843 failed
+2025-09-04 16:15:34,661 - INFO - Waiting 3 seconds before next proxy...
+2025-09-04 16:15:37,664 - INFO - --- Processing proxy 13/25 ---
+2025-09-04 16:15:37,665 - INFO - Testing proxy: 209.99.134.165:5861:aawikmkk:tx1f1a2yr843
+2025-09-04 16:15:37,665 - INFO - Testing proxy: 209.99.134.165:5861 (with auth)
+2025-09-04 16:15:38,323 - WARNING - Proxy 209.99.134.165:5861 (with auth) returned status code: 503
+2025-09-04 16:15:38,324 - ERROR - Proxy 209.99.134.165:5861:aawikmkk:tx1f1a2yr843 is not working, skipping...
+2025-09-04 16:15:38,324 - ERROR - ✗ Proxy 209.99.134.165:5861:aawikmkk:tx1f1a2yr843 failed
+2025-09-04 16:15:38,324 - INFO - Waiting 3 seconds before next proxy...
+2025-09-04 16:15:41,332 - INFO - --- Processing proxy 14/25 ---
+2025-09-04 16:15:41,334 - INFO - Testing proxy: 50.114.99.6:6747:aawikmkk:tx1f1a2yr843
+2025-09-04 16:15:41,337 - INFO - Testing proxy: 50.114.99.6:6747 (with auth)
+2025-09-04 16:15:42,025 - WARNING - Proxy 50.114.99.6:6747 (with auth) returned status code: 503
+2025-09-04 16:15:42,026 - ERROR - Proxy 50.114.99.6:6747:aawikmkk:tx1f1a2yr843 is not working, skipping...
+2025-09-04 16:15:42,026 - ERROR - ✗ Proxy 50.114.99.6:6747:aawikmkk:tx1f1a2yr843 failed
+2025-09-04 16:15:42,026 - INFO - Waiting 3 seconds before next proxy...
+2025-09-04 16:15:45,027 - INFO - --- Processing proxy 15/25 ---
+2025-09-04 16:15:45,028 - INFO - Testing proxy: 209.99.134.18:5714:aawikmkk:tx1f1a2yr843
+2025-09-04 16:15:45,028 - INFO - Testing proxy: 209.99.134.18:5714 (with auth)
+2025-09-04 16:15:46,975 - WARNING - Proxy 209.99.134.18:5714 (with auth) returned status code: 503
+2025-09-04 16:15:46,978 - ERROR - Proxy 209.99.134.18:5714:aawikmkk:tx1f1a2yr843 is not working, skipping...
+2025-09-04 16:15:46,978 - ERROR - ✗ Proxy 209.99.134.18:5714:aawikmkk:tx1f1a2yr843 failed
+2025-09-04 16:15:46,978 - INFO - Waiting 3 seconds before next proxy...
+2025-09-04 16:15:49,982 - INFO - --- Processing proxy 16/25 ---
+2025-09-04 16:15:49,982 - INFO - Testing proxy: 108.165.227.36:5277:aawikmkk:tx1f1a2yr843
+2025-09-04 16:15:49,983 - INFO - Testing proxy: 108.165.227.36:5277 (with auth)
+2025-09-04 16:15:50,834 - WARNING - Proxy 108.165.227.36:5277 (with auth) returned status code: 503
+2025-09-04 16:15:50,835 - ERROR - Proxy 108.165.227.36:5277:aawikmkk:tx1f1a2yr843 is not working, skipping...
+2025-09-04 16:15:50,835 - ERROR - ✗ Proxy 108.165.227.36:5277:aawikmkk:tx1f1a2yr843 failed
+2025-09-04 16:15:50,836 - INFO - Waiting 3 seconds before next proxy...
+2025-09-04 16:15:53,841 - INFO - --- Processing proxy 17/25 ---
+2025-09-04 16:15:53,843 - INFO - Testing proxy: 108.165.227.19:5260:aawikmkk:tx1f1a2yr843
+2025-09-04 16:15:53,844 - INFO - Testing proxy: 108.165.227.19:5260 (with auth)
+2025-09-04 16:15:54,449 - WARNING - Proxy 108.165.227.19:5260 (with auth) returned status code: 503
+2025-09-04 16:15:54,449 - ERROR - Proxy 108.165.227.19:5260:aawikmkk:tx1f1a2yr843 is not working, skipping...
+2025-09-04 16:15:54,449 - ERROR - ✗ Proxy 108.165.227.19:5260:aawikmkk:tx1f1a2yr843 failed
+2025-09-04 16:15:54,450 - INFO - Waiting 3 seconds before next proxy...
+2025-09-04 16:15:57,455 - INFO - --- Processing proxy 18/25 ---
+2025-09-04 16:15:57,459 - INFO - Testing proxy: 50.114.99.195:6936:aawikmkk:tx1f1a2yr843
+2025-09-04 16:15:57,460 - INFO - Testing proxy: 50.114.99.195:6936 (with auth)
+2025-09-04 16:15:58,102 - WARNING - Proxy 50.114.99.195:6936 (with auth) returned status code: 503
+2025-09-04 16:15:58,103 - ERROR - Proxy 50.114.99.195:6936:aawikmkk:tx1f1a2yr843 is not working, skipping...
+2025-09-04 16:15:58,103 - ERROR - ✗ Proxy 50.114.99.195:6936:aawikmkk:tx1f1a2yr843 failed
+2025-09-04 16:15:58,103 - INFO - Waiting 3 seconds before next proxy...
+2025-09-04 16:16:01,109 - INFO - --- Processing proxy 19/25 ---
+2025-09-04 16:16:01,109 - INFO - Testing proxy: 206.41.168.86:6751:aawikmkk:tx1f1a2yr843
+2025-09-04 16:16:01,110 - INFO - Testing proxy: 206.41.168.86:6751 (with auth)
+2025-09-04 16:16:01,771 - WARNING - Proxy 206.41.168.86:6751 (with auth) returned status code: 503
+2025-09-04 16:16:01,771 - ERROR - Proxy 206.41.168.86:6751:aawikmkk:tx1f1a2yr843 is not working, skipping...
+2025-09-04 16:16:01,772 - ERROR - ✗ Proxy 206.41.168.86:6751:aawikmkk:tx1f1a2yr843 failed
+2025-09-04 16:16:01,772 - INFO - Waiting 3 seconds before next proxy...
+2025-09-04 16:16:04,774 - INFO - --- Processing proxy 20/25 ---
+2025-09-04 16:16:04,775 - INFO - Testing proxy: 50.114.99.202:6943:aawikmkk:tx1f1a2yr843
+2025-09-04 16:16:04,775 - INFO - Testing proxy: 50.114.99.202:6943 (with auth)
+2025-09-04 16:16:05,450 - WARNING - Proxy 50.114.99.202:6943 (with auth) returned status code: 503
+2025-09-04 16:16:05,451 - ERROR - Proxy 50.114.99.202:6943:aawikmkk:tx1f1a2yr843 is not working, skipping...
+2025-09-04 16:16:05,451 - ERROR - ✗ Proxy 50.114.99.202:6943:aawikmkk:tx1f1a2yr843 failed
+2025-09-04 16:16:05,451 - INFO - Waiting 3 seconds before next proxy...
+2025-09-04 16:16:08,456 - INFO - --- Processing proxy 21/25 ---
+2025-09-04 16:16:08,457 - INFO - Testing proxy: 50.114.99.111:6852:aawikmkk:tx1f1a2yr843
+2025-09-04 16:16:08,458 - INFO - Testing proxy: 50.114.99.111:6852 (with auth)
+2025-09-04 16:16:09,166 - WARNING - Proxy 50.114.99.111:6852 (with auth) returned status code: 503
+2025-09-04 16:16:09,166 - ERROR - Proxy 50.114.99.111:6852:aawikmkk:tx1f1a2yr843 is not working, skipping...
+2025-09-04 16:16:09,166 - ERROR - ✗ Proxy 50.114.99.111:6852:aawikmkk:tx1f1a2yr843 failed
+2025-09-04 16:16:09,167 - INFO - Waiting 3 seconds before next proxy...
+2025-09-04 16:16:12,171 - INFO - --- Processing proxy 22/25 ---
+2025-09-04 16:16:12,172 - INFO - Testing proxy: 50.114.243.32:6273:aawikmkk:tx1f1a2yr843
+2025-09-04 16:16:12,172 - INFO - Testing proxy: 50.114.243.32:6273 (with auth)
+2025-09-04 16:16:13,047 - WARNING - Proxy 50.114.243.32:6273 (with auth) returned status code: 503
+2025-09-04 16:16:13,048 - ERROR - Proxy 50.114.243.32:6273:aawikmkk:tx1f1a2yr843 is not working, skipping...
+2025-09-04 16:16:13,048 - ERROR - ✗ Proxy 50.114.243.32:6273:aawikmkk:tx1f1a2yr843 failed
+2025-09-04 16:16:13,048 - INFO - Waiting 3 seconds before next proxy...
+2025-09-04 16:16:16,052 - INFO - --- Processing proxy 23/25 ---
+2025-09-04 16:16:16,052 - INFO - Testing proxy: 50.114.99.33:6774:aawikmkk:tx1f1a2yr843
+2025-09-04 16:16:16,052 - INFO - Testing proxy: 50.114.99.33:6774 (with auth)
+2025-09-04 16:16:16,775 - WARNING - Proxy 50.114.99.33:6774 (with auth) returned status code: 503
+2025-09-04 16:16:16,781 - ERROR - Proxy 50.114.99.33:6774:aawikmkk:tx1f1a2yr843 is not working, skipping...
+2025-09-04 16:16:16,781 - ERROR - ✗ Proxy 50.114.99.33:6774:aawikmkk:tx1f1a2yr843 failed
+2025-09-04 16:16:16,781 - INFO - Waiting 3 seconds before next proxy...
+2025-09-04 16:16:19,788 - INFO - --- Processing proxy 24/25 ---
+2025-09-04 16:16:19,789 - INFO - Testing proxy: 204.9.38.44:6365:aawikmkk:tx1f1a2yr843
+2025-09-04 16:16:19,789 - INFO - Testing proxy: 204.9.38.44:6365 (with auth)
+2025-09-04 16:16:20,448 - WARNING - Proxy 204.9.38.44:6365 (with auth) returned status code: 503
+2025-09-04 16:16:20,448 - ERROR - Proxy 204.9.38.44:6365:aawikmkk:tx1f1a2yr843 is not working, skipping...
+2025-09-04 16:16:20,448 - ERROR - ✗ Proxy 204.9.38.44:6365:aawikmkk:tx1f1a2yr843 failed
+2025-09-04 16:16:20,449 - INFO - Waiting 3 seconds before next proxy...
+2025-09-04 16:16:23,454 - INFO - --- Processing proxy 25/25 ---
+2025-09-04 16:16:23,458 - INFO - Testing proxy: 108.165.227.13:5254:aawikmkk:tx1f1a2yr843
+2025-09-04 16:16:23,458 - INFO - Testing proxy: 108.165.227.13:5254 (with auth)
+2025-09-04 16:16:25,568 - WARNING - Proxy 108.165.227.13:5254 (with auth) returned status code: 503
+2025-09-04 16:16:25,568 - ERROR - Proxy 108.165.227.13:5254:aawikmkk:tx1f1a2yr843 is not working, skipping...
+2025-09-04 16:16:25,569 - ERROR - ✗ Proxy 108.165.227.13:5254:aawikmkk:tx1f1a2yr843 failed
+2025-09-04 16:16:25,569 - INFO - ==================================================
+2025-09-04 16:16:25,569 - INFO - FINAL RESULTS:
+2025-09-04 16:16:25,569 - INFO - Total proxies tested: 25
+2025-09-04 16:16:25,569 - INFO - Successful runs: 7
+2025-09-04 16:16:25,569 - INFO - Failed runs: 18
+2025-09-04 16:16:25,569 - INFO - ==================================================
+2025-09-04 16:18:17,065 - INFO - Client disconnected from WebSocket
+2025-09-04 16:18:17,070 - INFO - 127.0.0.1 - - [04/Sep/2025 16:18:17] "GET /socket.io/?EIO=4&transport=websocket&sid=Sotwtlm1sk5956kdAAAC HTTP/1.1" 200 -
+2025-09-04 16:18:17,644 - INFO - 127.0.0.1 - - [04/Sep/2025 16:18:17] "GET /socket.io/?EIO=4&transport=polling&t=PaLJfqb HTTP/1.1" 200 -
+2025-09-04 16:18:17,655 - INFO - Client connected to WebSocket
+2025-09-04 16:18:17,656 - INFO - 127.0.0.1 - - [04/Sep/2025 16:18:17] "POST /socket.io/?EIO=4&transport=polling&t=PaLJfqk&sid=bUapblRO2IIffk3aAAAE HTTP/1.1" 200 -
+2025-09-04 16:18:17,656 - INFO - 127.0.0.1 - - [04/Sep/2025 16:18:17] "GET /socket.io/?EIO=4&transport=polling&t=PaLJfql&sid=bUapblRO2IIffk3aAAAE HTTP/1.1" 200 -
+2025-09-05 02:27:53,054 - INFO - Client disconnected from WebSocket
+2025-09-05 02:27:53,058 - INFO - 127.0.0.1 - - [05/Sep/2025 02:27:53] "GET /socket.io/?EIO=4&transport=websocket&sid=bUapblRO2IIffk3aAAAE HTTP/1.1" 200 -
+2025-09-05 02:27:54,608 - INFO - 127.0.0.1 - - [05/Sep/2025 02:27:54] "GET /socket.io/?EIO=4&transport=polling&t=PaNVBlc HTTP/1.1" 200 -
+2025-09-05 02:27:54,615 - INFO - Client connected to WebSocket
+2025-09-05 02:27:54,616 - INFO - 127.0.0.1 - - [05/Sep/2025 02:27:54] "POST /socket.io/?EIO=4&transport=polling&t=PaNVBlo&sid=FdWV47Ck-EAIlbFTAAAG HTTP/1.1" 200 -
+2025-09-05 02:27:54,617 - INFO - 127.0.0.1 - - [05/Sep/2025 02:27:54] "GET /socket.io/?EIO=4&transport=polling&t=PaNVBlo.0&sid=FdWV47Ck-EAIlbFTAAAG HTTP/1.1" 200 -
+2025-09-05 06:17:51,125 - INFO - Client disconnected from WebSocket
+2025-09-05 06:17:51,128 - INFO - 127.0.0.1 - - [05/Sep/2025 06:17:51] "[36mGET / HTTP/1.1[0m" 304 -
+2025-09-05 06:17:51,128 - INFO - 127.0.0.1 - - [05/Sep/2025 06:17:51] "GET /socket.io/?EIO=4&transport=websocket&sid=FdWV47Ck-EAIlbFTAAAG HTTP/1.1" 200 -
+2025-09-05 06:17:51,432 - INFO - 127.0.0.1 - - [05/Sep/2025 06:17:51] "GET /api/status HTTP/1.1" 200 -
+2025-09-05 06:17:51,435 - INFO - 127.0.0.1 - - [05/Sep/2025 06:17:51] "GET /api/logs HTTP/1.1" 200 -
+2025-09-05 06:17:51,436 - INFO - 127.0.0.1 - - [05/Sep/2025 06:17:51] "GET /socket.io/?EIO=4&transport=polling&t=PaOJq73 HTTP/1.1" 200 -
+2025-09-05 06:17:51,437 - INFO - 127.0.0.1 - - [05/Sep/2025 06:17:51] "GET /api/results HTTP/1.1" 200 -
+2025-09-05 06:17:51,456 - INFO - Client connected to WebSocket
+2025-09-05 06:17:51,458 - INFO - 127.0.0.1 - - [05/Sep/2025 06:17:51] "POST /socket.io/?EIO=4&transport=polling&t=PaOJq7L&sid=ZHHFdvdBohwIQ88eAAAI HTTP/1.1" 200 -
+2025-09-05 06:17:51,459 - INFO - 127.0.0.1 - - [05/Sep/2025 06:17:51] "GET /socket.io/?EIO=4&transport=polling&t=PaOJq7M&sid=ZHHFdvdBohwIQ88eAAAI HTTP/1.1" 200 -
+2025-09-05 06:17:51,508 - INFO - 127.0.0.1 - - [05/Sep/2025 06:17:51] "GET /socket.io/?EIO=4&transport=polling&t=PaOJq8C&sid=ZHHFdvdBohwIQ88eAAAI HTTP/1.1" 200 -
+2025-09-05 06:17:51,530 - INFO - 127.0.0.1 - - [05/Sep/2025 06:17:51] "GET /socket.io/?EIO=4&transport=polling&t=PaOJq8Y&sid=ZHHFdvdBohwIQ88eAAAI HTTP/1.1" 200 -
+2025-09-05 06:18:06,432 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.110.175:8080
+2025-09-05 06:18:06,433 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-05 06:18:08,532 - INFO - 127.0.0.1 - - [05/Sep/2025 06:18:08] "[36mGET / HTTP/1.1[0m" 304 -
+2025-09-05 06:18:08,730 - INFO - 127.0.0.1 - - [05/Sep/2025 06:18:08] "GET /api/status HTTP/1.1" 200 -
+2025-09-05 06:18:08,732 - INFO - 127.0.0.1 - - [05/Sep/2025 06:18:08] "GET /socket.io/?EIO=4&transport=polling&t=PaOJuLH HTTP/1.1" 200 -
+2025-09-05 06:18:08,733 - INFO - 127.0.0.1 - - [05/Sep/2025 06:18:08] "GET /api/logs HTTP/1.1" 200 -
+2025-09-05 06:18:08,734 - INFO - 127.0.0.1 - - [05/Sep/2025 06:18:08] "GET /api/results HTTP/1.1" 200 -
+2025-09-05 06:18:08,744 - INFO - Client connected to WebSocket
+2025-09-05 06:18:08,747 - INFO - 127.0.0.1 - - [05/Sep/2025 06:18:08] "POST /socket.io/?EIO=4&transport=polling&t=PaOJuLa&sid=VRBvhYTI9AjRWnnEAAAA HTTP/1.1" 200 -
+2025-09-05 06:18:08,747 - INFO - 127.0.0.1 - - [05/Sep/2025 06:18:08] "GET /socket.io/?EIO=4&transport=polling&t=PaOJuLa.0&sid=VRBvhYTI9AjRWnnEAAAA HTTP/1.1" 200 -
+2025-09-05 06:18:08,778 - INFO - 127.0.0.1 - - [05/Sep/2025 06:18:08] "GET /socket.io/?EIO=4&transport=polling&t=PaOJuM4&sid=VRBvhYTI9AjRWnnEAAAA HTTP/1.1" 200 -
+2025-09-05 06:18:10,645 - INFO - Client disconnected from WebSocket
+2025-09-05 06:18:10,646 - INFO - 127.0.0.1 - - [05/Sep/2025 06:18:10] "GET /socket.io/?EIO=4&transport=websocket&sid=VRBvhYTI9AjRWnnEAAAA HTTP/1.1" 200 -
+2025-09-05 06:18:10,649 - INFO - 127.0.0.1 - - [05/Sep/2025 06:18:10] "[36mGET / HTTP/1.1[0m" 304 -
+2025-09-05 06:18:10,711 - INFO - 127.0.0.1 - - [05/Sep/2025 06:18:10] "GET /api/status HTTP/1.1" 200 -
+2025-09-05 06:18:10,712 - INFO - 127.0.0.1 - - [05/Sep/2025 06:18:10] "GET /api/logs HTTP/1.1" 200 -
+2025-09-05 06:18:10,714 - INFO - 127.0.0.1 - - [05/Sep/2025 06:18:10] "GET /socket.io/?EIO=4&transport=polling&t=PaOJuqH HTTP/1.1" 200 -
+2025-09-05 06:18:10,714 - INFO - 127.0.0.1 - - [05/Sep/2025 06:18:10] "GET /api/results HTTP/1.1" 200 -
+2025-09-05 06:18:10,722 - INFO - Client connected to WebSocket
+2025-09-05 06:18:10,723 - INFO - 127.0.0.1 - - [05/Sep/2025 06:18:10] "GET /socket.io/?EIO=4&transport=polling&t=PaOJuqT.0&sid=AxPwnk_mxnZfL9-0AAAC HTTP/1.1" 200 -
+2025-09-05 06:18:10,723 - INFO - 127.0.0.1 - - [05/Sep/2025 06:18:10] "POST /socket.io/?EIO=4&transport=polling&t=PaOJuqT&sid=AxPwnk_mxnZfL9-0AAAC HTTP/1.1" 200 -
+2025-09-05 06:18:10,732 - INFO - 127.0.0.1 - - [05/Sep/2025 06:18:10] "GET /socket.io/?EIO=4&transport=polling&t=PaOJuqd&sid=AxPwnk_mxnZfL9-0AAAC HTTP/1.1" 200 -
+2025-09-05 06:21:00,140 - INFO - 2captcha solver initialized with API key: 56d4457439...
+2025-09-05 06:21:00,143 - INFO - Starting SEO bot with 25 proxies
+2025-09-05 06:21:00,144 - INFO - 127.0.0.1 - - [05/Sep/2025 06:21:00] "POST /api/start HTTP/1.1" 200 -
+2025-09-05 06:21:00,144 - INFO - Searching for 'StarBox IPTV - Web Player' on domain 'mouadzizi.com'
+2025-09-05 06:21:00,145 - INFO - --- Processing proxy 1/25 ---
+2025-09-05 06:21:00,146 - INFO - Testing proxy: 204.9.38.193:6514:aawikmkk:tx1f1a2yr843
+2025-09-05 06:21:00,147 - INFO - Testing proxy: 204.9.38.193:6514 (with auth)
+2025-09-05 06:21:02,922 - INFO - ✓ Proxy 204.9.38.193:6514 (with auth) is working. IP: 204.9.38.193
+2025-09-05 06:21:02,924 - INFO - Setting up Kameleo browser with proxy: 204.9.38.193:6514:aawikmkk:tx1f1a2yr843
+2025-09-05 06:21:02,925 - INFO - Kameleo client initialized on port 5050
+2025-09-05 06:21:02,926 - INFO - Loading available Chrome fingerprints...
+2025-09-05 06:21:06,280 - INFO - Loaded 25 unique Chrome fingerprints
+2025-09-05 06:21:06,280 - INFO - Creating Kameleo profile with proxy: 204.9.38.193:6514:aawikmkk:tx1f1a2yr843
+2025-09-05 06:21:06,280 - INFO - Selected unique fingerprint: a1d67af91cc2c6bee29bbfcf23f11a09f3fdd9eebf1f4c248c564ac0a517f71b (1/25 used)
+2025-09-05 06:21:06,280 - INFO - Using authenticated proxy: 204.9.38.193:6514
+2025-09-05 06:21:06,585 - INFO - ✓ Kameleo profile created: 4ae89289-573c-45a8-8a46-8bc6f1cb0d2a for proxy 204.9.38.193:6514
+2025-09-05 06:21:10,894 - INFO - Kameleo browser setup completed successfully
+2025-09-05 06:21:10,895 - INFO - Verifying proxy IP...
+2025-09-05 06:21:15,174 - INFO - Browser IP (via http://httpbin.org/ip): 204.9.38.193
+2025-09-05 06:21:15,428 - INFO - Real IP: 160.179.105.30
+2025-09-05 06:21:15,429 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-05 06:21:15,429 - INFO - Opening Google.com...
+2025-09-05 06:21:16,382 - INFO - Waiting 5 seconds...
+2025-09-05 06:21:21,396 - INFO - Checking for reCAPTCHA on current page: https://www.google.com/?zx=1757049676710&no_sw_cr=1
+2025-09-05 06:21:26,583 - INFO - No reCAPTCHA detected on current page
+2025-09-05 06:21:26,594 - INFO - Typing keyword: StarBox IPTV - Web Player
+2025-09-05 06:21:32,866 - INFO - Checking for reCAPTCHA on current page: https://www.google.com/search?q=StarBox+IPTV+-+Web+Player&sca_esv=c4a0913eaf92f181&source=hp&ei=S3O6aLbbKo2xhbIPqaDy0QQ&iflsig=AOw8s4IAAAAAaLqBW23klrbCr59zUSnTF99mwrgmDrOP&ved=0ahUKEwj2rJeO8MCPAxWNWEEAHSmQPEoQ4dUDCBA&uact=5&oq=StarBox+IPTV+-+Web+Player&gs_lp=Egdnd3Mtd2l6IhlTdGFyQm94IElQVFYgLSBXZWIgUGxheWVyMgUQIRigATIFECEYoAEyBRAhGKABSNQrUABY9RtwAHgAkAEAmAGLAaAB5xeqAQQwLjI1uAEDyAEA-AEBmAIYoAKUF8ICCxAAGIAEGLEDGIMBwgIOEC4YgAQYsQMY0QMYxwHCAgUQABiABMICBRAuGIAEwgIOEAAYgAQYsQMYgwEYigXCAggQABiABBixA8ICCBAuGIAEGLEDwgILEAAYgAQYsQMYigXCAgsQLhiABBjHARivAcICEBAuGIAEGLEDGNEDGMcBGArCAgoQABiABBixAxgKwgIHEAAYgAQYCsICCBAAGBYYChgewgIGEAAYFhgewgILEAAYgAQYhgMYigXCAggQABiABBiiBMICBRAAGO8FwgIHECEYoAEYCsICBRAhGJ8FmAMAkgcEMC4yNKAHnpgBsgcEMC4yNLgHlBfCBwY2LjE3LjHIBx4&sclient=gws-wiz
+2025-09-05 06:21:38,207 - INFO - No reCAPTCHA detected on current page
+2025-09-05 06:21:38,215 - INFO - Search results loaded
+2025-09-05 06:21:41,988 - INFO - Performed 4 human-like scroll actions
+2025-09-05 06:21:41,991 - INFO - Looking for domain: mouadzizi.com
+2025-09-05 06:21:42,031 - INFO - Found target domain on page 1, position 1: https://mouadzizi.com/products/starbox-iptv
+2025-09-05 06:21:46,820 - INFO - ✓ Successfully clicked target link using ActionChains
+2025-09-05 06:21:49,840 - INFO - ✓ Successfully navigated to target website: https://mouadzizi.com/products/starbox-iptv
+2025-09-05 06:21:49,842 - INFO - 🎭 Starting realistic website interaction (60 seconds)
+2025-09-05 06:21:49,842 - INFO - 🎭 Starting realistic website interaction (60 seconds)
+2025-09-05 06:21:52,860 - INFO - Phase 1: Initial page exploration...
+2025-09-05 06:21:54,065 - INFO - Smooth scrolled down 600 pixels
+2025-09-05 06:21:57,957 - INFO - Hovered over a element
+2025-09-05 06:21:59,902 - INFO - Hovered over button element
+2025-09-05 06:22:01,733 - INFO - Hovered over h1 element
+2025-09-05 06:22:01,821 - INFO - Hovered over 3 elements
+2025-09-05 06:22:04,568 - INFO - Smooth scrolled up 300 pixels
+2025-09-05 06:22:06,570 - INFO - Phase 2: Exploring navigation...
+2025-09-05 06:22:06,675 - INFO - No suitable navigation links found
+2025-09-05 06:22:06,675 - INFO - Phase 3: Content exploration...
+2025-09-05 06:22:07,694 - INFO - Smooth scrolled down 800 pixels
+2025-09-05 06:22:11,593 - INFO - Hovered over a element
+2025-09-05 06:22:13,476 - INFO - Hovered over button element
+2025-09-05 06:22:15,303 - INFO - Hovered over h1 element
+2025-09-05 06:22:15,375 - INFO - Hovered over 3 elements
+2025-09-05 06:22:17,478 - INFO - Smooth scrolled down 200 pixels
+2025-09-05 06:22:20,636 - INFO - Smooth scrolled down 200 pixels
+2025-09-05 06:22:23,606 - INFO - Smooth scrolled down 200 pixels
+2025-09-05 06:22:26,689 - INFO - Smooth scrolled up 400 pixels
+2025-09-05 06:22:27,693 - INFO - Phase 4: Final exploration...
+2025-09-05 06:22:29,694 - INFO - Clicked internal link: login
+2025-09-05 06:22:33,157 - INFO - Smooth scrolled down 400 pixels
+2025-09-05 06:22:35,641 - INFO - Smooth scrolled up 194 pixels
+2025-09-05 06:22:38,153 - INFO - Smooth scrolled up 114 pixels
+2025-09-05 06:22:40,847 - INFO - Smooth scrolled down 240 pixels
+2025-09-05 06:22:42,842 - INFO - Smooth scrolled down 139 pixels
+2025-09-05 06:22:45,707 - INFO - Smooth scrolled down 246 pixels
+2025-09-05 06:22:47,793 - INFO - Smooth scrolled up 132 pixels
+2025-09-05 06:22:49,846 - INFO - ✅ Completed realistic interaction session (60.0 seconds)
+2025-09-05 06:22:49,848 - INFO - ✅ Successfully visited and interacted with target website
+2025-09-05 06:22:49,848 - INFO - ✓ Found domain on page 1, position 1
+2025-09-05 06:22:49,856 - INFO - Browser closed
+2025-09-05 06:22:50,111 - INFO - Kameleo profile 4ae89289-573c-45a8-8a46-8bc6f1cb0d2a stopped
+2025-09-05 06:22:50,173 - INFO - Kameleo profile 4ae89289-573c-45a8-8a46-8bc6f1cb0d2a deleted
+2025-09-05 06:22:50,173 - INFO - ✓ Proxy 204.9.38.193:6514:aawikmkk:tx1f1a2yr843 completed successfully
+2025-09-05 06:22:50,173 - INFO - Waiting 3 seconds before next proxy...
+2025-09-05 06:22:53,178 - INFO - --- Processing proxy 2/25 ---
+2025-09-05 06:22:53,178 - INFO - Testing proxy: 209.99.134.251:5947:aawikmkk:tx1f1a2yr843
+2025-09-05 06:22:53,179 - INFO - Testing proxy: 209.99.134.251:5947 (with auth)
+2025-09-05 06:22:54,381 - INFO - ✓ Proxy 209.99.134.251:5947 (with auth) is working. IP: 209.99.134.251
+2025-09-05 06:22:54,383 - INFO - Setting up Kameleo browser with proxy: 209.99.134.251:5947:aawikmkk:tx1f1a2yr843
+2025-09-05 06:22:54,383 - INFO - Creating Kameleo profile with proxy: 209.99.134.251:5947:aawikmkk:tx1f1a2yr843
+2025-09-05 06:22:54,383 - INFO - Selected unique fingerprint: 965a045b0229cddc161ef3e457c317e2996dcdb5c11f4c07bd9ff467021521b3 (2/25 used)
+2025-09-05 06:22:54,383 - INFO - Using authenticated proxy: 209.99.134.251:5947
+2025-09-05 06:22:54,787 - INFO - ✓ Kameleo profile created: 0e6794b5-8e9b-4e14-aa17-e8a7022cb12a for proxy 209.99.134.251:5947
+2025-09-05 06:22:58,264 - INFO - Kameleo browser setup completed successfully
+2025-09-05 06:22:58,266 - INFO - Verifying proxy IP...
+2025-09-05 06:23:02,063 - INFO - Browser IP (via http://httpbin.org/ip): 209.99.134.251
+2025-09-05 06:23:02,312 - INFO - Real IP: 160.179.105.30
+2025-09-05 06:23:02,313 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-05 06:23:02,313 - INFO - Opening Google.com...
+2025-09-05 06:23:03,462 - INFO - Waiting 5 seconds...
+2025-09-05 06:23:08,482 - INFO - Checking for reCAPTCHA on current page: https://www.google.com/?zx=1757049783814&no_sw_cr=1
+2025-09-05 06:23:13,715 - INFO - No reCAPTCHA detected on current page
+2025-09-05 06:23:13,730 - INFO - Typing keyword: StarBox IPTV - Web Player
+2025-09-05 06:23:21,297 - INFO - Checking for reCAPTCHA on current page: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DStarBox%2BIPTV%2B-%2BWeb%2BPlayer%26sca_esv%3Dc4a0913eaf92f181%26source%3Dhp%26ei%3DtnO6aLG5JNnAhbIPpc7u2Qk%26iflsig%3DAOw8s4IAAAAAaLqBxru18oP6HI5bs1IJGthcS07hEV12%26ved%3D0ahUKEwix7JPB8MCPAxVZYEEAHSWnO5sQ4dUDCBA%26uact%3D5%26oq%3DStarBox%2BIPTV%2B-%2BWeb%2BPlayer%26gs_lp%3DEgdnd3Mtd2l6IhlTdGFyQm94IElQVFYgLSBXZWIgUGxheWVyMgUQIRigATIFECEYoAEyBRAhGKABSL8tUABYvx5wAHgAkAEAmAF-oAHsFaoBBDAuMjW4AQPIAQD4AQGYAhigAroVwgILEAAYgAQYsQMYgwHCAg4QLhiABBixAxjRAxjHAcICBRAAGIAEwgIFEC4YgATCAg4QABiABBixAxiDARiKBcICCBAAGIAEGLEDwgIIEC4YgAQYsQPCAgsQABiABBixAxiKBcICCxAuGIAEGMcBGK8BwgIQEC4YgAQYsQMY0QMYxwEYCsICChAAGIAEGLEDGArCAgcQABiABBgKwgIIEAAYFhgKGB7CAgYQABgWGB7CAgsQABiABBiGAxiKBcICCBAAGIAEGKIEwgIIEAAYogQYiQXCAgUQABjvBcICBRAhGJ8FmAMAkgcEMC4yNKAHx5YBsgcEMC4yNLgHuhXCBwY1LjE0LjXIBzA%26sclient%3Dgws-wiz&q=EgTRY4b7GMfn6cUGIjDzrZhwRzZq39s6nL74f1N6fs1ZAvuj1zQvU9N6I0Qh4uw3AzFzQDxgfmna0tFjGycyAnJSWgFD
+2025-09-05 06:23:21,298 - INFO - ✓ Detected Google captcha page: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DStarBox%2BIPTV%2B-%2BWeb%2BPlayer%26sca_esv%3Dc4a0913eaf92f181%26source%3Dhp%26ei%3DtnO6aLG5JNnAhbIPpc7u2Qk%26iflsig%3DAOw8s4IAAAAAaLqBxru18oP6HI5bs1IJGthcS07hEV12%26ved%3D0ahUKEwix7JPB8MCPAxVZYEEAHSWnO5sQ4dUDCBA%26uact%3D5%26oq%3DStarBox%2BIPTV%2B-%2BWeb%2BPlayer%26gs_lp%3DEgdnd3Mtd2l6IhlTdGFyQm94IElQVFYgLSBXZWIgUGxheWVyMgUQIRigATIFECEYoAEyBRAhGKABSL8tUABYvx5wAHgAkAEAmAF-oAHsFaoBBDAuMjW4AQPIAQD4AQGYAhigAroVwgILEAAYgAQYsQMYgwHCAg4QLhiABBixAxjRAxjHAcICBRAAGIAEwgIFEC4YgATCAg4QABiABBixAxiDARiKBcICCBAAGIAEGLEDwgIIEC4YgAQYsQPCAgsQABiABBixAxiKBcICCxAuGIAEGMcBGK8BwgIQEC4YgAQYsQMY0QMYxwEYCsICChAAGIAEGLEDGArCAgcQABiABBgKwgIIEAAYFhgKGB7CAgYQABgWGB7CAgsQABiABBiGAxiKBcICCBAAGIAEGKIEwgIIEAAYogQYiQXCAgUQABjvBcICBRAhGJ8FmAMAkgcEMC4yNKAHx5YBsgcEMC4yNLgHuhXCBwY1LjE0LjXIBzA%26sclient%3Dgws-wiz&q=EgTRY4b7GMfn6cUGIjDzrZhwRzZq39s6nL74f1N6fs1ZAvuj1zQvU9N6I0Qh4uw3AzFzQDxgfmna0tFjGycyAnJSWgFD
+2025-09-05 06:23:21,298 - INFO - Solving Google /sorry page captcha...
+2025-09-05 06:23:21,303 - INFO - ✓ reCAPTCHA iframe detected on /sorry page
+2025-09-05 06:23:21,324 - INFO - Found sitekey via [data-sitekey]: 6LfwuyUTAAAAAOAmoS0fdqijC2PbbdH4kjq62Y1b
+2025-09-05 06:23:21,328 - INFO - Solving reCAPTCHA for URL: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DStarBox%2BIPTV%2B-%2BWeb%2BPlayer%26sca_esv%3Dc4a0913eaf92f181%26source%3Dhp%26ei%3DtnO6aLG5JNnAhbIPpc7u2Qk%26iflsig%3DAOw8s4IAAAAAaLqBxru18oP6HI5bs1IJGthcS07hEV12%26ved%3D0ahUKEwix7JPB8MCPAxVZYEEAHSWnO5sQ4dUDCBA%26uact%3D5%26oq%3DStarBox%2BIPTV%2B-%2BWeb%2BPlayer%26gs_lp%3DEgdnd3Mtd2l6IhlTdGFyQm94IElQVFYgLSBXZWIgUGxheWVyMgUQIRigATIFECEYoAEyBRAhGKABSL8tUABYvx5wAHgAkAEAmAF-oAHsFaoBBDAuMjW4AQPIAQD4AQGYAhigAroVwgILEAAYgAQYsQMYgwHCAg4QLhiABBixAxjRAxjHAcICBRAAGIAEwgIFEC4YgATCAg4QABiABBixAxiDARiKBcICCBAAGIAEGLEDwgIIEC4YgAQYsQPCAgsQABiABBixAxiKBcICCxAuGIAEGMcBGK8BwgIQEC4YgAQYsQMY0QMYxwEYCsICChAAGIAEGLEDGArCAgcQABiABBgKwgIIEAAYFhgKGB7CAgYQABgWGB7CAgsQABiABBiGAxiKBcICCBAAGIAEGKIEwgIIEAAYogQYiQXCAgUQABjvBcICBRAhGJ8FmAMAkgcEMC4yNKAHx5YBsgcEMC4yNLgHuhXCBwY1LjE0LjXIBzA%26sclient%3Dgws-wiz&q=EgTRY4b7GMfn6cUGIjDzrZhwRzZq39s6nL74f1N6fs1ZAvuj1zQvU9N6I0Qh4uw3AzFzQDxgfmna0tFjGycyAnJSWgFD
+2025-09-05 06:23:21,329 - INFO - Using sitekey: 6LfwuyUTAAAAAOAmoS0fdqijC2PbbdH4kjq62Y1b
+2025-09-05 06:23:21,329 - INFO - Submitting captcha to 2captcha service...
+2025-09-05 06:23:21,330 - INFO - This may take 30-120 seconds...
+2025-09-05 06:23:21,605 - WARNING - Google search captcha not supported by 2captcha service
+2025-09-05 06:23:21,610 - INFO - Trying alternative approach...
+2025-09-05 06:23:27,196 - ERROR - Failed to solve captcha after search submission
+2025-09-05 06:23:27,204 - ERROR - Google search failed
+2025-09-05 06:23:27,208 - INFO - Browser closed
+2025-09-05 06:23:27,511 - INFO - Kameleo profile 0e6794b5-8e9b-4e14-aa17-e8a7022cb12a stopped
+2025-09-05 06:23:27,530 - INFO - Kameleo profile 0e6794b5-8e9b-4e14-aa17-e8a7022cb12a deleted
+2025-09-05 06:23:27,530 - ERROR - ✗ Proxy 209.99.134.251:5947:aawikmkk:tx1f1a2yr843 failed
+2025-09-05 06:23:27,531 - INFO - Waiting 3 seconds before next proxy...
+2025-09-05 06:23:30,536 - INFO - --- Processing proxy 3/25 ---
+2025-09-05 06:23:30,538 - INFO - Testing proxy: 23.26.231.89:7330:aawikmkk:tx1f1a2yr843
+2025-09-05 06:23:30,538 - INFO - Testing proxy: 23.26.231.89:7330 (with auth)
+2025-09-05 06:23:31,374 - INFO - ✓ Proxy 23.26.231.89:7330 (with auth) is working. IP: 23.26.231.89
+2025-09-05 06:23:31,377 - INFO - Setting up Kameleo browser with proxy: 23.26.231.89:7330:aawikmkk:tx1f1a2yr843
+2025-09-05 06:23:31,378 - INFO - Creating Kameleo profile with proxy: 23.26.231.89:7330:aawikmkk:tx1f1a2yr843
+2025-09-05 06:23:31,378 - INFO - Selected unique fingerprint: 912e2561f716cc3ce7dcd8046843ddc8510d7684c35649d48de74c8f4a9ccaf5 (3/25 used)
+2025-09-05 06:23:31,378 - INFO - Using authenticated proxy: 23.26.231.89:7330
+2025-09-05 06:23:31,547 - INFO - ✓ Kameleo profile created: 420c4026-f0f7-4aad-bb48-52847f5f6a4f for proxy 23.26.231.89:7330
+2025-09-05 06:23:34,895 - INFO - Kameleo browser setup completed successfully
+2025-09-05 06:23:34,897 - INFO - Verifying proxy IP...
+2025-09-05 06:23:39,877 - INFO - Browser IP (via http://httpbin.org/ip): 23.26.231.89
+2025-09-05 06:23:40,136 - INFO - Real IP: 160.179.105.30
+2025-09-05 06:23:40,138 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-05 06:23:40,138 - INFO - Opening Google.com...
+2025-09-05 06:23:41,528 - INFO - Waiting 5 seconds...
+2025-09-05 06:23:46,550 - INFO - Checking for reCAPTCHA on current page: https://www.google.com/?zx=1757049821619&no_sw_cr=1
+2025-09-05 06:23:51,773 - INFO - No reCAPTCHA detected on current page
+2025-09-05 06:23:51,786 - INFO - Typing keyword: StarBox IPTV - Web Player
+2025-09-05 06:23:58,201 - INFO - Checking for reCAPTCHA on current page: https://www.google.com/search?q=StarBox+IPTV+-+Web+Player&sca_esv=c4a0913eaf92f181&source=hp&ei=3HO6aMPCHv3LvMcP3e71uQg&iflsig=AOw8s4IAAAAAaLqB7A9G9GmTD7Avx7Dp5e6Y-npVbOob&ved=0ahUKEwjDoJ3T8MCPAxX9Je8CHV13PYcQ4dUDCA0&uact=5&oq=StarBox+IPTV+-+Web+Player&gs_lp=Egdnd3Mtd2l6IhlTdGFyQm94IElQVFYgLSBXZWIgUGxheWVySPErUABYvRxwAHgAkAEAmAG9AaABhiCqAQQwLjI1uAEDyAEA-AEBmAIPoAKRE8ICCxAAGIAEGLEDGIMBwgIOEAAYgAQYsQMYgwEYigXCAhEQLhiABBixAxjRAxiDARjHAcICCBAAGIAEGLEDwgIIEC4YgAQYsQPCAg4QLhiABBixAxjRAxjHAcICDhAuGIAEGLEDGIMBGNQCwgILEC4YgAQYsQMYgwHCAgUQABiABMICBxAAGIAEGArCAgsQLhiABBjHARivAcICBxAAGIAEGA3CAg0QLhiABBjHARgNGK8BwgIGEAAYDRgewgIGEAAYFhgewgIIEAAYFhgKGB7CAggQABgFGA0YHsICChAAGAgYChgNGB7CAggQABgIGA0YHsICCBAAGKIEGIkFwgIFEAAY7wWYAwCSBwQwLjE1oAeecLIHBDAuMTW4B5ETwgcGMC4xMy4yyAce&sclient=gws-wiz
+2025-09-05 06:24:03,376 - INFO - No reCAPTCHA detected on current page
+2025-09-05 06:24:03,383 - INFO - Search results loaded
+2025-09-05 06:24:07,228 - INFO - Performed 3 human-like scroll actions
+2025-09-05 06:24:07,229 - INFO - Looking for domain: mouadzizi.com
+2025-09-05 06:24:07,259 - INFO - Found target domain on page 1, position 1: https://mouadzizi.com/products/starbox-iptv
+2025-09-05 06:24:20,243 - INFO - ✓ Successfully clicked target link using ActionChains
+2025-09-05 06:24:23,260 - INFO - ✓ Successfully navigated to target website: https://mouadzizi.com/products/starbox-iptv
+2025-09-05 06:24:23,261 - INFO - 🎭 Starting realistic website interaction (60 seconds)
+2025-09-05 06:24:23,261 - INFO - 🎭 Starting realistic website interaction (60 seconds)
+2025-09-05 06:24:26,270 - INFO - Phase 1: Initial page exploration...
+2025-09-05 06:24:27,482 - INFO - Smooth scrolled down 600 pixels
+2025-09-05 06:24:31,375 - INFO - Hovered over a element
+2025-09-05 06:24:33,280 - INFO - Hovered over button element
+2025-09-05 06:24:35,080 - INFO - Hovered over h1 element
+2025-09-05 06:24:35,163 - INFO - Hovered over 3 elements
+2025-09-05 06:24:37,765 - INFO - Smooth scrolled up 300 pixels
+2025-09-05 06:24:39,768 - INFO - Phase 2: Exploring navigation...
+2025-09-05 06:24:39,885 - INFO - No suitable navigation links found
+2025-09-05 06:24:39,886 - INFO - Phase 3: Content exploration...
+2025-09-05 06:24:41,078 - INFO - Smooth scrolled down 800 pixels
+2025-09-05 06:24:44,937 - INFO - Hovered over a element
+2025-09-05 06:24:46,841 - INFO - Hovered over button element
+2025-09-05 06:24:48,653 - INFO - Hovered over h1 element
+2025-09-05 06:24:48,714 - INFO - Hovered over 3 elements
+2025-09-05 06:24:51,419 - INFO - Smooth scrolled down 200 pixels
+2025-09-05 06:24:54,567 - INFO - Smooth scrolled down 200 pixels
+2025-09-05 06:24:57,490 - INFO - Smooth scrolled down 200 pixels
+2025-09-05 06:25:00,195 - INFO - Smooth scrolled up 400 pixels
+2025-09-05 06:25:01,199 - INFO - Phase 4: Final exploration...
+2025-09-05 06:25:03,195 - INFO - Clicked internal link: login
+2025-09-05 06:25:06,956 - INFO - Smooth scrolled down 400 pixels
+2025-09-05 06:25:08,881 - INFO - Smooth scrolled down 123 pixels
+2025-09-05 06:25:11,425 - INFO - Smooth scrolled down 189 pixels
+2025-09-05 06:25:14,060 - INFO - Smooth scrolled up 179 pixels
+2025-09-05 06:25:16,280 - INFO - Smooth scrolled down 139 pixels
+2025-09-05 06:25:18,593 - INFO - Smooth scrolled down 282 pixels
+2025-09-05 06:25:21,095 - INFO - Smooth scrolled down 213 pixels
+2025-09-05 06:25:23,266 - INFO - ✅ Completed realistic interaction session (60.0 seconds)
+2025-09-05 06:25:23,267 - INFO - ✅ Successfully visited and interacted with target website
+2025-09-05 06:25:23,267 - INFO - ✓ Found domain on page 1, position 1
+2025-09-05 06:25:23,276 - INFO - Browser closed
+2025-09-05 06:25:23,770 - INFO - Kameleo profile 420c4026-f0f7-4aad-bb48-52847f5f6a4f stopped
+2025-09-05 06:25:23,789 - INFO - Kameleo profile 420c4026-f0f7-4aad-bb48-52847f5f6a4f deleted
+2025-09-05 06:25:23,790 - INFO - ✓ Proxy 23.26.231.89:7330:aawikmkk:tx1f1a2yr843 completed successfully
+2025-09-05 06:25:23,791 - INFO - Waiting 3 seconds before next proxy...
+2025-09-05 06:25:26,798 - INFO - --- Processing proxy 4/25 ---
+2025-09-05 06:25:26,799 - INFO - Testing proxy: 204.9.38.246:6567:aawikmkk:tx1f1a2yr843
+2025-09-05 06:25:26,799 - INFO - Testing proxy: 204.9.38.246:6567 (with auth)
+2025-09-05 06:25:28,350 - INFO - ✓ Proxy 204.9.38.246:6567 (with auth) is working. IP: 204.9.38.246
+2025-09-05 06:25:28,350 - INFO - Setting up Kameleo browser with proxy: 204.9.38.246:6567:aawikmkk:tx1f1a2yr843
+2025-09-05 06:25:28,350 - INFO - Creating Kameleo profile with proxy: 204.9.38.246:6567:aawikmkk:tx1f1a2yr843
+2025-09-05 06:25:28,351 - INFO - Selected unique fingerprint: 5738d38f2c81c551f6582cd931091cbe36c65b4954c240b890eb54126f7db4a6 (4/25 used)
+2025-09-05 06:25:28,351 - INFO - Using authenticated proxy: 204.9.38.246:6567
+2025-09-05 06:25:28,679 - INFO - ✓ Kameleo profile created: 0a7876ae-d2b1-4f24-93ac-0659ed731838 for proxy 204.9.38.246:6567
+2025-09-05 06:25:32,174 - INFO - Kameleo browser setup completed successfully
+2025-09-05 06:25:32,176 - INFO - Verifying proxy IP...
+2025-09-05 06:25:36,362 - INFO - Browser IP (via http://httpbin.org/ip): 204.9.38.246
+2025-09-05 06:25:37,153 - INFO - Real IP: 160.179.105.30
+2025-09-05 06:25:37,156 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-05 06:25:37,156 - INFO - Opening Google.com...
+2025-09-05 06:25:38,075 - INFO - Waiting 5 seconds...
+2025-09-05 06:25:43,086 - INFO - Checking for reCAPTCHA on current page: https://www.google.com/?zx=1757049938404&no_sw_cr=1
+2025-09-05 06:25:45,008 - INFO - Browser closed
+2025-09-05 06:25:45,151 - INFO - Kameleo profile 0a7876ae-d2b1-4f24-93ac-0659ed731838 stopped
+2025-09-05 06:25:45,169 - ERROR - Error in captcha solving: Message: Profile not found.
+
+2025-09-05 06:25:45,170 - ERROR - Failed to solve captcha on Google homepage
+2025-09-05 06:25:45,170 - ERROR - Google search failed
+2025-09-05 06:25:45,171 - ERROR - Error closing browser: Message: Profile not found.
+
+2025-09-05 06:25:45,171 - ERROR - ✗ Proxy 204.9.38.246:6567:aawikmkk:tx1f1a2yr843 failed
+2025-09-05 06:25:45,172 - INFO - ==================================================
+2025-09-05 06:25:45,172 - INFO - FINAL RESULTS:
+2025-09-05 06:25:45,172 - INFO - Kameleo profile 0a7876ae-d2b1-4f24-93ac-0659ed731838 deleted
+2025-09-05 06:25:45,172 - INFO - Total proxies tested: 25
+2025-09-05 06:25:45,172 - INFO - Bot stopped by user
+2025-09-05 06:25:45,172 - INFO - Successful runs: 2
+2025-09-05 06:25:45,173 - INFO - 127.0.0.1 - - [05/Sep/2025 06:25:45] "POST /api/stop HTTP/1.1" 200 -
+2025-09-05 06:25:45,173 - INFO - Failed runs: 23
+2025-09-05 06:25:45,174 - INFO - ==================================================
+2025-09-06 08:44:39,086 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.110.175:8080
+2025-09-06 08:44:39,087 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-06 08:44:41,028 - INFO - 127.0.0.1 - - [06/Sep/2025 08:44:41] "[36mGET / HTTP/1.1[0m" 304 -
+2025-09-06 08:44:41,353 - INFO - 127.0.0.1 - - [06/Sep/2025 08:44:41] "GET /api/status HTTP/1.1" 200 -
+2025-09-06 08:44:41,354 - INFO - 127.0.0.1 - - [06/Sep/2025 08:44:41] "GET /api/logs HTTP/1.1" 200 -
+2025-09-06 08:44:41,354 - INFO - 127.0.0.1 - - [06/Sep/2025 08:44:41] "GET /socket.io/?EIO=4&transport=polling&t=PaT_0k3 HTTP/1.1" 200 -
+2025-09-06 08:44:41,356 - INFO - 127.0.0.1 - - [06/Sep/2025 08:44:41] "GET /api/results HTTP/1.1" 200 -
+2025-09-06 08:44:41,372 - INFO - Client connected to WebSocket
+2025-09-06 08:44:41,372 - INFO - 127.0.0.1 - - [06/Sep/2025 08:44:41] "POST /socket.io/?EIO=4&transport=polling&t=PaT_0kM&sid=QY6khr3l2X7IXkTKAAAA HTTP/1.1" 200 -
+2025-09-06 08:44:41,380 - INFO - 127.0.0.1 - - [06/Sep/2025 08:44:41] "GET /socket.io/?EIO=4&transport=polling&t=PaT_0kN&sid=QY6khr3l2X7IXkTKAAAA HTTP/1.1" 200 -
+2025-09-06 08:44:41,405 - INFO - 127.0.0.1 - - [06/Sep/2025 08:44:41] "GET /socket.io/?EIO=4&transport=polling&t=PaT_0ku&sid=QY6khr3l2X7IXkTKAAAA HTTP/1.1" 200 -
+2025-09-06 08:45:20,403 - INFO - 2captcha solver initialized with API key: 56d4457439...
+2025-09-06 08:45:20,403 - INFO - Starting SEO bot with 25 proxies
+2025-09-06 08:45:20,404 - INFO - Searching for 'izmir seo' on domain 'best4seo.com.tr/izmir-seo'
+2025-09-06 08:45:20,404 - INFO - --- Processing proxy 1/25 ---
+2025-09-06 08:45:20,404 - INFO - Testing proxy: 209.99.134.16:5712:aawikmkk:tx1f1a2yr843
+2025-09-06 08:45:20,405 - INFO - Testing proxy: 209.99.134.16:5712 (with auth)
+2025-09-06 08:45:20,404 - INFO - 127.0.0.1 - - [06/Sep/2025 08:45:20] "POST /api/start HTTP/1.1" 200 -
+2025-09-06 08:45:22,248 - INFO - ✓ Proxy 209.99.134.16:5712 (with auth) is working. IP: 209.99.134.16
+2025-09-06 08:45:22,249 - INFO - Setting up Kameleo browser with proxy: 209.99.134.16:5712:aawikmkk:tx1f1a2yr843
+2025-09-06 08:45:22,250 - INFO - Kameleo client initialized on port 5050
+2025-09-06 08:45:22,250 - INFO - Loading available Chrome fingerprints...
+2025-09-06 08:45:23,301 - INFO - Loaded 25 unique Chrome fingerprints
+2025-09-06 08:45:23,301 - INFO - Creating Kameleo profile with proxy: 209.99.134.16:5712:aawikmkk:tx1f1a2yr843
+2025-09-06 08:45:23,301 - INFO - Selected unique fingerprint: 42fe78a3be92cb96edb1f5944459f36279e204e1d5c84c1c8b9a0a547a8854d2 (1/25 used)
+2025-09-06 08:45:23,301 - INFO - Using authenticated proxy: 209.99.134.16:5712
+2025-09-06 08:45:23,609 - INFO - ✓ Kameleo profile created: c4156522-e3ff-4f9b-9e7e-75fce8b5c245 for proxy 209.99.134.16:5712
+2025-09-06 08:45:29,097 - INFO - Kameleo browser setup completed successfully
+2025-09-06 08:45:29,097 - INFO - Verifying proxy IP...
+2025-09-06 08:45:33,028 - INFO - Browser IP (via http://httpbin.org/ip): 209.99.134.16
+2025-09-06 08:45:34,628 - INFO - Real IP: 105.155.179.49
+2025-09-06 08:45:34,629 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-06 08:45:34,630 - INFO - Opening Google.com...
+2025-09-06 08:45:35,792 - INFO - Waiting 5 seconds...
+2025-09-06 08:45:40,812 - INFO - Checking for reCAPTCHA on current page: https://www.google.com/?zx=1757144736168&no_sw_cr=1
+2025-09-06 08:45:46,099 - INFO - No reCAPTCHA detected on current page
+2025-09-06 08:45:46,115 - INFO - Typing keyword: izmir seo
+2025-09-06 08:45:50,500 - INFO - Checking for reCAPTCHA on current page: https://www.google.com/search?q=izmir+seo&sca_esv=deb7502a4a88900f&source=hp&ei=nua7aMulNN-EhbIPk-6n0Qg&iflsig=AOw8s4IAAAAAaLv0rlOH5PtPG0dy_KYlIWZOeD8S-UE_&ved=0ahUKEwjL7PWd0sOPAxVfQkEAHRP3KYoQ4dUDCBA&uact=5&oq=izmir+seo&gs_lp=Egdnd3Mtd2l6Iglpem1pciBzZW8yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHki5FVAAWNYJcAB4AJABAJgBoAGgAYgKqgEDMC45uAEDyAEA-AEBmAIJoAKgCsICCxAAGIAEGLEDGIMBwgIFEAAYgATCAgUQLhiABMICDhAuGIAEGLEDGNEDGMcBwgIEEAAYA8ICCxAuGIAEGLEDGIMBwgIOEC4YgAQYxwEYjgUYrwHCAggQLhiABBixA8ICERAuGIAEGLEDGNEDGIMBGMcBwgIIEAAYgAQYsQPCAgsQLhiABBjHARivAcICCBAuGIAEGOUEwgIUEC4YgAQYxwEYmAUYmQUYngUYrwGYAwCSBwMwLjmgB_N1sgcDMC45uAegCsIHBTAuOC4xyAcS&sclient=gws-wiz&sei=rea7aKKsC8Lo7M8P9sHEuAs
+2025-09-06 08:45:55,778 - INFO - No reCAPTCHA detected on current page
+2025-09-06 08:45:55,786 - INFO - Search results loaded
+2025-09-06 08:46:00,217 - INFO - Performed 4 human-like scroll actions
+2025-09-06 08:46:00,219 - INFO - Looking for domain: best4seo.com.tr/izmir-seo
+2025-09-06 08:46:00,465 - INFO - Domain not found on page 1
+2025-09-06 08:46:04,286 - INFO - Navigated to page 2
+2025-09-06 08:46:04,470 - INFO - Domain not found on page 2
+2025-09-06 08:46:08,365 - INFO - Navigated to page 3
+2025-09-06 08:46:08,566 - INFO - Domain not found on page 3
+2025-09-06 08:46:12,349 - INFO - Navigated to page 4
+2025-09-06 08:46:12,539 - INFO - Domain not found on page 4
+2025-09-06 08:46:16,227 - INFO - Navigated to page 5
+2025-09-06 08:46:16,406 - INFO - Domain not found on page 5
+2025-09-06 08:46:20,133 - INFO - Navigated to page 6
+2025-09-06 08:46:20,322 - INFO - Domain not found on page 6
+2025-09-06 08:46:24,061 - INFO - Navigated to page 7
+2025-09-06 08:46:24,265 - INFO - Domain not found on page 7
+2025-09-06 08:46:28,262 - INFO - Navigated to page 8
+2025-09-06 08:46:28,453 - INFO - Domain not found on page 8
+2025-09-06 08:46:34,396 - INFO - Navigated to page 9
+2025-09-06 08:46:34,544 - INFO - Domain not found on page 9
+2025-09-06 08:46:39,644 - INFO - Navigated to page 10
+2025-09-06 08:46:39,848 - INFO - Domain not found on page 10
+2025-09-06 08:46:44,093 - INFO - Navigated to page 11
+2025-09-06 08:46:44,290 - INFO - Domain not found on page 11
+2025-09-06 08:46:48,116 - INFO - Navigated to page 12
+2025-09-06 08:46:48,290 - INFO - Domain not found on page 12
+2025-09-06 08:46:52,116 - INFO - Navigated to page 13
+2025-09-06 08:46:52,291 - INFO - Domain not found on page 13
+2025-09-06 08:46:56,729 - INFO - Navigated to page 14
+2025-09-06 08:46:56,902 - INFO - Domain not found on page 14
+2025-09-06 08:47:00,777 - INFO - Navigated to page 15
+2025-09-06 08:47:00,933 - INFO - Domain not found on page 15
+2025-09-06 08:47:04,893 - INFO - Navigated to page 16
+2025-09-06 08:47:05,076 - INFO - Domain not found on page 16
+2025-09-06 08:47:09,416 - INFO - Navigated to page 17
+2025-09-06 08:47:09,605 - INFO - Domain not found on page 17
+2025-09-06 08:47:13,579 - INFO - Navigated to page 18
+2025-09-06 08:47:13,762 - INFO - Domain not found on page 18
+2025-09-06 08:47:18,279 - INFO - Navigated to page 19
+2025-09-06 08:47:18,445 - INFO - Domain not found on page 19
+2025-09-06 08:47:22,849 - INFO - Navigated to page 20
+2025-09-06 08:47:23,086 - INFO - Domain not found on page 20
+2025-09-06 08:47:23,086 - WARNING - Domain not found in search results
+2025-09-06 08:47:23,088 - INFO - Browser closed
+2025-09-06 08:47:24,077 - INFO - Kameleo profile c4156522-e3ff-4f9b-9e7e-75fce8b5c245 stopped
+2025-09-06 08:47:24,124 - INFO - Kameleo profile c4156522-e3ff-4f9b-9e7e-75fce8b5c245 deleted
+2025-09-06 08:47:24,124 - ERROR - ✗ Proxy 209.99.134.16:5712:aawikmkk:tx1f1a2yr843 failed
+2025-09-06 08:47:24,124 - INFO - Waiting 3 seconds before next proxy...
+2025-09-06 08:47:27,127 - INFO - --- Processing proxy 2/25 ---
+2025-09-06 08:47:27,128 - INFO - Testing proxy: 206.41.168.70:6735:aawikmkk:tx1f1a2yr843
+2025-09-06 08:47:27,129 - INFO - Testing proxy: 206.41.168.70:6735 (with auth)
+2025-09-06 08:47:28,659 - INFO - ✓ Proxy 206.41.168.70:6735 (with auth) is working. IP: 206.41.168.70
+2025-09-06 08:47:28,659 - INFO - Setting up Kameleo browser with proxy: 206.41.168.70:6735:aawikmkk:tx1f1a2yr843
+2025-09-06 08:47:28,660 - INFO - Creating Kameleo profile with proxy: 206.41.168.70:6735:aawikmkk:tx1f1a2yr843
+2025-09-06 08:47:28,660 - INFO - Selected unique fingerprint: b2df5e41fb02c6800abf829a6460117635e70b3d3f674535a65688e222180bf8 (2/25 used)
+2025-09-06 08:47:28,660 - INFO - Using authenticated proxy: 206.41.168.70:6735
+2025-09-06 08:47:28,966 - INFO - ✓ Kameleo profile created: 4efb89c2-013c-40e5-8747-c0f934d0384e for proxy 206.41.168.70:6735
+2025-09-06 08:47:31,359 - ERROR - Error closing browser: Message: Profile not found.
+
+2025-09-06 08:47:31,360 - INFO - Bot stopped by user
+2025-09-06 08:47:31,361 - INFO - 127.0.0.1 - - [06/Sep/2025 08:47:31] "POST /api/stop HTTP/1.1" 200 -
+2025-09-06 08:47:32,376 - INFO - Kameleo browser setup completed successfully
+2025-09-06 08:47:32,377 - INFO - Verifying proxy IP...
+2025-09-06 08:47:36,250 - INFO - Browser IP (via http://httpbin.org/ip): 206.41.168.70
+2025-09-06 08:47:38,181 - INFO - Real IP: 105.155.179.49
+2025-09-06 08:47:38,182 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-06 08:47:38,183 - INFO - Opening Google.com...
+2025-09-06 08:47:39,239 - INFO - Waiting 5 seconds...
+2025-09-06 08:47:44,248 - INFO - Checking for reCAPTCHA on current page: https://www.google.com/?zx=1757144859715&no_sw_cr=1
+2025-09-06 08:47:49,474 - INFO - No reCAPTCHA detected on current page
+2025-09-06 08:47:49,492 - INFO - Typing keyword: izmir seo
+2025-09-06 08:47:53,080 - INFO - Checking for reCAPTCHA on current page: https://www.google.com/search?q=izmir+seo&sca_esv=deb7502a4a88900f&source=hp&ei=Gue7aP7LGNaphbIP_cj_wAE&iflsig=AOw8s4IAAAAAaLv1KufSIEVTZdeowrH2UK7XIVqytFKY&ved=0ahUKEwj-wOrY0sOPAxXWVEEAHX3kHxgQ4dUDCBA&uact=5&oq=izmir+seo&gs_lp=Egdnd3Mtd2l6Iglpem1pciBzZW8yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjTFlAAWJ0JcAB4AJABAJgBhwGgAfsIqgEDMC45uAEDyAEA-AEBmAIJoAKXCcICCxAAGIAEGLEDGIMBwgIFEAAYgATCAgUQLhiABMICCBAAGIAEGLEDwgIOEC4YgAQYsQMY0QMYxwHCAg4QLhiABBixAxiDARiKBcICCBAuGIAEGLEDwgIOEAAYgAQYsQMYgwEYigXCAhEQLhiABBixAxjRAxiDARjHAcICDhAuGIAEGLEDGMcBGK8BwgILEC4YgAQYxwEYrwGYAwCSBwMwLjmgB9pqsgcDMC45uAeXCcIHBTAuNy4yyAcX&sclient=gws-wiz
+2025-09-06 08:47:58,399 - INFO - No reCAPTCHA detected on current page
+2025-09-06 08:47:58,417 - INFO - Search results loaded
+2025-09-06 08:48:00,812 - INFO - Performed 3 human-like scroll actions
+2025-09-06 08:48:00,814 - INFO - Looking for domain: best4seo.com.tr/izmir-seo
+2025-09-06 08:48:00,991 - INFO - Domain not found on page 1
+2025-09-06 08:48:04,756 - INFO - Navigated to page 2
+2025-09-06 08:48:04,930 - INFO - Domain not found on page 2
+2025-09-06 08:48:08,732 - INFO - Navigated to page 3
+2025-09-06 08:48:08,899 - INFO - Domain not found on page 3
+2025-09-06 08:48:12,703 - INFO - Navigated to page 4
+2025-09-06 08:48:12,832 - INFO - Domain not found on page 4
+2025-09-06 08:48:16,529 - INFO - Navigated to page 5
+2025-09-06 08:48:16,684 - INFO - Domain not found on page 5
+2025-09-06 08:48:20,389 - INFO - Navigated to page 6
+2025-09-06 08:48:20,574 - INFO - Domain not found on page 6
+2025-09-06 08:48:24,262 - INFO - Navigated to page 7
+2025-09-06 08:48:24,412 - INFO - Domain not found on page 7
+2025-09-06 08:48:28,108 - INFO - Navigated to page 8
+2025-09-06 08:48:28,281 - INFO - Domain not found on page 8
+2025-09-06 08:48:31,987 - INFO - Navigated to page 9
+2025-09-06 08:48:32,139 - INFO - Domain not found on page 9
+2025-09-06 08:48:35,898 - INFO - Navigated to page 10
+2025-09-06 08:48:36,065 - INFO - Domain not found on page 10
+2025-09-06 08:48:39,803 - INFO - Navigated to page 11
+2025-09-06 08:48:39,972 - INFO - Domain not found on page 11
+2025-09-06 08:48:43,840 - INFO - Navigated to page 12
+2025-09-06 08:48:44,025 - INFO - Domain not found on page 12
+2025-09-06 08:48:47,816 - INFO - Navigated to page 13
+2025-09-06 08:48:47,977 - INFO - Domain not found on page 13
+2025-09-06 08:48:53,756 - INFO - Navigated to page 14
+2025-09-06 08:48:53,915 - INFO - Domain not found on page 14
+2025-09-06 08:48:57,832 - INFO - Navigated to page 15
+2025-09-06 08:48:57,992 - INFO - Domain not found on page 15
+2025-09-06 08:49:02,064 - INFO - Navigated to page 16
+2025-09-06 08:49:02,208 - INFO - Domain not found on page 16
+2025-09-06 08:49:06,754 - INFO - Navigated to page 17
+2025-09-06 08:49:06,916 - INFO - Domain not found on page 17
+2025-09-06 08:49:11,219 - INFO - Navigated to page 18
+2025-09-06 08:49:11,396 - INFO - Domain not found on page 18
+2025-09-06 08:49:15,823 - INFO - Navigated to page 19
+2025-09-06 08:49:15,990 - INFO - Domain not found on page 19
+2025-09-06 08:49:19,955 - INFO - Navigated to page 20
+2025-09-06 08:49:20,116 - INFO - Domain not found on page 20
+2025-09-06 08:49:20,116 - WARNING - Domain not found in search results
+2025-09-06 08:49:20,117 - INFO - Browser closed
+2025-09-06 08:49:20,273 - INFO - Kameleo profile 4efb89c2-013c-40e5-8747-c0f934d0384e stopped
+2025-09-06 08:49:20,292 - INFO - Kameleo profile 4efb89c2-013c-40e5-8747-c0f934d0384e deleted
+2025-09-06 08:49:20,292 - ERROR - ✗ Proxy 206.41.168.70:6735:aawikmkk:tx1f1a2yr843 failed
+2025-09-06 08:49:20,292 - INFO - ==================================================
+2025-09-06 08:49:20,292 - INFO - FINAL RESULTS:
+2025-09-06 08:49:20,292 - INFO - Total proxies tested: 25
+2025-09-06 08:49:20,293 - INFO - Successful runs: 0
+2025-09-06 08:49:20,293 - INFO - Failed runs: 25
+2025-09-06 08:49:20,293 - INFO - ==================================================
+2025-09-06 08:55:37,179 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.110.175:8080
+2025-09-06 08:55:37,179 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-06 08:55:37,838 - INFO - 127.0.0.1 - - [06/Sep/2025 08:55:37] "GET /socket.io/?EIO=4&transport=polling&t=PaU1W_b HTTP/1.1" 200 -
+2025-09-06 08:55:37,855 - INFO - Client connected to WebSocket
+2025-09-06 08:55:37,856 - INFO - 127.0.0.1 - - [06/Sep/2025 08:55:37] "POST /socket.io/?EIO=4&transport=polling&t=PaU1W_q&sid=FxJ6jzJnQZRqG6CjAAAA HTTP/1.1" 200 -
+2025-09-06 08:55:37,857 - INFO - 127.0.0.1 - - [06/Sep/2025 08:55:37] "GET /socket.io/?EIO=4&transport=polling&t=PaU1W_r&sid=FxJ6jzJnQZRqG6CjAAAA HTTP/1.1" 200 -
+2025-09-06 08:55:42,809 - INFO - Client disconnected from WebSocket
+2025-09-06 08:55:42,809 - INFO - 127.0.0.1 - - [06/Sep/2025 08:55:42] "GET /socket.io/?EIO=4&transport=websocket&sid=FxJ6jzJnQZRqG6CjAAAA HTTP/1.1" 200 -
+2025-09-06 08:55:42,823 - INFO - 127.0.0.1 - - [06/Sep/2025 08:55:42] "[36mGET / HTTP/1.1[0m" 304 -
+2025-09-06 08:55:43,346 - INFO - 127.0.0.1 - - [06/Sep/2025 08:55:43] "GET /api/status HTTP/1.1" 200 -
+2025-09-06 08:55:43,346 - INFO - 127.0.0.1 - - [06/Sep/2025 08:55:43] "GET /socket.io/?EIO=4&transport=polling&t=PaU1YLh HTTP/1.1" 200 -
+2025-09-06 08:55:43,346 - INFO - 127.0.0.1 - - [06/Sep/2025 08:55:43] "GET /api/logs HTTP/1.1" 200 -
+2025-09-06 08:55:43,347 - INFO - 127.0.0.1 - - [06/Sep/2025 08:55:43] "GET /api/results HTTP/1.1" 200 -
+2025-09-06 08:55:43,364 - INFO - Client connected to WebSocket
+2025-09-06 08:55:43,365 - INFO - 127.0.0.1 - - [06/Sep/2025 08:55:43] "GET /socket.io/?EIO=4&transport=polling&t=PaU1YLv&sid=jVZ88MITS25TearaAAAC HTTP/1.1" 200 -
+2025-09-06 08:55:43,365 - INFO - 127.0.0.1 - - [06/Sep/2025 08:55:43] "POST /socket.io/?EIO=4&transport=polling&t=PaU1YLu&sid=jVZ88MITS25TearaAAAC HTTP/1.1" 200 -
+2025-09-06 08:55:43,389 - INFO - 127.0.0.1 - - [06/Sep/2025 08:55:43] "GET /socket.io/?EIO=4&transport=polling&t=PaU1YMH&sid=jVZ88MITS25TearaAAAC HTTP/1.1" 200 -
+2025-09-06 08:55:59,989 - INFO - 2captcha solver initialized with API key: 56d4457439...
+2025-09-06 08:55:59,991 - INFO - Starting SEO bot with 25 proxies
+2025-09-06 08:55:59,991 - INFO - Searching for 'izmir seo' on domain 'best4seo.com.tr/izmir-seo'
+2025-09-06 08:55:59,991 - INFO - --- Processing proxy 1/25 ---
+2025-09-06 08:55:59,992 - INFO - 127.0.0.1 - - [06/Sep/2025 08:55:59] "POST /api/start HTTP/1.1" 200 -
+2025-09-06 08:55:59,992 - INFO - Testing proxy: 209.99.134.16:5712:aawikmkk:tx1f1a2yr843
+2025-09-06 08:55:59,993 - INFO - Testing proxy: 209.99.134.16:5712 (with auth)
+2025-09-06 08:56:00,897 - INFO - ✓ Proxy 209.99.134.16:5712 (with auth) is working. IP: 209.99.134.16
+2025-09-06 08:56:00,899 - INFO - Setting up Kameleo browser with proxy: 209.99.134.16:5712:aawikmkk:tx1f1a2yr843
+2025-09-06 08:56:00,899 - INFO - Kameleo client initialized on port 5050
+2025-09-06 08:56:00,900 - INFO - Loading available Chrome fingerprints...
+2025-09-06 08:56:01,685 - INFO - Loaded 25 unique Chrome fingerprints
+2025-09-06 08:56:01,686 - INFO - Creating Kameleo profile with proxy: 209.99.134.16:5712:aawikmkk:tx1f1a2yr843
+2025-09-06 08:56:01,686 - INFO - Selected unique fingerprint: a686c3d2cbcdc4ce14d5c724381cef15069d171cde714c34aa5597f49275605f (1/25 used)
+2025-09-06 08:56:01,686 - INFO - Using authenticated proxy: 209.99.134.16:5712
+2025-09-06 08:56:01,823 - INFO - ✓ Kameleo profile created: 41e30b7c-0dba-4b90-aaa4-7573413def71 for proxy 209.99.134.16:5712
+2025-09-06 08:56:05,780 - INFO - Kameleo browser setup completed successfully
+2025-09-06 08:56:05,781 - INFO - Verifying proxy IP...
+2025-09-06 08:56:10,922 - INFO - Browser IP (via http://httpbin.org/ip): 209.99.134.16
+2025-09-06 08:56:11,575 - INFO - Real IP: 105.155.179.49
+2025-09-06 08:56:11,575 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-06 08:56:11,575 - INFO - Navigating to Google search...
+2025-09-06 08:56:12,758 - INFO - ⏰ Waiting 15 seconds after opening Google search...
+2025-09-06 08:56:27,768 - INFO - 🎭 Performing initial Google page interactions...
+2025-09-06 08:56:27,771 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 08:56:29,529 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 08:56:34,259 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 08:56:39,049 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 08:56:39,126 - INFO - ✅ Completed Google page interactions
+2025-09-06 08:56:39,155 - INFO - Typing keyword: izmir seo
+2025-09-06 08:56:43,788 - INFO - ✓ Google search completed successfully
+2025-09-06 08:56:43,788 - INFO - Looking for domain: best4seo.com.tr/izmir-seo
+2025-09-06 08:56:43,789 - INFO - 🔍 Searching on page 1
+2025-09-06 08:56:44,027 - INFO - Domain not found on page 1
+2025-09-06 08:56:44,027 - INFO - 🔍 Searching on page 2
+2025-09-06 08:56:50,577 - INFO - ✓ Navigated to page 2
+2025-09-06 08:56:50,578 - INFO - ⏰ Waiting 15 seconds on page 2...
+2025-09-06 08:57:05,583 - INFO - 🎭 Performing interactions on page 2...
+2025-09-06 08:57:05,585 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 08:57:07,210 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 08:57:14,647 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 08:57:18,877 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 08:57:20,834 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 08:57:23,123 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 08:57:23,124 - INFO - ✅ Completed Google page interactions
+2025-09-06 08:57:23,316 - INFO - Domain not found on page 2
+2025-09-06 08:57:23,316 - INFO - 🔍 Searching on page 3
+2025-09-06 08:57:29,899 - INFO - ✓ Navigated to page 3
+2025-09-06 08:57:29,901 - INFO - ⏰ Waiting 15 seconds on page 3...
+2025-09-06 08:57:44,903 - INFO - 🎭 Performing interactions on page 3...
+2025-09-06 08:57:44,904 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 08:57:47,280 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 08:57:55,157 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 08:57:59,386 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 08:58:02,035 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 08:58:04,226 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 08:58:04,227 - INFO - ✅ Completed Google page interactions
+2025-09-06 08:58:04,439 - INFO - Domain not found on page 3
+2025-09-06 08:58:04,439 - INFO - 🔍 Searching on page 4
+2025-09-06 08:58:11,123 - INFO - ✓ Navigated to page 4
+2025-09-06 08:58:11,125 - INFO - ⏰ Waiting 15 seconds on page 4...
+2025-09-06 08:58:26,128 - INFO - 🎭 Performing interactions on page 4...
+2025-09-06 08:58:26,128 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 08:58:28,631 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 08:58:33,079 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 08:58:38,616 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 08:58:41,055 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 08:58:43,291 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 08:58:43,294 - INFO - ✅ Completed Google page interactions
+2025-09-06 08:58:43,464 - INFO - Domain not found on page 4
+2025-09-06 08:58:43,465 - INFO - 🔍 Searching on page 5
+2025-09-06 08:58:50,011 - INFO - ✓ Navigated to page 5
+2025-09-06 08:58:50,012 - INFO - ⏰ Waiting 15 seconds on page 5...
+2025-09-06 08:59:05,017 - INFO - 🎭 Performing interactions on page 5...
+2025-09-06 08:59:05,019 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 08:59:07,259 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 08:59:14,563 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 08:59:19,047 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 08:59:21,431 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 08:59:24,226 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 08:59:24,226 - INFO - ✅ Completed Google page interactions
+2025-09-06 08:59:24,378 - INFO - Domain not found on page 5
+2025-09-06 08:59:24,378 - INFO - 🔍 Searching on page 6
+2025-09-06 08:59:30,966 - INFO - ✓ Navigated to page 6
+2025-09-06 08:59:30,967 - INFO - ⏰ Waiting 15 seconds on page 6...
+2025-09-06 08:59:45,972 - INFO - 🎭 Performing interactions on page 6...
+2025-09-06 08:59:45,974 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 08:59:48,892 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 08:59:55,895 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:00:00,369 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:00:02,566 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:00:05,092 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 09:00:05,093 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:00:05,275 - INFO - Domain not found on page 6
+2025-09-06 09:00:05,275 - INFO - 🔍 Searching on page 7
+2025-09-06 09:00:11,788 - INFO - ✓ Navigated to page 7
+2025-09-06 09:00:11,789 - INFO - ⏰ Waiting 15 seconds on page 7...
+2025-09-06 09:00:26,791 - INFO - 🎭 Performing interactions on page 7...
+2025-09-06 09:00:26,792 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:00:28,267 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:00:34,638 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:00:38,921 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:00:41,273 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:00:43,816 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 09:00:43,817 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:00:43,997 - INFO - Domain not found on page 7
+2025-09-06 09:00:43,998 - INFO - 🔍 Searching on page 8
+2025-09-06 09:00:45,792 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-09-06 09:00:45,795 - INFO - Browser closed
+2025-09-06 09:00:46,643 - INFO - Kameleo profile 41e30b7c-0dba-4b90-aaa4-7573413def71 stopped
+2025-09-06 09:00:46,665 - INFO - Kameleo profile 41e30b7c-0dba-4b90-aaa4-7573413def71 deleted
+2025-09-06 09:00:46,666 - INFO - Bot stopped by user
+2025-09-06 09:00:46,666 - INFO - 127.0.0.1 - - [06/Sep/2025 09:00:46] "POST /api/stop HTTP/1.1" 200 -
+2025-09-06 09:00:46,800 - WARNING - Could not navigate to page 8: Message: Profile not found.
+
+2025-09-06 09:00:46,800 - WARNING - Domain not found in search results
+2025-09-06 09:00:46,803 - ERROR - Error closing browser: Message: Profile not found.
+
+2025-09-06 09:00:46,803 - ERROR - ✗ Proxy 209.99.134.16:5712:aawikmkk:tx1f1a2yr843 failed
+2025-09-06 09:00:46,803 - INFO - ==================================================
+2025-09-06 09:00:46,803 - INFO - FINAL RESULTS:
+2025-09-06 09:00:46,803 - INFO - Total proxies tested: 25
+2025-09-06 09:00:46,804 - INFO - Successful runs: 0
+2025-09-06 09:00:46,804 - INFO - Failed runs: 25
+2025-09-06 09:00:46,804 - INFO - ==================================================
+2025-09-06 09:00:54,490 - INFO - Client disconnected from WebSocket
+2025-09-06 09:00:54,490 - INFO - 127.0.0.1 - - [06/Sep/2025 09:00:54] "GET /socket.io/?EIO=4&transport=websocket&sid=jVZ88MITS25TearaAAAC HTTP/1.1" 200 -
+2025-09-06 09:00:54,501 - INFO - 127.0.0.1 - - [06/Sep/2025 09:00:54] "[36mGET / HTTP/1.1[0m" 304 -
+2025-09-06 09:00:54,619 - INFO - 127.0.0.1 - - [06/Sep/2025 09:00:54] "GET /api/logs HTTP/1.1" 200 -
+2025-09-06 09:00:54,620 - INFO - 127.0.0.1 - - [06/Sep/2025 09:00:54] "GET /api/status HTTP/1.1" 200 -
+2025-09-06 09:00:54,620 - INFO - 127.0.0.1 - - [06/Sep/2025 09:00:54] "GET /socket.io/?EIO=4&transport=polling&t=PaU2kLM HTTP/1.1" 200 -
+2025-09-06 09:00:54,621 - INFO - 127.0.0.1 - - [06/Sep/2025 09:00:54] "GET /api/results HTTP/1.1" 200 -
+2025-09-06 09:00:54,630 - INFO - Client connected to WebSocket
+2025-09-06 09:00:54,631 - INFO - 127.0.0.1 - - [06/Sep/2025 09:00:54] "POST /socket.io/?EIO=4&transport=polling&t=PaU2kLY&sid=aeAk9Zf351OQb8fjAAAE HTTP/1.1" 200 -
+2025-09-06 09:00:54,631 - INFO - 127.0.0.1 - - [06/Sep/2025 09:00:54] "GET /socket.io/?EIO=4&transport=polling&t=PaU2kLY.0&sid=aeAk9Zf351OQb8fjAAAE HTTP/1.1" 200 -
+2025-09-06 09:00:54,661 - INFO - 127.0.0.1 - - [06/Sep/2025 09:00:54] "GET /socket.io/?EIO=4&transport=polling&t=PaU2kM2&sid=aeAk9Zf351OQb8fjAAAE HTTP/1.1" 200 -
+2025-09-06 09:00:54,669 - INFO - 127.0.0.1 - - [06/Sep/2025 09:00:54] "GET /socket.io/?EIO=4&transport=polling&t=PaU2kM9&sid=aeAk9Zf351OQb8fjAAAE HTTP/1.1" 200 -
+2025-09-06 09:01:02,352 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.110.175:8080
+2025-09-06 09:01:02,352 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-06 09:01:02,744 - INFO - 127.0.0.1 - - [06/Sep/2025 09:01:02] "GET /socket.io/?EIO=4&transport=polling&t=PaU2mKI HTTP/1.1" 200 -
+2025-09-06 09:01:02,755 - INFO - Client connected to WebSocket
+2025-09-06 09:01:02,756 - INFO - 127.0.0.1 - - [06/Sep/2025 09:01:02] "POST /socket.io/?EIO=4&transport=polling&t=PaU2mKR&sid=MljIBG240ioY5rzfAAAA HTTP/1.1" 200 -
+2025-09-06 09:01:02,756 - INFO - 127.0.0.1 - - [06/Sep/2025 09:01:02] "GET /socket.io/?EIO=4&transport=polling&t=PaU2mKS&sid=MljIBG240ioY5rzfAAAA HTTP/1.1" 200 -
+2025-09-06 09:01:16,180 - INFO - 2captcha solver initialized with API key: 56d4457439...
+2025-09-06 09:01:16,182 - INFO - Starting SEO bot with 22 proxies
+2025-09-06 09:01:16,182 - INFO - 127.0.0.1 - - [06/Sep/2025 09:01:16] "POST /api/start HTTP/1.1" 200 -
+2025-09-06 09:01:16,183 - INFO - Searching for 'izmir-seo' on domain 'best4seo.com.tr/izmir-seo'
+2025-09-06 09:01:16,183 - INFO - --- Processing proxy 1/22 ---
+2025-09-06 09:01:16,184 - INFO - Testing proxy: 206.41.168.36:6701:aawikmkk:tx1f1a2yr843
+2025-09-06 09:01:16,184 - INFO - Testing proxy: 206.41.168.36:6701 (with auth)
+2025-09-06 09:01:18,036 - INFO - ✓ Proxy 206.41.168.36:6701 (with auth) is working. IP: 206.41.168.36
+2025-09-06 09:01:18,037 - INFO - Setting up Kameleo browser with proxy: 206.41.168.36:6701:aawikmkk:tx1f1a2yr843
+2025-09-06 09:01:18,038 - INFO - Kameleo client initialized on port 5050
+2025-09-06 09:01:18,038 - INFO - Loading available Chrome fingerprints...
+2025-09-06 09:01:18,925 - INFO - Loaded 25 unique Chrome fingerprints
+2025-09-06 09:01:18,926 - INFO - Creating Kameleo profile with proxy: 206.41.168.36:6701:aawikmkk:tx1f1a2yr843
+2025-09-06 09:01:18,926 - INFO - Selected unique fingerprint: 0df98ee3c3c4ce7afa59a3a38d4e85ae82089fb35dc249dc8694b46594b9e948 (1/25 used)
+2025-09-06 09:01:18,926 - INFO - Using authenticated proxy: 206.41.168.36:6701
+2025-09-06 09:01:19,042 - INFO - ✓ Kameleo profile created: edce5649-389c-49bd-8f0a-309967b91673 for proxy 206.41.168.36:6701
+2025-09-06 09:01:22,957 - INFO - Kameleo browser setup completed successfully
+2025-09-06 09:01:22,958 - INFO - Verifying proxy IP...
+2025-09-06 09:01:26,901 - INFO - Browser IP (via http://httpbin.org/ip): 206.41.168.36
+2025-09-06 09:01:27,221 - INFO - Real IP: 105.155.179.49
+2025-09-06 09:01:27,222 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-06 09:01:27,222 - INFO - Navigating to Google search...
+2025-09-06 09:01:28,644 - INFO - ⏰ Waiting 15 seconds after opening Google search...
+2025-09-06 09:01:43,648 - INFO - 🎭 Performing initial Google page interactions...
+2025-09-06 09:01:43,650 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:01:44,981 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:01:51,516 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:01:56,959 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:01:57,030 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:01:57,054 - INFO - Typing keyword: izmir-seo
+2025-09-06 09:02:01,374 - INFO - ✓ Google search completed successfully
+2025-09-06 09:02:01,375 - INFO - Looking for domain: best4seo.com.tr/izmir-seo
+2025-09-06 09:02:01,375 - INFO - 🔍 Searching on page 1
+2025-09-06 09:02:01,637 - INFO - Domain not found on page 1
+2025-09-06 09:02:01,637 - INFO - 🔍 Searching on page 2
+2025-09-06 09:02:08,244 - INFO - ✓ Navigated to page 2
+2025-09-06 09:02:08,246 - INFO - ⏰ Starting 15-second interactive wait on page 2...
+2025-09-06 09:02:08,246 - WARNING - Could not navigate to page 2: 'EnhancedGoogleSearchBot' object has no attribute 'wait_with_scrolling'
+2025-09-06 09:02:08,246 - WARNING - Domain not found in search results
+2025-09-06 09:02:08,263 - INFO - Browser closed
+2025-09-06 09:02:08,688 - INFO - Kameleo profile edce5649-389c-49bd-8f0a-309967b91673 stopped
+2025-09-06 09:02:08,703 - INFO - Kameleo profile edce5649-389c-49bd-8f0a-309967b91673 deleted
+2025-09-06 09:02:08,703 - ERROR - ✗ Proxy 206.41.168.36:6701:aawikmkk:tx1f1a2yr843 failed
+2025-09-06 09:02:08,703 - INFO - Waiting 3 seconds before next proxy...
+2025-09-06 09:02:11,710 - INFO - --- Processing proxy 2/22 ---
+2025-09-06 09:02:11,711 - INFO - Testing proxy: 50.114.243.226:6467:aawikmkk:tx1f1a2yr843
+2025-09-06 09:02:11,712 - INFO - Testing proxy: 50.114.243.226:6467 (with auth)
+2025-09-06 09:02:12,752 - INFO - ✓ Proxy 50.114.243.226:6467 (with auth) is working. IP: 50.114.243.226
+2025-09-06 09:02:12,753 - INFO - Setting up Kameleo browser with proxy: 50.114.243.226:6467:aawikmkk:tx1f1a2yr843
+2025-09-06 09:02:12,753 - INFO - Creating Kameleo profile with proxy: 50.114.243.226:6467:aawikmkk:tx1f1a2yr843
+2025-09-06 09:02:12,753 - INFO - Selected unique fingerprint: 08234a0a50d7cc54f4d26e4757c652c4a77dedf96ffc4a199256119bd4b3920e (2/25 used)
+2025-09-06 09:02:12,753 - INFO - Using authenticated proxy: 50.114.243.226:6467
+2025-09-06 09:02:12,936 - INFO - ✓ Kameleo profile created: 9d013348-0331-4570-934f-d0a1c162e4d0 for proxy 50.114.243.226:6467
+2025-09-06 09:02:16,599 - INFO - Kameleo browser setup completed successfully
+2025-09-06 09:02:16,603 - INFO - Verifying proxy IP...
+2025-09-06 09:02:22,688 - INFO - Browser IP (via http://httpbin.org/ip): 50.114.243.226
+2025-09-06 09:02:23,324 - INFO - Real IP: 105.155.179.49
+2025-09-06 09:02:23,330 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-06 09:02:23,330 - INFO - Navigating to Google search...
+2025-09-06 09:02:25,031 - INFO - ⏰ Waiting 15 seconds after opening Google search...
+2025-09-06 09:02:40,036 - INFO - 🎭 Performing initial Google page interactions...
+2025-09-06 09:02:40,038 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:02:42,190 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:02:47,560 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:02:51,792 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:02:51,934 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:02:51,962 - INFO - Typing keyword: izmir-seo
+2025-09-06 09:02:56,610 - INFO - ✓ Google search completed successfully
+2025-09-06 09:02:56,611 - INFO - Looking for domain: best4seo.com.tr/izmir-seo
+2025-09-06 09:02:56,611 - INFO - 🔍 Searching on page 1
+2025-09-06 09:02:57,377 - INFO - Domain not found on page 1
+2025-09-06 09:02:57,377 - INFO - 🔍 Searching on page 2
+2025-09-06 09:03:04,070 - INFO - ✓ Navigated to page 2
+2025-09-06 09:03:04,071 - INFO - ⏰ Starting 15-second interactive wait on page 2...
+2025-09-06 09:03:04,071 - WARNING - Could not navigate to page 2: 'EnhancedGoogleSearchBot' object has no attribute 'wait_with_scrolling'
+2025-09-06 09:03:04,071 - WARNING - Domain not found in search results
+2025-09-06 09:03:04,084 - INFO - Browser closed
+2025-09-06 09:03:04,804 - INFO - Kameleo profile 9d013348-0331-4570-934f-d0a1c162e4d0 stopped
+2025-09-06 09:03:04,827 - INFO - Kameleo profile 9d013348-0331-4570-934f-d0a1c162e4d0 deleted
+2025-09-06 09:03:04,827 - ERROR - ✗ Proxy 50.114.243.226:6467:aawikmkk:tx1f1a2yr843 failed
+2025-09-06 09:03:04,827 - INFO - Waiting 3 seconds before next proxy...
+2025-09-06 09:03:07,830 - INFO - --- Processing proxy 3/22 ---
+2025-09-06 09:03:07,832 - INFO - Testing proxy: 50.114.243.109:6350:aawikmkk:tx1f1a2yr843
+2025-09-06 09:03:07,832 - INFO - Testing proxy: 50.114.243.109:6350 (with auth)
+2025-09-06 09:03:33,331 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.110.175:8080
+2025-09-06 09:03:33,331 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-06 09:03:36,540 - INFO - 127.0.0.1 - - [06/Sep/2025 09:03:36] "[36mGET / HTTP/1.1[0m" 304 -
+2025-09-06 09:03:36,700 - INFO - 127.0.0.1 - - [06/Sep/2025 09:03:36] "GET /api/status HTTP/1.1" 200 -
+2025-09-06 09:03:36,701 - INFO - 127.0.0.1 - - [06/Sep/2025 09:03:36] "GET /api/logs HTTP/1.1" 200 -
+2025-09-06 09:03:36,702 - INFO - 127.0.0.1 - - [06/Sep/2025 09:03:36] "GET /socket.io/?EIO=4&transport=polling&t=PaU3Lvt HTTP/1.1" 200 -
+2025-09-06 09:03:36,702 - INFO - 127.0.0.1 - - [06/Sep/2025 09:03:36] "GET /api/results HTTP/1.1" 200 -
+2025-09-06 09:03:36,715 - INFO - Client connected to WebSocket
+2025-09-06 09:03:36,718 - INFO - 127.0.0.1 - - [06/Sep/2025 09:03:36] "GET /socket.io/?EIO=4&transport=polling&t=PaU3Lw8&sid=ZyCOiOAcUF12-GJkAAAA HTTP/1.1" 200 -
+2025-09-06 09:03:36,718 - INFO - 127.0.0.1 - - [06/Sep/2025 09:03:36] "POST /socket.io/?EIO=4&transport=polling&t=PaU3Lw7&sid=ZyCOiOAcUF12-GJkAAAA HTTP/1.1" 200 -
+2025-09-06 09:03:36,747 - INFO - 127.0.0.1 - - [06/Sep/2025 09:03:36] "GET /socket.io/?EIO=4&transport=polling&t=PaU3Lwb&sid=ZyCOiOAcUF12-GJkAAAA HTTP/1.1" 200 -
+2025-09-06 09:04:00,568 - INFO - 2captcha solver initialized with API key: 56d4457439...
+2025-09-06 09:04:00,570 - INFO - Starting SEO bot with 22 proxies
+2025-09-06 09:04:00,571 - INFO - 127.0.0.1 - - [06/Sep/2025 09:04:00] "POST /api/start HTTP/1.1" 200 -
+2025-09-06 09:04:00,571 - INFO - Searching for 'izmir seo' on domain 'best4seo.com.tr/izmir-seo'
+2025-09-06 09:04:00,571 - INFO - --- Processing proxy 1/22 ---
+2025-09-06 09:04:00,572 - INFO - Testing proxy: 206.41.168.36:6701:aawikmkk:tx1f1a2yr843
+2025-09-06 09:04:00,572 - INFO - Testing proxy: 206.41.168.36:6701 (with auth)
+2025-09-06 09:04:02,092 - INFO - ✓ Proxy 206.41.168.36:6701 (with auth) is working. IP: 206.41.168.36
+2025-09-06 09:04:02,094 - INFO - Setting up Kameleo browser with proxy: 206.41.168.36:6701:aawikmkk:tx1f1a2yr843
+2025-09-06 09:04:02,099 - INFO - Kameleo client initialized on port 5050
+2025-09-06 09:04:02,100 - INFO - Loading available Chrome fingerprints...
+2025-09-06 09:04:03,012 - INFO - Loaded 25 unique Chrome fingerprints
+2025-09-06 09:04:03,013 - INFO - Creating Kameleo profile with proxy: 206.41.168.36:6701:aawikmkk:tx1f1a2yr843
+2025-09-06 09:04:03,013 - INFO - Selected unique fingerprint: c381e68b964dc548f661af5bf509cd25ae043bacd1ac4bdf98a1599fea9f96ef (1/25 used)
+2025-09-06 09:04:03,013 - INFO - Using authenticated proxy: 206.41.168.36:6701
+2025-09-06 09:04:03,151 - INFO - ✓ Kameleo profile created: 3de60103-b0dd-47cd-83e7-87cff5bb783d for proxy 206.41.168.36:6701
+2025-09-06 09:04:06,700 - INFO - Kameleo browser setup completed successfully
+2025-09-06 09:04:06,701 - INFO - Verifying proxy IP...
+2025-09-06 09:04:14,464 - INFO - Browser IP (via http://httpbin.org/ip): 206.41.168.36
+2025-09-06 09:04:15,865 - INFO - Real IP: 105.155.179.49
+2025-09-06 09:04:15,866 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-06 09:04:15,868 - INFO - Navigating to Google search...
+2025-09-06 09:04:17,575 - INFO - ⏰ Waiting 15 seconds after opening Google search...
+2025-09-06 09:04:32,579 - INFO - 🎭 Performing initial Google page interactions...
+2025-09-06 09:04:32,582 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:04:35,494 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:04:41,756 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:04:46,047 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:04:46,115 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:04:46,139 - INFO - Typing keyword: izmir seo
+2025-09-06 09:04:50,980 - INFO - ✓ Google search completed successfully
+2025-09-06 09:04:50,980 - INFO - Looking for domain: best4seo.com.tr/izmir-seo
+2025-09-06 09:04:50,980 - INFO - 🔍 Searching on page 1
+2025-09-06 09:04:51,147 - INFO - Domain not found on page 1
+2025-09-06 09:04:51,147 - INFO - 🔍 Searching on page 2
+2025-09-06 09:04:57,665 - INFO - ✓ Navigated to page 2
+2025-09-06 09:04:57,666 - INFO - ⏰ Waiting 15 seconds on page 2...
+2025-09-06 09:05:12,675 - INFO - 🎭 Performing interactions on page 2...
+2025-09-06 09:05:12,675 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:05:13,798 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:05:20,993 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:05:25,358 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:05:27,675 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:05:30,007 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 09:05:30,008 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:05:30,184 - INFO - Domain not found on page 2
+2025-09-06 09:05:30,184 - INFO - 🔍 Searching on page 3
+2025-09-06 09:05:36,749 - INFO - ✓ Navigated to page 3
+2025-09-06 09:05:36,750 - INFO - ⏰ Waiting 15 seconds on page 3...
+2025-09-06 09:05:51,756 - INFO - 🎭 Performing interactions on page 3...
+2025-09-06 09:05:51,758 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:05:54,757 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:06:01,502 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:06:06,608 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:06:08,470 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:06:10,789 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 09:06:10,790 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:06:10,953 - INFO - Domain not found on page 3
+2025-09-06 09:06:10,953 - INFO - 🔍 Searching on page 4
+2025-09-06 09:06:17,576 - INFO - ✓ Navigated to page 4
+2025-09-06 09:06:17,577 - INFO - ⏰ Waiting 15 seconds on page 4...
+2025-09-06 09:06:32,580 - INFO - 🎭 Performing interactions on page 4...
+2025-09-06 09:06:32,581 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:06:34,811 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:06:42,312 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:06:47,121 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:06:49,356 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:06:52,158 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 09:06:52,159 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:06:52,325 - INFO - Domain not found on page 4
+2025-09-06 09:06:52,326 - INFO - 🔍 Searching on page 5
+2025-09-06 09:06:58,968 - INFO - ✓ Navigated to page 5
+2025-09-06 09:06:58,969 - INFO - ⏰ Waiting 15 seconds on page 5...
+2025-09-06 09:07:13,974 - INFO - 🎭 Performing interactions on page 5...
+2025-09-06 09:07:13,974 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:07:16,554 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:07:23,409 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:07:28,049 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:07:30,890 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:07:33,096 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 09:07:33,097 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:07:33,255 - INFO - Domain not found on page 5
+2025-09-06 09:07:33,255 - INFO - 🔍 Searching on page 6
+2025-09-06 09:07:39,750 - INFO - ✓ Navigated to page 6
+2025-09-06 09:07:39,751 - INFO - ⏰ Waiting 15 seconds on page 6...
+2025-09-06 09:07:54,756 - INFO - 🎭 Performing interactions on page 6...
+2025-09-06 09:07:54,757 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:07:56,080 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:08:01,446 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:08:04,984 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:08:07,675 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:08:09,565 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 09:08:09,566 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:08:09,727 - INFO - Domain not found on page 6
+2025-09-06 09:08:09,727 - INFO - 🔍 Searching on page 7
+2025-09-06 09:08:16,268 - INFO - ✓ Navigated to page 7
+2025-09-06 09:08:16,269 - INFO - ⏰ Waiting 15 seconds on page 7...
+2025-09-06 09:08:31,260 - INFO - 🎭 Performing interactions on page 7...
+2025-09-06 09:08:31,261 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:08:32,312 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:08:38,822 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:08:43,444 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:08:45,946 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:08:47,900 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 09:08:47,901 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:08:48,067 - INFO - Domain not found on page 7
+2025-09-06 09:08:48,067 - INFO - 🔍 Searching on page 8
+2025-09-06 09:08:54,559 - INFO - ✓ Navigated to page 8
+2025-09-06 09:08:54,560 - INFO - ⏰ Waiting 15 seconds on page 8...
+2025-09-06 09:09:09,559 - INFO - 🎭 Performing interactions on page 8...
+2025-09-06 09:09:09,560 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:09:12,196 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:09:17,301 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:09:21,141 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:09:23,912 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:09:26,665 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 09:09:26,666 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:09:26,830 - INFO - Domain not found on page 8
+2025-09-06 09:09:26,830 - INFO - 🔍 Searching on page 9
+2025-09-06 09:09:33,375 - INFO - ✓ Navigated to page 9
+2025-09-06 09:09:33,376 - INFO - ⏰ Waiting 15 seconds on page 9...
+2025-09-06 09:09:48,381 - INFO - 🎭 Performing interactions on page 9...
+2025-09-06 09:09:48,382 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:09:50,592 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:09:57,686 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:10:01,574 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:10:03,753 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:10:05,902 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 09:10:05,903 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:10:06,072 - INFO - Domain not found on page 9
+2025-09-06 09:10:06,073 - INFO - 🔍 Searching on page 10
+2025-09-06 09:10:12,655 - INFO - ✓ Navigated to page 10
+2025-09-06 09:10:12,655 - INFO - ⏰ Waiting 15 seconds on page 10...
+2025-09-06 09:10:27,659 - INFO - 🎭 Performing interactions on page 10...
+2025-09-06 09:10:27,660 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:10:28,683 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:10:34,682 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:10:39,187 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:10:41,470 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:10:43,717 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 09:10:43,718 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:10:43,842 - INFO - Domain not found on page 10
+2025-09-06 09:10:43,843 - INFO - 🔍 Searching on page 11
+2025-09-06 09:10:50,456 - INFO - ✓ Navigated to page 11
+2025-09-06 09:10:50,458 - INFO - ⏰ Waiting 15 seconds on page 11...
+2025-09-06 09:11:05,463 - INFO - 🎭 Performing interactions on page 11...
+2025-09-06 09:11:05,467 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:11:08,161 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:11:14,455 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:11:19,837 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:11:22,620 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:11:24,581 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 09:11:24,581 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:11:24,752 - INFO - Domain not found on page 11
+2025-09-06 09:11:24,752 - INFO - 🔍 Searching on page 12
+2025-09-06 09:11:31,394 - INFO - ✓ Navigated to page 12
+2025-09-06 09:11:31,395 - INFO - ⏰ Waiting 15 seconds on page 12...
+2025-09-06 09:11:46,397 - INFO - 🎭 Performing interactions on page 12...
+2025-09-06 09:11:46,399 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:11:48,455 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:11:53,582 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:11:57,279 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:11:59,117 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:12:01,054 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 09:12:01,054 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:12:01,221 - INFO - Domain not found on page 12
+2025-09-06 09:12:01,222 - INFO - 🔍 Searching on page 13
+2025-09-06 09:12:07,890 - INFO - ✓ Navigated to page 13
+2025-09-06 09:12:07,892 - INFO - ⏰ Waiting 15 seconds on page 13...
+2025-09-06 09:12:22,897 - INFO - 🎭 Performing interactions on page 13...
+2025-09-06 09:12:22,899 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:12:25,521 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:12:30,961 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:12:35,932 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:12:38,402 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:12:40,572 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 09:12:40,573 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:12:40,740 - INFO - Domain not found on page 13
+2025-09-06 09:12:40,740 - INFO - 🔍 Searching on page 14
+2025-09-06 09:12:49,480 - INFO - ✓ Navigated to page 14
+2025-09-06 09:12:49,483 - INFO - ⏰ Waiting 15 seconds on page 14...
+2025-09-06 09:13:04,484 - INFO - 🎭 Performing interactions on page 14...
+2025-09-06 09:13:04,485 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:13:07,443 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:13:11,871 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:13:15,916 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:13:18,733 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:13:21,481 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 09:13:21,481 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:13:21,651 - INFO - Domain not found on page 14
+2025-09-06 09:13:21,652 - INFO - 🔍 Searching on page 15
+2025-09-06 09:13:28,294 - INFO - ✓ Navigated to page 15
+2025-09-06 09:13:28,296 - INFO - ⏰ Waiting 15 seconds on page 15...
+2025-09-06 09:13:43,303 - INFO - 🎭 Performing interactions on page 15...
+2025-09-06 09:13:43,304 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:13:45,266 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:13:52,097 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:13:57,146 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:13:59,222 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:14:01,093 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 09:14:01,094 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:14:01,265 - INFO - Domain not found on page 15
+2025-09-06 09:14:01,266 - INFO - 🔍 Searching on page 16
+2025-09-06 09:14:08,153 - INFO - ✓ Navigated to page 16
+2025-09-06 09:14:08,154 - INFO - ⏰ Waiting 15 seconds on page 16...
+2025-09-06 09:14:23,160 - INFO - 🎭 Performing interactions on page 16...
+2025-09-06 09:14:23,161 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:14:24,717 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:14:31,276 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:14:35,682 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:14:37,704 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:14:39,840 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 09:14:39,841 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:14:39,995 - INFO - Domain not found on page 16
+2025-09-06 09:14:39,995 - INFO - 🔍 Searching on page 17
+2025-09-06 09:14:47,188 - INFO - ✓ Navigated to page 17
+2025-09-06 09:14:47,188 - INFO - ⏰ Waiting 15 seconds on page 17...
+2025-09-06 09:15:02,190 - INFO - 🎭 Performing interactions on page 17...
+2025-09-06 09:15:02,191 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:15:04,131 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:15:10,085 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:15:14,130 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:15:16,127 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:15:18,861 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 09:15:18,862 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:15:19,011 - INFO - Domain not found on page 17
+2025-09-06 09:15:19,012 - INFO - 🔍 Searching on page 18
+2025-09-06 09:15:26,207 - INFO - ✓ Navigated to page 18
+2025-09-06 09:15:26,208 - INFO - ⏰ Waiting 15 seconds on page 18...
+2025-09-06 09:15:41,213 - INFO - 🎭 Performing interactions on page 18...
+2025-09-06 09:15:41,214 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:15:42,750 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:15:47,631 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:15:52,427 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:15:54,422 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:15:57,168 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 09:15:57,168 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:15:57,301 - INFO - Domain not found on page 18
+2025-09-06 09:15:57,301 - INFO - 🔍 Searching on page 19
+2025-09-06 09:16:04,584 - INFO - ✓ Navigated to page 19
+2025-09-06 09:16:04,585 - INFO - ⏰ Waiting 15 seconds on page 19...
+2025-09-06 09:16:19,590 - INFO - 🎭 Performing interactions on page 19...
+2025-09-06 09:16:19,591 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:16:22,117 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:16:28,525 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:16:32,955 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:16:35,430 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:16:38,274 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 09:16:38,275 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:16:38,436 - INFO - Domain not found on page 19
+2025-09-06 09:16:38,436 - INFO - 🔍 Searching on page 20
+2025-09-06 09:16:45,221 - INFO - ✓ Navigated to page 20
+2025-09-06 09:16:45,222 - INFO - ⏰ Waiting 15 seconds on page 20...
+2025-09-06 09:17:00,227 - INFO - 🎭 Performing interactions on page 20...
+2025-09-06 09:17:00,228 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:17:03,197 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:17:09,494 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:17:13,588 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:17:15,684 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:17:18,297 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 09:17:18,297 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:17:18,458 - INFO - Domain not found on page 20
+2025-09-06 09:17:18,459 - INFO - 🔍 Searching on page 21
+2025-09-06 09:17:25,228 - INFO - ✓ Navigated to page 21
+2025-09-06 09:17:25,228 - INFO - ⏰ Waiting 15 seconds on page 21...
+2025-09-06 09:17:40,234 - INFO - 🎭 Performing interactions on page 21...
+2025-09-06 09:17:40,236 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:17:41,445 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:17:47,792 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:17:52,185 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:17:54,851 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:17:56,942 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 09:17:56,943 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:17:57,101 - INFO - Domain not found on page 21
+2025-09-06 09:17:57,102 - INFO - 🔍 Searching on page 22
+2025-09-06 09:18:04,043 - INFO - ✓ Navigated to page 22
+2025-09-06 09:18:04,044 - INFO - ⏰ Waiting 15 seconds on page 22...
+2025-09-06 09:18:19,054 - INFO - 🎭 Performing interactions on page 22...
+2025-09-06 09:18:19,055 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:18:20,598 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:18:27,362 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:18:32,219 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:18:34,945 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:18:37,204 - INFO - 🖱️ Hovered over Google element: .LC20lb
+2025-09-06 09:18:37,204 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:18:37,332 - INFO - Domain not found on page 22
+2025-09-06 09:18:37,333 - INFO - 🔍 Searching on page 23
+2025-09-06 09:18:37,338 - WARNING - Could not navigate to page 23: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="pnnext"]"}
+  (Session info: chrome=139.0.7258.66); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x00000001052153a0 cxxbridge1$str$ptr + 2559624
+1   chromedriver                        0x000000010520d514 cxxbridge1$str$ptr + 2527228
+2   chromedriver                        0x0000000104da7f34 cxxbridge1$string$len + 85140
+3   chromedriver                        0x0000000104deae28 cxxbridge1$string$len + 359304
+4   chromedriver                        0x0000000104e272d4 cxxbridge1$string$len + 606260
+5   chromedriver                        0x0000000104de0034 cxxbridge1$string$len + 314772
+6   chromedriver                        0x00000001051e0584 cxxbridge1$str$ptr + 2343020
+7   chromedriver                        0x00000001051e32ac cxxbridge1$str$ptr + 2354580
+8   chromedriver                        0x00000001051e2ec8 cxxbridge1$str$ptr + 2353584
+9   chromedriver                        0x00000001051c7d80 cxxbridge1$str$ptr + 2242664
+10  chromedriver                        0x00000001051e3890 cxxbridge1$str$ptr + 2356088
+11  chromedriver                        0x00000001051ba7a0 cxxbridge1$str$ptr + 2187912
+12  chromedriver                        0x00000001051fe0bc cxxbridge1$str$ptr + 2464676
+13  chromedriver                        0x00000001051fe28c cxxbridge1$str$ptr + 2465140
+14  chromedriver                        0x000000010520d160 cxxbridge1$str$ptr + 2526280
+15  libsystem_pthread.dylib             0x000000019025fc0c _pthread_start + 136
+16  libsystem_pthread.dylib             0x000000019025ab80 thread_start + 8
+
+2025-09-06 09:18:37,338 - WARNING - Domain not found in search results
+2025-09-06 09:18:37,340 - INFO - Browser closed
+2025-09-06 09:18:37,881 - INFO - Kameleo profile 3de60103-b0dd-47cd-83e7-87cff5bb783d stopped
+2025-09-06 09:18:37,903 - INFO - Kameleo profile 3de60103-b0dd-47cd-83e7-87cff5bb783d deleted
+2025-09-06 09:18:37,903 - ERROR - ✗ Proxy 206.41.168.36:6701:aawikmkk:tx1f1a2yr843 failed
+2025-09-06 09:18:37,903 - INFO - Waiting 3 seconds before next proxy...
+2025-09-06 09:18:40,914 - INFO - --- Processing proxy 2/22 ---
+2025-09-06 09:18:40,915 - INFO - Testing proxy: 50.114.243.226:6467:aawikmkk:tx1f1a2yr843
+2025-09-06 09:18:40,916 - INFO - Testing proxy: 50.114.243.226:6467 (with auth)
+2025-09-06 09:18:43,854 - INFO - ✓ Proxy 50.114.243.226:6467 (with auth) is working. IP: 50.114.243.226
+2025-09-06 09:18:43,855 - INFO - Setting up Kameleo browser with proxy: 50.114.243.226:6467:aawikmkk:tx1f1a2yr843
+2025-09-06 09:18:43,855 - INFO - Creating Kameleo profile with proxy: 50.114.243.226:6467:aawikmkk:tx1f1a2yr843
+2025-09-06 09:18:43,856 - INFO - Selected unique fingerprint: 143f027b3e7ec07f215c59e63d316f9ce9e8253c19cb47f5bdf098a6ec7f85f2 (2/25 used)
+2025-09-06 09:18:43,856 - INFO - Using authenticated proxy: 50.114.243.226:6467
+2025-09-06 09:18:44,288 - INFO - ✓ Kameleo profile created: f639f8ac-65da-47fe-99b5-d153d16bb671 for proxy 50.114.243.226:6467
+2025-09-06 09:18:47,725 - INFO - Kameleo browser setup completed successfully
+2025-09-06 09:18:47,725 - INFO - Verifying proxy IP...
+2025-09-06 09:18:51,827 - INFO - Browser IP (via http://httpbin.org/ip): 50.114.243.226
+2025-09-06 09:18:52,112 - INFO - Real IP: 105.155.179.49
+2025-09-06 09:18:52,113 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-06 09:18:52,113 - INFO - Navigating to Google search...
+2025-09-06 09:18:52,890 - INFO - ⏰ Waiting 15 seconds after opening Google search...
+2025-09-06 09:19:07,902 - INFO - 🎭 Performing initial Google page interactions...
+2025-09-06 09:19:07,904 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:19:09,143 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:19:14,987 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:19:19,033 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:19:19,076 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:19:19,099 - INFO - Typing keyword: izmir seo
+2025-09-06 09:19:23,861 - INFO - ✓ Google search completed successfully
+2025-09-06 09:19:23,862 - INFO - Looking for domain: best4seo.com.tr/izmir-seo
+2025-09-06 09:19:23,862 - INFO - 🔍 Searching on page 1
+2025-09-06 09:19:24,500 - INFO - Domain not found on page 1
+2025-09-06 09:19:24,500 - INFO - 🔍 Searching on page 2
+2025-09-06 09:19:31,219 - INFO - ✓ Navigated to page 2
+2025-09-06 09:19:31,220 - INFO - ⏰ Waiting 15 seconds on page 2...
+2025-09-06 09:19:46,229 - INFO - 🎭 Performing interactions on page 2...
+2025-09-06 09:19:46,231 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:19:48,234 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:19:54,879 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:19:58,919 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:20:01,080 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:20:03,384 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 09:20:03,385 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:20:03,551 - INFO - Domain not found on page 2
+2025-09-06 09:20:03,551 - INFO - 🔍 Searching on page 3
+2025-09-06 09:20:10,295 - INFO - ✓ Navigated to page 3
+2025-09-06 09:20:10,296 - INFO - ⏰ Waiting 15 seconds on page 3...
+2025-09-06 09:20:25,307 - INFO - 🎭 Performing interactions on page 3...
+2025-09-06 09:20:25,308 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:20:27,823 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:20:35,128 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:20:39,371 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:20:41,291 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:20:43,174 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 09:20:43,175 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:20:43,325 - INFO - Domain not found on page 3
+2025-09-06 09:20:43,325 - INFO - 🔍 Searching on page 4
+2025-09-06 09:20:50,010 - INFO - ✓ Navigated to page 4
+2025-09-06 09:20:50,011 - INFO - ⏰ Waiting 15 seconds on page 4...
+2025-09-06 09:21:05,017 - INFO - 🎭 Performing interactions on page 4...
+2025-09-06 09:21:05,018 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:21:07,408 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:21:14,315 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:21:18,612 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:21:21,060 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:21:23,470 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 09:21:23,471 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:21:23,623 - INFO - Domain not found on page 4
+2025-09-06 09:21:23,623 - INFO - 🔍 Searching on page 5
+2025-09-06 09:21:30,377 - INFO - ✓ Navigated to page 5
+2025-09-06 09:21:30,378 - INFO - ⏰ Waiting 15 seconds on page 5...
+2025-09-06 09:21:45,381 - INFO - 🎭 Performing interactions on page 5...
+2025-09-06 09:21:45,382 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:21:48,139 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:21:54,292 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:21:58,586 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:22:00,660 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:22:02,772 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 09:22:02,773 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:22:02,933 - INFO - Domain not found on page 5
+2025-09-06 09:22:02,933 - INFO - 🔍 Searching on page 6
+2025-09-06 09:22:09,542 - INFO - ✓ Navigated to page 6
+2025-09-06 09:22:09,543 - INFO - ⏰ Waiting 15 seconds on page 6...
+2025-09-06 09:22:24,553 - INFO - 🎭 Performing interactions on page 6...
+2025-09-06 09:22:24,555 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:22:26,807 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:22:32,767 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:22:37,364 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:22:39,260 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:22:41,783 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 09:22:41,785 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:22:41,811 - INFO - 🎯 Found target domain on page 6, position 1: https://best4seo.com.tr/izmir-seo/
+2025-09-06 09:22:41,811 - INFO - 🖱️ Hovering over target link...
+2025-09-06 09:22:47,802 - INFO - ✨ Completed hovering over target link
+2025-09-06 09:22:55,438 - INFO - ✓ Successfully clicked target link using ActionChains
+2025-09-06 09:22:58,459 - INFO - ✓ Successfully navigated to target website: https://best4seo.com.tr/izmir-seo/
+2025-09-06 09:22:58,459 - INFO - 🎭 Starting realistic website interaction (60 seconds)
+2025-09-06 09:22:58,460 - INFO - 🎭 Starting realistic website interaction (60 seconds)
+2025-09-06 09:23:01,467 - INFO - Phase 1: Initial page exploration...
+2025-09-06 09:23:02,400 - INFO - Smooth scrolled down 600 pixels
+2025-09-06 09:23:06,267 - INFO - Hovered over a element
+2025-09-06 09:23:08,152 - INFO - Hovered over button element
+2025-09-06 09:23:08,948 - INFO - Client disconnected from WebSocket
+2025-09-06 09:23:08,949 - INFO - 127.0.0.1 - - [06/Sep/2025 09:23:08] "GET /socket.io/?EIO=4&transport=websocket&sid=ZyCOiOAcUF12-GJkAAAA HTTP/1.1" 200 -
+2025-09-06 09:23:09,017 - INFO - Hovered over 2 elements
+2025-09-06 09:23:10,032 - ERROR - Error during smooth scroll up: Message: invalid session id
+Stacktrace:
+0   chromedriver                        0x0000000100ae4888 cxxbridge1$str$ptr + 2710432
+1   chromedriver                        0x0000000100adc9d0 cxxbridge1$str$ptr + 2677992
+2   chromedriver                        0x0000000100653cec _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 66912
+3   chromedriver                        0x000000010068b788 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 294908
+4   chromedriver                        0x00000001006b26c0 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 454452
+5   chromedriver                        0x00000001006b1f40 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 452532
+6   chromedriver                        0x0000000100627280 chromedriver + 94848
+7   chromedriver                        0x0000000100aaf6d8 cxxbridge1$str$ptr + 2492912
+8   chromedriver                        0x0000000100ab23e4 cxxbridge1$str$ptr + 2504444
+9   chromedriver                        0x0000000100ab2000 cxxbridge1$str$ptr + 2503448
+10  chromedriver                        0x0000000100a96f60 cxxbridge1$str$ptr + 2392696
+11  chromedriver                        0x0000000100ab29c8 cxxbridge1$str$ptr + 2505952
+12  chromedriver                        0x0000000100a89cb8 cxxbridge1$str$ptr + 2338768
+13  chromedriver                        0x00000001006252c4 chromedriver + 86724
+14  chromedriver                        0x0000000100624b80 chromedriver + 84864
+15  dyld                                0x000000018febeb98 start + 6076
+
+2025-09-06 09:23:10,792 - INFO - 127.0.0.1 - - [06/Sep/2025 09:23:10] "GET /socket.io/?EIO=4&transport=polling&t=PaU7qY_ HTTP/1.1" 200 -
+2025-09-06 09:23:10,806 - INFO - Client connected to WebSocket
+2025-09-06 09:23:10,807 - INFO - 127.0.0.1 - - [06/Sep/2025 09:23:10] "POST /socket.io/?EIO=4&transport=polling&t=PaU7qZC&sid=n0Prs5smqCAodM41AAAC HTTP/1.1" 200 -
+2025-09-06 09:23:10,807 - INFO - 127.0.0.1 - - [06/Sep/2025 09:23:10] "GET /socket.io/?EIO=4&transport=polling&t=PaU7qZD&sid=n0Prs5smqCAodM41AAAC HTTP/1.1" 200 -
+2025-09-06 09:23:10,821 - INFO - 127.0.0.1 - - [06/Sep/2025 09:23:10] "GET /socket.io/?EIO=4&transport=polling&t=PaU7qZW&sid=n0Prs5smqCAodM41AAAC HTTP/1.1" 200 -
+2025-09-06 09:23:12,034 - INFO - Phase 2: Exploring navigation...
+2025-09-06 09:23:12,046 - ERROR - Error during header navigation: Message: invalid session id
+Stacktrace:
+0   chromedriver                        0x0000000100ae4888 cxxbridge1$str$ptr + 2710432
+1   chromedriver                        0x0000000100adc9d0 cxxbridge1$str$ptr + 2677992
+2   chromedriver                        0x0000000100653cec _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 66912
+3   chromedriver                        0x000000010068b788 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 294908
+4   chromedriver                        0x00000001006b26c0 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 454452
+5   chromedriver                        0x00000001006b1f40 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 452532
+6   chromedriver                        0x0000000100627280 chromedriver + 94848
+7   chromedriver                        0x0000000100aaf6d8 cxxbridge1$str$ptr + 2492912
+8   chromedriver                        0x0000000100ab23e4 cxxbridge1$str$ptr + 2504444
+9   chromedriver                        0x0000000100ab2000 cxxbridge1$str$ptr + 2503448
+10  chromedriver                        0x0000000100a96f60 cxxbridge1$str$ptr + 2392696
+11  chromedriver                        0x0000000100ab29c8 cxxbridge1$str$ptr + 2505952
+12  chromedriver                        0x0000000100a89cb8 cxxbridge1$str$ptr + 2338768
+13  chromedriver                        0x00000001006252c4 chromedriver + 86724
+14  chromedriver                        0x0000000100624b80 chromedriver + 84864
+15  dyld                                0x000000018febeb98 start + 6076
+
+2025-09-06 09:23:12,047 - INFO - Phase 3: Content exploration...
+2025-09-06 09:23:12,050 - ERROR - Error during smooth scroll down: Message: invalid session id
+Stacktrace:
+0   chromedriver                        0x0000000100ae4888 cxxbridge1$str$ptr + 2710432
+1   chromedriver                        0x0000000100adc9d0 cxxbridge1$str$ptr + 2677992
+2   chromedriver                        0x0000000100653cec _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 66912
+3   chromedriver                        0x000000010068b788 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 294908
+4   chromedriver                        0x00000001006b26c0 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 454452
+5   chromedriver                        0x00000001006b1f40 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 452532
+6   chromedriver                        0x0000000100627280 chromedriver + 94848
+7   chromedriver                        0x0000000100aaf6d8 cxxbridge1$str$ptr + 2492912
+8   chromedriver                        0x0000000100ab23e4 cxxbridge1$str$ptr + 2504444
+9   chromedriver                        0x0000000100ab2000 cxxbridge1$str$ptr + 2503448
+10  chromedriver                        0x0000000100a96f60 cxxbridge1$str$ptr + 2392696
+11  chromedriver                        0x0000000100ab29c8 cxxbridge1$str$ptr + 2505952
+12  chromedriver                        0x0000000100a89cb8 cxxbridge1$str$ptr + 2338768
+13  chromedriver                        0x00000001006252c4 chromedriver + 86724
+14  chromedriver                        0x0000000100624b80 chromedriver + 84864
+15  dyld                                0x000000018febeb98 start + 6076
+
+2025-09-06 09:23:15,089 - ERROR - Error during smooth scroll down: Message: Profile not found.
+
+2025-09-06 09:24:49,243 - INFO - Client disconnected from WebSocket
+2025-09-06 09:24:49,243 - INFO - 127.0.0.1 - - [06/Sep/2025 09:24:49] "GET /socket.io/?EIO=4&transport=websocket&sid=n0Prs5smqCAodM41AAAC HTTP/1.1" 200 -
+2025-09-06 09:24:49,425 - ERROR - Error during smooth scroll down: Message: Profile not found.
+
+2025-09-06 09:24:50,563 - INFO - 127.0.0.1 - - [06/Sep/2025 09:24:50] "GET /socket.io/?EIO=4&transport=polling&t=PaU8Cvv HTTP/1.1" 200 -
+2025-09-06 09:24:50,569 - INFO - Client connected to WebSocket
+2025-09-06 09:24:50,569 - INFO - 127.0.0.1 - - [06/Sep/2025 09:24:50] "GET /socket.io/?EIO=4&transport=polling&t=PaU8Cw5&sid=-Tm3y2u3uvJXHGB2AAAE HTTP/1.1" 200 -
+2025-09-06 09:24:50,570 - INFO - 127.0.0.1 - - [06/Sep/2025 09:24:50] "POST /socket.io/?EIO=4&transport=polling&t=PaU8Cw4&sid=-Tm3y2u3uvJXHGB2AAAE HTTP/1.1" 200 -
+2025-09-06 09:24:50,938 - ERROR - Error during smooth scroll down: Message: Profile not found.
+
+2025-09-06 09:24:52,448 - ERROR - Error during smooth scroll up: Message: Profile not found.
+
+2025-09-06 09:24:53,450 - INFO - ✅ Completed realistic interaction session (115.0 seconds)
+2025-09-06 09:24:53,451 - INFO - ✅ Successfully visited and interacted with target website
+2025-09-06 09:24:53,451 - INFO - ✓ Found domain on page 6, position 1
+2025-09-06 09:24:53,463 - ERROR - Error closing browser: Message: Profile not found.
+
+2025-09-06 09:24:53,464 - INFO - ✓ Proxy 50.114.243.226:6467:aawikmkk:tx1f1a2yr843 completed successfully
+2025-09-06 09:24:53,464 - INFO - Waiting 3 seconds before next proxy...
+2025-09-06 09:24:56,465 - INFO - --- Processing proxy 3/22 ---
+2025-09-06 09:24:56,465 - INFO - Testing proxy: 50.114.243.109:6350:aawikmkk:tx1f1a2yr843
+2025-09-06 09:24:56,466 - INFO - Testing proxy: 50.114.243.109:6350 (with auth)
+2025-09-06 09:24:57,862 - INFO - ✓ Proxy 50.114.243.109:6350 (with auth) is working. IP: 50.114.243.109
+2025-09-06 09:24:57,863 - INFO - Setting up Kameleo browser with proxy: 50.114.243.109:6350:aawikmkk:tx1f1a2yr843
+2025-09-06 09:24:57,864 - INFO - Creating Kameleo profile with proxy: 50.114.243.109:6350:aawikmkk:tx1f1a2yr843
+2025-09-06 09:24:57,865 - INFO - Selected unique fingerprint: b6b633ef9313cb6e0a1e60ff06b375ad2e8c884b26a64339b12286062c853a0b (3/25 used)
+2025-09-06 09:24:57,865 - INFO - Using authenticated proxy: 50.114.243.109:6350
+2025-09-06 09:24:58,298 - INFO - ✓ Kameleo profile created: dafd311d-2db1-4cc6-9a98-8dce9d0f1d59 for proxy 50.114.243.109:6350
+2025-09-06 09:25:01,778 - INFO - Kameleo browser setup completed successfully
+2025-09-06 09:25:01,779 - INFO - Verifying proxy IP...
+2025-09-06 09:25:07,292 - INFO - Browser IP (via http://httpbin.org/ip): 50.114.243.109
+2025-09-06 09:25:07,570 - INFO - Real IP: 105.155.179.49
+2025-09-06 09:25:07,571 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-06 09:25:07,571 - INFO - Navigating to Google search...
+2025-09-06 09:25:09,163 - INFO - ⏰ Waiting 15 seconds after opening Google search...
+2025-09-06 09:25:24,165 - INFO - 🎭 Performing initial Google page interactions...
+2025-09-06 09:25:24,166 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:25:25,632 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:25:31,389 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:25:35,669 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:25:35,734 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:25:35,758 - INFO - Typing keyword: izmir seo
+2025-09-06 09:25:40,854 - INFO - ✓ Google search completed successfully
+2025-09-06 09:25:40,855 - INFO - Looking for domain: best4seo.com.tr/izmir-seo
+2025-09-06 09:25:40,855 - INFO - 🔍 Searching on page 1
+2025-09-06 09:25:41,132 - INFO - Domain not found on page 1
+2025-09-06 09:25:41,132 - INFO - 🔍 Searching on page 2
+2025-09-06 09:25:47,868 - INFO - ✓ Navigated to page 2
+2025-09-06 09:25:47,869 - INFO - ⏰ Waiting 15 seconds on page 2...
+2025-09-06 09:26:02,874 - INFO - 🎭 Performing interactions on page 2...
+2025-09-06 09:26:02,875 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:26:05,140 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:26:11,038 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:26:15,372 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:26:17,934 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:26:20,684 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 09:26:20,685 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:26:20,844 - INFO - Domain not found on page 2
+2025-09-06 09:26:20,844 - INFO - 🔍 Searching on page 3
+2025-09-06 09:26:27,555 - INFO - ✓ Navigated to page 3
+2025-09-06 09:26:27,557 - INFO - ⏰ Waiting 15 seconds on page 3...
+2025-09-06 09:26:42,562 - INFO - 🎭 Performing interactions on page 3...
+2025-09-06 09:26:42,563 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:26:44,332 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:26:49,605 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:26:54,416 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:26:57,143 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:26:59,138 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 09:26:59,139 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:26:59,290 - INFO - Domain not found on page 3
+2025-09-06 09:26:59,291 - INFO - 🔍 Searching on page 4
+2025-09-06 09:27:05,983 - INFO - ✓ Navigated to page 4
+2025-09-06 09:27:05,985 - INFO - ⏰ Waiting 15 seconds on page 4...
+2025-09-06 09:27:20,988 - INFO - 🎭 Performing interactions on page 4...
+2025-09-06 09:27:20,989 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:27:22,706 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:27:27,603 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:27:31,875 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:27:34,548 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:27:36,578 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 09:27:36,579 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:27:36,734 - INFO - Domain not found on page 4
+2025-09-06 09:27:36,734 - INFO - 🔍 Searching on page 5
+2025-09-06 09:27:43,377 - INFO - ✓ Navigated to page 5
+2025-09-06 09:27:43,380 - INFO - ⏰ Waiting 15 seconds on page 5...
+2025-09-06 09:27:58,385 - INFO - 🎭 Performing interactions on page 5...
+2025-09-06 09:27:58,386 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:28:00,153 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:28:06,152 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:28:10,237 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:28:12,756 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:28:14,775 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 09:28:14,776 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:28:14,938 - INFO - Domain not found on page 5
+2025-09-06 09:28:14,939 - INFO - 🔍 Searching on page 6
+2025-09-06 09:28:21,560 - INFO - ✓ Navigated to page 6
+2025-09-06 09:28:21,562 - INFO - ⏰ Waiting 15 seconds on page 6...
+2025-09-06 09:28:36,563 - INFO - 🎭 Performing interactions on page 6...
+2025-09-06 09:28:36,564 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:28:38,343 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:28:44,824 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:28:49,993 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:28:52,397 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:28:54,617 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 09:28:54,618 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:28:54,782 - INFO - Domain not found on page 6
+2025-09-06 09:28:54,783 - INFO - 🔍 Searching on page 7
+2025-09-06 09:29:01,473 - INFO - ✓ Navigated to page 7
+2025-09-06 09:29:01,474 - INFO - ⏰ Waiting 15 seconds on page 7...
+2025-09-06 09:29:16,475 - INFO - 🎭 Performing interactions on page 7...
+2025-09-06 09:29:16,476 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:29:17,951 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:29:23,444 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:29:28,304 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:29:30,426 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:29:33,009 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 09:29:33,010 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:29:33,184 - INFO - Domain not found on page 7
+2025-09-06 09:29:33,184 - INFO - 🔍 Searching on page 8
+2025-09-06 09:29:39,876 - INFO - ✓ Navigated to page 8
+2025-09-06 09:29:39,877 - INFO - ⏰ Waiting 15 seconds on page 8...
+2025-09-06 09:29:54,882 - INFO - 🎭 Performing interactions on page 8...
+2025-09-06 09:29:54,885 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:29:56,274 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:30:02,443 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:30:06,999 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:30:09,788 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:30:12,175 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 09:30:12,175 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:30:12,347 - INFO - Domain not found on page 8
+2025-09-06 09:30:12,347 - INFO - 🔍 Searching on page 9
+2025-09-06 09:30:19,103 - INFO - ✓ Navigated to page 9
+2025-09-06 09:30:19,105 - INFO - ⏰ Waiting 15 seconds on page 9...
+2025-09-06 09:30:34,107 - INFO - 🎭 Performing interactions on page 9...
+2025-09-06 09:30:34,109 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:30:37,097 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:30:43,439 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:30:48,309 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:30:50,457 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:30:52,805 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 09:30:52,805 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:30:52,995 - INFO - Domain not found on page 9
+2025-09-06 09:30:52,995 - INFO - 🔍 Searching on page 10
+2025-09-06 09:31:02,740 - INFO - ✓ Navigated to page 10
+2025-09-06 09:31:02,745 - INFO - ⏰ Waiting 15 seconds on page 10...
+2025-09-06 09:31:17,750 - INFO - 🎭 Performing interactions on page 10...
+2025-09-06 09:31:17,751 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:31:20,249 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:31:25,642 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:31:29,077 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:31:31,888 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:31:34,610 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 09:31:34,615 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:31:34,805 - INFO - Domain not found on page 10
+2025-09-06 09:31:34,805 - INFO - 🔍 Searching on page 11
+2025-09-06 09:31:41,583 - INFO - ✓ Navigated to page 11
+2025-09-06 09:31:41,586 - INFO - ⏰ Waiting 15 seconds on page 11...
+2025-09-06 09:31:56,590 - INFO - 🎭 Performing interactions on page 11...
+2025-09-06 09:31:56,591 - INFO - 🎭 Starting Google page interactions...
+2025-09-06 09:31:58,403 - INFO - 📜 Scrolling down on Google page...
+2025-09-06 09:32:02,905 - INFO - 📜 Scrolling up on Google page...
+2025-09-06 09:32:07,260 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-06 09:32:09,138 - INFO - 🖱️ Hovered over Google element: a
+2025-09-06 09:32:11,874 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-06 09:32:11,874 - INFO - ✅ Completed Google page interactions
+2025-09-06 09:32:12,059 - INFO - Domain not found on page 11
+2025-09-06 09:32:12,059 - INFO - 🔍 Searching on page 12
+2025-09-06 09:32:20,680 - INFO - ✓ Navigated to page 12
+2025-09-06 09:32:20,681 - INFO - ⏰ Waiting 15 seconds on page 12...
