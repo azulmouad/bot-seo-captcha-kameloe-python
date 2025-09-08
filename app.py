@@ -96,16 +96,18 @@ bot_logger.setLevel(logging.INFO)
 class EnhancedGoogleSearchBot(GoogleSearchBot):
     """Enhanced bot class with web interface integration"""
     
-    def __init__(self, keyword, target_domain, proxy_list, max_pages=3):
+    def __init__(self, keyword, target_domain, proxy_list, max_pages=3, google_domain="google.com.tr"):
         super().__init__(keyword, target_domain, proxy_list)
         self.max_pages = max_pages
         self.current_proxy_index = 0
+        self.google_domain = google_domain
     
     def search_google(self):
         """Enhanced Google search with interaction"""
         try:
-            logger.info("Navigating to Google search...")
-            self.driver.get("https://www.google.com.tr")
+            google_url = f"https://www.{self.google_domain}"
+            logger.info(f"Navigating to Google search: {google_url}")
+            self.driver.get(google_url)
             
             # Wait 15 seconds as requested
             logger.info("⏰ Waiting 15 seconds after opening Google search...")
@@ -233,6 +235,7 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
             
             logger.info(f"Starting SEO bot with {len(self.proxy_list)} proxies")
             logger.info(f"Searching for '{self.keyword}' on domain '{self.target_domain}'")
+            logger.info(f"Using Google domain: {self.google_domain}")
             
             successful_runs = 0
             
@@ -813,6 +816,7 @@ def start_bot():
         data = request.json
         keyword = data.get('keyword', '').strip()
         domain = data.get('domain', '').strip()
+        google_domain = data.get('googleDomain', 'google.com.tr').strip()
         max_pages = int(data.get('maxPages', 3))
         proxy_list_text = data.get('proxyList', '').strip()
         
@@ -830,7 +834,7 @@ def start_bot():
         bot_logs.clear()
         
         # Create bot instance
-        bot_instance = EnhancedGoogleSearchBot(keyword, domain, proxy_list, max_pages)
+        bot_instance = EnhancedGoogleSearchBot(keyword, domain, proxy_list, max_pages, google_domain)
         
         # Start bot in separate thread
         bot_thread = threading.Thread(target=bot_instance.run_with_web_updates)

@@ -58,10 +58,174 @@
               />
             </div>
 
-            <!-- Domain -->
+            <!-- Google Search Domain -->
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2"
-                >Domain</label
+                >Google Search Domain</label
+              >
+              <select
+                x-model="config.googleDomain"
+                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                required
+              >
+                <option value="google.com">
+                  🌍 Google Global (google.com)
+                </option>
+                <option value="google.com.tr">
+                  🇹🇷 Google Turkey (google.com.tr)
+                </option>
+                <option value="google.es">🇪🇸 Google Spain (google.es)</option>
+                <option value="google.fr">🇫🇷 Google France (google.fr)</option>
+                <option value="google.de">🇩🇪 Google Germany (google.de)</option>
+                <option value="google.it">🇮🇹 Google Italy (google.it)</option>
+                <option value="google.co.uk">
+                  🇬🇧 Google UK (google.co.uk)
+                </option>
+                <option value="google.ca">🇨🇦 Google Canada (google.ca)</option>
+                <option value="google.com.au">
+                  🇦🇺 Google Australia (google.com.au)
+                </option>
+                <option value="google.com.br">
+                  🇧🇷 Google Brazil (google.com.br)
+                </option>
+                <option value="google.com.mx">
+                  🇲🇽 Google Mexico (google.com.mx)
+                </option>
+                <option value="google.nl">
+                  🇳🇱 Google Netherlands (google.nl)
+                </option>
+                <option value="google.be">🇧🇪 Google Belgium (google.be)</option>
+                <option value="google.ch">
+                  🇨🇭 Google Switzerland (google.ch)
+                </option>
+                <option value="google.at">🇦🇹 Google Austria (google.at)</option>
+                <option value="google.se">🇸🇪 Google Sweden (google.se)</option>
+                <option value="google.no">🇳🇴 Google Norway (google.no)</option>
+                <option value="google.dk">🇩🇰 Google Denmark (google.dk)</option>
+                <option value="google.fi">🇫🇮 Google Finland (google.fi)</option>
+                <option value="google.pl">🇵🇱 Google Poland (google.pl)</option>
+                <option value="google.cz">
+                  🇨🇿 Google Czech Republic (google.cz)
+                </option>
+                <option value="google.hu">🇭🇺 Google Hungary (google.hu)</option>
+                <option value="google.ro">🇷🇴 Google Romania (google.ro)</option>
+                <option value="google.bg">
+                  🇧🇬 Google Bulgaria (google.bg)
+                </option>
+                <option value="google.hr">🇭🇷 Google Croatia (google.hr)</option>
+                <option value="google.si">
+                  🇸🇮 Google Slovenia (google.si)
+                </option>
+                <option value="google.sk">
+                  🇸🇰 Google Slovakia (google.sk)
+                </option>
+                <option value="google.com.ar">
+                  🇦🇷 Google Argentina (google.com.ar)
+                </option>
+                <option value="google.cl">🇨🇱 Google Chile (google.cl)</option>
+                <option value="google.com.co">
+                  🇨🇴 Google Colombia (google.com.co)
+                </option>
+                <option value="google.com.pe">
+                  🇵🇪 Google Peru (google.com.pe)
+                </option>
+                <option value="google.com.uy">
+                  🇺🇾 Google Uruguay (google.com.uy)
+                </option>
+                <option value="google.com.ec">
+                  🇪🇨 Google Ecuador (google.com.ec)
+                </option>
+                <option value="google.com.ve">
+                  🇻🇪 Google Venezuela (google.com.ve)
+                </option>
+                <option value="google.com.bo">
+                  🇧🇴 Google Bolivia (google.com.bo)
+                </option>
+                <option value="google.com.py">
+                  🇵🇾 Google Paraguay (google.com.py)
+                </option>
+                <option value="google.ru">🇷🇺 Google Russia (google.ru)</option>
+                <option value="google.com.ua">
+                  🇺🇦 Google Ukraine (google.com.ua)
+                </option>
+                <option value="google.by">🇧🇾 Google Belarus (google.by)</option>
+                <option value="google.kz">
+                  🇰🇿 Google Kazakhstan (google.kz)
+                </option>
+                <option value="google.com.jp">
+                  🇯🇵 Google Japan (google.com.jp)
+                </option>
+                <option value="google.co.kr">
+                  🇰🇷 Google South Korea (google.co.kr)
+                </option>
+                <option value="google.com.cn">
+                  🇨🇳 Google China (google.com.cn)
+                </option>
+                <option value="google.com.hk">
+                  🇭🇰 Google Hong Kong (google.com.hk)
+                </option>
+                <option value="google.com.tw">
+                  🇹🇼 Google Taiwan (google.com.tw)
+                </option>
+                <option value="google.com.sg">
+                  🇸🇬 Google Singapore (google.com.sg)
+                </option>
+                <option value="google.com.my">
+                  🇲🇾 Google Malaysia (google.com.my)
+                </option>
+                <option value="google.co.th">
+                  🇹🇭 Google Thailand (google.co.th)
+                </option>
+                <option value="google.com.ph">
+                  🇵🇭 Google Philippines (google.com.ph)
+                </option>
+                <option value="google.co.id">
+                  🇮🇩 Google Indonesia (google.co.id)
+                </option>
+                <option value="google.com.vn">
+                  🇻🇳 Google Vietnam (google.com.vn)
+                </option>
+                <option value="google.co.in">
+                  🇮🇳 Google India (google.co.in)
+                </option>
+                <option value="google.com.pk">
+                  🇵🇰 Google Pakistan (google.com.pk)
+                </option>
+                <option value="google.com.bd">
+                  🇧🇩 Google Bangladesh (google.com.bd)
+                </option>
+                <option value="google.lk">
+                  🇱🇰 Google Sri Lanka (google.lk)
+                </option>
+                <option value="google.ae">🇦🇪 Google UAE (google.ae)</option>
+                <option value="google.com.sa">
+                  🇸🇦 Google Saudi Arabia (google.com.sa)
+                </option>
+                <option value="google.com.eg">
+                  🇪🇬 Google Egypt (google.com.eg)
+                </option>
+                <option value="google.co.il">
+                  🇮🇱 Google Israel (google.co.il)
+                </option>
+                <option value="google.co.za">
+                  🇿🇦 Google South Africa (google.co.za)
+                </option>
+                <option value="google.com.ng">
+                  🇳🇬 Google Nigeria (google.com.ng)
+                </option>
+                <option value="google.co.ke">
+                  🇰🇪 Google Kenya (google.co.ke)
+                </option>
+                <option value="google.com.gh">
+                  🇬🇭 Google Ghana (google.com.gh)
+                </option>
+              </select>
+            </div>
+
+            <!-- Target Domain -->
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2"
+                >Target Domain</label
               >
               <input
                 type="text"
@@ -210,41 +374,7 @@
           </div>
         </div>
 
-        <!-- Card 3: Live Logs -->
-        <div class="bg-white rounded-lg shadow-md p-6">
-          <div class="flex items-center mb-6">
-            <i class="fas fa-terminal text-purple-600 text-xl mr-3"></i>
-            <h2 class="text-xl font-semibold text-gray-900">Live Logs</h2>
-            <button
-              @click="clearLogs()"
-              class="ml-auto px-3 py-1 text-xs bg-gray-100 text-gray-600 rounded hover:bg-gray-200 transition-colors"
-            >
-              <i class="fas fa-trash mr-1"></i>Clear
-            </button>
-          </div>
-
-          <div
-            class="bg-gray-900 rounded-lg p-4 h-64 overflow-y-auto font-mono text-sm"
-          >
-            <template x-for="log in logs" :key="log.id">
-              <div class="mb-1">
-                <span class="text-gray-400" x-text="log.time"></span>
-                <span
-                  :class="getLogColor(log.type)"
-                  x-text="log.message"
-                ></span>
-              </div>
-            </template>
-            <div
-              x-show="logs.length === 0"
-              class="text-gray-500 text-center py-8"
-            >
-              No logs yet. Start the bot to see activity.
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 4: Results Report -->
+        <!-- Card 3: Results Report -->
         <div class="bg-white rounded-lg shadow-md p-6">
           <div class="flex items-center mb-6">
             <i class="fas fa-chart-bar text-orange-600 text-xl mr-3"></i>
@@ -333,6 +463,7 @@
           config: {
             keyword: "",
             domain: "",
+            googleDomain: "google.com.tr",
             maxPages: 3,
             proxyList: "",
           },
@@ -345,9 +476,6 @@
             total: 0,
             completed: 0,
           },
-
-          // Logs
-          logs: [],
 
           // Results
           results: [],
@@ -368,10 +496,7 @@
 
             // Load initial data
             this.loadStatus();
-            this.loadLogs();
             this.loadResults();
-
-            this.addLog("info", "Dashboard connected to server");
             this.lastUpdate = new Date().toLocaleTimeString();
           },
 
@@ -380,12 +505,10 @@
 
             this.socket.on("connect", () => {
               console.log("Connected to server");
-              this.addLog("success", "Connected to server");
             });
 
             this.socket.on("disconnect", () => {
               console.log("Disconnected from server");
-              this.addLog("warning", "Disconnected from server");
             });
 
             this.socket.on("status_update", (data) => {
@@ -394,19 +517,8 @@
               this.lastUpdate = new Date().toLocaleTimeString();
             });
 
-            this.socket.on("new_log", (log) => {
-              this.logs.unshift(log);
-              if (this.logs.length > 100) {
-                this.logs = this.logs.slice(0, 100);
-              }
-            });
-
             this.socket.on("new_result", (result) => {
               this.results.unshift(result);
-            });
-
-            this.socket.on("logs_update", (logs) => {
-              this.logs = logs;
             });
 
             this.socket.on("results_update", (results) => {
@@ -422,16 +534,6 @@
               this.isRunning = data.is_running;
             } catch (error) {
               console.error("Error loading status:", error);
-            }
-          },
-
-          async loadLogs() {
-            try {
-              const response = await fetch("/api/logs");
-              const data = await response.json();
-              this.logs = data;
-            } catch (error) {
-              console.error("Error loading logs:", error);
             }
           },
 
@@ -454,7 +556,7 @@
 
             // Validate inputs
             if (!this.config.keyword || !this.config.domain) {
-              this.addLog("error", "Please fill in keyword and domain");
+              alert("Please fill in keyword and domain");
               return;
             }
 
@@ -462,7 +564,7 @@
               .split("\n")
               .filter((p) => p.trim());
             if (proxies.length === 0) {
-              this.addLog("error", "Please add at least one proxy");
+              alert("Please add at least one proxy");
               return;
             }
 
@@ -475,6 +577,7 @@
                 body: JSON.stringify({
                   keyword: this.config.keyword,
                   domain: this.config.domain,
+                  googleDomain: this.config.googleDomain,
                   maxPages: this.config.maxPages,
                   proxyList: this.config.proxyList,
                 }),
@@ -483,12 +586,12 @@
               const data = await response.json();
 
               if (response.ok) {
-                this.addLog("success", "Bot started successfully");
+                console.log("Bot started successfully");
               } else {
-                this.addLog("error", data.error || "Failed to start bot");
+                alert(data.error || "Failed to start bot");
               }
             } catch (error) {
-              this.addLog("error", `Error starting bot: ${error.message}`);
+              alert(`Error starting bot: ${error.message}`);
             }
           },
 
@@ -506,12 +609,12 @@
               const data = await response.json();
 
               if (response.ok) {
-                this.addLog("info", "Bot stopped by user");
+                console.log("Bot stopped by user");
               } else {
-                this.addLog("error", data.error || "Failed to stop bot");
+                alert(data.error || "Failed to stop bot");
               }
             } catch (error) {
-              this.addLog("error", `Error stopping bot: ${error.message}`);
+              alert(`Error stopping bot: ${error.message}`);
             }
           },
 
@@ -521,7 +624,7 @@
               const reader = new FileReader();
               reader.onload = (e) => {
                 this.config.proxyList = e.target.result;
-                this.addLog("info", `Loaded ${file.name} with proxy list`);
+                console.log(`Loaded ${file.name} with proxy list`);
               };
               reader.readAsText(file);
             }
@@ -529,42 +632,12 @@
 
           clearProxies() {
             this.config.proxyList = "";
-            this.addLog("info", "Proxy list cleared");
-          },
-
-          addLog(type, message) {
-            const log = {
-              id: Date.now(),
-              type: type,
-              message: message,
-              time: new Date().toLocaleTimeString(),
-            };
-
-            this.logs.unshift(log);
-
-            // Keep only last 100 logs
-            if (this.logs.length > 100) {
-              this.logs = this.logs.slice(0, 100);
-            }
-          },
-
-          clearLogs() {
-            this.logs = [];
-          },
-
-          getLogColor(type) {
-            const colors = {
-              info: "text-blue-400",
-              success: "text-green-400",
-              warning: "text-yellow-400",
-              error: "text-red-400",
-            };
-            return colors[type] || "text-gray-400";
+            console.log("Proxy list cleared");
           },
 
           exportResults() {
             if (this.results.length === 0) {
-              this.addLog("warning", "No results to export");
+              alert("No results to export");
               return;
             }
 
@@ -592,7 +665,7 @@
             a.click();
             window.URL.revokeObjectURL(url);
 
-            this.addLog("success", "Results exported to CSV");
+            console.log("Results exported to CSV");
           },
         };
       }
