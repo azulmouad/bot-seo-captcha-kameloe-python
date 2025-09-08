@@ -105,7 +105,7 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
         """Enhanced Google search with interaction"""
         try:
             logger.info("Navigating to Google search...")
-            self.driver.get("https://www.google.com/search")
+            self.driver.get("https://www.google.com.tr")
             
             # Wait 15 seconds as requested
             logger.info("⏰ Waiting 15 seconds after opening Google search...")

@@ -35,7 +35,7 @@ pip install -r requirements_web.txt
 # Navigate to Kameleo CLI directory
 cd /Applications/Kameleo.app/Contents/Resources/CLI/
 # Start Kameleo.CLI with your account credentials
-./Kameleo.CLI email=fuzz.chute_6o@icloud.com password=Aqzsed123..@@
+./Kameleo.CLI email=moad.devloper@gmail.com password=Pmolik123..@@
 
 ```
 
