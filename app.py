@@ -351,6 +351,9 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
         try:
             logger.info(f"Looking for domain: {self.target_domain}")
             
+            cumulative_position = 0  # Track total position across all pages
+            page_results_count = []  # Track results count per page
+            
             for page in range(1, self.max_pages + 1):
                 logger.info(f"🔍 Searching on page {page}")
                 
@@ -388,6 +391,10 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
                 
                 # Get search results on current page
                 search_results = self.driver.find_elements(By.CSS_SELECTOR, "h3")
+                current_page_results = len(search_results)
+                page_results_count.append(current_page_results)
+                
+                logger.info(f"📊 Page {page} has {current_page_results} search results")
                 
                 for position, result in enumerate(search_results, 1):
                     try:
@@ -395,7 +402,11 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
                         if parent_link.tag_name == 'a':
                             href = parent_link.get_attribute('href')
                             if href and self.target_domain in href:
-                                logger.info(f"🎯 Found target domain on page {page}, position {position}: {href}")
+                                # Calculate cumulative position across all pages
+                                global_position = cumulative_position + position
+                                
+                                logger.info(f"🎯 Found target domain on page {page}, local position {position}, GLOBAL position {global_position}: {href}")
+                                logger.info(f"📈 Position calculation: {' + '.join(map(str, page_results_count[:-1]))} + {position} = {global_position}")
                                 
                                 # ENHANCED INTERACTION: Hover over target before clicking
                                 logger.info("🖱️ Hovering over target link...")
@@ -441,7 +452,7 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
                                             
                                         except Exception as e3:
                                             logger.error(f"All click methods failed: {str(e3)}")
-                                            return True, page, position  # Still count as found
+                                            return True, page, global_position  # Return global position
                                 
                                 # Check if we successfully navigated to target domain
                                 current_url = self.driver.current_url
@@ -453,14 +464,17 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
                                     self.realistic_website_interaction()
                                     
                                     logger.info("✅ Successfully visited and interacted with target website")
-                                    return True, page, position
+                                    return True, page, global_position  # Return global position
                                 else:
                                     logger.warning(f"Navigation may have failed. Current URL: {current_url}")
-                                    return True, page, position  # Still count as found
+                                    return True, page, global_position  # Return global position
                                 
                     except Exception as e:
                         continue
                 
+                # Add current page results to cumulative count for next page calculation
+                cumulative_position += current_page_results
+                logger.info(f"📊 Cumulative results after page {page}: {cumulative_position}")
                 logger.info(f"Domain not found on page {page}")
             
             return False, self.max_pages, None
