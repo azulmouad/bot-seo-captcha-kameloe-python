@@ -9,6 +9,7 @@ import logging
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
 from src.utils.bot_status import bot_status
+from src.utils.sound_notifier import SoundNotifier
 
 logger = logging.getLogger(__name__)
 
@@ -93,6 +94,9 @@ class TargetFinder:
                                 
                                 logger.info(f"🎯 Found target domain on page {page}, local position {position}, GLOBAL position {global_position}: {href}")
                                 logger.info(f"📈 Position calculation: {' + '.join(map(str, page_results_count[:-1]))} + {position} = {global_position}")
+                                
+                                # 🔊 PLAY SUCCESS NOTIFICATION SOUND
+                                SoundNotifier.play_target_found_notification()
                                 
                                 # ENHANCED INTERACTION: Hover over target before clicking
                                 logger.info("🖱️ Hovering over target link...")

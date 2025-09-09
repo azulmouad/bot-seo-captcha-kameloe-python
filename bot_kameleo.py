@@ -14,6 +14,7 @@ from kameleo.local_api_client.models import CreateProfileRequest, ProxyChoice, S
 from twocaptcha import TwoCaptcha
 import os
 from src.utils.cookie_manager import CookieManager
+from src.utils.sound_notifier import SoundNotifier
 
 # Configure logging
 logging.basicConfig(
@@ -1343,6 +1344,9 @@ class GoogleSearchBot:
                             if href and self.target_domain in href:
                                 logger.info(f"✓ Found target domain on page {current_page}: {href}")
                                 
+                                # 🔊 PLAY SUCCESS NOTIFICATION SOUND
+                                SoundNotifier.play_target_found_notification()
+                                
                                 # Random delay before clicking
                                 time.sleep(random.uniform(1, 3))
                                 
@@ -1687,6 +1691,14 @@ class GoogleSearchBot:
             # Cookies will be saved in close_browser() method
             
             logger.info("✓ Process completed successfully!")
+            
+            # 🔊 PLAY COMPLETION NOTIFICATION
+            try:
+                SoundNotifier.play_notification_beep()
+                logger.info("🎉 Bot run completed successfully!")
+            except:
+                pass
+            
             self.close_browser()
             return True
             
