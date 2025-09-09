@@ -307,24 +307,24 @@ class GoogleSearchBot:
         try:
             # Check if cookies exist for this proxy
             if not self.cookie_manager.has_cookies(self.current_proxy_id):
-                logger.info(f"ℹ️ No saved cookies for proxy {self.current_proxy_id}")
+                logger.info(f"ℹ️ No saved cookies for proxy {self.current_proxy_id} - keeping profile running")
                 return True  # Not an error, just no cookies to load
             
             # Load cookies from database
             cookies_dict = self.cookie_manager.load_cookies(self.current_proxy_id)
             
             if not cookies_dict:
-                logger.info("ℹ️ No cookies loaded from database")
+                logger.info("ℹ️ No cookies loaded from database - keeping profile running")
                 return True
             
             # Convert dictionary cookies to Kameleo format
             kameleo_cookies = self.cookie_manager.convert_dict_to_kameleo_cookies(cookies_dict)
             
             if not kameleo_cookies:
-                logger.warning("⚠️ Failed to convert cookies to Kameleo format")
-                return False
+                logger.warning("⚠️ Failed to convert cookies to Kameleo format - keeping profile running")
+                return True  # Don't fail, just continue without cookies
             
-            # PROPER SEQUENCE: Stop profile, add cookies, then restart
+            # PROPER SEQUENCE: Stop profile, add cookies (caller will restart)
             try:
                 logger.info(f"📂 Stopping profile to add {len(kameleo_cookies)} cookies...")
                 
@@ -340,6 +340,12 @@ class GoogleSearchBot:
                 
             except Exception as e:
                 logger.error(f"❌ Failed to add cookies to profile: {str(e)}")
+                # Try to restart the profile if we stopped it
+                try:
+                    self.kameleo_client.profile.start_profile(self.current_profile.id)
+                    logger.info("✓ Profile restarted after cookie loading error")
+                except:
+                    pass
                 return False
             
         except Exception as e:
@@ -534,29 +540,35 @@ class GoogleSearchBot:
                 self.kameleo_client.profile.start_profile(self.current_profile.id)
                 logger.info("✓ Desktop profile started")
             
-            # STEP 2: Load saved cookies (profile must be started first, then stopped)
+            # STEP 2: Load saved cookies (profile must be started first, then stopped, then restarted)
             if self.use_cookies:
                 logger.info("📂 Loading saved cookies into Kameleo profile...")
                 try:
                     success = self.load_profile_cookies_properly()
                     logger.info(f"📂 Cookie loading result: {'✅ Success' if success else '❌ Failed'}")
+                    
+                    # Only restart if cookies were actually loaded
+                    if success and self.cookie_manager.has_cookies(self.current_proxy_id):
+                        logger.info("🔄 Restarting profile with loaded cookies...")
+                        if self.device_profile == "mobile":
+                            self.kameleo_client.profile.start_profile(self.current_profile.id, {
+                                'additionalOptions': [
+                                    {
+                                        'key': 'disableTouchEmulation',
+                                        'value': True,
+                                    },
+                                ],
+                            })
+                            logger.info("✓ Mobile profile restarted after loading cookies")
+                        else:
+                            self.kameleo_client.profile.start_profile(self.current_profile.id)
+                            logger.info("✓ Desktop profile restarted after loading cookies")
+                    else:
+                        logger.info("ℹ️ No cookies to load, profile remains running")
+                        
                 except Exception as e:
                     logger.error(f"📂 Error loading cookies: {str(e)}")
-                
-                # Restart profile after loading cookies
-                if self.device_profile == "mobile":
-                    self.kameleo_client.profile.start_profile(self.current_profile.id, {
-                        'additionalOptions': [
-                            {
-                                'key': 'disableTouchEmulation',
-                                'value': True,
-                            },
-                        ],
-                    })
-                    logger.info("✓ Mobile profile restarted after loading cookies")
-                else:
-                    self.kameleo_client.profile.start_profile(self.current_profile.id)
-                    logger.info("✓ Desktop profile restarted after loading cookies")
+                    logger.info("⚠️ Continuing with profile in current state")
             
             # Setup browser options for Kameleo
             if self.device_profile == "mobile":

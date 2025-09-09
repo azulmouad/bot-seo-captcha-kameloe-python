@@ -1,165 +1,2373 @@
-2025-09-09 10:58:52,673 - INFO - 🍪 Cookie management requested: True
-2025-09-09 10:58:52,675 - INFO - Cookie database initialized: cookies.db
-2025-09-09 10:58:52,675 - INFO - 2captcha solver initialized with API key: 56d4457439...
-2025-09-09 10:58:52,675 - INFO - Cookie management: Enabled
-2025-09-09 10:58:52,676 - INFO - 🍪 Bot created with cookie support: True
-2025-09-09 10:58:52,676 - INFO - Cookie database initialized: cookies.db
-2025-09-09 10:58:52,677 - INFO - Bot runner initialized with cookie management support
-2025-09-09 10:58:52,677 - INFO - Starting SEO bot with 1 proxies
-2025-09-09 10:58:52,678 - INFO - 127.0.0.1 - - [09/Sep/2025 10:58:52] "POST /api/start HTTP/1.1" 200 -
-2025-09-09 10:58:52,678 - INFO - Searching for 'starbox iptv' on domain 'mouadzizi.com'
-2025-09-09 10:58:52,678 - INFO - Using Google domain: google.com.tr
-2025-09-09 10:58:52,678 - INFO - Device profile: Desktop
-2025-09-09 10:58:52,679 - INFO - --- Processing proxy 1/1 ---
-2025-09-09 10:58:52,680 - INFO - Testing proxy: 204.9.38.125:6446:aawikmkk:tx1f1a2yr843
-2025-09-09 10:58:52,681 - INFO - Testing proxy: 204.9.38.125:6446 (with auth)
-2025-09-09 10:58:53,722 - INFO - ✓ Proxy 204.9.38.125:6446 (with auth) is working. IP: 204.9.38.125
-2025-09-09 10:58:53,723 - INFO - Setting up Kameleo browser with proxy: 204.9.38.125:6446:aawikmkk:tx1f1a2yr843
-2025-09-09 10:58:53,723 - INFO - 🔍 Checking for existing cookies for proxy: 204.9.38.125:6446
-2025-09-09 10:58:53,725 - INFO - Filtered 3 expired cookies
-2025-09-09 10:58:53,725 - INFO - 💾 Attempting to save 68 cookies for proxy: 204.9.38.125:6446
-2025-09-09 10:58:53,727 - INFO - ✅ Successfully saved 68 cookies for proxy: 204.9.38.125:6446
-2025-09-09 10:58:53,727 - INFO - ✓ Loaded 68 valid cookies for proxy: 204.9.38.125:6446
-2025-09-09 10:58:53,727 - INFO - ✅ Found 68 saved cookies for this proxy
-2025-09-09 10:58:53,727 - INFO - Kameleo client initialized on port 5050
-2025-09-09 10:58:53,727 - INFO - Loading available Desktop Chrome fingerprints...
-2025-09-09 10:58:54,572 - INFO - Loaded 25 unique Chrome fingerprints
-2025-09-09 10:58:54,574 - INFO - Creating Kameleo profile with proxy: 204.9.38.125:6446:aawikmkk:tx1f1a2yr843
-2025-09-09 10:58:54,574 - INFO - Selected unique fingerprint: 0accaeaaeabdc131f492306446e2570dc280ac0e17e14308b349cffa0a0cc2e9 (1/25 used)
-2025-09-09 10:58:54,575 - INFO - Using authenticated proxy: 204.9.38.125:6446
-2025-09-09 10:58:54,728 - INFO - ✓ Kameleo profile created: 2b5b61b4-aedc-455d-84f6-83de67938b22 for proxy 204.9.38.125:6446
-2025-09-09 10:58:57,910 - INFO - ✓ Desktop profile started
-2025-09-09 10:58:57,911 - INFO - 📂 Loading saved cookies into Kameleo profile...
-2025-09-09 10:58:57,911 - INFO - ✓ Loaded 68 valid cookies for proxy: 204.9.38.125:6446
-2025-09-09 10:58:57,911 - INFO - 📂 Stopping profile to add 68 cookies...
-2025-09-09 10:58:58,387 - INFO - ✓ Profile stopped for cookie loading
-2025-09-09 10:58:58,403 - INFO - ✅ Added 68 saved cookies to stopped profile
-2025-09-09 10:58:58,403 - INFO - 📂 Cookie loading result: ✅ Success
-2025-09-09 10:59:00,704 - INFO - ✓ Desktop profile restarted after loading cookies
-2025-09-09 10:59:01,073 - INFO - Kameleo browser setup completed successfully
-2025-09-09 10:59:01,074 - INFO - Verifying proxy IP...
-2025-09-09 10:59:05,755 - INFO - Browser IP (via http://httpbin.org/ip): 204.9.38.125
-2025-09-09 10:59:06,079 - INFO - Real IP: 160.178.206.43
-2025-09-09 10:59:06,080 - INFO - ✓ Proxy is working correctly - IP is masked
-2025-09-09 10:59:06,080 - INFO - Navigating to Google search: https://www.google.com.tr
-2025-09-09 10:59:07,517 - INFO - ⏰ Waiting 15 seconds after opening Google search...
-2025-09-09 10:59:22,570 - INFO - 🎭 Performing initial Google page interactions...
-2025-09-09 10:59:22,572 - INFO - 🎭 Starting Google page interactions...
-2025-09-09 10:59:24,459 - INFO - 📜 Scrolling down on Google page...
-2025-09-09 10:59:31,071 - INFO - 📜 Scrolling up on Google page...
-2025-09-09 10:59:35,526 - INFO - 🖱️ Hovered over Google element: a
-2025-09-09 10:59:35,579 - INFO - ✅ Completed Google page interactions
-2025-09-09 10:59:35,605 - INFO - Typing keyword: starbox iptv
-2025-09-09 10:59:40,534 - INFO - ✓ Google search completed successfully
-2025-09-09 10:59:40,535 - INFO - Looking for domain: mouadzizi.com
-2025-09-09 10:59:40,535 - INFO - 🔍 Searching on page 1
-2025-09-09 10:59:40,543 - INFO - 📊 Page 1 has 12 search results
-2025-09-09 10:59:40,568 - INFO - 🎯 Found target domain on page 1, local position 1, GLOBAL position 1: https://mouadzizi.com/products/starbox-iptv
-2025-09-09 10:59:40,568 - INFO - 📈 Position calculation:  + 1 = 1
-2025-09-09 10:59:40,568 - INFO - 🖱️ Hovering over target link...
-2025-09-09 10:59:46,612 - INFO - ✨ Completed hovering over target link
-2025-09-09 10:59:50,543 - INFO - ✓ Successfully clicked target link using ActionChains
-2025-09-09 10:59:53,559 - INFO - ✓ Successfully navigated to target website: https://mouadzizi.com/products/starbox-iptv
-2025-09-09 10:59:53,559 - INFO - 🎭 Starting realistic website interaction (60 seconds)
-2025-09-09 10:59:53,562 - INFO - 🎭 Starting realistic website interaction (60 seconds)
-2025-09-09 10:59:56,580 - INFO - Phase 1: Initial page exploration...
-2025-09-09 10:59:57,449 - INFO - Smooth scrolled down 600 pixels
-2025-09-09 11:00:01,883 - INFO - Hovered over button element
-2025-09-09 11:00:03,704 - INFO - Hovered over h1 element
-2025-09-09 11:00:05,516 - INFO - Hovered over h2 element
-2025-09-09 11:00:05,588 - INFO - Hovered over 3 elements
-2025-09-09 11:00:05,588 - INFO - Phase 2: Exploring navigation...
-2025-09-09 11:00:05,657 - INFO - No suitable navigation links found
-2025-09-09 11:00:05,657 - INFO - Phase 3: Content exploration...
-2025-09-09 11:00:06,999 - INFO - Smooth scrolled down 800 pixels
-2025-09-09 11:00:09,008 - INFO - Phase 4: Final exploration...
-2025-09-09 11:00:10,873 - INFO - Smooth scrolled down 249 pixels
-2025-09-09 11:00:13,462 - INFO - Smooth scrolled up 111 pixels
-2025-09-09 11:00:16,080 - INFO - Smooth scrolled up 137 pixels
-2025-09-09 11:00:17,981 - INFO - Smooth scrolled down 148 pixels
-2025-09-09 11:00:20,541 - INFO - Smooth scrolled up 132 pixels
-2025-09-09 11:00:23,256 - INFO - Smooth scrolled up 113 pixels
-2025-09-09 11:00:25,207 - INFO - Smooth scrolled down 172 pixels
-2025-09-09 11:00:27,377 - INFO - Smooth scrolled up 146 pixels
-2025-09-09 11:00:29,937 - INFO - Smooth scrolled up 195 pixels
-2025-09-09 11:00:32,461 - INFO - Smooth scrolled down 195 pixels
-2025-09-09 11:00:35,255 - INFO - Smooth scrolled down 281 pixels
-2025-09-09 11:00:37,438 - INFO - Smooth scrolled down 110 pixels
-2025-09-09 11:00:39,689 - INFO - Smooth scrolled up 160 pixels
-2025-09-09 11:00:41,634 - INFO - Smooth scrolled up 115 pixels
-2025-09-09 11:00:44,093 - INFO - Smooth scrolled up 162 pixels
-2025-09-09 11:00:46,172 - INFO - Smooth scrolled up 152 pixels
-2025-09-09 11:00:48,260 - INFO - Smooth scrolled up 139 pixels
-2025-09-09 11:00:50,285 - INFO - Smooth scrolled down 262 pixels
-2025-09-09 11:00:53,019 - INFO - Smooth scrolled up 184 pixels
-2025-09-09 11:00:54,022 - INFO - ✅ Completed realistic interaction session (60.5 seconds)
-2025-09-09 11:00:54,023 - INFO - ✅ Successfully visited and interacted with target website
-2025-09-09 11:00:54,023 - INFO - ✓ Found domain on page 1, position 1
-2025-09-09 11:00:54,026 - INFO - Browser closed
-2025-09-09 11:00:54,026 - INFO - 💾 FINAL COOKIE SAVE before closing profile for proxy: 204.9.38.125:6446
-2025-09-09 11:00:55,018 - INFO - Kameleo profile 2b5b61b4-aedc-455d-84f6-83de67938b22 stopped
-2025-09-09 11:00:55,022 - INFO - 📊 Found 79 cookies in profile to save
-2025-09-09 11:00:55,022 - INFO - 🍪 PRINTING ALL COOKIES FOUND BEFORE SAVING:
-2025-09-09 11:00:55,022 - INFO - ============================================================
-2025-09-09 11:00:55,023 - INFO - 📊 Cookie Summary:
-2025-09-09 11:00:55,023 - INFO -    Total found: 79
-2025-09-09 11:00:55,023 - INFO -    Valid: 79
-2025-09-09 11:00:55,024 - INFO -    Invalid: 0
-2025-09-09 11:00:55,024 - INFO - 🔄 Merging 79 new cookies with existing ones...
-2025-09-09 11:00:55,025 - INFO - ✓ Loaded 68 valid cookies for proxy: 204.9.38.125:6446
-2025-09-09 11:00:55,025 - INFO - 📂 Found 68 existing cookies in database
-2025-09-09 11:00:55,025 - INFO - 🔄 Cookie merge details:
-2025-09-09 11:00:55,026 - INFO -    Kept existing: 1
-2025-09-09 11:00:55,026 - INFO -    Updated existing: 67
-2025-09-09 11:00:55,026 - INFO -    Added new: 12
-2025-09-09 11:00:55,026 - INFO -    Total result: 79
-2025-09-09 11:00:55,026 - INFO - 🔄 Cookie merge result:
-2025-09-09 11:00:55,026 - INFO -    Existing: 68
-2025-09-09 11:00:55,027 - INFO -    New: 79
-2025-09-09 11:00:55,027 - INFO -    Merged total: 79
-2025-09-09 11:00:55,027 - INFO - 💾 Attempting to save 79 cookies for proxy: 204.9.38.125:6446
-2025-09-09 11:00:55,028 - INFO - ✅ Successfully saved 79 cookies for proxy: 204.9.38.125:6446
-2025-09-09 11:00:55,029 - INFO - ✅ SUCCESSFULLY SAVED 79 merged cookies for proxy 204.9.38.125:6446
-2025-09-09 11:00:55,029 - INFO - 📋 Cookies by domain:
-2025-09-09 11:00:55,029 - INFO -    ✓ .adform.net: 2 cookies
-2025-09-09 11:00:55,029 - INFO -    ✓ .adkernel.com: 2 cookies
-2025-09-09 11:00:55,029 - INFO -    ✓ .admaster.cc: 1 cookies
-2025-09-09 11:00:55,029 - INFO -    ✓ .adnxs.com: 3 cookies
-2025-09-09 11:00:55,030 - INFO -    ✓ .bidr.io: 2 cookies
-2025-09-09 11:00:55,030 - INFO -    ✓ .bidswitch.net: 3 cookies
-2025-09-09 11:00:55,030 - INFO -    ✓ .bing.com: 1 cookies
-2025-09-09 11:00:55,030 - INFO -    ✓ .c.bing.com: 2 cookies
-2025-09-09 11:00:55,030 - INFO -    ✓ .c.clarity.ms: 2 cookies
-2025-09-09 11:00:55,030 - INFO -    ✓ .casalemedia.com: 3 cookies
-2025-09-09 11:00:55,030 - INFO -    ✓ .clarity.ms: 1 cookies
-2025-09-09 11:00:55,031 - INFO -    ✓ .criteo.com: 2 cookies
-2025-09-09 11:00:55,031 - INFO -    ✓ .crwdcntrl.net: 2 cookies
-2025-09-09 11:00:55,031 - INFO -    ✓ .doubleclick.net: 3 cookies
-2025-09-09 11:00:55,031 - INFO -    ✓ .fotmob.com: 14 cookies
-2025-09-09 11:00:55,031 - INFO -    ✓ .google.com: 3 cookies
-2025-09-09 11:00:55,031 - INFO -    ✓ .lescore.net: 8 cookies
-2025-09-09 11:00:55,031 - INFO -    ✓ .mediago.io: 1 cookies
-2025-09-09 11:00:55,032 - INFO -    ✓ .mouadzizi.com: 7 cookies
-2025-09-09 11:00:55,032 - INFO -    ✓ .openx.net: 1 cookies
-2025-09-09 11:00:55,032 - INFO -    ✓ .outbrain.com: 1 cookies
-2025-09-09 11:00:55,032 - INFO -    ✓ .quantserve.com: 2 cookies
-2025-09-09 11:00:55,032 - INFO -    ✓ .teads.tv: 1 cookies
-2025-09-09 11:00:55,032 - INFO -    ✓ .travelaudience.com: 1 cookies
-2025-09-09 11:00:55,032 - INFO -    ✓ .youtube.com: 4 cookies
-2025-09-09 11:00:55,033 - INFO -    ✓ .zemanta.com: 1 cookies
-2025-09-09 11:00:55,033 - INFO -    ✓ lwadm.com: 1 cookies
-2025-09-09 11:00:55,033 - INFO -    ✓ m.stripe.com: 1 cookies
-2025-09-09 11:00:55,033 - INFO -    ✓ ogs.google.com: 1 cookies
-2025-09-09 11:00:55,033 - INFO -    ✓ www.clarity.ms: 1 cookies
-2025-09-09 11:00:55,034 - INFO -    ✓ www.fotmob.com: 1 cookies
-2025-09-09 11:00:55,034 - INFO -    ✓ www.google.com: 1 cookies
-2025-09-09 11:00:55,052 - INFO - Kameleo profile 2b5b61b4-aedc-455d-84f6-83de67938b22 deleted
-2025-09-09 11:00:55,053 - INFO - ✓ Proxy 204.9.38.125:6446:aawikmkk:tx1f1a2yr843 completed successfully
-2025-09-09 11:00:55,053 - INFO - ==================================================
-2025-09-09 11:00:55,053 - INFO - FINAL RESULTS:
-2025-09-09 11:00:55,053 - INFO - Total proxies tested: 1
-2025-09-09 11:00:55,053 - INFO - Successful runs: 1
-2025-09-09 11:00:55,053 - INFO - Failed runs: 0
-2025-09-09 11:00:55,053 - INFO - ==================================================
-2025-09-09 11:01:03,272 - INFO - 127.0.0.1 - - [09/Sep/2025 11:01:03] "GET /api/cookies/summary HTTP/1.1" 200 -
-2025-09-09 11:01:03,272 - INFO - 127.0.0.1 - - [09/Sep/2025 11:01:03] "GET /api/cookies/stats HTTP/1.1" 200 -
+2025-09-09 11:10:43,117 - INFO - Cookie database initialized: cookies.db
+2025-09-09 11:10:43,153 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.110.175:8080
+2025-09-09 11:10:43,153 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-09 11:10:45,185 - INFO - 127.0.0.1 - - [09/Sep/2025 11:10:45] "[36mGET / HTTP/1.1[0m" 304 -
+2025-09-09 11:10:45,375 - INFO - 127.0.0.1 - - [09/Sep/2025 11:10:45] "GET /api/status HTTP/1.1" 200 -
+2025-09-09 11:10:45,375 - INFO - 127.0.0.1 - - [09/Sep/2025 11:10:45] "GET /socket.io/?EIO=4&transport=polling&t=PajzDdt HTTP/1.1" 200 -
+2025-09-09 11:10:45,376 - INFO - 127.0.0.1 - - [09/Sep/2025 11:10:45] "GET /api/results HTTP/1.1" 200 -
+2025-09-09 11:10:45,378 - INFO - 127.0.0.1 - - [09/Sep/2025 11:10:45] "GET /api/cookies/summary HTTP/1.1" 200 -
+2025-09-09 11:10:45,379 - INFO - 127.0.0.1 - - [09/Sep/2025 11:10:45] "GET /api/cookies/stats HTTP/1.1" 200 -
+2025-09-09 11:10:45,390 - INFO - Client connected to WebSocket
+2025-09-09 11:10:45,391 - INFO - 127.0.0.1 - - [09/Sep/2025 11:10:45] "POST /socket.io/?EIO=4&transport=polling&t=PajzDeA&sid=lQBgeYallsJFYeqUAAAA HTTP/1.1" 200 -
+2025-09-09 11:10:45,391 - INFO - 127.0.0.1 - - [09/Sep/2025 11:10:45] "GET /socket.io/?EIO=4&transport=polling&t=PajzDeA.0&sid=lQBgeYallsJFYeqUAAAA HTTP/1.1" 200 -
+2025-09-09 11:10:45,402 - INFO - 127.0.0.1 - - [09/Sep/2025 11:10:45] "GET /socket.io/?EIO=4&transport=polling&t=PajzDeO&sid=lQBgeYallsJFYeqUAAAA HTTP/1.1" 200 -
+2025-09-09 11:10:45,433 - INFO - 127.0.0.1 - - [09/Sep/2025 11:10:45] "GET /socket.io/?EIO=4&transport=polling&t=PajzDep&sid=lQBgeYallsJFYeqUAAAA HTTP/1.1" 200 -
+2025-09-09 11:11:10,311 - INFO - 🍪 Cookie management requested: False
+2025-09-09 11:11:10,314 - INFO - Cookie database initialized: cookies.db
+2025-09-09 11:11:10,315 - INFO - 2captcha solver initialized with API key: 56d4457439...
+2025-09-09 11:11:10,315 - INFO - Cookie management: Disabled
+2025-09-09 11:11:10,315 - INFO - 🍪 Bot created with cookie support: False
+2025-09-09 11:11:10,316 - INFO - Cookie database initialized: cookies.db
+2025-09-09 11:11:10,316 - INFO - Bot runner initialized with cookie management support
+2025-09-09 11:11:10,316 - INFO - Starting SEO bot with 25 proxies
+2025-09-09 11:11:10,316 - INFO - 127.0.0.1 - - [09/Sep/2025 11:11:10] "POST /api/start HTTP/1.1" 200 -
+2025-09-09 11:11:10,317 - INFO - Searching for 'sosyalbase.com' on domain 'discord offline sunucu üyesi satın al'
+2025-09-09 11:11:10,317 - INFO - Using Google domain: google.com.tr
+2025-09-09 11:11:10,317 - INFO - Device profile: Desktop
+2025-09-09 11:11:10,317 - INFO - --- Processing proxy 1/25 ---
+2025-09-09 11:11:10,318 - INFO - Testing proxy: 206.41.168.219:6884:aawikmkk:tx1f1a2yr843
+2025-09-09 11:11:10,319 - INFO - Testing proxy: 206.41.168.219:6884 (with auth)
+2025-09-09 11:11:11,189 - INFO - ✓ Proxy 206.41.168.219:6884 (with auth) is working. IP: 206.41.168.219
+2025-09-09 11:11:11,189 - INFO - Setting up Kameleo browser with proxy: 206.41.168.219:6884:aawikmkk:tx1f1a2yr843
+2025-09-09 11:11:11,190 - INFO - Kameleo client initialized on port 5050
+2025-09-09 11:11:11,190 - INFO - Loading available Desktop Chrome fingerprints...
+2025-09-09 11:11:11,980 - INFO - Loaded 25 unique Chrome fingerprints
+2025-09-09 11:11:11,980 - INFO - Creating Kameleo profile with proxy: 206.41.168.219:6884:aawikmkk:tx1f1a2yr843
+2025-09-09 11:11:11,980 - INFO - Selected unique fingerprint: d04a59ce5f94cc8afd033f04c93ae0282a75b48bc11946f0b48d6de50d31345a (1/25 used)
+2025-09-09 11:11:11,980 - INFO - Using authenticated proxy: 206.41.168.219:6884
+2025-09-09 11:11:12,122 - INFO - ✓ Kameleo profile created: 6b2f8907-8a14-407e-8eb3-0c10a5f4c730 for proxy 206.41.168.219:6884
+2025-09-09 11:11:15,476 - INFO - ✓ Desktop profile started
+2025-09-09 11:11:15,851 - INFO - Kameleo browser setup completed successfully
+2025-09-09 11:11:15,852 - INFO - Verifying proxy IP...
+2025-09-09 11:11:20,029 - INFO - Browser IP (via http://httpbin.org/ip): 206.41.168.219
+2025-09-09 11:11:21,415 - INFO - Real IP: 160.178.206.43
+2025-09-09 11:11:21,416 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-09 11:11:21,416 - INFO - Navigating to Google search: https://www.google.com.tr
+2025-09-09 11:11:22,716 - INFO - ⏰ Waiting 15 seconds after opening Google search...
+2025-09-09 11:11:37,760 - INFO - 🎭 Performing initial Google page interactions...
+2025-09-09 11:11:37,761 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:11:40,434 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:11:45,675 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:11:49,774 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:11:49,842 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:11:49,868 - INFO - Typing keyword: sosyalbase.com
+2025-09-09 11:11:59,679 - INFO - Browser closed
+2025-09-09 11:12:00,097 - ERROR - Google search failed: Message: Error during proxying: Connection refused (127.0.0.1:64005)
+
+2025-09-09 11:12:00,098 - ERROR - Google search failed
+2025-09-09 11:12:00,103 - ERROR - Error closing browser: Message: Error during proxying: Connection refused (127.0.0.1:64005)
+
+2025-09-09 11:12:00,103 - ERROR - ✗ Proxy 206.41.168.219:6884:aawikmkk:tx1f1a2yr843 failed
+2025-09-09 11:12:00,104 - INFO - ==================================================
+2025-09-09 11:12:00,104 - INFO - FINAL RESULTS:
+2025-09-09 11:12:00,104 - INFO - Total proxies tested: 25
+2025-09-09 11:12:00,104 - INFO - Successful runs: 0
+2025-09-09 11:12:00,104 - INFO - Failed runs: 25
+2025-09-09 11:12:00,104 - INFO - ==================================================
+2025-09-09 11:12:00,130 - INFO - Kameleo profile 6b2f8907-8a14-407e-8eb3-0c10a5f4c730 stopped
+2025-09-09 11:12:00,143 - INFO - Kameleo profile 6b2f8907-8a14-407e-8eb3-0c10a5f4c730 deleted
+2025-09-09 11:12:00,143 - INFO - Bot stopped by user
+2025-09-09 11:12:00,143 - INFO - 127.0.0.1 - - [09/Sep/2025 11:12:00] "POST /api/stop HTTP/1.1" 200 -
+2025-09-09 11:12:54,127 - INFO - 🍪 Cookie management requested: False
+2025-09-09 11:12:54,128 - INFO - Cookie database initialized: cookies.db
+2025-09-09 11:12:54,128 - INFO - 2captcha solver initialized with API key: 56d4457439...
+2025-09-09 11:12:54,128 - INFO - Cookie management: Disabled
+2025-09-09 11:12:54,128 - INFO - 🍪 Bot created with cookie support: False
+2025-09-09 11:12:54,128 - INFO - Cookie database initialized: cookies.db
+2025-09-09 11:12:54,128 - INFO - Bot runner initialized with cookie management support
+2025-09-09 11:12:54,129 - INFO - Starting SEO bot with 25 proxies
+2025-09-09 11:12:54,129 - INFO - Searching for 'discord offline sunucu üyesi satın al' on domain 'sosyalbase.com'
+2025-09-09 11:12:54,129 - INFO - Using Google domain: google.com.tr
+2025-09-09 11:12:54,129 - INFO - Device profile: Desktop
+2025-09-09 11:12:54,129 - INFO - --- Processing proxy 1/25 ---
+2025-09-09 11:12:54,129 - INFO - 127.0.0.1 - - [09/Sep/2025 11:12:54] "POST /api/start HTTP/1.1" 200 -
+2025-09-09 11:12:54,129 - INFO - Testing proxy: 50.114.243.242:6483:aawikmkk:tx1f1a2yr843
+2025-09-09 11:12:54,129 - INFO - Testing proxy: 50.114.243.242:6483 (with auth)
+2025-09-09 11:12:54,924 - INFO - ✓ Proxy 50.114.243.242:6483 (with auth) is working. IP: 50.114.243.242
+2025-09-09 11:12:54,925 - INFO - Setting up Kameleo browser with proxy: 50.114.243.242:6483:aawikmkk:tx1f1a2yr843
+2025-09-09 11:12:54,926 - INFO - Kameleo client initialized on port 5050
+2025-09-09 11:12:54,927 - INFO - Loading available Desktop Chrome fingerprints...
+2025-09-09 11:12:55,853 - INFO - Loaded 25 unique Chrome fingerprints
+2025-09-09 11:12:55,853 - INFO - Creating Kameleo profile with proxy: 50.114.243.242:6483:aawikmkk:tx1f1a2yr843
+2025-09-09 11:12:55,853 - INFO - Selected unique fingerprint: 9e78be72c03bc9de01628d57be10e404b210ce2f40674e14a6c005db215a923c (1/25 used)
+2025-09-09 11:12:55,854 - INFO - Using authenticated proxy: 50.114.243.242:6483
+2025-09-09 11:12:55,984 - INFO - ✓ Kameleo profile created: ed35de55-80b1-4dbe-ba10-b09755c2738a for proxy 50.114.243.242:6483
+2025-09-09 11:13:00,439 - INFO - ✓ Desktop profile started
+2025-09-09 11:13:00,787 - INFO - Kameleo browser setup completed successfully
+2025-09-09 11:13:00,788 - INFO - Verifying proxy IP...
+2025-09-09 11:13:05,862 - INFO - Browser IP (via http://httpbin.org/ip): 50.114.243.242
+2025-09-09 11:13:07,855 - INFO - Real IP: 160.178.206.43
+2025-09-09 11:13:07,856 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-09 11:13:07,857 - INFO - Navigating to Google search: https://www.google.com.tr
+2025-09-09 11:13:09,897 - INFO - ⏰ Waiting 15 seconds after opening Google search...
+2025-09-09 11:13:24,955 - INFO - 🎭 Performing initial Google page interactions...
+2025-09-09 11:13:24,956 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:13:25,980 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:13:32,931 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:13:37,668 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:13:37,738 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:13:37,763 - INFO - Typing keyword: discord offline sunucu üyesi satın al
+2025-09-09 11:13:49,581 - INFO - ✓ Google search completed successfully
+2025-09-09 11:13:49,582 - INFO - Looking for domain: sosyalbase.com
+2025-09-09 11:13:49,582 - INFO - 🔍 Searching on page 1
+2025-09-09 11:13:49,587 - INFO - 📊 Page 1 has 15 search results
+2025-09-09 11:13:49,826 - INFO - 📊 Cumulative results after page 1: 15
+2025-09-09 11:13:49,827 - INFO - Domain not found on page 1
+2025-09-09 11:13:49,828 - INFO - 🔍 Searching on page 2
+2025-09-09 11:13:56,859 - INFO - ✓ Navigated to page 2
+2025-09-09 11:13:56,860 - INFO - ⏰ Waiting 15 seconds on page 2...
+2025-09-09 11:14:11,917 - INFO - 🎭 Performing interactions on page 2...
+2025-09-09 11:14:11,918 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:14:13,138 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:14:19,041 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:14:23,571 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:14:26,384 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:14:28,497 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:14:28,498 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:14:28,516 - INFO - 📊 Page 2 has 10 search results
+2025-09-09 11:14:28,663 - INFO - 📊 Cumulative results after page 2: 25
+2025-09-09 11:14:28,663 - INFO - Domain not found on page 2
+2025-09-09 11:14:28,663 - INFO - 🔍 Searching on page 3
+2025-09-09 11:14:35,455 - INFO - ✓ Navigated to page 3
+2025-09-09 11:14:35,455 - INFO - ⏰ Waiting 15 seconds on page 3...
+2025-09-09 11:14:50,511 - INFO - 🎭 Performing interactions on page 3...
+2025-09-09 11:14:50,511 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:14:52,224 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:14:59,767 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:15:03,848 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:15:05,739 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:15:07,863 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:15:07,869 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:15:07,886 - INFO - 📊 Page 3 has 10 search results
+2025-09-09 11:15:08,039 - INFO - 📊 Cumulative results after page 3: 35
+2025-09-09 11:15:08,040 - INFO - Domain not found on page 3
+2025-09-09 11:15:08,040 - INFO - 🔍 Searching on page 4
+2025-09-09 11:15:14,780 - INFO - ✓ Navigated to page 4
+2025-09-09 11:15:14,781 - INFO - ⏰ Waiting 15 seconds on page 4...
+2025-09-09 11:15:29,838 - INFO - 🎭 Performing interactions on page 4...
+2025-09-09 11:15:29,839 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:15:32,139 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:15:37,531 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:15:41,757 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:15:44,087 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:15:46,686 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:15:46,688 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:15:46,709 - INFO - 📊 Page 4 has 10 search results
+2025-09-09 11:15:46,855 - INFO - 📊 Cumulative results after page 4: 45
+2025-09-09 11:15:46,855 - INFO - Domain not found on page 4
+2025-09-09 11:15:46,856 - INFO - 🔍 Searching on page 5
+2025-09-09 11:15:53,516 - INFO - ✓ Navigated to page 5
+2025-09-09 11:15:53,516 - INFO - ⏰ Waiting 15 seconds on page 5...
+2025-09-09 11:16:08,578 - INFO - 🎭 Performing interactions on page 5...
+2025-09-09 11:16:08,579 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:16:11,011 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:16:17,605 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:16:21,536 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:16:24,209 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:16:26,783 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:16:26,783 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:16:26,803 - INFO - 📊 Page 5 has 11 search results
+2025-09-09 11:16:26,971 - INFO - 📊 Cumulative results after page 5: 56
+2025-09-09 11:16:26,972 - INFO - Domain not found on page 5
+2025-09-09 11:16:26,972 - INFO - 🔍 Searching on page 6
+2025-09-09 11:16:33,648 - INFO - ✓ Navigated to page 6
+2025-09-09 11:16:33,648 - INFO - ⏰ Waiting 15 seconds on page 6...
+2025-09-09 11:16:48,708 - INFO - 🎭 Performing interactions on page 6...
+2025-09-09 11:16:48,709 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:16:50,621 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:16:57,263 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:17:01,739 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:17:03,838 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:17:05,922 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:17:05,922 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:17:05,933 - INFO - 📊 Page 6 has 10 search results
+2025-09-09 11:17:06,094 - INFO - 📊 Cumulative results after page 6: 66
+2025-09-09 11:17:06,095 - INFO - Domain not found on page 6
+2025-09-09 11:17:06,095 - INFO - 🔍 Searching on page 7
+2025-09-09 11:17:15,594 - INFO - ✓ Navigated to page 7
+2025-09-09 11:17:15,595 - INFO - ⏰ Waiting 15 seconds on page 7...
+2025-09-09 11:17:30,639 - INFO - 🎭 Performing interactions on page 7...
+2025-09-09 11:17:30,640 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:17:32,048 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:17:37,499 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:17:40,914 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:17:43,500 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:17:45,987 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:17:45,988 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:17:46,006 - INFO - 📊 Page 7 has 12 search results
+2025-09-09 11:17:46,168 - INFO - 📊 Cumulative results after page 7: 78
+2025-09-09 11:17:46,168 - INFO - Domain not found on page 7
+2025-09-09 11:17:46,169 - INFO - 🔍 Searching on page 8
+2025-09-09 11:17:52,892 - INFO - ✓ Navigated to page 8
+2025-09-09 11:17:52,893 - INFO - ⏰ Waiting 15 seconds on page 8...
+2025-09-09 11:18:07,944 - INFO - 🎭 Performing interactions on page 8...
+2025-09-09 11:18:07,945 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:18:10,523 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:18:15,777 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:18:21,007 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:18:23,765 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:18:26,223 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:18:26,224 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:18:26,241 - INFO - 📊 Page 8 has 10 search results
+2025-09-09 11:18:26,390 - INFO - 📊 Cumulative results after page 8: 88
+2025-09-09 11:18:26,390 - INFO - Domain not found on page 8
+2025-09-09 11:18:26,390 - INFO - 🔍 Searching on page 9
+2025-09-09 11:18:34,959 - INFO - ✓ Navigated to page 9
+2025-09-09 11:18:34,960 - INFO - ⏰ Waiting 15 seconds on page 9...
+2025-09-09 11:18:50,006 - INFO - 🎭 Performing interactions on page 9...
+2025-09-09 11:18:50,008 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:18:52,915 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:18:59,587 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:19:04,054 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:19:06,739 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:19:08,931 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:19:08,933 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:19:08,954 - INFO - 📊 Page 9 has 9 search results
+2025-09-09 11:19:09,084 - INFO - 📊 Cumulative results after page 9: 97
+2025-09-09 11:19:09,084 - INFO - Domain not found on page 9
+2025-09-09 11:19:09,084 - INFO - 🔍 Searching on page 10
+2025-09-09 11:19:09,089 - WARNING - Could not navigate to page 10: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="pnnext"]"}
+  (Session info: chrome=140.0.7339.41); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x0000000100650888 cxxbridge1$str$ptr + 2710432
+1   chromedriver                        0x00000001006489d0 cxxbridge1$str$ptr + 2677992
+2   chromedriver                        0x00000001001bfe28 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 67228
+3   chromedriver                        0x0000000100202ae4 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 340824
+4   chromedriver                        0x000000010023eef4 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 587624
+5   chromedriver                        0x00000001001f7d30 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 296356
+6   chromedriver                        0x000000010061b6d8 cxxbridge1$str$ptr + 2492912
+7   chromedriver                        0x000000010061e3e4 cxxbridge1$str$ptr + 2504444
+8   chromedriver                        0x000000010061e000 cxxbridge1$str$ptr + 2503448
+9   chromedriver                        0x0000000100602f60 cxxbridge1$str$ptr + 2392696
+10  chromedriver                        0x000000010061e9c8 cxxbridge1$str$ptr + 2505952
+11  chromedriver                        0x00000001005f5cb8 cxxbridge1$str$ptr + 2338768
+12  chromedriver                        0x00000001006391d4 cxxbridge1$str$ptr + 2614508
+13  chromedriver                        0x00000001006393a4 cxxbridge1$str$ptr + 2614972
+14  chromedriver                        0x000000010064861c cxxbridge1$str$ptr + 2677044
+15  libsystem_pthread.dylib             0x000000019025fc0c _pthread_start + 136
+16  libsystem_pthread.dylib             0x000000019025ab80 thread_start + 8
+
+2025-09-09 11:19:09,092 - WARNING - Domain not found in search results
+2025-09-09 11:19:09,094 - INFO - Browser closed
+2025-09-09 11:19:09,462 - INFO - Kameleo profile ed35de55-80b1-4dbe-ba10-b09755c2738a stopped
+2025-09-09 11:19:09,484 - INFO - Kameleo profile ed35de55-80b1-4dbe-ba10-b09755c2738a deleted
+2025-09-09 11:19:09,484 - ERROR - ✗ Proxy 50.114.243.242:6483:aawikmkk:tx1f1a2yr843 failed
+2025-09-09 11:19:09,484 - INFO - Waiting 3 seconds before next proxy...
+2025-09-09 11:19:12,500 - INFO - --- Processing proxy 2/25 ---
+2025-09-09 11:19:12,502 - INFO - Testing proxy: 209.99.134.213:5909:aawikmkk:tx1f1a2yr843
+2025-09-09 11:19:12,503 - INFO - Testing proxy: 209.99.134.213:5909 (with auth)
+2025-09-09 11:19:13,917 - INFO - ✓ Proxy 209.99.134.213:5909 (with auth) is working. IP: 209.99.134.213
+2025-09-09 11:19:13,921 - INFO - Setting up Kameleo browser with proxy: 209.99.134.213:5909:aawikmkk:tx1f1a2yr843
+2025-09-09 11:19:13,921 - INFO - Creating Kameleo profile with proxy: 209.99.134.213:5909:aawikmkk:tx1f1a2yr843
+2025-09-09 11:19:13,922 - INFO - Selected unique fingerprint: 900b1dd7d9aac7e11b699e37f3ef88f9c7a70a6aaa014e98a322835326991a07 (2/25 used)
+2025-09-09 11:19:13,922 - INFO - Using authenticated proxy: 209.99.134.213:5909
+2025-09-09 11:19:14,337 - INFO - ✓ Kameleo profile created: 78698575-82f2-430b-b05e-503ddab84c47 for proxy 209.99.134.213:5909
+2025-09-09 11:19:17,451 - INFO - ✓ Desktop profile started
+2025-09-09 11:19:17,795 - INFO - Kameleo browser setup completed successfully
+2025-09-09 11:19:17,799 - INFO - Verifying proxy IP...
+2025-09-09 11:19:21,957 - INFO - Browser IP (via http://httpbin.org/ip): 209.99.134.213
+2025-09-09 11:19:23,646 - INFO - Real IP: 160.178.206.43
+2025-09-09 11:19:23,647 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-09 11:19:23,647 - INFO - Navigating to Google search: https://www.google.com.tr
+2025-09-09 11:19:25,044 - INFO - ⏰ Waiting 15 seconds after opening Google search...
+2025-09-09 11:19:40,099 - INFO - 🎭 Performing initial Google page interactions...
+2025-09-09 11:19:40,101 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:19:43,010 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:19:48,516 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:19:52,238 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:19:52,300 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:19:52,325 - INFO - Typing keyword: discord offline sunucu üyesi satın al
+2025-09-09 11:20:03,757 - INFO - ✓ Google search completed successfully
+2025-09-09 11:20:03,758 - INFO - Looking for domain: sosyalbase.com
+2025-09-09 11:20:03,758 - INFO - 🔍 Searching on page 1
+2025-09-09 11:20:03,763 - INFO - 📊 Page 1 has 14 search results
+2025-09-09 11:20:04,014 - INFO - 📊 Cumulative results after page 1: 14
+2025-09-09 11:20:04,015 - INFO - Domain not found on page 1
+2025-09-09 11:20:04,015 - INFO - 🔍 Searching on page 2
+2025-09-09 11:20:10,492 - INFO - ✓ Navigated to page 2
+2025-09-09 11:20:10,493 - INFO - ⏰ Waiting 15 seconds on page 2...
+2025-09-09 11:20:25,550 - INFO - 🎭 Performing interactions on page 2...
+2025-09-09 11:20:25,551 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:20:27,670 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:20:34,241 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:20:38,312 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:20:40,995 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:20:42,974 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:20:42,975 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:20:42,993 - INFO - 📊 Page 2 has 10 search results
+2025-09-09 11:20:43,140 - INFO - 📊 Cumulative results after page 2: 24
+2025-09-09 11:20:43,140 - INFO - Domain not found on page 2
+2025-09-09 11:20:43,140 - INFO - 🔍 Searching on page 3
+2025-09-09 11:20:49,654 - INFO - ✓ Navigated to page 3
+2025-09-09 11:20:49,656 - INFO - ⏰ Waiting 15 seconds on page 3...
+2025-09-09 11:21:04,711 - INFO - 🎭 Performing interactions on page 3...
+2025-09-09 11:21:04,712 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:21:06,607 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:21:12,781 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:21:16,951 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:21:19,589 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:21:21,784 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:21:21,785 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:21:21,803 - INFO - 📊 Page 3 has 10 search results
+2025-09-09 11:21:21,944 - INFO - 📊 Cumulative results after page 3: 34
+2025-09-09 11:21:21,944 - INFO - Domain not found on page 3
+2025-09-09 11:21:21,945 - INFO - 🔍 Searching on page 4
+2025-09-09 11:21:28,557 - INFO - ✓ Navigated to page 4
+2025-09-09 11:21:28,558 - INFO - ⏰ Waiting 15 seconds on page 4...
+2025-09-09 11:21:43,605 - INFO - 🎭 Performing interactions on page 4...
+2025-09-09 11:21:43,606 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:21:45,760 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:21:53,008 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:21:57,712 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:22:00,216 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:22:02,274 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:22:02,275 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:22:02,295 - INFO - 📊 Page 4 has 10 search results
+2025-09-09 11:22:02,437 - INFO - 📊 Cumulative results after page 4: 44
+2025-09-09 11:22:02,437 - INFO - Domain not found on page 4
+2025-09-09 11:22:02,437 - INFO - 🔍 Searching on page 5
+2025-09-09 11:22:09,013 - INFO - ✓ Navigated to page 5
+2025-09-09 11:22:09,014 - INFO - ⏰ Waiting 15 seconds on page 5...
+2025-09-09 11:22:24,073 - INFO - 🎭 Performing interactions on page 5...
+2025-09-09 11:22:24,074 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:22:26,381 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:22:32,011 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:22:36,508 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:22:38,601 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:22:40,691 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:22:40,692 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:22:40,709 - INFO - 📊 Page 5 has 5 search results
+2025-09-09 11:22:40,793 - INFO - 📊 Cumulative results after page 5: 49
+2025-09-09 11:22:40,793 - INFO - Domain not found on page 5
+2025-09-09 11:22:40,793 - INFO - 🔍 Searching on page 6
+2025-09-09 11:22:40,797 - WARNING - Could not navigate to page 6: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="pnnext"]"}
+  (Session info: chrome=139.0.7258.66); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x0000000102aa13a0 cxxbridge1$str$ptr + 2559624
+1   chromedriver                        0x0000000102a99514 cxxbridge1$str$ptr + 2527228
+2   chromedriver                        0x0000000102633f34 cxxbridge1$string$len + 85140
+3   chromedriver                        0x0000000102676e28 cxxbridge1$string$len + 359304
+4   chromedriver                        0x00000001026b32d4 cxxbridge1$string$len + 606260
+5   chromedriver                        0x000000010266c034 cxxbridge1$string$len + 314772
+6   chromedriver                        0x0000000102a6c584 cxxbridge1$str$ptr + 2343020
+7   chromedriver                        0x0000000102a6f2ac cxxbridge1$str$ptr + 2354580
+8   chromedriver                        0x0000000102a6eec8 cxxbridge1$str$ptr + 2353584
+9   chromedriver                        0x0000000102a53d80 cxxbridge1$str$ptr + 2242664
+10  chromedriver                        0x0000000102a6f890 cxxbridge1$str$ptr + 2356088
+11  chromedriver                        0x0000000102a467a0 cxxbridge1$str$ptr + 2187912
+12  chromedriver                        0x0000000102a8a0bc cxxbridge1$str$ptr + 2464676
+13  chromedriver                        0x0000000102a8a28c cxxbridge1$str$ptr + 2465140
+14  chromedriver                        0x0000000102a99160 cxxbridge1$str$ptr + 2526280
+15  libsystem_pthread.dylib             0x000000019025fc0c _pthread_start + 136
+16  libsystem_pthread.dylib             0x000000019025ab80 thread_start + 8
+
+2025-09-09 11:22:40,797 - WARNING - Domain not found in search results
+2025-09-09 11:22:40,798 - INFO - Browser closed
+2025-09-09 11:22:41,255 - INFO - Kameleo profile 78698575-82f2-430b-b05e-503ddab84c47 stopped
+2025-09-09 11:22:41,275 - INFO - Kameleo profile 78698575-82f2-430b-b05e-503ddab84c47 deleted
+2025-09-09 11:22:41,276 - ERROR - ✗ Proxy 209.99.134.213:5909:aawikmkk:tx1f1a2yr843 failed
+2025-09-09 11:22:41,277 - INFO - Waiting 3 seconds before next proxy...
+2025-09-09 11:22:44,291 - INFO - --- Processing proxy 3/25 ---
+2025-09-09 11:22:44,292 - INFO - Testing proxy: 209.99.134.36:5732:aawikmkk:tx1f1a2yr843
+2025-09-09 11:22:44,293 - INFO - Testing proxy: 209.99.134.36:5732 (with auth)
+2025-09-09 11:22:45,659 - INFO - ✓ Proxy 209.99.134.36:5732 (with auth) is working. IP: 209.99.134.36
+2025-09-09 11:22:45,660 - INFO - Setting up Kameleo browser with proxy: 209.99.134.36:5732:aawikmkk:tx1f1a2yr843
+2025-09-09 11:22:45,660 - INFO - Creating Kameleo profile with proxy: 209.99.134.36:5732:aawikmkk:tx1f1a2yr843
+2025-09-09 11:22:45,661 - INFO - Selected unique fingerprint: 279aa56a616ac975110e926655b2e6e18bd7ccdf295c4b88a4c2e766122e93c1 (3/25 used)
+2025-09-09 11:22:45,661 - INFO - Using authenticated proxy: 209.99.134.36:5732
+2025-09-09 11:22:45,991 - INFO - ✓ Kameleo profile created: 2c7bac12-94a2-4a92-bc89-e3a6bb4528ba for proxy 209.99.134.36:5732
+2025-09-09 11:22:48,552 - INFO - ✓ Desktop profile started
+2025-09-09 11:22:48,866 - INFO - Kameleo browser setup completed successfully
+2025-09-09 11:22:48,867 - INFO - Verifying proxy IP...
+2025-09-09 11:22:54,873 - INFO - Browser IP (via http://httpbin.org/ip): 209.99.134.36
+2025-09-09 11:22:56,126 - INFO - Real IP: 160.178.206.43
+2025-09-09 11:22:56,127 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-09 11:22:56,127 - INFO - Navigating to Google search: https://www.google.com.tr
+2025-09-09 11:22:57,723 - INFO - ⏰ Waiting 15 seconds after opening Google search...
+2025-09-09 11:23:12,787 - INFO - 🎭 Performing initial Google page interactions...
+2025-09-09 11:23:12,788 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:23:13,886 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:23:21,299 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:23:25,173 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:23:25,278 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:23:25,303 - INFO - Typing keyword: discord offline sunucu üyesi satın al
+2025-09-09 11:23:36,768 - INFO - ✓ Google search completed successfully
+2025-09-09 11:23:36,768 - INFO - Looking for domain: sosyalbase.com
+2025-09-09 11:23:36,770 - INFO - 🔍 Searching on page 1
+2025-09-09 11:23:36,777 - INFO - 📊 Page 1 has 14 search results
+2025-09-09 11:23:37,117 - INFO - 📊 Cumulative results after page 1: 14
+2025-09-09 11:23:37,117 - INFO - Domain not found on page 1
+2025-09-09 11:23:37,117 - INFO - 🔍 Searching on page 2
+2025-09-09 11:23:43,756 - INFO - ✓ Navigated to page 2
+2025-09-09 11:23:43,757 - INFO - ⏰ Waiting 15 seconds on page 2...
+2025-09-09 11:23:58,818 - INFO - 🎭 Performing interactions on page 2...
+2025-09-09 11:23:58,818 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:24:01,469 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:24:06,153 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:24:10,638 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:24:13,415 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:24:15,871 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:24:15,872 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:24:15,888 - INFO - 📊 Page 2 has 10 search results
+2025-09-09 11:24:16,021 - INFO - 📊 Cumulative results after page 2: 24
+2025-09-09 11:24:16,021 - INFO - Domain not found on page 2
+2025-09-09 11:24:16,021 - INFO - 🔍 Searching on page 3
+2025-09-09 11:24:22,691 - INFO - ✓ Navigated to page 3
+2025-09-09 11:24:22,691 - INFO - ⏰ Waiting 15 seconds on page 3...
+2025-09-09 11:24:37,784 - INFO - 🎭 Performing interactions on page 3...
+2025-09-09 11:24:37,785 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:24:39,782 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:24:44,788 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:24:49,674 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:24:52,450 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:24:54,872 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:24:54,873 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:24:54,885 - INFO - 📊 Page 3 has 10 search results
+2025-09-09 11:24:55,043 - INFO - 📊 Cumulative results after page 3: 34
+2025-09-09 11:24:55,044 - INFO - Domain not found on page 3
+2025-09-09 11:24:55,044 - INFO - 🔍 Searching on page 4
+2025-09-09 11:25:01,652 - INFO - ✓ Navigated to page 4
+2025-09-09 11:25:01,653 - INFO - ⏰ Waiting 15 seconds on page 4...
+2025-09-09 11:25:16,784 - INFO - 🎭 Performing interactions on page 4...
+2025-09-09 11:25:16,786 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:25:18,766 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:25:24,512 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:25:28,241 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:25:31,036 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:25:33,375 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:25:33,376 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:25:33,386 - INFO - 📊 Page 4 has 10 search results
+2025-09-09 11:25:33,523 - INFO - 📊 Cumulative results after page 4: 44
+2025-09-09 11:25:33,523 - INFO - Domain not found on page 4
+2025-09-09 11:25:33,523 - INFO - 🔍 Searching on page 5
+2025-09-09 11:25:33,527 - WARNING - Could not navigate to page 5: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="pnnext"]"}
+  (Session info: chrome=139.0.7258.66); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x0000000104d493a0 cxxbridge1$str$ptr + 2559624
+1   chromedriver                        0x0000000104d41514 cxxbridge1$str$ptr + 2527228
+2   chromedriver                        0x00000001048dbf34 cxxbridge1$string$len + 85140
+3   chromedriver                        0x000000010491ee28 cxxbridge1$string$len + 359304
+4   chromedriver                        0x000000010495b2d4 cxxbridge1$string$len + 606260
+5   chromedriver                        0x0000000104914034 cxxbridge1$string$len + 314772
+6   chromedriver                        0x0000000104d14584 cxxbridge1$str$ptr + 2343020
+7   chromedriver                        0x0000000104d172ac cxxbridge1$str$ptr + 2354580
+8   chromedriver                        0x0000000104d16ec8 cxxbridge1$str$ptr + 2353584
+9   chromedriver                        0x0000000104cfbd80 cxxbridge1$str$ptr + 2242664
+10  chromedriver                        0x0000000104d17890 cxxbridge1$str$ptr + 2356088
+11  chromedriver                        0x0000000104cee7a0 cxxbridge1$str$ptr + 2187912
+12  chromedriver                        0x0000000104d320bc cxxbridge1$str$ptr + 2464676
+13  chromedriver                        0x0000000104d3228c cxxbridge1$str$ptr + 2465140
+14  chromedriver                        0x0000000104d41160 cxxbridge1$str$ptr + 2526280
+15  libsystem_pthread.dylib             0x000000019025fc0c _pthread_start + 136
+16  libsystem_pthread.dylib             0x000000019025ab80 thread_start + 8
+
+2025-09-09 11:25:33,527 - WARNING - Domain not found in search results
+2025-09-09 11:25:33,528 - INFO - Browser closed
+2025-09-09 11:25:33,701 - INFO - Kameleo profile 2c7bac12-94a2-4a92-bc89-e3a6bb4528ba stopped
+2025-09-09 11:25:33,717 - INFO - Kameleo profile 2c7bac12-94a2-4a92-bc89-e3a6bb4528ba deleted
+2025-09-09 11:25:33,717 - ERROR - ✗ Proxy 209.99.134.36:5732:aawikmkk:tx1f1a2yr843 failed
+2025-09-09 11:25:33,717 - INFO - Waiting 3 seconds before next proxy...
+2025-09-09 11:25:36,748 - INFO - --- Processing proxy 4/25 ---
+2025-09-09 11:25:36,751 - INFO - Testing proxy: 206.41.168.247:6912:aawikmkk:tx1f1a2yr843
+2025-09-09 11:25:36,752 - INFO - Testing proxy: 206.41.168.247:6912 (with auth)
+2025-09-09 11:25:38,860 - INFO - ✓ Proxy 206.41.168.247:6912 (with auth) is working. IP: 206.41.168.247
+2025-09-09 11:25:38,862 - INFO - Setting up Kameleo browser with proxy: 206.41.168.247:6912:aawikmkk:tx1f1a2yr843
+2025-09-09 11:25:38,862 - INFO - Creating Kameleo profile with proxy: 206.41.168.247:6912:aawikmkk:tx1f1a2yr843
+2025-09-09 11:25:38,863 - INFO - Selected unique fingerprint: 302625df359cc665f42de1347340e25e6edab0206aa244ec8ba9f1f6125a7fa7 (4/25 used)
+2025-09-09 11:25:38,863 - INFO - Using authenticated proxy: 206.41.168.247:6912
+2025-09-09 11:25:39,294 - INFO - ✓ Kameleo profile created: c75a9a4b-b20a-4746-972b-6efab8f57938 for proxy 206.41.168.247:6912
+2025-09-09 11:25:41,893 - INFO - ✓ Desktop profile started
+2025-09-09 11:25:42,270 - INFO - Kameleo browser setup completed successfully
+2025-09-09 11:25:42,270 - INFO - Verifying proxy IP...
+2025-09-09 11:25:50,402 - INFO - Browser IP (via http://httpbin.org/ip): 206.41.168.247
+2025-09-09 11:25:50,790 - INFO - Real IP: 160.178.206.43
+2025-09-09 11:25:50,792 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-09 11:25:50,792 - INFO - Navigating to Google search: https://www.google.com.tr
+2025-09-09 11:25:52,234 - INFO - ⏰ Waiting 15 seconds after opening Google search...
+2025-09-09 11:26:07,351 - INFO - 🎭 Performing initial Google page interactions...
+2025-09-09 11:26:07,353 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:26:09,734 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:26:15,276 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:26:19,190 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:26:19,257 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:26:19,281 - INFO - Typing keyword: discord offline sunucu üyesi satın al
+2025-09-09 11:26:40,522 - ERROR - Google search failed: Message: 
+Stacktrace:
+0   chromedriver                        0x00000001049ba23c cxxbridge1$str$ptr + 2843732
+1   chromedriver                        0x00000001049b25e8 cxxbridge1$str$ptr + 2811904
+2   chromedriver                        0x000000010450cea4 cxxbridge1$string$len + 84448
+3   chromedriver                        0x000000010454f834 cxxbridge1$string$len + 357232
+4   chromedriver                        0x000000010458b738 cxxbridge1$string$len + 602740
+5   chromedriver                        0x0000000104544914 cxxbridge1$string$len + 312400
+6   chromedriver                        0x0000000104985fd8 cxxbridge1$str$ptr + 2630128
+7   chromedriver                        0x0000000104988da0 cxxbridge1$str$ptr + 2641848
+8   chromedriver                        0x00000001049889c0 cxxbridge1$str$ptr + 2640856
+9   chromedriver                        0x000000010496e000 cxxbridge1$str$ptr + 2531864
+10  chromedriver                        0x0000000104989384 cxxbridge1$str$ptr + 2643356
+11  chromedriver                        0x00000001049608f0 cxxbridge1$str$ptr + 2476808
+12  chromedriver                        0x00000001049a3d04 cxxbridge1$str$ptr + 2752284
+13  chromedriver                        0x00000001049a3ed4 cxxbridge1$str$ptr + 2752748
+14  chromedriver                        0x00000001049b222c cxxbridge1$str$ptr + 2810948
+15  libsystem_pthread.dylib             0x000000019025fc0c _pthread_start + 136
+16  libsystem_pthread.dylib             0x000000019025ab80 thread_start + 8
+
+2025-09-09 11:26:40,525 - ERROR - Google search failed
+2025-09-09 11:26:40,530 - INFO - Browser closed
+2025-09-09 11:26:40,735 - INFO - Kameleo profile c75a9a4b-b20a-4746-972b-6efab8f57938 stopped
+2025-09-09 11:26:40,763 - INFO - Kameleo profile c75a9a4b-b20a-4746-972b-6efab8f57938 deleted
+2025-09-09 11:26:40,765 - ERROR - ✗ Proxy 206.41.168.247:6912:aawikmkk:tx1f1a2yr843 failed
+2025-09-09 11:26:40,765 - INFO - Waiting 3 seconds before next proxy...
+2025-09-09 11:26:43,791 - INFO - --- Processing proxy 5/25 ---
+2025-09-09 11:26:43,792 - INFO - Testing proxy: 204.9.38.184:6505:aawikmkk:tx1f1a2yr843
+2025-09-09 11:26:43,793 - INFO - Testing proxy: 204.9.38.184:6505 (with auth)
+2025-09-09 11:26:46,936 - INFO - ✓ Proxy 204.9.38.184:6505 (with auth) is working. IP: 204.9.38.184
+2025-09-09 11:26:46,937 - INFO - Setting up Kameleo browser with proxy: 204.9.38.184:6505:aawikmkk:tx1f1a2yr843
+2025-09-09 11:26:46,937 - INFO - Creating Kameleo profile with proxy: 204.9.38.184:6505:aawikmkk:tx1f1a2yr843
+2025-09-09 11:26:46,938 - INFO - Selected unique fingerprint: f877b94e0fa1c969db5e149980c3625f1484410d4fd24e02891c03ba98277511 (5/25 used)
+2025-09-09 11:26:46,938 - INFO - Using authenticated proxy: 204.9.38.184:6505
+2025-09-09 11:26:47,103 - INFO - ✓ Kameleo profile created: 15554a19-8859-4f59-86a4-2b85bcda121f for proxy 204.9.38.184:6505
+2025-09-09 11:26:50,665 - INFO - ✓ Desktop profile started
+2025-09-09 11:26:51,002 - INFO - Kameleo browser setup completed successfully
+2025-09-09 11:26:51,002 - INFO - Verifying proxy IP...
+2025-09-09 11:26:54,877 - INFO - Browser IP (via http://httpbin.org/ip): 204.9.38.184
+2025-09-09 11:26:56,244 - INFO - Real IP: 160.178.206.43
+2025-09-09 11:26:56,245 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-09 11:26:56,245 - INFO - Navigating to Google search: https://www.google.com.tr
+2025-09-09 11:26:57,630 - INFO - ⏰ Waiting 15 seconds after opening Google search...
+2025-09-09 11:27:12,744 - INFO - 🎭 Performing initial Google page interactions...
+2025-09-09 11:27:12,746 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:27:14,825 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:27:21,514 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:27:26,247 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:27:26,295 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:27:26,325 - INFO - Typing keyword: discord offline sunucu üyesi satın al
+2025-09-09 11:27:38,978 - INFO - ✓ Google search completed successfully
+2025-09-09 11:27:38,979 - INFO - Looking for domain: sosyalbase.com
+2025-09-09 11:27:38,979 - INFO - 🔍 Searching on page 1
+2025-09-09 11:27:38,984 - INFO - 📊 Page 1 has 14 search results
+2025-09-09 11:27:39,173 - INFO - 📊 Cumulative results after page 1: 14
+2025-09-09 11:27:39,173 - INFO - Domain not found on page 1
+2025-09-09 11:27:39,174 - INFO - 🔍 Searching on page 2
+2025-09-09 11:27:45,715 - INFO - ✓ Navigated to page 2
+2025-09-09 11:27:45,716 - INFO - ⏰ Waiting 15 seconds on page 2...
+2025-09-09 11:28:00,827 - INFO - 🎭 Performing interactions on page 2...
+2025-09-09 11:28:00,829 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:28:01,922 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:28:09,405 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:28:13,926 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:28:16,633 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:28:18,699 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:28:18,699 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:28:18,716 - INFO - 📊 Page 2 has 10 search results
+2025-09-09 11:28:18,857 - INFO - 📊 Cumulative results after page 2: 24
+2025-09-09 11:28:18,857 - INFO - Domain not found on page 2
+2025-09-09 11:28:18,857 - INFO - 🔍 Searching on page 3
+2025-09-09 11:28:25,397 - INFO - ✓ Navigated to page 3
+2025-09-09 11:28:25,400 - INFO - ⏰ Waiting 15 seconds on page 3...
+2025-09-09 11:28:40,510 - INFO - 🎭 Performing interactions on page 3...
+2025-09-09 11:28:40,512 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:28:41,675 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:28:46,740 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:28:50,258 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:28:52,697 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:28:55,013 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:28:55,013 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:28:55,032 - INFO - 📊 Page 3 has 10 search results
+2025-09-09 11:28:55,175 - INFO - 📊 Cumulative results after page 3: 34
+2025-09-09 11:28:55,175 - INFO - Domain not found on page 3
+2025-09-09 11:28:55,175 - INFO - 🔍 Searching on page 4
+2025-09-09 11:29:01,747 - INFO - ✓ Navigated to page 4
+2025-09-09 11:29:01,748 - INFO - ⏰ Waiting 15 seconds on page 4...
+2025-09-09 11:29:16,875 - INFO - 🎭 Performing interactions on page 4...
+2025-09-09 11:29:16,877 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:29:18,171 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:29:24,778 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:29:29,152 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:29:31,298 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:29:33,300 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:29:33,300 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:29:33,317 - INFO - 📊 Page 4 has 10 search results
+2025-09-09 11:29:33,466 - INFO - 📊 Cumulative results after page 4: 44
+2025-09-09 11:29:33,466 - INFO - Domain not found on page 4
+2025-09-09 11:29:33,466 - INFO - 🔍 Searching on page 5
+2025-09-09 11:29:40,191 - INFO - ✓ Navigated to page 5
+2025-09-09 11:29:40,194 - INFO - ⏰ Waiting 15 seconds on page 5...
+2025-09-09 11:29:55,324 - INFO - 🎭 Performing interactions on page 5...
+2025-09-09 11:29:55,326 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:29:56,733 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:30:03,492 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:30:07,647 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:30:10,366 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:30:12,233 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:30:12,234 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:30:12,250 - INFO - 📊 Page 5 has 5 search results
+2025-09-09 11:30:12,343 - INFO - 📊 Cumulative results after page 5: 49
+2025-09-09 11:30:12,343 - INFO - Domain not found on page 5
+2025-09-09 11:30:12,343 - INFO - 🔍 Searching on page 6
+2025-09-09 11:30:12,349 - WARNING - Could not navigate to page 6: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="pnnext"]"}
+  (Session info: chrome=139.0.7258.66); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x00000001028213a0 cxxbridge1$str$ptr + 2559624
+1   chromedriver                        0x0000000102819514 cxxbridge1$str$ptr + 2527228
+2   chromedriver                        0x00000001023b3f34 cxxbridge1$string$len + 85140
+3   chromedriver                        0x00000001023f6e28 cxxbridge1$string$len + 359304
+4   chromedriver                        0x00000001024332d4 cxxbridge1$string$len + 606260
+5   chromedriver                        0x00000001023ec034 cxxbridge1$string$len + 314772
+6   chromedriver                        0x00000001027ec584 cxxbridge1$str$ptr + 2343020
+7   chromedriver                        0x00000001027ef2ac cxxbridge1$str$ptr + 2354580
+8   chromedriver                        0x00000001027eeec8 cxxbridge1$str$ptr + 2353584
+9   chromedriver                        0x00000001027d3d80 cxxbridge1$str$ptr + 2242664
+10  chromedriver                        0x00000001027ef890 cxxbridge1$str$ptr + 2356088
+11  chromedriver                        0x00000001027c67a0 cxxbridge1$str$ptr + 2187912
+12  chromedriver                        0x000000010280a0bc cxxbridge1$str$ptr + 2464676
+13  chromedriver                        0x000000010280a28c cxxbridge1$str$ptr + 2465140
+14  chromedriver                        0x0000000102819160 cxxbridge1$str$ptr + 2526280
+15  libsystem_pthread.dylib             0x000000019025fc0c _pthread_start + 136
+16  libsystem_pthread.dylib             0x000000019025ab80 thread_start + 8
+
+2025-09-09 11:30:12,352 - WARNING - Domain not found in search results
+2025-09-09 11:30:12,354 - INFO - Browser closed
+2025-09-09 11:30:12,516 - INFO - Kameleo profile 15554a19-8859-4f59-86a4-2b85bcda121f stopped
+2025-09-09 11:30:12,533 - INFO - Kameleo profile 15554a19-8859-4f59-86a4-2b85bcda121f deleted
+2025-09-09 11:30:12,534 - ERROR - ✗ Proxy 204.9.38.184:6505:aawikmkk:tx1f1a2yr843 failed
+2025-09-09 11:30:12,534 - INFO - Waiting 3 seconds before next proxy...
+2025-09-09 11:30:15,557 - INFO - --- Processing proxy 6/25 ---
+2025-09-09 11:30:15,558 - INFO - Testing proxy: 50.114.99.175:6916:aawikmkk:tx1f1a2yr843
+2025-09-09 11:30:15,558 - INFO - Testing proxy: 50.114.99.175:6916 (with auth)
+2025-09-09 11:30:17,653 - INFO - ✓ Proxy 50.114.99.175:6916 (with auth) is working. IP: 50.114.99.175
+2025-09-09 11:30:17,655 - INFO - Setting up Kameleo browser with proxy: 50.114.99.175:6916:aawikmkk:tx1f1a2yr843
+2025-09-09 11:30:17,655 - INFO - Creating Kameleo profile with proxy: 50.114.99.175:6916:aawikmkk:tx1f1a2yr843
+2025-09-09 11:30:17,655 - INFO - Selected unique fingerprint: e7e42878660ac39b0212620b03de81393e72bf8520954746988357d22994e0d3 (6/25 used)
+2025-09-09 11:30:17,655 - INFO - Using authenticated proxy: 50.114.99.175:6916
+2025-09-09 11:30:18,075 - INFO - ✓ Kameleo profile created: 65213145-90e6-4f5c-9b7b-e385e7d0d236 for proxy 50.114.99.175:6916
+2025-09-09 11:30:21,287 - INFO - ✓ Desktop profile started
+2025-09-09 11:30:21,648 - INFO - Kameleo browser setup completed successfully
+2025-09-09 11:30:21,648 - INFO - Verifying proxy IP...
+2025-09-09 11:30:26,620 - INFO - Browser IP (via http://httpbin.org/ip): 50.114.99.175
+2025-09-09 11:30:27,382 - INFO - Real IP: 160.178.206.43
+2025-09-09 11:30:27,382 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-09 11:30:27,382 - INFO - Navigating to Google search: https://www.google.com.tr
+2025-09-09 11:30:29,257 - INFO - ⏰ Waiting 15 seconds after opening Google search...
+2025-09-09 11:30:44,377 - INFO - 🎭 Performing initial Google page interactions...
+2025-09-09 11:30:44,379 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:30:45,942 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:30:52,939 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:30:58,586 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:30:58,652 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:30:58,677 - INFO - Typing keyword: discord offline sunucu üyesi satın al
+2025-09-09 11:31:09,415 - INFO - ✓ Google search completed successfully
+2025-09-09 11:31:09,415 - INFO - Looking for domain: sosyalbase.com
+2025-09-09 11:31:09,415 - INFO - 🔍 Searching on page 1
+2025-09-09 11:31:09,421 - INFO - 📊 Page 1 has 15 search results
+2025-09-09 11:31:09,629 - INFO - 📊 Cumulative results after page 1: 15
+2025-09-09 11:31:09,630 - INFO - Domain not found on page 1
+2025-09-09 11:31:09,630 - INFO - 🔍 Searching on page 2
+2025-09-09 11:31:16,479 - INFO - ✓ Navigated to page 2
+2025-09-09 11:31:16,480 - INFO - ⏰ Waiting 15 seconds on page 2...
+2025-09-09 11:31:31,591 - INFO - 🎭 Performing interactions on page 2...
+2025-09-09 11:31:31,593 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:31:32,954 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:31:38,661 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:31:43,634 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:31:46,442 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:31:49,294 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:31:49,295 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:31:49,312 - INFO - 📊 Page 2 has 10 search results
+2025-09-09 11:31:49,457 - INFO - 📊 Cumulative results after page 2: 25
+2025-09-09 11:31:49,457 - INFO - Domain not found on page 2
+2025-09-09 11:31:49,457 - INFO - 🔍 Searching on page 3
+2025-09-09 11:31:56,123 - INFO - ✓ Navigated to page 3
+2025-09-09 11:31:56,125 - INFO - ⏰ Waiting 15 seconds on page 3...
+2025-09-09 11:32:11,237 - INFO - 🎭 Performing interactions on page 3...
+2025-09-09 11:32:11,238 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:32:13,010 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:32:18,196 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:32:23,844 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:32:25,882 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:32:28,592 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:32:28,593 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:32:28,613 - INFO - 📊 Page 3 has 10 search results
+2025-09-09 11:32:28,760 - INFO - 📊 Cumulative results after page 3: 35
+2025-09-09 11:32:28,760 - INFO - Domain not found on page 3
+2025-09-09 11:32:28,760 - INFO - 🔍 Searching on page 4
+2025-09-09 11:32:35,375 - INFO - ✓ Navigated to page 4
+2025-09-09 11:32:35,375 - INFO - ⏰ Waiting 15 seconds on page 4...
+2025-09-09 11:32:50,500 - INFO - 🎭 Performing interactions on page 4...
+2025-09-09 11:32:50,501 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:32:51,685 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:32:58,035 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:33:02,606 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:33:04,974 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:33:07,795 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:33:07,795 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:33:07,810 - INFO - 📊 Page 4 has 10 search results
+2025-09-09 11:33:07,952 - INFO - 📊 Cumulative results after page 4: 45
+2025-09-09 11:33:07,952 - INFO - Domain not found on page 4
+2025-09-09 11:33:07,952 - INFO - 🔍 Searching on page 5
+2025-09-09 11:33:14,626 - INFO - ✓ Navigated to page 5
+2025-09-09 11:33:14,627 - INFO - ⏰ Waiting 15 seconds on page 5...
+2025-09-09 11:33:29,742 - INFO - 🎭 Performing interactions on page 5...
+2025-09-09 11:33:29,743 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:33:32,011 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:33:37,047 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:33:40,839 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:33:43,407 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:33:45,702 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:33:45,704 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:33:45,724 - INFO - 📊 Page 5 has 11 search results
+2025-09-09 11:33:45,864 - INFO - 📊 Cumulative results after page 5: 56
+2025-09-09 11:33:45,864 - INFO - Domain not found on page 5
+2025-09-09 11:33:45,864 - INFO - 🔍 Searching on page 6
+2025-09-09 11:33:52,500 - INFO - ✓ Navigated to page 6
+2025-09-09 11:33:52,502 - INFO - ⏰ Waiting 15 seconds on page 6...
+2025-09-09 11:34:07,624 - INFO - 🎭 Performing interactions on page 6...
+2025-09-09 11:34:07,625 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:34:10,143 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:34:16,707 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:34:20,885 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:34:23,430 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:34:25,795 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:34:25,796 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:34:25,814 - INFO - 📊 Page 6 has 10 search results
+2025-09-09 11:34:25,955 - INFO - 📊 Cumulative results after page 6: 66
+2025-09-09 11:34:25,955 - INFO - Domain not found on page 6
+2025-09-09 11:34:25,955 - INFO - 🔍 Searching on page 7
+2025-09-09 11:34:36,734 - INFO - ✓ Navigated to page 7
+2025-09-09 11:34:36,736 - INFO - ⏰ Waiting 15 seconds on page 7...
+2025-09-09 11:34:51,861 - INFO - 🎭 Performing interactions on page 7...
+2025-09-09 11:34:51,864 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:34:53,702 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:34:59,837 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:35:04,193 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:35:07,022 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:35:09,764 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:35:09,766 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:35:09,783 - INFO - 📊 Page 7 has 12 search results
+2025-09-09 11:35:09,942 - INFO - 📊 Cumulative results after page 7: 78
+2025-09-09 11:35:09,942 - INFO - Domain not found on page 7
+2025-09-09 11:35:09,943 - INFO - 🔍 Searching on page 8
+2025-09-09 11:35:16,742 - INFO - ✓ Navigated to page 8
+2025-09-09 11:35:16,742 - INFO - ⏰ Waiting 15 seconds on page 8...
+2025-09-09 11:35:31,849 - INFO - 🎭 Performing interactions on page 8...
+2025-09-09 11:35:31,851 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:35:33,763 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:35:40,100 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:35:44,271 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:35:47,012 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:35:49,555 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:35:49,556 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:35:49,573 - INFO - 📊 Page 8 has 10 search results
+2025-09-09 11:35:49,717 - INFO - 📊 Cumulative results after page 8: 88
+2025-09-09 11:35:49,717 - INFO - Domain not found on page 8
+2025-09-09 11:35:49,717 - INFO - 🔍 Searching on page 9
+2025-09-09 11:35:58,187 - INFO - ✓ Navigated to page 9
+2025-09-09 11:35:58,189 - INFO - ⏰ Waiting 15 seconds on page 9...
+2025-09-09 11:36:13,303 - INFO - 🎭 Performing interactions on page 9...
+2025-09-09 11:36:13,304 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:36:15,521 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:36:22,006 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:36:26,445 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:36:28,536 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:36:30,832 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:36:30,833 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:36:30,852 - INFO - 📊 Page 9 has 9 search results
+2025-09-09 11:36:30,957 - INFO - 📊 Cumulative results after page 9: 97
+2025-09-09 11:36:30,957 - INFO - Domain not found on page 9
+2025-09-09 11:36:30,958 - INFO - 🔍 Searching on page 10
+2025-09-09 11:36:30,962 - WARNING - Could not navigate to page 10: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="pnnext"]"}
+  (Session info: chrome=140.0.7339.41); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x000000010124c888 cxxbridge1$str$ptr + 2710432
+1   chromedriver                        0x00000001012449d0 cxxbridge1$str$ptr + 2677992
+2   chromedriver                        0x0000000100dbbe28 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 67228
+3   chromedriver                        0x0000000100dfeae4 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 340824
+4   chromedriver                        0x0000000100e3aef4 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 587624
+5   chromedriver                        0x0000000100df3d30 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 296356
+6   chromedriver                        0x00000001012176d8 cxxbridge1$str$ptr + 2492912
+7   chromedriver                        0x000000010121a3e4 cxxbridge1$str$ptr + 2504444
+8   chromedriver                        0x000000010121a000 cxxbridge1$str$ptr + 2503448
+9   chromedriver                        0x00000001011fef60 cxxbridge1$str$ptr + 2392696
+10  chromedriver                        0x000000010121a9c8 cxxbridge1$str$ptr + 2505952
+11  chromedriver                        0x00000001011f1cb8 cxxbridge1$str$ptr + 2338768
+12  chromedriver                        0x00000001012351d4 cxxbridge1$str$ptr + 2614508
+13  chromedriver                        0x00000001012353a4 cxxbridge1$str$ptr + 2614972
+14  chromedriver                        0x000000010124461c cxxbridge1$str$ptr + 2677044
+15  libsystem_pthread.dylib             0x000000019025fc0c _pthread_start + 136
+16  libsystem_pthread.dylib             0x000000019025ab80 thread_start + 8
+
+2025-09-09 11:36:30,963 - WARNING - Domain not found in search results
+2025-09-09 11:36:30,964 - INFO - Browser closed
+2025-09-09 11:36:31,386 - INFO - Kameleo profile 65213145-90e6-4f5c-9b7b-e385e7d0d236 stopped
+2025-09-09 11:36:31,406 - INFO - Kameleo profile 65213145-90e6-4f5c-9b7b-e385e7d0d236 deleted
+2025-09-09 11:36:31,406 - ERROR - ✗ Proxy 50.114.99.175:6916:aawikmkk:tx1f1a2yr843 failed
+2025-09-09 11:36:31,406 - INFO - Waiting 3 seconds before next proxy...
+2025-09-09 11:36:34,435 - INFO - --- Processing proxy 7/25 ---
+2025-09-09 11:36:34,435 - INFO - Testing proxy: 206.41.168.177:6842:aawikmkk:tx1f1a2yr843
+2025-09-09 11:36:34,435 - INFO - Testing proxy: 206.41.168.177:6842 (with auth)
+2025-09-09 11:36:36,741 - INFO - ✓ Proxy 206.41.168.177:6842 (with auth) is working. IP: 206.41.168.177
+2025-09-09 11:36:36,742 - INFO - Setting up Kameleo browser with proxy: 206.41.168.177:6842:aawikmkk:tx1f1a2yr843
+2025-09-09 11:36:36,742 - INFO - Creating Kameleo profile with proxy: 206.41.168.177:6842:aawikmkk:tx1f1a2yr843
+2025-09-09 11:36:36,743 - INFO - Selected unique fingerprint: 99e7c46df094c18cf85e4b36da36dd72bd5ef8fac2ad409e979820ef0fb3b9e2 (7/25 used)
+2025-09-09 11:36:36,743 - INFO - Using authenticated proxy: 206.41.168.177:6842
+2025-09-09 11:36:37,104 - INFO - ✓ Kameleo profile created: a1f59500-0ded-4c87-beac-dff19fda5b5f for proxy 206.41.168.177:6842
+2025-09-09 11:36:39,815 - INFO - ✓ Desktop profile started
+2025-09-09 11:36:40,221 - INFO - Kameleo browser setup completed successfully
+2025-09-09 11:36:40,222 - INFO - Verifying proxy IP...
+2025-09-09 11:36:44,719 - INFO - Browser IP (via http://httpbin.org/ip): 206.41.168.177
+2025-09-09 11:36:45,059 - INFO - Real IP: 160.178.206.43
+2025-09-09 11:36:45,060 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-09 11:36:45,061 - INFO - Navigating to Google search: https://www.google.com.tr
+2025-09-09 11:36:46,604 - INFO - ⏰ Waiting 15 seconds after opening Google search...
+2025-09-09 11:37:01,717 - INFO - 🎭 Performing initial Google page interactions...
+2025-09-09 11:37:01,718 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:37:03,021 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:37:08,526 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:37:12,870 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:37:12,927 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:37:12,952 - INFO - Typing keyword: discord offline sunucu üyesi satın al
+2025-09-09 11:37:34,502 - ERROR - Google search failed: Message: 
+Stacktrace:
+0   chromedriver                        0x0000000102ed4888 cxxbridge1$str$ptr + 2710432
+1   chromedriver                        0x0000000102ecc9d0 cxxbridge1$str$ptr + 2677992
+2   chromedriver                        0x0000000102a43e28 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 67228
+3   chromedriver                        0x0000000102a86ae4 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 340824
+4   chromedriver                        0x0000000102ac2ef4 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 587624
+5   chromedriver                        0x0000000102a7bd30 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 296356
+6   chromedriver                        0x0000000102e9f6d8 cxxbridge1$str$ptr + 2492912
+7   chromedriver                        0x0000000102ea23e4 cxxbridge1$str$ptr + 2504444
+8   chromedriver                        0x0000000102ea2000 cxxbridge1$str$ptr + 2503448
+9   chromedriver                        0x0000000102e86f60 cxxbridge1$str$ptr + 2392696
+10  chromedriver                        0x0000000102ea29c8 cxxbridge1$str$ptr + 2505952
+11  chromedriver                        0x0000000102e79cb8 cxxbridge1$str$ptr + 2338768
+12  chromedriver                        0x0000000102ebd1d4 cxxbridge1$str$ptr + 2614508
+13  chromedriver                        0x0000000102ebd3a4 cxxbridge1$str$ptr + 2614972
+14  chromedriver                        0x0000000102ecc61c cxxbridge1$str$ptr + 2677044
+15  libsystem_pthread.dylib             0x000000019025fc0c _pthread_start + 136
+16  libsystem_pthread.dylib             0x000000019025ab80 thread_start + 8
+
+2025-09-09 11:37:34,506 - ERROR - Google search failed
+2025-09-09 11:37:34,516 - INFO - Browser closed
+2025-09-09 11:37:35,156 - INFO - Kameleo profile a1f59500-0ded-4c87-beac-dff19fda5b5f stopped
+2025-09-09 11:37:35,171 - INFO - Kameleo profile a1f59500-0ded-4c87-beac-dff19fda5b5f deleted
+2025-09-09 11:37:35,171 - ERROR - ✗ Proxy 206.41.168.177:6842:aawikmkk:tx1f1a2yr843 failed
+2025-09-09 11:37:35,172 - INFO - Waiting 3 seconds before next proxy...
+2025-09-09 11:37:38,200 - INFO - --- Processing proxy 8/25 ---
+2025-09-09 11:37:38,202 - INFO - Testing proxy: 206.41.168.39:6704:aawikmkk:tx1f1a2yr843
+2025-09-09 11:37:38,202 - INFO - Testing proxy: 206.41.168.39:6704 (with auth)
+2025-09-09 11:37:40,759 - INFO - ✓ Proxy 206.41.168.39:6704 (with auth) is working. IP: 206.41.168.39
+2025-09-09 11:37:40,760 - INFO - Setting up Kameleo browser with proxy: 206.41.168.39:6704:aawikmkk:tx1f1a2yr843
+2025-09-09 11:37:40,761 - INFO - Creating Kameleo profile with proxy: 206.41.168.39:6704:aawikmkk:tx1f1a2yr843
+2025-09-09 11:37:40,761 - INFO - Selected unique fingerprint: 01af107e0b32cf62091c4efc6e18736f91bf9bb86e874e929bddeef06d89fffd (8/25 used)
+2025-09-09 11:37:40,761 - INFO - Using authenticated proxy: 206.41.168.39:6704
+2025-09-09 11:37:40,969 - INFO - ✓ Kameleo profile created: afb3edb5-9676-42e8-89b5-2bb7c4d0fd1a for proxy 206.41.168.39:6704
+2025-09-09 11:37:43,659 - INFO - ✓ Desktop profile started
+2025-09-09 11:37:44,003 - INFO - Kameleo browser setup completed successfully
+2025-09-09 11:37:44,004 - INFO - Verifying proxy IP...
+2025-09-09 11:37:48,172 - INFO - Browser IP (via http://httpbin.org/ip): 206.41.168.39
+2025-09-09 11:37:50,163 - INFO - Real IP: 160.178.206.43
+2025-09-09 11:37:50,164 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-09 11:37:50,164 - INFO - Navigating to Google search: https://www.google.com.tr
+2025-09-09 11:37:51,591 - INFO - ⏰ Waiting 15 seconds after opening Google search...
+2025-09-09 11:38:06,710 - INFO - 🎭 Performing initial Google page interactions...
+2025-09-09 11:38:06,711 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:38:08,184 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:38:14,985 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:38:19,351 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:38:19,420 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:38:19,446 - INFO - Typing keyword: discord offline sunucu üyesi satın al
+2025-09-09 11:38:41,398 - ERROR - Google search failed: Message: 
+Stacktrace:
+0   chromedriver                        0x0000000100ef0888 cxxbridge1$str$ptr + 2710432
+1   chromedriver                        0x0000000100ee89d0 cxxbridge1$str$ptr + 2677992
+2   chromedriver                        0x0000000100a5fe28 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 67228
+3   chromedriver                        0x0000000100aa2ae4 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 340824
+4   chromedriver                        0x0000000100adeef4 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 587624
+5   chromedriver                        0x0000000100a97d30 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 296356
+6   chromedriver                        0x0000000100ebb6d8 cxxbridge1$str$ptr + 2492912
+7   chromedriver                        0x0000000100ebe3e4 cxxbridge1$str$ptr + 2504444
+8   chromedriver                        0x0000000100ebe000 cxxbridge1$str$ptr + 2503448
+9   chromedriver                        0x0000000100ea2f60 cxxbridge1$str$ptr + 2392696
+10  chromedriver                        0x0000000100ebe9c8 cxxbridge1$str$ptr + 2505952
+11  chromedriver                        0x0000000100e95cb8 cxxbridge1$str$ptr + 2338768
+12  chromedriver                        0x0000000100ed91d4 cxxbridge1$str$ptr + 2614508
+13  chromedriver                        0x0000000100ed93a4 cxxbridge1$str$ptr + 2614972
+14  chromedriver                        0x0000000100ee861c cxxbridge1$str$ptr + 2677044
+15  libsystem_pthread.dylib             0x000000019025fc0c _pthread_start + 136
+16  libsystem_pthread.dylib             0x000000019025ab80 thread_start + 8
+
+2025-09-09 11:38:41,401 - ERROR - Google search failed
+2025-09-09 11:38:41,412 - INFO - Browser closed
+2025-09-09 11:38:41,673 - INFO - Kameleo profile afb3edb5-9676-42e8-89b5-2bb7c4d0fd1a stopped
+2025-09-09 11:38:41,688 - INFO - Kameleo profile afb3edb5-9676-42e8-89b5-2bb7c4d0fd1a deleted
+2025-09-09 11:38:41,688 - ERROR - ✗ Proxy 206.41.168.39:6704:aawikmkk:tx1f1a2yr843 failed
+2025-09-09 11:38:41,688 - INFO - Waiting 3 seconds before next proxy...
+2025-09-09 11:38:44,713 - INFO - --- Processing proxy 9/25 ---
+2025-09-09 11:38:44,715 - INFO - Testing proxy: 209.99.134.11:5707:aawikmkk:tx1f1a2yr843
+2025-09-09 11:38:44,715 - INFO - Testing proxy: 209.99.134.11:5707 (with auth)
+2025-09-09 11:38:45,856 - INFO - ✓ Proxy 209.99.134.11:5707 (with auth) is working. IP: 209.99.134.11
+2025-09-09 11:38:45,857 - INFO - Setting up Kameleo browser with proxy: 209.99.134.11:5707:aawikmkk:tx1f1a2yr843
+2025-09-09 11:38:45,857 - INFO - Creating Kameleo profile with proxy: 209.99.134.11:5707:aawikmkk:tx1f1a2yr843
+2025-09-09 11:38:45,859 - INFO - Selected unique fingerprint: ab89af397bb2c18ad2dcfc017bacc50ae5a3d8f4b1a448f084e7470388bbadd1 (9/25 used)
+2025-09-09 11:38:45,859 - INFO - Using authenticated proxy: 209.99.134.11:5707
+2025-09-09 11:38:45,987 - INFO - ✓ Kameleo profile created: fb4bd095-0cda-4854-a002-f4bd111c7e93 for proxy 209.99.134.11:5707
+2025-09-09 11:38:48,697 - INFO - ✓ Desktop profile started
+2025-09-09 11:38:49,069 - INFO - Kameleo browser setup completed successfully
+2025-09-09 11:38:49,070 - INFO - Verifying proxy IP...
+2025-09-09 11:38:55,059 - INFO - Browser IP (via http://httpbin.org/ip): 209.99.134.11
+2025-09-09 11:38:55,905 - INFO - Real IP: 160.178.206.43
+2025-09-09 11:38:55,907 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-09 11:38:55,907 - INFO - Navigating to Google search: https://www.google.com.tr
+2025-09-09 11:38:57,275 - INFO - ⏰ Waiting 15 seconds after opening Google search...
+2025-09-09 11:39:12,392 - INFO - 🎭 Performing initial Google page interactions...
+2025-09-09 11:39:12,394 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:39:14,366 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:39:21,396 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:39:25,599 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:39:25,661 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:39:25,683 - INFO - Typing keyword: discord offline sunucu üyesi satın al
+2025-09-09 11:39:37,087 - INFO - ✓ Google search completed successfully
+2025-09-09 11:39:37,088 - INFO - Looking for domain: sosyalbase.com
+2025-09-09 11:39:37,088 - INFO - 🔍 Searching on page 1
+2025-09-09 11:39:37,092 - INFO - 📊 Page 1 has 14 search results
+2025-09-09 11:39:37,429 - INFO - 📊 Cumulative results after page 1: 14
+2025-09-09 11:39:37,429 - INFO - Domain not found on page 1
+2025-09-09 11:39:37,429 - INFO - 🔍 Searching on page 2
+2025-09-09 11:39:44,207 - INFO - ✓ Navigated to page 2
+2025-09-09 11:39:44,208 - INFO - ⏰ Waiting 15 seconds on page 2...
+2025-09-09 11:39:59,339 - INFO - 🎭 Performing interactions on page 2...
+2025-09-09 11:39:59,341 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:40:02,163 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:40:06,915 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:40:10,695 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:40:12,708 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:40:15,253 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:40:15,254 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:40:15,269 - INFO - 📊 Page 2 has 10 search results
+2025-09-09 11:40:15,430 - INFO - 📊 Cumulative results after page 2: 24
+2025-09-09 11:40:15,430 - INFO - Domain not found on page 2
+2025-09-09 11:40:15,430 - INFO - 🔍 Searching on page 3
+2025-09-09 11:40:21,980 - INFO - ✓ Navigated to page 3
+2025-09-09 11:40:21,981 - INFO - ⏰ Waiting 15 seconds on page 3...
+2025-09-09 11:40:37,099 - INFO - 🎭 Performing interactions on page 3...
+2025-09-09 11:40:37,100 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:40:39,062 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:40:45,975 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:40:49,571 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:40:51,504 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:40:53,602 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:40:53,603 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:40:53,620 - INFO - 📊 Page 3 has 10 search results
+2025-09-09 11:40:53,756 - INFO - 📊 Cumulative results after page 3: 34
+2025-09-09 11:40:53,756 - INFO - Domain not found on page 3
+2025-09-09 11:40:53,757 - INFO - 🔍 Searching on page 4
+2025-09-09 11:41:00,384 - INFO - ✓ Navigated to page 4
+2025-09-09 11:41:00,384 - INFO - ⏰ Waiting 15 seconds on page 4...
+2025-09-09 11:41:15,518 - INFO - 🎭 Performing interactions on page 4...
+2025-09-09 11:41:15,520 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:41:16,801 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:41:23,823 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:41:28,051 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:41:30,839 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:41:32,800 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:41:32,801 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:41:32,820 - INFO - 📊 Page 4 has 10 search results
+2025-09-09 11:41:32,973 - INFO - 📊 Cumulative results after page 4: 44
+2025-09-09 11:41:32,974 - INFO - Domain not found on page 4
+2025-09-09 11:41:32,974 - INFO - 🔍 Searching on page 5
+2025-09-09 11:41:39,589 - INFO - ✓ Navigated to page 5
+2025-09-09 11:41:39,589 - INFO - ⏰ Waiting 15 seconds on page 5...
+2025-09-09 11:41:54,704 - INFO - 🎭 Performing interactions on page 5...
+2025-09-09 11:41:54,704 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:41:56,383 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:42:01,486 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:42:05,873 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:42:08,545 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:42:10,621 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:42:10,622 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:42:10,633 - INFO - 📊 Page 5 has 2 search results
+2025-09-09 11:42:10,668 - INFO - 📊 Cumulative results after page 5: 46
+2025-09-09 11:42:10,668 - INFO - Domain not found on page 5
+2025-09-09 11:42:10,668 - INFO - 🔍 Searching on page 6
+2025-09-09 11:42:10,675 - WARNING - Could not navigate to page 6: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="pnnext"]"}
+  (Session info: chrome=139.0.7258.66); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x000000010051d3a0 cxxbridge1$str$ptr + 2559624
+1   chromedriver                        0x0000000100515514 cxxbridge1$str$ptr + 2527228
+2   chromedriver                        0x00000001000aff34 cxxbridge1$string$len + 85140
+3   chromedriver                        0x00000001000f2e28 cxxbridge1$string$len + 359304
+4   chromedriver                        0x000000010012f2d4 cxxbridge1$string$len + 606260
+5   chromedriver                        0x00000001000e8034 cxxbridge1$string$len + 314772
+6   chromedriver                        0x00000001004e8584 cxxbridge1$str$ptr + 2343020
+7   chromedriver                        0x00000001004eb2ac cxxbridge1$str$ptr + 2354580
+8   chromedriver                        0x00000001004eaec8 cxxbridge1$str$ptr + 2353584
+9   chromedriver                        0x00000001004cfd80 cxxbridge1$str$ptr + 2242664
+10  chromedriver                        0x00000001004eb890 cxxbridge1$str$ptr + 2356088
+11  chromedriver                        0x00000001004c27a0 cxxbridge1$str$ptr + 2187912
+12  chromedriver                        0x00000001005060bc cxxbridge1$str$ptr + 2464676
+13  chromedriver                        0x000000010050628c cxxbridge1$str$ptr + 2465140
+14  chromedriver                        0x0000000100515160 cxxbridge1$str$ptr + 2526280
+15  libsystem_pthread.dylib             0x000000019025fc0c _pthread_start + 136
+16  libsystem_pthread.dylib             0x000000019025ab80 thread_start + 8
+
+2025-09-09 11:42:10,675 - WARNING - Domain not found in search results
+2025-09-09 11:42:10,677 - INFO - Browser closed
+2025-09-09 11:42:11,409 - INFO - Kameleo profile fb4bd095-0cda-4854-a002-f4bd111c7e93 stopped
+2025-09-09 11:42:11,431 - INFO - Kameleo profile fb4bd095-0cda-4854-a002-f4bd111c7e93 deleted
+2025-09-09 11:42:11,432 - ERROR - ✗ Proxy 209.99.134.11:5707:aawikmkk:tx1f1a2yr843 failed
+2025-09-09 11:42:11,432 - INFO - Waiting 3 seconds before next proxy...
+2025-09-09 11:42:14,464 - INFO - --- Processing proxy 10/25 ---
+2025-09-09 11:42:14,466 - INFO - Testing proxy: 209.99.134.209:5905:aawikmkk:tx1f1a2yr843
+2025-09-09 11:42:14,466 - INFO - Testing proxy: 209.99.134.209:5905 (with auth)
+2025-09-09 11:42:15,407 - INFO - ✓ Proxy 209.99.134.209:5905 (with auth) is working. IP: 209.99.134.209
+2025-09-09 11:42:15,408 - INFO - Setting up Kameleo browser with proxy: 209.99.134.209:5905:aawikmkk:tx1f1a2yr843
+2025-09-09 11:42:15,408 - INFO - Creating Kameleo profile with proxy: 209.99.134.209:5905:aawikmkk:tx1f1a2yr843
+2025-09-09 11:42:15,408 - INFO - Selected unique fingerprint: 167e02c5d08ac943f420e23c555be68f39cdfc2069594892aafbc0e9b3adbd5e (10/25 used)
+2025-09-09 11:42:15,408 - INFO - Using authenticated proxy: 209.99.134.209:5905
+2025-09-09 11:42:15,789 - INFO - ✓ Kameleo profile created: 7a81a787-c010-4646-8f0a-c643caffab9e for proxy 209.99.134.209:5905
+2025-09-09 11:42:18,742 - INFO - ✓ Desktop profile started
+2025-09-09 11:42:19,123 - INFO - Kameleo browser setup completed successfully
+2025-09-09 11:42:19,125 - INFO - Verifying proxy IP...
+2025-09-09 11:42:23,479 - INFO - Browser IP (via http://httpbin.org/ip): 209.99.134.209
+2025-09-09 11:42:24,191 - INFO - Real IP: 160.178.206.43
+2025-09-09 11:42:24,194 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-09 11:42:24,194 - INFO - Navigating to Google search: https://www.google.com.tr
+2025-09-09 11:42:25,757 - INFO - ⏰ Waiting 15 seconds after opening Google search...
+2025-09-09 11:42:40,878 - INFO - 🎭 Performing initial Google page interactions...
+2025-09-09 11:42:40,880 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:42:42,704 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:42:48,416 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:42:52,961 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:42:53,014 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:42:53,036 - INFO - Typing keyword: discord offline sunucu üyesi satın al
+2025-09-09 11:43:03,921 - INFO - ✓ Google search completed successfully
+2025-09-09 11:43:03,923 - INFO - Looking for domain: sosyalbase.com
+2025-09-09 11:43:03,923 - INFO - 🔍 Searching on page 1
+2025-09-09 11:43:03,927 - INFO - 📊 Page 1 has 14 search results
+2025-09-09 11:43:04,193 - INFO - 📊 Cumulative results after page 1: 14
+2025-09-09 11:43:04,193 - INFO - Domain not found on page 1
+2025-09-09 11:43:04,193 - INFO - 🔍 Searching on page 2
+2025-09-09 11:43:10,757 - INFO - ✓ Navigated to page 2
+2025-09-09 11:43:10,759 - INFO - ⏰ Waiting 15 seconds on page 2...
+2025-09-09 11:43:25,894 - INFO - 🎭 Performing interactions on page 2...
+2025-09-09 11:43:25,895 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:43:27,956 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:43:32,872 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:43:36,960 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:43:39,759 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:43:42,283 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:43:42,284 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:43:42,302 - INFO - 📊 Page 2 has 10 search results
+2025-09-09 11:43:42,467 - INFO - 📊 Cumulative results after page 2: 24
+2025-09-09 11:43:42,468 - INFO - Domain not found on page 2
+2025-09-09 11:43:42,468 - INFO - 🔍 Searching on page 3
+2025-09-09 11:43:49,028 - INFO - ✓ Navigated to page 3
+2025-09-09 11:43:49,029 - INFO - ⏰ Waiting 15 seconds on page 3...
+2025-09-09 11:44:04,158 - INFO - 🎭 Performing interactions on page 3...
+2025-09-09 11:44:04,159 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:44:05,740 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:44:11,612 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:44:16,415 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:44:18,371 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:44:20,316 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:44:20,316 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:44:20,325 - INFO - 📊 Page 3 has 10 search results
+2025-09-09 11:44:20,456 - INFO - 📊 Cumulative results after page 3: 34
+2025-09-09 11:44:20,456 - INFO - Domain not found on page 3
+2025-09-09 11:44:20,456 - INFO - 🔍 Searching on page 4
+2025-09-09 11:44:27,014 - INFO - ✓ Navigated to page 4
+2025-09-09 11:44:27,015 - INFO - ⏰ Waiting 15 seconds on page 4...
+2025-09-09 11:44:42,117 - INFO - 🎭 Performing interactions on page 4...
+2025-09-09 11:44:42,119 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:44:44,098 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:44:51,172 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:44:55,671 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:44:57,820 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:45:00,311 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:45:00,312 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:45:00,328 - INFO - 📊 Page 4 has 10 search results
+2025-09-09 11:45:00,488 - INFO - 📊 Cumulative results after page 4: 44
+2025-09-09 11:45:00,489 - INFO - Domain not found on page 4
+2025-09-09 11:45:00,490 - INFO - 🔍 Searching on page 5
+2025-09-09 11:45:07,394 - INFO - ✓ Navigated to page 5
+2025-09-09 11:45:07,395 - INFO - ⏰ Waiting 15 seconds on page 5...
+2025-09-09 11:45:22,514 - INFO - 🎭 Performing interactions on page 5...
+2025-09-09 11:45:22,515 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:45:24,227 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:45:29,045 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:45:33,588 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:45:35,716 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:45:38,387 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:45:38,388 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:45:38,404 - INFO - 📊 Page 5 has 5 search results
+2025-09-09 11:45:38,481 - INFO - 📊 Cumulative results after page 5: 49
+2025-09-09 11:45:38,482 - INFO - Domain not found on page 5
+2025-09-09 11:45:38,482 - INFO - 🔍 Searching on page 6
+2025-09-09 11:45:38,487 - WARNING - Could not navigate to page 6: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="pnnext"]"}
+  (Session info: chrome=140.0.7339.41); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x0000000105440888 cxxbridge1$str$ptr + 2710432
+1   chromedriver                        0x00000001054389d0 cxxbridge1$str$ptr + 2677992
+2   chromedriver                        0x0000000104fafe28 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 67228
+3   chromedriver                        0x0000000104ff2ae4 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 340824
+4   chromedriver                        0x000000010502eef4 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 587624
+5   chromedriver                        0x0000000104fe7d30 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 296356
+6   chromedriver                        0x000000010540b6d8 cxxbridge1$str$ptr + 2492912
+7   chromedriver                        0x000000010540e3e4 cxxbridge1$str$ptr + 2504444
+8   chromedriver                        0x000000010540e000 cxxbridge1$str$ptr + 2503448
+9   chromedriver                        0x00000001053f2f60 cxxbridge1$str$ptr + 2392696
+10  chromedriver                        0x000000010540e9c8 cxxbridge1$str$ptr + 2505952
+11  chromedriver                        0x00000001053e5cb8 cxxbridge1$str$ptr + 2338768
+12  chromedriver                        0x00000001054291d4 cxxbridge1$str$ptr + 2614508
+13  chromedriver                        0x00000001054293a4 cxxbridge1$str$ptr + 2614972
+14  chromedriver                        0x000000010543861c cxxbridge1$str$ptr + 2677044
+15  libsystem_pthread.dylib             0x000000019025fc0c _pthread_start + 136
+16  libsystem_pthread.dylib             0x000000019025ab80 thread_start + 8
+
+2025-09-09 11:45:38,490 - WARNING - Domain not found in search results
+2025-09-09 11:45:38,493 - INFO - Browser closed
+2025-09-09 11:45:38,950 - INFO - Kameleo profile 7a81a787-c010-4646-8f0a-c643caffab9e stopped
+2025-09-09 11:45:38,968 - INFO - Kameleo profile 7a81a787-c010-4646-8f0a-c643caffab9e deleted
+2025-09-09 11:45:38,969 - ERROR - ✗ Proxy 209.99.134.209:5905:aawikmkk:tx1f1a2yr843 failed
+2025-09-09 11:45:38,969 - INFO - Waiting 3 seconds before next proxy...
+2025-09-09 11:45:42,000 - INFO - --- Processing proxy 11/25 ---
+2025-09-09 11:45:42,001 - INFO - Testing proxy: 108.165.227.196:5437:aawikmkk:tx1f1a2yr843
+2025-09-09 11:45:42,002 - INFO - Testing proxy: 108.165.227.196:5437 (with auth)
+2025-09-09 11:45:42,886 - INFO - ✓ Proxy 108.165.227.196:5437 (with auth) is working. IP: 108.165.227.196
+2025-09-09 11:45:42,888 - INFO - Setting up Kameleo browser with proxy: 108.165.227.196:5437:aawikmkk:tx1f1a2yr843
+2025-09-09 11:45:42,888 - INFO - Creating Kameleo profile with proxy: 108.165.227.196:5437:aawikmkk:tx1f1a2yr843
+2025-09-09 11:45:42,889 - INFO - Selected unique fingerprint: 85b283bcb8a6cc91066748d222313218fe859125931e47769f208644c02babea (11/25 used)
+2025-09-09 11:45:42,889 - INFO - Using authenticated proxy: 108.165.227.196:5437
+2025-09-09 11:45:43,257 - INFO - ✓ Kameleo profile created: 64590e8a-2fdd-4338-a7ea-0b0ec3c1b286 for proxy 108.165.227.196:5437
+2025-09-09 11:45:46,074 - INFO - ✓ Desktop profile started
+2025-09-09 11:45:46,743 - INFO - Kameleo browser setup completed successfully
+2025-09-09 11:45:46,746 - INFO - Verifying proxy IP...
+2025-09-09 11:45:50,705 - INFO - Browser IP (via http://httpbin.org/ip): 108.165.227.196
+2025-09-09 11:45:53,022 - INFO - Real IP: 160.178.206.43
+2025-09-09 11:45:53,024 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-09 11:45:53,024 - INFO - Navigating to Google search: https://www.google.com.tr
+2025-09-09 11:45:55,083 - INFO - ⏰ Waiting 15 seconds after opening Google search...
+2025-09-09 11:46:10,209 - INFO - 🎭 Performing initial Google page interactions...
+2025-09-09 11:46:10,210 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:46:12,280 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:46:18,624 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:46:23,247 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:46:23,312 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:46:23,340 - INFO - Typing keyword: discord offline sunucu üyesi satın al
+2025-09-09 11:46:33,950 - INFO - ✓ Google search completed successfully
+2025-09-09 11:46:33,951 - INFO - Looking for domain: sosyalbase.com
+2025-09-09 11:46:33,951 - INFO - 🔍 Searching on page 1
+2025-09-09 11:46:33,956 - INFO - 📊 Page 1 has 15 search results
+2025-09-09 11:46:34,183 - INFO - 📊 Cumulative results after page 1: 15
+2025-09-09 11:46:34,183 - INFO - Domain not found on page 1
+2025-09-09 11:46:34,183 - INFO - 🔍 Searching on page 2
+2025-09-09 11:46:41,122 - INFO - ✓ Navigated to page 2
+2025-09-09 11:46:41,123 - INFO - ⏰ Waiting 15 seconds on page 2...
+2025-09-09 11:46:56,228 - INFO - 🎭 Performing interactions on page 2...
+2025-09-09 11:46:56,229 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:46:58,024 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:47:04,591 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:47:08,750 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:47:11,138 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:47:13,075 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:47:13,075 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:47:13,085 - INFO - 📊 Page 2 has 10 search results
+2025-09-09 11:47:13,219 - INFO - 📊 Cumulative results after page 2: 25
+2025-09-09 11:47:13,219 - INFO - Domain not found on page 2
+2025-09-09 11:47:13,219 - INFO - 🔍 Searching on page 3
+2025-09-09 11:47:19,960 - INFO - ✓ Navigated to page 3
+2025-09-09 11:47:19,962 - INFO - ⏰ Waiting 15 seconds on page 3...
+2025-09-09 11:47:35,074 - INFO - 🎭 Performing interactions on page 3...
+2025-09-09 11:47:35,076 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:47:38,060 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:47:45,621 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:47:49,889 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:47:51,874 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:47:53,939 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:47:53,941 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:47:53,958 - INFO - 📊 Page 3 has 10 search results
+2025-09-09 11:47:54,121 - INFO - 📊 Cumulative results after page 3: 35
+2025-09-09 11:47:54,122 - INFO - Domain not found on page 3
+2025-09-09 11:47:54,122 - INFO - 🔍 Searching on page 4
+2025-09-09 11:48:00,817 - INFO - ✓ Navigated to page 4
+2025-09-09 11:48:00,817 - INFO - ⏰ Waiting 15 seconds on page 4...
+2025-09-09 11:48:15,922 - INFO - 🎭 Performing interactions on page 4...
+2025-09-09 11:48:15,925 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:48:18,712 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:48:24,203 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:48:28,495 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:48:30,951 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:48:33,393 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:48:33,394 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:48:33,407 - INFO - 📊 Page 4 has 10 search results
+2025-09-09 11:48:33,548 - INFO - 📊 Cumulative results after page 4: 45
+2025-09-09 11:48:33,548 - INFO - Domain not found on page 4
+2025-09-09 11:48:33,548 - INFO - 🔍 Searching on page 5
+2025-09-09 11:48:40,269 - INFO - ✓ Navigated to page 5
+2025-09-09 11:48:40,270 - INFO - ⏰ Waiting 15 seconds on page 5...
+2025-09-09 11:48:55,380 - INFO - 🎭 Performing interactions on page 5...
+2025-09-09 11:48:55,381 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:48:58,103 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:49:03,457 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:49:06,711 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:49:09,557 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:49:12,099 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:49:12,101 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:49:12,117 - INFO - 📊 Page 5 has 11 search results
+2025-09-09 11:49:12,286 - INFO - 📊 Cumulative results after page 5: 56
+2025-09-09 11:49:12,287 - INFO - Domain not found on page 5
+2025-09-09 11:49:12,287 - INFO - 🔍 Searching on page 6
+2025-09-09 11:49:19,015 - INFO - ✓ Navigated to page 6
+2025-09-09 11:49:19,015 - INFO - ⏰ Waiting 15 seconds on page 6...
+2025-09-09 11:49:34,141 - INFO - 🎭 Performing interactions on page 6...
+2025-09-09 11:49:34,142 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:49:36,518 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:49:43,649 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:49:47,248 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:49:49,346 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:49:52,144 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:49:52,146 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:49:52,162 - INFO - 📊 Page 6 has 10 search results
+2025-09-09 11:49:52,310 - INFO - 📊 Cumulative results after page 6: 66
+2025-09-09 11:49:52,310 - INFO - Domain not found on page 6
+2025-09-09 11:49:52,311 - INFO - 🔍 Searching on page 7
+2025-09-09 11:50:01,948 - INFO - ✓ Navigated to page 7
+2025-09-09 11:50:01,948 - INFO - ⏰ Waiting 15 seconds on page 7...
+2025-09-09 11:50:17,063 - INFO - 🎭 Performing interactions on page 7...
+2025-09-09 11:50:17,064 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:50:18,235 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:50:23,781 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:50:28,619 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:50:30,521 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:50:33,348 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:50:33,349 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:50:33,365 - INFO - 📊 Page 7 has 12 search results
+2025-09-09 11:50:33,516 - INFO - 📊 Cumulative results after page 7: 78
+2025-09-09 11:50:33,516 - INFO - Domain not found on page 7
+2025-09-09 11:50:33,516 - INFO - 🔍 Searching on page 8
+2025-09-09 11:50:40,210 - INFO - ✓ Navigated to page 8
+2025-09-09 11:50:40,212 - INFO - ⏰ Waiting 15 seconds on page 8...
+2025-09-09 11:50:55,317 - INFO - 🎭 Performing interactions on page 8...
+2025-09-09 11:50:55,318 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:50:58,093 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:51:03,544 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:51:07,422 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:51:09,911 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:51:12,541 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:51:12,542 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:51:12,553 - INFO - 📊 Page 8 has 10 search results
+2025-09-09 11:51:12,711 - INFO - 📊 Cumulative results after page 8: 88
+2025-09-09 11:51:12,711 - INFO - Domain not found on page 8
+2025-09-09 11:51:12,711 - INFO - 🔍 Searching on page 9
+2025-09-09 11:51:20,636 - INFO - ✓ Navigated to page 9
+2025-09-09 11:51:20,638 - INFO - ⏰ Waiting 15 seconds on page 9...
+2025-09-09 11:51:35,742 - INFO - 🎭 Performing interactions on page 9...
+2025-09-09 11:51:35,743 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:51:38,684 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:51:44,821 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:51:50,313 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:51:52,231 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:51:54,663 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:51:54,664 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:51:54,680 - INFO - 📊 Page 9 has 9 search results
+2025-09-09 11:51:54,822 - INFO - 📊 Cumulative results after page 9: 97
+2025-09-09 11:51:54,822 - INFO - Domain not found on page 9
+2025-09-09 11:51:54,822 - INFO - 🔍 Searching on page 10
+2025-09-09 11:51:54,827 - WARNING - Could not navigate to page 10: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="pnnext"]"}
+  (Session info: chrome=140.0.7339.41); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x0000000100b48888 cxxbridge1$str$ptr + 2710432
+1   chromedriver                        0x0000000100b409d0 cxxbridge1$str$ptr + 2677992
+2   chromedriver                        0x00000001006b7e28 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 67228
+3   chromedriver                        0x00000001006faae4 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 340824
+4   chromedriver                        0x0000000100736ef4 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 587624
+5   chromedriver                        0x00000001006efd30 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 296356
+6   chromedriver                        0x0000000100b136d8 cxxbridge1$str$ptr + 2492912
+7   chromedriver                        0x0000000100b163e4 cxxbridge1$str$ptr + 2504444
+8   chromedriver                        0x0000000100b16000 cxxbridge1$str$ptr + 2503448
+9   chromedriver                        0x0000000100afaf60 cxxbridge1$str$ptr + 2392696
+10  chromedriver                        0x0000000100b169c8 cxxbridge1$str$ptr + 2505952
+11  chromedriver                        0x0000000100aedcb8 cxxbridge1$str$ptr + 2338768
+12  chromedriver                        0x0000000100b311d4 cxxbridge1$str$ptr + 2614508
+13  chromedriver                        0x0000000100b313a4 cxxbridge1$str$ptr + 2614972
+14  chromedriver                        0x0000000100b4061c cxxbridge1$str$ptr + 2677044
+15  libsystem_pthread.dylib             0x000000019025fc0c _pthread_start + 136
+16  libsystem_pthread.dylib             0x000000019025ab80 thread_start + 8
+
+2025-09-09 11:51:54,829 - WARNING - Domain not found in search results
+2025-09-09 11:51:54,831 - INFO - Browser closed
+2025-09-09 11:51:55,402 - INFO - Kameleo profile 64590e8a-2fdd-4338-a7ea-0b0ec3c1b286 stopped
+2025-09-09 11:51:55,422 - INFO - Kameleo profile 64590e8a-2fdd-4338-a7ea-0b0ec3c1b286 deleted
+2025-09-09 11:51:55,423 - ERROR - ✗ Proxy 108.165.227.196:5437:aawikmkk:tx1f1a2yr843 failed
+2025-09-09 11:51:55,424 - INFO - Waiting 3 seconds before next proxy...
+2025-09-09 11:51:58,448 - INFO - --- Processing proxy 12/25 ---
+2025-09-09 11:51:58,449 - INFO - Testing proxy: 108.165.227.69:5310:aawikmkk:tx1f1a2yr843
+2025-09-09 11:51:58,449 - INFO - Testing proxy: 108.165.227.69:5310 (with auth)
+2025-09-09 11:52:03,208 - INFO - ✓ Proxy 108.165.227.69:5310 (with auth) is working. IP: 108.165.227.69
+2025-09-09 11:52:03,209 - INFO - Setting up Kameleo browser with proxy: 108.165.227.69:5310:aawikmkk:tx1f1a2yr843
+2025-09-09 11:52:03,209 - INFO - Creating Kameleo profile with proxy: 108.165.227.69:5310:aawikmkk:tx1f1a2yr843
+2025-09-09 11:52:03,210 - INFO - Selected unique fingerprint: 52eaf08b1aa2c59ef08c193ea4534c59c7180f6d961848ed9e6b7df62fdcde6a (12/25 used)
+2025-09-09 11:52:03,210 - INFO - Using authenticated proxy: 108.165.227.69:5310
+2025-09-09 11:52:03,622 - INFO - ✓ Kameleo profile created: 0237284c-95fd-4234-82f8-31b8c4e2d4f7 for proxy 108.165.227.69:5310
+2025-09-09 11:52:06,679 - INFO - ✓ Desktop profile started
+2025-09-09 11:52:07,033 - INFO - Kameleo browser setup completed successfully
+2025-09-09 11:52:07,034 - INFO - Verifying proxy IP...
+2025-09-09 11:52:11,693 - INFO - Browser IP (via http://httpbin.org/ip): 108.165.227.69
+2025-09-09 11:52:14,475 - INFO - Real IP: 160.178.206.43
+2025-09-09 11:52:14,477 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-09 11:52:14,477 - INFO - Navigating to Google search: https://www.google.com.tr
+2025-09-09 11:52:16,421 - INFO - ⏰ Waiting 15 seconds after opening Google search...
+2025-09-09 11:52:31,543 - INFO - 🎭 Performing initial Google page interactions...
+2025-09-09 11:52:31,545 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:52:32,970 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:52:40,285 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:52:44,732 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:52:44,800 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:52:44,824 - INFO - Typing keyword: discord offline sunucu üyesi satın al
+2025-09-09 11:52:56,362 - INFO - ✓ Google search completed successfully
+2025-09-09 11:52:56,364 - INFO - Looking for domain: sosyalbase.com
+2025-09-09 11:52:56,364 - INFO - 🔍 Searching on page 1
+2025-09-09 11:52:56,369 - INFO - 📊 Page 1 has 15 search results
+2025-09-09 11:52:56,615 - INFO - 📊 Cumulative results after page 1: 15
+2025-09-09 11:52:56,616 - INFO - Domain not found on page 1
+2025-09-09 11:52:56,616 - INFO - 🔍 Searching on page 2
+2025-09-09 11:53:03,584 - INFO - ✓ Navigated to page 2
+2025-09-09 11:53:03,586 - INFO - ⏰ Waiting 15 seconds on page 2...
+2025-09-09 11:53:18,705 - INFO - 🎭 Performing interactions on page 2...
+2025-09-09 11:53:18,706 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:53:20,022 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:53:26,920 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:53:30,626 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:53:33,089 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:53:35,894 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:53:35,895 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:53:35,912 - INFO - 📊 Page 2 has 10 search results
+2025-09-09 11:53:36,056 - INFO - 📊 Cumulative results after page 2: 25
+2025-09-09 11:53:36,057 - INFO - Domain not found on page 2
+2025-09-09 11:53:36,057 - INFO - 🔍 Searching on page 3
+2025-09-09 11:53:42,788 - INFO - ✓ Navigated to page 3
+2025-09-09 11:53:42,790 - INFO - ⏰ Waiting 15 seconds on page 3...
+2025-09-09 11:53:57,902 - INFO - 🎭 Performing interactions on page 3...
+2025-09-09 11:53:57,903 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:53:59,602 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:54:05,104 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:54:10,052 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:54:12,574 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:54:14,785 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:54:14,786 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:54:14,802 - INFO - 📊 Page 3 has 10 search results
+2025-09-09 11:54:14,955 - INFO - 📊 Cumulative results after page 3: 35
+2025-09-09 11:54:14,956 - INFO - Domain not found on page 3
+2025-09-09 11:54:14,956 - INFO - 🔍 Searching on page 4
+2025-09-09 11:54:21,661 - INFO - ✓ Navigated to page 4
+2025-09-09 11:54:21,662 - INFO - ⏰ Waiting 15 seconds on page 4...
+2025-09-09 11:54:36,778 - INFO - 🎭 Performing interactions on page 4...
+2025-09-09 11:54:36,780 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:54:39,597 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:54:45,863 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:54:50,922 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:54:53,160 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:54:55,211 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:54:55,212 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:54:55,231 - INFO - 📊 Page 4 has 10 search results
+2025-09-09 11:54:55,391 - INFO - 📊 Cumulative results after page 4: 45
+2025-09-09 11:54:55,391 - INFO - Domain not found on page 4
+2025-09-09 11:54:55,392 - INFO - 🔍 Searching on page 5
+2025-09-09 11:55:02,101 - INFO - ✓ Navigated to page 5
+2025-09-09 11:55:02,102 - INFO - ⏰ Waiting 15 seconds on page 5...
+2025-09-09 11:55:17,214 - INFO - 🎭 Performing interactions on page 5...
+2025-09-09 11:55:17,215 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:55:18,994 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:55:25,128 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:55:29,493 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:55:32,240 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:55:34,193 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:55:34,194 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:55:34,214 - INFO - 📊 Page 5 has 11 search results
+2025-09-09 11:55:34,370 - INFO - 📊 Cumulative results after page 5: 56
+2025-09-09 11:55:34,371 - INFO - Domain not found on page 5
+2025-09-09 11:55:34,371 - INFO - 🔍 Searching on page 6
+2025-09-09 11:55:41,043 - INFO - ✓ Navigated to page 6
+2025-09-09 11:55:41,044 - INFO - ⏰ Waiting 15 seconds on page 6...
+2025-09-09 11:55:56,169 - INFO - 🎭 Performing interactions on page 6...
+2025-09-09 11:55:56,170 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:55:57,864 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:56:04,477 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:56:08,027 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:56:10,243 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:56:12,563 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:56:12,563 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:56:12,580 - INFO - 📊 Page 6 has 10 search results
+2025-09-09 11:56:12,730 - INFO - 📊 Cumulative results after page 6: 66
+2025-09-09 11:56:12,731 - INFO - Domain not found on page 6
+2025-09-09 11:56:12,731 - INFO - 🔍 Searching on page 7
+2025-09-09 11:56:22,372 - INFO - ✓ Navigated to page 7
+2025-09-09 11:56:22,374 - INFO - ⏰ Waiting 15 seconds on page 7...
+2025-09-09 11:56:37,484 - INFO - 🎭 Performing interactions on page 7...
+2025-09-09 11:56:37,486 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:56:39,241 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:56:46,201 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:56:50,509 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:56:52,640 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:56:55,203 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:56:55,204 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:56:55,220 - INFO - 📊 Page 7 has 12 search results
+2025-09-09 11:56:55,383 - INFO - 📊 Cumulative results after page 7: 78
+2025-09-09 11:56:55,383 - INFO - Domain not found on page 7
+2025-09-09 11:56:55,383 - INFO - 🔍 Searching on page 8
+2025-09-09 11:57:02,126 - INFO - ✓ Navigated to page 8
+2025-09-09 11:57:02,128 - INFO - ⏰ Waiting 15 seconds on page 8...
+2025-09-09 11:57:17,243 - INFO - 🎭 Performing interactions on page 8...
+2025-09-09 11:57:17,245 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:57:19,247 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:57:25,992 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:57:30,050 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:57:32,215 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:57:34,649 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:57:34,649 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:57:34,663 - INFO - 📊 Page 8 has 10 search results
+2025-09-09 11:57:34,808 - INFO - 📊 Cumulative results after page 8: 88
+2025-09-09 11:57:34,808 - INFO - Domain not found on page 8
+2025-09-09 11:57:34,808 - INFO - 🔍 Searching on page 9
+2025-09-09 11:57:43,332 - INFO - ✓ Navigated to page 9
+2025-09-09 11:57:43,334 - INFO - ⏰ Waiting 15 seconds on page 9...
+2025-09-09 11:57:58,443 - INFO - 🎭 Performing interactions on page 9...
+2025-09-09 11:57:58,444 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:58:00,243 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:58:07,141 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:58:11,467 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:58:13,817 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:58:15,989 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:58:15,990 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:58:16,011 - INFO - 📊 Page 9 has 9 search results
+2025-09-09 11:58:16,151 - INFO - 📊 Cumulative results after page 9: 97
+2025-09-09 11:58:16,152 - INFO - Domain not found on page 9
+2025-09-09 11:58:16,152 - INFO - 🔍 Searching on page 10
+2025-09-09 11:58:16,157 - WARNING - Could not navigate to page 10: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="pnnext"]"}
+  (Session info: chrome=139.0.7258.66); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x00000001005b53a0 cxxbridge1$str$ptr + 2559624
+1   chromedriver                        0x00000001005ad514 cxxbridge1$str$ptr + 2527228
+2   chromedriver                        0x0000000100147f34 cxxbridge1$string$len + 85140
+3   chromedriver                        0x000000010018ae28 cxxbridge1$string$len + 359304
+4   chromedriver                        0x00000001001c72d4 cxxbridge1$string$len + 606260
+5   chromedriver                        0x0000000100180034 cxxbridge1$string$len + 314772
+6   chromedriver                        0x0000000100580584 cxxbridge1$str$ptr + 2343020
+7   chromedriver                        0x00000001005832ac cxxbridge1$str$ptr + 2354580
+8   chromedriver                        0x0000000100582ec8 cxxbridge1$str$ptr + 2353584
+9   chromedriver                        0x0000000100567d80 cxxbridge1$str$ptr + 2242664
+10  chromedriver                        0x0000000100583890 cxxbridge1$str$ptr + 2356088
+11  chromedriver                        0x000000010055a7a0 cxxbridge1$str$ptr + 2187912
+12  chromedriver                        0x000000010059e0bc cxxbridge1$str$ptr + 2464676
+13  chromedriver                        0x000000010059e28c cxxbridge1$str$ptr + 2465140
+14  chromedriver                        0x00000001005ad160 cxxbridge1$str$ptr + 2526280
+15  libsystem_pthread.dylib             0x000000019025fc0c _pthread_start + 136
+16  libsystem_pthread.dylib             0x000000019025ab80 thread_start + 8
+
+2025-09-09 11:58:16,159 - WARNING - Domain not found in search results
+2025-09-09 11:58:16,161 - INFO - Browser closed
+2025-09-09 11:58:16,685 - INFO - Kameleo profile 0237284c-95fd-4234-82f8-31b8c4e2d4f7 stopped
+2025-09-09 11:58:16,707 - INFO - Kameleo profile 0237284c-95fd-4234-82f8-31b8c4e2d4f7 deleted
+2025-09-09 11:58:16,707 - ERROR - ✗ Proxy 108.165.227.69:5310:aawikmkk:tx1f1a2yr843 failed
+2025-09-09 11:58:16,707 - INFO - Waiting 3 seconds before next proxy...
+2025-09-09 11:58:19,727 - INFO - --- Processing proxy 13/25 ---
+2025-09-09 11:58:19,728 - INFO - Testing proxy: 204.9.38.224:6545:aawikmkk:tx1f1a2yr843
+2025-09-09 11:58:19,728 - INFO - Testing proxy: 204.9.38.224:6545 (with auth)
+2025-09-09 11:58:21,378 - INFO - ✓ Proxy 204.9.38.224:6545 (with auth) is working. IP: 204.9.38.224
+2025-09-09 11:58:21,379 - INFO - Setting up Kameleo browser with proxy: 204.9.38.224:6545:aawikmkk:tx1f1a2yr843
+2025-09-09 11:58:21,380 - INFO - Creating Kameleo profile with proxy: 204.9.38.224:6545:aawikmkk:tx1f1a2yr843
+2025-09-09 11:58:21,380 - INFO - Selected unique fingerprint: fed8bac58544cab3c2465d33585a8ebb12e4aa48194548ca8fc51ba7d489004d (13/25 used)
+2025-09-09 11:58:21,381 - INFO - Using authenticated proxy: 204.9.38.224:6545
+2025-09-09 11:58:21,851 - INFO - ✓ Kameleo profile created: 02d8b168-2bc8-495f-9bec-5787bcf2590c for proxy 204.9.38.224:6545
+2025-09-09 11:58:24,626 - INFO - ✓ Desktop profile started
+2025-09-09 11:58:25,295 - INFO - Kameleo browser setup completed successfully
+2025-09-09 11:58:25,296 - INFO - Verifying proxy IP...
+2025-09-09 11:58:29,254 - INFO - Browser IP (via http://httpbin.org/ip): 204.9.38.224
+2025-09-09 11:58:30,801 - INFO - Real IP: 160.178.206.43
+2025-09-09 11:58:30,802 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-09 11:58:30,803 - INFO - Navigating to Google search: https://www.google.com.tr
+2025-09-09 11:58:32,162 - INFO - ⏰ Waiting 15 seconds after opening Google search...
+2025-09-09 11:58:47,272 - INFO - 🎭 Performing initial Google page interactions...
+2025-09-09 11:58:47,273 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:58:50,146 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:58:55,035 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:58:59,405 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:58:59,472 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:58:59,496 - INFO - Typing keyword: discord offline sunucu üyesi satın al
+2025-09-09 11:59:11,374 - INFO - ✓ Google search completed successfully
+2025-09-09 11:59:11,374 - INFO - Looking for domain: sosyalbase.com
+2025-09-09 11:59:11,375 - INFO - 🔍 Searching on page 1
+2025-09-09 11:59:11,380 - INFO - 📊 Page 1 has 14 search results
+2025-09-09 11:59:11,624 - INFO - 📊 Cumulative results after page 1: 14
+2025-09-09 11:59:11,624 - INFO - Domain not found on page 1
+2025-09-09 11:59:11,624 - INFO - 🔍 Searching on page 2
+2025-09-09 11:59:18,262 - INFO - ✓ Navigated to page 2
+2025-09-09 11:59:18,264 - INFO - ⏰ Waiting 15 seconds on page 2...
+2025-09-09 11:59:33,386 - INFO - 🎭 Performing interactions on page 2...
+2025-09-09 11:59:33,387 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 11:59:35,380 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 11:59:42,869 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 11:59:47,417 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 11:59:49,815 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 11:59:52,259 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 11:59:52,259 - INFO - ✅ Completed Google page interactions
+2025-09-09 11:59:52,273 - INFO - 📊 Page 2 has 10 search results
+2025-09-09 11:59:52,407 - INFO - 📊 Cumulative results after page 2: 24
+2025-09-09 11:59:52,407 - INFO - Domain not found on page 2
+2025-09-09 11:59:52,407 - INFO - 🔍 Searching on page 3
+2025-09-09 11:59:59,011 - INFO - ✓ Navigated to page 3
+2025-09-09 11:59:59,012 - INFO - ⏰ Waiting 15 seconds on page 3...
+2025-09-09 12:00:14,124 - INFO - 🎭 Performing interactions on page 3...
+2025-09-09 12:00:14,125 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 12:00:16,990 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 12:00:23,395 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 12:00:28,313 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 12:00:30,622 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 12:00:33,395 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 12:00:33,396 - INFO - ✅ Completed Google page interactions
+2025-09-09 12:00:33,416 - INFO - 📊 Page 3 has 10 search results
+2025-09-09 12:00:33,563 - INFO - 📊 Cumulative results after page 3: 34
+2025-09-09 12:00:33,563 - INFO - Domain not found on page 3
+2025-09-09 12:00:33,563 - INFO - 🔍 Searching on page 4
+2025-09-09 12:00:40,548 - INFO - ✓ Navigated to page 4
+2025-09-09 12:00:40,550 - INFO - ⏰ Waiting 15 seconds on page 4...
+2025-09-09 12:00:55,663 - INFO - 🎭 Performing interactions on page 4...
+2025-09-09 12:00:55,664 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 12:00:57,067 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 12:01:03,018 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 12:01:07,719 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 12:01:09,968 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 12:01:12,392 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 12:01:12,393 - INFO - ✅ Completed Google page interactions
+2025-09-09 12:01:12,411 - INFO - 📊 Page 4 has 6 search results
+2025-09-09 12:01:12,514 - INFO - 📊 Cumulative results after page 4: 40
+2025-09-09 12:01:12,514 - INFO - Domain not found on page 4
+2025-09-09 12:01:12,514 - INFO - 🔍 Searching on page 5
+2025-09-09 12:01:12,520 - WARNING - Could not navigate to page 5: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="pnnext"]"}
+  (Session info: chrome=140.0.7339.41); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x0000000104d94888 cxxbridge1$str$ptr + 2710432
+1   chromedriver                        0x0000000104d8c9d0 cxxbridge1$str$ptr + 2677992
+2   chromedriver                        0x0000000104903e28 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 67228
+3   chromedriver                        0x0000000104946ae4 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 340824
+4   chromedriver                        0x0000000104982ef4 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 587624
+5   chromedriver                        0x000000010493bd30 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 296356
+6   chromedriver                        0x0000000104d5f6d8 cxxbridge1$str$ptr + 2492912
+7   chromedriver                        0x0000000104d623e4 cxxbridge1$str$ptr + 2504444
+8   chromedriver                        0x0000000104d62000 cxxbridge1$str$ptr + 2503448
+9   chromedriver                        0x0000000104d46f60 cxxbridge1$str$ptr + 2392696
+10  chromedriver                        0x0000000104d629c8 cxxbridge1$str$ptr + 2505952
+11  chromedriver                        0x0000000104d39cb8 cxxbridge1$str$ptr + 2338768
+12  chromedriver                        0x0000000104d7d1d4 cxxbridge1$str$ptr + 2614508
+13  chromedriver                        0x0000000104d7d3a4 cxxbridge1$str$ptr + 2614972
+14  chromedriver                        0x0000000104d8c61c cxxbridge1$str$ptr + 2677044
+15  libsystem_pthread.dylib             0x000000019025fc0c _pthread_start + 136
+16  libsystem_pthread.dylib             0x000000019025ab80 thread_start + 8
+
+2025-09-09 12:01:12,522 - WARNING - Domain not found in search results
+2025-09-09 12:01:12,523 - INFO - Browser closed
+2025-09-09 12:01:12,737 - INFO - Kameleo profile 02d8b168-2bc8-495f-9bec-5787bcf2590c stopped
+2025-09-09 12:01:12,756 - INFO - Kameleo profile 02d8b168-2bc8-495f-9bec-5787bcf2590c deleted
+2025-09-09 12:01:12,756 - ERROR - ✗ Proxy 204.9.38.224:6545:aawikmkk:tx1f1a2yr843 failed
+2025-09-09 12:01:12,756 - INFO - Waiting 3 seconds before next proxy...
+2025-09-09 12:01:15,783 - INFO - --- Processing proxy 14/25 ---
+2025-09-09 12:01:15,786 - INFO - Testing proxy: 23.26.231.127:7368:aawikmkk:tx1f1a2yr843
+2025-09-09 12:01:15,786 - INFO - Testing proxy: 23.26.231.127:7368 (with auth)
+2025-09-09 12:01:18,152 - INFO - ✓ Proxy 23.26.231.127:7368 (with auth) is working. IP: 23.26.231.127
+2025-09-09 12:01:18,153 - INFO - Setting up Kameleo browser with proxy: 23.26.231.127:7368:aawikmkk:tx1f1a2yr843
+2025-09-09 12:01:18,153 - INFO - Creating Kameleo profile with proxy: 23.26.231.127:7368:aawikmkk:tx1f1a2yr843
+2025-09-09 12:01:18,154 - INFO - Selected unique fingerprint: 32acf375cb5cc4d20a51199650da2f7881b9588cf8ac4d3caf82b43efd130895 (14/25 used)
+2025-09-09 12:01:18,154 - INFO - Using authenticated proxy: 23.26.231.127:7368
+2025-09-09 12:01:18,548 - INFO - ✓ Kameleo profile created: 5abe9e28-bc93-4b85-8bff-dea1ea9862d1 for proxy 23.26.231.127:7368
+2025-09-09 12:01:22,038 - INFO - ✓ Desktop profile started
+2025-09-09 12:01:22,398 - INFO - Kameleo browser setup completed successfully
+2025-09-09 12:01:22,398 - INFO - Verifying proxy IP...
+2025-09-09 12:01:31,332 - INFO - Browser IP (via http://httpbin.org/ip): 23.26.231.127
+2025-09-09 12:01:33,678 - INFO - Real IP: 160.178.206.43
+2025-09-09 12:01:33,679 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-09 12:01:33,680 - INFO - Navigating to Google search: https://www.google.com.tr
+2025-09-09 12:01:35,997 - INFO - ⏰ Waiting 15 seconds after opening Google search...
+2025-09-09 12:01:51,111 - INFO - 🎭 Performing initial Google page interactions...
+2025-09-09 12:01:51,112 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 12:01:52,270 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 12:01:57,801 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 12:02:03,009 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 12:02:03,071 - INFO - ✅ Completed Google page interactions
+2025-09-09 12:02:03,097 - INFO - Typing keyword: discord offline sunucu üyesi satın al
+2025-09-09 12:02:14,930 - INFO - ✓ Google search completed successfully
+2025-09-09 12:02:14,930 - INFO - Looking for domain: sosyalbase.com
+2025-09-09 12:02:14,930 - INFO - 🔍 Searching on page 1
+2025-09-09 12:02:14,935 - INFO - 📊 Page 1 has 15 search results
+2025-09-09 12:02:15,167 - INFO - 📊 Cumulative results after page 1: 15
+2025-09-09 12:02:15,167 - INFO - Domain not found on page 1
+2025-09-09 12:02:15,167 - INFO - 🔍 Searching on page 2
+2025-09-09 12:02:22,071 - INFO - ✓ Navigated to page 2
+2025-09-09 12:02:22,072 - INFO - ⏰ Waiting 15 seconds on page 2...
+2025-09-09 12:02:37,167 - INFO - 🎭 Performing interactions on page 2...
+2025-09-09 12:02:37,170 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 12:02:39,156 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 12:02:46,012 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 12:02:50,755 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 12:02:52,887 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 12:02:55,372 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 12:02:55,373 - INFO - ✅ Completed Google page interactions
+2025-09-09 12:02:55,392 - INFO - 📊 Page 2 has 10 search results
+2025-09-09 12:02:55,527 - INFO - 📊 Cumulative results after page 2: 25
+2025-09-09 12:02:55,527 - INFO - Domain not found on page 2
+2025-09-09 12:02:55,527 - INFO - 🔍 Searching on page 3
+2025-09-09 12:03:02,134 - INFO - ✓ Navigated to page 3
+2025-09-09 12:03:02,136 - INFO - ⏰ Waiting 15 seconds on page 3...
+2025-09-09 12:03:17,268 - INFO - 🎭 Performing interactions on page 3...
+2025-09-09 12:03:17,269 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 12:03:18,884 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 12:03:25,139 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 12:03:30,251 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 12:03:33,006 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 12:03:35,438 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 12:03:35,440 - INFO - ✅ Completed Google page interactions
+2025-09-09 12:03:35,459 - INFO - 📊 Page 3 has 10 search results
+2025-09-09 12:03:35,603 - INFO - 📊 Cumulative results after page 3: 35
+2025-09-09 12:03:35,604 - INFO - Domain not found on page 3
+2025-09-09 12:03:35,604 - INFO - 🔍 Searching on page 4
+2025-09-09 12:03:42,302 - INFO - ✓ Navigated to page 4
+2025-09-09 12:03:42,303 - INFO - ⏰ Waiting 15 seconds on page 4...
+2025-09-09 12:03:57,431 - INFO - 🎭 Performing interactions on page 4...
+2025-09-09 12:03:57,432 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 12:03:58,683 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 12:04:04,391 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 12:04:08,501 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 12:04:10,670 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 12:04:13,041 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 12:04:13,042 - INFO - ✅ Completed Google page interactions
+2025-09-09 12:04:13,059 - INFO - 📊 Page 4 has 10 search results
+2025-09-09 12:04:13,211 - INFO - 📊 Cumulative results after page 4: 45
+2025-09-09 12:04:13,212 - INFO - Domain not found on page 4
+2025-09-09 12:04:13,212 - INFO - 🔍 Searching on page 5
+2025-09-09 12:04:19,772 - INFO - ✓ Navigated to page 5
+2025-09-09 12:04:19,772 - INFO - ⏰ Waiting 15 seconds on page 5...
+2025-09-09 12:04:34,902 - INFO - 🎭 Performing interactions on page 5...
+2025-09-09 12:04:34,903 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 12:04:37,071 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 12:04:42,455 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 12:04:47,512 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 12:04:49,427 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 12:04:51,759 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 12:04:51,760 - INFO - ✅ Completed Google page interactions
+2025-09-09 12:04:51,776 - INFO - 📊 Page 5 has 11 search results
+2025-09-09 12:04:51,951 - INFO - 📊 Cumulative results after page 5: 56
+2025-09-09 12:04:51,952 - INFO - Domain not found on page 5
+2025-09-09 12:04:51,952 - INFO - 🔍 Searching on page 6
+2025-09-09 12:04:58,552 - INFO - ✓ Navigated to page 6
+2025-09-09 12:04:58,553 - INFO - ⏰ Waiting 15 seconds on page 6...
+2025-09-09 12:05:13,668 - INFO - 🎭 Performing interactions on page 6...
+2025-09-09 12:05:13,669 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 12:05:16,059 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 12:05:22,968 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 12:05:27,266 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 12:05:29,243 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 12:05:31,172 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 12:05:31,173 - INFO - ✅ Completed Google page interactions
+2025-09-09 12:05:31,189 - INFO - 📊 Page 6 has 10 search results
+2025-09-09 12:05:31,348 - INFO - 📊 Cumulative results after page 6: 66
+2025-09-09 12:05:31,349 - INFO - Domain not found on page 6
+2025-09-09 12:05:31,349 - INFO - 🔍 Searching on page 7
+2025-09-09 12:05:40,868 - INFO - ✓ Navigated to page 7
+2025-09-09 12:05:40,870 - INFO - ⏰ Waiting 15 seconds on page 7...
+2025-09-09 12:05:55,976 - INFO - 🎭 Performing interactions on page 7...
+2025-09-09 12:05:55,977 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 12:05:58,722 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 12:06:03,857 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 12:06:08,432 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 12:06:10,870 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 12:06:13,285 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 12:06:13,286 - INFO - ✅ Completed Google page interactions
+2025-09-09 12:06:13,303 - INFO - 📊 Page 7 has 12 search results
+2025-09-09 12:06:13,490 - INFO - 📊 Cumulative results after page 7: 78
+2025-09-09 12:06:13,490 - INFO - Domain not found on page 7
+2025-09-09 12:06:13,491 - INFO - 🔍 Searching on page 8
+2025-09-09 12:06:20,172 - INFO - ✓ Navigated to page 8
+2025-09-09 12:06:20,173 - INFO - ⏰ Waiting 15 seconds on page 8...
+2025-09-09 12:06:35,288 - INFO - 🎭 Performing interactions on page 8...
+2025-09-09 12:06:35,289 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 12:06:38,093 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 12:06:42,587 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 12:06:47,515 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 12:06:49,426 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 12:06:51,449 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 12:06:51,450 - INFO - ✅ Completed Google page interactions
+2025-09-09 12:06:51,458 - INFO - 📊 Page 8 has 10 search results
+2025-09-09 12:06:51,596 - INFO - 📊 Cumulative results after page 8: 88
+2025-09-09 12:06:51,596 - INFO - Domain not found on page 8
+2025-09-09 12:06:51,596 - INFO - 🔍 Searching on page 9
+2025-09-09 12:07:00,235 - INFO - ✓ Navigated to page 9
+2025-09-09 12:07:00,236 - INFO - ⏰ Waiting 15 seconds on page 9...
+2025-09-09 12:07:15,353 - INFO - 🎭 Performing interactions on page 9...
+2025-09-09 12:07:15,355 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 12:07:17,559 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 12:07:23,786 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 12:07:28,629 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 12:07:31,019 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 12:07:33,864 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 12:07:33,865 - INFO - ✅ Completed Google page interactions
+2025-09-09 12:07:33,882 - INFO - 📊 Page 9 has 9 search results
+2025-09-09 12:07:34,026 - INFO - 📊 Cumulative results after page 9: 97
+2025-09-09 12:07:34,027 - INFO - Domain not found on page 9
+2025-09-09 12:07:34,027 - INFO - 🔍 Searching on page 10
+2025-09-09 12:07:34,032 - WARNING - Could not navigate to page 10: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="pnnext"]"}
+  (Session info: chrome=139.0.7258.66); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x0000000102ef93a0 cxxbridge1$str$ptr + 2559624
+1   chromedriver                        0x0000000102ef1514 cxxbridge1$str$ptr + 2527228
+2   chromedriver                        0x0000000102a8bf34 cxxbridge1$string$len + 85140
+3   chromedriver                        0x0000000102acee28 cxxbridge1$string$len + 359304
+4   chromedriver                        0x0000000102b0b2d4 cxxbridge1$string$len + 606260
+5   chromedriver                        0x0000000102ac4034 cxxbridge1$string$len + 314772
+6   chromedriver                        0x0000000102ec4584 cxxbridge1$str$ptr + 2343020
+7   chromedriver                        0x0000000102ec72ac cxxbridge1$str$ptr + 2354580
+8   chromedriver                        0x0000000102ec6ec8 cxxbridge1$str$ptr + 2353584
+9   chromedriver                        0x0000000102eabd80 cxxbridge1$str$ptr + 2242664
+10  chromedriver                        0x0000000102ec7890 cxxbridge1$str$ptr + 2356088
+11  chromedriver                        0x0000000102e9e7a0 cxxbridge1$str$ptr + 2187912
+12  chromedriver                        0x0000000102ee20bc cxxbridge1$str$ptr + 2464676
+13  chromedriver                        0x0000000102ee228c cxxbridge1$str$ptr + 2465140
+14  chromedriver                        0x0000000102ef1160 cxxbridge1$str$ptr + 2526280
+15  libsystem_pthread.dylib             0x000000019025fc0c _pthread_start + 136
+16  libsystem_pthread.dylib             0x000000019025ab80 thread_start + 8
+
+2025-09-09 12:07:34,032 - WARNING - Domain not found in search results
+2025-09-09 12:07:34,037 - INFO - Browser closed
+2025-09-09 12:07:34,392 - INFO - Kameleo profile 5abe9e28-bc93-4b85-8bff-dea1ea9862d1 stopped
+2025-09-09 12:07:34,409 - INFO - Kameleo profile 5abe9e28-bc93-4b85-8bff-dea1ea9862d1 deleted
+2025-09-09 12:07:34,409 - ERROR - ✗ Proxy 23.26.231.127:7368:aawikmkk:tx1f1a2yr843 failed
+2025-09-09 12:07:34,409 - INFO - Waiting 3 seconds before next proxy...
+2025-09-09 12:07:37,437 - INFO - --- Processing proxy 15/25 ---
+2025-09-09 12:07:37,438 - INFO - Testing proxy: 209.99.134.162:5858:aawikmkk:tx1f1a2yr843
+2025-09-09 12:07:37,439 - INFO - Testing proxy: 209.99.134.162:5858 (with auth)
+2025-09-09 12:07:38,673 - INFO - ✓ Proxy 209.99.134.162:5858 (with auth) is working. IP: 209.99.134.162
+2025-09-09 12:07:38,674 - INFO - Setting up Kameleo browser with proxy: 209.99.134.162:5858:aawikmkk:tx1f1a2yr843
+2025-09-09 12:07:38,675 - INFO - Creating Kameleo profile with proxy: 209.99.134.162:5858:aawikmkk:tx1f1a2yr843
+2025-09-09 12:07:38,675 - INFO - Selected unique fingerprint: ff499d868c72c13cfb0f4351d9f51c89da5066815b91484cbbfe6f2aebba5fd1 (15/25 used)
+2025-09-09 12:07:38,675 - INFO - Using authenticated proxy: 209.99.134.162:5858
+2025-09-09 12:07:39,111 - INFO - ✓ Kameleo profile created: 282e67fe-c01f-4b44-a76d-d6f32f8b0025 for proxy 209.99.134.162:5858
+2025-09-09 12:07:42,068 - INFO - ✓ Desktop profile started
+2025-09-09 12:07:42,418 - INFO - Kameleo browser setup completed successfully
+2025-09-09 12:07:42,419 - INFO - Verifying proxy IP...
+2025-09-09 12:07:47,879 - INFO - Browser IP (via http://httpbin.org/ip): 209.99.134.162
+2025-09-09 12:07:48,710 - INFO - Real IP: 160.178.206.43
+2025-09-09 12:07:48,712 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-09 12:07:48,712 - INFO - Navigating to Google search: https://www.google.com.tr
+2025-09-09 12:07:50,257 - INFO - ⏰ Waiting 15 seconds after opening Google search...
+2025-09-09 12:08:05,376 - INFO - 🎭 Performing initial Google page interactions...
+2025-09-09 12:08:05,377 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 12:08:06,626 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 12:08:13,135 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 12:08:18,194 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 12:08:18,261 - INFO - ✅ Completed Google page interactions
+2025-09-09 12:08:18,286 - INFO - Typing keyword: discord offline sunucu üyesi satın al
+2025-09-09 12:08:30,212 - INFO - ✓ Google search completed successfully
+2025-09-09 12:08:30,213 - INFO - Looking for domain: sosyalbase.com
+2025-09-09 12:08:30,213 - INFO - 🔍 Searching on page 1
+2025-09-09 12:08:30,219 - INFO - 📊 Page 1 has 14 search results
+2025-09-09 12:08:30,592 - INFO - 📊 Cumulative results after page 1: 14
+2025-09-09 12:08:30,592 - INFO - Domain not found on page 1
+2025-09-09 12:08:30,592 - INFO - 🔍 Searching on page 2
+2025-09-09 12:08:37,242 - INFO - ✓ Navigated to page 2
+2025-09-09 12:08:37,244 - INFO - ⏰ Waiting 15 seconds on page 2...
+2025-09-09 12:08:52,351 - INFO - 🎭 Performing interactions on page 2...
+2025-09-09 12:08:52,354 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 12:08:54,563 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 12:09:00,916 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 12:09:05,739 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 12:09:07,891 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 12:09:09,836 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 12:09:09,838 - INFO - ✅ Completed Google page interactions
+2025-09-09 12:09:09,855 - INFO - 📊 Page 2 has 10 search results
+2025-09-09 12:09:10,009 - INFO - 📊 Cumulative results after page 2: 24
+2025-09-09 12:09:10,010 - INFO - Domain not found on page 2
+2025-09-09 12:09:10,010 - INFO - 🔍 Searching on page 3
+2025-09-09 12:09:16,526 - INFO - ✓ Navigated to page 3
+2025-09-09 12:09:16,527 - INFO - ⏰ Waiting 15 seconds on page 3...
+2025-09-09 12:09:31,647 - INFO - 🎭 Performing interactions on page 3...
+2025-09-09 12:09:31,648 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 12:09:33,447 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 12:09:39,114 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 12:09:43,999 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 12:09:45,906 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 12:09:48,337 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 12:09:48,339 - INFO - ✅ Completed Google page interactions
+2025-09-09 12:09:48,355 - INFO - 📊 Page 3 has 10 search results
+2025-09-09 12:09:48,513 - INFO - 📊 Cumulative results after page 3: 34
+2025-09-09 12:09:48,513 - INFO - Domain not found on page 3
+2025-09-09 12:09:48,514 - INFO - 🔍 Searching on page 4
+2025-09-09 12:09:55,057 - INFO - ✓ Navigated to page 4
+2025-09-09 12:09:55,060 - INFO - ⏰ Waiting 15 seconds on page 4...
+2025-09-09 12:10:10,179 - INFO - 🎭 Performing interactions on page 4...
+2025-09-09 12:10:10,182 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 12:10:11,647 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 12:10:18,996 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 12:10:22,908 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 12:10:25,174 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 12:10:27,356 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 12:10:27,358 - INFO - ✅ Completed Google page interactions
+2025-09-09 12:10:27,373 - INFO - 📊 Page 4 has 10 search results
+2025-09-09 12:10:27,537 - INFO - 📊 Cumulative results after page 4: 44
+2025-09-09 12:10:27,537 - INFO - Domain not found on page 4
+2025-09-09 12:10:27,537 - INFO - 🔍 Searching on page 5
+2025-09-09 12:10:34,214 - INFO - ✓ Navigated to page 5
+2025-09-09 12:10:34,216 - INFO - ⏰ Waiting 15 seconds on page 5...
+2025-09-09 12:10:49,348 - INFO - 🎭 Performing interactions on page 5...
+2025-09-09 12:10:49,349 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 12:10:51,388 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 12:10:58,436 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 12:11:03,177 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 12:11:05,493 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 12:11:07,627 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 12:11:07,628 - INFO - ✅ Completed Google page interactions
+2025-09-09 12:11:07,644 - INFO - 📊 Page 5 has 5 search results
+2025-09-09 12:11:07,723 - INFO - 📊 Cumulative results after page 5: 49
+2025-09-09 12:11:07,723 - INFO - Domain not found on page 5
+2025-09-09 12:11:07,724 - INFO - 🔍 Searching on page 6
+2025-09-09 12:11:07,728 - WARNING - Could not navigate to page 6: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="pnnext"]"}
+  (Session info: chrome=140.0.7339.41); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x00000001045d8888 cxxbridge1$str$ptr + 2710432
+1   chromedriver                        0x00000001045d09d0 cxxbridge1$str$ptr + 2677992
+2   chromedriver                        0x0000000104147e28 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 67228
+3   chromedriver                        0x000000010418aae4 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 340824
+4   chromedriver                        0x00000001041c6ef4 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 587624
+5   chromedriver                        0x000000010417fd30 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 296356
+6   chromedriver                        0x00000001045a36d8 cxxbridge1$str$ptr + 2492912
+7   chromedriver                        0x00000001045a63e4 cxxbridge1$str$ptr + 2504444
+8   chromedriver                        0x00000001045a6000 cxxbridge1$str$ptr + 2503448
+9   chromedriver                        0x000000010458af60 cxxbridge1$str$ptr + 2392696
+10  chromedriver                        0x00000001045a69c8 cxxbridge1$str$ptr + 2505952
+11  chromedriver                        0x000000010457dcb8 cxxbridge1$str$ptr + 2338768
+12  chromedriver                        0x00000001045c11d4 cxxbridge1$str$ptr + 2614508
+13  chromedriver                        0x00000001045c13a4 cxxbridge1$str$ptr + 2614972
+14  chromedriver                        0x00000001045d061c cxxbridge1$str$ptr + 2677044
+15  libsystem_pthread.dylib             0x000000019025fc0c _pthread_start + 136
+16  libsystem_pthread.dylib             0x000000019025ab80 thread_start + 8
+
+2025-09-09 12:11:07,730 - WARNING - Domain not found in search results
+2025-09-09 12:11:07,733 - INFO - Browser closed
+2025-09-09 12:11:08,349 - INFO - Kameleo profile 282e67fe-c01f-4b44-a76d-d6f32f8b0025 stopped
+2025-09-09 12:11:08,367 - INFO - Kameleo profile 282e67fe-c01f-4b44-a76d-d6f32f8b0025 deleted
+2025-09-09 12:11:08,369 - ERROR - ✗ Proxy 209.99.134.162:5858:aawikmkk:tx1f1a2yr843 failed
+2025-09-09 12:11:08,369 - INFO - Waiting 3 seconds before next proxy...
+2025-09-09 12:11:11,399 - INFO - --- Processing proxy 16/25 ---
+2025-09-09 12:11:11,400 - INFO - Testing proxy: 209.99.134.48:5744:aawikmkk:tx1f1a2yr843
+2025-09-09 12:11:11,400 - INFO - Testing proxy: 209.99.134.48:5744 (with auth)
+2025-09-09 12:11:13,788 - INFO - ✓ Proxy 209.99.134.48:5744 (with auth) is working. IP: 209.99.134.48
+2025-09-09 12:11:13,789 - INFO - Setting up Kameleo browser with proxy: 209.99.134.48:5744:aawikmkk:tx1f1a2yr843
+2025-09-09 12:11:13,789 - INFO - Creating Kameleo profile with proxy: 209.99.134.48:5744:aawikmkk:tx1f1a2yr843
+2025-09-09 12:11:13,790 - INFO - Selected unique fingerprint: 54d7fe8978d2c811d35f6fe5f6b674102b58dbe78e58414f815885b261e02c2d (16/25 used)
+2025-09-09 12:11:13,790 - INFO - Using authenticated proxy: 209.99.134.48:5744
+2025-09-09 12:11:14,112 - INFO - ✓ Kameleo profile created: 0b81820b-3ecf-4804-8dc6-ca20e1a8cd41 for proxy 209.99.134.48:5744
+2025-09-09 12:11:16,958 - INFO - ✓ Desktop profile started
+2025-09-09 12:11:17,684 - INFO - Kameleo browser setup completed successfully
+2025-09-09 12:11:17,685 - INFO - Verifying proxy IP...
+2025-09-09 12:11:26,962 - INFO - Browser IP (via http://httpbin.org/ip): 209.99.134.48
+2025-09-09 12:11:30,003 - INFO - Real IP: 160.178.206.43
+2025-09-09 12:11:30,004 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-09 12:11:30,005 - INFO - Navigating to Google search: https://www.google.com.tr
+2025-09-09 12:11:31,385 - INFO - ⏰ Waiting 15 seconds after opening Google search...
+2025-09-09 12:11:46,502 - INFO - 🎭 Performing initial Google page interactions...
+2025-09-09 12:11:46,504 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 12:11:49,085 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 12:11:55,181 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 12:11:58,490 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 12:11:58,553 - INFO - ✅ Completed Google page interactions
+2025-09-09 12:11:58,581 - INFO - Typing keyword: discord offline sunucu üyesi satın al
+2025-09-09 12:12:10,926 - INFO - ✓ Google search completed successfully
+2025-09-09 12:12:10,927 - INFO - Looking for domain: sosyalbase.com
+2025-09-09 12:12:10,927 - INFO - 🔍 Searching on page 1
+2025-09-09 12:12:10,937 - INFO - 📊 Page 1 has 14 search results
+2025-09-09 12:12:11,137 - INFO - 📊 Cumulative results after page 1: 14
+2025-09-09 12:12:11,137 - INFO - Domain not found on page 1
+2025-09-09 12:12:11,137 - INFO - 🔍 Searching on page 2
+2025-09-09 12:12:17,664 - INFO - ✓ Navigated to page 2
+2025-09-09 12:12:17,665 - INFO - ⏰ Waiting 15 seconds on page 2...
+2025-09-09 12:12:32,767 - INFO - 🎭 Performing interactions on page 2...
+2025-09-09 12:12:32,770 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 12:12:34,204 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 12:12:40,646 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 12:12:44,946 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 12:12:47,460 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 12:12:49,551 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 12:12:49,552 - INFO - ✅ Completed Google page interactions
+2025-09-09 12:12:49,562 - INFO - 📊 Page 2 has 10 search results
+2025-09-09 12:12:49,713 - INFO - 📊 Cumulative results after page 2: 24
+2025-09-09 12:12:49,714 - INFO - Domain not found on page 2
+2025-09-09 12:12:49,714 - INFO - 🔍 Searching on page 3
+2025-09-09 12:12:56,420 - INFO - ✓ Navigated to page 3
+2025-09-09 12:12:56,421 - INFO - ⏰ Waiting 15 seconds on page 3...
+2025-09-09 12:13:11,542 - INFO - 🎭 Performing interactions on page 3...
+2025-09-09 12:13:11,543 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 12:13:13,602 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 12:13:19,519 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 12:13:24,171 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 12:13:26,063 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 12:13:28,802 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 12:13:28,803 - INFO - ✅ Completed Google page interactions
+2025-09-09 12:13:28,820 - INFO - 📊 Page 3 has 10 search results
+2025-09-09 12:13:28,988 - INFO - 📊 Cumulative results after page 3: 34
+2025-09-09 12:13:28,989 - INFO - Domain not found on page 3
+2025-09-09 12:13:28,989 - INFO - 🔍 Searching on page 4
+2025-09-09 12:13:35,580 - INFO - ✓ Navigated to page 4
+2025-09-09 12:13:35,582 - INFO - ⏰ Waiting 15 seconds on page 4...
+2025-09-09 12:13:50,692 - INFO - 🎭 Performing interactions on page 4...
+2025-09-09 12:13:50,693 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 12:13:53,076 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 12:13:58,843 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 12:14:03,216 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 12:14:05,508 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 12:14:07,521 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 12:14:07,521 - INFO - ✅ Completed Google page interactions
+2025-09-09 12:14:07,529 - INFO - 📊 Page 4 has 10 search results
+2025-09-09 12:14:07,667 - INFO - 📊 Cumulative results after page 4: 44
+2025-09-09 12:14:07,667 - INFO - Domain not found on page 4
+2025-09-09 12:14:07,667 - INFO - 🔍 Searching on page 5
+2025-09-09 12:14:07,672 - WARNING - Could not navigate to page 5: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="pnnext"]"}
+  (Session info: chrome=139.0.7258.66); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x00000001005953a0 cxxbridge1$str$ptr + 2559624
+1   chromedriver                        0x000000010058d514 cxxbridge1$str$ptr + 2527228
+2   chromedriver                        0x0000000100127f34 cxxbridge1$string$len + 85140
+3   chromedriver                        0x000000010016ae28 cxxbridge1$string$len + 359304
+4   chromedriver                        0x00000001001a72d4 cxxbridge1$string$len + 606260
+5   chromedriver                        0x0000000100160034 cxxbridge1$string$len + 314772
+6   chromedriver                        0x0000000100560584 cxxbridge1$str$ptr + 2343020
+7   chromedriver                        0x00000001005632ac cxxbridge1$str$ptr + 2354580
+8   chromedriver                        0x0000000100562ec8 cxxbridge1$str$ptr + 2353584
+9   chromedriver                        0x0000000100547d80 cxxbridge1$str$ptr + 2242664
+10  chromedriver                        0x0000000100563890 cxxbridge1$str$ptr + 2356088
+11  chromedriver                        0x000000010053a7a0 cxxbridge1$str$ptr + 2187912
+12  chromedriver                        0x000000010057e0bc cxxbridge1$str$ptr + 2464676
+13  chromedriver                        0x000000010057e28c cxxbridge1$str$ptr + 2465140
+14  chromedriver                        0x000000010058d160 cxxbridge1$str$ptr + 2526280
+15  libsystem_pthread.dylib             0x000000019025fc0c _pthread_start + 136
+16  libsystem_pthread.dylib             0x000000019025ab80 thread_start + 8
+
+2025-09-09 12:14:07,672 - WARNING - Domain not found in search results
+2025-09-09 12:14:07,677 - INFO - Browser closed
+2025-09-09 12:14:07,885 - INFO - Kameleo profile 0b81820b-3ecf-4804-8dc6-ca20e1a8cd41 stopped
+2025-09-09 12:14:07,900 - INFO - Kameleo profile 0b81820b-3ecf-4804-8dc6-ca20e1a8cd41 deleted
+2025-09-09 12:14:07,900 - ERROR - ✗ Proxy 209.99.134.48:5744:aawikmkk:tx1f1a2yr843 failed
+2025-09-09 12:14:07,901 - INFO - Waiting 3 seconds before next proxy...
+2025-09-09 12:14:10,927 - INFO - --- Processing proxy 17/25 ---
+2025-09-09 12:14:10,929 - INFO - Testing proxy: 50.114.243.191:6432:aawikmkk:tx1f1a2yr843
+2025-09-09 12:14:10,929 - INFO - Testing proxy: 50.114.243.191:6432 (with auth)
+2025-09-09 12:14:12,516 - INFO - ✓ Proxy 50.114.243.191:6432 (with auth) is working. IP: 50.114.243.191
+2025-09-09 12:14:12,518 - INFO - Setting up Kameleo browser with proxy: 50.114.243.191:6432:aawikmkk:tx1f1a2yr843
+2025-09-09 12:14:12,519 - INFO - Creating Kameleo profile with proxy: 50.114.243.191:6432:aawikmkk:tx1f1a2yr843
+2025-09-09 12:14:12,519 - INFO - Selected unique fingerprint: 3a9014d08bddc051d8ff92e21bce532f186c55ef8ba84af9818b5320c0ec7281 (17/25 used)
+2025-09-09 12:14:12,520 - INFO - Using authenticated proxy: 50.114.243.191:6432
+2025-09-09 12:14:12,996 - INFO - ✓ Kameleo profile created: 5a45428c-0de7-4cd8-a998-10203166700c for proxy 50.114.243.191:6432
+2025-09-09 12:14:16,050 - INFO - ✓ Desktop profile started
+2025-09-09 12:14:16,437 - INFO - Kameleo browser setup completed successfully
+2025-09-09 12:14:16,438 - INFO - Verifying proxy IP...
+2025-09-09 12:14:20,293 - INFO - Browser IP (via http://httpbin.org/ip): 50.114.243.191
+2025-09-09 12:14:20,601 - INFO - Real IP: 160.178.206.43
+2025-09-09 12:14:20,602 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-09 12:14:20,603 - INFO - Navigating to Google search: https://www.google.com.tr
+2025-09-09 12:14:22,289 - INFO - ⏰ Waiting 15 seconds after opening Google search...
+2025-09-09 12:14:37,402 - INFO - 🎭 Performing initial Google page interactions...
+2025-09-09 12:14:37,402 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 12:14:38,906 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 12:14:45,273 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 12:14:50,250 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 12:14:50,300 - INFO - ✅ Completed Google page interactions
+2025-09-09 12:14:50,327 - INFO - Typing keyword: discord offline sunucu üyesi satın al
+2025-09-09 12:15:01,737 - INFO - ✓ Google search completed successfully
+2025-09-09 12:15:01,738 - INFO - Looking for domain: sosyalbase.com
+2025-09-09 12:15:01,738 - INFO - 🔍 Searching on page 1
+2025-09-09 12:15:01,745 - INFO - 📊 Page 1 has 15 search results
+2025-09-09 12:15:01,987 - INFO - 📊 Cumulative results after page 1: 15
+2025-09-09 12:15:01,987 - INFO - Domain not found on page 1
+2025-09-09 12:15:01,987 - INFO - 🔍 Searching on page 2
+2025-09-09 12:15:08,845 - INFO - ✓ Navigated to page 2
+2025-09-09 12:15:08,846 - INFO - ⏰ Waiting 15 seconds on page 2...
+2025-09-09 12:15:23,974 - INFO - 🎭 Performing interactions on page 2...
+2025-09-09 12:15:23,975 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 12:15:26,267 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 12:15:32,626 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 12:15:36,702 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 12:15:39,194 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 12:15:41,314 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 12:15:41,315 - INFO - ✅ Completed Google page interactions
+2025-09-09 12:15:41,332 - INFO - 📊 Page 2 has 10 search results
+2025-09-09 12:15:41,478 - INFO - 📊 Cumulative results after page 2: 25
+2025-09-09 12:15:41,478 - INFO - Domain not found on page 2
+2025-09-09 12:15:41,478 - INFO - 🔍 Searching on page 3
+2025-09-09 12:15:48,265 - INFO - ✓ Navigated to page 3
+2025-09-09 12:15:48,266 - INFO - ⏰ Waiting 15 seconds on page 3...
+2025-09-09 12:16:03,387 - INFO - 🎭 Performing interactions on page 3...
+2025-09-09 12:16:03,388 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 12:16:05,927 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 12:16:12,819 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 12:16:16,733 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 12:16:19,343 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 12:16:21,735 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 12:16:21,736 - INFO - ✅ Completed Google page interactions
+2025-09-09 12:16:21,752 - INFO - 📊 Page 3 has 10 search results
+2025-09-09 12:16:21,910 - INFO - 📊 Cumulative results after page 3: 35
+2025-09-09 12:16:21,910 - INFO - Domain not found on page 3
+2025-09-09 12:16:21,911 - INFO - 🔍 Searching on page 4
+2025-09-09 12:16:28,540 - INFO - ✓ Navigated to page 4
+2025-09-09 12:16:28,542 - INFO - ⏰ Waiting 15 seconds on page 4...
+2025-09-09 12:16:43,652 - INFO - 🎭 Performing interactions on page 4...
+2025-09-09 12:16:43,654 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 12:16:46,627 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 12:16:52,537 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 12:16:56,994 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 12:16:59,326 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 12:17:02,056 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 12:17:02,057 - INFO - ✅ Completed Google page interactions
+2025-09-09 12:17:02,073 - INFO - 📊 Page 4 has 10 search results
+2025-09-09 12:17:02,218 - INFO - 📊 Cumulative results after page 4: 45
+2025-09-09 12:17:02,218 - INFO - Domain not found on page 4
+2025-09-09 12:17:02,218 - INFO - 🔍 Searching on page 5
+2025-09-09 12:17:08,890 - INFO - ✓ Navigated to page 5
+2025-09-09 12:17:08,892 - INFO - ⏰ Waiting 15 seconds on page 5...
+2025-09-09 12:17:24,017 - INFO - 🎭 Performing interactions on page 5...
+2025-09-09 12:17:24,019 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 12:17:25,800 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 12:17:32,181 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 12:17:36,287 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 12:17:38,757 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 12:17:40,810 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 12:17:40,811 - INFO - ✅ Completed Google page interactions
+2025-09-09 12:17:40,828 - INFO - 📊 Page 5 has 11 search results
+2025-09-09 12:17:41,006 - INFO - 📊 Cumulative results after page 5: 56
+2025-09-09 12:17:41,006 - INFO - Domain not found on page 5
+2025-09-09 12:17:41,006 - INFO - 🔍 Searching on page 6
+2025-09-09 12:17:47,672 - INFO - ✓ Navigated to page 6
+2025-09-09 12:17:47,673 - INFO - ⏰ Waiting 15 seconds on page 6...
+2025-09-09 12:18:02,802 - INFO - 🎭 Performing interactions on page 6...
+2025-09-09 12:18:02,803 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 12:18:04,152 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 12:18:09,904 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 12:18:15,132 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 12:18:17,230 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 12:18:19,143 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 12:18:19,144 - INFO - ✅ Completed Google page interactions
+2025-09-09 12:18:19,161 - INFO - 📊 Page 6 has 10 search results
+2025-09-09 12:18:19,316 - INFO - 📊 Cumulative results after page 6: 66
+2025-09-09 12:18:19,316 - INFO - Domain not found on page 6
+2025-09-09 12:18:19,317 - INFO - 🔍 Searching on page 7
+2025-09-09 12:18:28,739 - INFO - ✓ Navigated to page 7
+2025-09-09 12:18:28,742 - INFO - ⏰ Waiting 15 seconds on page 7...
+2025-09-09 12:18:43,869 - INFO - 🎭 Performing interactions on page 7...
+2025-09-09 12:18:43,870 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 12:18:45,834 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 12:18:50,931 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 12:18:55,578 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 12:18:57,786 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 12:18:59,775 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 12:18:59,776 - INFO - ✅ Completed Google page interactions
+2025-09-09 12:18:59,794 - INFO - 📊 Page 7 has 12 search results
+2025-09-09 12:18:59,960 - INFO - 📊 Cumulative results after page 7: 78
+2025-09-09 12:18:59,960 - INFO - Domain not found on page 7
+2025-09-09 12:18:59,960 - INFO - 🔍 Searching on page 8
+2025-09-09 12:19:06,688 - INFO - ✓ Navigated to page 8
+2025-09-09 12:19:06,689 - INFO - ⏰ Waiting 15 seconds on page 8...
+2025-09-09 12:19:21,809 - INFO - 🎭 Performing interactions on page 8...
+2025-09-09 12:19:21,811 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 12:19:23,490 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 12:19:30,116 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 12:19:34,440 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 12:19:37,033 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 12:19:39,173 - INFO - Client disconnected from WebSocket
+2025-09-09 12:19:39,174 - INFO - 127.0.0.1 - - [09/Sep/2025 12:19:39] "GET /socket.io/?EIO=4&transport=websocket&sid=lQBgeYallsJFYeqUAAAA HTTP/1.1" 200 -
+2025-09-09 12:19:39,347 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 12:19:39,348 - INFO - ✅ Completed Google page interactions
+2025-09-09 12:19:39,364 - ERROR - Error finding/visiting target: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=136.0.7103.49)
+Stacktrace:
+0   chromedriver                        0x0000000102f1e23c cxxbridge1$str$ptr + 2843732
+1   chromedriver                        0x0000000102f165e8 cxxbridge1$str$ptr + 2811904
+2   chromedriver                        0x0000000102a70ea4 cxxbridge1$string$len + 84448
+3   chromedriver                        0x0000000102a5c18c chromedriver + 180620
+4   chromedriver                        0x0000000102a7d20c cxxbridge1$string$len + 134472
+5   chromedriver                        0x0000000102adb1e0 cxxbridge1$string$len + 519452
+6   chromedriver                        0x0000000102aeef64 cxxbridge1$string$len + 600736
+7   chromedriver                        0x0000000102aa8914 cxxbridge1$string$len + 312400
+8   chromedriver                        0x0000000102ee9fd8 cxxbridge1$str$ptr + 2630128
+9   chromedriver                        0x0000000102eecda0 cxxbridge1$str$ptr + 2641848
+10  chromedriver                        0x0000000102eec9c0 cxxbridge1$str$ptr + 2640856
+11  chromedriver                        0x0000000102ed2000 cxxbridge1$str$ptr + 2531864
+12  chromedriver                        0x0000000102eed384 cxxbridge1$str$ptr + 2643356
+13  chromedriver                        0x0000000102ec48f0 cxxbridge1$str$ptr + 2476808
+14  chromedriver                        0x0000000102f07d04 cxxbridge1$str$ptr + 2752284
+15  chromedriver                        0x0000000102f07ed4 cxxbridge1$str$ptr + 2752748
+16  chromedriver                        0x0000000102f1622c cxxbridge1$str$ptr + 2810948
+17  libsystem_pthread.dylib             0x000000019025fc0c _pthread_start + 136
+18  libsystem_pthread.dylib             0x000000019025ab80 thread_start + 8
+
+2025-09-09 12:19:39,364 - WARNING - Domain not found in search results
+2025-09-09 12:19:39,390 - INFO - Browser closed
+2025-09-09 12:19:40,478 - INFO - 127.0.0.1 - - [09/Sep/2025 12:19:40] "GET /socket.io/?EIO=4&transport=polling&t=PakC_Av HTTP/1.1" 200 -
+2025-09-09 12:19:40,487 - INFO - Client connected to WebSocket
+2025-09-09 12:19:40,489 - INFO - 127.0.0.1 - - [09/Sep/2025 12:19:40] "POST /socket.io/?EIO=4&transport=polling&t=PakC_B2&sid=zfzX3NdJNB8Hc2VYAAAC HTTP/1.1" 200 -
+2025-09-09 12:19:40,489 - INFO - 127.0.0.1 - - [09/Sep/2025 12:19:40] "GET /socket.io/?EIO=4&transport=polling&t=PakC_B3&sid=zfzX3NdJNB8Hc2VYAAAC HTTP/1.1" 200 -
+2025-09-09 12:19:44,241 - INFO - Kameleo profile 5a45428c-0de7-4cd8-a998-10203166700c stopped
+2025-09-09 12:19:44,254 - INFO - Kameleo profile 5a45428c-0de7-4cd8-a998-10203166700c deleted
+2025-09-09 12:19:44,254 - ERROR - ✗ Proxy 50.114.243.191:6432:aawikmkk:tx1f1a2yr843 failed
+2025-09-09 12:19:44,255 - INFO - Waiting 3 seconds before next proxy...
+2025-09-09 12:35:28,904 - INFO - Client disconnected from WebSocket
+2025-09-09 12:35:28,904 - INFO - 127.0.0.1 - - [09/Sep/2025 12:35:28] "GET /socket.io/?EIO=4&transport=websocket&sid=zfzX3NdJNB8Hc2VYAAAC HTTP/1.1" 200 -
+2025-09-09 12:35:29,278 - INFO - --- Processing proxy 18/25 ---
+2025-09-09 12:35:29,278 - INFO - Testing proxy: 23.26.231.107:7348:aawikmkk:tx1f1a2yr843
+2025-09-09 12:35:29,278 - INFO - Testing proxy: 23.26.231.107:7348 (with auth)
+2025-09-09 12:35:29,280 - ERROR - Proxy 23.26.231.107:7348:aawikmkk:tx1f1a2yr843 failed: HTTPConnectionPool(host='23.26.231.107', port=7348): Max retries exceeded with url: http://httpbin.org/ip (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x103988f30>: Failed to establish a new connection: [Errno 51] Network is unreachable')))
+2025-09-09 12:35:29,280 - ERROR - Proxy 23.26.231.107:7348:aawikmkk:tx1f1a2yr843 is not working, skipping...
+2025-09-09 12:35:29,280 - ERROR - ✗ Proxy 23.26.231.107:7348:aawikmkk:tx1f1a2yr843 failed
+2025-09-09 12:35:29,280 - INFO - Waiting 3 seconds before next proxy...
+2025-09-09 12:35:30,463 - INFO - 127.0.0.1 - - [09/Sep/2025 12:35:30] "GET /socket.io/?EIO=4&transport=polling&t=PakGd6M HTTP/1.1" 200 -
+2025-09-09 12:35:30,469 - INFO - Client connected to WebSocket
+2025-09-09 12:35:30,471 - INFO - 127.0.0.1 - - [09/Sep/2025 12:35:30] "POST /socket.io/?EIO=4&transport=polling&t=PakGd6X&sid=vZPWm8DWGMyaJ2dQAAAE HTTP/1.1" 200 -
+2025-09-09 12:35:30,472 - INFO - 127.0.0.1 - - [09/Sep/2025 12:35:30] "GET /socket.io/?EIO=4&transport=polling&t=PakGd6X.0&sid=vZPWm8DWGMyaJ2dQAAAE HTTP/1.1" 200 -
+2025-09-09 12:35:32,308 - INFO - --- Processing proxy 19/25 ---
+2025-09-09 12:35:32,308 - INFO - Testing proxy: 108.165.227.186:5427:aawikmkk:tx1f1a2yr843
+2025-09-09 12:35:32,309 - INFO - Testing proxy: 108.165.227.186:5427 (with auth)
+2025-09-09 12:35:33,327 - INFO - ✓ Proxy 108.165.227.186:5427 (with auth) is working. IP: 108.165.227.186
+2025-09-09 12:35:33,327 - INFO - Setting up Kameleo browser with proxy: 108.165.227.186:5427:aawikmkk:tx1f1a2yr843
+2025-09-09 12:35:33,327 - INFO - Creating Kameleo profile with proxy: 108.165.227.186:5427:aawikmkk:tx1f1a2yr843
+2025-09-09 12:35:33,327 - INFO - Selected unique fingerprint: 1737b13da9d3ca4501aa1f9a393d3af137fd082710224cdda7ac1c6785991c72 (18/25 used)
+2025-09-09 12:35:33,328 - INFO - Using authenticated proxy: 108.165.227.186:5427
+2025-09-09 12:35:33,831 - INFO - ✓ Kameleo profile created: 5993081d-82df-420f-a2c5-24ed8b037bf0 for proxy 108.165.227.186:5427
+2025-09-09 12:35:42,194 - INFO - ✓ Desktop profile started
+2025-09-09 12:35:42,542 - INFO - Kameleo browser setup completed successfully
+2025-09-09 12:35:42,543 - INFO - Verifying proxy IP...
+2025-09-09 12:35:46,572 - INFO - Browser IP (via http://httpbin.org/ip): 108.165.227.186
+2025-09-09 12:35:48,876 - INFO - Real IP: 160.178.206.43
+2025-09-09 12:35:48,877 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-09 12:35:48,877 - INFO - Navigating to Google search: https://www.google.com.tr
+2025-09-09 12:35:50,994 - INFO - ⏰ Waiting 15 seconds after opening Google search...
+2025-09-09 12:36:06,056 - INFO - 🎭 Performing initial Google page interactions...
+2025-09-09 12:36:06,058 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 12:36:08,195 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 12:36:14,554 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 12:51:44,184 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 12:51:44,273 - INFO - ✅ Completed Google page interactions
+2025-09-09 12:51:44,294 - INFO - Typing keyword: discord offline sunucu üyesi satın al
+2025-09-09 12:51:55,841 - INFO - ✓ Google search completed successfully
+2025-09-09 12:51:55,841 - INFO - Looking for domain: sosyalbase.com
+2025-09-09 12:51:55,841 - INFO - 🔍 Searching on page 1
+2025-09-09 12:51:55,847 - INFO - 📊 Page 1 has 15 search results
+2025-09-09 12:51:56,068 - INFO - 📊 Cumulative results after page 1: 15
+2025-09-09 12:51:56,068 - INFO - Domain not found on page 1
+2025-09-09 12:51:56,068 - INFO - 🔍 Searching on page 2
+2025-09-09 12:52:02,749 - INFO - ✓ Navigated to page 2
+2025-09-09 12:52:02,750 - INFO - ⏰ Waiting 15 seconds on page 2...
+2025-09-09 12:52:17,839 - INFO - 🎭 Performing interactions on page 2...
+2025-09-09 12:52:17,842 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 12:52:18,908 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 12:52:24,365 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 12:52:28,617 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 12:52:31,108 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 12:52:33,705 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 12:52:33,706 - INFO - ✅ Completed Google page interactions
+2025-09-09 12:52:33,722 - INFO - 📊 Page 2 has 10 search results
+2025-09-09 12:52:33,893 - INFO - 📊 Cumulative results after page 2: 25
+2025-09-09 12:52:33,893 - INFO - Domain not found on page 2
+2025-09-09 12:52:33,893 - INFO - 🔍 Searching on page 3
+2025-09-09 12:52:40,716 - INFO - ✓ Navigated to page 3
+2025-09-09 12:52:40,718 - INFO - ⏰ Waiting 15 seconds on page 3...
+2025-09-09 13:08:26,609 - INFO - 🎭 Performing interactions on page 3...
+2025-09-09 13:08:26,610 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 13:08:28,295 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 13:08:34,036 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 13:08:39,012 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 13:08:41,269 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 13:08:43,926 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 13:08:43,927 - INFO - ✅ Completed Google page interactions
+2025-09-09 13:08:43,935 - INFO - 📊 Page 3 has 10 search results
+2025-09-09 13:08:44,062 - INFO - 📊 Cumulative results after page 3: 35
+2025-09-09 13:08:44,062 - INFO - Domain not found on page 3
+2025-09-09 13:08:44,062 - INFO - 🔍 Searching on page 4
+2025-09-09 13:08:51,229 - INFO - ✓ Navigated to page 4
+2025-09-09 13:08:51,230 - INFO - ⏰ Waiting 15 seconds on page 4...
+2025-09-09 13:25:31,880 - INFO - 🎭 Performing interactions on page 4...
+2025-09-09 13:25:31,881 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 13:25:33,710 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 13:25:39,858 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 13:25:43,917 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 13:25:46,230 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 13:25:48,163 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 13:25:48,163 - INFO - ✅ Completed Google page interactions
+2025-09-09 13:25:48,180 - INFO - 📊 Page 4 has 10 search results
+2025-09-09 13:25:48,348 - INFO - 📊 Cumulative results after page 4: 45
+2025-09-09 13:25:48,348 - INFO - Domain not found on page 4
+2025-09-09 13:25:48,348 - INFO - 🔍 Searching on page 5
+2025-09-09 13:25:55,753 - INFO - ✓ Navigated to page 5
+2025-09-09 13:25:55,755 - INFO - ⏰ Waiting 15 seconds on page 5...
+2025-09-09 13:26:10,860 - INFO - 🎭 Performing interactions on page 5...
+2025-09-09 13:26:10,863 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 13:26:13,397 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 13:26:20,467 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 13:26:25,445 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 13:26:27,471 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 13:26:29,921 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 13:26:29,922 - INFO - ✅ Completed Google page interactions
+2025-09-09 13:26:29,937 - INFO - 📊 Page 5 has 11 search results
+2025-09-09 13:26:30,115 - INFO - 📊 Cumulative results after page 5: 56
+2025-09-09 13:26:30,116 - INFO - Domain not found on page 5
+2025-09-09 13:26:30,116 - INFO - 🔍 Searching on page 6
+2025-09-09 13:26:36,986 - INFO - ✓ Navigated to page 6
+2025-09-09 13:26:36,986 - INFO - ⏰ Waiting 15 seconds on page 6...
+2025-09-09 13:26:52,101 - INFO - 🎭 Performing interactions on page 6...
+2025-09-09 13:26:52,104 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 13:26:55,057 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 13:27:01,057 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 13:27:05,586 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 13:27:08,061 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 13:27:10,505 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 13:27:10,505 - INFO - ✅ Completed Google page interactions
+2025-09-09 13:27:10,518 - INFO - 📊 Page 6 has 10 search results
+2025-09-09 13:27:10,693 - INFO - 📊 Cumulative results after page 6: 66
+2025-09-09 13:27:10,694 - INFO - Domain not found on page 6
+2025-09-09 13:27:10,694 - INFO - 🔍 Searching on page 7
+2025-09-09 13:27:20,480 - INFO - ✓ Navigated to page 7
+2025-09-09 13:27:20,480 - INFO - ⏰ Waiting 15 seconds on page 7...
+2025-09-09 13:44:11,348 - INFO - 🎭 Performing interactions on page 7...
+2025-09-09 13:44:11,349 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 13:44:12,942 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 13:44:19,064 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 13:44:24,041 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 13:44:26,025 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 13:44:28,055 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 13:44:28,055 - INFO - ✅ Completed Google page interactions
+2025-09-09 13:44:28,073 - INFO - 📊 Page 7 has 12 search results
+2025-09-09 13:44:28,262 - INFO - 📊 Cumulative results after page 7: 78
+2025-09-09 13:44:28,262 - INFO - Domain not found on page 7
+2025-09-09 13:44:28,262 - INFO - 🔍 Searching on page 8
+2025-09-09 13:44:37,186 - INFO - ✓ Navigated to page 8
+2025-09-09 13:44:37,188 - INFO - ⏰ Waiting 15 seconds on page 8...
+2025-09-09 13:44:52,277 - INFO - 🎭 Performing interactions on page 8...
+2025-09-09 13:44:52,278 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 13:44:54,555 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 14:00:15,486 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 14:00:20,415 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 14:00:22,316 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 14:00:24,731 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 14:00:24,732 - INFO - ✅ Completed Google page interactions
+2025-09-09 14:00:24,748 - INFO - 📊 Page 8 has 10 search results
+2025-09-09 14:00:24,912 - INFO - 📊 Cumulative results after page 8: 88
+2025-09-09 14:00:24,912 - INFO - Domain not found on page 8
+2025-09-09 14:00:24,912 - INFO - 🔍 Searching on page 9
+2025-09-09 14:00:33,545 - INFO - ✓ Navigated to page 9
+2025-09-09 14:00:33,547 - INFO - ⏰ Waiting 15 seconds on page 9...
+2025-09-09 14:00:48,625 - INFO - 🎭 Performing interactions on page 9...
+2025-09-09 14:00:48,626 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 14:00:49,904 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 14:17:09,278 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 14:17:09,738 - INFO - Client disconnected from WebSocket
+2025-09-09 14:17:09,740 - INFO - 127.0.0.1 - - [09/Sep/2025 14:17:09] "GET /socket.io/?EIO=4&transport=websocket&sid=vZPWm8DWGMyaJ2dQAAAE HTTP/1.1" 200 -
+2025-09-09 14:17:11,182 - INFO - 127.0.0.1 - - [09/Sep/2025 14:17:11] "GET /socket.io/?EIO=4&transport=polling&t=PakduX5 HTTP/1.1" 200 -
+2025-09-09 14:17:11,191 - INFO - Client connected to WebSocket
+2025-09-09 14:17:11,212 - INFO - 127.0.0.1 - - [09/Sep/2025 14:17:11] "POST /socket.io/?EIO=4&transport=polling&t=PakduYH&sid=_lIfTyv-9O8k6y2lAAAG HTTP/1.1" 200 -
+2025-09-09 14:17:11,215 - INFO - 127.0.0.1 - - [09/Sep/2025 14:17:11] "GET /socket.io/?EIO=4&transport=polling&t=PakduYI&sid=_lIfTyv-9O8k6y2lAAAG HTTP/1.1" 200 -
+2025-09-09 14:17:13,602 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 14:17:15,926 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 14:17:18,675 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 14:17:18,676 - INFO - ✅ Completed Google page interactions
+2025-09-09 14:17:18,692 - INFO - 📊 Page 9 has 1 search results
+2025-09-09 14:17:18,709 - INFO - 📊 Cumulative results after page 9: 89
+2025-09-09 14:17:18,710 - INFO - Domain not found on page 9
+2025-09-09 14:17:18,710 - INFO - 🔍 Searching on page 10
+2025-09-09 14:17:18,715 - WARNING - Could not navigate to page 10: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="pnnext"]"}
+  (Session info: chrome=139.0.7258.66); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x00000001010b93a0 cxxbridge1$str$ptr + 2559624
+1   chromedriver                        0x00000001010b1514 cxxbridge1$str$ptr + 2527228
+2   chromedriver                        0x0000000100c4bf34 cxxbridge1$string$len + 85140
+3   chromedriver                        0x0000000100c8ee28 cxxbridge1$string$len + 359304
+4   chromedriver                        0x0000000100ccb2d4 cxxbridge1$string$len + 606260
+5   chromedriver                        0x0000000100c84034 cxxbridge1$string$len + 314772
+6   chromedriver                        0x0000000101084584 cxxbridge1$str$ptr + 2343020
+7   chromedriver                        0x00000001010872ac cxxbridge1$str$ptr + 2354580
+8   chromedriver                        0x0000000101086ec8 cxxbridge1$str$ptr + 2353584
+9   chromedriver                        0x000000010106bd80 cxxbridge1$str$ptr + 2242664
+10  chromedriver                        0x0000000101087890 cxxbridge1$str$ptr + 2356088
+11  chromedriver                        0x000000010105e7a0 cxxbridge1$str$ptr + 2187912
+12  chromedriver                        0x00000001010a20bc cxxbridge1$str$ptr + 2464676
+13  chromedriver                        0x00000001010a228c cxxbridge1$str$ptr + 2465140
+14  chromedriver                        0x00000001010b1160 cxxbridge1$str$ptr + 2526280
+15  libsystem_pthread.dylib             0x000000019025fc0c _pthread_start + 136
+16  libsystem_pthread.dylib             0x000000019025ab80 thread_start + 8
+
+2025-09-09 14:17:18,715 - WARNING - Domain not found in search results
+2025-09-09 14:17:18,718 - INFO - Browser closed
+2025-09-09 14:17:18,918 - INFO - Kameleo profile 5993081d-82df-420f-a2c5-24ed8b037bf0 stopped
+2025-09-09 14:17:18,936 - INFO - Kameleo profile 5993081d-82df-420f-a2c5-24ed8b037bf0 deleted
+2025-09-09 14:17:18,936 - ERROR - ✗ Proxy 108.165.227.186:5427:aawikmkk:tx1f1a2yr843 failed
+2025-09-09 14:17:18,936 - INFO - Waiting 3 seconds before next proxy...
+2025-09-09 14:17:21,959 - INFO - --- Processing proxy 20/25 ---
+2025-09-09 14:17:21,959 - INFO - Testing proxy: 23.26.231.131:7372:aawikmkk:tx1f1a2yr843
+2025-09-09 14:17:21,960 - INFO - Testing proxy: 23.26.231.131:7372 (with auth)
+2025-09-09 14:17:22,565 - WARNING - Proxy 23.26.231.131:7372 (with auth) returned status code: 503
+2025-09-09 14:17:22,567 - ERROR - Proxy 23.26.231.131:7372:aawikmkk:tx1f1a2yr843 is not working, skipping...
+2025-09-09 14:17:22,567 - ERROR - ✗ Proxy 23.26.231.131:7372:aawikmkk:tx1f1a2yr843 failed
+2025-09-09 14:17:22,568 - INFO - Waiting 3 seconds before next proxy...
+2025-09-09 14:17:25,583 - INFO - --- Processing proxy 21/25 ---
+2025-09-09 14:17:25,583 - INFO - Testing proxy: 204.9.38.239:6560:aawikmkk:tx1f1a2yr843
+2025-09-09 14:17:25,584 - INFO - Testing proxy: 204.9.38.239:6560 (with auth)
+2025-09-09 14:17:26,219 - WARNING - Proxy 204.9.38.239:6560 (with auth) returned status code: 503
+2025-09-09 14:17:26,220 - ERROR - Proxy 204.9.38.239:6560:aawikmkk:tx1f1a2yr843 is not working, skipping...
+2025-09-09 14:17:26,221 - ERROR - ✗ Proxy 204.9.38.239:6560:aawikmkk:tx1f1a2yr843 failed
+2025-09-09 14:17:26,221 - INFO - Waiting 3 seconds before next proxy...
+2025-09-09 14:17:29,251 - INFO - --- Processing proxy 22/25 ---
+2025-09-09 14:17:29,252 - INFO - Testing proxy: 50.114.243.34:6275:aawikmkk:tx1f1a2yr843
+2025-09-09 14:17:29,252 - INFO - Testing proxy: 50.114.243.34:6275 (with auth)
+2025-09-09 14:17:29,883 - WARNING - Proxy 50.114.243.34:6275 (with auth) returned status code: 503
+2025-09-09 14:17:29,883 - ERROR - Proxy 50.114.243.34:6275:aawikmkk:tx1f1a2yr843 is not working, skipping...
+2025-09-09 14:17:29,884 - ERROR - ✗ Proxy 50.114.243.34:6275:aawikmkk:tx1f1a2yr843 failed
+2025-09-09 14:17:29,884 - INFO - Waiting 3 seconds before next proxy...
+2025-09-09 14:17:32,910 - INFO - --- Processing proxy 23/25 ---
+2025-09-09 14:17:32,910 - INFO - Testing proxy: 50.114.243.144:6385:aawikmkk:tx1f1a2yr843
+2025-09-09 14:17:32,911 - INFO - Testing proxy: 50.114.243.144:6385 (with auth)
+2025-09-09 14:17:35,053 - INFO - ✓ Proxy 50.114.243.144:6385 (with auth) is working. IP: 50.114.243.144
+2025-09-09 14:17:35,055 - INFO - Setting up Kameleo browser with proxy: 50.114.243.144:6385:aawikmkk:tx1f1a2yr843
+2025-09-09 14:17:35,055 - INFO - Creating Kameleo profile with proxy: 50.114.243.144:6385:aawikmkk:tx1f1a2yr843
+2025-09-09 14:17:35,056 - INFO - Selected unique fingerprint: 615ac6749543cb471648d7e0582aab3c9d2add4ffda74b3da24859c875664f2c (19/25 used)
+2025-09-09 14:17:35,056 - INFO - Using authenticated proxy: 50.114.243.144:6385
+2025-09-09 14:17:35,925 - ERROR - Failed to create Kameleo profile: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Content-Type': 'application/json', 'Date': 'Tue, 09 Sep 2025 13:17:35 GMT', 'Cache-Control': 'no-cache,no-store', 'Expires': '-1', 'Pragma': 'no-cache', 'Transfer-Encoding': 'chunked'})
+HTTP response body: {"code":401,"error":{"global":["Your session has expired, please restart the application"]}}
+
+2025-09-09 14:17:35,927 - ERROR - Failed to setup browser
+2025-09-09 14:17:35,927 - ERROR - ✗ Proxy 50.114.243.144:6385:aawikmkk:tx1f1a2yr843 failed
+2025-09-09 14:17:35,927 - INFO - Waiting 3 seconds before next proxy...
+2025-09-09 14:17:38,956 - INFO - --- Processing proxy 24/25 ---
+2025-09-09 14:17:38,957 - INFO - Testing proxy: 108.165.161.59:5800:aawikmkk:tx1f1a2yr843
+2025-09-09 14:17:38,958 - INFO - Testing proxy: 108.165.161.59:5800 (with auth)
+2025-09-09 14:17:53,962 - ERROR - Proxy 108.165.161.59:5800:aawikmkk:tx1f1a2yr843 failed: HTTPConnectionPool(host='108.165.161.59', port=5800): Max retries exceeded with url: http://httpbin.org/ip (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x103867ce0>, 'Connection to 108.165.161.59 timed out. (connect timeout=15)')))
+2025-09-09 14:17:53,963 - ERROR - Proxy 108.165.161.59:5800:aawikmkk:tx1f1a2yr843 is not working, skipping...
+2025-09-09 14:17:53,964 - ERROR - ✗ Proxy 108.165.161.59:5800:aawikmkk:tx1f1a2yr843 failed
+2025-09-09 14:17:53,964 - INFO - Waiting 3 seconds before next proxy...
+2025-09-09 14:26:28,571 - INFO - --- Processing proxy 25/25 ---
+2025-09-09 14:26:28,571 - INFO - Testing proxy: 108.165.227.17:5258:aawikmkk:tx1f1a2yr843
+2025-09-09 14:26:28,572 - INFO - Testing proxy: 108.165.227.17:5258 (with auth)
+2025-09-09 14:26:34,946 - INFO - ✓ Proxy 108.165.227.17:5258 (with auth) is working. IP: 108.165.227.17
+2025-09-09 14:26:34,948 - INFO - Setting up Kameleo browser with proxy: 108.165.227.17:5258:aawikmkk:tx1f1a2yr843
+2025-09-09 14:26:34,948 - INFO - Creating Kameleo profile with proxy: 108.165.227.17:5258:aawikmkk:tx1f1a2yr843
+2025-09-09 14:26:34,949 - INFO - Selected unique fingerprint: bb777f187a80cb1b05098918ff8db535280240f90ae14cdba047f56e0eccb48e (20/25 used)
+2025-09-09 14:26:34,949 - INFO - Using authenticated proxy: 108.165.227.17:5258
+2025-09-09 14:26:35,044 - ERROR - Failed to create Kameleo profile: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Content-Type': 'application/json', 'Date': 'Tue, 09 Sep 2025 13:26:34 GMT', 'Cache-Control': 'no-cache,no-store', 'Expires': '-1', 'Pragma': 'no-cache', 'Transfer-Encoding': 'chunked'})
+HTTP response body: {"code":503,"error":{"global":["Network error during communication (An error occurred while sending the request.)"]}}
+
+2025-09-09 14:26:35,044 - ERROR - Failed to setup browser
+2025-09-09 14:26:35,045 - ERROR - ✗ Proxy 108.165.227.17:5258:aawikmkk:tx1f1a2yr843 failed
+2025-09-09 14:26:35,045 - INFO - ==================================================
+2025-09-09 14:26:35,045 - INFO - FINAL RESULTS:
+2025-09-09 14:26:35,045 - INFO - Total proxies tested: 25
+2025-09-09 14:26:35,045 - INFO - Successful runs: 0
+2025-09-09 14:26:35,045 - INFO - Failed runs: 25
+2025-09-09 14:26:35,045 - INFO - ==================================================
