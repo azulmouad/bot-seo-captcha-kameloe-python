@@ -23630,3 +23630,13 @@ Stacktrace:
 2025-09-09 09:00:37,832 - INFO - Successful runs: 1
 2025-09-09 09:00:37,832 - INFO - Failed runs: 0
 2025-09-09 09:00:37,832 - INFO - ==================================================
+2025-09-09 09:02:34,640 - INFO - Client disconnected from WebSocket
+2025-09-09 09:02:34,642 - INFO - 127.0.0.1 - - [09/Sep/2025 09:02:34] "GET /socket.io/?EIO=4&transport=websocket&sid=8RWcFpG81Cmng9v1AAAC HTTP/1.1" 200 -
+2025-09-09 09:02:34,654 - INFO - 127.0.0.1 - - [09/Sep/2025 09:02:34] "GET / HTTP/1.1" 200 -
+2025-09-09 09:02:34,759 - INFO - 127.0.0.1 - - [09/Sep/2025 09:02:34] "GET /socket.io/?EIO=4&transport=polling&t=PajVu23 HTTP/1.1" 200 -
+2025-09-09 09:02:34,761 - INFO - 127.0.0.1 - - [09/Sep/2025 09:02:34] "GET /api/status HTTP/1.1" 200 -
+2025-09-09 09:02:34,763 - INFO - 127.0.0.1 - - [09/Sep/2025 09:02:34] "GET /api/results HTTP/1.1" 200 -
+2025-09-09 09:02:34,771 - INFO - Client connected to WebSocket
+2025-09-09 09:02:34,772 - INFO - 127.0.0.1 - - [09/Sep/2025 09:02:34] "POST /socket.io/?EIO=4&transport=polling&t=PajVu2F&sid=WLcBLo-a0mTCeNHTAAAE HTTP/1.1" 200 -
+2025-09-09 09:02:34,772 - INFO - 127.0.0.1 - - [09/Sep/2025 09:02:34] "GET /socket.io/?EIO=4&transport=polling&t=PajVu2F.0&sid=WLcBLo-a0mTCeNHTAAAE HTTP/1.1" 200 -
+2025-09-09 09:02:34,789 - INFO - 127.0.0.1 - - [09/Sep/2025 09:02:34] "GET /socket.io/?EIO=4&transport=polling&t=PajVu2W&sid=WLcBLo-a0mTCeNHTAAAE HTTP/1.1" 200 -

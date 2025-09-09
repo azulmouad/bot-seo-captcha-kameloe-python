@@ -328,7 +328,7 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
             'proxy': proxy.split(':')[0] + ':' + proxy.split(':')[1] if ':' in proxy else proxy,
             'page': 1,
             'position': None,
-            'time': start_time.strftime('%H:%M:%S'),
+            'time': start_time.strftime('%Y-%m-%d %H:%M:%S'),
             'success': False
         }
         
