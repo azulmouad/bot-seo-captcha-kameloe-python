@@ -22946,3 +22946,563 @@ HTTP response body: {"code":401,"error":{"global":["Your session has expired, pl
 2025-09-08 23:14:44,024 - INFO - 127.0.0.1 - - [08/Sep/2025 23:14:44] "POST /socket.io/?EIO=4&transport=polling&t=PahPL0p&sid=1T9z6oOCkgZFTtrHAAAC HTTP/1.1" 200 -
 2025-09-08 23:14:44,024 - INFO - 127.0.0.1 - - [08/Sep/2025 23:14:44] "GET /socket.io/?EIO=4&transport=polling&t=PahPL0p.0&sid=1T9z6oOCkgZFTtrHAAAC HTTP/1.1" 200 -
 2025-09-08 23:14:44,033 - INFO - 127.0.0.1 - - [08/Sep/2025 23:14:44] "GET /socket.io/?EIO=4&transport=polling&t=PahPL0x&sid=1T9z6oOCkgZFTtrHAAAC HTTP/1.1" 200 -
+2025-09-09 08:34:59,311 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.110.175:8080
+2025-09-09 08:34:59,311 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-09 08:35:03,126 - INFO - 127.0.0.1 - - [09/Sep/2025 08:35:03] "GET /socket.io/?EIO=4&transport=polling&t=PajPapG HTTP/1.1" 200 -
+2025-09-09 08:35:03,136 - INFO - Client connected to WebSocket
+2025-09-09 08:35:03,136 - INFO - 127.0.0.1 - - [09/Sep/2025 08:35:03] "POST /socket.io/?EIO=4&transport=polling&t=PajPapQ&sid=BSmRUTS1YvcAaHKCAAAA HTTP/1.1" 200 -
+2025-09-09 08:35:03,139 - INFO - 127.0.0.1 - - [09/Sep/2025 08:35:03] "GET /socket.io/?EIO=4&transport=polling&t=PajPapR&sid=BSmRUTS1YvcAaHKCAAAA HTTP/1.1" 200 -
+2025-09-09 08:35:03,146 - INFO - 127.0.0.1 - - [09/Sep/2025 08:35:03] "GET /socket.io/?EIO=4&transport=polling&t=PajPapd&sid=BSmRUTS1YvcAaHKCAAAA HTTP/1.1" 200 -
+2025-09-09 08:36:30,573 - INFO - 2captcha solver initialized with API key: 56d4457439...
+2025-09-09 08:36:30,574 - INFO - Starting SEO bot with 25 proxies
+2025-09-09 08:36:30,575 - INFO - 127.0.0.1 - - [09/Sep/2025 08:36:30] "POST /api/start HTTP/1.1" 200 -
+2025-09-09 08:36:30,575 - INFO - Searching for 'discord offline sunucu üyesi satın al' on domain 'sosyalbase.com'
+2025-09-09 08:36:30,576 - INFO - Using Google domain: google.com.tr
+2025-09-09 08:36:30,576 - INFO - --- Processing proxy 1/25 ---
+2025-09-09 08:36:30,577 - INFO - Testing proxy: 206.41.168.219:6884:aawikmkk:tx1f1a2yr843
+2025-09-09 08:36:30,577 - INFO - Testing proxy: 206.41.168.219:6884 (with auth)
+2025-09-09 08:36:32,472 - INFO - ✓ Proxy 206.41.168.219:6884 (with auth) is working. IP: 206.41.168.219
+2025-09-09 08:36:32,473 - INFO - Setting up Kameleo browser with proxy: 206.41.168.219:6884:aawikmkk:tx1f1a2yr843
+2025-09-09 08:36:32,474 - INFO - Kameleo client initialized on port 5050
+2025-09-09 08:36:32,474 - INFO - Loading available Chrome fingerprints...
+2025-09-09 08:36:33,283 - INFO - Loaded 25 unique Chrome fingerprints
+2025-09-09 08:36:33,283 - INFO - Creating Kameleo profile with proxy: 206.41.168.219:6884:aawikmkk:tx1f1a2yr843
+2025-09-09 08:36:33,283 - INFO - Selected unique fingerprint: 69b800ca61d9c01715317dd0bddc36aa6d1af5fb18344b2aaf575c1cea81872c (1/25 used)
+2025-09-09 08:36:33,283 - INFO - Using authenticated proxy: 206.41.168.219:6884
+2025-09-09 08:36:33,499 - INFO - ✓ Kameleo profile created: 339b86be-4bff-4d74-8ab6-ebb125ae8434 for proxy 206.41.168.219:6884
+2025-09-09 08:36:37,941 - INFO - Kameleo browser setup completed successfully
+2025-09-09 08:36:37,942 - INFO - Verifying proxy IP...
+2025-09-09 08:36:42,774 - INFO - Browser IP (via http://httpbin.org/ip): 206.41.168.219
+2025-09-09 08:36:43,360 - INFO - Real IP: 160.178.206.43
+2025-09-09 08:36:43,362 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-09 08:36:43,362 - INFO - Navigating to Google search: https://www.google.com.tr
+2025-09-09 08:36:44,931 - INFO - ⏰ Waiting 15 seconds after opening Google search...
+2025-09-09 08:36:59,934 - INFO - 🎭 Performing initial Google page interactions...
+2025-09-09 08:36:59,935 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 08:37:02,760 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 08:37:08,242 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 08:37:11,661 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 08:37:11,727 - INFO - ✅ Completed Google page interactions
+2025-09-09 08:37:11,753 - INFO - Typing keyword: discord offline sunucu üyesi satın al
+2025-09-09 08:37:23,118 - INFO - ✓ Google search completed successfully
+2025-09-09 08:37:23,118 - INFO - Looking for domain: sosyalbase.com
+2025-09-09 08:37:23,119 - INFO - 🔍 Searching on page 1
+2025-09-09 08:37:23,123 - INFO - 📊 Page 1 has 14 search results
+2025-09-09 08:37:23,509 - INFO - 📊 Cumulative results after page 1: 14
+2025-09-09 08:37:23,509 - INFO - Domain not found on page 1
+2025-09-09 08:37:23,509 - INFO - 🔍 Searching on page 2
+2025-09-09 08:37:30,283 - INFO - ✓ Navigated to page 2
+2025-09-09 08:37:30,283 - INFO - ⏰ Waiting 15 seconds on page 2...
+2025-09-09 08:37:45,289 - INFO - 🎭 Performing interactions on page 2...
+2025-09-09 08:37:45,291 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 08:37:48,119 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 08:37:53,021 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 08:37:58,171 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 08:38:00,708 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 08:38:03,221 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 08:38:03,221 - INFO - ✅ Completed Google page interactions
+2025-09-09 08:38:03,231 - INFO - 📊 Page 2 has 10 search results
+2025-09-09 08:38:03,396 - INFO - 📊 Cumulative results after page 2: 24
+2025-09-09 08:38:03,396 - INFO - Domain not found on page 2
+2025-09-09 08:38:03,396 - INFO - 🔍 Searching on page 3
+2025-09-09 08:38:09,908 - INFO - ✓ Navigated to page 3
+2025-09-09 08:38:09,908 - INFO - ⏰ Waiting 15 seconds on page 3...
+2025-09-09 08:38:24,914 - INFO - 🎭 Performing interactions on page 3...
+2025-09-09 08:38:24,914 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 08:38:26,537 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 08:38:32,411 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 08:38:37,448 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 08:38:40,214 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 08:38:42,236 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 08:38:42,236 - INFO - ✅ Completed Google page interactions
+2025-09-09 08:38:42,254 - INFO - 📊 Page 3 has 10 search results
+2025-09-09 08:38:42,414 - INFO - 📊 Cumulative results after page 3: 34
+2025-09-09 08:38:42,414 - INFO - Domain not found on page 3
+2025-09-09 08:38:42,414 - INFO - 🔍 Searching on page 4
+2025-09-09 08:38:49,037 - INFO - ✓ Navigated to page 4
+2025-09-09 08:38:49,037 - INFO - ⏰ Waiting 15 seconds on page 4...
+2025-09-09 08:39:04,037 - INFO - 🎭 Performing interactions on page 4...
+2025-09-09 08:39:04,038 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 08:39:06,889 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 08:39:13,424 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 08:39:17,325 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 08:39:20,020 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 08:39:21,907 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 08:39:21,908 - INFO - ✅ Completed Google page interactions
+2025-09-09 08:39:21,923 - INFO - 📊 Page 4 has 10 search results
+2025-09-09 08:39:22,090 - INFO - 📊 Cumulative results after page 4: 44
+2025-09-09 08:39:22,091 - INFO - Domain not found on page 4
+2025-09-09 08:39:22,091 - INFO - 🔍 Searching on page 5
+2025-09-09 08:39:29,154 - INFO - ✓ Navigated to page 5
+2025-09-09 08:39:29,154 - INFO - ⏰ Waiting 15 seconds on page 5...
+2025-09-09 08:39:44,160 - INFO - 🎭 Performing interactions on page 5...
+2025-09-09 08:39:44,160 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 08:39:46,477 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 08:39:53,720 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 08:39:58,438 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 08:40:00,879 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 08:40:03,688 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 08:40:03,688 - INFO - ✅ Completed Google page interactions
+2025-09-09 08:40:03,701 - INFO - 📊 Page 5 has 5 search results
+2025-09-09 08:40:03,793 - INFO - 📊 Cumulative results after page 5: 49
+2025-09-09 08:40:03,793 - INFO - Domain not found on page 5
+2025-09-09 08:40:03,793 - INFO - 🔍 Searching on page 6
+2025-09-09 08:40:03,798 - WARNING - Could not navigate to page 6: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="pnnext"]"}
+  (Session info: chrome=140.0.7339.41); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x00000001045a0888 cxxbridge1$str$ptr + 2710432
+1   chromedriver                        0x00000001045989d0 cxxbridge1$str$ptr + 2677992
+2   chromedriver                        0x000000010410fe28 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 67228
+3   chromedriver                        0x0000000104152ae4 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 340824
+4   chromedriver                        0x000000010418eef4 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 587624
+5   chromedriver                        0x0000000104147d30 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 296356
+6   chromedriver                        0x000000010456b6d8 cxxbridge1$str$ptr + 2492912
+7   chromedriver                        0x000000010456e3e4 cxxbridge1$str$ptr + 2504444
+8   chromedriver                        0x000000010456e000 cxxbridge1$str$ptr + 2503448
+9   chromedriver                        0x0000000104552f60 cxxbridge1$str$ptr + 2392696
+10  chromedriver                        0x000000010456e9c8 cxxbridge1$str$ptr + 2505952
+11  chromedriver                        0x0000000104545cb8 cxxbridge1$str$ptr + 2338768
+12  chromedriver                        0x00000001045891d4 cxxbridge1$str$ptr + 2614508
+13  chromedriver                        0x00000001045893a4 cxxbridge1$str$ptr + 2614972
+14  chromedriver                        0x000000010459861c cxxbridge1$str$ptr + 2677044
+15  libsystem_pthread.dylib             0x000000019025fc0c _pthread_start + 136
+16  libsystem_pthread.dylib             0x000000019025ab80 thread_start + 8
+
+2025-09-09 08:40:03,798 - WARNING - Domain not found in search results
+2025-09-09 08:40:03,801 - INFO - Browser closed
+2025-09-09 08:40:04,037 - INFO - Kameleo profile 339b86be-4bff-4d74-8ab6-ebb125ae8434 stopped
+2025-09-09 08:40:04,059 - INFO - Kameleo profile 339b86be-4bff-4d74-8ab6-ebb125ae8434 deleted
+2025-09-09 08:40:04,059 - ERROR - ✗ Proxy 206.41.168.219:6884:aawikmkk:tx1f1a2yr843 failed
+2025-09-09 08:40:04,059 - INFO - Waiting 3 seconds before next proxy...
+2025-09-09 08:40:07,065 - INFO - --- Processing proxy 2/25 ---
+2025-09-09 08:40:07,071 - INFO - Testing proxy: 206.41.168.65:6730:aawikmkk:tx1f1a2yr843
+2025-09-09 08:40:07,072 - INFO - Testing proxy: 206.41.168.65:6730 (with auth)
+2025-09-09 08:40:08,132 - INFO - ✓ Proxy 206.41.168.65:6730 (with auth) is working. IP: 206.41.168.65
+2025-09-09 08:40:08,133 - INFO - Setting up Kameleo browser with proxy: 206.41.168.65:6730:aawikmkk:tx1f1a2yr843
+2025-09-09 08:40:08,133 - INFO - Creating Kameleo profile with proxy: 206.41.168.65:6730:aawikmkk:tx1f1a2yr843
+2025-09-09 08:40:08,134 - INFO - Selected unique fingerprint: b9e3b7de96cecfcaf4f697dc253af249bb1d554589114c23b5ed27d231fcc67e (2/25 used)
+2025-09-09 08:40:08,134 - INFO - Using authenticated proxy: 206.41.168.65:6730
+2025-09-09 08:40:08,542 - INFO - ✓ Kameleo profile created: aefae509-16cf-41af-b916-6e216dd187b7 for proxy 206.41.168.65:6730
+2025-09-09 08:40:12,228 - INFO - Kameleo browser setup completed successfully
+2025-09-09 08:40:12,229 - INFO - Verifying proxy IP...
+2025-09-09 08:40:16,515 - INFO - Browser IP (via http://httpbin.org/ip): 206.41.168.65
+2025-09-09 08:40:16,794 - INFO - Real IP: 160.178.206.43
+2025-09-09 08:40:16,794 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-09 08:40:16,794 - INFO - Navigating to Google search: https://www.google.com.tr
+2025-09-09 08:40:18,213 - INFO - ⏰ Waiting 15 seconds after opening Google search...
+2025-09-09 08:40:33,217 - INFO - 🎭 Performing initial Google page interactions...
+2025-09-09 08:40:33,217 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 08:40:34,599 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 08:40:41,608 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 08:40:46,105 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 08:40:46,172 - INFO - ✅ Completed Google page interactions
+2025-09-09 08:40:46,197 - INFO - Typing keyword: discord offline sunucu üyesi satın al
+2025-09-09 08:40:51,539 - INFO - Browser closed
+2025-09-09 08:40:51,575 - ERROR - Google search failed: Message: Error during proxying: Connection refused (127.0.0.1:53495)
+
+2025-09-09 08:40:51,575 - ERROR - Google search failed
+2025-09-09 08:40:51,582 - ERROR - Error closing browser: Message: Error during proxying: Connection refused (127.0.0.1:53495)
+
+2025-09-09 08:40:51,582 - ERROR - ✗ Proxy 206.41.168.65:6730:aawikmkk:tx1f1a2yr843 failed
+2025-09-09 08:40:51,583 - INFO - ==================================================
+2025-09-09 08:40:51,584 - INFO - FINAL RESULTS:
+2025-09-09 08:40:51,584 - INFO - Total proxies tested: 25
+2025-09-09 08:40:51,584 - INFO - Successful runs: 0
+2025-09-09 08:40:51,584 - INFO - Failed runs: 25
+2025-09-09 08:40:51,584 - INFO - ==================================================
+2025-09-09 08:40:51,643 - INFO - Kameleo profile aefae509-16cf-41af-b916-6e216dd187b7 stopped
+2025-09-09 08:40:51,657 - INFO - Kameleo profile aefae509-16cf-41af-b916-6e216dd187b7 deleted
+2025-09-09 08:40:51,658 - INFO - Bot stopped by user
+2025-09-09 08:40:51,658 - INFO - 127.0.0.1 - - [09/Sep/2025 08:40:51] "POST /api/stop HTTP/1.1" 200 -
+2025-09-09 08:40:53,852 - INFO - Client disconnected from WebSocket
+2025-09-09 08:40:53,853 - INFO - 127.0.0.1 - - [09/Sep/2025 08:40:53] "GET /socket.io/?EIO=4&transport=websocket&sid=BSmRUTS1YvcAaHKCAAAA HTTP/1.1" 200 -
+2025-09-09 08:40:53,860 - INFO - 127.0.0.1 - - [09/Sep/2025 08:40:53] "GET / HTTP/1.1" 200 -
+2025-09-09 08:40:54,140 - INFO - 127.0.0.1 - - [09/Sep/2025 08:40:54] "GET /socket.io/?EIO=4&transport=polling&t=PajQwVt HTTP/1.1" 200 -
+2025-09-09 08:40:54,141 - INFO - 127.0.0.1 - - [09/Sep/2025 08:40:54] "GET /api/status HTTP/1.1" 200 -
+2025-09-09 08:40:54,142 - INFO - 127.0.0.1 - - [09/Sep/2025 08:40:54] "GET /api/results HTTP/1.1" 200 -
+2025-09-09 08:40:54,154 - INFO - Client connected to WebSocket
+2025-09-09 08:40:54,155 - INFO - 127.0.0.1 - - [09/Sep/2025 08:40:54] "POST /socket.io/?EIO=4&transport=polling&t=PajQwW5&sid=iWPmxj0aL5qSoiAAAAAC HTTP/1.1" 200 -
+2025-09-09 08:40:54,155 - INFO - 127.0.0.1 - - [09/Sep/2025 08:40:54] "GET /socket.io/?EIO=4&transport=polling&t=PajQwW5.0&sid=iWPmxj0aL5qSoiAAAAAC HTTP/1.1" 200 -
+2025-09-09 08:40:54,179 - INFO - 127.0.0.1 - - [09/Sep/2025 08:40:54] "GET /socket.io/?EIO=4&transport=polling&t=PajQwWV&sid=iWPmxj0aL5qSoiAAAAAC HTTP/1.1" 200 -
+2025-09-09 08:41:22,432 - INFO - 2captcha solver initialized with API key: 56d4457439...
+2025-09-09 08:41:22,434 - INFO - Starting SEO bot with 25 proxies
+2025-09-09 08:41:22,435 - INFO - 127.0.0.1 - - [09/Sep/2025 08:41:22] "POST /api/start HTTP/1.1" 200 -
+2025-09-09 08:41:22,435 - INFO - Searching for 'discord offline sunucu üyesi satın al' on domain 'sosyalbase.com'
+2025-09-09 08:41:22,435 - INFO - Using Google domain: google.com.tr
+2025-09-09 08:41:22,436 - INFO - --- Processing proxy 1/25 ---
+2025-09-09 08:41:22,436 - INFO - Testing proxy: 206.41.168.219:6884:aawikmkk:tx1f1a2yr843
+2025-09-09 08:41:22,437 - INFO - Testing proxy: 206.41.168.219:6884 (with auth)
+2025-09-09 08:41:23,076 - INFO - ✓ Proxy 206.41.168.219:6884 (with auth) is working. IP: 206.41.168.219
+2025-09-09 08:41:23,076 - INFO - Setting up Kameleo browser with proxy: 206.41.168.219:6884:aawikmkk:tx1f1a2yr843
+2025-09-09 08:41:23,077 - INFO - Kameleo client initialized on port 5050
+2025-09-09 08:41:23,077 - INFO - Loading available Chrome fingerprints...
+2025-09-09 08:41:23,621 - INFO - Loaded 25 unique Chrome fingerprints
+2025-09-09 08:41:23,621 - INFO - Creating Kameleo profile with proxy: 206.41.168.219:6884:aawikmkk:tx1f1a2yr843
+2025-09-09 08:41:23,622 - INFO - Selected unique fingerprint: 10c88cf13d73c2c70d28eab63bc8444436e995dbdef2404d9d04f4b5df58e8d2 (1/25 used)
+2025-09-09 08:41:23,622 - INFO - Using authenticated proxy: 206.41.168.219:6884
+2025-09-09 08:41:23,770 - INFO - ✓ Kameleo profile created: 6d87d5b4-1b7b-4dd1-a4e2-bc7608c38074 for proxy 206.41.168.219:6884
+2025-09-09 08:41:27,088 - INFO - Kameleo browser setup completed successfully
+2025-09-09 08:41:27,090 - INFO - Verifying proxy IP...
+2025-09-09 08:41:31,089 - INFO - Browser IP (via http://httpbin.org/ip): 206.41.168.219
+2025-09-09 08:41:33,433 - INFO - Real IP: 160.178.206.43
+2025-09-09 08:41:33,434 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-09 08:41:33,434 - INFO - Navigating to Google search: https://www.google.com.tr
+2025-09-09 08:41:34,723 - INFO - ⏰ Waiting 15 seconds after opening Google search...
+2025-09-09 08:41:49,729 - INFO - 🎭 Performing initial Google page interactions...
+2025-09-09 08:41:49,730 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 08:41:51,929 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 08:41:58,836 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 08:42:03,803 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 08:42:03,882 - INFO - ✅ Completed Google page interactions
+2025-09-09 08:42:03,906 - INFO - Typing keyword: discord offline sunucu üyesi satın al
+2025-09-09 08:42:15,599 - INFO - ✓ Google search completed successfully
+2025-09-09 08:42:15,599 - INFO - Looking for domain: sosyalbase.com
+2025-09-09 08:42:15,599 - INFO - 🔍 Searching on page 1
+2025-09-09 08:42:15,606 - INFO - 📊 Page 1 has 14 search results
+2025-09-09 08:42:16,014 - INFO - 📊 Cumulative results after page 1: 14
+2025-09-09 08:42:16,015 - INFO - Domain not found on page 1
+2025-09-09 08:42:16,015 - INFO - 🔍 Searching on page 2
+2025-09-09 08:42:17,513 - INFO - 127.0.0.1 - - [09/Sep/2025 08:42:17] "[33mPOST /api/pause HTTP/1.1[0m" 404 -
+2025-09-09 08:42:22,536 - INFO - ✓ Navigated to page 2
+2025-09-09 08:42:22,537 - INFO - ⏰ Waiting 15 seconds on page 2...
+2025-09-09 08:42:24,047 - INFO - 127.0.0.1 - - [09/Sep/2025 08:42:24] "[33mPOST /api/pause HTTP/1.1[0m" 404 -
+2025-09-09 08:42:37,539 - INFO - 🎭 Performing interactions on page 2...
+2025-09-09 08:42:37,539 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 08:42:39,044 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 08:42:44,928 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 08:42:48,897 - INFO - 🖱️ Hovered over Google element: h3
+2025-09-09 08:42:51,335 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 08:42:54,029 - INFO - 🖱️ Hovered over Google element: .tF2Cxc
+2025-09-09 08:42:54,029 - INFO - ✅ Completed Google page interactions
+2025-09-09 08:42:54,044 - INFO - 📊 Page 2 has 10 search results
+2025-09-09 08:42:54,197 - INFO - 📊 Cumulative results after page 2: 24
+2025-09-09 08:42:54,197 - INFO - Domain not found on page 2
+2025-09-09 08:42:54,197 - INFO - 🔍 Searching on page 3
+2025-09-09 08:43:00,338 - INFO - Browser closed
+2025-09-09 08:43:00,800 - INFO - ✓ Navigated to page 3
+2025-09-09 08:43:00,801 - INFO - ⏰ Waiting 15 seconds on page 3...
+2025-09-09 08:43:01,253 - INFO - Kameleo profile 6d87d5b4-1b7b-4dd1-a4e2-bc7608c38074 stopped
+2025-09-09 08:43:01,269 - INFO - Kameleo profile 6d87d5b4-1b7b-4dd1-a4e2-bc7608c38074 deleted
+2025-09-09 08:43:01,269 - INFO - Bot stopped by user
+2025-09-09 08:43:01,270 - INFO - 127.0.0.1 - - [09/Sep/2025 08:43:01] "POST /api/stop HTTP/1.1" 200 -
+2025-09-09 08:43:06,458 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.110.175:8080
+2025-09-09 08:43:06,458 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-09 08:43:10,704 - INFO - 127.0.0.1 - - [09/Sep/2025 08:43:10] "GET /socket.io/?EIO=4&transport=polling&t=PajRRri HTTP/1.1" 200 -
+2025-09-09 08:43:10,714 - INFO - Client connected to WebSocket
+2025-09-09 08:43:10,715 - INFO - 127.0.0.1 - - [09/Sep/2025 08:43:10] "POST /socket.io/?EIO=4&transport=polling&t=PajRRro&sid=P4JZ-B0Gu1DM1g0SAAAA HTTP/1.1" 200 -
+2025-09-09 08:43:10,716 - INFO - 127.0.0.1 - - [09/Sep/2025 08:43:10] "GET /socket.io/?EIO=4&transport=polling&t=PajRRrp&sid=P4JZ-B0Gu1DM1g0SAAAA HTTP/1.1" 200 -
+2025-09-09 08:43:12,262 - INFO - Client disconnected from WebSocket
+2025-09-09 08:43:12,262 - INFO - 127.0.0.1 - - [09/Sep/2025 08:43:12] "GET /socket.io/?EIO=4&transport=websocket&sid=P4JZ-B0Gu1DM1g0SAAAA HTTP/1.1" 200 -
+2025-09-09 08:43:12,274 - INFO - 127.0.0.1 - - [09/Sep/2025 08:43:12] "[36mGET / HTTP/1.1[0m" 304 -
+2025-09-09 08:43:12,393 - INFO - 127.0.0.1 - - [09/Sep/2025 08:43:12] "GET /socket.io/?EIO=4&transport=polling&t=PajRSG2 HTTP/1.1" 200 -
+2025-09-09 08:43:12,394 - INFO - 127.0.0.1 - - [09/Sep/2025 08:43:12] "GET /api/status HTTP/1.1" 200 -
+2025-09-09 08:43:12,394 - INFO - 127.0.0.1 - - [09/Sep/2025 08:43:12] "GET /api/results HTTP/1.1" 200 -
+2025-09-09 08:43:12,401 - INFO - Client connected to WebSocket
+2025-09-09 08:43:12,402 - INFO - 127.0.0.1 - - [09/Sep/2025 08:43:12] "POST /socket.io/?EIO=4&transport=polling&t=PajRSGD&sid=FQD-JCIFHTgK12RHAAAC HTTP/1.1" 200 -
+2025-09-09 08:43:12,402 - INFO - 127.0.0.1 - - [09/Sep/2025 08:43:12] "GET /socket.io/?EIO=4&transport=polling&t=PajRSGD.0&sid=FQD-JCIFHTgK12RHAAAC HTTP/1.1" 200 -
+2025-09-09 08:43:12,412 - INFO - 127.0.0.1 - - [09/Sep/2025 08:43:12] "GET /socket.io/?EIO=4&transport=polling&t=PajRSGN&sid=FQD-JCIFHTgK12RHAAAC HTTP/1.1" 200 -
+2025-09-09 08:43:27,318 - INFO - 2captcha solver initialized with API key: 56d4457439...
+2025-09-09 08:43:27,319 - INFO - Starting SEO bot with 1 proxies
+2025-09-09 08:43:27,319 - INFO - 127.0.0.1 - - [09/Sep/2025 08:43:27] "POST /api/start HTTP/1.1" 200 -
+2025-09-09 08:43:27,319 - INFO - Searching for 'starbox iptv' on domain 'mouadzizi.com'
+2025-09-09 08:43:27,320 - INFO - Using Google domain: google.com
+2025-09-09 08:43:27,320 - INFO - --- Processing proxy 1/1 ---
+2025-09-09 08:43:27,320 - INFO - Testing proxy: 108.165.161.122:5863:aawikmkk:tx1f1a2yr843
+2025-09-09 08:43:27,321 - INFO - Testing proxy: 108.165.161.122:5863 (with auth)
+2025-09-09 08:43:28,836 - INFO - ✓ Proxy 108.165.161.122:5863 (with auth) is working. IP: 108.165.161.122
+2025-09-09 08:43:28,837 - INFO - Setting up Kameleo browser with proxy: 108.165.161.122:5863:aawikmkk:tx1f1a2yr843
+2025-09-09 08:43:28,837 - INFO - Kameleo client initialized on port 5050
+2025-09-09 08:43:28,837 - INFO - Loading available Chrome fingerprints...
+2025-09-09 08:43:29,563 - INFO - Loaded 25 unique Chrome fingerprints
+2025-09-09 08:43:29,564 - INFO - Creating Kameleo profile with proxy: 108.165.161.122:5863:aawikmkk:tx1f1a2yr843
+2025-09-09 08:43:29,564 - INFO - Selected unique fingerprint: 0eeaf65d7731ce41ed0a4a41211938dcee89a26af63e47069bb3204bacdf08f0 (1/25 used)
+2025-09-09 08:43:29,565 - INFO - Using authenticated proxy: 108.165.161.122:5863
+2025-09-09 08:43:29,665 - INFO - ✓ Kameleo profile created: 23e22a80-f862-4932-9d14-db05a50cc852 for proxy 108.165.161.122:5863
+2025-09-09 08:43:33,793 - INFO - Kameleo browser setup completed successfully
+2025-09-09 08:43:33,793 - INFO - Verifying proxy IP...
+2025-09-09 08:43:38,801 - INFO - Browser IP (via http://httpbin.org/ip): 108.165.161.122
+2025-09-09 08:43:39,083 - INFO - Real IP: 160.178.206.43
+2025-09-09 08:43:39,083 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-09 08:43:39,084 - INFO - Navigating to Google search: https://www.google.com
+2025-09-09 08:43:40,389 - INFO - ⏰ Waiting 15 seconds after opening Google search...
+2025-09-09 08:43:55,395 - INFO - 🎭 Performing initial Google page interactions...
+2025-09-09 08:43:55,397 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 08:43:57,340 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 08:44:03,136 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 08:44:07,788 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 08:44:07,860 - INFO - ✅ Completed Google page interactions
+2025-09-09 08:44:07,883 - INFO - Typing keyword: starbox iptv
+2025-09-09 08:44:13,121 - INFO - ✓ Google search completed successfully
+2025-09-09 08:44:13,122 - INFO - Looking for domain: mouadzizi.com
+2025-09-09 08:44:13,122 - INFO - 🔍 Searching on page 1
+2025-09-09 08:44:13,129 - INFO - 📊 Page 1 has 10 search results
+2025-09-09 08:44:13,205 - INFO - 🎯 Found target domain on page 1, local position 4, GLOBAL position 4: https://mouadzizi.com/products/starbox-iptv
+2025-09-09 08:44:13,205 - INFO - 📈 Position calculation:  + 4 = 4
+2025-09-09 08:44:13,205 - INFO - 🖱️ Hovering over target link...
+2025-09-09 08:44:16,182 - INFO - Bot paused by user - Browser available for manual interaction
+2025-09-09 08:44:16,183 - INFO - 127.0.0.1 - - [09/Sep/2025 08:44:16] "POST /api/pause HTTP/1.1" 200 -
+2025-09-09 08:44:20,533 - INFO - ✨ Completed hovering over target link
+2025-09-09 08:44:24,841 - INFO - 127.0.0.1 - - [09/Sep/2025 08:44:24] "[31m[1mPOST /api/pause HTTP/1.1[0m" 400 -
+2025-09-09 08:44:26,058 - INFO - ✓ Successfully clicked target link using ActionChains
+2025-09-09 08:44:29,084 - INFO - ✓ Successfully navigated to target website: https://mouadzizi.com/products/starbox-iptv
+2025-09-09 08:44:29,085 - INFO - 🎭 Starting realistic website interaction (60 seconds)
+2025-09-09 08:44:29,085 - INFO - 🎭 Starting realistic website interaction (60 seconds)
+2025-09-09 08:44:32,103 - INFO - Phase 1: Initial page exploration...
+2025-09-09 08:44:33,460 - INFO - Smooth scrolled down 600 pixels
+2025-09-09 08:44:37,366 - INFO - Hovered over a element
+2025-09-09 08:44:39,240 - INFO - Hovered over button element
+2025-09-09 08:44:41,060 - INFO - Hovered over h1 element
+2025-09-09 08:44:41,148 - INFO - Hovered over 3 elements
+2025-09-09 08:44:43,758 - INFO - Smooth scrolled up 300 pixels
+2025-09-09 08:44:45,761 - INFO - Phase 2: Exploring navigation...
+2025-09-09 08:44:45,880 - INFO - No suitable navigation links found
+2025-09-09 08:44:45,880 - INFO - Phase 3: Content exploration...
+2025-09-09 08:44:47,583 - INFO - Smooth scrolled down 800 pixels
+2025-09-09 08:44:51,475 - INFO - Hovered over a element
+2025-09-09 08:44:53,316 - INFO - Hovered over button element
+2025-09-09 08:44:55,117 - INFO - Hovered over h1 element
+2025-09-09 08:44:55,159 - INFO - Hovered over 3 elements
+2025-09-09 08:44:57,633 - INFO - Smooth scrolled down 200 pixels
+2025-09-09 08:44:59,926 - INFO - 127.0.0.1 - - [09/Sep/2025 08:44:59] "[31m[1mPOST /api/pause HTTP/1.1[0m" 400 -
+2025-09-09 08:45:00,124 - INFO - Smooth scrolled down 200 pixels
+2025-09-09 08:45:02,869 - INFO - Smooth scrolled down 200 pixels
+2025-09-09 08:45:05,561 - INFO - Smooth scrolled up 400 pixels
+2025-09-09 08:45:06,566 - INFO - Phase 4: Final exploration...
+2025-09-09 08:45:07,215 - INFO - Browser closed
+2025-09-09 08:45:07,381 - INFO - Kameleo profile 23e22a80-f862-4932-9d14-db05a50cc852 stopped
+2025-09-09 08:45:07,399 - INFO - Kameleo profile 23e22a80-f862-4932-9d14-db05a50cc852 deleted
+2025-09-09 08:45:07,399 - INFO - Bot stopped by user
+2025-09-09 08:45:07,399 - INFO - 127.0.0.1 - - [09/Sep/2025 08:45:07] "POST /api/stop HTTP/1.1" 200 -
+2025-09-09 08:45:07,772 - WARNING - Could not explore internal links: Message: Profile not found.
+
+2025-09-09 08:45:07,785 - ERROR - Error during smooth scroll down: Message: Profile not found.
+
+2025-09-09 08:45:08,797 - ERROR - Error during smooth scroll up: Message: Profile not found.
+
+2025-09-09 08:45:09,804 - ERROR - Error during smooth scroll up: Message: Profile not found.
+
+2025-09-09 08:45:10,813 - ERROR - Error during smooth scroll down: Message: Profile not found.
+
+2025-09-09 08:45:11,821 - ERROR - Error during smooth scroll up: Message: Profile not found.
+
+2025-09-09 08:45:12,828 - ERROR - Error during smooth scroll down: Message: Profile not found.
+
+2025-09-09 08:45:13,842 - ERROR - Error during smooth scroll down: Message: Profile not found.
+
+2025-09-09 08:45:14,851 - ERROR - Error during smooth scroll down: Message: Profile not found.
+
+2025-09-09 08:45:15,859 - ERROR - Error during smooth scroll up: Message: Profile not found.
+
+2025-09-09 08:45:16,866 - ERROR - Error during smooth scroll down: Message: Profile not found.
+
+2025-09-09 08:45:17,873 - ERROR - Error during smooth scroll up: Message: Profile not found.
+
+2025-09-09 08:45:18,878 - ERROR - Error during smooth scroll down: Message: Profile not found.
+
+2025-09-09 08:45:19,891 - ERROR - Error during smooth scroll up: Message: Profile not found.
+
+2025-09-09 08:47:01,906 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.110.175:8080
+2025-09-09 08:47:01,907 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-09 08:47:02,362 - INFO - 127.0.0.1 - - [09/Sep/2025 08:47:02] "GET /socket.io/?EIO=4&transport=polling&t=PajSKPK HTTP/1.1" 200 -
+2025-09-09 08:47:02,367 - INFO - Client connected to WebSocket
+2025-09-09 08:47:02,368 - INFO - 127.0.0.1 - - [09/Sep/2025 08:47:02] "POST /socket.io/?EIO=4&transport=polling&t=PajSKPS&sid=Hft3Sv5VIl_VcyJpAAAA HTTP/1.1" 200 -
+2025-09-09 08:47:02,370 - INFO - 127.0.0.1 - - [09/Sep/2025 08:47:02] "GET /socket.io/?EIO=4&transport=polling&t=PajSKPU&sid=Hft3Sv5VIl_VcyJpAAAA HTTP/1.1" 200 -
+2025-09-09 08:47:06,056 - INFO - Client disconnected from WebSocket
+2025-09-09 08:47:06,057 - INFO - 127.0.0.1 - - [09/Sep/2025 08:47:06] "GET /socket.io/?EIO=4&transport=websocket&sid=Hft3Sv5VIl_VcyJpAAAA HTTP/1.1" 200 -
+2025-09-09 08:47:06,079 - INFO - 127.0.0.1 - - [09/Sep/2025 08:47:06] "[36mGET / HTTP/1.1[0m" 304 -
+2025-09-09 08:47:06,263 - INFO - 127.0.0.1 - - [09/Sep/2025 08:47:06] "GET /api/status HTTP/1.1" 200 -
+2025-09-09 08:47:06,264 - INFO - 127.0.0.1 - - [09/Sep/2025 08:47:06] "GET /socket.io/?EIO=4&transport=polling&t=PajSLMH HTTP/1.1" 200 -
+2025-09-09 08:47:06,265 - INFO - 127.0.0.1 - - [09/Sep/2025 08:47:06] "GET /api/results HTTP/1.1" 200 -
+2025-09-09 08:47:06,275 - INFO - Client connected to WebSocket
+2025-09-09 08:47:06,275 - INFO - 127.0.0.1 - - [09/Sep/2025 08:47:06] "POST /socket.io/?EIO=4&transport=polling&t=PajSLMS&sid=xyLgqhdoUj8srmJDAAAC HTTP/1.1" 200 -
+2025-09-09 08:47:06,276 - INFO - 127.0.0.1 - - [09/Sep/2025 08:47:06] "GET /socket.io/?EIO=4&transport=polling&t=PajSLMS.0&sid=xyLgqhdoUj8srmJDAAAC HTTP/1.1" 200 -
+2025-09-09 08:47:06,284 - INFO - 127.0.0.1 - - [09/Sep/2025 08:47:06] "GET /socket.io/?EIO=4&transport=polling&t=PajSLMd&sid=xyLgqhdoUj8srmJDAAAC HTTP/1.1" 200 -
+2025-09-09 08:47:21,277 - INFO - 2captcha solver initialized with API key: 56d4457439...
+2025-09-09 08:47:21,277 - INFO - Starting SEO bot with 1 proxies
+2025-09-09 08:47:21,277 - INFO - Searching for 'starbox iptv' on domain 'mouadzizi.com'
+2025-09-09 08:47:21,277 - INFO - Using Google domain: google.com.tr
+2025-09-09 08:47:21,278 - INFO - --- Processing proxy 1/1 ---
+2025-09-09 08:47:21,278 - INFO - 127.0.0.1 - - [09/Sep/2025 08:47:21] "POST /api/start HTTP/1.1" 200 -
+2025-09-09 08:47:21,278 - INFO - Testing proxy: 108.165.161.122:5863:aawikmkk:tx1f1a2yr843
+2025-09-09 08:47:21,279 - INFO - Testing proxy: 108.165.161.122:5863 (with auth)
+2025-09-09 08:47:21,736 - INFO - ✓ Proxy 108.165.161.122:5863 (with auth) is working. IP: 108.165.161.122
+2025-09-09 08:47:21,738 - INFO - Setting up Kameleo browser with proxy: 108.165.161.122:5863:aawikmkk:tx1f1a2yr843
+2025-09-09 08:47:21,739 - INFO - Kameleo client initialized on port 5050
+2025-09-09 08:47:21,739 - INFO - Loading available Chrome fingerprints...
+2025-09-09 08:47:22,425 - INFO - Loaded 25 unique Chrome fingerprints
+2025-09-09 08:47:22,425 - INFO - Creating Kameleo profile with proxy: 108.165.161.122:5863:aawikmkk:tx1f1a2yr843
+2025-09-09 08:47:22,426 - INFO - Selected unique fingerprint: a2af6e606154c3de1a8dde1fed78340df9fe913ad5494bb0ad94c0db901b9fb7 (1/25 used)
+2025-09-09 08:47:22,426 - INFO - Using authenticated proxy: 108.165.161.122:5863
+2025-09-09 08:47:22,541 - INFO - ✓ Kameleo profile created: 1b7e0723-9cc9-4d92-8ae1-e0d401da91c0 for proxy 108.165.161.122:5863
+2025-09-09 08:47:26,403 - INFO - Kameleo browser setup completed successfully
+2025-09-09 08:47:26,404 - INFO - Verifying proxy IP...
+2025-09-09 08:47:30,762 - INFO - Browser IP (via http://httpbin.org/ip): 108.165.161.122
+2025-09-09 08:47:31,041 - INFO - Real IP: 160.178.206.43
+2025-09-09 08:47:31,042 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-09 08:47:31,043 - INFO - Navigating to Google search: https://www.google.com.tr
+2025-09-09 08:47:32,769 - INFO - ⏰ Waiting 15 seconds after opening Google search...
+2025-09-09 08:47:36,826 - INFO - Bot paused by user - Browser available for manual interaction
+2025-09-09 08:47:36,826 - INFO - 127.0.0.1 - - [09/Sep/2025 08:47:36] "POST /api/pause HTTP/1.1" 200 -
+2025-09-09 08:47:45,195 - INFO - 127.0.0.1 - - [09/Sep/2025 08:47:45] "[31m[1mPOST /api/pause HTTP/1.1[0m" 400 -
+2025-09-09 08:50:55,229 - INFO - Browser closed
+2025-09-09 08:50:55,459 - INFO - Kameleo profile 1b7e0723-9cc9-4d92-8ae1-e0d401da91c0 stopped
+2025-09-09 08:50:55,480 - INFO - Kameleo profile 1b7e0723-9cc9-4d92-8ae1-e0d401da91c0 deleted
+2025-09-09 08:50:55,481 - INFO - Bot stopped by user
+2025-09-09 08:50:55,481 - INFO - 127.0.0.1 - - [09/Sep/2025 08:50:55] "POST /api/stop HTTP/1.1" 200 -
+2025-09-09 08:50:55,710 - ERROR - Google search failed
+2025-09-09 08:50:55,729 - ERROR - Error closing browser: Message: Profile not found.
+
+2025-09-09 08:50:55,730 - ERROR - ✗ Proxy 108.165.161.122:5863:aawikmkk:tx1f1a2yr843 failed
+2025-09-09 08:50:55,730 - INFO - ==================================================
+2025-09-09 08:50:55,730 - INFO - FINAL RESULTS:
+2025-09-09 08:50:55,730 - INFO - Total proxies tested: 1
+2025-09-09 08:50:55,731 - INFO - Successful runs: 0
+2025-09-09 08:50:55,731 - INFO - Failed runs: 1
+2025-09-09 08:50:55,731 - INFO - ==================================================
+2025-09-09 08:51:00,869 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.110.175:8080
+2025-09-09 08:51:00,869 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-09 08:51:03,470 - INFO - 127.0.0.1 - - [09/Sep/2025 08:51:03] "GET / HTTP/1.1" 200 -
+2025-09-09 08:51:03,566 - INFO - 127.0.0.1 - - [09/Sep/2025 08:51:03] "GET /api/status HTTP/1.1" 200 -
+2025-09-09 08:51:03,567 - INFO - 127.0.0.1 - - [09/Sep/2025 08:51:03] "GET /api/results HTTP/1.1" 200 -
+2025-09-09 08:51:03,568 - INFO - 127.0.0.1 - - [09/Sep/2025 08:51:03] "GET /socket.io/?EIO=4&transport=polling&t=PajTFI9 HTTP/1.1" 200 -
+2025-09-09 08:51:03,582 - INFO - Client connected to WebSocket
+2025-09-09 08:51:03,583 - INFO - 127.0.0.1 - - [09/Sep/2025 08:51:03] "POST /socket.io/?EIO=4&transport=polling&t=PajTFIN&sid=krZgLGmSf8uFh3MUAAAA HTTP/1.1" 200 -
+2025-09-09 08:51:03,583 - INFO - 127.0.0.1 - - [09/Sep/2025 08:51:03] "GET /socket.io/?EIO=4&transport=polling&t=PajTFIN.0&sid=krZgLGmSf8uFh3MUAAAA HTTP/1.1" 200 -
+2025-09-09 08:51:18,518 - INFO - 2captcha solver initialized with API key: 56d4457439...
+2025-09-09 08:51:18,520 - INFO - Starting SEO bot with 1 proxies
+2025-09-09 08:51:18,521 - INFO - 127.0.0.1 - - [09/Sep/2025 08:51:18] "POST /api/start HTTP/1.1" 200 -
+2025-09-09 08:51:18,521 - INFO - Searching for 'StarBox Iptv' on domain 'mouadzizi.com'
+2025-09-09 08:51:18,522 - INFO - Using Google domain: google.com
+2025-09-09 08:51:18,522 - INFO - --- Processing proxy 1/1 ---
+2025-09-09 08:51:18,522 - INFO - Testing proxy: 108.165.161.122:5863:aawikmkk:tx1f1a2yr843
+2025-09-09 08:51:18,522 - INFO - Testing proxy: 108.165.161.122:5863 (with auth)
+2025-09-09 08:51:19,444 - INFO - ✓ Proxy 108.165.161.122:5863 (with auth) is working. IP: 108.165.161.122
+2025-09-09 08:51:19,447 - INFO - Setting up Kameleo browser with proxy: 108.165.161.122:5863:aawikmkk:tx1f1a2yr843
+2025-09-09 08:51:19,447 - INFO - Kameleo client initialized on port 5050
+2025-09-09 08:51:19,448 - INFO - Loading available Chrome fingerprints...
+2025-09-09 08:51:20,271 - INFO - Loaded 25 unique Chrome fingerprints
+2025-09-09 08:51:20,271 - INFO - Creating Kameleo profile with proxy: 108.165.161.122:5863:aawikmkk:tx1f1a2yr843
+2025-09-09 08:51:20,272 - INFO - Selected unique fingerprint: 636031263852cc550c834f143c3b56541267ceeb41e142e0a8af79b172e915f5 (1/25 used)
+2025-09-09 08:51:20,272 - INFO - Using authenticated proxy: 108.165.161.122:5863
+2025-09-09 08:51:20,391 - INFO - ✓ Kameleo profile created: 3af859a8-2a98-4e67-9202-6ad79846efcd for proxy 108.165.161.122:5863
+2025-09-09 08:51:24,175 - INFO - Kameleo browser setup completed successfully
+2025-09-09 08:51:24,175 - INFO - Verifying proxy IP...
+2025-09-09 08:51:28,412 - INFO - Browser IP (via http://httpbin.org/ip): 108.165.161.122
+2025-09-09 08:51:29,071 - INFO - Real IP: 160.178.206.43
+2025-09-09 08:51:29,072 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-09 08:51:29,072 - INFO - Navigating to Google search: https://www.google.com
+2025-09-09 08:51:30,834 - INFO - ⏰ Waiting 15 seconds after opening Google search...
+2025-09-09 08:51:31,094 - INFO - Bot paused by user - Browser available for manual interaction
+2025-09-09 08:51:31,095 - INFO - 127.0.0.1 - - [09/Sep/2025 08:51:31] "POST /api/pause HTTP/1.1" 200 -
+2025-09-09 08:51:38,105 - INFO - 127.0.0.1 - - [09/Sep/2025 08:51:38] "[31m[1mPOST /api/pause HTTP/1.1[0m" 400 -
+2025-09-09 08:51:40,836 - INFO - 127.0.0.1 - - [09/Sep/2025 08:51:40] "[31m[1mPOST /api/pause HTTP/1.1[0m" 400 -
+2025-09-09 08:52:49,808 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.110.175:8080
+2025-09-09 08:52:49,808 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-09 08:52:51,315 - INFO - 127.0.0.1 - - [09/Sep/2025 08:52:51] "GET /socket.io/?EIO=4&transport=polling&t=PajTfbj HTTP/1.1" 200 -
+2025-09-09 08:52:51,325 - INFO - Client connected to WebSocket
+2025-09-09 08:52:51,326 - INFO - 127.0.0.1 - - [09/Sep/2025 08:52:51] "POST /socket.io/?EIO=4&transport=polling&t=PajTfbs&sid=liR-Z6GJfMiv_uWEAAAA HTTP/1.1" 200 -
+2025-09-09 08:52:51,326 - INFO - 127.0.0.1 - - [09/Sep/2025 08:52:51] "GET /socket.io/?EIO=4&transport=polling&t=PajTfbt&sid=liR-Z6GJfMiv_uWEAAAA HTTP/1.1" 200 -
+2025-09-09 08:52:53,329 - INFO - Client disconnected from WebSocket
+2025-09-09 08:52:53,329 - INFO - 127.0.0.1 - - [09/Sep/2025 08:52:53] "GET /socket.io/?EIO=4&transport=websocket&sid=liR-Z6GJfMiv_uWEAAAA HTTP/1.1" 200 -
+2025-09-09 08:52:53,349 - INFO - 127.0.0.1 - - [09/Sep/2025 08:52:53] "GET / HTTP/1.1" 200 -
+2025-09-09 08:52:53,457 - INFO - 127.0.0.1 - - [09/Sep/2025 08:52:53] "GET /api/results HTTP/1.1" 200 -
+2025-09-09 08:52:53,457 - INFO - 127.0.0.1 - - [09/Sep/2025 08:52:53] "GET /api/status HTTP/1.1" 200 -
+2025-09-09 08:52:53,457 - INFO - 127.0.0.1 - - [09/Sep/2025 08:52:53] "GET /socket.io/?EIO=4&transport=polling&t=PajTg7D HTTP/1.1" 200 -
+2025-09-09 08:52:53,468 - INFO - Client connected to WebSocket
+2025-09-09 08:52:53,468 - INFO - 127.0.0.1 - - [09/Sep/2025 08:52:53] "POST /socket.io/?EIO=4&transport=polling&t=PajTg7N&sid=0rUXSe__2BIILFANAAAC HTTP/1.1" 200 -
+2025-09-09 08:52:53,468 - INFO - 127.0.0.1 - - [09/Sep/2025 08:52:53] "GET /socket.io/?EIO=4&transport=polling&t=PajTg7O&sid=0rUXSe__2BIILFANAAAC HTTP/1.1" 200 -
+2025-09-09 08:52:53,481 - INFO - 127.0.0.1 - - [09/Sep/2025 08:52:53] "GET /socket.io/?EIO=4&transport=polling&t=PajTg7W&sid=0rUXSe__2BIILFANAAAC HTTP/1.1" 200 -
+2025-09-09 08:53:32,525 - INFO - Client disconnected from WebSocket
+2025-09-09 08:53:32,525 - INFO - 127.0.0.1 - - [09/Sep/2025 08:53:32] "GET /socket.io/?EIO=4&transport=websocket&sid=0rUXSe__2BIILFANAAAC HTTP/1.1" 200 -
+2025-09-09 08:53:32,534 - INFO - 127.0.0.1 - - [09/Sep/2025 08:53:32] "GET / HTTP/1.1" 200 -
+2025-09-09 08:53:32,607 - INFO - 127.0.0.1 - - [09/Sep/2025 08:53:32] "GET /socket.io/?EIO=4&transport=polling&t=PajTpgw HTTP/1.1" 200 -
+2025-09-09 08:53:32,608 - INFO - 127.0.0.1 - - [09/Sep/2025 08:53:32] "GET /api/results HTTP/1.1" 200 -
+2025-09-09 08:53:32,609 - INFO - 127.0.0.1 - - [09/Sep/2025 08:53:32] "GET /api/status HTTP/1.1" 200 -
+2025-09-09 08:53:32,621 - INFO - Client connected to WebSocket
+2025-09-09 08:53:32,621 - INFO - 127.0.0.1 - - [09/Sep/2025 08:53:32] "GET /socket.io/?EIO=4&transport=polling&t=PajTph8.0&sid=F0Uyb22fPP9tN0TNAAAE HTTP/1.1" 200 -
+2025-09-09 08:53:32,622 - INFO - 127.0.0.1 - - [09/Sep/2025 08:53:32] "POST /socket.io/?EIO=4&transport=polling&t=PajTph8&sid=F0Uyb22fPP9tN0TNAAAE HTTP/1.1" 200 -
+2025-09-09 08:53:32,630 - INFO - 127.0.0.1 - - [09/Sep/2025 08:53:32] "GET /socket.io/?EIO=4&transport=polling&t=PajTphG&sid=F0Uyb22fPP9tN0TNAAAE HTTP/1.1" 200 -
+2025-09-09 08:53:48,821 - INFO - 2captcha solver initialized with API key: 56d4457439...
+2025-09-09 08:53:48,822 - INFO - Starting SEO bot with 1 proxies
+2025-09-09 08:53:48,822 - INFO - Searching for 'starbox iptv' on domain 'mouadzizi.com'
+2025-09-09 08:53:48,822 - INFO - Using Google domain: google.co.uk
+2025-09-09 08:53:48,822 - INFO - --- Processing proxy 1/1 ---
+2025-09-09 08:53:48,822 - INFO - 127.0.0.1 - - [09/Sep/2025 08:53:48] "POST /api/start HTTP/1.1" 200 -
+2025-09-09 08:53:48,822 - INFO - Testing proxy: 206.41.168.86:6751:aawikmkk:tx1f1a2yr843
+2025-09-09 08:53:48,823 - INFO - Testing proxy: 206.41.168.86:6751 (with auth)
+2025-09-09 08:53:51,201 - INFO - ✓ Proxy 206.41.168.86:6751 (with auth) is working. IP: 206.41.168.86
+2025-09-09 08:53:51,202 - INFO - Setting up Kameleo browser with proxy: 206.41.168.86:6751:aawikmkk:tx1f1a2yr843
+2025-09-09 08:53:51,202 - INFO - Kameleo client initialized on port 5050
+2025-09-09 08:53:51,202 - INFO - Loading available Chrome fingerprints...
+2025-09-09 08:53:52,096 - INFO - Loaded 25 unique Chrome fingerprints
+2025-09-09 08:53:52,097 - INFO - Creating Kameleo profile with proxy: 206.41.168.86:6751:aawikmkk:tx1f1a2yr843
+2025-09-09 08:53:52,097 - INFO - Selected unique fingerprint: 91e0144f10f6ce4918a6678f09b642bfbdcf98c3e080401abcbee0b281856d70 (1/25 used)
+2025-09-09 08:53:52,098 - INFO - Using authenticated proxy: 206.41.168.86:6751
+2025-09-09 08:53:52,236 - INFO - ✓ Kameleo profile created: 312b088b-5bd3-4a2f-9f89-0a2419f8b89d for proxy 206.41.168.86:6751
+2025-09-09 08:53:56,959 - INFO - Kameleo browser setup completed successfully
+2025-09-09 08:53:56,960 - INFO - Verifying proxy IP...
+2025-09-09 08:54:01,314 - INFO - Browser IP (via http://httpbin.org/ip): 206.41.168.86
+2025-09-09 08:54:01,855 - INFO - Real IP: 160.178.206.43
+2025-09-09 08:54:01,855 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-09 08:54:01,856 - INFO - Navigating to Google search: https://www.google.co.uk
+2025-09-09 08:54:02,669 - INFO - ⏰ Waiting 15 seconds after opening Google search...
+2025-09-09 08:54:10,245 - INFO - Bot paused by user - Browser available for manual interaction
+2025-09-09 08:54:10,246 - INFO - 127.0.0.1 - - [09/Sep/2025 08:54:10] "POST /api/pause HTTP/1.1" 200 -
+2025-09-09 08:54:31,094 - INFO - Bot resumed by user - Continuing automated operation
+2025-09-09 08:54:31,096 - INFO - 127.0.0.1 - - [09/Sep/2025 08:54:31] "POST /api/resume HTTP/1.1" 200 -
+2025-09-09 08:54:38,375 - INFO - 🎭 Performing initial Google page interactions...
+2025-09-09 08:54:38,376 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 08:54:40,463 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 08:54:45,490 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 08:54:49,085 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 08:54:49,165 - INFO - ✅ Completed Google page interactions
+2025-09-09 08:54:49,190 - INFO - Typing keyword: starbox iptv
+2025-09-09 08:54:56,243 - INFO - ✓ Google search completed successfully
+2025-09-09 08:54:56,243 - INFO - Looking for domain: mouadzizi.com
+2025-09-09 08:54:56,243 - INFO - 🔍 Searching on page 1
+2025-09-09 08:54:56,254 - INFO - 📊 Page 1 has 12 search results
+2025-09-09 08:54:56,278 - INFO - 🎯 Found target domain on page 1, local position 1, GLOBAL position 1: https://mouadzizi.com/products/starbox-iptv
+2025-09-09 08:54:56,278 - INFO - 📈 Position calculation:  + 1 = 1
+2025-09-09 08:54:56,278 - INFO - 🖱️ Hovering over target link...
+2025-09-09 08:55:02,577 - INFO - ✨ Completed hovering over target link
+2025-09-09 08:55:06,908 - INFO - ✓ Successfully clicked target link using ActionChains
+2025-09-09 08:55:07,789 - INFO - Bot paused by user - Browser available for manual interaction
+2025-09-09 08:55:07,789 - INFO - 127.0.0.1 - - [09/Sep/2025 08:55:07] "POST /api/pause HTTP/1.1" 200 -
+2025-09-09 08:55:09,933 - INFO - ✓ Successfully navigated to target website: https://mouadzizi.com/products/starbox-iptv
+2025-09-09 08:55:09,934 - INFO - 🎭 Starting realistic website interaction (60 seconds)
+2025-09-09 08:55:09,935 - INFO - 🎭 Starting realistic website interaction (60 seconds)
+2025-09-09 08:55:13,021 - INFO - Phase 1: Initial page exploration...
+2025-09-09 08:55:14,266 - INFO - Smooth scrolled down 600 pixels
+2025-09-09 08:55:18,165 - INFO - Hovered over a element
+2025-09-09 08:55:19,122 - INFO - Bot resumed by user - Continuing automated operation
+2025-09-09 08:55:19,123 - INFO - 127.0.0.1 - - [09/Sep/2025 08:55:19] "POST /api/resume HTTP/1.1" 200 -
+2025-09-09 08:55:19,972 - INFO - Hovered over button element
+2025-09-09 08:55:21,790 - INFO - Hovered over h1 element
+2025-09-09 08:55:21,886 - INFO - Hovered over 3 elements
+2025-09-09 08:55:23,283 - INFO - Bot paused by user - Browser available for manual interaction
+2025-09-09 08:55:23,284 - INFO - 127.0.0.1 - - [09/Sep/2025 08:55:23] "POST /api/pause HTTP/1.1" 200 -
+2025-09-09 08:55:23,822 - INFO - Smooth scrolled up 300 pixels
+2025-09-09 08:55:25,828 - INFO - Phase 2: Exploring navigation...
+2025-09-09 08:55:25,955 - INFO - No suitable navigation links found
+2025-09-09 08:55:25,955 - INFO - Phase 3: Content exploration...
+2025-09-09 08:55:27,117 - INFO - Smooth scrolled down 800 pixels
+2025-09-09 08:55:31,005 - INFO - Hovered over a element
+2025-09-09 08:55:32,824 - INFO - Hovered over button element
+2025-09-09 08:55:34,656 - INFO - Hovered over h1 element
+2025-09-09 08:55:34,723 - INFO - Hovered over 3 elements
+2025-09-09 08:55:36,830 - INFO - Smooth scrolled down 200 pixels

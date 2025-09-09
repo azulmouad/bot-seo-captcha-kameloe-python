@@ -35,6 +35,7 @@ bot_instance = None
 bot_thread = None
 bot_status = {
     'is_running': False,
+    'is_paused': False,
     'message': 'Bot ready to start',
     'found': 0,
     'total': 0,
@@ -111,7 +112,16 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
             
             # Wait 15 seconds as requested
             logger.info("⏰ Waiting 15 seconds after opening Google search...")
-            time.sleep(15)
+            
+            # Sleep in small increments to allow pause/resume during wait
+            for _ in range(15):
+                if not bot_status['is_running']:
+                    return False
+                # Wait while paused
+                while bot_status['is_paused'] and bot_status['is_running']:
+                    time.sleep(0.5)
+                if bot_status['is_running']:
+                    time.sleep(1)
             
             # Perform scrolling interactions
             logger.info("🎭 Performing initial Google page interactions...")
@@ -225,6 +235,7 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
         
         try:
             bot_status['is_running'] = True
+            bot_status['is_paused'] = False
             bot_status['message'] = 'Bot starting...'
             bot_status['total'] = len(self.proxy_list)
             bot_status['completed'] = 0
@@ -241,6 +252,13 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
             
             for i, proxy in enumerate(self.proxy_list, 1):
                 if not bot_status['is_running']:  # Check if stopped
+                    break
+                
+                # Wait while paused
+                while bot_status['is_paused'] and bot_status['is_running']:
+                    time.sleep(1)  # Check every second
+                
+                if not bot_status['is_running']:  # Check again after pause
                     break
                     
                 self.current_proxy_index = i
@@ -270,7 +288,16 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
                 if i < len(self.proxy_list) and bot_status['is_running']:
                     delay = 3  # Reduced delay for demo
                     logger.info(f"Waiting {delay} seconds before next proxy...")
-                    time.sleep(delay)
+                    
+                    # Sleep in small increments to allow pause/resume during delay
+                    for _ in range(delay):
+                        if not bot_status['is_running']:
+                            break
+                        # Wait while paused
+                        while bot_status['is_paused'] and bot_status['is_running']:
+                            time.sleep(0.5)
+                        if bot_status['is_running']:
+                            time.sleep(1)
             
             # Final status
             bot_status['is_running'] = False
@@ -306,15 +333,37 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
         }
         
         try:
+            # Wait while paused before starting proxy processing
+            while bot_status['is_paused'] and bot_status['is_running']:
+                time.sleep(1)
+            
+            if not bot_status['is_running']:
+                return result
+            
             # Check proxy
             proxy_works, proxy_ip = self.check_proxy(proxy)
             if not proxy_works:
                 logger.error(f"Proxy {proxy} is not working, skipping...")
                 return result
             
+            # Wait while paused before browser setup
+            while bot_status['is_paused'] and bot_status['is_running']:
+                time.sleep(1)
+            
+            if not bot_status['is_running']:
+                return result
+            
             # Setup browser
             if not self.setup_browser(proxy):
                 logger.error("Failed to setup browser")
+                return result
+            
+            # Wait while paused before proxy verification
+            while bot_status['is_paused'] and bot_status['is_running']:
+                time.sleep(1)
+            
+            if not bot_status['is_running']:
+                self.close_browser()
                 return result
             
             # Verify proxy is being used
@@ -323,9 +372,25 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
                 self.close_browser()
                 return result
             
+            # Wait while paused before Google search
+            while bot_status['is_paused'] and bot_status['is_running']:
+                time.sleep(1)
+            
+            if not bot_status['is_running']:
+                self.close_browser()
+                return result
+            
             # Search Google with enhanced interactions
             if not self.search_google():
                 logger.error("Google search failed")
+                self.close_browser()
+                return result
+            
+            # Wait while paused before target search
+            while bot_status['is_paused'] and bot_status['is_running']:
+                time.sleep(1)
+            
+            if not bot_status['is_running']:
                 self.close_browser()
                 return result
             
@@ -358,6 +423,13 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
             page_results_count = []  # Track results count per page
             
             for page in range(1, self.max_pages + 1):
+                # Wait while paused before processing each page
+                while bot_status['is_paused'] and bot_status['is_running']:
+                    time.sleep(1)
+                
+                if not bot_status['is_running']:
+                    return False, page, None
+                
                 logger.info(f"🔍 Searching on page {page}")
                 
                 if page > 1:
@@ -382,7 +454,16 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
                         
                         # Wait 15 seconds and perform interactions on each new page
                         logger.info(f"⏰ Waiting 15 seconds on page {page}...")
-                        time.sleep(15)
+                        
+                        # Sleep in small increments to allow pause/resume during wait
+                        for _ in range(15):
+                            if not bot_status['is_running']:
+                                return False, page, None
+                            # Wait while paused
+                            while bot_status['is_paused'] and bot_status['is_running']:
+                                time.sleep(0.5)
+                            if bot_status['is_running']:
+                                time.sleep(1)
                         
                         # Perform interactions on this page
                         logger.info(f"🎭 Performing interactions on page {page}...")
@@ -856,6 +937,7 @@ def stop_bot():
         return jsonify({'error': 'Bot is not running'}), 400
     
     bot_status['is_running'] = False
+    bot_status['is_paused'] = False
     bot_status['message'] = 'Bot stopped by user'
     
     # Close browser if running
@@ -869,6 +951,44 @@ def stop_bot():
     logger.info("Bot stopped by user")
     
     return jsonify({'message': 'Bot stopped successfully'})
+
+@app.route('/api/pause', methods=['POST'])
+def pause_bot():
+    """Pause the running bot"""
+    global bot_status
+    
+    if not bot_status['is_running']:
+        return jsonify({'error': 'Bot is not running'}), 400
+    
+    if bot_status['is_paused']:
+        return jsonify({'error': 'Bot is already paused'}), 400
+    
+    bot_status['is_paused'] = True
+    bot_status['message'] = 'Bot paused - Browser available for manual interaction'
+    
+    socketio.emit('status_update', make_json_serializable(bot_status))
+    logger.info("Bot paused by user - Browser available for manual interaction")
+    
+    return jsonify({'message': 'Bot paused successfully'})
+
+@app.route('/api/resume', methods=['POST'])
+def resume_bot():
+    """Resume the paused bot"""
+    global bot_status
+    
+    if not bot_status['is_running']:
+        return jsonify({'error': 'Bot is not running'}), 400
+    
+    if not bot_status['is_paused']:
+        return jsonify({'error': 'Bot is not paused'}), 400
+    
+    bot_status['is_paused'] = False
+    bot_status['message'] = 'Bot resumed - Continuing automated operation'
+    
+    socketio.emit('status_update', make_json_serializable(bot_status))
+    logger.info("Bot resumed by user - Continuing automated operation")
+    
+    return jsonify({'message': 'Bot resumed successfully'})
 
 @socketio.on('connect')
 def handle_connect():
