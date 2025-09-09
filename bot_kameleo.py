@@ -26,10 +26,11 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 class GoogleSearchBot:
-    def __init__(self, keyword, target_domain, proxy_list):
+    def __init__(self, keyword, target_domain, proxy_list, device_profile="desktop"):
         self.keyword = keyword
         self.target_domain = target_domain
         self.proxy_list = proxy_list
+        self.device_profile = device_profile
         self.current_proxy = None
         self.driver = None
         self.kameleo_client = None
@@ -62,32 +63,64 @@ class GoogleSearchBot:
     def load_fingerprints(self):
         """Load and cache available fingerprints with variety"""
         try:
-            logger.info("Loading available Chrome fingerprints...")
-            
-            # Load fingerprints with different criteria for variety
-            fingerprint_sets = []
-            
-            # Recent Chrome versions
-            fp1 = self.kameleo_client.fingerprint.search_fingerprints(
-                device_type='desktop',
-                browser_product='chrome',
-                browser_version='>134'
-            )
-            fingerprint_sets.extend(fp1)
-            
-            # Different languages for variety
-            languages = ['en-US', 'en-GB', 'de-DE', 'fr-FR', 'es-ES']
-            for lang in languages[:2]:  # Use first 2 languages
+            if self.device_profile == "mobile":
+                logger.info("Attempting to load Mobile Safari fingerprints...")
+                
+                # Try to load mobile fingerprints
+                fingerprint_sets = []
+                
                 try:
-                    fp_lang = self.kameleo_client.fingerprint.search_fingerprints(
-                        device_type='desktop',
-                        browser_product='chrome',
-                        browser_version='>134',
-                        language=lang
+                    # iOS Safari fingerprints
+                    fp_mobile = self.kameleo_client.fingerprint.search_fingerprints(
+                        device_type='mobile',
+                        os_family='ios',
+                        browser_product='safari'
                     )
-                    fingerprint_sets.extend(fp_lang[:5])  # Add first 5 from each language
-                except:
-                    continue
+                    fingerprint_sets.extend(fp_mobile)
+                    
+                    # Different iOS versions for variety
+                    fp_ios_versions = self.kameleo_client.fingerprint.search_fingerprints(
+                        device_type='mobile',
+                        os_family='ios',
+                        browser_product='safari'
+                    )
+                    fingerprint_sets.extend(fp_ios_versions[:10])  # Add first 10
+                    
+                    if not fingerprint_sets:
+                        raise Exception("No mobile fingerprints available")
+                        
+                except Exception as e:
+                    logger.warning(f"Mobile fingerprints not available: {str(e)}")
+                    logger.info("Falling back to desktop fingerprints...")
+                    self.device_profile = "desktop"  # Fallback to desktop
+                
+            else:
+                logger.info("Loading available Desktop Chrome fingerprints...")
+                
+                # Load desktop fingerprints
+                fingerprint_sets = []
+                
+                # Recent Chrome versions
+                fp1 = self.kameleo_client.fingerprint.search_fingerprints(
+                    device_type='desktop',
+                    browser_product='chrome',
+                    browser_version='>134'
+                )
+                fingerprint_sets.extend(fp1)
+                
+                # Different languages for variety
+                languages = ['en-US', 'en-GB', 'de-DE', 'fr-FR', 'es-ES']
+                for lang in languages[:2]:  # Use first 2 languages
+                    try:
+                        fp_lang = self.kameleo_client.fingerprint.search_fingerprints(
+                            device_type='desktop',
+                            browser_product='chrome',
+                            browser_version='>134',
+                            language=lang
+                        )
+                        fingerprint_sets.extend(fp_lang[:5])  # Add first 5 from each language
+                    except:
+                        continue
             
             # Remove duplicates by fingerprint ID
             seen_ids = set()
@@ -281,8 +314,32 @@ class GoogleSearchBot:
             if not self.current_profile:
                 return False
             
-            # Setup Chrome options for Kameleo
-            options = webdriver.ChromeOptions()
+            # Start profile with device-specific options
+            if self.device_profile == "mobile":
+                # Start mobile profile with touch emulation disabled
+                self.kameleo_client.profile.start_profile(self.current_profile.id, {
+                    'additionalOptions': [
+                        {
+                            'key': 'disableTouchEmulation',
+                            'value': True,
+                        },
+                    ],
+                })
+                logger.info("✓ Mobile profile started with touch emulation disabled")
+            else:
+                # Start desktop profile normally
+                self.kameleo_client.profile.start_profile(self.current_profile.id)
+                logger.info("✓ Desktop profile started")
+            
+            # Setup browser options for Kameleo
+            if self.device_profile == "mobile":
+                # Use Safari options for mobile
+                from selenium.webdriver.safari.options import Options as SafariOptions
+                options = SafariOptions()
+            else:
+                # Use Chrome options for desktop
+                options = webdriver.ChromeOptions()
+            
             options.add_experimental_option('kameleo:profileId', self.current_profile.id)
             
             # Connect to Kameleo WebDriver
@@ -291,9 +348,16 @@ class GoogleSearchBot:
                 options=options
             )
             
-            # Set random screen resolution
-            resolutions = [(1920, 1080), (1366, 768), (1440, 900), (1536, 864)]
-            width, height = random.choice(resolutions)
+            # Set appropriate screen resolution
+            if self.device_profile == "mobile":
+                # Mobile resolutions (iPhone/iPad)
+                mobile_resolutions = [(375, 667), (414, 896), (390, 844), (428, 926)]
+                width, height = random.choice(mobile_resolutions)
+            else:
+                # Desktop resolutions
+                resolutions = [(1920, 1080), (1366, 768), (1440, 900), (1536, 864)]
+                width, height = random.choice(resolutions)
+            
             self.driver.set_window_size(width, height)
             
             logger.info("Kameleo browser setup completed successfully")
