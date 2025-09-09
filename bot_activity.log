@@ -1,0 +1,165 @@
+2025-09-09 10:58:52,673 - INFO - 🍪 Cookie management requested: True
+2025-09-09 10:58:52,675 - INFO - Cookie database initialized: cookies.db
+2025-09-09 10:58:52,675 - INFO - 2captcha solver initialized with API key: 56d4457439...
+2025-09-09 10:58:52,675 - INFO - Cookie management: Enabled
+2025-09-09 10:58:52,676 - INFO - 🍪 Bot created with cookie support: True
+2025-09-09 10:58:52,676 - INFO - Cookie database initialized: cookies.db
+2025-09-09 10:58:52,677 - INFO - Bot runner initialized with cookie management support
+2025-09-09 10:58:52,677 - INFO - Starting SEO bot with 1 proxies
+2025-09-09 10:58:52,678 - INFO - 127.0.0.1 - - [09/Sep/2025 10:58:52] "POST /api/start HTTP/1.1" 200 -
+2025-09-09 10:58:52,678 - INFO - Searching for 'starbox iptv' on domain 'mouadzizi.com'
+2025-09-09 10:58:52,678 - INFO - Using Google domain: google.com.tr
+2025-09-09 10:58:52,678 - INFO - Device profile: Desktop
+2025-09-09 10:58:52,679 - INFO - --- Processing proxy 1/1 ---
+2025-09-09 10:58:52,680 - INFO - Testing proxy: 204.9.38.125:6446:aawikmkk:tx1f1a2yr843
+2025-09-09 10:58:52,681 - INFO - Testing proxy: 204.9.38.125:6446 (with auth)
+2025-09-09 10:58:53,722 - INFO - ✓ Proxy 204.9.38.125:6446 (with auth) is working. IP: 204.9.38.125
+2025-09-09 10:58:53,723 - INFO - Setting up Kameleo browser with proxy: 204.9.38.125:6446:aawikmkk:tx1f1a2yr843
+2025-09-09 10:58:53,723 - INFO - 🔍 Checking for existing cookies for proxy: 204.9.38.125:6446
+2025-09-09 10:58:53,725 - INFO - Filtered 3 expired cookies
+2025-09-09 10:58:53,725 - INFO - 💾 Attempting to save 68 cookies for proxy: 204.9.38.125:6446
+2025-09-09 10:58:53,727 - INFO - ✅ Successfully saved 68 cookies for proxy: 204.9.38.125:6446
+2025-09-09 10:58:53,727 - INFO - ✓ Loaded 68 valid cookies for proxy: 204.9.38.125:6446
+2025-09-09 10:58:53,727 - INFO - ✅ Found 68 saved cookies for this proxy
+2025-09-09 10:58:53,727 - INFO - Kameleo client initialized on port 5050
+2025-09-09 10:58:53,727 - INFO - Loading available Desktop Chrome fingerprints...
+2025-09-09 10:58:54,572 - INFO - Loaded 25 unique Chrome fingerprints
+2025-09-09 10:58:54,574 - INFO - Creating Kameleo profile with proxy: 204.9.38.125:6446:aawikmkk:tx1f1a2yr843
+2025-09-09 10:58:54,574 - INFO - Selected unique fingerprint: 0accaeaaeabdc131f492306446e2570dc280ac0e17e14308b349cffa0a0cc2e9 (1/25 used)
+2025-09-09 10:58:54,575 - INFO - Using authenticated proxy: 204.9.38.125:6446
+2025-09-09 10:58:54,728 - INFO - ✓ Kameleo profile created: 2b5b61b4-aedc-455d-84f6-83de67938b22 for proxy 204.9.38.125:6446
+2025-09-09 10:58:57,910 - INFO - ✓ Desktop profile started
+2025-09-09 10:58:57,911 - INFO - 📂 Loading saved cookies into Kameleo profile...
+2025-09-09 10:58:57,911 - INFO - ✓ Loaded 68 valid cookies for proxy: 204.9.38.125:6446
+2025-09-09 10:58:57,911 - INFO - 📂 Stopping profile to add 68 cookies...
+2025-09-09 10:58:58,387 - INFO - ✓ Profile stopped for cookie loading
+2025-09-09 10:58:58,403 - INFO - ✅ Added 68 saved cookies to stopped profile
+2025-09-09 10:58:58,403 - INFO - 📂 Cookie loading result: ✅ Success
+2025-09-09 10:59:00,704 - INFO - ✓ Desktop profile restarted after loading cookies
+2025-09-09 10:59:01,073 - INFO - Kameleo browser setup completed successfully
+2025-09-09 10:59:01,074 - INFO - Verifying proxy IP...
+2025-09-09 10:59:05,755 - INFO - Browser IP (via http://httpbin.org/ip): 204.9.38.125
+2025-09-09 10:59:06,079 - INFO - Real IP: 160.178.206.43
+2025-09-09 10:59:06,080 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-09 10:59:06,080 - INFO - Navigating to Google search: https://www.google.com.tr
+2025-09-09 10:59:07,517 - INFO - ⏰ Waiting 15 seconds after opening Google search...
+2025-09-09 10:59:22,570 - INFO - 🎭 Performing initial Google page interactions...
+2025-09-09 10:59:22,572 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 10:59:24,459 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 10:59:31,071 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 10:59:35,526 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 10:59:35,579 - INFO - ✅ Completed Google page interactions
+2025-09-09 10:59:35,605 - INFO - Typing keyword: starbox iptv
+2025-09-09 10:59:40,534 - INFO - ✓ Google search completed successfully
+2025-09-09 10:59:40,535 - INFO - Looking for domain: mouadzizi.com
+2025-09-09 10:59:40,535 - INFO - 🔍 Searching on page 1
+2025-09-09 10:59:40,543 - INFO - 📊 Page 1 has 12 search results
+2025-09-09 10:59:40,568 - INFO - 🎯 Found target domain on page 1, local position 1, GLOBAL position 1: https://mouadzizi.com/products/starbox-iptv
+2025-09-09 10:59:40,568 - INFO - 📈 Position calculation:  + 1 = 1
+2025-09-09 10:59:40,568 - INFO - 🖱️ Hovering over target link...
+2025-09-09 10:59:46,612 - INFO - ✨ Completed hovering over target link
+2025-09-09 10:59:50,543 - INFO - ✓ Successfully clicked target link using ActionChains
+2025-09-09 10:59:53,559 - INFO - ✓ Successfully navigated to target website: https://mouadzizi.com/products/starbox-iptv
+2025-09-09 10:59:53,559 - INFO - 🎭 Starting realistic website interaction (60 seconds)
+2025-09-09 10:59:53,562 - INFO - 🎭 Starting realistic website interaction (60 seconds)
+2025-09-09 10:59:56,580 - INFO - Phase 1: Initial page exploration...
+2025-09-09 10:59:57,449 - INFO - Smooth scrolled down 600 pixels
+2025-09-09 11:00:01,883 - INFO - Hovered over button element
+2025-09-09 11:00:03,704 - INFO - Hovered over h1 element
+2025-09-09 11:00:05,516 - INFO - Hovered over h2 element
+2025-09-09 11:00:05,588 - INFO - Hovered over 3 elements
+2025-09-09 11:00:05,588 - INFO - Phase 2: Exploring navigation...
+2025-09-09 11:00:05,657 - INFO - No suitable navigation links found
+2025-09-09 11:00:05,657 - INFO - Phase 3: Content exploration...
+2025-09-09 11:00:06,999 - INFO - Smooth scrolled down 800 pixels
+2025-09-09 11:00:09,008 - INFO - Phase 4: Final exploration...
+2025-09-09 11:00:10,873 - INFO - Smooth scrolled down 249 pixels
+2025-09-09 11:00:13,462 - INFO - Smooth scrolled up 111 pixels
+2025-09-09 11:00:16,080 - INFO - Smooth scrolled up 137 pixels
+2025-09-09 11:00:17,981 - INFO - Smooth scrolled down 148 pixels
+2025-09-09 11:00:20,541 - INFO - Smooth scrolled up 132 pixels
+2025-09-09 11:00:23,256 - INFO - Smooth scrolled up 113 pixels
+2025-09-09 11:00:25,207 - INFO - Smooth scrolled down 172 pixels
+2025-09-09 11:00:27,377 - INFO - Smooth scrolled up 146 pixels
+2025-09-09 11:00:29,937 - INFO - Smooth scrolled up 195 pixels
+2025-09-09 11:00:32,461 - INFO - Smooth scrolled down 195 pixels
+2025-09-09 11:00:35,255 - INFO - Smooth scrolled down 281 pixels
+2025-09-09 11:00:37,438 - INFO - Smooth scrolled down 110 pixels
+2025-09-09 11:00:39,689 - INFO - Smooth scrolled up 160 pixels
+2025-09-09 11:00:41,634 - INFO - Smooth scrolled up 115 pixels
+2025-09-09 11:00:44,093 - INFO - Smooth scrolled up 162 pixels
+2025-09-09 11:00:46,172 - INFO - Smooth scrolled up 152 pixels
+2025-09-09 11:00:48,260 - INFO - Smooth scrolled up 139 pixels
+2025-09-09 11:00:50,285 - INFO - Smooth scrolled down 262 pixels
+2025-09-09 11:00:53,019 - INFO - Smooth scrolled up 184 pixels
+2025-09-09 11:00:54,022 - INFO - ✅ Completed realistic interaction session (60.5 seconds)
+2025-09-09 11:00:54,023 - INFO - ✅ Successfully visited and interacted with target website
+2025-09-09 11:00:54,023 - INFO - ✓ Found domain on page 1, position 1
+2025-09-09 11:00:54,026 - INFO - Browser closed
+2025-09-09 11:00:54,026 - INFO - 💾 FINAL COOKIE SAVE before closing profile for proxy: 204.9.38.125:6446
+2025-09-09 11:00:55,018 - INFO - Kameleo profile 2b5b61b4-aedc-455d-84f6-83de67938b22 stopped
+2025-09-09 11:00:55,022 - INFO - 📊 Found 79 cookies in profile to save
+2025-09-09 11:00:55,022 - INFO - 🍪 PRINTING ALL COOKIES FOUND BEFORE SAVING:
+2025-09-09 11:00:55,022 - INFO - ============================================================
+2025-09-09 11:00:55,023 - INFO - 📊 Cookie Summary:
+2025-09-09 11:00:55,023 - INFO -    Total found: 79
+2025-09-09 11:00:55,023 - INFO -    Valid: 79
+2025-09-09 11:00:55,024 - INFO -    Invalid: 0
+2025-09-09 11:00:55,024 - INFO - 🔄 Merging 79 new cookies with existing ones...
+2025-09-09 11:00:55,025 - INFO - ✓ Loaded 68 valid cookies for proxy: 204.9.38.125:6446
+2025-09-09 11:00:55,025 - INFO - 📂 Found 68 existing cookies in database
+2025-09-09 11:00:55,025 - INFO - 🔄 Cookie merge details:
+2025-09-09 11:00:55,026 - INFO -    Kept existing: 1
+2025-09-09 11:00:55,026 - INFO -    Updated existing: 67
+2025-09-09 11:00:55,026 - INFO -    Added new: 12
+2025-09-09 11:00:55,026 - INFO -    Total result: 79
+2025-09-09 11:00:55,026 - INFO - 🔄 Cookie merge result:
+2025-09-09 11:00:55,026 - INFO -    Existing: 68
+2025-09-09 11:00:55,027 - INFO -    New: 79
+2025-09-09 11:00:55,027 - INFO -    Merged total: 79
+2025-09-09 11:00:55,027 - INFO - 💾 Attempting to save 79 cookies for proxy: 204.9.38.125:6446
+2025-09-09 11:00:55,028 - INFO - ✅ Successfully saved 79 cookies for proxy: 204.9.38.125:6446
+2025-09-09 11:00:55,029 - INFO - ✅ SUCCESSFULLY SAVED 79 merged cookies for proxy 204.9.38.125:6446
+2025-09-09 11:00:55,029 - INFO - 📋 Cookies by domain:
+2025-09-09 11:00:55,029 - INFO -    ✓ .adform.net: 2 cookies
+2025-09-09 11:00:55,029 - INFO -    ✓ .adkernel.com: 2 cookies
+2025-09-09 11:00:55,029 - INFO -    ✓ .admaster.cc: 1 cookies
+2025-09-09 11:00:55,029 - INFO -    ✓ .adnxs.com: 3 cookies
+2025-09-09 11:00:55,030 - INFO -    ✓ .bidr.io: 2 cookies
+2025-09-09 11:00:55,030 - INFO -    ✓ .bidswitch.net: 3 cookies
+2025-09-09 11:00:55,030 - INFO -    ✓ .bing.com: 1 cookies
+2025-09-09 11:00:55,030 - INFO -    ✓ .c.bing.com: 2 cookies
+2025-09-09 11:00:55,030 - INFO -    ✓ .c.clarity.ms: 2 cookies
+2025-09-09 11:00:55,030 - INFO -    ✓ .casalemedia.com: 3 cookies
+2025-09-09 11:00:55,030 - INFO -    ✓ .clarity.ms: 1 cookies
+2025-09-09 11:00:55,031 - INFO -    ✓ .criteo.com: 2 cookies
+2025-09-09 11:00:55,031 - INFO -    ✓ .crwdcntrl.net: 2 cookies
+2025-09-09 11:00:55,031 - INFO -    ✓ .doubleclick.net: 3 cookies
+2025-09-09 11:00:55,031 - INFO -    ✓ .fotmob.com: 14 cookies
+2025-09-09 11:00:55,031 - INFO -    ✓ .google.com: 3 cookies
+2025-09-09 11:00:55,031 - INFO -    ✓ .lescore.net: 8 cookies
+2025-09-09 11:00:55,031 - INFO -    ✓ .mediago.io: 1 cookies
+2025-09-09 11:00:55,032 - INFO -    ✓ .mouadzizi.com: 7 cookies
+2025-09-09 11:00:55,032 - INFO -    ✓ .openx.net: 1 cookies
+2025-09-09 11:00:55,032 - INFO -    ✓ .outbrain.com: 1 cookies
+2025-09-09 11:00:55,032 - INFO -    ✓ .quantserve.com: 2 cookies
+2025-09-09 11:00:55,032 - INFO -    ✓ .teads.tv: 1 cookies
+2025-09-09 11:00:55,032 - INFO -    ✓ .travelaudience.com: 1 cookies
+2025-09-09 11:00:55,032 - INFO -    ✓ .youtube.com: 4 cookies
+2025-09-09 11:00:55,033 - INFO -    ✓ .zemanta.com: 1 cookies
+2025-09-09 11:00:55,033 - INFO -    ✓ lwadm.com: 1 cookies
+2025-09-09 11:00:55,033 - INFO -    ✓ m.stripe.com: 1 cookies
+2025-09-09 11:00:55,033 - INFO -    ✓ ogs.google.com: 1 cookies
+2025-09-09 11:00:55,033 - INFO -    ✓ www.clarity.ms: 1 cookies
+2025-09-09 11:00:55,034 - INFO -    ✓ www.fotmob.com: 1 cookies
+2025-09-09 11:00:55,034 - INFO -    ✓ www.google.com: 1 cookies
+2025-09-09 11:00:55,052 - INFO - Kameleo profile 2b5b61b4-aedc-455d-84f6-83de67938b22 deleted
+2025-09-09 11:00:55,053 - INFO - ✓ Proxy 204.9.38.125:6446:aawikmkk:tx1f1a2yr843 completed successfully
+2025-09-09 11:00:55,053 - INFO - ==================================================
+2025-09-09 11:00:55,053 - INFO - FINAL RESULTS:
+2025-09-09 11:00:55,053 - INFO - Total proxies tested: 1
+2025-09-09 11:00:55,053 - INFO - Successful runs: 1
+2025-09-09 11:00:55,053 - INFO - Failed runs: 0
+2025-09-09 11:00:55,053 - INFO - ==================================================
+2025-09-09 11:01:03,272 - INFO - 127.0.0.1 - - [09/Sep/2025 11:01:03] "GET /api/cookies/summary HTTP/1.1" 200 -
+2025-09-09 11:01:03,272 - INFO - 127.0.0.1 - - [09/Sep/2025 11:01:03] "GET /api/cookies/stats HTTP/1.1" 200 -

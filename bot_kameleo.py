@@ -230,6 +230,48 @@ class GoogleSearchBot:
             return self.save_profile_cookies()
         return True
     
+    def merge_cookies(self, existing_cookies, new_cookies):
+        """Merge existing cookies with new ones, building realistic browsing history"""
+        try:
+            # Create a dictionary for fast lookup: (name, domain) -> cookie
+            merged_dict = {}
+            
+            # Add existing cookies first
+            for cookie in existing_cookies:
+                key = (cookie.get('name'), cookie.get('domain'))
+                merged_dict[key] = cookie
+            
+            # Add/update with new cookies (overwrites existing ones with same name+domain)
+            new_count = 0
+            updated_count = 0
+            
+            for cookie in new_cookies:
+                key = (cookie.get('name'), cookie.get('domain'))
+                if key in merged_dict:
+                    # Update existing cookie
+                    merged_dict[key] = cookie
+                    updated_count += 1
+                else:
+                    # Add new cookie
+                    merged_dict[key] = cookie
+                    new_count += 1
+            
+            # Convert back to list
+            merged_cookies = list(merged_dict.values())
+            
+            logger.info(f"🔄 Cookie merge details:")
+            logger.info(f"   Kept existing: {len(existing_cookies) - updated_count}")
+            logger.info(f"   Updated existing: {updated_count}")
+            logger.info(f"   Added new: {new_count}")
+            logger.info(f"   Total result: {len(merged_cookies)}")
+            
+            return merged_cookies
+            
+        except Exception as e:
+            logger.error(f"Error merging cookies: {str(e)}")
+            # Fallback: return new cookies only
+            return new_cookies
+    
     def debug_cookie_status(self):
         """Debug method to check current cookie status"""
         if not self.use_cookies:
@@ -1514,15 +1556,37 @@ class GoogleSearchBot:
                         logger.info(f"   Invalid: {len(invalid_cookies)}")
                         
                         if valid_cookies:
-                            logger.info(f"💾 Saving {len(valid_cookies)} valid cookies to database...")
-                            success = self.cookie_manager.save_cookies(self.current_proxy_id, valid_cookies)
+                            # MERGE COOKIES: Load existing + add new ones for realistic browsing history
+                            logger.info(f"🔄 Merging {len(valid_cookies)} new cookies with existing ones...")
+                            
+                            # Load existing cookies from database
+                            existing_cookies = self.cookie_manager.load_cookies(self.current_proxy_id) or []
+                            logger.info(f"📂 Found {len(existing_cookies)} existing cookies in database")
+                            
+                            # Merge cookies: new cookies override existing ones with same name+domain
+                            merged_cookies = self.merge_cookies(existing_cookies, valid_cookies)
+                            
+                            logger.info(f"🔄 Cookie merge result:")
+                            logger.info(f"   Existing: {len(existing_cookies)}")
+                            logger.info(f"   New: {len(valid_cookies)}")
+                            logger.info(f"   Merged total: {len(merged_cookies)}")
+                            
+                            # Save merged cookies
+                            success = self.cookie_manager.save_cookies(self.current_proxy_id, merged_cookies)
                             if success:
-                                logger.info(f"✅ SUCCESSFULLY SAVED {len(valid_cookies)} cookies for proxy {self.current_proxy_id}")
-                                logger.info("📋 Saved cookies:")
-                                for cookie in valid_cookies:
-                                    logger.info(f"   ✓ {cookie['name']} ({cookie['domain']})")
+                                logger.info(f"✅ SUCCESSFULLY SAVED {len(merged_cookies)} merged cookies for proxy {self.current_proxy_id}")
+                                
+                                # Show cookie breakdown by domain
+                                domain_counts = {}
+                                for cookie in merged_cookies:
+                                    domain = cookie.get('domain', 'unknown')
+                                    domain_counts[domain] = domain_counts.get(domain, 0) + 1
+                                
+                                logger.info("📋 Cookies by domain:")
+                                for domain, count in sorted(domain_counts.items()):
+                                    logger.info(f"   ✓ {domain}: {count} cookies")
                             else:
-                                logger.error(f"❌ FAILED to save cookies for proxy {self.current_proxy_id}")
+                                logger.error(f"❌ FAILED to save merged cookies for proxy {self.current_proxy_id}")
                         else:
                             logger.info("ℹ️ No valid cookies to save")
                     else:
