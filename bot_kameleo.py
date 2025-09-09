@@ -13,6 +13,7 @@ from kameleo.local_api_client import KameleoLocalApiClient
 from kameleo.local_api_client.models import CreateProfileRequest, ProxyChoice, Server
 from twocaptcha import TwoCaptcha
 import os
+from src.utils.cookie_manager import CookieManager
 
 # Configure logging
 logging.basicConfig(
@@ -26,12 +27,14 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 class GoogleSearchBot:
-    def __init__(self, keyword, target_domain, proxy_list, device_profile="desktop"):
+    def __init__(self, keyword, target_domain, proxy_list, device_profile="desktop", use_cookies=False):
         self.keyword = keyword
         self.target_domain = target_domain
         self.proxy_list = proxy_list
         self.device_profile = device_profile
+        self.use_cookies = use_cookies
         self.current_proxy = None
+        self.current_proxy_id = None
         self.driver = None
         self.kameleo_client = None
         self.current_profile = None
@@ -39,10 +42,14 @@ class GoogleSearchBot:
         self.available_fingerprints = []  # Cache fingerprints
         self.used_fingerprints = []  # Track used fingerprints
         
+        # Initialize cookie manager
+        self.cookie_manager = CookieManager()
+        
         # Initialize 2captcha solver
         self.captcha_api_key = "56d4457439d8eb46c1831d271166f13b"
         self.captcha_solver = TwoCaptcha(self.captcha_api_key)
         logger.info(f"2captcha solver initialized with API key: {self.captcha_api_key[:10]}...")
+        logger.info(f"Cookie management: {'Enabled' if use_cookies else 'Disabled'}")
         
     def init_kameleo_client(self):
         """Initialize Kameleo client and load fingerprints"""
@@ -160,6 +167,90 @@ class GoogleSearchBot:
         except Exception as e:
             logger.error(f"Failed to parse proxy {proxy_string}: {str(e)}")
             return None, None, None, None
+    
+    def get_proxy_id(self, proxy_string):
+        """Generate a unique ID for the proxy"""
+        # Use the proxy string as ID (without password for security)
+        parts = proxy_string.split(':')
+        if len(parts) >= 2:
+            return f"{parts[0]}:{parts[1]}"
+        return proxy_string
+    
+    def save_profile_cookies(self):
+        """Save cookies from current Kameleo profile"""
+        if not self.use_cookies or not self.kameleo_client or not self.current_profile or not self.current_proxy_id:
+            return False
+        
+        try:
+            logger.info("Saving cookies from current profile...")
+            
+            # Get cookies from Kameleo profile
+            cookie_list = self.kameleo_client.cookie.list_cookies(self.current_profile.id)
+            
+            if not cookie_list:
+                logger.info("No cookies found in profile to save")
+                return True
+            
+            # Convert Kameleo cookies to dictionary format
+            cookies_dict = self.cookie_manager.convert_kameleo_cookies_to_dict(cookie_list)
+            
+            # Save cookies to database
+            success = self.cookie_manager.save_cookies(self.current_proxy_id, cookies_dict)
+            
+            if success:
+                logger.info(f"✓ Saved {len(cookies_dict)} cookies for proxy {self.current_proxy_id}")
+            else:
+                logger.error(f"Failed to save cookies for proxy {self.current_proxy_id}")
+            
+            return success
+            
+        except Exception as e:
+            logger.error(f"Error saving profile cookies: {str(e)}")
+            return False
+    
+    def load_profile_cookies(self):
+        """Load saved cookies into current Kameleo profile"""
+        if not self.use_cookies or not self.kameleo_client or not self.current_profile or not self.current_proxy_id:
+            return False
+        
+        try:
+            logger.info(f"Checking for saved cookies for proxy {self.current_proxy_id}...")
+            
+            # Check if cookies exist for this proxy
+            if not self.cookie_manager.has_cookies(self.current_proxy_id):
+                logger.info(f"No saved cookies found for proxy {self.current_proxy_id}")
+                return True  # Not an error, just no cookies to load
+            
+            # Load cookies from database
+            cookies_dict = self.cookie_manager.load_cookies(self.current_proxy_id)
+            
+            if not cookies_dict:
+                logger.info("No cookies loaded from database")
+                return True
+            
+            # Convert dictionary cookies to Kameleo format
+            kameleo_cookies = self.cookie_manager.convert_dict_to_kameleo_cookies(cookies_dict)
+            
+            if not kameleo_cookies:
+                logger.warning("Failed to convert cookies to Kameleo format")
+                return False
+            
+            # Clear existing cookies in profile
+            try:
+                self.kameleo_client.cookie.delete_cookies(self.current_profile.id)
+                logger.info("Cleared existing cookies from profile")
+            except Exception as e:
+                logger.warning(f"Failed to clear existing cookies: {str(e)}")
+            
+            # Add cookies to profile
+            self.kameleo_client.cookie.add_cookies(self.current_profile.id, kameleo_cookies)
+            
+            logger.info(f"✓ Loaded {len(kameleo_cookies)} cookies into profile for proxy {self.current_proxy_id}")
+            return True
+            
+        except Exception as e:
+            logger.error(f"Error loading profile cookies: {str(e)}")
+            return False
     
     def check_proxy(self, proxy):
         """Check if proxy is working and get IP address"""
@@ -304,6 +395,10 @@ class GoogleSearchBot:
         try:
             logger.info(f"Setting up Kameleo browser with proxy: {proxy}")
             
+            # Store current proxy info
+            self.current_proxy = proxy
+            self.current_proxy_id = self.get_proxy_id(proxy)
+            
             # Initialize Kameleo client if not done
             if not self.kameleo_client:
                 if not self.init_kameleo_client():
@@ -330,6 +425,10 @@ class GoogleSearchBot:
                 # Start desktop profile normally
                 self.kameleo_client.profile.start_profile(self.current_profile.id)
                 logger.info("✓ Desktop profile started")
+            
+            # Load saved cookies if enabled
+            if self.use_cookies:
+                self.load_profile_cookies()
             
             # Setup browser options for Kameleo
             if self.device_profile == "mobile":
@@ -1270,6 +1369,13 @@ class GoogleSearchBot:
     def close_browser(self):
         """Close the browser and clean up Kameleo profile"""
         try:
+            # Save cookies before closing if enabled
+            if self.use_cookies and self.kameleo_client and self.current_profile:
+                try:
+                    self.save_profile_cookies()
+                except Exception as e:
+                    logger.warning(f"Failed to save cookies before closing: {str(e)}")
+            
             if self.driver:
                 self.driver.quit()
                 logger.info("Browser closed")
@@ -1289,6 +1395,8 @@ class GoogleSearchBot:
                     logger.warning(f"Failed to stop/delete Kameleo profile: {str(e)}")
                 
                 self.current_profile = None
+                self.current_proxy = None
+                self.current_proxy_id = None
                     
         except Exception as e:
             logger.error(f"Error closing browser: {str(e)}")
