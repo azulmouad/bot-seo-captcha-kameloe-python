@@ -8,6 +8,7 @@ import logging
 from datetime import datetime
 from src.utils.bot_status import bot_status
 from src.utils.helpers import make_json_serializable
+from src.utils.cookie_manager import CookieManager
 
 logger = logging.getLogger(__name__)
 
@@ -17,6 +18,10 @@ class BotRunner:
     def __init__(self, bot_instance, socketio):
         self.bot = bot_instance
         self.socketio = socketio
+        
+        # Initialize cookie manager for bot runner
+        self.cookie_manager = CookieManager()
+        logger.info("Bot runner initialized with cookie management support")
     
     def run_with_web_updates(self):
         """Run bot with real-time web updates"""
@@ -195,6 +200,10 @@ class BotRunner:
             else:
                 logger.warning(f"Domain not found in search results")
             
+            # Save cookies before closing browser (if enabled)
+            if hasattr(self.bot, 'save_session_cookies'):
+                self.bot.save_session_cookies()
+            
             self.bot.close_browser()
             return result
             
@@ -202,3 +211,48 @@ class BotRunner:
             logger.error(f"Error in single proxy run: {str(e)}")
             self.bot.close_browser()
             return result
+    
+    def get_cookie_summary(self):
+        """Get summary of saved cookies across all proxies"""
+        try:
+            proxies_with_cookies = self.cookie_manager.get_all_proxies_with_cookies()
+            return {
+                'total_proxies_with_cookies': len(proxies_with_cookies),
+                'proxies': proxies_with_cookies
+            }
+        except Exception as e:
+            logger.error(f"Failed to get cookie summary: {str(e)}")
+            return {'total_proxies_with_cookies': 0, 'proxies': []}
+    
+    def clear_all_saved_cookies(self):
+        """Clear all saved cookies from database"""
+        try:
+            logger.info("🗑️ Clearing all saved cookies...")
+            success = self.cookie_manager.clear_all_cookies()
+            if success:
+                logger.info("✓ All cookies cleared successfully")
+            return success
+        except Exception as e:
+            logger.error(f"Failed to clear all cookies: {str(e)}")
+            return False
+    
+    def get_proxy_cookie_info(self, proxy_id):
+        """Get cookie information for specific proxy"""
+        try:
+            has_cookies = self.cookie_manager.has_cookies(proxy_id)
+            if has_cookies:
+                cookies = self.cookie_manager.load_cookies(proxy_id)
+                return {
+                    'has_cookies': True,
+                    'count': len(cookies) if cookies else 0,
+                    'proxy_id': proxy_id
+                }
+            else:
+                return {
+                    'has_cookies': False,
+                    'count': 0,
+                    'proxy_id': proxy_id
+                }
+        except Exception as e:
+            logger.error(f"Failed to get proxy cookie info: {str(e)}")
+            return {'has_cookies': False, 'count': 0, 'proxy_id': proxy_id}

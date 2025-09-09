@@ -1,7 +1,8 @@
-# SEO Bot Requirements
 flask==2.3.3
 flask-socketio==5.3.6
 selenium==4.15.2
 requests==2.31.0
+kameleo.local-api-client==2.2.0
 2captcha-python==1.1.3
-kameleo-local-api-client==2.2.0
+python-socketio==5.9.0
+eventlet==0.33.3

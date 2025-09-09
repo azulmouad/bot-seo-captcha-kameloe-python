@@ -14,17 +14,24 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
 from bot_kameleo import GoogleSearchBot
 from src.bot.target_finder import TargetFinder
+from src.utils.cookie_manager import CookieManager
 
 logger = logging.getLogger(__name__)
 
 class EnhancedGoogleSearchBot(GoogleSearchBot):
     """Enhanced bot class with web interface integration"""
     
-    def __init__(self, keyword, target_domain, proxy_list, max_pages=3, google_domain="google.com.tr", device_profile="desktop"):
-        super().__init__(keyword, target_domain, proxy_list, device_profile)
+    def __init__(self, keyword, target_domain, proxy_list, max_pages=3, google_domain="google.com.tr", device_profile="desktop", use_cookies=False):
+        super().__init__(keyword, target_domain, proxy_list, device_profile, use_cookies)
         self.max_pages = max_pages
         self.current_proxy_index = 0
         self.google_domain = google_domain
+        
+        # Initialize cookie manager for enhanced bot
+        if not hasattr(self, 'cookie_manager'):
+            self.cookie_manager = CookieManager()
+            logger.info(f"🍪 Enhanced bot cookie management: {'Enabled' if use_cookies else 'Disabled'}")
+            logger.info(f"🍪 Enhanced bot use_cookies flag: {self.use_cookies}")
     
     def search_google(self):
         """Enhanced Google search with interaction"""
@@ -74,6 +81,10 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
             )
             
             logger.info("✓ Google search completed successfully")
+            
+            # Save cookies after Google search
+            self.save_cookies_if_enabled("after Google search")
+            
             return True
             
         except Exception as e:
@@ -156,3 +167,60 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
     def find_and_visit_target_with_tracking(self):
         """Find target domain with page and position tracking"""
         return TargetFinder.find_and_visit_target_with_tracking(self)
+    
+    def save_session_cookies(self):
+        """Save cookies from current session for enhanced bot"""
+        if not self.use_cookies:
+            return False
+        
+        try:
+            logger.info("💾 Saving session cookies...")
+            return self.save_profile_cookies()
+        except Exception as e:
+            logger.error(f"Failed to save session cookies: {str(e)}")
+            return False
+    
+    def load_session_cookies(self):
+        """Load saved cookies for current session"""
+        if not self.use_cookies:
+            return False
+        
+        try:
+            logger.info("📂 Loading session cookies...")
+            return self.load_profile_cookies()
+        except Exception as e:
+            logger.error(f"Failed to load session cookies: {str(e)}")
+            return False
+    
+    def get_cookie_stats(self):
+        """Get cookie statistics for current proxy"""
+        if not self.use_cookies or not self.current_proxy_id:
+            return {"has_cookies": False, "count": 0}
+        
+        try:
+            has_cookies = self.cookie_manager.has_cookies(self.current_proxy_id)
+            if has_cookies:
+                cookies = self.cookie_manager.load_cookies(self.current_proxy_id)
+                count = len(cookies) if cookies else 0
+                return {"has_cookies": True, "count": count}
+            else:
+                return {"has_cookies": False, "count": 0}
+        except Exception as e:
+            logger.error(f"Failed to get cookie stats: {str(e)}")
+            return {"has_cookies": False, "count": 0}
+    
+    def clear_proxy_cookies(self, proxy_id=None):
+        """Clear cookies for specific proxy or current proxy"""
+        if not self.use_cookies:
+            return False
+        
+        target_proxy_id = proxy_id or self.current_proxy_id
+        if not target_proxy_id:
+            return False
+        
+        try:
+            logger.info(f"🗑️ Clearing cookies for proxy: {target_proxy_id}")
+            return self.cookie_manager.delete_cookies(target_proxy_id)
+        except Exception as e:
+            logger.error(f"Failed to clear proxy cookies: {str(e)}")
+            return False

@@ -182,7 +182,7 @@ class GoogleSearchBot:
             return False
         
         try:
-            logger.info("Saving cookies from current profile...")
+            logger.info(f"💾 Saving cookies from current profile for proxy {self.current_proxy_id}...")
             
             # Get cookies from Kameleo profile
             cookie_list = self.kameleo_client.cookie.list_cookies(self.current_profile.id)
@@ -194,11 +194,26 @@ class GoogleSearchBot:
             # Convert Kameleo cookies to dictionary format
             cookies_dict = self.cookie_manager.convert_kameleo_cookies_to_dict(cookie_list)
             
+            # Filter out empty or invalid cookies
+            valid_cookies = []
+            for cookie in cookies_dict:
+                if cookie.get('name') and cookie.get('value') and cookie.get('domain'):
+                    valid_cookies.append(cookie)
+            
+            if not valid_cookies:
+                logger.info("No valid cookies to save")
+                return True
+            
             # Save cookies to database
-            success = self.cookie_manager.save_cookies(self.current_proxy_id, cookies_dict)
+            success = self.cookie_manager.save_cookies(self.current_proxy_id, valid_cookies)
             
             if success:
-                logger.info(f"✓ Saved {len(cookies_dict)} cookies for proxy {self.current_proxy_id}")
+                logger.info(f"✅ Saved {len(valid_cookies)} cookies for proxy {self.current_proxy_id}")
+                # Log some cookie details for debugging
+                for cookie in valid_cookies[:3]:  # Show first 3 cookies
+                    logger.info(f"   - {cookie['name']} ({cookie['domain']})")
+                if len(valid_cookies) > 3:
+                    logger.info(f"   ... and {len(valid_cookies) - 3} more cookies")
             else:
                 logger.error(f"Failed to save cookies for proxy {self.current_proxy_id}")
             
@@ -208,17 +223,51 @@ class GoogleSearchBot:
             logger.error(f"Error saving profile cookies: {str(e)}")
             return False
     
+    def save_cookies_if_enabled(self, context=""):
+        """Helper method to save cookies with context logging"""
+        if self.use_cookies:
+            logger.info(f"💾 Saving cookies {context}...")
+            return self.save_profile_cookies()
+        return True
+    
+    def debug_cookie_status(self):
+        """Debug method to check current cookie status"""
+        if not self.use_cookies:
+            logger.info("🔍 Cookie management is DISABLED")
+            return
+        
+        logger.info("🔍 Cookie Debug Status:")
+        logger.info(f"   - Use cookies: {self.use_cookies}")
+        logger.info(f"   - Current proxy ID: {self.current_proxy_id}")
+        logger.info(f"   - Profile exists: {self.current_profile is not None}")
+        logger.info(f"   - Kameleo client: {self.kameleo_client is not None}")
+        
+        if self.current_proxy_id:
+            has_saved = self.cookie_manager.has_cookies(self.current_proxy_id)
+            logger.info(f"   - Has saved cookies: {has_saved}")
+            
+            if has_saved:
+                saved_cookies = self.cookie_manager.load_cookies(self.current_proxy_id)
+                logger.info(f"   - Saved cookie count: {len(saved_cookies) if saved_cookies else 0}")
+        
+        if self.current_profile and self.kameleo_client:
+            try:
+                current_cookies = self.kameleo_client.cookie.list_cookies(self.current_profile.id)
+                logger.info(f"   - Current profile cookies: {len(current_cookies) if current_cookies else 0}")
+            except Exception as e:
+                logger.info(f"   - Error getting current cookies: {str(e)}")
+    
     def load_profile_cookies(self):
         """Load saved cookies into current Kameleo profile"""
         if not self.use_cookies or not self.kameleo_client or not self.current_profile or not self.current_proxy_id:
             return False
         
         try:
-            logger.info(f"Checking for saved cookies for proxy {self.current_proxy_id}...")
+            logger.info(f"🔍 Checking for saved cookies for proxy {self.current_proxy_id}...")
             
             # Check if cookies exist for this proxy
             if not self.cookie_manager.has_cookies(self.current_proxy_id):
-                logger.info(f"No saved cookies found for proxy {self.current_proxy_id}")
+                logger.info(f"❌ No saved cookies found for proxy {self.current_proxy_id}")
                 return True  # Not an error, just no cookies to load
             
             # Load cookies from database
@@ -245,7 +294,17 @@ class GoogleSearchBot:
             # Add cookies to profile
             self.kameleo_client.cookie.add_cookies(self.current_profile.id, kameleo_cookies)
             
-            logger.info(f"✓ Loaded {len(kameleo_cookies)} cookies into profile for proxy {self.current_proxy_id}")
+            # Wait a moment for cookies to be applied
+            time.sleep(2)
+            
+            # Verify cookies were loaded
+            try:
+                current_cookies = self.kameleo_client.cookie.list_cookies(self.current_profile.id)
+                logger.info(f"✓ Loaded {len(kameleo_cookies)} cookies into profile for proxy {self.current_proxy_id}")
+                logger.info(f"✓ Profile now has {len(current_cookies)} total cookies")
+            except Exception as e:
+                logger.warning(f"Could not verify loaded cookies: {str(e)}")
+            
             return True
             
         except Exception as e:
@@ -428,7 +487,14 @@ class GoogleSearchBot:
             
             # Load saved cookies if enabled
             if self.use_cookies:
-                self.load_profile_cookies()
+                logger.info("🍪 Cookie management is ENABLED - attempting to load saved cookies...")
+                self.debug_cookie_status()
+                try:
+                    success = self.load_profile_cookies()
+                    logger.info(f"📂 Cookie loading result: {'✅ Success' if success else '❌ Failed'}")
+                except Exception as e:
+                    logger.error(f"📂 Error loading cookies: {str(e)}")
+                logger.info("🔍 After cookie loading attempt:")
             
             # Setup browser options for Kameleo
             if self.device_profile == "mobile":
@@ -1163,6 +1229,15 @@ class GoogleSearchBot:
             # Human-like scrolling on search results
             self.human_like_scroll()
             
+            # Save cookies after Google search
+            if self.use_cookies:
+                logger.info("💾 Attempting to save cookies after Google search...")
+                try:
+                    success = self.save_profile_cookies()
+                    logger.info(f"💾 Google search cookie save result: {'✅ Success' if success else '❌ Failed'}")
+                except Exception as e:
+                    logger.error(f"💾 Error saving Google search cookies: {str(e)}")
+            
             return True
             
         except Exception as e:
@@ -1227,6 +1302,15 @@ class GoogleSearchBot:
                     # Perform realistic human-like interactions for 1 minute
                     logger.info("Starting 1-minute realistic interaction session on target website...")
                     self.realistic_website_interaction()
+                    
+                    # Save cookies after visiting target website
+                    if self.use_cookies:
+                        logger.info("💾 Attempting to save cookies after target website interaction...")
+                        try:
+                            success = self.save_profile_cookies()
+                            logger.info(f"💾 Target website cookie save result: {'✅ Success' if success else '❌ Failed'}")
+                        except Exception as e:
+                            logger.error(f"💾 Error saving target website cookies: {str(e)}")
                     
                     return True
                 
@@ -1436,8 +1520,21 @@ class GoogleSearchBot:
             # Find and visit target
             if not self.find_and_visit_target():
                 logger.error("Failed to find/visit target domain")
+                # Save cookies even if target not found
+                if self.use_cookies:
+                    logger.info("💾 Saving cookies before closing (target not found)...")
+                    self.save_profile_cookies()
                 self.close_browser()
                 return False
+            
+            # Save cookies after successful completion
+            if self.use_cookies:
+                logger.info("💾 Final cookie save after successful completion...")
+                try:
+                    success = self.save_profile_cookies()
+                    logger.info(f"💾 Final cookie save result: {'✅ Success' if success else '❌ Failed'}")
+                except Exception as e:
+                    logger.error(f"💾 Error in final cookie save: {str(e)}")
             
             logger.info("✓ Process completed successfully!")
             self.close_browser()
@@ -1445,6 +1542,13 @@ class GoogleSearchBot:
             
         except Exception as e:
             logger.error(f"Error in single proxy run: {str(e)}")
+            # Save cookies even on error
+            if self.use_cookies and self.current_profile and self.kameleo_client:
+                try:
+                    logger.info("💾 Saving cookies before closing (due to error)...")
+                    self.save_profile_cookies()
+                except Exception as save_error:
+                    logger.error(f"Failed to save cookies on error: {str(save_error)}")
             self.close_browser()
             return False
     

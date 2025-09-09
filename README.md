@@ -21,7 +21,7 @@ python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install dependencies
-pip install -r requirements_web.txt
+pip install -r requirements.txt
 ```
 
 ### 3. Setup Kameleo
@@ -46,7 +46,7 @@ cd /Applications/Kameleo.app/Contents/Resources/CLI/
 source venv/bin/activate
 
 # Start the dashboard
-python3 run_dashboard.py
+python main.py
 ```
 
 Open your browser to: **http://localhost:8080**
