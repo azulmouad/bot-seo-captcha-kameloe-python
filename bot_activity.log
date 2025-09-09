@@ -116,3 +116,175 @@ HTTP response body: code=409 error={'SEO Bot Profile - 204.9.38.125:6446': ['Pro
 2025-09-09 10:24:58,716 - INFO - Smooth scrolled up 188 pixels
 2025-09-09 10:25:00,764 - INFO - Smooth scrolled down 285 pixels
 2025-09-09 10:25:03,083 - INFO - Smooth scrolled down 165 pixels
+2025-09-09 10:25:05,428 - INFO - Smooth scrolled up 122 pixels
+2025-09-09 10:25:08,026 - INFO - Smooth scrolled up 176 pixels
+2025-09-09 10:25:10,362 - INFO - Smooth scrolled down 245 pixels
+2025-09-09 10:25:12,156 - INFO - Smooth scrolled down 161 pixels
+2025-09-09 10:25:14,536 - INFO - Smooth scrolled up 128 pixels
+2025-09-09 10:25:17,347 - INFO - Smooth scrolled down 252 pixels
+2025-09-09 10:25:19,820 - INFO - Smooth scrolled down 196 pixels
+2025-09-09 10:25:22,208 - INFO - Smooth scrolled up 183 pixels
+2025-09-09 10:25:24,034 - INFO - ✅ Completed realistic interaction session (60.0 seconds)
+2025-09-09 10:25:24,035 - INFO - ✅ Successfully visited and interacted with target website
+2025-09-09 10:25:24,035 - INFO - ✓ Found domain on page 1, position 3
+2025-09-09 10:25:24,035 - INFO - 💾 Saving session cookies...
+2025-09-09 10:25:24,035 - INFO - 💾 Saving cookies from current profile for proxy 204.9.38.125:6446...
+2025-09-09 10:25:24,047 - ERROR - Error saving profile cookies: (409)
+Reason: Conflict
+HTTP response headers: HTTPHeaderDict({'Content-Type': 'application/json; charset=utf-8', 'Date': 'Tue, 09 Sep 2025 09:25:23 GMT', 'Transfer-Encoding': 'chunked'})
+HTTP response body: code=409 error={'SEO Bot Profile - 204.9.38.125:6446': ['Profile is running']}
+
+2025-09-09 10:25:24,048 - INFO - 💾 Saving cookies from current profile for proxy 204.9.38.125:6446...
+2025-09-09 10:25:24,050 - ERROR - Error saving profile cookies: (409)
+Reason: Conflict
+HTTP response headers: HTTPHeaderDict({'Content-Type': 'application/json; charset=utf-8', 'Date': 'Tue, 09 Sep 2025 09:25:23 GMT', 'Transfer-Encoding': 'chunked'})
+HTTP response body: code=409 error={'SEO Bot Profile - 204.9.38.125:6446': ['Profile is running']}
+
+2025-09-09 10:25:24,051 - INFO - Browser closed
+2025-09-09 10:25:24,241 - INFO - Kameleo profile 86195c41-2787-4fb6-93a9-a07081996e9a stopped
+2025-09-09 10:25:24,260 - INFO - Kameleo profile 86195c41-2787-4fb6-93a9-a07081996e9a deleted
+2025-09-09 10:25:24,260 - INFO - ✓ Proxy 204.9.38.125:6446:aawikmkk:tx1f1a2yr843 completed successfully
+2025-09-09 10:25:24,260 - INFO - ==================================================
+2025-09-09 10:25:24,260 - INFO - FINAL RESULTS:
+2025-09-09 10:25:24,260 - INFO - Total proxies tested: 1
+2025-09-09 10:25:24,261 - INFO - Successful runs: 1
+2025-09-09 10:25:24,261 - INFO - Failed runs: 0
+2025-09-09 10:25:24,261 - INFO - ==================================================
+2025-09-09 10:25:49,797 - INFO - ✓ Deleted cookies for proxy: 192.168.1.100:8080
+2025-09-09 10:25:49,797 - INFO - Cookies cleared for proxy: 192.168.1.100:8080
+2025-09-09 10:25:49,798 - INFO - 127.0.0.1 - - [09/Sep/2025 10:25:49] "POST /api/cookies/clear/192.168.1.100:8080 HTTP/1.1" 200 -
+2025-09-09 10:25:51,303 - INFO - 127.0.0.1 - - [09/Sep/2025 10:25:51] "GET /api/cookies/summary HTTP/1.1" 200 -
+2025-09-09 10:25:53,678 - INFO - ✓ Deleted cookies for proxy: 192.168.1.1:8080
+2025-09-09 10:25:53,678 - INFO - Cookies cleared for proxy: 192.168.1.1:8080
+2025-09-09 10:25:53,678 - INFO - 127.0.0.1 - - [09/Sep/2025 10:25:53] "POST /api/cookies/clear/192.168.1.1:8080 HTTP/1.1" 200 -
+2025-09-09 10:25:54,407 - INFO - 127.0.0.1 - - [09/Sep/2025 10:25:54] "GET /api/cookies/summary HTTP/1.1" 200 -
+2025-09-09 10:25:58,081 - INFO - 🍪 Cookie management requested: True
+2025-09-09 10:25:58,083 - INFO - Cookie database initialized: cookies.db
+2025-09-09 10:25:58,084 - INFO - 2captcha solver initialized with API key: 56d4457439...
+2025-09-09 10:25:58,084 - INFO - Cookie management: Enabled
+2025-09-09 10:25:58,085 - INFO - 🍪 Bot created with cookie support: True
+2025-09-09 10:25:58,086 - INFO - Cookie database initialized: cookies.db
+2025-09-09 10:25:58,086 - INFO - Bot runner initialized with cookie management support
+2025-09-09 10:25:58,086 - INFO - Starting SEO bot with 1 proxies
+2025-09-09 10:25:58,086 - INFO - 127.0.0.1 - - [09/Sep/2025 10:25:58] "POST /api/start HTTP/1.1" 200 -
+2025-09-09 10:25:58,087 - INFO - Searching for 'azul mouad' on domain 'mouadzizi.com'
+2025-09-09 10:25:58,087 - INFO - Using Google domain: google.com.tr
+2025-09-09 10:25:58,087 - INFO - Device profile: Desktop
+2025-09-09 10:25:58,088 - INFO - --- Processing proxy 1/1 ---
+2025-09-09 10:25:58,088 - INFO - Testing proxy: 204.9.38.125:6446:aawikmkk:tx1f1a2yr843
+2025-09-09 10:25:58,089 - INFO - Testing proxy: 204.9.38.125:6446 (with auth)
+2025-09-09 10:26:01,709 - INFO - ✓ Proxy 204.9.38.125:6446 (with auth) is working. IP: 204.9.38.125
+2025-09-09 10:26:01,710 - INFO - Setting up Kameleo browser with proxy: 204.9.38.125:6446:aawikmkk:tx1f1a2yr843
+2025-09-09 10:26:01,711 - INFO - Kameleo client initialized on port 5050
+2025-09-09 10:26:01,711 - INFO - Loading available Desktop Chrome fingerprints...
+2025-09-09 10:26:02,437 - INFO - Loaded 25 unique Chrome fingerprints
+2025-09-09 10:26:02,437 - INFO - Creating Kameleo profile with proxy: 204.9.38.125:6446:aawikmkk:tx1f1a2yr843
+2025-09-09 10:26:02,437 - INFO - Selected unique fingerprint: 91cdda043e0aca610397e558888543eb24790bfde2ed4cfb90afcc13e856c90f (1/25 used)
+2025-09-09 10:26:02,438 - INFO - Using authenticated proxy: 204.9.38.125:6446
+2025-09-09 10:26:02,562 - INFO - ✓ Kameleo profile created: dd088c96-6a55-4f36-ae52-de321e78cd78 for proxy 204.9.38.125:6446
+2025-09-09 10:26:05,915 - INFO - ✓ Desktop profile started
+2025-09-09 10:26:05,916 - INFO - 🍪 Cookie management is ENABLED - attempting to load saved cookies...
+2025-09-09 10:26:05,916 - INFO - 🔍 Cookie Debug Status:
+2025-09-09 10:26:05,916 - INFO -    - Use cookies: True
+2025-09-09 10:26:05,916 - INFO -    - Current proxy ID: 204.9.38.125:6446
+2025-09-09 10:26:05,916 - INFO -    - Profile exists: True
+2025-09-09 10:26:05,916 - INFO -    - Kameleo client: True
+2025-09-09 10:26:05,917 - INFO -    - Has saved cookies: False
+2025-09-09 10:26:05,919 - INFO -    - Error getting current cookies: (409)
+Reason: Conflict
+HTTP response headers: HTTPHeaderDict({'Content-Type': 'application/json; charset=utf-8', 'Date': 'Tue, 09 Sep 2025 09:26:05 GMT', 'Transfer-Encoding': 'chunked'})
+HTTP response body: code=409 error={'SEO Bot Profile - 204.9.38.125:6446': ['Profile is running']}
+
+2025-09-09 10:26:05,920 - INFO - 🔍 Checking for saved cookies for proxy 204.9.38.125:6446...
+2025-09-09 10:26:05,920 - INFO - ❌ No saved cookies found for proxy 204.9.38.125:6446
+2025-09-09 10:26:05,920 - INFO - 📂 Cookie loading result: ✅ Success
+2025-09-09 10:26:05,921 - INFO - 🔍 After cookie loading attempt:
+2025-09-09 10:26:06,278 - INFO - Kameleo browser setup completed successfully
+2025-09-09 10:26:06,278 - INFO - Verifying proxy IP...
+2025-09-09 10:26:12,017 - INFO - Browser IP (via http://httpbin.org/ip): 204.9.38.125
+2025-09-09 10:26:13,167 - INFO - Real IP: 160.178.206.43
+2025-09-09 10:26:13,168 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-09 10:26:13,169 - INFO - Navigating to Google search: https://www.google.com.tr
+2025-09-09 10:26:14,531 - INFO - ⏰ Waiting 15 seconds after opening Google search...
+2025-09-09 10:26:29,596 - INFO - 🎭 Performing initial Google page interactions...
+2025-09-09 10:26:29,597 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 10:26:30,657 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 10:26:37,197 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 10:26:40,901 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 10:26:40,961 - INFO - ✅ Completed Google page interactions
+2025-09-09 10:26:40,986 - INFO - Typing keyword: azul mouad
+2025-09-09 10:26:45,757 - INFO - ✓ Google search completed successfully
+2025-09-09 10:26:45,758 - INFO - 💾 Saving cookies after Google search...
+2025-09-09 10:26:45,758 - INFO - 💾 Saving cookies from current profile for proxy 204.9.38.125:6446...
+2025-09-09 10:26:45,765 - ERROR - Error saving profile cookies: (409)
+Reason: Conflict
+HTTP response headers: HTTPHeaderDict({'Content-Type': 'application/json; charset=utf-8', 'Date': 'Tue, 09 Sep 2025 09:26:45 GMT', 'Transfer-Encoding': 'chunked'})
+HTTP response body: code=409 error={'SEO Bot Profile - 204.9.38.125:6446': ['Profile is running']}
+
+2025-09-09 10:26:45,765 - INFO - Looking for domain: mouadzizi.com
+2025-09-09 10:26:45,765 - INFO - 🔍 Searching on page 1
+2025-09-09 10:26:45,773 - INFO - 📊 Page 1 has 10 search results
+2025-09-09 10:26:45,819 - INFO - 🎯 Found target domain on page 1, local position 3, GLOBAL position 3: https://mouadzizi.com/
+2025-09-09 10:26:45,819 - INFO - 📈 Position calculation:  + 3 = 3
+2025-09-09 10:26:45,819 - INFO - 🖱️ Hovering over target link...
+2025-09-09 10:26:51,887 - INFO - ✨ Completed hovering over target link
+2025-09-09 10:26:55,424 - INFO - ✓ Successfully clicked target link using ActionChains
+2025-09-09 10:26:58,438 - INFO - ✓ Successfully navigated to target website: https://mouadzizi.com/
+2025-09-09 10:26:58,439 - INFO - 🎭 Starting realistic website interaction (60 seconds)
+2025-09-09 10:26:58,439 - INFO - 🎭 Starting realistic website interaction (60 seconds)
+2025-09-09 10:27:01,460 - INFO - Phase 1: Initial page exploration...
+2025-09-09 10:27:02,443 - INFO - Smooth scrolled down 600 pixels
+2025-09-09 10:27:06,357 - INFO - Hovered over a element
+2025-09-09 10:27:08,166 - INFO - Hovered over button element
+2025-09-09 10:27:09,971 - INFO - Hovered over h1 element
+2025-09-09 10:27:10,048 - INFO - Hovered over 3 elements
+2025-09-09 10:27:10,049 - INFO - Phase 2: Exploring navigation...
+2025-09-09 10:27:10,123 - INFO - No suitable navigation links found
+2025-09-09 10:27:10,123 - INFO - Phase 3: Content exploration...
+2025-09-09 10:27:11,700 - INFO - Smooth scrolled down 800 pixels
+2025-09-09 10:27:13,713 - INFO - Phase 4: Final exploration...
+2025-09-09 10:27:15,160 - INFO - Smooth scrolled down 114 pixels
+2025-09-09 10:27:17,117 - INFO - Smooth scrolled down 129 pixels
+2025-09-09 10:27:19,397 - INFO - Smooth scrolled up 129 pixels
+2025-09-09 10:27:21,679 - INFO - Smooth scrolled up 192 pixels
+2025-09-09 10:27:24,253 - INFO - Smooth scrolled up 175 pixels
+2025-09-09 10:27:26,593 - INFO - Smooth scrolled down 212 pixels
+2025-09-09 10:27:28,480 - INFO - Smooth scrolled down 104 pixels
+2025-09-09 10:27:31,278 - INFO - Smooth scrolled up 190 pixels
+2025-09-09 10:27:33,343 - INFO - Smooth scrolled down 265 pixels
+2025-09-09 10:27:35,342 - INFO - Smooth scrolled down 247 pixels
+2025-09-09 10:27:37,677 - INFO - Smooth scrolled up 107 pixels
+2025-09-09 10:27:40,114 - INFO - Smooth scrolled up 143 pixels
+2025-09-09 10:27:42,155 - INFO - Smooth scrolled down 183 pixels
+2025-09-09 10:27:44,596 - INFO - Smooth scrolled down 263 pixels
+2025-09-09 10:27:46,996 - INFO - Smooth scrolled down 124 pixels
+2025-09-09 10:27:48,941 - INFO - Smooth scrolled down 108 pixels
+2025-09-09 10:27:51,825 - INFO - Smooth scrolled up 117 pixels
+2025-09-09 10:27:54,164 - INFO - Smooth scrolled up 144 pixels
+2025-09-09 10:27:56,298 - INFO - Smooth scrolled up 105 pixels
+2025-09-09 10:27:58,450 - INFO - ✅ Completed realistic interaction session (60.0 seconds)
+2025-09-09 10:27:58,451 - INFO - ✅ Successfully visited and interacted with target website
+2025-09-09 10:27:58,452 - INFO - ✓ Found domain on page 1, position 3
+2025-09-09 10:27:58,453 - INFO - 💾 Saving session cookies...
+2025-09-09 10:27:58,453 - INFO - 💾 Saving cookies from current profile for proxy 204.9.38.125:6446...
+2025-09-09 10:27:58,465 - ERROR - Error saving profile cookies: (409)
+Reason: Conflict
+HTTP response headers: HTTPHeaderDict({'Content-Type': 'application/json; charset=utf-8', 'Date': 'Tue, 09 Sep 2025 09:27:57 GMT', 'Transfer-Encoding': 'chunked'})
+HTTP response body: code=409 error={'SEO Bot Profile - 204.9.38.125:6446': ['Profile is running']}
+
+2025-09-09 10:27:58,465 - INFO - 💾 Saving cookies from current profile for proxy 204.9.38.125:6446...
+2025-09-09 10:27:58,471 - ERROR - Error saving profile cookies: (409)
+Reason: Conflict
+HTTP response headers: HTTPHeaderDict({'Content-Type': 'application/json; charset=utf-8', 'Date': 'Tue, 09 Sep 2025 09:27:57 GMT', 'Transfer-Encoding': 'chunked'})
+HTTP response body: code=409 error={'SEO Bot Profile - 204.9.38.125:6446': ['Profile is running']}
+
+2025-09-09 10:27:58,475 - INFO - Browser closed
+2025-09-09 10:27:58,879 - INFO - Kameleo profile dd088c96-6a55-4f36-ae52-de321e78cd78 stopped
+2025-09-09 10:27:58,896 - INFO - Kameleo profile dd088c96-6a55-4f36-ae52-de321e78cd78 deleted
+2025-09-09 10:27:58,897 - INFO - ✓ Proxy 204.9.38.125:6446:aawikmkk:tx1f1a2yr843 completed successfully
+2025-09-09 10:27:58,897 - INFO - ==================================================
+2025-09-09 10:27:58,897 - INFO - FINAL RESULTS:
+2025-09-09 10:27:58,897 - INFO - Total proxies tested: 1
+2025-09-09 10:27:58,897 - INFO - Successful runs: 1
+2025-09-09 10:27:58,897 - INFO - Failed runs: 0
+2025-09-09 10:27:58,897 - INFO - ==================================================
