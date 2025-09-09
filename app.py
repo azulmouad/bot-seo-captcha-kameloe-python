@@ -575,8 +575,14 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
             
             logger.info("🎭 Starting realistic website interaction (60 seconds)")
             
-            # Wait for page to fully load
-            time.sleep(3)
+            # Wait for page to fully load with pause check
+            for _ in range(3):
+                if not bot_status['is_running']:
+                    return
+                while bot_status['is_paused'] and bot_status['is_running']:
+                    time.sleep(0.5)
+                if bot_status['is_running']:
+                    time.sleep(1)
             
             # Check if we're actually on the target website
             current_url = self.driver.current_url
@@ -587,46 +593,149 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
             
             # Phase 1: Initial exploration (0-15 seconds)
             logger.info("Phase 1: Initial page exploration...")
+            
+            # Check pause before each action
+            while bot_status['is_paused'] and bot_status['is_running']:
+                time.sleep(0.5)
+            if not bot_status['is_running']:
+                return
+                
             self.smooth_scroll_down(600)
-            time.sleep(2)
             
+            # Pause-aware sleep
+            for _ in range(2):
+                if not bot_status['is_running']:
+                    return
+                while bot_status['is_paused'] and bot_status['is_running']:
+                    time.sleep(0.5)
+                if bot_status['is_running']:
+                    time.sleep(1)
+            
+            while bot_status['is_paused'] and bot_status['is_running']:
+                time.sleep(0.5)
+            if not bot_status['is_running']:
+                return
+                
             self.hover_random_elements(2)
-            time.sleep(1)
             
+            # Pause-aware sleep
+            for _ in range(1):
+                if not bot_status['is_running']:
+                    return
+                while bot_status['is_paused'] and bot_status['is_running']:
+                    time.sleep(0.5)
+                if bot_status['is_running']:
+                    time.sleep(1)
+            
+            while bot_status['is_paused'] and bot_status['is_running']:
+                time.sleep(0.5)
+            if not bot_status['is_running']:
+                return
+                
             self.smooth_scroll_up(300)
-            time.sleep(2)
+            
+            # Pause-aware sleep
+            for _ in range(2):
+                if not bot_status['is_running']:
+                    return
+                while bot_status['is_paused'] and bot_status['is_running']:
+                    time.sleep(0.5)
+                if bot_status['is_running']:
+                    time.sleep(1)
             
             # Phase 2: Header navigation exploration (15-35 seconds)
             elapsed = time.time() - start_time
             if elapsed < 35:
+                while bot_status['is_paused'] and bot_status['is_running']:
+                    time.sleep(0.5)
+                if not bot_status['is_running']:
+                    return
+                    
                 logger.info("Phase 2: Exploring navigation...")
                 self.click_header_navigation()
             
             # Phase 3: Content exploration (35-50 seconds)
             elapsed = time.time() - start_time
             if elapsed < 50:
+                while bot_status['is_paused'] and bot_status['is_running']:
+                    time.sleep(0.5)
+                if not bot_status['is_running']:
+                    return
+                    
                 logger.info("Phase 3: Content exploration...")
                 
                 # Scroll through content
                 self.smooth_scroll_down(800)
-                time.sleep(2)
                 
+                # Pause-aware sleep
+                for _ in range(2):
+                    if not bot_status['is_running']:
+                        return
+                    while bot_status['is_paused'] and bot_status['is_running']:
+                        time.sleep(0.5)
+                    if bot_status['is_running']:
+                        time.sleep(1)
+                
+                while bot_status['is_paused'] and bot_status['is_running']:
+                    time.sleep(0.5)
+                if not bot_status['is_running']:
+                    return
+                    
                 self.hover_random_elements(3)
-                time.sleep(1)
+                
+                # Pause-aware sleep
+                for _ in range(1):
+                    if not bot_status['is_running']:
+                        return
+                    while bot_status['is_paused'] and bot_status['is_running']:
+                        time.sleep(0.5)
+                    if bot_status['is_running']:
+                        time.sleep(1)
                 
                 # Read-like behavior (pause at different sections)
                 for i in range(3):
+                    while bot_status['is_paused'] and bot_status['is_running']:
+                        time.sleep(0.5)
+                    if not bot_status['is_running']:
+                        return
+                        
                     self.smooth_scroll_down(200)
-                    time.sleep(1.5)  # Reading pause
+                    
+                    # Pause-aware reading pause
+                    for _ in range(int(1.5)):
+                        if not bot_status['is_running']:
+                            return
+                        while bot_status['is_paused'] and bot_status['is_running']:
+                            time.sleep(0.5)
+                        if bot_status['is_running']:
+                            time.sleep(1)
                 
+                while bot_status['is_paused'] and bot_status['is_running']:
+                    time.sleep(0.5)
+                if not bot_status['is_running']:
+                    return
+                    
                 self.smooth_scroll_up(400)
-                time.sleep(1)
+                
+                # Pause-aware sleep
+                for _ in range(1):
+                    if not bot_status['is_running']:
+                        return
+                    while bot_status['is_paused'] and bot_status['is_running']:
+                        time.sleep(0.5)
+                    if bot_status['is_running']:
+                        time.sleep(1)
             
             # Phase 4: Final exploration (50-60 seconds)
             elapsed = time.time() - start_time
             remaining_time = total_duration - elapsed
             
             if remaining_time > 5:
+                while bot_status['is_paused'] and bot_status['is_running']:
+                    time.sleep(0.5)
+                if not bot_status['is_running']:
+                    return
+                    
                 logger.info("Phase 4: Final exploration...")
                 
                 # Try to find and click another internal link
@@ -645,37 +754,93 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
                             continue
                     
                     if valid_internal_links:
+                        while bot_status['is_paused'] and bot_status['is_running']:
+                            time.sleep(0.5)
+                        if not bot_status['is_running']:
+                            return
+                            
                         link = random.choice(valid_internal_links)
                         link_text = link.text.strip()[:30] or "Internal Link"
                         
                         # Scroll to and click link
                         self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", link)
-                        time.sleep(1)
+                        
+                        # Pause-aware sleep
+                        for _ in range(1):
+                            if not bot_status['is_running']:
+                                return
+                            while bot_status['is_paused'] and bot_status['is_running']:
+                                time.sleep(0.5)
+                            if bot_status['is_running']:
+                                time.sleep(1)
                         
                         actions = ActionChains(self.driver)
                         actions.move_to_element(link).pause(0.5).click().perform()
                         
                         logger.info(f"Clicked internal link: {link_text}")
                         
-                        # Brief exploration of new page
-                        time.sleep(2)
+                        # Brief exploration of new page with pause checks
+                        for _ in range(2):
+                            if not bot_status['is_running']:
+                                return
+                            while bot_status['is_paused'] and bot_status['is_running']:
+                                time.sleep(0.5)
+                            if bot_status['is_running']:
+                                time.sleep(1)
+                        
+                        while bot_status['is_paused'] and bot_status['is_running']:
+                            time.sleep(0.5)
+                        if not bot_status['is_running']:
+                            return
+                            
                         self.smooth_scroll_down(400)
-                        time.sleep(1)
+                        
+                        # Pause-aware sleep
+                        for _ in range(1):
+                            if not bot_status['is_running']:
+                                return
+                            while bot_status['is_paused'] and bot_status['is_running']:
+                                time.sleep(0.5)
+                            if bot_status['is_running']:
+                                time.sleep(1)
                         
                 except Exception as e:
                     logger.warning(f"Could not explore internal links: {str(e)}")
             
             # Fill remaining time with gentle scrolling
-            while time.time() - start_time < total_duration:
+            while time.time() - start_time < total_duration and bot_status['is_running']:
+                # Check for pause before each action
+                while bot_status['is_paused'] and bot_status['is_running']:
+                    time.sleep(0.5)
+                if not bot_status['is_running']:
+                    break
+                    
                 remaining = total_duration - (time.time() - start_time)
                 if remaining > 2:
                     if random.choice([True, False]):
                         self.smooth_scroll_down(random.randint(100, 300))
                     else:
                         self.smooth_scroll_up(random.randint(100, 200))
-                    time.sleep(1)
+                    
+                    # Pause-aware sleep
+                    if not bot_status['is_running']:
+                        break
+                    while bot_status['is_paused'] and bot_status['is_running']:
+                        time.sleep(0.5)
+                    if bot_status['is_running']:
+                        time.sleep(1)
                 else:
-                    time.sleep(remaining)
+                    # Final sleep with pause check
+                    sleep_time = remaining
+                    while sleep_time > 0 and bot_status['is_running']:
+                        while bot_status['is_paused'] and bot_status['is_running']:
+                            time.sleep(0.5)
+                        if bot_status['is_running']:
+                            sleep_chunk = min(0.5, sleep_time)
+                            time.sleep(sleep_chunk)
+                            sleep_time -= sleep_chunk
+                        else:
+                            break
                     break
             
             total_time = time.time() - start_time

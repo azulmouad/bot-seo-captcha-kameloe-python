@@ -23506,3 +23506,127 @@ Stacktrace:
 2025-09-09 08:55:34,656 - INFO - Hovered over h1 element
 2025-09-09 08:55:34,723 - INFO - Hovered over 3 elements
 2025-09-09 08:55:36,830 - INFO - Smooth scrolled down 200 pixels
+2025-09-09 08:55:39,336 - INFO - Smooth scrolled down 200 pixels
+2025-09-09 08:55:41,778 - INFO - Smooth scrolled down 200 pixels
+2025-09-09 08:55:44,891 - INFO - Smooth scrolled up 400 pixels
+2025-09-09 08:55:45,894 - INFO - Phase 4: Final exploration...
+2025-09-09 08:55:46,051 - INFO - Bot resumed by user - Continuing automated operation
+2025-09-09 08:55:46,051 - INFO - 127.0.0.1 - - [09/Sep/2025 08:55:46] "POST /api/resume HTTP/1.1" 200 -
+2025-09-09 08:55:47,920 - INFO - Clicked internal link: login
+2025-09-09 08:55:51,267 - INFO - Smooth scrolled down 400 pixels
+2025-09-09 08:55:54,205 - INFO - Smooth scrolled up 113 pixels
+2025-09-09 08:55:56,287 - INFO - Smooth scrolled down 228 pixels
+2025-09-09 08:55:57,788 - INFO - Bot paused by user - Browser available for manual interaction
+2025-09-09 08:55:57,789 - INFO - 127.0.0.1 - - [09/Sep/2025 08:55:57] "POST /api/pause HTTP/1.1" 200 -
+2025-09-09 08:55:58,338 - INFO - Smooth scrolled down 209 pixels
+2025-09-09 08:56:00,332 - INFO - Smooth scrolled down 253 pixels
+2025-09-09 08:56:02,556 - INFO - Smooth scrolled down 221 pixels
+2025-09-09 08:56:05,027 - INFO - Smooth scrolled down 283 pixels
+2025-09-09 08:56:07,331 - INFO - Smooth scrolled down 274 pixels
+2025-09-09 08:56:09,940 - INFO - ✅ Completed realistic interaction session (60.0 seconds)
+2025-09-09 08:56:09,940 - INFO - ✅ Successfully visited and interacted with target website
+2025-09-09 08:56:09,940 - INFO - ✓ Found domain on page 1, position 1
+2025-09-09 08:56:09,946 - INFO - Browser closed
+2025-09-09 08:56:10,209 - INFO - Kameleo profile 312b088b-5bd3-4a2f-9f89-0a2419f8b89d stopped
+2025-09-09 08:56:10,225 - INFO - Kameleo profile 312b088b-5bd3-4a2f-9f89-0a2419f8b89d deleted
+2025-09-09 08:56:10,225 - INFO - ✓ Proxy 206.41.168.86:6751:aawikmkk:tx1f1a2yr843 completed successfully
+2025-09-09 08:56:10,225 - INFO - ==================================================
+2025-09-09 08:56:10,225 - INFO - FINAL RESULTS:
+2025-09-09 08:56:10,226 - INFO - Total proxies tested: 1
+2025-09-09 08:56:10,226 - INFO - Successful runs: 1
+2025-09-09 08:56:10,226 - INFO - Failed runs: 0
+2025-09-09 08:56:10,226 - INFO - ==================================================
+2025-09-09 08:58:01,312 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.110.175:8080
+2025-09-09 08:58:01,313 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-09 08:58:02,338 - INFO - 127.0.0.1 - - [09/Sep/2025 08:58:02] "GET /socket.io/?EIO=4&transport=polling&t=PajUrXV HTTP/1.1" 200 -
+2025-09-09 08:58:02,346 - INFO - Client connected to WebSocket
+2025-09-09 08:58:02,347 - INFO - 127.0.0.1 - - [09/Sep/2025 08:58:02] "POST /socket.io/?EIO=4&transport=polling&t=PajUrXb&sid=plIlnzmO2h-BxnxeAAAA HTTP/1.1" 200 -
+2025-09-09 08:58:02,347 - INFO - 127.0.0.1 - - [09/Sep/2025 08:58:02] "GET /socket.io/?EIO=4&transport=polling&t=PajUrXd&sid=plIlnzmO2h-BxnxeAAAA HTTP/1.1" 200 -
+2025-09-09 08:58:07,645 - INFO - Client disconnected from WebSocket
+2025-09-09 08:58:07,646 - INFO - 127.0.0.1 - - [09/Sep/2025 08:58:07] "GET /socket.io/?EIO=4&transport=websocket&sid=plIlnzmO2h-BxnxeAAAA HTTP/1.1" 200 -
+2025-09-09 08:58:07,665 - INFO - 127.0.0.1 - - [09/Sep/2025 08:58:07] "[36mGET / HTTP/1.1[0m" 304 -
+2025-09-09 08:58:07,779 - INFO - 127.0.0.1 - - [09/Sep/2025 08:58:07] "GET /api/status HTTP/1.1" 200 -
+2025-09-09 08:58:07,780 - INFO - 127.0.0.1 - - [09/Sep/2025 08:58:07] "GET /api/results HTTP/1.1" 200 -
+2025-09-09 08:58:07,780 - INFO - 127.0.0.1 - - [09/Sep/2025 08:58:07] "GET /socket.io/?EIO=4&transport=polling&t=PajUssU HTTP/1.1" 200 -
+2025-09-09 08:58:07,790 - INFO - Client connected to WebSocket
+2025-09-09 08:58:07,791 - INFO - 127.0.0.1 - - [09/Sep/2025 08:58:07] "POST /socket.io/?EIO=4&transport=polling&t=PajUssh&sid=8RWcFpG81Cmng9v1AAAC HTTP/1.1" 200 -
+2025-09-09 08:58:07,791 - INFO - 127.0.0.1 - - [09/Sep/2025 08:58:07] "GET /socket.io/?EIO=4&transport=polling&t=PajUssh.0&sid=8RWcFpG81Cmng9v1AAAC HTTP/1.1" 200 -
+2025-09-09 08:58:07,812 - INFO - 127.0.0.1 - - [09/Sep/2025 08:58:07] "GET /socket.io/?EIO=4&transport=polling&t=PajUss_&sid=8RWcFpG81Cmng9v1AAAC HTTP/1.1" 200 -
+2025-09-09 08:58:24,147 - INFO - 2captcha solver initialized with API key: 56d4457439...
+2025-09-09 08:58:24,149 - INFO - Starting SEO bot with 1 proxies
+2025-09-09 08:58:24,150 - INFO - 127.0.0.1 - - [09/Sep/2025 08:58:24] "POST /api/start HTTP/1.1" 200 -
+2025-09-09 08:58:24,150 - INFO - Searching for 'starbox iptv' on domain 'mouadzizi.com'
+2025-09-09 08:58:24,150 - INFO - Using Google domain: google.com.tr
+2025-09-09 08:58:24,151 - INFO - --- Processing proxy 1/1 ---
+2025-09-09 08:58:24,151 - INFO - Testing proxy: 50.114.99.111:6852:aawikmkk:tx1f1a2yr843
+2025-09-09 08:58:24,152 - INFO - Testing proxy: 50.114.99.111:6852 (with auth)
+2025-09-09 08:58:25,021 - INFO - ✓ Proxy 50.114.99.111:6852 (with auth) is working. IP: 50.114.99.111
+2025-09-09 08:58:25,022 - INFO - Setting up Kameleo browser with proxy: 50.114.99.111:6852:aawikmkk:tx1f1a2yr843
+2025-09-09 08:58:25,023 - INFO - Kameleo client initialized on port 5050
+2025-09-09 08:58:25,023 - INFO - Loading available Chrome fingerprints...
+2025-09-09 08:58:25,872 - INFO - Loaded 25 unique Chrome fingerprints
+2025-09-09 08:58:25,873 - INFO - Creating Kameleo profile with proxy: 50.114.99.111:6852:aawikmkk:tx1f1a2yr843
+2025-09-09 08:58:25,873 - INFO - Selected unique fingerprint: 2e5d11f7b7b8c65cfac79b76a32988eb4594ba636a5b4a88a04df78a6aec287e (1/25 used)
+2025-09-09 08:58:25,873 - INFO - Using authenticated proxy: 50.114.99.111:6852
+2025-09-09 08:58:25,972 - INFO - ✓ Kameleo profile created: ae59142e-9a7d-4726-8370-132821911b74 for proxy 50.114.99.111:6852
+2025-09-09 08:58:30,247 - INFO - Kameleo browser setup completed successfully
+2025-09-09 08:58:30,247 - INFO - Verifying proxy IP...
+2025-09-09 08:58:34,386 - INFO - Browser IP (via http://httpbin.org/ip): 50.114.99.111
+2025-09-09 08:58:34,813 - INFO - Real IP: 160.178.206.43
+2025-09-09 08:58:34,814 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-09-09 08:58:34,814 - INFO - Navigating to Google search: https://www.google.com.tr
+2025-09-09 08:58:36,694 - INFO - ⏰ Waiting 15 seconds after opening Google search...
+2025-09-09 08:58:51,752 - INFO - 🎭 Performing initial Google page interactions...
+2025-09-09 08:58:51,755 - INFO - 🎭 Starting Google page interactions...
+2025-09-09 08:58:53,277 - INFO - Bot paused by user - Browser available for manual interaction
+2025-09-09 08:58:53,278 - INFO - 127.0.0.1 - - [09/Sep/2025 08:58:53] "POST /api/pause HTTP/1.1" 200 -
+2025-09-09 08:58:54,669 - INFO - 📜 Scrolling down on Google page...
+2025-09-09 08:58:59,851 - INFO - 📜 Scrolling up on Google page...
+2025-09-09 08:59:04,005 - INFO - Bot resumed by user - Continuing automated operation
+2025-09-09 08:59:04,006 - INFO - 127.0.0.1 - - [09/Sep/2025 08:59:04] "POST /api/resume HTTP/1.1" 200 -
+2025-09-09 08:59:04,329 - INFO - 🖱️ Hovered over Google element: a
+2025-09-09 08:59:04,388 - INFO - ✅ Completed Google page interactions
+2025-09-09 08:59:04,419 - INFO - Typing keyword: starbox iptv
+2025-09-09 08:59:06,472 - INFO - Bot paused by user - Browser available for manual interaction
+2025-09-09 08:59:06,472 - INFO - 127.0.0.1 - - [09/Sep/2025 08:59:06] "POST /api/pause HTTP/1.1" 200 -
+2025-09-09 08:59:08,526 - INFO - Bot resumed by user - Continuing automated operation
+2025-09-09 08:59:08,526 - INFO - 127.0.0.1 - - [09/Sep/2025 08:59:08] "POST /api/resume HTTP/1.1" 200 -
+2025-09-09 08:59:10,265 - INFO - ✓ Google search completed successfully
+2025-09-09 08:59:10,265 - INFO - Looking for domain: mouadzizi.com
+2025-09-09 08:59:10,265 - INFO - 🔍 Searching on page 1
+2025-09-09 08:59:10,271 - INFO - 📊 Page 1 has 12 search results
+2025-09-09 08:59:10,294 - INFO - 🎯 Found target domain on page 1, local position 1, GLOBAL position 1: https://mouadzizi.com/products/starbox-iptv
+2025-09-09 08:59:10,294 - INFO - 📈 Position calculation:  + 1 = 1
+2025-09-09 08:59:10,294 - INFO - 🖱️ Hovering over target link...
+2025-09-09 08:59:18,038 - INFO - ✨ Completed hovering over target link
+2025-09-09 08:59:22,652 - INFO - Bot paused by user - Browser available for manual interaction
+2025-09-09 08:59:22,655 - INFO - 127.0.0.1 - - [09/Sep/2025 08:59:22] "POST /api/pause HTTP/1.1" 200 -
+2025-09-09 08:59:23,346 - INFO - ✓ Successfully clicked target link using ActionChains
+2025-09-09 08:59:26,359 - INFO - ✓ Successfully navigated to target website: https://mouadzizi.com/products/starbox-iptv
+2025-09-09 08:59:26,359 - INFO - 🎭 Starting realistic website interaction (60 seconds)
+2025-09-09 08:59:26,359 - INFO - 🎭 Starting realistic website interaction (60 seconds)
+2025-09-09 09:00:21,309 - INFO - Bot resumed by user - Continuing automated operation
+2025-09-09 09:00:21,310 - INFO - 127.0.0.1 - - [09/Sep/2025 09:00:21] "POST /api/resume HTTP/1.1" 200 -
+2025-09-09 09:00:24,823 - INFO - Phase 1: Initial page exploration...
+2025-09-09 09:00:25,970 - INFO - Smooth scrolled down 600 pixels
+2025-09-09 09:00:29,890 - INFO - Hovered over a element
+2025-09-09 09:00:31,710 - INFO - Hovered over button element
+2025-09-09 09:00:33,575 - INFO - Hovered over h2 element
+2025-09-09 09:00:33,660 - INFO - Hovered over 3 elements
+2025-09-09 09:00:35,603 - INFO - Smooth scrolled up 300 pixels
+2025-09-09 09:00:37,614 - INFO - ✅ Completed realistic interaction session (71.3 seconds)
+2025-09-09 09:00:37,614 - INFO - ✅ Successfully visited and interacted with target website
+2025-09-09 09:00:37,614 - INFO - ✓ Found domain on page 1, position 1
+2025-09-09 09:00:37,620 - INFO - Browser closed
+2025-09-09 09:00:37,813 - INFO - Kameleo profile ae59142e-9a7d-4726-8370-132821911b74 stopped
+2025-09-09 09:00:37,831 - INFO - Kameleo profile ae59142e-9a7d-4726-8370-132821911b74 deleted
+2025-09-09 09:00:37,831 - INFO - ✓ Proxy 50.114.99.111:6852:aawikmkk:tx1f1a2yr843 completed successfully
+2025-09-09 09:00:37,831 - INFO - ==================================================
+2025-09-09 09:00:37,831 - INFO - FINAL RESULTS:
+2025-09-09 09:00:37,832 - INFO - Total proxies tested: 1
+2025-09-09 09:00:37,832 - INFO - Successful runs: 1
+2025-09-09 09:00:37,832 - INFO - Failed runs: 0
+2025-09-09 09:00:37,832 - INFO - ==================================================
