@@ -200,9 +200,7 @@ class BotRunner:
             else:
                 logger.warning(f"Domain not found in search results")
             
-            # Save cookies before closing browser (if enabled)
-            if hasattr(self.bot, 'save_session_cookies'):
-                self.bot.save_session_cookies()
+            # Cookies will be automatically saved in close_browser() method
             
             self.bot.close_browser()
             return result

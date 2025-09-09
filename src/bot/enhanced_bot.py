@@ -82,8 +82,7 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
             
             logger.info("✓ Google search completed successfully")
             
-            # Save cookies after Google search
-            self.save_cookies_if_enabled("after Google search")
+            # Cookies will be saved at the end of the session
             
             return True
             
