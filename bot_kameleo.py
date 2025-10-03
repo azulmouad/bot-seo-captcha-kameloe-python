@@ -1457,161 +1457,195 @@ class GoogleSearchBot:
             logger.error(f"Error solving regular reCAPTCHA: {str(e)}")
             return False
 
-    def solve_captcha(self):
-        """Solve captcha using 2captcha with data-s parameter via raw API"""
-        try:
-            logger.info("\n" + "="*50)
-            logger.info("SOLVING CAPTCHA")
-            logger.info("="*50)
-            
-            url = self.driver.current_url
-            
-            # Check if this is Google /sorry page
-            is_google_sorry = '/sorry' in url and 'google.com' in url
-            
-            # Get sitekey
-            logger.info("Getting sitekey...")
-            sitekey = self.get_sitekey()
-            if not sitekey:
-                logger.error("ERROR: No sitekey found")
-                return False
-            
-            logger.info(f"Sitekey: {sitekey}")
-            
-            # Get data-s parameter if it's Google /sorry page
-            data_s = None
-            if is_google_sorry:
-                logger.info("This is Google /sorry page, getting data-s parameter...")
-                data_s = self.get_data_s_parameter()
-                
-                if data_s:
-                    logger.info(f"Using data-s: {data_s[:50]}...")
-                else:
-                    logger.warning("WARNING: No data-s found, solving may fail")
-            
-            # Solve with 2captcha using raw API
-            logger.info("Submitting to 2captcha (please wait)...")
-            
+    def solve_captcha(self, max_attempts=3):
+        """Solve captcha using 2captcha with data-s parameter via raw API - handles multiple captcha attempts"""
+        
+        for attempt in range(1, max_attempts + 1):
             try:
-                # Submit captcha
-                submit_url = "https://2captcha.com/in.php"
-                params = {
-                    'key': self.captcha_api_key,
-                    'method': 'userrecaptcha',
-                    'googlekey': sitekey,
-                    'pageurl': url,
-                    'json': 1
-                }
+                logger.info("\n" + "="*50)
+                logger.info(f"SOLVING CAPTCHA (Attempt {attempt}/{max_attempts})")
+                logger.info("="*50)
                 
-                # Add data-s if available
-                if data_s:
-                    params['data-s'] = data_s
+                url = self.driver.current_url
                 
-                response = requests.post(submit_url, data=params, timeout=30)
-                result = response.json()
+                # Check if this is Google /sorry page
+                is_google_sorry = '/sorry' in url and 'google.com' in url
                 
-                if result.get('status') != 1:
-                    logger.error(f"ERROR: Submission failed - {result}")
+                # Get sitekey
+                logger.info("Getting sitekey...")
+                sitekey = self.get_sitekey()
+                if not sitekey:
+                    logger.error("ERROR: No sitekey found")
+                    if attempt < max_attempts:
+                        logger.info(f"Retrying... ({attempt}/{max_attempts})")
+                        time.sleep(3)
+                        continue
                     return False
                 
-                captcha_id = result.get('request')
-                logger.info(f"Captcha submitted, ID: {captcha_id}")
-                logger.info("Waiting for solution (this takes 30-120 seconds)...")
+                logger.info(f"Sitekey: {sitekey}")
                 
-                # Poll for result
-                result_url = "https://2captcha.com/res.php"
-                max_wait = 180  # 3 minutes max
-                start_time = time.time()
-                
-                while time.time() - start_time < max_wait:
-                    time.sleep(10)  # Check every 10 seconds
+                # Get data-s parameter if it's Google /sorry page
+                data_s = None
+                if is_google_sorry:
+                    logger.info("This is Google /sorry page, getting data-s parameter...")
+                    data_s = self.get_data_s_parameter()
                     
-                    result_params = {
+                    if data_s:
+                        logger.info(f"Using data-s: {data_s[:50]}...")
+                    else:
+                        logger.warning("WARNING: No data-s found, solving may fail")
+                
+                # Solve with 2captcha using raw API
+                logger.info("Submitting to 2captcha (please wait)...")
+                
+                try:
+                    # Submit captcha
+                    submit_url = "https://2captcha.com/in.php"
+                    params = {
                         'key': self.captcha_api_key,
-                        'action': 'get',
-                        'id': captcha_id,
+                        'method': 'userrecaptcha',
+                        'googlekey': sitekey,
+                        'pageurl': url,
                         'json': 1
                     }
                     
-                    result_response = requests.get(result_url, params=result_params, timeout=30)
-                    result_data = result_response.json()
+                    # Add data-s if available
+                    if data_s:
+                        params['data-s'] = data_s
                     
-                    if result_data.get('status') == 1:
-                        solution = result_data.get('request')
-                        elapsed = time.time() - start_time
-                        logger.info(f"Solution received in {elapsed:.1f}s! Length: {len(solution)}")
-                        break
-                    elif result_data.get('request') == 'CAPCHA_NOT_READY':
-                        elapsed = time.time() - start_time
-                        logger.info(f"Still solving... ({elapsed:.0f}s elapsed)")
-                        continue
-                    else:
-                        logger.error(f"ERROR: {result_data}")
+                    response = requests.post(submit_url, data=params, timeout=30)
+                    result = response.json()
+                    
+                    if result.get('status') != 1:
+                        logger.error(f"ERROR: Submission failed - {result}")
+                        if attempt < max_attempts:
+                            logger.info(f"Retrying... ({attempt}/{max_attempts})")
+                            time.sleep(3)
+                            continue
                         return False
-                else:
-                    logger.error("ERROR: Timeout waiting for solution")
+                    
+                    captcha_id = result.get('request')
+                    logger.info(f"Captcha submitted, ID: {captcha_id}")
+                    logger.info("Waiting for solution (this takes 30-120 seconds)...")
+                    
+                    # Poll for result
+                    result_url = "https://2captcha.com/res.php"
+                    max_wait = 180  # 3 minutes max
+                    start_time = time.time()
+                    
+                    while time.time() - start_time < max_wait:
+                        time.sleep(10)  # Check every 10 seconds
+                        
+                        result_params = {
+                            'key': self.captcha_api_key,
+                            'action': 'get',
+                            'id': captcha_id,
+                            'json': 1
+                        }
+                        
+                        result_response = requests.get(result_url, params=result_params, timeout=30)
+                        result_data = result_response.json()
+                        
+                        if result_data.get('status') == 1:
+                            solution = result_data.get('request')
+                            elapsed = time.time() - start_time
+                            logger.info(f"Solution received in {elapsed:.1f}s! Length: {len(solution)}")
+                            break
+                        elif result_data.get('request') == 'CAPCHA_NOT_READY':
+                            elapsed = time.time() - start_time
+                            logger.info(f"Still solving... ({elapsed:.0f}s elapsed)")
+                            continue
+                        else:
+                            logger.error(f"ERROR: {result_data}")
+                            if attempt < max_attempts:
+                                logger.info(f"Retrying... ({attempt}/{max_attempts})")
+                                time.sleep(3)
+                                break
+                            return False
+                    else:
+                        logger.error("ERROR: Timeout waiting for solution")
+                        if attempt < max_attempts:
+                            logger.info(f"Retrying... ({attempt}/{max_attempts})")
+                            time.sleep(3)
+                            continue
+                        return False
+                    
+                except Exception as e:
+                    logger.error(f"ERROR: 2captcha failed - {e}")
+                    if attempt < max_attempts:
+                        logger.info(f"Retrying... ({attempt}/{max_attempts})")
+                        time.sleep(3)
+                        continue
                     return False
                 
-            except Exception as e:
-                logger.error(f"ERROR: 2captcha failed - {e}")
-                return False
-            
-            # Inject solution
-            logger.info("Injecting solution...")
-            self.driver.execute_script(f"""
-                var textareas = document.querySelectorAll('textarea[name="g-recaptcha-response"]');
-                for (var i = 0; i < textareas.length; i++) {{
-                    textareas[i].value = '{solution}';
-                }}
-                var main = document.getElementById('g-recaptcha-response');
-                if (main) main.value = '{solution}';
-            """)
-            
-            time.sleep(1)
-            
-            # Submit
-            logger.info("Submitting form...")
-            try:
-                # Try submit button
-                buttons = self.driver.find_elements(By.CSS_SELECTOR, 'button[type="submit"]')
-                if buttons and buttons[0].is_displayed():
-                    buttons[0].click()
-                else:
-                    # Submit form directly
-                    self.driver.execute_script("""
-                        var forms = document.querySelectorAll('form');
-                        if (forms.length > 0) forms[0].submit();
-                    """)
-            except:
-                pass
-            
-            # Wait for verification
-            logger.info("Waiting for verification...")
-            time.sleep(10)
-            
-            # Check if solved
-            if not self.is_captcha_page():
-                logger.info("SUCCESS: Captcha solved!")
-                logger.info("="*50 + "\n")
-                return True
-            else:
-                # Sometimes takes longer
-                logger.info("Still verifying, waiting more...")
+                # Inject solution
+                logger.info("Injecting solution...")
+                self.driver.execute_script(f"""
+                    var textareas = document.querySelectorAll('textarea[name="g-recaptcha-response"]');
+                    for (var i = 0; i < textareas.length; i++) {{
+                        textareas[i].value = '{solution}';
+                    }}
+                    var main = document.getElementById('g-recaptcha-response');
+                    if (main) main.value = '{solution}';
+                """)
+                
+                time.sleep(1)
+                
+                # Submit
+                logger.info("Submitting form...")
+                try:
+                    # Try submit button
+                    buttons = self.driver.find_elements(By.CSS_SELECTOR, 'button[type="submit"]')
+                    if buttons and buttons[0].is_displayed():
+                        buttons[0].click()
+                    else:
+                        # Submit form directly
+                        self.driver.execute_script("""
+                            var forms = document.querySelectorAll('form');
+                            if (forms.length > 0) forms[0].submit();
+                        """)
+                except:
+                    pass
+                
+                # Wait for verification
+                logger.info("Waiting for verification...")
                 time.sleep(10)
                 
+                # Check if solved
                 if not self.is_captcha_page():
                     logger.info("SUCCESS: Captcha solved!")
                     logger.info("="*50 + "\n")
                     return True
                 else:
-                    logger.warning("WARNING: Still on captcha page")
-                    return False
-                
-        except Exception as e:
-            logger.error(f"ERROR solving captcha: {e}")
-            import traceback
-            traceback.print_exc()
-            return False
+                    # Sometimes takes longer
+                    logger.info("Still verifying, waiting more...")
+                    time.sleep(10)
+                    
+                    if not self.is_captcha_page():
+                        logger.info("SUCCESS: Captcha solved!")
+                        logger.info("="*50 + "\n")
+                        return True
+                    else:
+                        # Google showed another captcha - try again
+                        if attempt < max_attempts:
+                            logger.warning(f"⚠️ Google showed another captcha. Attempting to solve again... ({attempt}/{max_attempts})")
+                            time.sleep(2)
+                            continue
+                        else:
+                            logger.error("❌ Failed to solve captcha after multiple attempts")
+                            return False
+                    
+            except Exception as e:
+                logger.error(f"ERROR solving captcha: {e}")
+                if attempt < max_attempts:
+                    logger.info(f"Retrying... ({attempt}/{max_attempts})")
+                    time.sleep(3)
+                    continue
+                import traceback
+                traceback.print_exc()
+                return False
+        
+        return False
     
     def search_google(self):
         """Search Google and handle captchas"""
