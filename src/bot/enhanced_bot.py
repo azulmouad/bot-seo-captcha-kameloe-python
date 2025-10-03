@@ -54,6 +54,13 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
                 if bot_status['is_running']:
                     time.sleep(1)
             
+            # Check for captcha on homepage
+            if self.is_captcha_page():
+                logger.info("Captcha detected on Google homepage")
+                if not self.solve_captcha():
+                    logger.error("Failed to solve captcha on homepage")
+                    return False
+            
             # Perform scrolling interactions
             logger.info("🎭 Performing initial Google page interactions...")
             self.perform_google_page_interactions()
@@ -74,6 +81,16 @@ class EnhancedGoogleSearchBot(GoogleSearchBot):
             
             time.sleep(1)
             search_box.send_keys(Keys.RETURN)
+            
+            # Wait a bit for page to load
+            time.sleep(5)
+            
+            # Check for captcha after search
+            if self.is_captcha_page():
+                logger.info("Captcha detected after search")
+                if not self.solve_captcha():
+                    logger.error("Failed to solve captcha after search")
+                    return False
             
             # Wait for search results
             WebDriverWait(self.driver, 10).until(

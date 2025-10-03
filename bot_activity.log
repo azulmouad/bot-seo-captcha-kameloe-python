@@ -1,0 +1,90 @@
+2025-10-03 01:16:39,924 - INFO - Cookie database initialized: cookies.db
+2025-10-03 01:16:39,959 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.110.249:8080
+2025-10-03 01:16:39,959 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-03 01:16:40,711 - INFO - 127.0.0.1 - - [03/Oct/2025 01:16:40] "GET /socket.io/?EIO=4&transport=polling&t=PcdRPJz HTTP/1.1" 200 -
+2025-10-03 01:16:40,725 - INFO - 127.0.0.1 - - [03/Oct/2025 01:16:40] "GET /socket.io/?EIO=4&transport=polling&t=PcdRPKD&sid=8jQ-enAxTwDN2p6lAAAA HTTP/1.1" 200 -
+2025-10-03 01:16:40,728 - INFO - Client connected to WebSocket
+2025-10-03 01:16:40,729 - INFO - 127.0.0.1 - - [03/Oct/2025 01:16:40] "POST /socket.io/?EIO=4&transport=polling&t=PcdRPKC&sid=8jQ-enAxTwDN2p6lAAAA HTTP/1.1" 200 -
+2025-10-03 01:16:42,773 - INFO - 🍪 Cookie management requested: False
+2025-10-03 01:16:42,775 - INFO - Cookie database initialized: cookies.db
+2025-10-03 01:16:42,775 - INFO - 2captcha solver initialized with API key: 56d4457439...
+2025-10-03 01:16:42,775 - INFO - Cookie management: Disabled
+2025-10-03 01:16:42,775 - INFO - 🍪 Bot created with cookie support: False
+2025-10-03 01:16:42,776 - INFO - Cookie database initialized: cookies.db
+2025-10-03 01:16:42,776 - INFO - Bot runner initialized with cookie management support
+2025-10-03 01:16:42,776 - INFO - Starting SEO bot with 1 proxies
+2025-10-03 01:16:42,776 - INFO - 127.0.0.1 - - [03/Oct/2025 01:16:42] "POST /api/start HTTP/1.1" 200 -
+2025-10-03 01:16:42,776 - INFO - Searching for 'mouad zizi' on domain 'mouadzizi.com'
+2025-10-03 01:16:42,777 - INFO - Using Google domain: google.com
+2025-10-03 01:16:42,777 - INFO - Device profile: Desktop
+2025-10-03 01:16:42,777 - INFO - --- Processing proxy 1/1 ---
+2025-10-03 01:16:42,777 - INFO - Testing proxy: 185.101.253.137:5697:nchjmhjl2:ra217a8j78bd
+2025-10-03 01:16:42,777 - INFO - Testing proxy: 185.101.253.137:5697 (with auth)
+2025-10-03 01:16:43,061 - INFO - ✓ Proxy 185.101.253.137:5697 (with auth) is working. IP: 185.101.253.137
+2025-10-03 01:16:43,065 - INFO - Setting up Kameleo browser with proxy: 185.101.253.137:5697:nchjmhjl2:ra217a8j78bd
+2025-10-03 01:16:43,066 - INFO - Kameleo client initialized on port 5050
+2025-10-03 01:16:43,066 - INFO - Loading available Desktop Chrome fingerprints...
+2025-10-03 01:16:43,623 - INFO - Loaded 25 unique Chrome fingerprints
+2025-10-03 01:16:43,624 - INFO - Creating Kameleo profile with proxy: 185.101.253.137:5697:nchjmhjl2:ra217a8j78bd
+2025-10-03 01:16:43,624 - INFO - Selected unique fingerprint: dad98a6d2e66c935e2fc03d058d1c3175c972a8b6b744fb2ac6b871af3a07303 (1/25 used)
+2025-10-03 01:16:43,624 - INFO - Using authenticated proxy: 185.101.253.137:5697
+2025-10-03 01:16:43,729 - INFO - ✓ Kameleo profile created: 6389fbf9-790b-4eb7-a9e3-afa3efc6e7d8 for proxy 185.101.253.137:5697
+2025-10-03 01:16:47,271 - INFO - ✓ Desktop profile started
+2025-10-03 01:16:48,006 - INFO - Kameleo browser setup completed successfully
+2025-10-03 01:16:48,006 - INFO - Verifying proxy IP...
+2025-10-03 01:16:51,646 - INFO - Browser IP (via http://httpbin.org/ip): 185.101.253.137
+2025-10-03 01:16:52,432 - INFO - Real IP: 105.155.191.40
+2025-10-03 01:16:52,434 - INFO - ✓ Proxy is working correctly - IP is masked
+2025-10-03 01:16:52,435 - INFO - Navigating to Google search: https://www.google.com
+2025-10-03 01:16:54,695 - INFO - ⏰ Waiting 15 seconds after opening Google search...
+2025-10-03 01:17:09,810 - INFO - 🎭 Performing initial Google page interactions...
+2025-10-03 01:17:09,811 - INFO - 🎭 Starting Google page interactions...
+2025-10-03 01:17:12,487 - INFO - 📜 Scrolling down on Google page...
+2025-10-03 01:17:19,356 - INFO - 📜 Scrolling up on Google page...
+2025-10-03 01:17:24,109 - INFO - 🖱️ Hovered over Google element: a
+2025-10-03 01:17:24,182 - INFO - ✅ Completed Google page interactions
+2025-10-03 01:17:24,206 - INFO - Typing keyword: mouad zizi
+2025-10-03 01:17:34,075 - INFO - CAPTCHA DETECTED: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmouad%2Bzizi%26sca_esv%3D6c8d4356b322f53d%26source%3Dhp%26ei%3D9BXfaLy7KaWkkdUPy9rQwAs%26iflsig%3DAOw8s4IAAAAAaN8kBIcBnEzWAMouk_KDHS9Rq6Y1PgMW%26ved%3D0ahUKEwi8hZOm4IaQAxUlUqQEHUstFLgQ4dUDCBA%26uact%3D5%26oq%3Dmouad%2Bzizi%26gs_lp%3DEgdnd3Mtd2l6Igptb3VhZCB6aXppMgUQABiABDIFEAAY7wUyBRAAGO8FMggQABiABBiiBDIIEAAYgAQYogQyCBAAGKIEGIkFSJfiAVCZygFYwtgBcAF4AJABAJgBZ6AB_gaqAQM5LjG4AQPIAQD4AQGYAgugAqIHqAIKwgIKEAAYAxjqAhiPAcICCxAuGIAEGLEDGIMBwgILEAAYgAQYsQMYgwHCAg4QABiABBixAxiDARiKBcICCxAuGIAEGNEDGMcBwgIOEC4YgAQYsQMY0QMYxwHCAggQABiABBixA8ICCxAuGIAEGMcBGK8BwgIFEC4YgATCAggQABiABBjJA8ICCxAAGIAEGJIDGIoFwgIIEC4YgAQYsQPCAg4QLhiABBixAxjHARivAcICDhAuGIAEGMcBGI4FGK8BwgIHEC4YgAQYCsICDRAuGIAEGNEDGMcBGArCAgYQABgWGB7CAggQABgWGAoYHpgDBfEFOQBBgAo1z7mSBwQxMC4xoAf0VbIHAzkuMbgHnQfCBwYwLjEwLjHIBxY%26sclient%3Dgws-wiz&q=EgS5Zf2JGJes_MYGIjCm4vkWIKHX0p4RfzNhOoEpEwIiFQbyXtge5o4g2yztVBuKRToRnOkq4WnJFIUus8oyAnJSWgFD
+2025-10-03 01:17:34,076 - INFO - Captcha detected after search
+2025-10-03 01:17:34,076 - INFO - 
+==================================================
+2025-10-03 01:17:34,077 - INFO - SOLVING CAPTCHA
+2025-10-03 01:17:34,077 - INFO - ==================================================
+2025-10-03 01:17:34,087 - INFO - Getting sitekey...
+2025-10-03 01:17:34,114 - INFO - Sitekey: 6LfwuyUTAAAAAOAmoS0fdqijC2PbbdH4kjq62Y1b
+2025-10-03 01:17:34,114 - INFO - This is Google /sorry page, getting data-s parameter...
+2025-10-03 01:17:34,116 - INFO - Found data-s: d9CNABz8F7C8seNqsZMtxrgWqFu0CmLnhvbXTLudbO0i6wg59KDBbjHJbcu0xVJsrOMEzjmRBk2CmAW7NG8bFVCxoauVnu5XiuqiFL5OwJCbqpoUfLop_20pxqVVo3soXLojNjYGcTlVIQYGhot-wyZAJiT7fR8o7IWRlS_z2rnL2WP3OW1z8Gi1DdmGzhSm_x4emiZVqaDPpudlnrYNcrV2jkW0qZxRYQeX_WwneonZSKfv9m7Uod_VJvYyFipgloV2YVwnMjgJBQkN0nC5yZzxoo01S7k
+2025-10-03 01:17:34,117 - INFO - Using data-s: d9CNABz8F7C8seNqsZMtxrgWqFu0CmLnhvbXTLudbO0i6wg59K...
+2025-10-03 01:17:34,117 - INFO - Submitting to 2captcha (please wait)...
+2025-10-03 01:17:34,367 - INFO - Captcha submitted, ID: 80791596849
+2025-10-03 01:17:34,368 - INFO - Waiting for solution (this takes 30-120 seconds)...
+2025-10-03 01:17:44,570 - INFO - Still solving... (10s elapsed)
+2025-10-03 01:17:54,759 - INFO - Still solving... (20s elapsed)
+2025-10-03 01:18:04,980 - INFO - Still solving... (31s elapsed)
+2025-10-03 01:18:15,163 - INFO - Still solving... (41s elapsed)
+2025-10-03 01:18:25,344 - INFO - Still solving... (51s elapsed)
+2025-10-03 01:18:35,612 - INFO - Still solving... (61s elapsed)
+2025-10-03 01:18:45,850 - INFO - Still solving... (71s elapsed)
+2025-10-03 01:18:56,029 - INFO - Solution received in 81.7s! Length: 1870
+2025-10-03 01:18:56,030 - INFO - Injecting solution...
+2025-10-03 01:18:57,049 - INFO - Submitting form...
+2025-10-03 01:18:58,484 - INFO - Waiting for verification...
+2025-10-03 01:19:08,506 - INFO - CAPTCHA DETECTED: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmouad%2Bzizi%26sca_esv%3D6c8d4356b322f53d%26source%3Dhp%26ei%3D9BXfaLy7KaWkkdUPy9rQwAs%26iflsig%3DAOw8s4IAAAAAaN8kBIcBnEzWAMouk_KDHS9Rq6Y1PgMW%26ved%3D0ahUKEwi8hZOm4IaQAxUlUqQEHUstFLgQ4dUDCBA%26uact%3D5%26oq%3Dmouad%2Bzizi%26gs_lp%3DEgdnd3Mtd2l6Igptb3VhZCB6aXppMgUQABiABDIFEAAY7wUyBRAAGO8FMggQABiABBiiBDIIEAAYgAQYogQyCBAAGKIEGIkFSJfiAVCZygFYwtgBcAF4AJABAJgBZ6AB_gaqAQM5LjG4AQPIAQD4AQGYAgugAqIHqAIKwgIKEAAYAxjqAhiPAcICCxAuGIAEGLEDGIMBwgILEAAYgAQYsQMYgwHCAg4QABiABBixAxiDARiKBcICCxAuGIAEGNEDGMcBwgIOEC4YgAQYsQMY0QMYxwHCAggQABiABBixA8ICCxAuGIAEGMcBGK8BwgIFEC4YgATCAggQABiABBjJA8ICCxAAGIAEGJIDGIoFwgIIEC4YgAQYsQPCAg4QLhiABBixAxjHARivAcICDhAuGIAEGMcBGI4FGK8BwgIHEC4YgAQYCsICDRAuGIAEGNEDGMcBGArCAgYQABgWGB7CAggQABgWGAoYHpgDBfEFOQBBgAo1z7mSBwQxMC4xoAf0VbIHAzkuMbgHnQfCBwYwLjEwLjHIBxY%26sclient%3Dgws-wiz%26sei%3DchbfaP-mA5udkdUPidzm-Qw&q=EgS5Zf2JGPKs_MYGIjDtKP9FqmJYcYLYxcRaL77xb6vTx5LIj9z_Xg9mYZR0U2BEkqlqWg-SZeagBJdpmiEyAVJaAUM
+2025-10-03 01:19:08,507 - INFO - Still verifying, waiting more...
+2025-10-03 01:19:18,530 - INFO - CAPTCHA DETECTED: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dmouad%2Bzizi%26sca_esv%3D6c8d4356b322f53d%26source%3Dhp%26ei%3D9BXfaLy7KaWkkdUPy9rQwAs%26iflsig%3DAOw8s4IAAAAAaN8kBIcBnEzWAMouk_KDHS9Rq6Y1PgMW%26ved%3D0ahUKEwi8hZOm4IaQAxUlUqQEHUstFLgQ4dUDCBA%26uact%3D5%26oq%3Dmouad%2Bzizi%26gs_lp%3DEgdnd3Mtd2l6Igptb3VhZCB6aXppMgUQABiABDIFEAAY7wUyBRAAGO8FMggQABiABBiiBDIIEAAYgAQYogQyCBAAGKIEGIkFSJfiAVCZygFYwtgBcAF4AJABAJgBZ6AB_gaqAQM5LjG4AQPIAQD4AQGYAgugAqIHqAIKwgIKEAAYAxjqAhiPAcICCxAuGIAEGLEDGIMBwgILEAAYgAQYsQMYgwHCAg4QABiABBixAxiDARiKBcICCxAuGIAEGNEDGMcBwgIOEC4YgAQYsQMY0QMYxwHCAggQABiABBixA8ICCxAuGIAEGMcBGK8BwgIFEC4YgATCAggQABiABBjJA8ICCxAAGIAEGJIDGIoFwgIIEC4YgAQYsQPCAg4QLhiABBixAxjHARivAcICDhAuGIAEGMcBGI4FGK8BwgIHEC4YgAQYCsICDRAuGIAEGNEDGMcBGArCAgYQABgWGB7CAggQABgWGAoYHpgDBfEFOQBBgAo1z7mSBwQxMC4xoAf0VbIHAzkuMbgHnQfCBwYwLjEwLjHIBxY%26sclient%3Dgws-wiz%26sei%3DchbfaP-mA5udkdUPidzm-Qw&q=EgS5Zf2JGPKs_MYGIjDtKP9FqmJYcYLYxcRaL77xb6vTx5LIj9z_Xg9mYZR0U2BEkqlqWg-SZeagBJdpmiEyAVJaAUM
+2025-10-03 01:19:18,537 - WARNING - WARNING: Still on captcha page
+2025-10-03 01:19:18,540 - ERROR - Failed to solve captcha after search
+2025-10-03 01:19:18,540 - ERROR - Google search failed
+2025-10-03 01:19:18,545 - INFO - Browser closed
+2025-10-03 01:19:18,828 - INFO - Kameleo profile 6389fbf9-790b-4eb7-a9e3-afa3efc6e7d8 stopped
+2025-10-03 01:19:18,847 - INFO - Kameleo profile 6389fbf9-790b-4eb7-a9e3-afa3efc6e7d8 deleted
+2025-10-03 01:19:18,848 - ERROR - ✗ Proxy 185.101.253.137:5697:nchjmhjl2:ra217a8j78bd failed
+2025-10-03 01:19:18,848 - INFO - ==================================================
+2025-10-03 01:19:18,848 - INFO - FINAL RESULTS:
+2025-10-03 01:19:18,848 - INFO - Total proxies tested: 1
+2025-10-03 01:19:18,848 - INFO - Successful runs: 0
+2025-10-03 01:19:18,848 - INFO - Failed runs: 1
+2025-10-03 01:19:18,848 - INFO - ==================================================
